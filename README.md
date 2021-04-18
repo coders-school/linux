@@ -22,6 +22,8 @@
 
 ### [10. Procesy](10-procesy.md)
 
+### [11. Zadanie](11-zadanie.md)
+
 ### Bonus
 
 #### [B01. Skrypty](b01-skrypty.md)
