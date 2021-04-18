@@ -43,8 +43,8 @@ Wykonaj poniższe kroki w terminalu.
 
     ![Create Pull Request on GitHub](img/create-pr.png)
 
-7. Nadaj jeszcze nazwę i opis swoim zmianom w języku angielskim. Gdy będzie pracować w kilka osób w opisie koniecznie muszą znaleźć się lista autorów.
-8. Gotowe! Za chwilę dowiesz się, czy zadanie przeszło testy :)
+7. Nadaj jeszcze nazwę i opis swoim zmianom w języku angielskim. Gdy będziecie pracować w kilka osób w opisie koniecznie musi znaleźć się lista autorów.
+8. Gotowe! Za chwilę dowiesz się, czy zadanie przeszło testy 😊
 9. Jeśli widzisz coś takiego, to znaczy, że musisz poprawić swoje rozwiązanie. Gdy klikniesz na Details dowiesz się co poszło nie tak. Napraw to co trzeba i wyedytuj ponownie plik homework/linux.txt w swojej kopii repozytorium. Nie musisz po raz drugi zgłaszać Pull Requesta, zaktualizuje się sam po edycji pliku.
 
     ![CI on GitHub](img/ci.png)
