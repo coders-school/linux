@@ -38,7 +38,11 @@ function compile()
 
 function fileExist()
 {
-    if [ ! -f "$1" ]; then
+    if [ -z $1 ] ; then
+        echo "❌ filename not provided"
+        exit -2
+    fi
+    if [ ! -f "$1" ] ; then
         echo "❌ $1 does not exist"
         exit -1
     fi

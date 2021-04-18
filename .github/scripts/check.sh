@@ -1,7 +1,7 @@
 #!/bin/bash
 source functions.sh
 
-FILE=../../homework/linux.txt
+FILE=$1
 fileExist ${FILE}
 
 P=processes\.txt

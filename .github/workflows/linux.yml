@@ -10,4 +10,4 @@ jobs:
       uses: actions/checkout@master
     - name: Run check.sh
       working-directory: .github/scripts
-      run: check.sh homework/linux.txt
+      run: ./check.sh ../../homework/linux.txt
