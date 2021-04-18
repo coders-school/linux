@@ -55,7 +55,7 @@ function summary()
     else
         echo "❌ ${failed}/${total} failed"
         echo
-        echo "If you think this is a bug in the checking script please raise an Issue in this repo and describe the problem"
+        echo "If you think this is a bug in the checking script please raise an Issue in this repo and describe the problem. Don't forget to attach a link to this Checks page."
     fi
     return ${failed}
 }
