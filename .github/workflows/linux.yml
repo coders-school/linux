@@ -1,0 +1,13 @@
+name: Linux homework
+
+on: [push, pull_request]
+
+jobs:
+  linux:
+    runs-on: [ubuntu-latest, macos-latest]
+    steps:
+    - name: Check out code
+      uses: actions/checkout@master
+    - name: Run check.sh
+      working-directory: .github/scripts
+      run: check.sh homework/linux.txt
