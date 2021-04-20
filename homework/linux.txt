@@ -1,0 +1,31 @@
+ziobron@MBP:~/workspace/linux/hejo$ cat selected.txt commands.txt
+     605 processes.txt
+processes.txt:52:root             27825   0,0  0,0  4374888    236 s000  Ss    5:22     0:00.12 login -pf ziobron /bin/bash
+processes.txt:146:ziobron          20733   0,0  0,0  4285656      8   ??  S    31mar21   0:00.03 /usr/bin/ssh-agent -l
+processes.txt:169:root             17712   0,0  0,0  4429928   1428   ??  Ss   30mar21   0:00.47 /usr/bin/sysdiagnose
+processes.txt:592:root             29741   0,0  0,0  4374888   6172 s001  Ss    3:16     0:00.06 login -pfl ziobron /bin/bash -c exec -la bash /bin/bash
+  499  make 14
+  500  ./14
+  501  mkdir hejo
+  502  cd hejo/
+  503  touch processes.txt
+  504  ps aux
+  505  ps aux > processes.txt
+  506  cat processes.txt
+  507  cp processes.txt copy.txt
+  508  mkdir backup
+  509  mv copy.txt backup/
+  510  wc -l processes.txt
+  511*
+  512  cat processes.txt
+  513  grep -rni /bin processes.txt
+  514  grep -rni /bin processes.txt >> processes.txt
+  515  history
+  516  history | tail -n 16
+  517  history | tail -n 17 > commands.txt
+  518  cat processes.txt commands.txt
+  519  ps aux > processes.txt
+  520  wc -l processes.txt > selected.txt
+  521   grep -rni /bin processes.txt >> selected.txt
+  522   history
+  523  history | tail -n 25 > commands.txt
