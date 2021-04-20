@@ -26,4 +26,5 @@ Tip. Użyj `ls -l` aby to sprawdzić.
 Odkryj co zrobi `mkdir` jeśli podany katalog już istnieje.
 
 Hello Coders School
+Hello
 Coders School
