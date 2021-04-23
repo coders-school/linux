@@ -26,8 +26,7 @@
  1085  mv copy.txt backup
  1086  wc processes.txt
  1087  wc processes.txt >> selected.txt
- 1088  grep "/bin*" processes.txt
- 1089  grep -rni "/bin*" processes.txt >> selected.txt
- 1090  cat selected.txt
- 1091  history
- 1092  history | tail -n 14 >> commands.txt
+ 1088  grep -rni "/bin*" processes.txt >> selected.txt
+ 1089  cat selected.txt
+ 1090  history
+ 1091  history | tail -n 13 >> commands.txt
