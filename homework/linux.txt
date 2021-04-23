@@ -1,45 +1,42 @@
 [panlukasz@BlackMachine 1 GNU\Linux]$ cat selected.txt commands.txt 
-181 kat/processes.txt
-dbus         611  0.0  0.0  14584  7600 ?        Ss   15:40   0:10 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-root         613  0.0  0.1 408192 20840 ?        Ssl  15:40   0:09 /usr/bin/NetworkManager --no-daemon
+191 kat/processes.txt
+dbus         611  0.0  0.0  14584  7600 ?        Ss   15:40   0:14 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         613  0.0  0.1 408192 20840 ?        Ssl  15:40   0:14 /usr/bin/NetworkManager --no-daemon
 root         628  0.0  0.0  32796  9816 ?        Ss   15:40   0:00 /usr/bin/cupsd -l
 root         634  0.0  0.1 143036 17588 ?        Ssl  15:40   0:00 /usr/bin/sddm
 root         659  0.0  0.0  15044  9328 ?        Ss   15:40   0:00 /usr/bin/wpa_supplicant -u -s -O /run/wpa_supplicant
 root         924  0.0  0.1  67256 18436 ?        S    15:40   0:00 /usr/lib/sddm/sddm-helper --socket /tmp/sddm-auth8f3008df-c243-4dee-a3db-066d8a76e127 --id 1 --start /usr/bin/startplasma-x11 --user panlukasz
 panluka+     939  0.0  0.1 144988 18572 ?        Sl   15:40   0:00 /usr/bin/startplasma-x11
-panluka+     944  0.0  0.0  12496  6080 ?        Ss   15:40   0:05 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-panluka+     981  0.0  0.5 1065408 87184 ?       Sl   15:40   0:07 /usr/bin/kded5
-panluka+     985  2.5  1.1 3687388 183696 ?      Sl   15:40   7:52 /usr/bin/kwin_x11
+panluka+     944  0.0  0.0  12496  6272 ?        Ss   15:40   0:12 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+panluka+     981  0.0  0.9 1649124 150260 ?      Sl   15:40   0:11 /usr/bin/kded5
+panluka+     985  2.6  1.3 3796852 218524 ?      Rl   15:40  13:12 /usr/bin/kwin_x11
 panluka+    1024  0.0  0.2 283060 45388 ?        Ssl  15:40   0:01 /usr/bin/kglobalaccel5
-panluka+    1045  0.0  0.3 287248 50400 ?        Sl   15:40   0:01 /usr/bin/ksmserver
-panluka+    1055  0.0  0.2 285792 46428 ?        Sl   15:40   0:02 /usr/bin/kaccess
-panluka+    1059  0.0  0.2 268748132 39864 ?     SNl  15:40   0:03 /usr/bin/baloo_file
-panluka+    1061  0.0  0.1 227836 22232 ?        Sl   15:40   0:01 /usr/bin/xembedsniproxy
-panluka+    1069  1.6  1.5 2155668 255192 ?      Sl   15:40   5:11 /usr/bin/plasmashell
-panluka+    1080  0.0  0.1 228796 23244 ?        Sl   15:40   0:01 /usr/bin/gmenudbusmenuproxy
-panluka+    1093  0.4  0.0 1288240 15204 ?       S<sl 15:40   1:18 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-panluka+    1193  0.3  0.2 247940 34124 ?        Sl   15:40   0:59 /usr/bin/ksystemstats
+panluka+    1045  0.0  0.3 287248 50400 ?        Sl   15:40   0:02 /usr/bin/ksmserver
+panluka+    1055  0.0  0.2 286156 46784 ?        Sl   15:40   0:03 /usr/bin/kaccess
+panluka+    1059  0.0  0.2 268748264 40840 ?     SNl  15:40   0:04 /usr/bin/baloo_file
+panluka+    1061  0.0  0.1 228436 23452 ?        Sl   15:40   0:01 /usr/bin/xembedsniproxy
+panluka+    1069  1.8  1.6 2389208 271944 ?      Sl   15:40   9:18 /usr/bin/plasmashell
+panluka+    1080  0.0  0.1 229208 23596 ?        Sl   15:40   0:01 /usr/bin/gmenudbusmenuproxy
+panluka+    1093  0.4  0.0 1886260 15356 ?       S<sl 15:40   2:22 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+panluka+    1193  0.3  0.2 247940 34124 ?        Sl   15:40   1:31 /usr/bin/ksystemstats
 panluka+    1197  0.0  0.0   4072  2336 ?        S    15:40   0:00 /usr/bin/ksysguardd
-panluka+    1206  1.1  0.0   4072  2360 ?        S    15:41   3:24 /usr/bin/ksysguardd
-panluka+    1208  0.0  0.6 568456 101188 ?       Sl   15:41   0:06 /usr/bin/python /usr/bin/firewall-applet
-panluka+    1216  0.0  0.2 356848 46404 ?        Sl   15:41   0:02 /usr/bin/kup-daemon
-panluka+    3586  0.0  0.3 292248 49480 ?        Sl   15:45   0:02 /usr/bin/plasma-browser-integration-host /usr/lib/mozilla/native-messaging-hosts/org.kde.plasma.browser_integration.json plasma-browser-integration@kde.org
-panluka+    6947  0.0  0.8 269633652 133888 ?    Sl   15:54   0:07 /usr/bin/dolphin
-panluka+   14440  0.0  1.2 2520920 202360 ?      Ssl  16:14   0:03 /usr/bin/krunner
-panluka+   53713  0.1  0.7 1109584 124068 ?      Sl   18:02   0:15 /usr/bin/konsole
-panluka+   53731  0.0  0.0  11224  5400 pts/1    Ss   18:02   0:00 /bin/bash
-  498  cd kat/
-  499  touch processes.txt
-  500  ps aux > processes.txt 
-  501  cp processes.txt copy.txt
-  502  cd ..
-  503  mkdir backup
-  504  mv kat/copy.txt backup/
-  505  man wc
-  506  wc -l kat/processes.txt > selected.txt
-  507  man grep
-  508  grep "/bin" kat/processes.txt
-  509  grep "/bin" kat/processes.txt >> selected.txt 
-  510  history
-  511  history | tail -n14 > commands.txt
+panluka+    1206  1.0  0.0   4072  2360 ?        S    15:41   5:10 /usr/bin/ksysguardd
+panluka+    1208  0.0  0.6 568616 101188 ?       Sl   15:41   0:09 /usr/bin/python /usr/bin/firewall-applet
+panluka+    1216  0.0  0.2 357284 47168 ?        Sl   15:41   0:02 /usr/bin/kup-daemon
+panluka+    3586  0.0  0.3 292380 49480 ?        Sl   15:45   0:02 /usr/bin/plasma-browser-integration-host /usr/lib/mozilla/native-messaging-hosts/org.kde.plasma.browser_integration.json plasma-browser-integration@kde.org
+panluka+    6947  0.0  0.8 269633812 134440 ?    Sl   15:54   0:08 /usr/bin/dolphin
+panluka+   14440  0.0  1.2 2520924 202976 ?      Ssl  16:14   0:04 /usr/bin/krunner
+panluka+   53713  0.1  0.7 1109840 124452 ?      Sl   18:02   0:23 /usr/bin/konsole
+panluka+   53731  0.0  0.0  11344  5468 pts/1    Ss   18:02   0:00 /bin/bash
+panluka+  118514  0.0  0.0  10932  5148 pts/2    Ss+  20:57   0:00 /bin/bash
+  504  mkdir kat
+  505  touch kat/processes.txt
+  506  ps aux > kat/processes.txt 
+  507  cp kat/processes.txt copy.txt
+  508  mkdir backup
+  509  mv copy.txt backup/
+  510  wc -l kat/processes.txt > selected.txt
+  511  grep /bin kat/processes.txt >> selected.txt 
+  512  history
+  513  history | tail -n10 > commands.txt
 [panlukasz@BlackMachine 1 GNU\Linux]$ 
