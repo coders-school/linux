@@ -1,0 +1,27 @@
+rogal255@MSI-Ubuntu:~/Homework1$ cat selected.txt commands.txt
+276 processes.txt
+message+     660  0.0  0.0   8956  5864 ?        Ss   20:52   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         678  0.0  0.2  50480 20004 ?        Ss   20:52   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         799  0.0  0.2 129024 22600 ?        Ssl  20:52   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+rogal255     817  0.1  0.2 2206228 19464 ?       S<sl 20:52   0:04 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+rogal255     825  0.0  0.1 398852  8220 ?        SLl  20:52   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+rogal255     829  0.0  0.0 175220  6596 tty2     Ssl+ 20:52   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+rogal255     837  0.0  0.0   8284  5436 ?        Ss   20:52   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+rogal255    1062  0.0  0.0   6040   456 ?        Ss   20:52   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+rogal255    1089  0.0  0.0   7248  4292 ?        S    20:52   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+rogal255    1120  3.7  3.1 4432844 252700 ?      Ssl  20:52   1:41 /usr/bin/gnome-shell
+rogal255    1240  0.0  0.3 2941448 26748 ?       Sl   20:52   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+rogal255    1381  0.2  3.5 1324484 280176 ?      Sl   20:52   0:07 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
+ 2049  mkdir Homework1
+ 2050  cd Homework1
+ 2051  touch processes.txt
+ 2052  ps aux > processes.txt
+ 2053  cp processes.txt copy.txt
+ 2054  mkdir backup
+ 2055  mv copy.txt ./backup/copy.txt
+ 2056  wc -l processes.txt
+ 2057  wc -l processes.txt > selected.txt
+ 2058  grep "/bin" processes.txt >> selected.txt
+ 2059  man history
+ 2060  history
+ 2061  history | tail -n13 > commands.txt
