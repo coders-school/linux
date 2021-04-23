@@ -1,0 +1,33 @@
+[piotr@djslab hw]$ cat selected.txt commands.txt
+  249  3215 28656 processes.txt
+102:dbus         864  0.0  0.1 268896  2908 ?        Ss   07:48   0:00 /usr/bin/dbus-broker-launch --scope system --audit
+107:root         876  0.0  0.6 338008 17740 ?        Ssl  07:48   0:01 /usr/bin/python3 -s /usr/sbin/firewalld --nofork --nopid
+124:root         996  0.0  0.3 1073612 10376 ?       Ss   07:48   0:00 /usr/bin/abrt-dump-journal-core -D -T -f -e
+125:root         997  0.0  0.3 1081864 10436 ?       Ss   07:48   0:00 /usr/bin/abrt-dump-journal-oops -fxtD
+126:root         998  0.0  0.3 1081804 10140 ?       Ss   07:48   0:00 /usr/bin/abrt-dump-journal-xorg -fxtD
+134:postgres    1122  0.0  0.5 416992 14480 ?        Ss   07:48   0:00 /usr/bin/postmaster -D /var/lib/pgsql/data
+158:piotr       1390  0.0  0.1 277564  2848 ?        Ss   07:48   0:00 /usr/bin/dbus-broker-launch --scope user
+163:piotr       1540  0.0  0.0   7252    44 ?        Ss   07:48   0:00 /usr/bin/ssh-agent /bin/sh -c exec -l /bin/bash -c "startxfce4"
+165:piotr       1576  0.0  0.1 268472  2760 ?        S    07:48   0:00 /usr/bin/dbus-broker-launch --config-file=/usr/share/defaults/at-spi2/accessibility.conf --scope user
+168:piotr       1593  0.0  0.0 365092  1940 ?        Ss   07:48   0:00 /usr/bin/gpg-agent --sh --daemon --write-env-file /home/piotr/.cache/gpg-agent-info
+183:piotr       1696  1.6  0.3 1755424 10012 ?       S<sl 07:48   1:31 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+192:piotr       1822  0.0  0.6 431728 18540 ?        Sl   07:48   0:00 /usr/bin/python3 /usr/bin/seapplet
+197:piotr       1889  0.0  0.6 786620 19012 ?        Sl   07:48   0:02 /usr/bin/python3 /usr/bin/dnfdragora-updater
+202:piotr       2679  1.9  0.7 2829480 20364 ?       Sl   07:54   1:40 /usr/bin/vlc --started-from-file /home/piotr/Wideo/simplesr2-(2).mp4
+203:piotr       3582  0.0  0.2 595272  6272 ?        SLsl 07:59   0:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+219:piotr       5327  0.0  0.1 111676  3652 ?        Ssl  08:14   0:00 /usr/bin/pipewire
+220:piotr       5332  0.0  0.1  95928  3640 ?        Sl   08:14   0:00 /usr/bin/pipewire-media-session
+ 1079  mkdir hw
+ 1080  cd hw
+ 1081  touch processes.txt
+ 1082  ps aux >> processes.txt
+ 1083  cp processes.txt copy.txt
+ 1084  mkdir backup
+ 1085  mv copy.txt backup
+ 1086  wc processes.txt
+ 1087  wc processes.txt >> selected.txt
+ 1088  grep "/bin*" processes.txt
+ 1089  grep -rni "/bin*" processes.txt >> selected.txt
+ 1090  cat selected.txt
+ 1091  history
+ 1092  history | tail -n 14 >> commands.txt
