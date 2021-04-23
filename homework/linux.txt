@@ -1,38 +1,16 @@
-cat selected.txt commands.txt
-     424 processes.txt
- 1563  mkdir CodersSchool
- 1564  ls -l
- 1565  cd CodersSchool
- 1566  clear
- 1567  touch processes.txt
- 1568  ps aux > processes.txt
- 1569  cat processes.txt
- 1570  ls -l
- 1571  clear
- 1572  cp processes.txt copy.txt
- 1573  cat copy.txt
- 1574  clear
- 1575  mkdir backup
- 1576  mv copy.txt backup
- 1577  ls -l
- 1578  ls -l backup
- 1579  wc -l processes.txt
- 1580  wc -l processes.txt | awk '{ print $1 }'
- 1581  wc -l processes.txt | awk '{ print $1 }' > selected.txt
- 1582  grep -rni */bin processes.txt
- 1583  grep -rni "*/bin" processes.txt
- 1584  grep -rni "*bin" processes.txt
- 1585  grep -rni "*/sbin" processes.txt
- 1586  grep -rni */sbin processes.txt
- 1587  grep -rni "*/sbin" processes.txt
- 1588  grep -rni "*/sbin" < processes.txt
- 1589  grep /bin processes.txt
- 1590  grep /sbin processes.txt
- 1591  ps aux > processes.txt
- 1592  grep /bin processes.txt
- 1593  grep -ni /bin processes.txt
- 1594  grep -ni /sbin processes.txt
- 1595  grep -ni /bin processes.txt
- 1596  grep -ni /bin processes.txt >> selected.txt
- 1597  history
- 1598  history | tail -n45
+❯ cat selected.txt commands.txt
+     434 processes.txt
+ 1638  mkdir CodersSchool
+ 1639  cd CodersSchool
+ 1640  touch processes.txt
+ 1641  ps aux > processes.txt
+ 1642  cp processes.txt copy.txt
+ 1643  mkdir backup
+ 1644  mv copy.txt backup
+ 1645  ls -l backup
+ 1646  wc -l processes.txt
+ 1647  wc -l processes.txt > selected.txt
+ 1648  cat selected.txt
+ 1649  grep -ni /bin processes.txt >> selected.txt
+ 1650  cat selected.txt
+ 1651  history
