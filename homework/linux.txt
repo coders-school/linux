@@ -1,0 +1,77 @@
+cat selected.txt commands.txt 
+246 processes.txt
+129:message+    1016  0.0  0.0   9940  6108 ?        Ss   10:51   0:03 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+133:root        1026  0.0  0.2  35104 18008 ?        Ss   10:51   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+148:root        1210  0.0  0.2 113040 20436 ?        Ssl  10:51   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+149:root        1211  0.0  0.1 141268 14692 ?        Ssl  10:51   0:00 /usr/bin/sddm
+154:whoopsie    1387  0.0  0.1 251792 14548 ?        Ssl  10:51   0:00 /usr/bin/whoopsie -f
+157:root        1394  0.0  0.1  56660 15220 ?        S    10:51   0:00 /usr/lib/x86_64-linux-gnu/sddm/sddm-helper --socket /tmp/sddm-auth347031f2-81b3-4644-8216-01c00e5f0a48 --id 1 --start /usr/bin/startplasma-x11 --user bart
+160:bart        1404  0.0  0.0 100648  7620 ?        Ssl  10:51   0:00 /usr/bin/pipewire
+161:bart        1405  0.0  0.2 1224348 18708 ?       S<sl 10:51   0:33 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+162:bart        1407  0.0  0.0   8920  4996 ?        Ss   10:51   0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+163:bart        1408  0.0  0.0  26744  7504 ?        Sl   10:51   0:00 /usr/bin/pipewire-media-session -d bluez5
+164:bart        1412  0.0  0.0 242748  7076 ?        Sl   10:51   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+166:bart        1425  0.0  0.4 279812 37896 ?        Sl   10:51   0:00 /usr/bin/kwalletd5 --pam-login 7 3
+167:bart        1426  0.0  0.1 134848 12836 ?        Sl   10:51   0:00 /usr/bin/startplasma-x11
+168:bart        1478  0.0  0.0   6040   448 ?        Ss   10:51   0:00 /usr/bin/ssh-agent /usr/bin/im-launch /usr/bin/startplasma-x11
+169:bart        1496  0.0  0.1 314712  8520 ?        Ssl  10:51   0:19 /usr/bin/ibus-daemon --daemonize --xim
+176:bart        1547  0.0  0.0   8228  4324 ?        S    10:51   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+186:bart        1608  0.0  0.0 242452  7628 ?        Sl   10:51   0:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+187:bart        1619  0.0  3.0 1094308 248944 ?      Sl   10:51   0:05 /usr/bin/kded5
+188:bart        1623  0.9  1.5 3205028 122584 ?      Sl   10:51   6:20 /usr/bin/kwin_x11
+189:bart        1633  0.0  0.4 279000 38328 ?        Sl   10:51   0:00 /usr/bin/kglobalaccel5
+192:bart        1654  0.0  0.5 282464 42892 ?        Sl   10:51   0:01 /usr/bin/ksmserver
+195:bart        1671  0.0  0.4 268671188 39356 ?     SNl  10:51   0:01 /usr/bin/baloo_file
+196:bart        1673  0.2  3.4 2532828 275440 ?      Sl   10:51   1:33 /usr/bin/plasmashell
+197:bart        1679  0.0  0.4 283692 38968 ?        Sl   10:51   0:00 /usr/bin/kaccess
+198:bart        1684  0.0  0.2 237808 19896 ?        Sl   10:51   0:00 /usr/bin/xembedsniproxy
+199:bart        1696  0.0  0.2 236904 21876 ?        Sl   10:51   0:00 /usr/bin/gmenudbusmenuproxy
+200:bart        1697  0.0  0.0   7664  3976 ?        S    10:51   0:00 /usr/bin/xsettingsd
+207:bart        1820  0.0  0.1 138884 15736 ?        Sl   10:51   0:02 /usr/bin/ksystemstats
+208:bart        1822  0.0  0.0   4468  2748 ?        S    10:51   0:10 /usr/bin/ksysguardd
+214:bart        2144  0.0  0.4 280036 38748 ?        Sl   10:56   0:00 /usr/bin/plasma-browser-integration-host /usr/lib/mozilla/native-messaging-hosts/org.kde.plasma.browser_integration.json plasma-browser-integration@kde.org
+221:bart        3857  0.2  1.3 750344 111764 ?       Sl   16:02   0:41 /usr/bin/konsole
+222:bart        3865  0.0  0.0  13628  5184 pts/1    Ss   16:02   0:00 /bin/bash
+224:bart        4848  0.0  0.0  13512  5340 pts/2    Ss   20:25   0:00 /bin/bash
+226:bart        4861  0.0  0.0  13512  5392 pts/3    Ss+  20:26   0:00 /bin/bash
+ 2078  mkdir zadanie_domowe_01
+ 2079  touch processes.txt
+ 2080  ps aux
+ 2081  ps aux > processes.txt 
+ 2082  ls
+ 2083  rm processes.txt 
+ 2084  ls
+ 2085  cd zadanie_domowe_01/
+ 2086  touch processes.txt
+ 2087  ls
+ 2088  ps aux > processes.txt 
+ 2089  cat processes.txt 
+ 2090  cp processes.txt copy.txt
+ 2091  ls
+ 2092  mkdir backup
+ 2093  mv copy.txt backup/copy.txt
+ 2094  l
+ 2095  ls
+ 2096  l
+ 2097  ls
+ 2098  ls backup/
+ 2099  wc
+ 2100  wc processes.txt 
+ 2101  wc -l
+ 2102  wc -l processes.txt 
+ 2103  wc --help
+ 2104  man wc
+ 2105  wc -l processes.txt 
+ 2106  wc -l processes.txt >> selected.txt
+ 2107  cat selected.txt 
+ 2108  grep
+ 2109  grep -rni "/bin" processes.txt
+ 2110  grep -rni "/bin" processes.txt >> selected.txt 
+ 2111  history
+ 2112  bc | 111 - 78
+ 2113  bc | echo 111 - 78
+ 2114  echo 111-78
+ 2115  echo 111-78 | bc
+ 2116  history
+ 2117  history | tail -n 38
+ 2118  history | tail -n 41 >> commands.txt
