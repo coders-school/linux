@@ -20,7 +20,7 @@
  1079  mkdir hw
  1080  cd hw
  1081  touch processes.txt
- 1082  ps aux >> processes.txt
+ 1082  ps aux > processes.txt
  1083  cp processes.txt copy.txt
  1084  mkdir backup
  1085  mv copy.txt backup
