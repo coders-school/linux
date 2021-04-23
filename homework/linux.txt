@@ -1,0 +1,28 @@
+rafal@rafal-ThinkPad-T430:~/Desktop/Terminal/Terminal/Terminal/Terminal$ cat selected.txt commands.txt 
+248 processes.txt
+message+    1009  0.0  0.0   9924  6616 ?        Ss   00:20   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root        1019  0.0  0.2  39328 20220 ?        Ss   00:20   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root        1171  0.0  0.2 117868 22680 ?        Ssl  00:20   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+whoopsie    1649  0.0  0.1 253132 15652 ?        Ssl  00:20   0:00 /usr/bin/whoopsie -f
+rafal       1781  0.2  0.2 3055488 20444 ?       S<sl 00:21   0:14 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+rafal       1787  0.0  0.0   8448  5796 ?        Ss   00:21   0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+rafal       1791  0.0  0.0 240188  7424 ?        Sl   00:21   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+rafal       1862  0.0  0.0 164020  6460 tty2     Ssl+ 00:21   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+rafal       1955  0.0  0.0   6040   460 ?        Ss   00:21   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+rafal       1981  0.0  0.0   7248  4304 ?        S    00:21   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+rafal       2012  7.3  2.4 4407584 245728 ?      Rsl  00:21   7:00 /usr/bin/gnome-shell
+rafal       2111  0.0  0.2 2733696 26424 ?       Sl   00:21   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+rafal       2261  0.0  0.6 1179664 63800 ?       Sl   00:21   0:04 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
+rafal       4601  0.0  0.7 1195120 72744 ?       Sl   00:52   0:03 /usr/bin/nautilus --gapplication-service
+ 2144  mkdir Terminal
+ 2145  cd Terminal/
+ 2146  touch processes.txt
+ 2147  ps aux > processes.txt 
+ 2148  cp processes.txt copy.txt
+ 2149  mkdir backup
+ 2150  mv copy.txt backup/
+ 2151  wc -l processes.txt 
+ 2152  wc -l processes.txt > selected.txt
+ 2153  grep /bin processes.txt >> selected.txt 
+ 2154  history
+ 2155  history | tail -12 >> commands.txt
