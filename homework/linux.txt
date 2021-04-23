@@ -1,5 +1,5 @@
-❯ cat selected.txt commands.txt
-417
+cat selected.txt commands.txt
+     424 processes.txt
  1563  mkdir CodersSchool
  1564  ls -l
  1565  cd CodersSchool
