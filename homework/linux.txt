@@ -1,0 +1,91 @@
+kuba@kuba-X570-AORUS-ELITE:~/dowolna_nazwa$ cat selected.txt commands.txt 
+345 processes.txt
+188:/bin
+191:/bin
+191:/bin
+214:/bin
+224:/bin
+227:/bin
+228:/bin
+228:/bin
+232:/bin
+234:/bin
+286:/bin
+  425  mkdir dowolna_nazwa
+  426  mkdir /dowolna_nazwa
+  427  mkdir nazwa
+  428  mkdir dowolna
+  429  ls
+  430  pwd
+  431  cd gome
+  432  cd kuba
+  433  cd home
+  434  ls
+  435  cd kuba
+  436  mkdir dowolna_nazwa
+  437  cd /dowolna_nazwa
+  438  cd dowolna_nazwa
+  439  touch processes.txt
+  440  echo ps aux >> processes.txrt
+  441  ls
+  442  rm processes.txrt
+  443  ls
+  444  echo ps aux >> processes.txt 
+  445  cp processes.txt copy.txt
+  446  mkdir backup
+  447  mv copy.txt /backup
+  448  ls
+  449  mv copy.txt /backup
+  450  mv --he;[
+  451  mv --help
+  452  copy.txt backup
+  453  ls
+  454  mv copy.txt backup
+  455  wc processes.txt
+  456  cat processes.txt 
+  457  rm -rf backup
+  458  ;ls
+  459  ls
+  460  ps aux
+  461  ps aux > processes.txt 
+  462  ls
+  463  cat processes.txt 
+  464  wc processes.txt 
+  465  help -wc
+  466  wc --help
+  467  wc -l processes.txt 
+  468  wc -L pr
+  469  wc -L processes.txt 
+  470  wc -l processes.txt 
+  471  cat processes.txt | wc -l
+  472  cat processes.txt 
+  473  cd ../
+  474  rm -rf /dowolna_nazwa
+  475  ls
+  476  rm -rf dowolna_nazwa
+  477  ls
+  478  clear
+  479  mkdir dowolna_nazwa
+  480  cd dowolna>nazwa
+  481  cd dowolna_nazwa
+  482  touch processes.txt
+  483  ps aux >> processes.txt 
+  484  cat processes.txt 
+  485  wc -l processes.txt 
+  486  cp processes.txt copy.txt
+  487  mkdir backup
+  488  mv copy.txt backup/
+  489  wc -l processes.txt >> selected.txt
+  490  grep -rn bin processes.txt 
+  491  grep -n /bin processes.txt 
+  492  grep --help
+  493  grep -c /bin processes.txt 
+  494  man grep
+  495  grep -lo /bin processes.txt 
+  496  grep -l /bin processes.txt 
+  497  grep -no /bin processes.txt 
+  498  grep -no /bin processes.txt >> selected.txt 
+  499  history
+  500  history | tail -n75
+  501  history | tail -n 77 >> commands.txt
+kuba@kuba-X570-AORUS-ELITE:~/dowolna_nazwa$ 
