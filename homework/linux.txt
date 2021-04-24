@@ -1,0 +1,43 @@
+cat selected.txt commands.txt 
+157 processes.txt
+81:message+     573  0.1  0.0   8852  5788 ?        Ss   10:24   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+83:root         589  0.0  0.2  34180 18136 ?        Ss   10:24   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+93:root         701  0.0  0.2 113016 20912 ?        Ssl  10:24   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+95:whoopsie     766  0.0  0.1 325316 14748 ?        Ssl  10:24   0:00 /usr/bin/whoopsie -f
+101:root        1048  0.0  0.1 139280 14344 ?        Ssl  10:24   0:00 /usr/bin/sddm
+106:root        1160  0.0  0.1  53960 14420 ?        S    10:25   0:00 /usr/lib/x86_64-linux-gnu/sddm/sddm-helper --socket /tmp/sddm-authf6060818-5155-4d1c-9f81-7ff758cee251 --id 1 --start /usr/bin/startplasma-x11 --user student
+109:student     1186  0.0  0.2 624352 18756 ?        S<sl 10:25   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+110:student     1191  0.0  0.0   7636  4804 ?        Ss   10:25   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+111:student     1193  0.0  0.4 277792 38620 ?        Sl   10:25   0:00 /usr/bin/kwalletd5 --pam-login 7 3
+112:student     1194  0.0  0.1 125512 11816 ?        Sl   10:25   0:00 /usr/bin/startplasma-x11
+113:student     1242  0.0  0.0  25104   364 ?        S    10:25   0:00 /usr/bin/VBoxClient --clipboard
+114:student     1243  0.0  0.0 157508  4044 ?        Sl   10:25   0:00 /usr/bin/VBoxClient --clipboard
+115:student     1251  0.0  0.0  25104   364 ?        S    10:25   0:00 /usr/bin/VBoxClient --seamless
+116:student     1252  0.0  0.0 157340  2840 ?        Sl   10:25   0:00 /usr/bin/VBoxClient --seamless
+117:student     1256  0.0  0.0  25104   360 ?        S    10:25   0:00 /usr/bin/VBoxClient --draganddrop
+118:student     1257  0.1  0.0 157856  2756 ?        Sl   10:25   0:00 /usr/bin/VBoxClient --draganddrop
+119:student     1261  0.0  0.0  25104   360 ?        S    10:25   0:00 /usr/bin/VBoxClient --vmsvga
+120:student     1262  0.0  0.0 159620  3320 ?        Sl   10:25   0:00 /usr/bin/VBoxClient --vmsvga
+121:student     1274  0.0  0.0   6032   456 ?        Ss   10:25   0:00 /usr/bin/ssh-agent /usr/bin/im-launch /usr/bin/startplasma-x11
+127:student     1321  0.0  0.4 281752 38940 ?        Sl   10:25   0:00 /usr/bin/kaccess
+128:student     1323  0.0  0.2 238464 23812 ?        Sl   10:25   0:00 /usr/bin/plasma_session
+129:student     1339  0.0  0.4 276840 37180 ?        Sl   10:25   0:00 /usr/bin/kglobalaccel5
+131:student     1350  0.0  0.4 279044 39700 ?        Sl   10:25   0:00 /usr/bin/ksmserver
+132:student     1374  0.0  0.0   7684  3860 ?        S    10:25   0:00 /usr/bin/xsettingsd
+133:student     1375  7.2  2.1 3102632 175604 ?      Sl   10:25   0:55 /usr/bin/kwin_x11 -session 10b9e9d775000161321235800000010330006_1613215409_19701
+134:student     1379  0.0  0.2 236144 21432 ?        Sl   10:25   0:00 /usr/bin/xembedsniproxy
+136:student     1391  3.8  3.6 1417796 300252 ?      Sl   10:25   0:29 /usr/bin/plasmashell
+137:student     1394  0.0  0.2 268668208 24304 ?     RNl  10:25   0:00 /usr/bin/baloo_file
+140:student     1416  0.0  0.2 235456 22772 ?        Sl   10:25   0:00 /usr/bin/gmenudbusmenuproxy
+145:student     1476  0.0  0.0   7108  3968 ?        S    10:25   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+148:student     1588  0.3  1.1 720820 95528 ?        Sl   10:26   0:02 /usr/bin/konsole
+149:student     1602  0.0  0.0  13276  5272 pts/1    Ss   10:26   0:00 /bin/bash
+   78  touch processes.txt
+   79  ps aux > processes.txt 
+   80  cp processes.txt copy.txt
+   81  mkdir backup
+   82  mv copy.txt backup/
+   83  wc -l processes.txt > selected.txt
+   84  grep -n "/bin" processes.txt >> selected.txt 
+   85  history
+   86  history | tail -n 9 > commands.txt
