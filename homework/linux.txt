@@ -1,29 +1,29 @@
 [arek@OfficeJet zadanie0x0d]$ cat selected.txt commands.txt
-152 processes.txt
-dbus         307  0.0  0.0  12252  5824 ?        Ss   15:29   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-root         308  0.0  0.1 478860 19928 ?        Ssl  15:29   0:09 /usr/bin/NetworkManager --no-daemon
-root         326  0.0  0.0   8964  5664 ?        Ss   15:29   0:00 sshd: /usr/bin/sshd -D [listener] 0 of 10-100 startups
-root         399  0.0  0.0  15044  9120 ?        Ss   15:29   0:00 /usr/bin/wpa_supplicant -u -s -O /run/wpa_supplicant
-arek         426  0.0  0.0   7396  3960 tty1     S+   15:29   0:00 /bin/sh /usr/bin/startx
-arek         456  0.0  0.0  11844  4888 ?        Ss   15:29   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-arek         466  0.0  0.0   7608  4344 pts/0    Ss+  15:29   0:00 /bin/bash
-arek         543  0.0  0.0   7264  2908 ?        S    15:32   0:00 /bin/bash
-arek         548  0.0  0.0   7264  3528 ?        S    15:32   0:00 bash /usr/bin/brave
-arek         978  0.0  0.0   7712  4460 pts/1    Ss+  15:32   0:00 /bin/bash
-arek        5061  0.0  0.0   7832  4412 pts/2    Ss   21:58   0:00 /bin/bash
-  551  mkdir zadanie0x0d
-  552  cd zadanie0x0d/
-  553  touch processes.txt
-  554  ls
-  555  ps aux > processes.txt
-  556  cp processes.txt copy.txt
-  557  ls
-  558  mkdir backup
-  559  ls
-  560  mv copy.txt backup/
-  561  ls
-  562  wc -l processes.txt > selected.txt
-  563  grep /bin processes.txt >> selected.txt
-  564  cat selected.txt
-  565  history
-  566  history | tail -n 16 > commands.txt
+151 processes.txt
+83:dbus         307  0.0  0.0  12252  5824 ?        Ss   15:29   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+84:root         308  0.0  0.1 478860 19928 ?        Ssl  15:29   0:09 /usr/bin/NetworkManager --no-daemon
+86:root         326  0.0  0.0   8964  5664 ?        Ss   15:29   0:00 sshd: /usr/bin/sshd -D [listener] 0 of 10-100 startups
+88:root         399  0.0  0.0  15044  9120 ?        Ss   15:29   0:00 /usr/bin/wpa_supplicant -u -s -O /run/wpa_supplicant
+92:arek         426  0.0  0.0   7396  3960 tty1     S+   15:29   0:00 /bin/sh /usr/bin/startx
+97:arek         456  0.0  0.0  11844  4888 ?        Ss   15:29   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+100:arek         466  0.0  0.0   7608  4344 pts/0    Ss+  15:29   0:00 /bin/bash
+103:arek         543  0.0  0.0   7264  2908 ?        S    15:32   0:00 /bin/bash
+104:arek         548  0.0  0.0   7264  3528 ?        S    15:32   0:00 bash /usr/bin/brave
+120:arek         978  0.0  0.0   7712  4460 pts/1    Ss+  15:32   0:00 /bin/bash
+137:arek        5061  0.0  0.0   7832  4412 pts/2    Ss   21:58   0:00 /bin/bash
+  579  mkdir zadanie0x0d
+  580  cd zadanie0x0d/
+  581  touch processes.txt
+  582  ls
+  583  ps aux > processes.txt
+  584  cp processes.txt copy.txt
+  585  ls
+  586  mkdir backup
+  587  ls
+  588  mv copy.txt backup/
+  589  ls
+  590  wc -l processes.txt > selected.txt
+  591  grep -n /bin processes.txt >> selected.txt
+  592  cat selected.txt
+  593  history
+  594  history | tail -n 16 > commands.txt
