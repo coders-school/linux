@@ -53,4 +53,9 @@ marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ cat selected.txt commands.txt
    14  history
    15*
    16  history | tail -n5 > commands.txt
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ wc -l processes.txt
+4 processes.txt
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ echo 4 > selected.txt
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ grep -rn "/bin" >> selected.txt
+grep: input file ‘selected.txt’ is also the output
 marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$
