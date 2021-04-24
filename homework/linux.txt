@@ -1,0 +1,56 @@
+linux@linux-HP-ENVY-x360-Convertible-15-bq1xx:~/Pulpit/zad1$ cat selected.txt commands.txt 
+271 processes.txt
+processes.txt:135:message+     938  0.0  0.0   8856  5996 ?        Ss   09:40   0:02 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+processes.txt:139:root         956  0.0  0.1  41848 20148 ?        Ss   09:40   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+processes.txt:156:linux       1194  0.4  0.1 1673436 21052 ?       S<sl 09:40   1:35 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+processes.txt:158:linux       1204  0.0  0.0   8188  5256 ?        Ss   09:40   0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+processes.txt:162:linux       1287  0.0  0.0   6032   456 ?        Ss   09:40   0:00 /usr/bin/ssh-agent /usr/bin/im-launch cinnamon-session-cinnamon
+processes.txt:165:linux       1324  0.0  0.0   7504  4628 ?        S    09:40   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+processes.txt:167:linux       1334  0.0  0.0 390540  8440 ?        SLl  09:40   0:00 /usr/bin/gnome-keyring-daemon --start --components=pkcs11
+processes.txt:216:linux       1764  0.0  0.0  21048  9888 ?        S    09:40   0:00 /usr/bin/python3 /usr/lib/blueberry/safechild /usr/sbin/rfkill event
+processes.txt:221:linux       1960  0.0  0.2  62420 34960 ?        S    09:40   0:00 /usr/bin/python3 /usr/share/system-config-printer/applet.py
+ 2000  mkdir zad1
+ 2001  cd zad1/
+ 2002  ls
+ 2003  touch processes.txt
+ 2004  ps aux
+ 2005  ps aux > processes.txt 
+ 2006  less processes.txt 
+ 2007  cp processes.txt copy.txt
+ 2008  ls
+ 2009  less copy.txt 
+ 2010  clear
+ 2011  ls 
+ 2012  mkdir backup
+ 2013  mv copy.txt backup/
+ 2014  ls
+ 2015  cd backup/
+ 2016  ls
+ 2017  cd..
+ 2018  cd ..
+ 2019  wc -n processes.txt 
+ 2020  wc -l processes.txt 
+ 2021  wc -l processes.txt >selected.txt 
+ 2022  ls
+ 2023  cat selected.txt 
+ 2024  grep -ni /bin *
+ 2025  grep -ni /bin * >> selected.txt 
+ 2026  ls
+ 2027  cat selected.txt 
+ 2028  history
+ 2029  tail | history 30
+ 2030  tail -n 30 | history
+ 2031  tail -n 30
+ 2032  tail -n
+ 2033  tail --help
+ 2034  tail -n +30 | history
+ 2035  history | tail -n +30
+ 2036  history 30
+ 2037  history | tail 
+ 2038  history |tail -n +30
+ 2039  history | tail 30
+ 2040  history | tail -n 
+ 2041  history | tail -n  10
+ 2042  history | tail -n  30
+ 2043  history
+ 2044  history |tail -n 46
