@@ -1,0 +1,34 @@
+pak2200@ospako:~/fwork_lin$ cat selected.txt commands.txt 
+257 processes.txt
+108:/bin
+111:/bin
+111:/bin
+122:/bin
+127:/bin
+129:/bin
+130:/bin
+133:/bin
+141:/bin
+149:/bin
+149:/bin
+149:/bin
+151:/bin
+154:/bin
+164:/bin
+192:/bin
+228:/bin
+229:/bin
+    1  mkdir fwork_lin
+    2  cd fwork_lin/
+    3  touch processes.txt
+    4  ps aux > processes.txt 
+    5  cp processes.txt copy.txt
+    6  mkdir backup
+    7  mv copy.txt backup/
+    8  wc -l processes.txt 
+    9  wc -l processes.txt > selected.txt
+   10  grep -no "/bin" processes.txt >> selected.txt 
+   11  history
+   12  history | tail  -n11
+   13  history | tail  -n13
+   14  history | tail  -n14 > commands.txt
