@@ -1,0 +1,31 @@
+kriskus@Lapek:~/CoderSchool$ cat newFolder/selected.txt newFolder/commands.txt 
+305 newFolder/processes.txt
+177:message+     844  0.0  0.0   9928  6460 ?        Ss   14:43   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+180:root         855  0.0  0.2  50484 20212 ?        Ss   14:43   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+197:root        1016  0.0  0.2 129284 22920 ?        Ssl  14:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+202:whoopsie    1586  0.0  0.1 253084 15260 ?        Ssl  14:43   0:00 /usr/bin/whoopsie -f
+209:kriskus     1951  0.0  0.2 2804760 20104 ?       S<sl 14:43   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+211:kriskus     1957  0.0  0.0   8288  5472 ?        Ss   14:43   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+212:kriskus     1959  0.0  0.0 251696  7288 ?        Sl   14:43   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+223:kriskus     2040  0.0  0.0 175348  6444 tty2     Ssl+ 14:43   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+226:kriskus     2128  0.0  0.0   6040   456 ?        Ss   14:43   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+228:kriskus     2154  0.0  0.0   7248  4368 ?        S    14:43   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+231:kriskus     2185  2.0  3.2 4648436 265740 ?      Ssl  14:43   0:53 /usr/bin/gnome-shell
+245:kriskus     2295  0.0  0.3 2941748 26680 ?       Sl   14:43   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+267:kriskus     2463  0.4  3.6 1349996 292724 ?      Sl   14:43   0:10 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
+276:kriskus     3468  0.2  0.8 1074576 71084 ?       Sl   14:45   0:05 /usr/bin/nautilus --gapplication-service
+280:kriskus     3694  0.0  0.3 206024 29628 ?        Sl   14:45   0:00 /usr/bin/python3 /usr/bin/chrome-gnome-shell /usr/lib/mozilla/native-messaging-hosts/org.gnome.chrome_gnome_shell.json chrome-gnome-shell@gnome.org
+303:kriskus     5056  0.6  0.7 832508 59284 ?        Sl   15:23   0:01 /usr/bin/gedit --gapplication-service
+  368  echo Start zadania
+  369  mkdir newFolder
+  370  touch newFolder/processes.txt
+  371  ps aux > newFolder/processes.txt
+  372  cp newFolder/processes.txt newFolder/copy.txt
+  373  mkdir backup
+  374  mv newFolder/copy.txt backup/copy.txt
+  375  wc -l newFolder/processes.txt
+  376  wc -l newFolder/processes.txt > newFolder/selected.txt
+  377  grep -rni /bin newFolder/processes.txt
+  378  grep -rni /bin newFolder/processes.txt >> newFolder/selected.txt
+  379  history
+  380  history | tail -n13 > newFolder/commands.txt
