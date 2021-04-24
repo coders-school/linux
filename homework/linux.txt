@@ -1,0 +1,56 @@
+marcin@DESKTOP-78O7L98:/mnt/c/Users/marcin/Desktop$ cd /mnt/c/homework/
+marcin@DESKTOP-78O7L98:/mnt/c/homework$ history -c
+marcin@DESKTOP-78O7L98:/mnt/c/homework$ mkdir exercise1
+marcin@DESKTOP-78O7L98:/mnt/c/homework$ cd exercise1/
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ touch processes.txt
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ ps aux
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0    892   580 ?        Sl   10:45   0:00 /init
+root         6  0.0  0.0    892    84 ?        Ss   10:45   0:00 /init
+root         7  0.0  0.0    892    84 ?        R    10:45   0:00 /init
+marcin       8  0.1  0.0  10172  5364 pts/0    Ss   10:45   0:00 -bash
+marcin      35  0.0  0.0  10616  3344 pts/0    R+   10:46   0:00 ps aux
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ ^C
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ cp processes.txt copy.txt
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ mkdir backup
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ mv copy.txt backup/
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ wc -l processes.txt
+4 processes.txt
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ wc -l processes.txt > selected.txt
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ grep -rn "/bin" processes.txt
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ grep -rn "bash" *
+backup/copy.txt:4:marcin       8  0.1  0.0  10172  5364 pts/0    Ss   10:45   0:00 -bash
+processes.txt:4:marcin       8  0.1  0.0  10172  5364 pts/0    Ss   10:45   0:00 -bash
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ grep -rn "bash" processes.txt
+4:marcin       8  0.1  0.0  10172  5364 pts/0    Ss   10:45   0:00 -bash
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ echo 4 >> selected.txt
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ history
+    1  mkdir exercise1
+    2  cd exercise1/
+    3  touch processes.txt
+    4  ps aux
+    5  cp processes.txt copy.txt
+    6  mkdir backup
+    7  mv copy.txt backup/
+    8  wc -l processes.txt
+    9  wc -l processes.txt > selected.txt
+   10  grep -rn "/bin" processes.txt
+   11  grep -rn "bash" *
+   12  grep -rn "bash" processes.txt
+   13  echo 4 >> selected.txt
+   14  history
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ history | tail -n5
+   11  grep -rn "bash" *
+   12  grep -rn "bash" processes.txt
+   13  echo 4 >> selected.txt
+   14  history
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ history | tail -n5 > commands.txt
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ cat selected.txt commands.txt
+4 processes.txt
+4
+   12  grep -rn "bash" processes.txt
+   13  echo 4 >> selected.txt
+   14  history
+   15*
+   16  history | tail -n5 > commands.txt
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$
