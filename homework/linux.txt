@@ -58,4 +58,4 @@ marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ wc -l processes.txt
 marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ echo 4 > selected.txt
 marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ grep -rn "/bin" >> selected.txt
 grep: input file ‘selected.txt’ is also the output
-marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ ps aux > processes.txt
