@@ -1,16 +1,18 @@
 ❯ cat selected.txt commands.txt
-     434 processes.txt
- 1638  mkdir CodersSchool
- 1639  cd CodersSchool
- 1640  touch processes.txt
- 1641  ps aux > processes.txt
- 1642  cp processes.txt copy.txt
- 1643  mkdir backup
- 1644  mv copy.txt backup
- 1645  ls -l backup
- 1646  wc -l processes.txt
- 1647  wc -l processes.txt > selected.txt
- 1648  cat selected.txt
- 1649  grep -ni /bin processes.txt >> selected.txt
- 1650  cat selected.txt
- 1651  history
+     440 processes.txt
+16:root              6384   0,0  0,0  4562784   2736 s000  S     1:04     0:00.00 /bin/zsh
+17:root              6382   0,0  0,0  4553552   1520 s000  S     1:04     0:00.00 /bin/zsh
+18:root              6380   0,0  0,0  4553568   2016 s000  S     1:04     0:00.00 /bin/zsh
+19:root              6359   0,0  0,0 408432752   8000 s000  S     1:04     0:00.44 /bin/zsh
+    7  mkdir CooderSchool
+    8  cd CooderSchool
+    9  touch processes.txt
+   10  ps aux > processes.txt
+   11  cp processes.txt copy.txt
+   12  mkdir backup
+   13  mv copy.txt backup/
+   14  wc -l processes.txt
+   15  wc -l processes.txt  > selected.txt
+   16  grep -n /bin processes.txt >> selected.txt
+   17  history
+   18  history | tail -n12 > commands.txt
