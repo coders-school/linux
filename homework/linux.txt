@@ -30,6 +30,6 @@ raxonpc@raxonpc-desktop:~/Desktop/Homework$ cat selected.txt commands.txt
   381  mv copy.txt backup
   382  wc -l processes.txt
   383  wc -l processes.txt > selected.txt
-  384  grep -ne "/bin" processes.txt >> selected.txt
+  384  grep -ne /bin processes.txt >> selected.txt
   385  history
   386  history | tail -n11 > commands.txt
