@@ -1,38 +1,42 @@
-[demiurge@Jupiter ~]$ cat selected.txt commands.txt 
-321
+[demiurge@Jupiter linux]$ cat selected.txt commands.txt  
+326
 dbus         476  0.0  0.0  13356  7072 ?        Ss   18:35   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
 root         521  0.0  0.0 140492 17708 ?        Ssl  18:35   0:00 /usr/bin/sddm
 root         602  0.0  0.0  64652 18460 ?        S    18:41   0:00 /usr/lib/sddm/sddm-helper --socket /tmp/sddm-authca357f8e-a789-48e5-be7d-9bcd73d0231f --id 1 --start /usr/bin/startplasma-x11 --user demiurge
 demiurge     622  0.0  0.1 281156 45852 ?        Sl   18:41   0:00 /usr/bin/kwalletd5 --pam-login 7 8
 demiurge     623  0.0  0.0 142396 17808 ?        Sl   18:41   0:00 /usr/bin/startplasma-x11
-demiurge     628  0.0  0.0  13092  7032 ?        Ss   18:41   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+demiurge     628  0.0  0.0  13440  7348 ?        Ss   18:41   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
 demiurge     665  0.0  0.2 2053028 97884 ?       Sl   18:41   0:00 /usr/bin/kded5
-demiurge     669  2.0  0.5 4079024 176808 ?      Sl   18:41   0:17 /usr/bin/kwin_x11
+demiurge     669  1.7  0.5 4116976 185896 ?      Sl   18:41   0:34 /usr/bin/kwin_x11
 demiurge     693  0.0  0.1 280244 45096 ?        Ssl  18:41   0:00 /usr/bin/kglobalaccel5
 demiurge     723  0.0  0.1 285888 51384 ?        Sl   18:41   0:00 /usr/bin/ksmserver
 demiurge     745  0.0  0.0 225580 22932 ?        Sl   18:41   0:00 /usr/bin/xembedsniproxy
 demiurge     747  0.0  0.1 283196 45624 ?        Sl   18:41   0:00 /usr/bin/kaccess
-demiurge     753  0.0  0.1 268745392 52772 ?     SNl  18:41   0:00 /usr/bin/baloo_file
-demiurge     758  0.9  1.5 5272812 500452 ?      Sl   18:41   0:07 /usr/bin/plasmashell
+demiurge     753  0.0  0.1 268745392 61512 ?     SNl  18:41   0:00 /usr/bin/baloo_file
+demiurge     758  0.5  1.3 5275256 447400 ?      Sl   18:41   0:11 /usr/bin/plasmashell
 demiurge     809  0.0  0.0 226328 23612 ?        Sl   18:41   0:00 /usr/bin/gmenudbusmenuproxy
-demiurge     821  0.0  0.0 1957548 14940 ?       S<sl 18:41   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-demiurge     883  0.0  0.2 669372 70408 ?        Sl   18:41   0:00 /usr/bin/kmix -session 10bedae269000161919294300000015050007_1619215252_140908
-demiurge     898  0.0  0.1 313476 62420 ?        Sl   18:41   0:00 /usr/bin/korgac -session 10bedae269000161919294300000015050008_1619215252_140908
+demiurge     821  0.0  0.0 2220048 15188 ?       S<sl 18:41   0:01 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+demiurge     883  0.0  0.2 669372 70732 ?        Sl   18:41   0:00 /usr/bin/kmix -session 10bedae269000161919294300000015050007_1619215252_140908
+demiurge     898  0.0  0.1 313476 62404 ?        Sl   18:41   0:00 /usr/bin/korgac -session 10bedae269000161919294300000015050008_1619215252_140908
 demiurge    1017  0.0  0.0  11712  5108 ?        S    18:41   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-demiurge    1184  0.2  0.2 637240 82948 ?        Sl   18:42   0:02 /usr/bin/konsole
+demiurge    1184  0.2  0.2 639312 85528 ?        Sl   18:42   0:04 /usr/bin/konsole
 demiurge    1192  0.0  0.0   7608  4400 pts/1    Ss   18:42   0:00 /bin/bash
-demiurge    1451  1.3  0.0 181800 26604 pts/1    Sl+  18:43   0:09 /usr/bin/python /usr/bin/bpytop
+demiurge    1451  1.3  0.0 181800 26604 pts/1    Sl+  18:43   0:25 /usr/bin/python /usr/bin/bpytop
 demiurge    1649  0.0  0.1 286208 48392 ?        Sl   18:44   0:00 /usr/bin/plasma-browser-integration-host /usr/lib/mozilla/native-messaging-hosts/org.kde.plasma.browser_integration.json plasma-browser-integration@kde.org
-demiurge    1894  0.0  0.0   7608  4280 pts/2    Ss   18:45   0:00 /bin/bash
+demiurge    1894  0.0  0.0   7608  4308 pts/2    Ss+  18:45   0:00 /bin/bash
 demiurge    3747  0.0  0.0 384552  9652 ?        SLl  18:46   0:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
 demiurge    5413  0.0  0.0   4240  3080 ?        S    18:50   0:00 /bin/bash /usr/share/mailspring/resources/app.asar.unpacked/mailsync --mode sync --info ibohatyrewicz@gmail.com
-   47  mkdir linux
-   48  nano -w processes.txt
-   49  ps aux >processes.txt
-   50  cp processes.txt copy.txt
+demiurge   11573  0.0  0.0 154980  1988 ?        Ssl  19:05   0:00 /usr/bin/speech-dispatcher --spawn --communication-method unix_socket --socket-path /run/user/1000/speech-dispatcher/speechd.sock
+demiurge   15114  0.0  0.0   7608  4392 pts/3    Ss   19:14   0:00 /bin/bash
+   44  mkdir linux
+   45  cd linux/
+   46  touch processes.txt
+   47  ps aux >processes.txt 
+   48  cp processes.txt copy.txt
+   49  mkdir backup
+   50  mv copy.txt backup/
    51  cat processes.txt | wc -l
    52  cat processes.txt | wc -l >selected.txt
-   53  cat processes.txt | grep "/bin" >>selected.txt 
-   54  cat selected.txt 
-   55  history 
-   56  history | tail -10 > commands.txt
+   53  cat processes.txt | grep /bin >>selected.txt 
+   54  history
+   55  history |tail -12 >commands.txt
