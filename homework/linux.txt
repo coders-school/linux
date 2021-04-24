@@ -1,39 +1,32 @@
 korczu@korczu-VirtualBox:~/Zadanie1$ cat selected.txt commands.txt 
-173 processes.txt
-79:message+     548  0.0  0.1   8928  5936 ?        Ss   16:54   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-81:root         565  0.0  0.4  50480 20068 ?        Ss   16:54   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-95:root         651  0.0  0.5 129268 22776 ?        Ssl  16:54   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-100:whoopsie     700  0.0  0.3 327176 15748 ?        Ssl  16:54   0:00 /usr/bin/whoopsie -f
-103:korczu       747  0.0  0.4 1682124 19536 ?       S<sl 16:54   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-105:korczu       752  0.0  0.1 251524  7360 ?        Sl   16:54   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
-106:korczu       756  0.0  0.1 175348  6696 tty2     Ssl+ 16:54   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-108:korczu       760  0.0  0.1  10544  7668 ?        Ss   16:54   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-121:korczu       961  0.0  0.0   6040   456 ?        Ss   16:54   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-123:korczu       990  0.0  0.1   7248  4272 ?        S    16:54   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-126:korczu      1024  0.8  8.6 3734624 348936 ?      Ssl  16:54   0:11 /usr/bin/gnome-shell
-139:korczu      1152  0.0  0.6 2610224 27004 ?       Sl   16:54   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-163:korczu      1324  0.1  1.7 993992 69816 ?        Sl   16:54   0:02 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
-  274  cd Zadanie1/
-  275  ls
-  276  cd ..
-  277  ls
-  278  mv processes.txt Zadanie1
-  279  cd Zadanie1/
-  280  ls
-  281  ps aux > processes.txt 
-  282  cat processes.txt 
-  283  cp processes.txt copy.txt
-  284  mkdir backup
-  285  cp copy.txt backup/
-  286  wc -l processes.txt 
-  287  wc -l processes.txt > selected.txt
-  288  grep -rn /bin processes.txt >> selected.txt 
-  289  cat selected.txt 
-  290  history
-  291  history | -n12 > commands.txt
-  292  history | tail -n12 > commands.txt
-  293  less commands.txt 
-  294  history
-  295  history | tail -n22 > commands.txt
+172 processes.txt
+78:message+     548  0.0  0.1   8928  6164 ?        Ss   kwi23   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+80:root         565  0.0  0.4  50480 20068 ?        Ss   kwi23   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+92:root         651  0.0  0.5 129268 22776 ?        Ssl  kwi23   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+97:whoopsie     700  0.0  0.3 327272 15852 ?        Ssl  kwi23   0:00 /usr/bin/whoopsie -f
+100:korczu       747  0.0  0.4 1944268 19704 ?       Ssl  kwi23   0:01 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+102:korczu       752  0.0  0.2 251688  8176 ?        SLl  kwi23   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+103:korczu       756  0.0  0.1 175348  6696 tty2     Ssl+ kwi23   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+105:korczu       760  0.0  0.2  14008 11272 ?        Ss   kwi23   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+118:korczu       961  0.0  0.0   6040   456 ?        Ss   kwi23   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+120:korczu       990  0.0  0.1   7248  4272 ?        S    kwi23   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+123:korczu      1024  0.1  9.0 3742568 365028 ?      Rsl  kwi23   1:17 /usr/bin/gnome-shell
+136:korczu      1152  0.0  0.6 2610224 27004 ?       Sl   kwi23   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+160:korczu      1324  0.0  1.7 993992 69816 ?        Sl   kwi23   0:02 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
+  309  mkdir Zadanie1
+  310  cd Zadanie1/
+  311  touch processes.txt
+  312  ps aux > processes.txt 
+  313  cp processes.txt copy.txt
+  314  mkdir backup
+  315  mv copy.txt backup
+  316  wc -l processes.txt 
+  317  wc -l processes.txt > selected.txt
+  318  grep -rn /bin processes.txt >> selected.txt 
+  319  history
+  320  history | tail -n11 > commands.txt
+  321  less commands.txt 
+  322  history
+  323  history | tail -n15 > commands.txt
 korczu@korczu-VirtualBox:~/Zadanie1$ 
 
