@@ -1,0 +1,32 @@
+pawel@pawel-GS63:~/Documents/Kurs2021/Linux/homework1$ cat selected.txt commands.txt 
+280 processes.txt
+message+     816  0.0  0.0   9868  6228 ?        Ss   13:55   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         825  0.0  0.0  50548 20128 ?        Ss   13:55   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         995  0.0  0.0 129284 22972 ?        Ssl  13:55   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+pawel       1013  1.4  0.0 3591424 22024 ?       S<sl 13:55   7:08 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+pawel       1018  0.0  0.0 251348  6924 ?        SLl  13:55   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+pawel       1022  0.0  0.0 175180  6616 tty2     Ssl+ 13:55   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+pawel       1026  0.0  0.0   8548  5716 ?        Ss   13:55   0:02 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+whoopsie    1314  0.0  0.0 253128 15556 ?        Ssl  13:55   0:00 /usr/bin/whoopsie -f
+pawel       1720  0.0  0.0   6040   460 ?        Ss   13:55   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+pawel       1746  0.0  0.0   7248  4264 ?        S    13:55   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+pawel       1777  2.4  0.8 4942784 290528 ?      Ssl  13:55  12:03 /usr/bin/gnome-shell
+pawel       1923  0.0  0.0 2941436 26384 ?       Sl   13:55   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+pawel       2081  0.0  0.9 1351308 294436 ?      Sl   13:55   0:09 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
+pawel      30840  0.0  0.0 170896  2248 ?        Ssl  21:11   0:00 /usr/bin/speech-dispatcher --spawn --communication-method unix_socket --socket-path /run/user/1000/speech-dispatcher/speechd.sock
+ 2011  touch processes.txt
+ 2012  ps aux >> processes.txt 
+ 2013  cp processes.txt copy.txt
+ 2014  mkdir backup
+ 2015  mv copy.txt backup/
+ 2016  wc -l processes.txt 
+ 2017  wc -l processes.txt >selected.txt
+ 2018  cat selected.txt 
+ 2019  grep "/bin" processes.txt >selected.txt 
+ 2020  cat selected.txt 
+ 2021  wc -l processes.txt >selected.txt
+ 2022  grep "/bin" processes.txt >>selected.txt 
+ 2023  cat selected.txt 
+ 2024  history 
+ 2025  history | tail -l16 >commands.txt
+ 2026  history | tail -n16 >commands.txt
