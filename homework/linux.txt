@@ -23,6 +23,6 @@ rafal       4601  0.0  0.7 1195120 72744 ?       Sl   00:52   0:03 /usr/bin/naut
  2150  mv copy.txt backup/
  2151  wc -l processes.txt 
  2152  wc -l processes.txt > selected.txt
- 2153  grep /bin processes.txt >> selected.txt 
+ 2153  grep -rni "/bin" processes.txt >> selected.txt 
  2154  history
- 2155  history | tail -12 >> commands.txt
+ 2155  history | tail -n 12 >> commands.txt
