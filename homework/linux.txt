@@ -1,72 +1,57 @@
-kasia@kasilap:~/Dokumenty/DyskD/CPP_workspace/kurs/homework$ cat selected.txt commands.txt 
-226 processes.txt
-2:root         1  0.0  0.1 169660 10340 ?        Ss   kwi23   0:02 /sbin/init
-70:root       479  0.0  0.0   8084  4788 ?        Ss   kwi23   0:22 /usr/sbin/haveged --Foreground --verbose=1 -w 1024
-72:root       516  0.0  0.1 318336  9948 ?        Ssl  kwi23   0:00 /usr/sbin/ModemManager --filter-policy=strict
-73:root       517  0.0  0.0   8504  2728 ?        Ss   kwi23   0:00 /usr/sbin/cron -f
-75:root       520  0.0  0.0 225824  3940 ?        Ssl  kwi23   0:00 /usr/sbin/rsyslogd -n -iNONE
-79:message+   525  0.0  0.0  10688  5476 ?        Ss   kwi23   0:22 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-80:root       526  0.0  0.1 874216 15204 ?        Ssl  kwi23   0:29 /usr/sbin/NetworkManager --no-daemon
-81:root       528  0.0  0.1  20276  9220 ?        Ss   kwi23   0:01 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+kasia@kasilap:~/Dokumenty/DyskD/CPP_workspace/homework$ cat selected.txt commands.txt 
+225 processes.txt
+79:message+   525  0.0  0.0  10688  5480 ?        Ss   kwi23   0:27 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
 84:root       556  0.0  0.2 110360 17208 ?        Ssl  kwi23   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-85:root       570  0.0  0.0   5612  1456 tty1     Ss+  kwi23   0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
-86:root       580  0.0  0.0  15852  6028 ?        Ss   kwi23   0:00 /usr/sbin/sshd -D
 87:root       581  0.0  0.1 138096 13216 ?        Ssl  kwi23   0:00 /usr/bin/sddm
-89:debian-+   605  0.0  0.6  63244 52364 ?        Ss   kwi23   0:17 /usr/bin/tor --defaults-torrc /usr/share/tor/tor-service-defaults-torrc -f /etc/tor/torrc --RunAsDaemon 0
-91:mysql      666  0.0  1.0 1778872 83388 ?       Ssl  kwi23   1:22 /usr/sbin/mysqld
-92:root       786  0.0  0.0  31428  5880 ?        SNs  kwi23   0:00 /usr/sbin/alsactl -E HOME=/run/alsa -s -n 19 -c rdaemon
-95:kasia      877  0.0  0.0  10356  5328 ?        Ss   kwi23   0:04 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+89:debian-+   605  0.0  0.6  63244 52364 ?        Ss   kwi23   0:21 /usr/bin/tor --defaults-torrc /usr/share/tor/tor-service-defaults-torrc -f /etc/tor/torrc --RunAsDaemon 0
+95:kasia      877  0.0  0.0  10440  5520 ?        Ss   kwi23   0:04 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
 97:kasia      967  0.0  0.0   9228  4048 ?        S    kwi23   0:02 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-100:kasia     1094  0.4  0.2 1660272 20636 ?       S<sl kwi23   9:35 /usr/bin/pulseaudio --daemonize=no
-112:kasia     2443  0.5  0.8 439372 68348 ?        Rl   19:29   0:04 /usr/bin/konsole
-113:kasia     2449  0.0  0.0   8044  4968 pts/1    Ss   19:29   0:00 /bin/bash
-128:root     24389  0.0  0.0  29892  6104 ?        Ss   12:39   0:00 /usr/sbin/cupsd -l
-129:root     24390  0.0  0.1 183352  8320 ?        Ssl  12:39   0:00 /usr/sbin/cups-browsed
-130:root     24439  0.0  0.1  59492 13420 ?        S    12:39   0:00 /usr/lib/x86_64-linux-gnu/sddm/sddm-helper --socket /tmp/sddm-auth00c7f8d7-9e0a-4c71-8620-3748469416d7 --id 3 --start /usr/bin/startkde --user kasia
-131:kasia    24443  0.0  0.4 303236 37744 ?        Sl   12:39   0:01 /usr/bin/kwalletd5 --pam-login 7 3
-132:kasia    24444  0.0  0.0   2388  1616 ?        S    12:39   0:00 /bin/sh /usr/bin/startkde
-133:kasia    24496  0.0  0.0   5852   472 ?        Ss   12:39   0:00 /usr/bin/ssh-agent /usr/bin/im-launch /usr/bin/startkde
-134:kasia    24513  0.0  0.1 387592  9772 ?        Ssl  12:39   0:10 /usr/bin/ibus-daemon --daemonize --xim
-146:kasia    24599  0.0  0.4 301924 36640 ?        Sl   12:39   0:01 /usr/bin/kaccess
-147:kasia    24603  0.0  0.0  46476  6236 ?        S    12:39   0:00 kwrapper5 /usr/bin/ksmserver
-148:kasia    24604  0.0  0.5 382328 43420 ?        Sl   12:39   0:02 /usr/bin/ksmserver
-149:kasia    24606  0.0  0.5 300436 38480 ?        Sl   12:39   0:01 /usr/bin/kglobalaccel5
-151:kasia    24623  6.5  1.3 2957176 102280 ?      Sl   12:39  27:59 /usr/bin/kwin_x11 -session 10d7c2e369000157159359600000009600018_1619212864_998080
-152:kasia    24629  0.0  0.9 535532 72592 ?        Sl   12:39   0:02 /usr/bin/krunner
-153:kasia    24631  0.1  2.5 1100272 195312 ?      Sl   12:39   0:39 /usr/bin/plasmashell
-155:kasia    24639  0.0  0.2 246992 20384 ?        Sl   12:39   0:01 /usr/bin/xembedsniproxy
-156:kasia    24647  0.0  0.2 246096 21224 ?        Sl   12:39   0:01 /usr/bin/gmenudbusmenuproxy
-158:kasia    24678  0.0  0.4 556772 32344 ?        Sl   12:39   0:01 /usr/bin/kactivitymanagerd start-daemon
-160:kasia    24690  0.0  0.7 489852 57080 ?        Sl   12:39   0:01 /usr/bin/korgac -session 10d7c2e369000155216493000000009430010_1619212864_954869
-162:kasia    24707  0.0  0.4 300760 36864 ?        Sl   12:39   0:02 /usr/bin/akonadi_control
-164:kasia    24722  0.0  0.4 2396072 33656 ?       Sl   12:39   0:01 /usr/bin/akonadiserver
-165:kasia    24726  0.1  1.0 2590132 79392 ?       Sl   12:39   0:29 /usr/sbin/mysqld-akonadi --defaults-file=/home/kasia/.local/share/akonadi/mysql.conf --datadir=/home/kasia/.local/share/akonadi/db_data/ --socket=/tmp/akonadi-kasia.C6xtIb/mysql.socket --pid-file=/tmp/akonadi-kasia.C6xtIb/mysql.pid
-166:kasia    24731  0.0  1.0 518160 82932 ?        Sl   12:39   0:14 /usr/bin/dolphin -session 10d7c2e369000161921103200000010360031_1619212864_955506
-169:kasia    24816  0.0  0.5 381424 42880 ?        Sl   12:39   0:01 /usr/bin/akonadi_akonotes_resource --identifier akonadi_akonotes_resource_0
-170:kasia    24819  0.0  1.2 829608 91760 ?        Sl   12:39   0:01 /usr/bin/akonadi_archivemail_agent --identifier akonadi_archivemail_agent
-171:kasia    24820  0.0  0.5 384636 41296 ?        Sl   12:39   0:01 /usr/bin/akonadi_birthdays_resource --identifier akonadi_birthdays_resource
-172:kasia    24822  0.0  0.5 380240 40532 ?        Sl   12:39   0:01 /usr/bin/akonadi_contacts_resource --identifier akonadi_contacts_resource_0
-173:kasia    24824  0.0  0.5 458968 44728 ?        Sl   12:39   0:04 /usr/bin/akonadi_followupreminder_agent --identifier akonadi_followupreminder_agent
-174:kasia    24825  0.0  0.5 384100 41864 ?        Sl   12:39   0:01 /usr/bin/akonadi_ical_resource --identifier akonadi_ical_resource_0
-175:kasia    24828  0.0  0.5 389200 44396 ?        SNl  12:39   0:01 /usr/bin/akonadi_indexing_agent --identifier akonadi_indexing_agent
-176:kasia    24833  0.0  0.5 381428 41196 ?        Sl   12:39   0:01 /usr/bin/akonadi_maildir_resource --identifier akonadi_maildir_resource_0
-177:kasia    24842  0.0  0.5 456336 41656 ?        Sl   12:39   0:04 /usr/bin/akonadi_maildispatcher_agent --identifier akonadi_maildispatcher_agent
-178:kasia    24846  0.0  1.1 848004 91672 ?        Sl   12:39   0:01 /usr/bin/akonadi_mailfilter_agent --identifier akonadi_mailfilter_agent
-179:kasia    24847  0.0  3.4 925816 260692 ?       Sl   12:39   0:09 /usr/lib/libreoffice/program/soffice.bin --splash-pipe=5
-180:kasia    24848  0.0  0.5 380308 39588 ?        Sl   12:39   0:01 /usr/bin/akonadi_migration_agent --identifier akonadi_migration_agent
-181:kasia    24851  0.0  0.5 386436 43312 ?        Sl   12:39   0:01 /usr/bin/akonadi_newmailnotifier_agent --identifier akonadi_newmailnotifier_agent
-182:kasia    24853  0.0  0.6 547884 48816 ?        Sl   12:39   0:04 /usr/bin/akonadi_notes_agent --identifier akonadi_notes_agent
-183:kasia    24857  0.0  1.1 826916 85308 ?        Sl   12:39   0:04 /usr/bin/akonadi_sendlater_agent --identifier akonadi_sendlater_agent
-185:kasia    24942  0.0  0.3 129096 29816 ?        S    12:39   0:00 /usr/bin/kuiserver
-189:root     25048  0.0  0.0   9488  6092 ?        S    12:39   0:00 /sbin/dhclient -d -q -sf /usr/lib/NetworkManager/nm-dhcp-helper -pf /run/dhclient-wlp1s0.pid -lf /var/lib/NetworkManager/dhclient-7aacdada-ab4f-4ee5-83fd-9d4e466ff7b4-wlp1s0.lease -cf /var/lib/NetworkManager/dhclient-wlp1s0.conf wlp1s0
- 1310  mkdir homework
- 1311  cd homework/
- 1312  touch processes.txt
- 1313  ps aux > processes.txt
- 1314  cp processes.txt copy.txt
- 1315  mkdir bacekup
- 1316  mv copy.txt bacekup/
- 1317  wc -l processes.txt > selected.txt
- 1318  grep -n "bin" processes.txt >> selected.txt 
- 1319  history
- 1320  history | tail -n11 > commands.txt
+100:kasia     1094  0.4  0.2 2184560 22100 ?       S<sl kwi23  10:25 /usr/bin/pulseaudio --daemonize=no
+106:kasia     2443  0.0  0.9 442752 72768 ?        Sl   kwi24   0:13 /usr/bin/konsole
+107:kasia     2449  0.0  0.0   8500  5256 pts/1    Ss   kwi24   0:00 /bin/bash
+111:kasia     3418  0.0  0.9 512960 70232 ?        Sl   kwi24   0:00 /usr/bin/knotes
+133:root     24439  0.0  0.1  59492 13420 ?        S    kwi24   0:00 /usr/lib/x86_64-linux-gnu/sddm/sddm-helper --socket /tmp/sddm-auth00c7f8d7-9e0a-4c71-8620-3748469416d7 --id 3 --start /usr/bin/startkde --user kasia
+134:kasia    24443  0.0  0.4 303236 37744 ?        Sl   kwi24   0:02 /usr/bin/kwalletd5 --pam-login 7 3
+135:kasia    24444  0.0  0.0   2388  1616 ?        S    kwi24   0:00 /bin/sh /usr/bin/startkde
+136:kasia    24496  0.0  0.0   5852   472 ?        Ss   kwi24   0:00 /usr/bin/ssh-agent /usr/bin/im-launch /usr/bin/startkde
+137:kasia    24513  0.0  0.1 387980 10448 ?        Ssl  kwi24   0:17 /usr/bin/ibus-daemon --daemonize --xim
+149:kasia    24599  0.0  0.4 301924 36640 ?        Sl   kwi24   0:03 /usr/bin/kaccess
+150:kasia    24603  0.0  0.0  46476  6236 ?        S    kwi24   0:00 kwrapper5 /usr/bin/ksmserver
+151:kasia    24604  0.0  0.5 382328 43544 ?        Sl   kwi24   0:03 /usr/bin/ksmserver
+152:kasia    24606  0.0  0.5 300436 38480 ?        Sl   kwi24   0:02 /usr/bin/kglobalaccel5
+154:kasia    24623  4.4  1.3 2957692 102988 ?      Sl   kwi24  31:41 /usr/bin/kwin_x11 -session 10d7c2e369000157159359600000009600018_1619212864_998080
+155:kasia    24629  0.0  0.9 535532 72592 ?        Sl   kwi24   0:03 /usr/bin/krunner
+156:kasia    24631  0.1  2.7 1697192 206692 ?      Sl   kwi24   0:58 /usr/bin/plasmashell
+158:kasia    24639  0.0  0.2 246992 20384 ?        Sl   kwi24   0:02 /usr/bin/xembedsniproxy
+159:kasia    24647  0.0  0.2 246096 21224 ?        Sl   kwi24   0:01 /usr/bin/gmenudbusmenuproxy
+161:kasia    24678  0.0  0.4 557052 32800 ?        Sl   kwi24   0:02 /usr/bin/kactivitymanagerd start-daemon
+163:kasia    24690  0.0  0.7 489852 57080 ?        Sl   kwi24   0:02 /usr/bin/korgac -session 10d7c2e369000155216493000000009430010_1619212864_954869
+165:kasia    24707  0.0  0.4 300760 36864 ?        Sl   kwi24   0:03 /usr/bin/akonadi_control
+167:kasia    24722  0.0  0.4 2412464 33612 ?       Sl   kwi24   0:01 /usr/bin/akonadiserver
+169:kasia    24731  0.0  1.0 518256 83292 ?        Sl   kwi24   0:21 /usr/bin/dolphin -session 10d7c2e369000161921103200000010360031_1619212864_955506
+172:kasia    24816  0.0  0.5 381424 42880 ?        Sl   kwi24   0:02 /usr/bin/akonadi_akonotes_resource --identifier akonadi_akonotes_resource_0
+173:kasia    24819  0.0  1.2 829608 91760 ?        Sl   kwi24   0:02 /usr/bin/akonadi_archivemail_agent --identifier akonadi_archivemail_agent
+174:kasia    24820  0.0  0.5 384636 41296 ?        Sl   kwi24   0:02 /usr/bin/akonadi_birthdays_resource --identifier akonadi_birthdays_resource
+175:kasia    24822  0.0  0.5 380240 40532 ?        Sl   kwi24   0:02 /usr/bin/akonadi_contacts_resource --identifier akonadi_contacts_resource_0
+176:kasia    24824  0.0  0.5 458968 44728 ?        Sl   kwi24   0:07 /usr/bin/akonadi_followupreminder_agent --identifier akonadi_followupreminder_agent
+177:kasia    24825  0.0  0.5 384100 41864 ?        Sl   kwi24   0:02 /usr/bin/akonadi_ical_resource --identifier akonadi_ical_resource_0
+178:kasia    24828  0.0  0.5 389200 44396 ?        SNl  kwi24   0:02 /usr/bin/akonadi_indexing_agent --identifier akonadi_indexing_agent
+179:kasia    24833  0.0  0.5 381428 41196 ?        Sl   kwi24   0:02 /usr/bin/akonadi_maildir_resource --identifier akonadi_maildir_resource_0
+180:kasia    24842  0.0  0.5 456336 41656 ?        Sl   kwi24   0:07 /usr/bin/akonadi_maildispatcher_agent --identifier akonadi_maildispatcher_agent
+181:kasia    24846  0.0  1.1 848004 91672 ?        Sl   kwi24   0:02 /usr/bin/akonadi_mailfilter_agent --identifier akonadi_mailfilter_agent
+183:kasia    24848  0.0  0.5 380308 39588 ?        Sl   kwi24   0:02 /usr/bin/akonadi_migration_agent --identifier akonadi_migration_agent
+184:kasia    24851  0.0  0.5 386436 43312 ?        Sl   kwi24   0:02 /usr/bin/akonadi_newmailnotifier_agent --identifier akonadi_newmailnotifier_agent
+185:kasia    24853  0.0  0.6 547884 48816 ?        Sl   kwi24   0:07 /usr/bin/akonadi_notes_agent --identifier akonadi_notes_agent
+186:kasia    24857  0.0  1.1 826916 85400 ?        Sl   kwi24   0:07 /usr/bin/akonadi_sendlater_agent --identifier akonadi_sendlater_agent
+188:kasia    24942  0.0  0.3 129096 29816 ?        S    kwi24   0:00 /usr/bin/kuiserver
+ 1325  mkdir homework
+ 1326  cd homework/
+ 1327  touch processes.txt
+ 1328  ps aux > processes.txt
+ 1329  cp processes.txt copy.txt
+ 1330  mkdir backup
+ 1331  mv copy.txt backup/
+ 1332  wc -l processes.txt > selected.txt
+ 1333  grep -n "/bin" processes.txt >> selected.txt 
+ 1334  history
+ 1335  history | tail -n11 > commands.txt
