@@ -5,7 +5,7 @@ mmsobotka@DESKTOP-0N2DKUC:~/helloMilena$cat selected.txt commands.txt
   485  cd helloMilena/
   486  touch processes.txt
   487  ls
-  488  ps aux >>processes.txt
+  488  ps aux > processes.txt
   489  cat processes.txt
   490  cp processes.txt copy.txt
   491  mkdir backup
@@ -25,5 +25,5 @@ mmsobotka@DESKTOP-0N2DKUC:~/helloMilena$cat selected.txt commands.txt
   505  cat processes.txt
   506  grep -rni "/bin" processes.txt >> selected.txt
   507  history
-  508  history | tail -n+483
-  509  history | tail -n+483 > commands.txt
+  508  history | tail -n26
+  509  history | tail -n26 > commands.txt
