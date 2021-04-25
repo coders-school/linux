@@ -67,7 +67,7 @@ michal    1363  0.0  0.0  10164  5416 pts/0    Ss   14:25   0:00 bash/bin
  1163  cd ~
  1164  cd workspace/coders.school/linux/katalog/
  1165  ls
- 1166  grep "/bin" -rni processes.txt > selected.txt
+ 1166  grep '/bin' -rni processes.txt >> selected.txt
  1167  more selected.txt
  1168  ls
  1169  more processes.txt
