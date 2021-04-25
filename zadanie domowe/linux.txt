@@ -1,0 +1,27 @@
+$ cat selected.txt commands.txt
+  4  46 330 processes.txt
+3:u0_a195  11947  0.0  0.1  12136  4808 pts/28   S<s   1970   0:00 /data/data/com.termux/files/usr/bin/bash -l
+    1  mkdir krzywa
+    2  ps aux > processes.txt
+    3  cp processes.txt copy.txt
+    4  man mv
+    5  pkg install man
+    6  man mv
+    7  mkdir backup
+    8  mv copy.txt backup/
+    9  tree
+   10  pkg install tree
+   11  tree
+   12  wc processes.txt
+   13  wc processes.txt -l
+   14  cat processes.txt
+   15  wc processes.txt > selected.txt
+   16  man grep
+   17  grep -r "/bin" processes.txt
+   18  grep -r "/bin" processes.txt -r
+   19  grep -r "/bin" processes.txt -n
+   20  grep -n "/bin" processes.txt
+   21  grep -n "/bin" processes.txt >> selected.txt
+   22  cat selected.txt
+   23  history
+   24  history | tail -n 24 > commands.txt
