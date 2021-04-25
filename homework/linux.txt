@@ -58,6 +58,6 @@ coders_school@coders:~/lekcja_1_linux/homework$ cat selected.txt commands.txt
   494  wc -l copy.txt
   495  wc -l processes.txt 
   496  wc -l processes.txt > selected.txt
-  497  grep -no /bin processes.txt | grep -o  '[0-9]*' >> selected.txt
+  497  grep -no /bin processes.txt >> selected.txt
   498  history
   499  history | tail -n 40 > commands.txt
