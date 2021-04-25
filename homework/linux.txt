@@ -1,0 +1,36 @@
+martyna@martyna:~/kurs/linux/1/homework$ cat selected.txt commands.txt 
+238 processes.txt
+109:message+     646  0.0  0.1   9084  5044 ?        Ss   10:32   0:02 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+112:root         656  0.0  0.4  41860 15032 ?        Ss   10:32   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+122:root         770  0.0  0.5 120380 16148 ?        Ssl  10:32   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+128:martyna      882  0.8  0.4 1935636 13376 ?       S<sl 10:32   1:45 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+130:martyna      887  0.0  0.1 242716  4728 ?        SLl  10:32   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+131:martyna      891  0.0  0.1 166552  5164 tty2     Ssl+ 10:32   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+133:martyna      897  0.0  0.1   8788  4800 ?        Ss   10:32   0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+134:whoopsie     903  0.0  0.3 253120 10100 ?        Ssl  10:32   0:00 /usr/bin/whoopsie -f
+150:martyna     1121  0.0  0.0   6040   452 ?        Ss   10:33   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+152:martyna     1147  0.0  0.1   7248  3368 ?        S    10:33   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+155:martyna     1182  3.1  6.1 4125392 189748 ?      Ssl  10:33   6:44 /usr/bin/gnome-shell
+166:martyna     1268  0.0  0.6 2602296 19860 ?       Sl   10:33   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+192:martyna     1455  0.1  5.6 1227320 174464 ?      Sl   10:33   0:14 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
+202:martyna     2753  0.0  0.5 619504 17640 ?        Sl   11:09   0:00 /usr/bin/snap userd
+ 1385  mkdir homework
+ 1386  cd homework/
+ 1387  touch processes.txt
+ 1388  ps aux >> processes.txt 
+ 1389  less processes.txt 
+ 1390  cp processes.txt copy.txt
+ 1391  mkdir backup
+ 1392  mv copy.txt backup/
+ 1393  wc -l processes.txt 
+ 1394  wc -l processes.txt >> selected.txt
+ 1395  ls
+ 1396  cat selected.txt 
+ 1397  grep -n /bin processes.txt >> selected.txt 
+ 1398  cat selected.txt 
+ 1399  less selected.txt 
+ 1400  history
+ 1401  history | tail -n16 >> commands.txt
+ 1402  cat commands.txt 
+ 1403  history
+ 1404  history | tail -n20 > commands.txt
