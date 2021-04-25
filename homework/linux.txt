@@ -23,5 +23,5 @@ pi@raspberrypi:~/cpp/zadanie $ cat selected.txt commands.txt
   343  wc -l processes.txt > selected.txt
   344  grep -n '/bin' processes.txt >> selected.txt
   345  history
-  346  history | tail -15 > commands.txt
+  346  history | tail -n 15 > commands.txt
 pi@raspberrypi:~/cpp/zadanie $ 
