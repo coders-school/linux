@@ -9,7 +9,7 @@ michal@Dell:~/workspace/coders.school/linux/katalog$ cat selected.txt commands.t
  1276  mv copy.txt backup/
  1277  wc -l processes.txt
  1278  wc -l processes.txt > selected.txt
- 1279  grep '/bin' -n processes.txt >> selected.txt
+ 1279  grep "/bin" -rn processes.txt >> selected.txt
  1280  history
  1281  history | -n12 > commands.txt
  1282  history | tail -n13 > commands.txt
