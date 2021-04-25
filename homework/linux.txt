@@ -53,7 +53,7 @@ backup/copy.txt:225:sirart34    9791  0.3  0.4 1080800 73896 ?       Sl   21:56 
   508  wl -l processes.txt > selected.txt
   509  wc -l processes.txt > selected.txt
   510  cat selected.txt
-  511  grep /bin processes.txt >> selected.txt
+  511  grep '/bin' processes.txt >> selected.txt
   512  cat selected.txt 
   513  history
   514  history 20 > comands.txt
