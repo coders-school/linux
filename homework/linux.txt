@@ -1,32 +1,28 @@
 pawel@pawel-GS63:~/Documents/Kurs2021/Linux/homework1$ cat selected.txt commands.txt 
-280 processes.txt
-message+     816  0.0  0.0   9868  6228 ?        Ss   13:55   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-root         825  0.0  0.0  50548 20128 ?        Ss   13:55   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-root         995  0.0  0.0 129284 22972 ?        Ssl  13:55   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-pawel       1013  1.4  0.0 3591424 22024 ?       S<sl 13:55   7:08 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-pawel       1018  0.0  0.0 251348  6924 ?        SLl  13:55   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
-pawel       1022  0.0  0.0 175180  6616 tty2     Ssl+ 13:55   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-pawel       1026  0.0  0.0   8548  5716 ?        Ss   13:55   0:02 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-whoopsie    1314  0.0  0.0 253128 15556 ?        Ssl  13:55   0:00 /usr/bin/whoopsie -f
-pawel       1720  0.0  0.0   6040   460 ?        Ss   13:55   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-pawel       1746  0.0  0.0   7248  4264 ?        S    13:55   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-pawel       1777  2.4  0.8 4942784 290528 ?      Ssl  13:55  12:03 /usr/bin/gnome-shell
-pawel       1923  0.0  0.0 2941436 26384 ?       Sl   13:55   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-pawel       2081  0.0  0.9 1351308 294436 ?      Sl   13:55   0:09 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
-pawel      30840  0.0  0.0 170896  2248 ?        Ssl  21:11   0:00 /usr/bin/speech-dispatcher --spawn --communication-method unix_socket --socket-path /run/user/1000/speech-dispatcher/speechd.sock
- 2011  touch processes.txt
- 2012  ps aux >> processes.txt 
- 2013  cp processes.txt copy.txt
- 2014  mkdir backup
- 2015  mv copy.txt backup/
- 2016  wc -l processes.txt 
- 2017  wc -l processes.txt >selected.txt
- 2018  cat selected.txt 
- 2019  grep "/bin" processes.txt >selected.txt 
- 2020  cat selected.txt 
- 2021  wc -l processes.txt >selected.txt
- 2022  grep "/bin" processes.txt >>selected.txt 
- 2023  cat selected.txt 
- 2024  history 
- 2025  history | tail -l16 >commands.txt
- 2026  history | tail -n16 >commands.txt
+268 processes.txt
+message+     842  0.0  0.0   9764  6216 ?        Ss   08:06   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         851  0.0  0.0  50548 20152 ?        Ss   08:06   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+nvidia-+     859  0.0  0.0   5208  1864 ?        Ss   08:06   0:00 /usr/bin/nvidia-persistenced --user nvidia-persistenced --no-persistence-mode --verbose
+root        1025  0.0  0.0 129284 22852 ?        Ssl  08:06   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+pawel       1044  0.0  0.0 1681700 18724 ?       S<sl 08:06   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+pawel       1049  0.0  0.0 251324  6936 ?        Sl   08:06   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+pawel       1054  0.0  0.0 175180  6616 tty2     Ssl+ 08:06   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+pawel       1056  0.0  0.0   8284  5232 ?        Ss   08:06   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+whoopsie    1370  0.0  0.0 253128 15468 ?        Ssl  08:06   0:00 /usr/bin/whoopsie -f
+pawel       1752  0.0  0.0   6040   460 ?        Ss   08:06   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+pawel       1778  0.0  0.0   7248  4288 ?        S    08:06   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+pawel       1810  2.8  0.8 4918196 272800 ?      Ssl  08:06   0:23 /usr/bin/gnome-shell
+pawel       1959  0.0  0.0 2941436 26660 ?       Sl   08:06   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+pawel       2104  0.7  0.5 1204644 185808 ?      Sl   08:06   0:06 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
+root        4272  0.4  0.2 205676 96824 ?        SNl  08:12   0:02 /usr/bin/python3 /usr/sbin/aptd
+ 2019  touch processes.txt
+ 2020  ps aux > processes.txt 
+ 2021  cp processes.txt copy.txt
+ 2022  mkdir backup
+ 2023  mv copy.txt backup/
+ 2024  wc -l processes.txt
+ 2025  wc -l processes.txt > selected.txt
+ 2026  grep "/bin" selected.txt >> selected.txt 
+ 2027  grep "/bin" processes.txt >> selected.txt 
+ 2028  history
+ 2029  history | tail -n11 > commands.txt
