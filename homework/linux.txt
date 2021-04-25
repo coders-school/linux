@@ -1,55 +1,58 @@
-sirart34@sirart34:~/Desktop/Kodowanie/Homework/01_2021_04_25/Zad_1$ cat selected.txt commands.txt 
-256
-copy.txt:105:message+     764  0.0  0.0   8944  6084 ?        Ss   20:21   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-copy.txt:108:root         774  0.0  0.1  50488 19988 ?        Ss   20:21   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-copy.txt:121:root         896  0.0  0.1 129012 22808 ?        Ssl  20:21   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-copy.txt:125:sirart34     936  1.9  0.1 3591176 20452 ?       S<sl 20:21   1:54 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-copy.txt:127:sirart34     941  0.0  0.0 251192  6892 ?        Sl   20:21   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
-copy.txt:128:sirart34     945  0.0  0.0 175180  6516 tty2     Ssl+ 20:21   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-copy.txt:130:sirart34     950  0.0  0.0   8704  5692 ?        Ss   20:21   0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-copy.txt:142:whoopsie    1134  0.0  0.0 253116 15392 ?        Ssl  20:21   0:00 /usr/bin/whoopsie -f
-copy.txt:146:sirart34    1230  0.0  0.0   6040   456 ?        Ss   20:21   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-copy.txt:148:sirart34    1266  0.0  0.0   7248  4272 ?        S    20:21   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-copy.txt:181:sirart34    1605  0.1  1.2 1278688 202076 ?      Sl   20:21   0:07 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
-copy.txt:191:sirart34    3049  0.1  0.8 930904 146000 ?       SNl  20:22   0:07 /usr/bin/python3 /usr/bin/update-manager --no-update --no-focus-on-map
-copy.txt:198:sirart34    7838  0.0  0.0   2616   596 ?        Ss   21:11   0:00 /bin/sh /usr/lib/update-notifier/update-notifier-crash
-copy.txt:199:sirart34    7848  0.1  0.5 650544 92640 ?        Sl   21:11   0:03 /usr/bin/python3 /usr/share/apport/apport-gtk
-copy.txt:200:sirart34    7960  7.0  1.6 5447824 274080 ?      Ssl  21:11   3:18 /usr/bin/gnome-shell
-copy.txt:206:sirart34    8027  0.0  0.1 2806284 26468 ?       Sl   21:11   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-copy.txt:219:sirart34    9047  0.0  0.0 170896  2296 ?        Ssl  21:36   0:00 /usr/bin/speech-dispatcher --spawn --communication-method unix_socket --socket-path /run/user/1000/speech-dispatcher/speechd.sock
-copy.txt:245:sirart34    9791  2.9  0.4 1080800 73896 ?       Sl   21:56   0:03 /usr/bin/nautilus --gapplication-service
-processes.txt:105:message+     764  0.0  0.0   8944  6084 ?        Ss   20:21   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-processes.txt:108:root         774  0.0  0.1  50488 19988 ?        Ss   20:21   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-processes.txt:121:root         896  0.0  0.1 129012 22808 ?        Ssl  20:21   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-processes.txt:125:sirart34     936  1.9  0.1 3591176 20452 ?       S<sl 20:21   1:54 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-processes.txt:127:sirart34     941  0.0  0.0 251192  6892 ?        Sl   20:21   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
-processes.txt:128:sirart34     945  0.0  0.0 175180  6516 tty2     Ssl+ 20:21   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-processes.txt:130:sirart34     950  0.0  0.0   8704  5692 ?        Ss   20:21   0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-processes.txt:142:whoopsie    1134  0.0  0.0 253116 15392 ?        Ssl  20:21   0:00 /usr/bin/whoopsie -f
-processes.txt:146:sirart34    1230  0.0  0.0   6040   456 ?        Ss   20:21   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-processes.txt:148:sirart34    1266  0.0  0.0   7248  4272 ?        S    20:21   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-processes.txt:181:sirart34    1605  0.1  1.2 1278688 202076 ?      Sl   20:21   0:07 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
-processes.txt:191:sirart34    3049  0.1  0.8 930904 146000 ?       SNl  20:22   0:07 /usr/bin/python3 /usr/bin/update-manager --no-update --no-focus-on-map
-processes.txt:198:sirart34    7838  0.0  0.0   2616   596 ?        Ss   21:11   0:00 /bin/sh /usr/lib/update-notifier/update-notifier-crash
-processes.txt:199:sirart34    7848  0.1  0.5 650544 92640 ?        Sl   21:11   0:03 /usr/bin/python3 /usr/share/apport/apport-gtk
-processes.txt:200:sirart34    7960  7.0  1.6 5447824 274080 ?      Ssl  21:11   3:18 /usr/bin/gnome-shell
-processes.txt:206:sirart34    8027  0.0  0.1 2806284 26468 ?       Sl   21:11   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-processes.txt:219:sirart34    9047  0.0  0.0 170896  2296 ?        Ssl  21:36   0:00 /usr/bin/speech-dispatcher --spawn --communication-method unix_socket --socket-path /run/user/1000/speech-dispatcher/speechd.sock
-processes.txt:245:sirart34    9791  2.9  0.4 1080800 73896 ?       Sl   21:56   0:03 /usr/bin/nautilus --gapplication-service
-  468  touch processes.txt
-  469  mkdir Zad_1
-  470  touch ./Zad_1/processes.txt
-  471  cd Zad_1
-  472  ls
-  473  ps aux >> processes.txt
-  474  cat processes.txt 
-  475  cp processes.txt copy.txt
-  476  cat copy.txt 
-  477  vim processes.txt
-  478  echo 256 | selected.txt
-  479  echo 256 >> selected.txt
-  480  cat selected.txt
-  481  grep -rni /bin >> selected.txt
-  482  cat selected.txt
-  483  history
-  484  history 17 > commands.txt
+sirart34@sirart34:~/Desktop/Kodowanie/Homework/01_2021_04_25/Zad_1$ cat selected.txt comands.txt 
+253 processes.txt
+processes.txt:104:message+     764  0.0  0.0   8944  6084 ?        Ss   20:21   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+processes.txt:107:root         774  0.0  0.1  50488 19988 ?        Ss   20:21   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+processes.txt:120:root         896  0.0  0.1 129012 22808 ?        Ssl  20:21   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+processes.txt:124:sirart34     936  2.1  0.1 3853320 20624 ?       S<sl 20:21   2:35 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+processes.txt:126:sirart34     941  0.0  0.0 251192  6892 ?        Sl   20:21   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+processes.txt:127:sirart34     945  0.0  0.0 175180  6516 tty2     Ssl+ 20:21   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+processes.txt:129:sirart34     950  0.0  0.0   8704  5692 ?        Ss   20:21   0:02 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+processes.txt:141:whoopsie    1134  0.0  0.0 253116 15392 ?        Ssl  20:21   0:00 /usr/bin/whoopsie -f
+processes.txt:145:sirart34    1230  0.0  0.0   6040   456 ?        Ss   20:21   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+processes.txt:147:sirart34    1266  0.0  0.0   7248  4272 ?        S    20:21   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+processes.txt:180:sirart34    1605  0.1  1.2 1278688 202076 ?      Sl   20:21   0:07 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
+processes.txt:190:sirart34    3049  0.1  0.8 930904 146000 ?       SNl  20:22   0:07 /usr/bin/python3 /usr/bin/update-manager --no-update --no-focus-on-map
+processes.txt:195:sirart34    7838  0.0  0.0   2616   596 ?        Ss   21:11   0:00 /bin/sh /usr/lib/update-notifier/update-notifier-crash
+processes.txt:196:sirart34    7848  0.0  0.5 650544 92640 ?        Sl   21:11   0:03 /usr/bin/python3 /usr/share/apport/apport-gtk
+processes.txt:197:sirart34    7960  6.4  1.6 5447824 276096 ?      Ssl  21:11   4:26 /usr/bin/gnome-shell
+processes.txt:203:sirart34    8027  0.0  0.1 2806284 26468 ?       Sl   21:11   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+processes.txt:213:sirart34    9047  0.0  0.0 170896  2296 ?        Ssl  21:36   0:00 /usr/bin/speech-dispatcher --spawn --communication-method unix_socket --socket-path /run/user/1000/speech-dispatcher/speechd.sock
+processes.txt:225:sirart34    9791  0.3  0.4 1080800 73896 ?       Sl   21:56   0:05 /usr/bin/nautilus --gapplication-service
+backup/copy.txt:104:message+     764  0.0  0.0   8944  6084 ?        Ss   20:21   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+backup/copy.txt:107:root         774  0.0  0.1  50488 19988 ?        Ss   20:21   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+backup/copy.txt:120:root         896  0.0  0.1 129012 22808 ?        Ssl  20:21   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+backup/copy.txt:124:sirart34     936  2.1  0.1 3853320 20624 ?       S<sl 20:21   2:35 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+backup/copy.txt:126:sirart34     941  0.0  0.0 251192  6892 ?        Sl   20:21   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+backup/copy.txt:127:sirart34     945  0.0  0.0 175180  6516 tty2     Ssl+ 20:21   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+backup/copy.txt:129:sirart34     950  0.0  0.0   8704  5692 ?        Ss   20:21   0:02 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+backup/copy.txt:141:whoopsie    1134  0.0  0.0 253116 15392 ?        Ssl  20:21   0:00 /usr/bin/whoopsie -f
+backup/copy.txt:145:sirart34    1230  0.0  0.0   6040   456 ?        Ss   20:21   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+backup/copy.txt:147:sirart34    1266  0.0  0.0   7248  4272 ?        S    20:21   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+backup/copy.txt:180:sirart34    1605  0.1  1.2 1278688 202076 ?      Sl   20:21   0:07 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
+backup/copy.txt:190:sirart34    3049  0.1  0.8 930904 146000 ?       SNl  20:22   0:07 /usr/bin/python3 /usr/bin/update-manager --no-update --no-focus-on-map
+backup/copy.txt:195:sirart34    7838  0.0  0.0   2616   596 ?        Ss   21:11   0:00 /bin/sh /usr/lib/update-notifier/update-notifier-crash
+backup/copy.txt:196:sirart34    7848  0.0  0.5 650544 92640 ?        Sl   21:11   0:03 /usr/bin/python3 /usr/share/apport/apport-gtk
+backup/copy.txt:197:sirart34    7960  6.4  1.6 5447824 276096 ?      Ssl  21:11   4:26 /usr/bin/gnome-shell
+backup/copy.txt:203:sirart34    8027  0.0  0.1 2806284 26468 ?       Sl   21:11   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+backup/copy.txt:213:sirart34    9047  0.0  0.0 170896  2296 ?        Ssl  21:36   0:00 /usr/bin/speech-dispatcher --spawn --communication-method unix_socket --socket-path /run/user/1000/speech-dispatcher/speechd.sock
+backup/copy.txt:225:sirart34    9791  0.3  0.4 1080800 73896 ?       Sl   21:56   0:05 /usr/bin/nautilus --gapplication-service
+  495  ps aux >> .Zad_1/processes.txt
+  496  cd Zad_1/
+  497  ls
+  498  cat processes.txt
+  499  ps aus >> processes.txt
+  500  ps aux >> processes .txt
+  501  ps aux
+  502  ps aux > processes.txt
+  503  cat processes.txt
+  504  cp processes.txt copy.txt
+  505  mkdir backup
+  506  mv copy.txt backup/
+  507  wc -l processes.txt 
+  508  wl -l processes.txt > selected.txt
+  509  wc -l processes.txt > selected.txt
+  510  cat selected.txt
+  511  grep -rni /bin >> selected.txt
+  512  cat selected.txt 
+  513  history
+  514  history 20 > comands.txt
