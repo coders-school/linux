@@ -1,82 +1,18 @@
 michal@Dell:~/workspace/coders.school/linux/katalog$ cat selected.txt commands.txt
-michal    1363  0.0  0.0  10164  5416 pts/0    Ss   14:25   0:00 bash/bin
- 1099  touch ./katalog/processes.txt
- 1100  cd katalog/
- 1101  ls
- 1102  ps aux > processes.txt
- 1103  cat processes.txt
- 1104  cp processes.txt copy.txt
- 1105  ls
- 1106  mv copy.txt ./backup
- 1107  ls
- 1108  mv backup ./copy.txt
- 1109  more copy.txt
- 1110  ls
- 1111  mv copy.txt ./backup/
- 1112  mkdir backup
- 1113  ls
- 1114  mv copy.txt backup/
- 1115  ls
- 1116  touch processes.txt
- 1117  ls
- 1118  more processes.txt
- 1119  ls -l
- 1120  touch processes.txt
- 1121  ls -l
- 1122  man touch
- 1123  ls --help
- 1124  ls
- 1125  mkdir backup
- 1126  ls
- 1127  cp -r backup/ backup2/
- 1128  ls
- 1129  cd backup2/
- 1130  ls
- 1131  cd ..
- 1132  rmdir -rf backup2/
- 1133  rm -rf backup2/
- 1134  ls
- 1135  wc --help
- 1136  ls
- 1137  wc processes.txt
- 1138  wc -l processes.txt
- 1139  ls
- 1140  cd backup/
- 1141  ls
- 1142  more copy.txt
- 1143  cd ..
- 1144  ls
- 1145  wc -l processes.txt > selected.txt
- 1146  ls
- 1147  more selected.txt
- 1148  grep -rni processes.txt
- 1149  grep processes.txt -rni "/bin"
- 1150  grep processes.txt -rni "/init"
- 1151  grep processes.txt -rni '/init'
- 1152  grep --help
- 1153  grep "/bin" -rni processes.txt
- 1154  grep "/init" -rni processes.txt
- 1155  ./bin/zero
- 1156  /bin/zero
- 1157  /bin
- 1158  ls
- 1159  cd /bin
- 1160  ls
- 1161  ps
- 1162  htop
- 1163  cd ~
- 1164  cd workspace/coders.school/linux/katalog/
- 1165  ls
- 1166  grep '/bin' -rni processes.txt >> selected.txt
- 1167  more selected.txt
- 1168  ls
- 1169  more processes.txt
- 1170  history
- 1171  tail --help
- 1172  history | tail -n 1099
- 1173  history | tail -n1099
- 1174  history 1099
- 1175  history 1172-1099
- 1176  history | tail -n100
- 1177  history | tail -n79
- 1178  history | tail -n80 > commands.txt
+14 processess.txt
+ 1230  mkdir katalog/
+ 1231  ls
+ 1232  cd katalog/
+ 1233  touch processess.txt
+ 1234  ps aux > processess.txt
+ 1235  cp processess.txt copy.txt
+ 1236  mkdir backup/
+ 1237  mv copy.txt backup/
+ 1238  wc -l processess.txt
+ 1239  wc -l > selected.txt
+ 1240  wc -l processess.txt > selected.txt
+ 1241  grep "/bin" -rni processess.txt
+ 1242  grep "/bin" -rni processess.txt >> selected.txt
+ 1243  ls
+ 1244  history
+ 1245  history | tail -n16 > commands.txt
