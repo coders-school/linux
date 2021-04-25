@@ -1,63 +1,29 @@
 cat selected.txt commands.txt
-     395 processes.txt
-7
-225
-226
-231
-233
-234
- 1104  cd testDir
- 1105  touch processes.txt
- 1106  ps aux 
- 1107  ps aux > processes.txt
- 1108  cat processes.txt
- 1109  cp processes.txt copy.txt
- 1110  touch copy.txt
- 1111  ls
- 1112  cp processes.txt copy.txt
- 1113  cat copy.txt
- 1114  clear
- 1115  wc processes.txt
- 1116  man wc
- 1117  man wc -l
- 1118  man -l wc 
- 1119  mkdir backup 
- 1120  mv copy.txt ./backup
- 1121  cd backup
- 1122  ls
- 1123  cd ..
- 1124  ls
- 1125  wc -l  
- 1126  wc -l  processes.txt
- 1127  man wc
- 1128  wc -l  processes.txt > selected.txt
- 1129  cat selected.txt
- 1130  grep "/bin" processes.txt
- 1131  man grep
- 1132  grep -n "/bin" processes.txt
- 1133  grep -n "/bin" processes.txt
- 1134  grep -n "/bin" processes.txt
- 1135  clear
- 1136  grep -n "/bin" processes.txt
- 1137  grep -n "/bin" processes.txt | cut -d : -f 1
- 1138  grep -n "/bin" processes.txt | cut -d : -f 1 >> selected.txt
- 1139  cat selected.txt
- 1140  history
- 1141  clear
- 1142  history
- 1143  man history
- 1144  history 30
- 1145  history
- 1146  clear
- 1147  history 1
- 1148  history 1 | tail 46 < commands.txt
- 1149  history 1 | tail 46 < commands.txt
- 1150  touch commands.txt | history 1 | tail 46 < commands.txt
- 1151  touch commands.txt
- 1152  touch commands.txt |history 1 | tail 48 < commands.txt
- 1153  history 1 | tail 48 < commands.txt
- 1154  history 1 | tail 48 < commands.txt
- 1155  history 1 | tail -48 < commands.txt
- 1156  cat commands.txt
- 1157  history 1 | tail -52 > commands.txt
- 1158  cat commands.txt
+     403 processes.txt
+jakubkaczmarski   3444   0,0  0,0 408426160    320 s003  Ss+  ptk05     0:00.11 /Applications/Xcode.app/Contents/Developer/usr/bin/xcdevice observe --both
+jakubkaczmarski   3443   0,0  0,0  8601260     64   ??  S    ptk05     0:00.01 /usr/bin/script -t 0 /dev/null /usr/bin/arch -arm64e xcrun xcdevice observe --both
+jakubkaczmarski   3411   0,0  0,1  9439928  12096   ??  S    ptk05     0:02.29 /Users/jakubkaczmarski/Code/Dev/flutter/bin/cache/dart-sdk/bin/dart /Users/jakubkaczmarski/Code/Dev/flutter/bin/cache/dart-sdk/bin/snapshots/pub.dart.snapshot global run devtools --machine --try-ports 10 --allow-embedding
+jakubkaczmarski   3382   0,0  1,8  9342192 153568   ??  S    ptk05    12:22.30 /Users/jakubkaczmarski/Code/Dev/flutter/bin/cache/dart-sdk/bin/dart --disable-dart-dev --packages=/Users/jakubkaczmarski/Code/Dev/flutter/packages/flutter_tools/.packages /Users/jakubkaczmarski/Code/Dev/flutter/bin/cache/flutter_tools.snapshot daemon
+jakubkaczmarski   3361   0,0  0,0 407994304      0   ??  S    ptk05     0:00.00 bash /Users/jakubkaczmarski/Code/Dev/flutter/bin/flutter daemon
+jakubkaczmarski   3359   0,0  0,0  9820720   2688   ??  S    ptk05     0:13.58 /Users/jakubkaczmarski/Code/Dev/flutter/bin/cache/dart-sdk/bin/dart /Users/jakubkaczmarski/Code/Dev/flutter/bin/cache/dart-sdk/bin/snapshots/analysis_server.dart.snapshot --client-id=VS-Code --client-version=3.21.1
+ 1171  rm -rf testDir
+ 1172  mkdir testDir
+ 1173  cd testDir
+ 1174  ls
+ 1175  touch processes.txt
+ 1176  ps aux > processes.txt
+ 1177  cp processes.txt copy.txt
+ 1178  cat copy.txt
+ 1179  clear
+ 1180  mkdir backup
+ 1181  mv copy.txt ./backup
+ 1182  ls
+ 1183  wc -l processes.txt
+ 1184  wc -l processes.txt > selected.txt
+ 1185  grep '/bin' processes.txt >> selected.txt
+ 1186  cat selected.txt
+ 1187  historu
+ 1188  history
+ 1189  history 1
+ 1190  history 1 | tail -18 > commands.txt
+ 1191  cat selected.txt commands.txt
