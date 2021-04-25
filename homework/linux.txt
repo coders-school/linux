@@ -38,7 +38,7 @@ coders_school@coders:~/lekcja_1_linux/homework$ cat selected.txt commands.txt
   474  wc -l processes.txt > selected.txt
   475  ls
   476* 
-  477  grep -no /bin processes.txt | grep -o  '[0-9]*' >> selected.txt
+  477  grep -no /bin processes.txt >> selected.txt
   478  cat selected.txt 
   479  clear
   480  mkdir homework
