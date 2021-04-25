@@ -1,34 +1,33 @@
 podlyokularnik@podlyokularnikLap:~/dowolnanazwa$ cat selected.txt commands.txt 
-245 processes.txt
-message+     774  0.0  0.0   9948  6024 ?        Ss   09:52   0:10 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-root         785  0.0  0.2  50480 18488 ?        Ss   09:52   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-root         893  0.0  0.2 129024 21360 ?        Ssl  09:52   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-whoopsie    1423  0.0  0.1 253124 14044 ?        Ssl  09:53   0:00 /usr/bin/whoopsie -f
-podlyok+    1447  1.2  0.2 3591552 20160 ?       S<sl 09:53   4:02 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-podlyok+    1453  0.0  0.0   8604  5044 ?        Ss   09:53   0:02 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-podlyok+    1457  0.0  0.0 251344  6540 ?        Sl   09:53   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
-podlyok+    1539  0.0  0.0 175180  5656 tty2     Ssl+ 09:53   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-podlyok+    1630  0.0  0.0   6040   456 ?        Ss   09:53   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-podlyok+    1656  0.0  0.0   7380  3812 ?        S    09:53   0:01 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-podlyok+    1691 10.0  3.4 4683652 272512 ?      Ssl  09:53  32:11 /usr/bin/gnome-shell
-podlyok+    1790  0.0  0.3 2744852 24564 ?       Sl   09:53   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-podlyok+    1943  0.0  1.9 1195960 155712 ?      Sl   09:53   0:08 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
-podlyok+    4073  0.0  0.7 1076076 62168 ?       Sl   10:05   0:11 /usr/bin/nautilus --gapplication-service
-podlyok+    4462  0.0  0.0  21776  3576 pts/1    Ss+  10:15   0:00 /bin/bash
-podlyok+    4476  0.0  0.2 1102420 19780 ?       Sl   10:15   0:10 /home/podlyokularnik/.vscode/extensions/ms-vscode.cpptools-1.3.0/bin/cpptools
-podlyok+    4504  0.0  0.1 4955888 12224 ?       Sl   10:15   0:02 /home/podlyokularnik/.vscode/extensions/ms-vscode.cpptools-1.3.0/bin/cpptools-srv 4476 {AD9A3B10-4A2A-430F-BEFA-973B66D935A4}
-podlyok+   11809  0.1  0.7 829772 57276 ?        Sl   13:55   0:09 /usr/bin/gedit --gapplication-service
+248 processes.txt
+102:message+     774  0.0  0.0   9948  6024 ?        Ss   09:52   0:10 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+105:root         785  0.0  0.2  50480 18488 ?        Ss   09:52   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+119:root         893  0.0  0.2 129024 21360 ?        Ssl  09:52   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+123:whoopsie    1423  0.0  0.1 253124 14044 ?        Ssl  09:53   0:00 /usr/bin/whoopsie -f
+129:podlyok+    1447  1.2  0.2 3591552 20292 ?       S<sl 09:53   4:30 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+131:podlyok+    1453  0.0  0.0   8604  5044 ?        Ss   09:53   0:02 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+132:podlyok+    1457  0.0  0.0 251344  6540 ?        Sl   09:53   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+143:podlyok+    1539  0.0  0.0 175180  5656 tty2     Ssl+ 09:53   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+146:podlyok+    1630  0.0  0.0   6040   456 ?        Ss   09:53   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+148:podlyok+    1656  0.0  0.0   7380  3812 ?        S    09:53   0:01 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+151:podlyok+    1691  9.6  3.4 4683628 272512 ?      Ssl  09:53  33:33 /usr/bin/gnome-shell
+164:podlyok+    1790  0.0  0.3 2744852 24564 ?       Sl   09:53   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+187:podlyok+    1943  0.0  1.9 1195960 155712 ?      Sl   09:53   0:08 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
+198:podlyok+    4073  0.0  0.7 1076208 62168 ?       Sl   10:05   0:11 /usr/bin/nautilus --gapplication-service
+211:podlyok+    4462  0.0  0.0  21776  3576 pts/1    Ss+  10:15   0:00 /bin/bash
+212:podlyok+    4476  0.0  0.2 1102420 19780 ?       Sl   10:15   0:10 /home/podlyokularnik/.vscode/extensions/ms-vscode.cpptools-1.3.0/bin/cpptools
+213:podlyok+    4504  0.0  0.1 4955888 12224 ?       Sl   10:15   0:02 /home/podlyokularnik/.vscode/extensions/ms-vscode.cpptools-1.3.0/bin/cpptools-srv 4476 {AD9A3B10-4A2A-430F-BEFA-973B66D935A4}
+229:podlyok+   11809  0.1  0.7 829772 57276 ?        Sl   13:55   0:09 /usr/bin/gedit --gapplication-service
     1  mkdir dowolnanazwa
     2  cd dowolnanazwa/
     3  touch processes.txt
     4  ps aux > processes.txt 
     5  cp processes.txt copy.txt
     6  mkdir backup
-    7  mv copy.txt backup
+    7  mv copy.txt backup/
     8  wc -l processes.txt 
     9  wc -l processes.txt > selected.txt
-   10  grep "/bin" processes.txt >> selected.txt 
+   10  grep -n "/bin" processes.txt >> selected.txt 
    11  history
    12  history | tail -n 12 > commands.txt
-
 
