@@ -20,4 +20,4 @@ linux@linux-HP-ENVY-x360-Convertible-15-bq1xx:~/Pulpit/homwork1$ cat selected.tx
  2020  man history
  2021  history
  2022  history | tail -n12
- 2023  history | tail -n12 > commands.t
+ 2023  history | tail -n12 > commands.txt
