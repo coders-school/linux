@@ -17,7 +17,7 @@ martyna@martyna:~/kurs/linux/1/homework$ cat selected.txt commands.txt
  1385  mkdir homework
  1386  cd homework/
  1387  touch processes.txt
- 1388  ps aux >> processes.txt 
+ 1388  ps aux > processes.txt 
  1389  less processes.txt 
  1390  cp processes.txt copy.txt
  1391  mkdir backup
