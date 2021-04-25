@@ -1,18 +1,23 @@
 michal@Dell:~/workspace/coders.school/linux/katalog$ cat selected.txt commands.txt
-14 processess.txt
- 1230  mkdir katalog/
- 1231  ls
- 1232  cd katalog/
- 1233  touch processess.txt
- 1234  ps aux > processess.txt
- 1235  cp processess.txt copy.txt
- 1236  mkdir backup/
- 1237  mv copy.txt backup/
- 1238  wc -l processess.txt
- 1239  wc -l > selected.txt
- 1240  wc -l processess.txt > selected.txt
- 1241  grep "/bin" -rni processess.txt
- 1242  grep "/bin" -rni processess.txt >> selected.txt
- 1243  ls
- 1244  history
- 1245  history | tail -n16 > commands.txt
+14 processes.txt
+2:root         1  0.0  0.0    892   580 ?        Sl   09:45   0:00 /init
+3:root      1361  0.0  0.0    892    84 ?        Ss   14:25   0:00 /init
+4:root      1362  0.0  0.0    892    84 ?        S    14:25   0:05 /init
+7:root      1690  0.0  0.0    892    84 ?        Ss   17:49   0:00 /init
+8:root      1691  0.0  0.0    892    84 ?        S    17:49   0:00 /init
+10:root      1706  0.0  0.0    892    84 ?        Ss   17:49   0:00 /init
+11:root      1707  0.0  0.0    892    84 ?        S    17:49   0:00 /init
+ 1248  mkdir katalog/
+ 1249  rm -r katalog/
+ 1250  mkdir katalog/
+ 1251  cd katalog/
+ 1252  touch processes.txt
+ 1253  ps aux > processes.txt
+ 1254  cp processes.txt copy.txt
+ 1255  mkdir backup/
+ 1256  mv copy.txt backup/
+ 1257  wc -l processes.txt
+ 1258  wc -l processes.txt > selected.txt
+ 1259  grep '\bin' -rni processes.txt >> selected.txt
+ 1260  history
+ 1261  history | tail -n14 > commands.txt
