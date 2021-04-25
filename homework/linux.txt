@@ -1,28 +1,27 @@
 pi@raspberrypi:~/cpp/zadanie $ cat selected.txt commands.txt
-127
-message+   366  0.0  0.0   6656  3536 ?        Ss   08:02   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-root       504  0.0  0.0   2140   128 ?        S    08:02   0:00 /usr/bin/hciattach /dev/serial1 bcm43xx 3000000 flow -
-postgres   596  0.0  0.5 204048 22076 ?        S    08:02   0:00 /usr/lib/postgresql/11/bin/postgres -D /var/lib/postgresql/11/main -c config_file=/etc/postgresql/11/main/postgresql.conf
-  282  cd zadanie/
-  283  ls
-  284  clear
-  285  ps aux > processes.txt
-  286  ls
-  287  cat processes.txt
-  288  clear
-  289  cp processes.txt copy.txt
-  290  ls
-  291  mkdir backup
-  292  mv copy.txt backup/
-  293  ls
-  294  cd backup/
-  295  ls
-  296  cd .
-  297  cd ..
-  298  wc -l < processes.txt
-  299  cat processes.txt | wc -l > selected.txt
-  300  ls
-  301  grep '/bin' processes.txt >> selected.txt
-  302  cat selected.txt
-  303  history
-  304  history | tail -23 >commands.txt
+144 processes.txt
+85:message+   366  0.0  0.0   6656  3536 ?        Ss   08:02   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+92:root       504  0.0  0.0   2140   128 ?        S    08:02   0:00 /usr/bin/hciattach /dev/serial1 bcm43xx 3000000 flow -
+98:postgres   596  0.0  0.5 204048 22076 ?        S    08:02   0:01 /usr/lib/postgresql/11/bin/postgres -D /var/lib/postgresql/11/main -c config_file=/etc/postgresql/11/main/postgresql.conf
+113:pi        2345  0.0  0.0   1940   408 ?        S    13:39   0:00 sh /home/pi/.vscode-server/bin/3c4e3df9e89829dce27b7b5c24508306b151f30d/server.sh --start-server --host=127.0.0.1 --enable-remote-auto-shutdown --port=0 --connection-secret /home/pi/.vscode-server/.3c4e3df9e89829dce27b7b5c24508306b151f30d.token
+114:pi        2353  0.2  1.6 166424 65768 ?        Sl   13:39   0:20 /home/pi/.vscode-server/bin/3c4e3df9e89829dce27b7b5c24508306b151f30d/node /home/pi/.vscode-server/bin/3c4e3df9e89829dce27b7b5c24508306b151f30d/out/vs/server/main.js --start-server --host=127.0.0.1 --enable-remote-auto-shutdown --port=0 --connection-secret /home/pi/.vscode-server/.3c4e3df9e89829dce27b7b5c24508306b151f30d.token
+115:pi        2558  0.1  0.8 225064 35260 ?        Sl   13:39   0:13 /home/pi/.vscode-server/bin/3c4e3df9e89829dce27b7b5c24508306b151f30d/node /home/pi/.vscode-server/bin/3c4e3df9e89829dce27b7b5c24508306b151f30d/out/bootstrap-fork --type=ptyHost
+122:pi        2803  0.0  0.9 127000 35428 ?        Sl   13:40   0:01 /home/pi/.vscode-server/bin/3c4e3df9e89829dce27b7b5c24508306b151f30d/node /home/pi/.vscode-server/bin/3c4e3df9e89829dce27b7b5c24508306b151f30d/out/bootstrap-fork --type=watcherService
+123:pi        2811  0.1  2.0 193208 79916 ?        Sl   13:40   0:14 /home/pi/.vscode-server/bin/3c4e3df9e89829dce27b7b5c24508306b151f30d/node /home/pi/.vscode-server/bin/3c4e3df9e89829dce27b7b5c24508306b151f30d/out/bootstrap-fork --type=extensionHost --uriTransformerPath=/home/pi/.vscode-server/bin/3c4e3df9e89829dce27b7b5c24508306b151f30d/out/vs/server/uriTransformer.js
+124:pi        2880  0.0  0.0   8516  3624 pts/1    Ss+  13:44   0:00 /bin/bash
+  332  rm zadanie/ -r
+  333  ls
+  334  mkdir zadanie
+  335  cd zadanie
+  336  touch processes.txt
+  337  ps aux > processes.txt
+  338  cp processes.txt copy.txt
+  339  mkdir backup
+  340  m copy.txt backup/
+  341  mv copy.txt backup/
+  342  wc -l processes.txt
+  343  wc -l processes.txt > selected.txt
+  344  grep -n '/bin' processes.txt >> selected.txt
+  345  history
+  346  history | tail -15 > commands.txt
+pi@raspberrypi:~/cpp/zadanie $ 
