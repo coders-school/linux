@@ -1,0 +1,26 @@
+cat selected.txt commands.txt
+169 processes.txt
+72:message+     583  0.0  0.0  10060  6624 ?        Ss   11:10   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+74:root         605  0.0  0.2  41836 20116 ?        Ss   11:10   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+81:root         665  0.0  0.2 120376 22968 ?        Ssl  11:10   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+92:kamildlc    1183  0.0  0.2 1411080 19564 ?       S<sl 11:11   0:01 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+94:kamildlc    1188  0.0  0.1  12724  9936 ?        Ss   11:11   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+96:kamildlc    1193  0.0  0.0 242712  7312 ?        Sl   11:11   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+97:kamildlc    1197  0.0  0.0 166544  6692 tty2     Ssl+ 11:11   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+108:kamildlc    1347  0.0  0.0   6032   460 ?        Ss   11:11   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+110:kamildlc    1374  0.0  0.0   7240  4264 ?        S    11:11   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+113:kamildlc    1400  0.3  5.8 3800512 475932 ?      Rsl  11:11   1:03 /usr/bin/gnome-shell
+126:kamildlc    1496  0.0  0.3 2601296 26700 ?       Sl   11:11   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+154:whoopsie   26802  0.0  0.2 327244 16332 ?        Ssl  12:57   0:00 /usr/bin/whoopsie -f
+  280  mkdir Coders
+  281  cd Coders/
+  282  touch processes.txt
+  283  ps aux > processes.txt
+  284  cat processes.txt 
+  285  cp processes.txt copy.txt
+  286  mkdir backup
+  287  mv /home/kamildlc/Documents/Coders/copy.txt /home/kamildlc/Documents/Coders/backup/
+  288  wc -l processes.txt > selected.txt
+  289  grep -n "/bin" processes.txt >> selected.txt
+  290  history
+  291  history | tail -n 12 > commands.txt
