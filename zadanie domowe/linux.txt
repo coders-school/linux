@@ -2,7 +2,7 @@ $ cat selected.txt commands.txt
   4  46 330 processes.txt
 3:u0_a195  11947  0.0  0.1  12136  4808 pts/28   S<s   1970   0:00 /data/data/com.termux/files/usr/bin/bash -l
     1  mkdir krzywa
-    2  > processes.txt
+    2  touch processes.txt
     3  ps aux > processes.txt
     4  cp processes.txt copy.txt
     5  pkg install man
