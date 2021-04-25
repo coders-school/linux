@@ -13,19 +13,6 @@ processes.txt:120:dawid       1419  0.0  0.0   7248  4452 ?        S    17:44   
 processes.txt:123:dawid       1447  0.8  5.3 3748772 433852 ?      Ssl  17:44   0:51 /usr/bin/gnome-shell
 processes.txt:137:dawid       1556  0.0  0.3 2527648 26600 ?       Sl   17:44   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
 processes.txt:159:dawid       1707  0.2  4.0 1219496 330032 ?      Sl   17:44   0:15 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
-backup/copy.txt:77:message+     580  0.0  0.0   9828  6372 ?        Ss   17:42   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-backup/copy.txt:79:root         596  0.0  0.2  41844 20068 ?        Ss   17:42   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-backup/copy.txt:91:root         716  0.0  0.2 120644 22484 ?        Ssl  17:42   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-backup/copy.txt:93:whoopsie     761  0.0  0.1 326856 15624 ?        Ssl  17:42   0:00 /usr/bin/whoopsie -f
-backup/copy.txt:102:dawid       1227  0.0  0.2 1411024 18912 ?       S<sl 17:44   0:01 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-backup/copy.txt:104:dawid       1231  0.0  0.0  10844  7920 ?        Ss   17:44   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-backup/copy.txt:105:dawid       1237  0.0  0.0 243044  7952 ?        Sl   17:44   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
-backup/copy.txt:109:dawid       1264  0.0  0.0 166720  6720 tty2     Ssl+ 17:44   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-backup/copy.txt:118:dawid       1395  0.0  0.0   6040   456 ?        Ss   17:44   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-backup/copy.txt:120:dawid       1419  0.0  0.0   7248  4452 ?        S    17:44   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-backup/copy.txt:123:dawid       1447  0.8  5.3 3748772 433852 ?      Ssl  17:44   0:51 /usr/bin/gnome-shell
-backup/copy.txt:137:dawid       1556  0.0  0.3 2527648 26600 ?       Sl   17:44   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-backup/copy.txt:159:dawid       1707  0.2  4.0 1219496 330032 ?      Sl   17:44   0:15 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
   214  touch processes.txt
   215  ps aux > processes.txt
   216  less processes.txt
@@ -38,7 +25,7 @@ backup/copy.txt:159:dawid       1707  0.2  4.0 1219496 330032 ?      Sl   17:44 
   223  less selected.txt
   224  wc selected.txt
   225  grep -rni /bin
-  226  grep -rni /bin >> selected.txt
+  226  grep -rni /bin processes.txt >> selected.txt
   227  less selected.txt
   228  history
   229  history tail -n17 > commands.txt
