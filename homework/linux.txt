@@ -23,6 +23,6 @@ pg          7586  0.6  0.2 1084136 85896 ?       Sl   12:44   0:11 /usr/bin/naut
   181  mv copy.txt ./backup/
   182  wc -l processes.txt 
   183  wc -l processes.txt > selected.txt
-  184  grep "/bin" "processes.txt" >> selected.txt 
+  184  grep "/bin" processes.txt >>selected.txt 
   185  history
   186  history | tail -n12 > commands.txt
