@@ -1,4 +1,4 @@
-sirart34@sirart34:~/Desktop/Kodowanie/Homework/01_2021_04_25/Zad_1$ cat selected.txt comands.txt 
+sirart34@sirart34:~/Desktop/Kodowanie/Homework/01_2021_04_25/Zad_1$ cat selected.txt commands.txt
 253 processes.txt
 processes.txt:104:message+     764  0.0  0.0   8944  6084 ?        Ss   20:21   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
 processes.txt:107:root         774  0.0  0.1  50488 19988 ?        Ss   20:21   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
@@ -36,8 +36,6 @@ backup/copy.txt:197:sirart34    7960  6.4  1.6 5447824 276096 ?      Ssl  21:11 
 backup/copy.txt:203:sirart34    8027  0.0  0.1 2806284 26468 ?       Sl   21:11   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
 backup/copy.txt:213:sirart34    9047  0.0  0.0 170896  2296 ?        Ssl  21:36   0:00 /usr/bin/speech-dispatcher --spawn --communication-method unix_socket --socket-path /run/user/1000/speech-dispatcher/speechd.sock
 backup/copy.txt:225:sirart34    9791  0.3  0.4 1080800 73896 ?       Sl   21:56   0:05 /usr/bin/nautilus --gapplication-service
-  493  mkdir Zad_1
-  494  touch ./Zad_1/processes.txt
   495  ps aux >> .Zad_1/processes.txt
   496  cd Zad_1/
   497  ls
@@ -66,3 +64,5 @@ backup/copy.txt:225:sirart34    9791  0.3  0.4 1080800 73896 ?       Sl   21:56 
   520  cat selected.txt command.txt
   521  history 22 > commands.txt
   522  cat selected.txt commands.txt
+  523  history
+  524  history 30 > commands.txt
