@@ -1,0 +1,142 @@
+coders_school@coders:~/lekcja_1_linux/homework$ cat backup/selected.txt commands.txt 
+286
+copy.txt:179:root         705  0.0  0.2  58772 10460 ?        Ss   08:59   0:00 /usr/bin/VGAuthService
+copy.txt:180:root         707  0.0  0.1 175336  7496 ?        Ssl  08:59   0:00 /usr/bin/vmtoolsd
+copy.txt:186:message+     738  0.0  0.1   8852  5900 ?        Ss   08:59   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+copy.txt:189:root         757  0.0  0.5  47956 20232 ?        Ss   08:59   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+copy.txt:200:root         835  0.0  0.5 126484 22568 ?        Ssl  08:59   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+copy.txt:205:whoopsie     885  0.0  0.3 326864 15544 ?        Ssl  08:59   0:00 /usr/bin/whoopsie -f
+copy.txt:208:coders_+     947  0.0  0.4 1416908 19060 ?       S<sl 08:59   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+copy.txt:210:coders_+     952  0.0  0.1 248808  6952 ?        SLl  08:59   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+copy.txt:211:coders_+     956  0.0  0.1 172652  6632 tty2     Ssl+ 08:59   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+copy.txt:213:coders_+     961  0.0  0.2  12036  9268 ?        Ss   08:59   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+copy.txt:226:coders_+    1180  0.0  0.0   6040   460 ?        Ss   08:59   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+copy.txt:228:coders_+    1214  0.0  0.1   7380  4308 ?        S    08:59   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+copy.txt:231:coders_+    1242  1.4  6.0 4004460 242560 ?      Ssl  08:59   0:08 /usr/bin/gnome-shell
+copy.txt:244:coders_+    1346  0.0  0.6 2607164 26120 ?       Sl   08:59   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+copy.txt:261:coders_+    1419  0.0  1.0 299796 40572 ?        Sl   08:59   0:00 /usr/bin/vmtoolsd -n vmusr --blockFd 3
+copy.txt:270:coders_+    1584  0.0  1.1 476900 44792 ?        SLl  09:00   0:00 /usr/bin/seahorse --gapplication-service
+copy.txt:271:coders_+    1586  0.0  1.4 869476 58488 ?        Sl   09:00   0:00 /usr/bin/gnome-calendar --gapplication-service
+179
+180
+186
+189
+189
+200
+205
+208
+210
+211
+213
+226
+226
+226
+228
+231
+244
+261
+270
+271
+  347  mkdir homework
+  348  ls
+  349  ps aux
+  350  clear
+  351  cd
+  352  cd lekcja_1_linux/homework/
+  353  ps aux > processes.txt
+  354  echo processes.txt 
+  355  processes.txt 
+  356  open processes.txt 
+  357  cp processes.txt copy.txt
+  358  cp -b copy.txt
+  359  man cp
+  360  cp -b
+  361  mkdir backup
+  362  mv copy.txt backup/
+  363  ls
+  364  cd backup
+  365  ls
+  366  wc copy.txt
+  367  man wc
+  368  cat > selected.txt
+  369  grep /bin
+  370  grep -rni /bin *
+  371  history
+  372  grep -rni /bin *
+  373* grep -rni /bin *  selected.txt
+  374  grep -i /bin *
+  375  grep -n /bin *
+  376  grep -r /bin *
+  377  man grep
+  378  grep -n /bin *
+  379  grep -A /bin *
+  380  man grep
+  381  grep -E /bin *
+  382  grep -o /bin *
+  383  grep -Eo /bin *
+  384  grep -n /bin *
+  385  grep -no /bin *
+  386  grep -no /bin * | wc 
+  387  grep -no /bin * | wc -1
+  388  grep -n /bin * | wc -1
+  389  grep -n /bin * | wc -l
+  390  grep -n /bin *
+  391  grep -n /bin * | cut -fl -d:
+  392  grep -n /bin * | cut -f1 -d:
+  393  grep -n /bin * | cut -f2 -d:
+  394  ls
+  395  cd
+  396  ls
+  397  cd lekcja_1_linux/
+  398  ls
+  399  cd homework/
+  400  ls
+  401  grep -n /bin processes.txt 
+  402  grep /bin processes.txt 
+  403  grep -no /bin processes.txt 
+  404  man grep
+  405  grep -noi /bin processes.txt 
+  406  grep -i /bin processes.txt 
+  407  grep -no /bin processes.txt 
+  408  grep -nE /bin processes.txt 
+  409  grep -nA /bin processes.txt 
+  410  grep -A /bin processes.txt 
+  411  grep -nx /bin processes.txt 
+  412  grep -nE /bin processes.txt 
+  413  grep -n -x /bin processes.txt 
+  414  grep -n -E /bin processes.txt 
+  415  grep -c /bin processes.txt 
+  416  grep -w /bin processes.txt 
+  417  grep -A n /bin processes.txt 
+  418  grep -A /bin processes.txt 
+  419  grep -B /bin processes.txt 
+  420  grep -C /bin processes.txt 
+  421  grep -no /bin processes.txt 
+  422  grep -no -A /bin processes.txt 
+  423  grep -no /bin processes.txt 
+  424  grep -no /bin processes.txt | grep [0-9]
+  425  grep -A1 /bin processes.txt | grep [0-9]
+  426  grep -no /bin processes.txt | grep [0-9]
+  427  grep -noA1 /bin processes.txt | grep [0-9]
+  428  grep -no -A2 /bin processes.txt | grep [0-9]
+  429  grep -no -A1 /bin processes.txt | grep [0-9]
+  430  grep -no /bin processes.txt | wc -l
+  431  grep -no /bin processes.txt | grep -E '[0-9]
+  432  grep -no /bin processes.txt | grep  '[0-9]
+  433  grep -no /bin processes.txt | grep -o  '[0-9]
+  434  grep -no /bin processes.txt | grep  '[0-9]*
+  435  grep -no /bin processes.txt | grep -o  '[0-9]*
+  436  cat processes.txt 
+  437  grep -no /bin processes.txt | grep -o  '[0-9]*'
+  438  selected
+  439  ls
+  440  grep -no /bin processes.txt | grep -o  '[0-9]*' >> backup/selected.txt
+  441  cat backup/selected.txt 
+  442  history
+  443  history | tail -n 100
+  444  history | tail -n 105
+  445  history | tail -n 102
+  446  history | tail -n 104
+  447  history | tail -n 107
+  448  history | tail -n 110
+  449  history | tail -n 111 > commands.txt
