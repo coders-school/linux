@@ -18,6 +18,6 @@ michal@Dell:~/workspace/coders.school/linux/katalog$ cat selected.txt commands.t
  1256  mv copy.txt backup/
  1257  wc -l processes.txt
  1258  wc -l processes.txt > selected.txt
- 1259  grep '\bin' -rni processes.txt >> selected.txt
+ 1259  grep '/bin' -rni processes.txt >> selected.txt
  1260  history
  1261  history | tail -n14 > commands.txt
