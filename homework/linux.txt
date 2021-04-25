@@ -1,0 +1,63 @@
+cat selected.txt commands.txt
+     395 processes.txt
+7
+225
+226
+231
+233
+234
+ 1104  cd testDir
+ 1105  touch processes.txt
+ 1106  ps aux 
+ 1107  ps aux > processes.txt
+ 1108  cat processes.txt
+ 1109  cp processes.txt copy.txt
+ 1110  touch copy.txt
+ 1111  ls
+ 1112  cp processes.txt copy.txt
+ 1113  cat copy.txt
+ 1114  clear
+ 1115  wc processes.txt
+ 1116  man wc
+ 1117  man wc -l
+ 1118  man -l wc 
+ 1119  mkdir backup 
+ 1120  mv copy.txt ./backup
+ 1121  cd backup
+ 1122  ls
+ 1123  cd ..
+ 1124  ls
+ 1125  wc -l  
+ 1126  wc -l  processes.txt
+ 1127  man wc
+ 1128  wc -l  processes.txt > selected.txt
+ 1129  cat selected.txt
+ 1130  grep "/bin" processes.txt
+ 1131  man grep
+ 1132  grep -n "/bin" processes.txt
+ 1133  grep -n "/bin" processes.txt
+ 1134  grep -n "/bin" processes.txt
+ 1135  clear
+ 1136  grep -n "/bin" processes.txt
+ 1137  grep -n "/bin" processes.txt | cut -d : -f 1
+ 1138  grep -n "/bin" processes.txt | cut -d : -f 1 >> selected.txt
+ 1139  cat selected.txt
+ 1140  history
+ 1141  clear
+ 1142  history
+ 1143  man history
+ 1144  history 30
+ 1145  history
+ 1146  clear
+ 1147  history 1
+ 1148  history 1 | tail 46 < commands.txt
+ 1149  history 1 | tail 46 < commands.txt
+ 1150  touch commands.txt | history 1 | tail 46 < commands.txt
+ 1151  touch commands.txt
+ 1152  touch commands.txt |history 1 | tail 48 < commands.txt
+ 1153  history 1 | tail 48 < commands.txt
+ 1154  history 1 | tail 48 < commands.txt
+ 1155  history 1 | tail -48 < commands.txt
+ 1156  cat commands.txt
+ 1157  history 1 | tail -52 > commands.txt
+ 1158  cat commands.txt
