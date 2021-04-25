@@ -1,0 +1,89 @@
+cat selected.txt commands.txt 
+174 processes.txt
+82:message+     536  0.0  0.1   8940  6180 ?        Ss   18:02   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+84:root         546  0.0  0.3  50488 20176 ?        Ss   18:02   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+96:root         644  0.0  0.3 129248 22756 ?        Ssl  18:02   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+99:whoopsie     688  0.0  0.2 326860 15664 ?        Ssl  18:02   0:00 /usr/bin/whoopsie -f
+104:jantob       767  0.1  0.3 1419656 18860 ?       S<sl 18:02   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+106:jantob       773  0.0  0.1 251664  7376 ?        Sl   18:02   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+107:jantob       785  0.0  0.1 175348  6540 tty2     Ssl+ 18:02   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+110:jantob       805  0.0  0.0   8756  5700 ?        Ss   18:02   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+122:jantob       966  0.0  0.0   6040   456 ?        Ss   18:02   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+124:jantob       988  0.0  0.0   7248  4296 ?        S    18:02   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+127:jantob      1015  1.3  3.8 3611760 236324 ?      Rsl  18:02   0:03 /usr/bin/gnome-shell
+140:jantob      1105  0.0  0.4 2610012 26408 ?       Sl   18:02   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+163:jantob      1240  1.7  3.2 1086560 200904 ?      Sl   18:03   0:03 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
+  172  mkdir zadanie1
+  173  ls
+  174  cd zadanie1
+  175  touch processes.txt
+  176  ls
+  177  ps aux
+  178  ps aux > processes.txt
+  179  ls
+  180  cat processes.txt
+  181  ls
+  182  copy processes.txt copy.txt
+  183  cp processes.txt copy.txt
+  184  ls
+  185  mkdir backup
+  186  ls
+  187  mw copy.txt backup
+  188  mv copy.txt backup
+  189  ls
+  190  cd backup/
+  191  ls
+  192  cd .
+  193  cd ..
+  194  wc -l processes.txt 
+  195  pdw
+  196  ptw
+  197  ls
+  198  cd backup
+  199  ls
+  200  wc -l processes.txt > selected.txt
+  201  ls
+  202  cd sele
+  203  cat selected.txt 
+  204  cd..
+  205  cd ..
+  206  wc -l processes.txt > selected.txt
+  207  ls
+  208  cat selected.txt 
+  209  ls
+  210  cd backup/
+  211  ls
+  212  cat selected.txt 
+  213  rm selected.txt 
+  214  ls
+  215  cd ..
+  216  ls
+  217  cat selected.txt 
+  218  grep -rni /bin selected.txt 
+  219  grep -rni "/bin" selected.txt 
+  220  cat processes.txt 
+  221  grep -rni "/bin" selected.txt 
+  222  ls
+  223  grep -rni /bin selected.txt 
+  224  grep -rni '/bin' selected.txt 
+  225  ls
+  226  cat selected.txt 
+  227  ls -l
+  228  cd zadanie1
+  229  ls
+  230  cd backup/
+  231  ls
+  232  cd ..
+  233  ls
+  234  grep -rni /bin processes.txt 
+  235  grep -rni /bin processes.txt >> selected.txt
+  236  ls
+  237  cat selected.txt 
+  238  historyu
+  239  history 
+  240  tail -n 170 history
+  241  tail -n 170 | history 
+  242  tail -n 170 history
+  243  history | tail -n 25
+  244  history
+  245  history | tail -n 74 >> commands.txt
