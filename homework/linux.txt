@@ -1,5 +1,5 @@
 ╰─$ cat selected.txt commands.txt
-188
+188 processes.txt
 message+   621  0.2  0.0  10592  5484 ?        Ss   20:05   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
 root       697  0.0  0.1 125820 22144 ?        Ssl  20:05   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
 marcins   1031  0.0  0.0 240920  7256 ?        Sl   20:05   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
