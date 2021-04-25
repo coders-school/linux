@@ -20,10 +20,10 @@ jakubkaczmarski   3359   0,0  0,0  9820720   2688   ??  S    ptk05     0:13.58 /
  1182  ls
  1183  wc -l processes.txt
  1184  wc -l processes.txt > selected.txt
- 1185  grep '/bin' processes.txt >> selected.txt
+ 1185  grep /bin processes.txt >> selected.txt
  1186  cat selected.txt
  1187  historu
  1188  history
  1189  history 1
- 1190  history 1 | tail -18 > commands.txt
+ 1190  history | tail -18 > commands.txt
  1191  cat selected.txt commands.txt
