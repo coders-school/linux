@@ -1,0 +1,12 @@
+   5 processes.txt
+    2  touch processes.txt
+    3  ps aux > processes.txt
+    4  cp processes.txt copy.txt
+    5  mkdir backup
+    6  mv copy.txt backup/
+    7  wc -l processes.txt
+    8  wc -l processes.txt > selected.txt
+    9  cat processes.txt | grep /bin
+   10  history
+   11  history | tail -n 10 > commands.txt
+   cat selected.txt commands.txt
