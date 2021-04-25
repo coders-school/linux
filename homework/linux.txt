@@ -1,0 +1,24 @@
+ cat selected.txt commands.txt
+6 processes.txt
+  402  touch processes.txt
+  403  ps aux > processes.txt
+  404  cp processes.txt copy.txt
+  405  mkdir backup
+  406  mv copy.txt backup/
+  407  man wc
+  408  wc -l processes.txt
+  409  wc -l processes.txt > selected.txt
+  410  grep -n /bin processes.txt
+  411  grep -n /bin
+  412  grep -rn /bin
+  413  grep -rn /bin *
+  414  ls
+  415  clear
+  416  grep -rn /bin processes.txt
+  417  grep -rn "/bin" processes.txt
+  418  cat processes.txt
+  419  grep -rn "/bin" processes.txt >> selected.txt
+  420  ls
+  421*
+  422  history
+  423  history | tail -n 22 > commands.txt
