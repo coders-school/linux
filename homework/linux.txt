@@ -6,7 +6,7 @@
     6  mv copy.txt backup/
     7  wc -l processes.txt
     8  wc -l processes.txt > selected.txt
-    9  cat processes.txt | grep /bin >> selected.txt
+    9  cat processes.txt | grep -n /bin >> selected.txt
    10  history
    11  history | tail -n 10 > commands.txt
    cat selected.txt commands.txt
