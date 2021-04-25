@@ -1,5 +1,5 @@
 michal@Dell:~/workspace/coders.school/linux/katalog$ cat selected.txt commands.txt
-#w pliku nie ma żadnych procesów, ponieważ nie miałem żadnego aktywnego procesu ze ścieżką "/bin" w nazwie (działam na WSL2/Ubuntu 20.04)
+michal    1363  0.0  0.0  10164  5416 pts/0    Ss   14:25   0:00 bash/bin
  1099  touch ./katalog/processes.txt
  1100  cd katalog/
  1101  ls
