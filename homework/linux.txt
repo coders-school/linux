@@ -1,0 +1,185 @@
+maniol@maniol-VirtualBox:~$ mkdir katalog
+maniol@maniol-VirtualBox:~$ cd katalog
+maniol@maniol-VirtualBox:~/katalog$ touch processes.txt
+maniol@maniol-VirtualBox:~/katalog$ ps aux > processes.txt
+maniol@maniol-VirtualBox:~/katalog$ cp processes.txt copy.txt
+maniol@maniol-VirtualBox:~/katalog$ mkdir backup
+maniol@maniol-VirtualBox:~/katalog$ mv copy.txt backup
+maniol@maniol-VirtualBox:~/katalog$ wc -l processes.txt
+190 processes.txt
+maniol@maniol-VirtualBox:~/katalog$ echo 190 > selected.txt
+maniol@maniol-VirtualBox:~/katalog$ grep -n "/bin" processes.txt >> selected.txt
+maniol@maniol-VirtualBox:~/katalog$ history
+    1  sudo sh ./VBoxLinuxAdditions.run
+    2  ls
+    3  ls -l
+    4  pwd
+    5  cp man
+    6  cp --help
+    7  ls
+    8  mkdir test
+    9  cd test
+   10  touch example.txt
+   11  ls
+   12  cd ..
+   13  cp -R test test2
+   14  ls
+   15  cd test2
+   16  ls
+   17  cd ~
+   18  ls
+   19  sudo apt install software-properties-common apt-transport-https wget
+   20  wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+   21  sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+   22  sudo apt update
+   23  sudo apt install code
+   24  code
+   25  sudo apt-get install cmake
+   26  git --version
+   27  sudo apt update
+   28  sudo apt install git
+   29  sudo apt install build-essential
+   30  g++ -std=c++17 zadanie.cpp -o zadanie1
+   31  g++ -std=c++17 zadanie1.cpp -o zadanie1
+   32  ./zadanie1
+   33  cmake --version
+   34  mkdir build
+   35  cd build
+   36  cmake ..
+   37  make
+   38  ./Tutorial
+   39  ls
+   40  cd test
+   41  ls
+   42  cat zadamoe1.cpp
+   43  cat zadanie1.cpp
+   44  more zadanie1.cpp
+   45  touch zadanie2.cpp
+   46  less zadanie1.cpp
+   47  wc zadanie1.cpp
+   48  ls
+   49  cd test
+   50  wc zadanie1.cpp
+   51  man wc
+   52  less zadanie1.cpp
+   53  uname
+   54  echo $
+   55  cd ..
+   56  ls
+   57  ls -a
+   58  top
+   59  htop
+   60  Przekierowania
+   61  > file - przekierowanie standardowego wyjścia (stdout) do pliku file (nadpisywanie)
+   62  >> file - przekierowanie standardowego wyjścia (stdout) do pliku file (dopisywanie)
+   63  < file - przekierowanie standardowego wejścia (stdin) z pliku file do programu. Wszystko o co program prosi aby podać z klawiatury zostanie kolejno podane z pliku.
+   64  << EOF - przekierowanie standardowego wejścia (stdin) z wpisanych kolejnych linii aż do wystąpienia ciągu EOF
+   65  | - tzw. pipe, przekazanie wyjścia stdout jednego programu jako wejścia stdin drugiego.
+   66  2> /dev/null - przekierowanie standardowego wyjścia błędów (stderr) do pliku /dev/null. W efekcie błędy nie wyświetlają się w terminalu.
+   67  htop
+   68  htop
+   69  sudo apt  install htop  # version 2.2.0-2build1
+   70  htop
+   71  jobs
+   72  vim
+   73  sudo apt install vim
+   74  vim
+   75  fg
+   76  jobs
+   77  mkdir homework
+   78  cd homework
+   79  touch processes.txt
+   80  ps aux > processes.txt
+   81  less processes.txt
+   82  cp processes.txt copy.txt
+   83  ls
+   84  less copy.txt
+   85  mkdir backup
+   86  mv copy.txt backup
+   87  ls
+   88  cd backup
+   89  ls
+   90  cd..
+   91  cd ..
+   92  ls
+   93  wc processes.txt
+   94  wc --help
+   95  wc -l
+   96  wc -l processes.txt
+   97  wc -l processes.txt > selected.txt
+   98  ls
+   99  grep -rni processes.txt >> selected.txt
+  100  grep -rni /bin processes.txt >> selected.txt
+  101  less selected.txt
+  102  selected.txt << 186
+  103  186
+  104  cd ..
+  105  ls
+  106  rmdir homework
+  107  mkdir linux
+  108  cd linux
+  109  touch processes.txt
+  110  ps aux > processes.txt
+  111  cp processes.txt copy.txt
+  112  mkdir backup
+  113  mv copy.txt backup
+  114  wc -l processes.txt
+  115  183 > selected.txt
+  116  wc -l processes > selected.txt
+  117  wc -l processes.txt > selected.txt
+  118  mkdir directory
+  119  cd directory
+  120  touch processes.txt
+  121  ps aux > processes.txt
+  122  wz -l processes.txt
+  123  wc -l processes.txt
+  124  echo 183 > selected.txt
+  125  grep -rni /bin processes.txt >> selected.txt
+  126  history
+  127  mkdir katalog
+  128  cd katalog
+  129  touch processes.txt
+  130  ps aux > processes.txt
+  131  cp processes.txt copy.txt
+  132  mkdir backup
+  133  mv copy.txt backup
+  134  wc -l processes.txt
+  135  echo 190 > selected.txt
+  136  grep -n "/bin" processes.txt >> selected.txt
+  137  history
+maniol@maniol-VirtualBox:~/katalog$ history | tail -n 11 >> commands.txt
+maniol@maniol-VirtualBox:~/katalog$ cat selected.txt commands.txt
+190
+90:message+     666  0.2  0.4   8896  4096 ?        Ss   22:21   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+92:root         681  0.0  0.4  47984  4860 ?        Ss   22:21   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+103:root         770  0.0  0.5 126500  5116 ?        Ssl  22:21   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+104:whoopsie     798  0.0  0.3 326860  3824 ?        Ssl  22:21   0:00 /usr/bin/whoopsie -f
+112:maniol      1013  0.2  0.4 1154752 4520 ?        S<sl 22:21   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+114:maniol      1018  0.0  0.2 248800  2736 ?        Sl   22:21   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+115:maniol      1022  0.0  0.3 172656  3324 tty2     Ssl+ 22:21   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+116:maniol      1025  0.1  0.3   8268  3484 ?        Ss   22:21   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+130:maniol      1197  0.0  0.0  31248     0 ?        S    22:21   0:00 /usr/bin/VBoxClient --clipboard
+131:maniol      1198  0.0  0.2 163384  2180 ?        Sl   22:21   0:00 /usr/bin/VBoxClient --clipboard
+132:maniol      1209  0.0  0.0  31248    16 ?        S    22:21   0:00 /usr/bin/VBoxClient --seamless
+133:maniol      1210  0.0  0.1 163484  1096 ?        Sl   22:21   0:00 /usr/bin/VBoxClient --seamless
+134:maniol      1216  0.0  0.0  31248     4 ?        S    22:21   0:00 /usr/bin/VBoxClient --draganddrop
+135:maniol      1217  0.3  0.0 164000   848 ?        Sl   22:21   0:00 /usr/bin/VBoxClient --draganddrop
+136:maniol      1224  0.0  0.0  31248     0 ?        S    22:21   0:00 /usr/bin/VBoxClient --vmsvga
+137:maniol      1225  0.0  0.1 165924  1492 ?        Sl   22:21   0:00 /usr/bin/VBoxClient --vmsvga
+138:maniol      1233  0.0  0.0   6040    32 ?        Ss   22:21   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+140:maniol      1278  0.0  0.2   7248  2584 ?        S    22:21   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+143:maniol      1314  3.5 18.6 3455072 187476 ?      Ssl  22:21   0:06 /usr/bin/gnome-shell
+159:maniol      1435  0.0  0.6 2607172 6576 ?        Sl   22:21   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+182:maniol      1626  7.9 28.1 1192192 282436 ?      Sl   22:21   0:13 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
+  128  cd katalog
+  129  touch processes.txt
+  130  ps aux > processes.txt
+  131  cp processes.txt copy.txt
+  132  mkdir backup
+  133  mv copy.txt backup
+  134  wc -l processes.txt
+  135  echo 190 > selected.txt
+  136  grep -n "/bin" processes.txt >> selected.txt
+  137  history
+  138  history | tail -n 11 >> commands.txt
+maniol@maniol-VirtualBox:~/katalog$ 
