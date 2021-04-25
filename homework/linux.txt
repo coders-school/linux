@@ -1,0 +1,28 @@
+pi@raspberrypi:~/cpp/zadanie $ cat selected.txt commands.txt
+127
+message+   366  0.0  0.0   6656  3536 ?        Ss   08:02   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root       504  0.0  0.0   2140   128 ?        S    08:02   0:00 /usr/bin/hciattach /dev/serial1 bcm43xx 3000000 flow -
+postgres   596  0.0  0.5 204048 22076 ?        S    08:02   0:00 /usr/lib/postgresql/11/bin/postgres -D /var/lib/postgresql/11/main -c config_file=/etc/postgresql/11/main/postgresql.conf
+  282  cd zadanie/
+  283  ls
+  284  clear
+  285  ps aux > processes.txt
+  286  ls
+  287  cat processes.txt
+  288  clear
+  289  cp processes.txt copy.txt
+  290  ls
+  291  mkdir backup
+  292  mv copy.txt backup/
+  293  ls
+  294  cd backup/
+  295  ls
+  296  cd .
+  297  cd ..
+  298  wc -l < processes.txt
+  299  cat processes.txt | wc -l > selected.txt
+  300  ls
+  301  grep '/bin' processes.txt >> selected.txt
+  302  cat selected.txt
+  303  history
+  304  history | tail -23 >commands.txt
