@@ -1,3 +1,4 @@
+cat selected.txt commands.txt
 322 processes.txt
 211:message+     825  1.0  0.0   9972  6284 ?        Ss   16:41   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
 214:root         835  0.0  0.2  50484 20112 ?        Ss   16:41   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
