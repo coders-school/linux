@@ -1,15 +1,14 @@
 michal@Dell:~/workspace/coders.school/linux/katalog$ cat selected.txt commands.txt
 14 processes.txt
- 1270  mkdir katalog/
- 1271  cd katalog/
- 1272  touch processes.txt
- 1273  ps aux > processes.txt
- 1274  cp processes.txt copy.txt
- 1275  mkdir backup/
- 1276  mv copy.txt backup/
- 1277  wc -l processes.txt
- 1278  wc -l processes.txt > selected.txt
- 1279  grep "/bin" -rn processes.txt >> selected.txt
- 1280  history
- 1281  history | -n12 > commands.txt
- 1282  history | tail -n13 > commands.txt
+ 1291  mkdir katalog/
+ 1292  cd katalog/
+ 1293  touch processes.txt
+ 1294  ps aux > processes.txt
+ 1295  cp processes.txt copy.txt
+ 1296  mkdir backup/
+ 1297  mv copy.txt backup/
+ 1298  wc -l processes.txt
+ 1299  wc -l processes.txt > selected.txt
+ 1300  grep "/bin" -rn processes.txt >> selected.txt
+ 1301  history
+ 1302  history | tail -n12 > commands.txt
