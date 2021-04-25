@@ -1,48 +1,48 @@
-konrad@konrad-VirtualBox:~/Zadanie$ cat selected.txt commands.txt 
-196 processes.txt
-message+     581  0.0  0.3   9184  6132 ?        Ss   08:46   0:03 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-root         589  0.0  0.8  50480 17728 ?        Ss   08:46   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-root         693  0.0  0.9 129012 18812 ?        Ssl  08:46   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-whoopsie     739  0.0  0.6 253520 13040 ?        Ssl  08:47   0:00 /usr/bin/whoopsie -f
-konrad       941  0.0  0.6 1681840 12816 ?       Ssl  08:47   0:03 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-konrad       946  0.0  0.2 251348  5300 ?        SLl  08:47   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
-konrad       950  0.0  0.3 175180  6128 tty2     Ssl+ 08:47   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-konrad       958  0.0  0.3  10364  6984 ?        Ss   08:47   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-konrad      1120  0.0  0.0  33772    32 ?        S    08:47   0:00 /usr/bin/VBoxClient --clipboard
-konrad      1122  0.0  1.5 166040 31704 ?        Sl   08:47   0:00 /usr/bin/VBoxClient --clipboard
-konrad      1130  0.0  0.0  33772   228 ?        S    08:47   0:00 /usr/bin/VBoxClient --seamless
-konrad      1132  0.0  0.0 166008  1888 ?        Sl   08:47   0:00 /usr/bin/VBoxClient --seamless
-konrad      1135  0.0  0.0  33772   364 ?        S    08:47   0:00 /usr/bin/VBoxClient --draganddrop
-konrad      1137  0.1  0.0 166524  2008 ?        Sl   08:47   1:01 /usr/bin/VBoxClient --draganddrop
-konrad      1145  0.0  0.0  33772   360 ?        S    08:47   0:00 /usr/bin/VBoxClient --vmsvga
-konrad      1148  0.0  0.1 168148  2592 ?        Sl   08:47   0:00 /usr/bin/VBoxClient --vmsvga
-konrad      1156  0.0  0.0   6040   456 ?        Ss   08:47   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-konrad      1180  0.0  0.1   7248  3840 ?        S    08:47   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-konrad      1204  0.1 11.6 4090644 237944 ?      Ssl  08:47   1:08 /usr/bin/gnome-shell
-konrad      1289  0.0  1.0 2536196 20460 ?       Sl   08:47   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-konrad      1936  0.0  3.2 1473596 66636 ?       Sl   09:10   0:15 /usr/bin/nautilus --gapplication-service
-  324  mkdir Zadanie
-  325  cd Zadanie/
-  326  touch processes.txt
-  327  ps aux > processes.txt 
-  328  touch copy.txt | cp processes.txt copy.txt
-  329  ls -l
-  330  mkdir backup | mv copy.txt backup
-  331  ls -l
-  332  cd backup/
-  333  ls
-  334  cd ..
-  335  wc -l processes.txt 
-  336  wc -l processes.txt > selected.txt
-  337  ls -l
-  338  cat selected.txt 
-  339  man grep
-  340  grep "/bin" processes.txt 
-  341  grep "/bin" processes.txt >> selected.txt 
-  342  cat selected.txt 
-  343  history
-  344  history | tail -n19
-  345  history | tail -n21
-  346  history | tail -n22
-  347  history | tail -n24
-  348  history | tail -n25 > commands.txt
+konrad@konrad-VirtualBox:~/Homework$ cat selected.txt commands.txt 
+190 processes.txt
+89:message+     586  0.0  0.2   8924  6012 ?        Ss   12:02   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+92:root         595  0.0  0.9  50480 20024 ?        Ss   12:02   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+105:root         703  0.0  1.1 129012 22704 ?        Ssl  12:02   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+106:whoopsie     738  0.0  0.7 253128 15556 ?        Ssl  12:02   0:00 /usr/bin/whoopsie -f
+114:konrad       942  0.1  0.9 1943708 18840 ?       S<sl 12:02   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+116:konrad       947  0.0  0.3 251316  6972 ?        Sl   12:02   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+117:konrad       951  0.0  0.3 175180  6624 tty2     Ssl+ 12:02   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+120:konrad       959  0.0  0.3   9236  6440 ?        Ss   12:02   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+132:konrad      1122  0.0  0.0  33772   360 ?        S    12:02   0:00 /usr/bin/VBoxClient --clipboard
+133:konrad      1123  0.0  0.1 165908  3996 ?        Sl   12:02   0:00 /usr/bin/VBoxClient --clipboard
+134:konrad      1131  0.0  0.0  33772   360 ?        S    12:02   0:00 /usr/bin/VBoxClient --seamless
+135:konrad      1133  0.0  0.1 166008  2740 ?        Sl   12:02   0:00 /usr/bin/VBoxClient --seamless
+136:konrad      1136  0.0  0.0  33772   364 ?        S    12:02   0:00 /usr/bin/VBoxClient --draganddrop
+137:konrad      1138  0.0  0.1 166524  2716 ?        Sl   12:02   0:00 /usr/bin/VBoxClient --draganddrop
+138:konrad      1146  0.0  0.0  33772   360 ?        S    12:02   0:00 /usr/bin/VBoxClient --vmsvga
+139:konrad      1147  0.0  0.1 168148  3428 ?        Sl   12:02   0:00 /usr/bin/VBoxClient --vmsvga
+140:konrad      1156  0.0  0.0   6040   452 ?        Ss   12:02   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+142:konrad      1178  0.0  0.2   7248  4296 ?        S    12:02   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+145:konrad      1207  1.5 11.2 4059904 228356 ?      Ssl  12:02   0:06 /usr/bin/gnome-shell
+157:konrad      1294  0.0  1.3 2609700 26532 ?       Sl   12:02   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+182:konrad      1561  0.3  3.5 1470596 73224 ?       Sl   12:03   0:01 /usr/bin/nautilus --gapplication-service
+187:konrad      1896  0.7  2.7 829356 56904 ?        Sl   12:07   0:00 /usr/bin/gedit --gapplication-service
+  304  mkdir Homework
+  305  cd Homework/
+  306  touch processes.txt
+  307  ps aux > processes.txt 
+  308  cat processes.txt 
+  309  mkdir backup
+  310  touch copy.txt | cp processes.txt copy.txt
+  311  mv copy.txt backup/
+  312  touch selected.txt | wc -l > selected.txt
+  313  cat selected.txt 
+  314  touch selected.txt | wc -l processes.txt > selected.txt
+  315  cat selected.txt 
+  316  grep -rni "/bin" processes.txt >> selected.txt 
+  317  cat selected.txt 
+  318  history
+  319  history -n15  > commands.txt
+  320  history | tail -n16  > commands.txt
+  321  cat commands.txt 
+  322  cat selected.txt commands.txt 
+  323  history | tail -n18  > commands.txt
+  324  cat selected.txt commands.txt 
+  325  history | tail -n20  > commands.txt
+  326  cat selected.txt commands.txt 
+  327  history | tail -n24  > commands.txt
