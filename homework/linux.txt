@@ -1,5 +1,5 @@
-╰─$ cat selected.txt commands.txt
-188 processes.txt
+cat selected.txt commands.txt
+188
 message+   621  0.2  0.0  10592  5484 ?        Ss   20:05   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
 root       697  0.0  0.1 125820 22144 ?        Ssl  20:05   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
 marcins   1031  0.0  0.0 240920  7256 ?        Sl   20:05   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
@@ -17,54 +17,13 @@ mkdir OxODZadanieDomowe
 ls
 cd OxODZadanieDomowe
 touch processes.txt
-ls
-ls -lh
 ps aux > processes.txt
-less processes.txt
 cp processes.txt copy.txt
-ls
-man diff
-diff -s copy.txt processes.txt
 mkdir backup
 mv copy.txt backup
-ls
-ls backup
-man wc
 wc -l < processes.txt
-wc -l processes.txt | awk '{print $1 }'
-wc -l processes.txt | awk '{print $1 }' >>selected.txt
-ls
-cat selected.txt
-wc -l processes.txt | awk '{print "Liczba linii w pliku process: "$1 }' > selected.txt
-cat processes.txt
-cat selected.txt
-wc -l processes.txt | awk '{print "Liczba linii w pliku process.txt: "$1 }' > selected.txt
-ls
-cat selected.txt
-cat processes.txt
-wc -l processes.txt
-cat processes.txt | grep "/bin"
-cat processes.txt | grep "/bin" >> selected.txt
-ls
-cat selected.txt
-man history
-history
-history | grep "OxO"
-man tail
-history tail -n 34 >> commands.txt
-tail -n 35 history >> commands.txt
-tail -n 4 selected.txt
-cd
-ls -la
-cat .zsh_history
-ls -la
-cat .bash_history
-ls -ls
-ls -la
-tail -n 35 .zsh_history
-tail -n 35 .zsh_history | awk 'BEGIN {FS="
-history
-tail -n 49 ~/.zsh_history | awk 'BEGIN {FS="
-ls
-cat commands.txt
-tail -n 55 ~/.zsh_history| awk 'BEGIN {FS="
+wc -l < processes.txt > selected.txt
+grep "/bin" processes.txt >> selected.txt
+history | tail -n 34 >> commands.txt
+cat selected.txt commands.txt
+
