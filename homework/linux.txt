@@ -8,7 +8,7 @@ runer@LAPTOP-RUNER:~/ZadanieLinux$ cat selected.txt commands.txt
  1170  mkdir backup
  1171  mv copy.txt backup/
  1172  wc -l processes.txt
- 1173  echo 5 > selected.txt
+ 1173  wc -l processes.txt > selected.txt
  1174  grep -rni "/bin" processes.txt >> selected.txt
  1175  history
  1176  history | tail -n 12 > commands.txt
