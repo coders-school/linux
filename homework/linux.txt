@@ -1,19 +1,20 @@
 cat selected.txt commands.txt
-     409 processes.txt
+     408 processes.txt
 jakubkaczmarski   3444   0,0  0,0 408426160    320 s003  Ss+  ptk05     0:00.11 /Applications/Xcode.app/Contents/Developer/usr/bin/xcdevice observe --both
 jakubkaczmarski   3443   0,0  0,0  8601260     64   ??  S    ptk05     0:00.01 /usr/bin/script -t 0 /dev/null /usr/bin/arch -arm64e xcrun xcdevice observe --both
-jakubkaczmarski   3411   0,0  0,1  9439928  11504   ??  S    ptk05     0:02.32 /Users/jakubkaczmarski/Code/Dev/flutter/bin/cache/dart-sdk/bin/dart /Users/jakubkaczmarski/Code/Dev/flutter/bin/cache/dart-sdk/bin/snapshots/pub.dart.snapshot global run devtools --machine --try-ports 10 --allow-embedding
-jakubkaczmarski   3382   0,0  0,7  9342192  61184   ??  S    ptk05    12:39.34 /Users/jakubkaczmarski/Code/Dev/flutter/bin/cache/dart-sdk/bin/dart --disable-dart-dev --packages=/Users/jakubkaczmarski/Code/Dev/flutter/packages/flutter_tools/.packages /Users/jakubkaczmarski/Code/Dev/flutter/bin/cache/flutter_tools.snapshot daemon
+jakubkaczmarski   3411   0,0  0,1  9439928  11488   ??  S    ptk05     0:02.33 /Users/jakubkaczmarski/Code/Dev/flutter/bin/cache/dart-sdk/bin/dart /Users/jakubkaczmarski/Code/Dev/flutter/bin/cache/dart-sdk/bin/snapshots/pub.dart.snapshot global run devtools --machine --try-ports 10 --allow-embedding
+jakubkaczmarski   3382   0,0  0,8  9342192  69856   ??  S    ptk05    12:42.97 /Users/jakubkaczmarski/Code/Dev/flutter/bin/cache/dart-sdk/bin/dart --disable-dart-dev --packages=/Users/jakubkaczmarski/Code/Dev/flutter/packages/flutter_tools/.packages /Users/jakubkaczmarski/Code/Dev/flutter/bin/cache/flutter_tools.snapshot daemon
 jakubkaczmarski   3361   0,0  0,0 407994304      0   ??  S    ptk05     0:00.00 bash /Users/jakubkaczmarski/Code/Dev/flutter/bin/flutter daemon
-jakubkaczmarski   3359   0,0  0,0  9820720   2576   ??  S    ptk05     0:13.73 /Users/jakubkaczmarski/Code/Dev/flutter/bin/cache/dart-sdk/bin/dart /Users/jakubkaczmarski/Code/Dev/flutter/bin/cache/dart-sdk/bin/snapshots/analysis_server.dart.snapshot --client-id=VS-Code --client-version=3.21.1
- 1200  cd ..
- 1201  rm -rf testDir
- 1202  mkdir testDir
- 1203  cd testDir
- 1204  touch processes.txt
- 1205  ps aux > processes.txt
- 1206  cp processes.txt copy.txt
- 1207  wc -l processes.txt
- 1208  wc -l processes.txt > selected.txt
- 1209  grep /bin processes.txt >> selected.txt
- 1210  history
+jakubkaczmarski   3359   0,0  0,0  9820720   2656   ??  S    ptk05     0:13.77 /Users/jakubkaczmarski/Code/Dev/flutter/bin/cache/dart-sdk/bin/dart /Users/jakubkaczmarski/Code/Dev/flutter/bin/cache/dart-sdk/bin/snapshots/analysis_server.dart.snapshot --client-id=VS-Code --client-version=3.21.1
+ 1221  cd testDir
+ 1222  touch processes.txt
+ 1223  ps aux > processes.txt
+ 1224  cp processes.txt copy.txt
+ 1225  mkdir backup
+ 1226  mv copy.txt ./backup
+ 1227  wc -l processes.txt
+ 1228  wc -l processes.txt > selected.txt
+ 1229  grep /bin processes.txt >>selected.txt
+ 1230  history
+ 1231  history | tail -n10 > commands.txt
+ 1232  cat commands.txt
