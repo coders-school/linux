@@ -1,0 +1,28 @@
+pg@pg-B450-AORUS-ELITE:~/Dokumenty/cpp/homeworkLinux$ cat selected.txt commands.txt 
+305 processes.txt
+message+    1256  0.0  0.0   9876  6456 ?        Ss   11:27   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root        1267  0.0  0.0  50488 20160 ?        Ss   11:27   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root        1409  0.0  0.0 129284 22768 ?        Ssl  11:27   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+whoopsie    1899  0.0  0.0 253088 15492 ?        Ssl  11:27   0:00 /usr/bin/whoopsie -f
+pg          2114  0.5  0.0 3066672 25792 ?       S<sl 11:28   0:31 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+pg          2120  0.0  0.0   8440  5520 ?        Ss   11:28   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+pg          2137  0.0  0.0 251672  7812 ?        Sl   11:28   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+pg          2205  0.0  0.0 175348  6620 tty2     Ssl+ 11:28   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+pg          2288  0.0  0.0   6040   452 ?        Ss   11:28   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+pg          2314  0.0  0.0   7248  4304 ?        S    11:28   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+pg          2346  2.3  0.8 4658704 264536 ?      Ssl  11:28   2:26 /usr/bin/gnome-shell
+pg          2449  0.0  0.0 2941756 26724 ?       Sl   11:28   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+pg          2601  0.1  0.9 1342864 324184 ?      Sl   11:28   0:07 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
+pg          7586  0.6  0.2 1084136 85896 ?       Sl   12:44   0:11 /usr/bin/nautilus --gapplication-service
+  175  mkdir homeworkLinux
+  176  cd homeworkLinux/
+  177  touch processes.txt
+  178  ps aux > processes.txt 
+  179  cp processes.txt copy.txt
+  180  mkdir backup
+  181  mv copy.txt ./backup/
+  182  wc -l processes.txt 
+  183  wc -l processes.txt > selected.txt
+  184  grep "/bin" ./processes.txt >> selected.txt 
+  185  history
+  186  history | tail -n12 > commands.txt
