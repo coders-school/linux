@@ -1,0 +1,20 @@
+homework cat selected.txt commands.txt
+     493 processes.txt
+7:root                70   1.4  0.1  4354164  14720   ??  Ss   Thu08am  12:05.09 /Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_grabber
+8:root                68   1.2  0.1  4345472  10920   ??  Ss   Thu08am  10:20.80 /Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_observer
+47:raisin            3265   0.0  0.4  4402616  63660   ??  S     1:01pm   0:02.44 /Users/Raisin/Library/Application Support/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/11.0.0/clangd_11.0.0/bin/clangd
+129:root               927   0.0  0.0  4360280   4324   ??  Ss   Thu08am   0:00.05 /usr/bin/sysdiagnose
+203:root               668   0.0  0.0  4337000   6416   ??  S    Thu08am   0:08.93 /Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_session_monitor
+205:raisin             658   0.0  0.1  4370088  13564   ??  S    Thu08am   0:24.06 /Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_console_user_server
+264:root               443   0.0  0.0  4329816   6096 s000  Ss   Thu08am   0:00.06 /usr/bin/login -fpl raisin /Applications/Tools/iTerm.app/Contents/MacOS/ShellLauncher --launch_shell
+ 1222  mkdir homework
+ 1223  cd homework
+ 1224  touch processes.txt
+ 1225  ps aux >>processes.txt
+ 1226  cp processes.txt copy.txt
+ 1227  mkdir backup
+ 1228  mv copy.txt backup
+ 1229  wc -l processes.txt
+ 1230  wc -l processes.txt >selected.txt
+ 1231  grep -n '/bin' processes.txt >>selected.txt
+ 1232  history
