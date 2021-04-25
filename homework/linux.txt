@@ -66,4 +66,4 @@ backup/copy.txt:225:sirart34    9791  0.3  0.4 1080800 73896 ?       Sl   21:56 
   521  history 22 > commands.txt
   522  cat selected.txt commands.txt
   523  history
-  524  history 30 > commands.txt
+  524  history | tail -n 30 > commands.txt
