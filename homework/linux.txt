@@ -1,0 +1,86 @@
+morfiniusz@morfiniusz-MS-7B85:~/Documents/CPP2021$ cat selected.txt commands.txt 
+366
+message+     961  0.0  0.0  10792  6688 ?        Ss   13:49   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         970  0.0  0.1  51400 20064 ?        Ss   13:49   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+nvidia-+     986  0.0  0.0   5184  1792 ?        Ss   13:49   0:00 /usr/bin/nvidia-persistenced --user nvidia-persistenced --no-persistence-mode --verbose
+root        1137  0.0  0.1 129264 22432 ?        Ssl  13:49   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+whoopsie    1611  0.0  0.0 254160 15596 ?        Ssl  13:49   0:00 /usr/bin/whoopsie -f
+morfini+    2005  1.7  0.1 3256332 24132 ?       S<sl 13:59   1:57 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+morfini+    2010  0.0  0.0   9912  6300 ?        Ss   13:59   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+morfini+    2017  0.0  0.0 251396  7132 ?        Sl   13:59   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+morfini+    2101  0.0  0.0 176052  6800 tty2     Ssl+ 13:59   0:00 /usr/libexec/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+morfini+    2180  0.0  0.0   6040   448 ?        Ss   13:59   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+morfini+    2203  0.0  0.0   8148  4536 ?        S    13:59   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+morfini+    2237  2.4  3.0 5832812 497860 ?      Ssl  13:59   2:48 /usr/bin/gnome-shell
+morfini+    2350  0.0  0.1 2946028 31464 ?       Sl   13:59   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+morfini+    2481  0.0  1.7 1344892 283652 ?      Sl   13:59   0:06 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
+morfini+    7068  0.0  0.1  47468 19408 ?        S    15:08   0:00 /usr/bin/python3 /usr/bin/gnome-terminal --wait
+morfini+    7071  0.0  0.1 317228 27416 ?        Sl   15:08   0:00 /usr/bin/gnome-terminal.real --wait
+morfini+    7728  0.0  0.4 1072464 66804 ?       Sl   15:29   0:01 /usr/bin/nautilus --gapplication-service
+  451  touch processes.txt
+  452  ps aux
+  453  ps aux > processes.tx
+  454  cat processes.txt
+  455  ps aux > processes.txt
+  456  cat processes.txt
+  457  cp processes.txt copy.txt
+  458  cat copy.txt
+  459  grep -n ps aux *
+  460  grep -n aux *
+  461  wc copy.txt
+  462  wc --help
+  463  wc -l copy.txt
+  464  touch selected.txt < wc -l copy.txt 
+  465  wc -l copy.txt < selected.txt
+  466  wc -l copy.txt > selected.txt
+  467  cat selected.txt
+  468  wc -l processes.txt > selected.txt
+  469  cat selected.txt 
+  470  selected.txt < processes.txt wc -l
+  471  clear
+  472  cat selected.txt 
+  473  wc -l processes.txt | selected.txt
+  474  wc -l processes.txt
+  475  copy.txt > processes.txt 
+  476  ls -l
+  477  copy.txt > processes.txt 
+  478  ps aux > processes.txt
+  479  cat processes.txt
+  480  wc -l processes.txt 
+  481  cp processes.txt copy.txt
+  482  mkdir backup
+  483  mv copy.txt backup/
+  484  cd backup/
+  485  ls
+  486  cd
+  487  cd Documents/CPP2021
+  488  ls
+  489  cat selected.txt
+  490  processes.txt wc -l
+  491  ls
+  492  wc -l < processes.txt 
+  493  echo 
+  494  wc -l < processes.txt | selected.txt
+  495  wc -l < processes.txt > selected.txt
+  496  cat selected.txt 
+  497  wc --help
+  498  grep /bin processes.txt
+  499  grep /bin processes.txt > selected.txt 
+  500  cat selected.txt 
+  501  wc -l < processes.txt > selected.txt
+  502  grep -rni /bin processes.txt >> selected.txt
+  503  cat selected.txt 
+  504  history
+  505  tail --help
+  506  history -n451
+  507  history tail -n53
+  508  history tail-n53
+  509  history tail -53
+  510  history tail
+  511  history
+  512  tail --help
+  513  tail -n60 history
+  514  history --help
+  515  history | tail -n60
+  516  history | tail -n66
+  517  history | tail -n67 > commands.txt
