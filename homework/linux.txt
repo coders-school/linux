@@ -1,3 +1,8 @@
+Tomasz Węgliński <tom.weglinski@gmail.com>
+	
+21:17 (0 minut temu)
+	
+do mnie
 tom@tom-VirtualBox:~/linuxzad$ cat selected.txt commands.txt
 187 processes.txt
 74:message+     562  0.0  0.2   8912  2604 ?        Ss   17:39   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
@@ -15,6 +20,204 @@ tom@tom-VirtualBox:~/linuxzad$ cat selected.txt commands.txt
 169:tom         3780  0.0  0.3 605124  3028 ?        Ssl  17:57   0:00 /usr/bin/rygel
 180:tom         5882  0.0  1.0  41324 10992 pts/1    T    20:37   0:00 /usr/bin/python3 /usr/lib/command-not-found -- 123
 184:tom         5969  1.5  6.4 926848 64516 ?        Sl   20:47   0:02 /usr/bin/nautilus --gapplication-service
+74:message+     562  0.0  0.2   8912  2604 ?        Ss   17:39   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+76:root         572  0.0  0.1  50484  1852 ?        Ss   17:39   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+90:root         669  0.0  0.1 129012  1672 ?        Ssl  17:39   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+94:whoopsie     700  0.0  0.4 326868  4340 ?        Ssl  17:39   0:00 /usr/bin/whoopsie -f
+97:tom          756  0.0  0.4 2206128 4952 ?        S<sl 17:39   0:01 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+99:tom          762  0.0  0.2 251316  2396 ?        Sl   17:39   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+100:tom          766  0.0  0.2   8588  2524 ?        Ss   17:39   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+101:tom          769  0.0  0.1 175180  1524 tty2     Ssl+ 17:39   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+115:tom          985  0.0  0.0   6040    32 ?        Ss   17:39   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+117:tom         1012  0.0  0.1   7248  1360 ?        S    17:39   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+121:tom         1052  0.8  9.4 3707884 95356 ?       Ssl  17:39   1:40 /usr/bin/gnome-shell
+132:tom         1150  0.0  0.2 2609692 2912 ?        Sl   17:39   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+169:tom         3780  0.0  0.3 605124  3028 ?        Ssl  17:57   0:00 /usr/bin/rygel
+180:tom         5882  0.0  1.0  41324 10992 pts/1    T    20:37   0:00 /usr/bin/python3 /usr/lib/command-not-found -- 123
+184:tom         5969  1.5  6.4 926848 64516 ?        Sl   20:47   0:02 /usr/bin/nautilus --gapplication-service
+    6  cd ..
+    7  cd Music
+    8  ls
+    9  cd ..
+   10  cd Desktop
+   11  ls
+   12  cd ..
+   13  pwd
+   14  cd`
+   15  cd -
+   16  pwd
+   17  ls
+   18  cd ..
+   19  pwd
+   20  cd..
+   21  cd ..
+   22  pwd
+   23  pwd
+   24  ls
+   25  clear
+   26  pwd
+   27  ls
+   28  mkdir linuxzad
+   29  cd linuxzad
+   30  touch processes.txt
+   31  ps aux
+   32  t
+   33  echo ps aux
+   34  ps aux
+   35  clear
+   36  cd linuxzad
+   37  pwd
+   38  ls
+   39  ps aux > processes.txt
+   40  cat processes.txt
+   41  cp processes.txt copy.txt
+   42  cat copy.txt
+   43  mkdir backup
+   44  cd backup
+   45  man wc
+   46  wc -l processes.txt
+   47  wc ../ processes.txt
+   48  wc ../processes.txt
+   49  wc -l ../processes.txt
+   50  ../
+   51  cd ..
+   52  cd backup
+   53  mw copy.txt backup
+   54  mv copy.txt backup
+   55  mv ../copy.txt backup
+   56  ls
+   57  cd ..
+   58  ls
+   59  cd backup
+   60  pwd
+   61  ls
+   62  pwd
+   63  rm backup.txt
+   64  ls
+   65  rm backup
+   66  ls
+   67  cd ..
+   68  ls
+   69  copy processes.txt copy.txt
+   70  cp processes.txt copy.txt
+   71  ls
+   72  mv copy.txt backup/
+   73  cd backup
+   74  ls
+   75  pwe
+   76  pwd
+   77  cd..
+   78  cd ..
+   79  ls
+   80  wc -l processes.txt >selected.txt
+   81  ls
+   82  cat selected.txt
+   83  ls
+   84  grep /bin
+   85  ls
+   86  grep -rni /bin
+   87  grep -rni /bin >>selected.txt
+   88  grep -rni /bin >selected.txt
+   89  pwd
+   90  grep -rni /bin processes.txt >selected.txt
+   91  pwd
+   92  ls
+   93  cat processes.txt
+   94  cat selected.txt
+   95  history
+   96  tail
+   97  man tail
+   98  tail -help
+   99  tail --help
+  100  tail -n5
+  101  tail --lines +5
+  102  tail --lines +5NUM
+  103  tail --lines [+5]NUM
+  104  tail --lines 5NUM
+  105  tail --lines 5 NUM
+  106  tail --lines 5
+  107  tail --lines5
+  108  tail -n5 --lines
+  109  tail -n --lines
+  110  tail -n -lines
+  111  tail -n 5
+  112  tail -n5
+  113  history
+  114  tail -n
+  115  tail --lines5
+  116  tail --lines 5
+  117  tail --lines 10
+  118  tail --lines ls
+  119  tail --lines '8'
+  120  tail --n
+  121  tail -n8
+  122  tail --n8
+  123  tail help
+  124  tail --help
+  125  tail --follow[clear]
+  126  tail --follow[ls]
+  127  tail --follow[5]
+  128  tail --lines=5
+  129  tail --lines=5NUM
+  130  tail --lines=+
+  131  tail --lines=+5
+  132  tail -5
+  133  ls -tl|tail -5
+  134  ls
+  135  ls -tl
+  136  history |tail -5
+  137  history |tail -5 > commands.txt
+  138  ls
+  139  cat commands.txt
+  140  cat selected.txt|commands.txt
+  141  ls
+  142  echo selected.txt|commands.txt
+  143  man cat
+  144  cat selected.txt|cat commands.txt
+  145  cat selected.txt | cat commands.txt
+  146  cat selected.txt | commands.txt
+  147  ls
+  148  cat selected.txt commands.txt
+  149  clear
+  150  history
+  151  wc -l processes.txt << selected.txt
+  152  wc -l processes.txt < selected.txt
+  153  wc -l processes.txt
+  154  pwd
+  155  wc -l processes.txt
+  156  cat processes.txt
+  157  clear
+  158  ps aux
+  159  wc -l processes.txt
+  160  cat selected.txt
+  161  clear
+  162  man wc
+  163  wc --lines selected.txt
+  164  wc --lines processes.txt
+  165  tom@tom-VirtualBox:~/linuxzad$ cat selected.txt commands.txt
+  166  176 processes.txt
+  167  82:message+     558  0.1  0.5   8876  5360 ?        Ss   16:37   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+  168  84:root         573  0.0  1.7  50484 17504 ?        Ss   16:37   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+  169  98:root         661  0.0  1.8 129012 18632 ?        Ssl  16:37   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+  170  103:whoopsie     719  0.0  1.1 326860 11620 ?        Ssl  16:37   0:00 /usr/bin/whoopsie -f
+  171  106:tom          753  0.3  1.4 1681840 14068 ?       S<sl 16:37   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+  172  108:tom          758  0.0  0.5 251192  5396 ?        Sl   16:37   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+  173  109:tom          762  0.1  0.5   8340  5116 ?        Ss   16:37   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+  174  110:tom          764  0.0  0.6 175180  6212 tty2     Ssl+ 16:37   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+  175  124:tom          982  0.0  0.0   6040   452 ?        Ss   16:38   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+  176  126:tom         1009  0.0  0.3   7248  3744 ?        S    16:38   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+  177  130:tom         1050  6.1 29.2 3436580 294156 ?      Ssl  16:38   0:17 /usr/bin/gnome-shell
+  178  144:tom         1162  0.1  1.9 2609700 19712 ?       Sl   16:38   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+  179  168:tom         1368  1.5  7.3 1013844 74084 ?       Sl   16:38   0:03 /usr/bin/nautilus --gapplication-service
+  180  grep -n"/bin"processes.txt >>selected.txt
+  181  grep -n"/bin" processes.txt >>selected.txt
+  182  grep -n "/bin" processes.txt >>selected.txt
+  183  cat selected.txt
+  184  cat selected.txt
+  185  cat processes.txt
+  186  ls
+  187  man cat
+  188  cat processes.txt
   189  pwd
   190  ls
   191  cat processes.txt
@@ -35,3 +238,7 @@ tom@tom-VirtualBox:~/linuxzad$ cat selected.txt commands.txt
   206  cat selected.txt
   207  history
   208  history |tail -20 > commands.txt
+  209  cat selected.txt commands.txt
+  210  history |tail -205 > commands.txt
+tom@tom-VirtualBox:~/linuxzad$
+
