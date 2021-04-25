@@ -1,0 +1,70 @@
+╰─$ cat selected.txt commands.txt
+Liczba linii w pliku process.txt: 188
+message+   621  0.2  0.0  10592  5484 ?        Ss   20:05   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root       697  0.0  0.1 125820 22144 ?        Ssl  20:05   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+marcins   1031  0.0  0.0 240920  7256 ?        Sl   20:05   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+marcins   1035  0.0  0.0 162324  5540 tty2     Ssl+ 20:05   0:00 /usr/lib/gdm3/gdm-wayland-session /usr/bin/gnome-session
+marcins   1037  0.0  0.0   9924  5276 ?        Ss   20:05   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+marcins   1069  7.8  2.1 3446500 355320 tty2   Sl+  20:05   0:37 /usr/bin/gnome-shell
+marcins   1094  2.8  0.4 525976 75396 tty2     Sl+  20:05   0:13 /usr/bin/Xwayland :0 -rootless -terminate -accessx -core -listen 4 -listen 5 -displayfd 6
+marcins   1107  0.0  0.0   9108  4252 ?        S    20:05   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+marcins   1113  5.0  0.1 2821648 26212 ?       S<sl 20:05   0:24 /usr/bin/pulseaudio --daemonize=no
+marcins   1327  0.6  0.7 1111796 120584 tty2   Sl+  20:05   0:02 /usr/bin/gnome-software --gapplication-service
+marcins   2012  0.0  0.1 202528 28904 tty2     Sl+  20:05   0:00 /usr/bin/python3 /usr/bin/chrome-gnome-shell /usr/lib/mozilla/native-messaging-hosts/org.gnome.chrome_gnome_shell.json chrome-gnome-shell@gnome.org
+marcins   2105  0.0  0.2 953804 40100 ?        SLl  20:06   0:00 /usr/bin/seahorse --gapplication-service
+marcins   2607  0.0  0.0 158472  2100 ?        Ssl  20:06   0:00 /usr/bin/speech-dispatcher --spawn --communication-method unix_socket --socket-path /run/user/1000/speech-dispatcher/speechd.sock
+mkdir OxODZadanieDomowe
+ls
+cd OxODZadanieDomowe
+touch processes.txt
+ls
+ls -lh
+ps aux > processes.txt
+less processes.txt
+cp processes.txt copy.txt
+ls
+man diff
+diff -s copy.txt processes.txt
+mkdir backup
+mv copy.txt backup
+ls
+ls backup
+man wc
+wc -l processes.txt
+wc -l processes.txt | awk '{print $1 }'
+wc -l processes.txt | awk '{print $1 }' >>selected.txt
+ls
+cat selected.txt
+wc -l processes.txt | awk '{print "Liczba linii w pliku process: "$1 }' > selected.txt
+cat processes.txt
+cat selected.txt
+wc -l processes.txt | awk '{print "Liczba linii w pliku process.txt: "$1 }' > selected.txt
+ls
+cat selected.txt
+cat processes.txt
+wc -l processes.txt
+cat processes.txt | grep "/bin"
+cat processes.txt | grep "/bin" >> selected.txt
+ls
+cat selected.txt
+man history
+history
+history | grep "OxO"
+man tail
+history tail -n 34 >> commands.txt
+tail -n 35 history >> commands.txt
+tail -n 4 selected.txt
+cd
+ls -la
+cat .zsh_history
+ls -la
+cat .bash_history
+ls -ls
+ls -la
+tail -n 35 .zsh_history
+tail -n 35 .zsh_history | awk 'BEGIN {FS="
+history
+tail -n 49 ~/.zsh_history | awk 'BEGIN {FS="
+ls
+cat commands.txt
+tail -n 55 ~/.zsh_history| awk 'BEGIN {FS="
