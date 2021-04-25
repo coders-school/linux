@@ -10,11 +10,12 @@ homework cat selected.txt commands.txt
  1222  mkdir homework
  1223  cd homework
  1224  touch processes.txt
- 1225  ps aux >>processes.txt
+ 1225  ps aux > processes.txt
  1226  cp processes.txt copy.txt
  1227  mkdir backup
  1228  mv copy.txt backup
  1229  wc -l processes.txt
- 1230  wc -l processes.txt >selected.txt
- 1231  grep -n '/bin' processes.txt >>selected.txt
+ 1230  wc -l processes.txt >> selected.txt
+ 1231  grep -n '/bin' processes.txt >> selected.txt
  1232  history
+ 1233  history | tail -n 11 > commands.txt
