@@ -1,0 +1,31 @@
+mma@wro1-ldl-P01812 ~/Desktop/kursCPP/homework1 $ cat selected.txt commands.txt 
+225 processes.txt
+100:message+   876  0.0  0.0  44128  4820 ?        Ss   17:29   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
+117:root      1160  0.0  0.1 800372 12372 ?        Ssl  17:29   0:01 /usr/local/desktopcentralagent/bin/dcservice -t &
+121:nvidia-+  1250  0.0  0.0  17104  1600 ?        Ss   17:29   0:00 /usr/bin/nvidia-persistenced --user nvidia-persistenced --no-persistence-mode --verbose
+130:root      1595  0.0  0.2 451640 22756 ?        Sl   17:29   0:00 /opt/cisco/anyconnect/bin/vpnagentd
+133:mma       1683  0.0  0.0 205204  6612 ?        Sl   17:29   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+135:mma       1746  0.0  0.0  11140   312 ?        Ss   17:29   0:00 /usr/bin/ssh-agent /usr/bin/dbus-launch --exit-with-session /usr/bin/im-launch cinnamon-session-cinnamon
+136:mma       1749  0.0  0.0  43596  2600 ?        S    17:29   0:00 /usr/bin/dbus-launch --exit-with-session /usr/bin/im-launch cinnamon-session-cinnamon
+137:mma       1750  0.0  0.0  43536  3980 ?        Ss   17:29   0:00 /usr/bin/dbus-daemon --fork --print-pid 5 --print-address 7 --session
+139:mma       1768  0.0  0.0  43024  3964 ?        S    17:29   0:00 /usr/bin/dbus-daemon --config-file=/etc/at-spi2/accessibility.conf --nofork --print-address 3
+167:mma       1924  4.2  0.1 651300 15756 ?        S<l  17:29   1:24 /usr/bin/pulseaudio --start --log-target=syslog
+174:mma       2010  0.0  0.3 194420 30656 ?        S    17:29   0:00 /usr/bin/python3 /usr/bin/cinnamon-launcher
+182:mma       2057  0.0  0.3 420208 31304 ?        Sl   17:29   0:00 /usr/bin/python3 /usr/bin/cinnamon-killer-daemon
+187:mma       2327  0.0  0.1  28212  8428 ?        S    17:29   0:00 /usr/bin/python3 /usr/bin/blueberry-tray
+193:root      2346  0.0  0.1 801236 13052 ?        Sl   17:29   0:00 /usr/local/desktopcentralagent/bin/dcondemand &
+196:mma       2882  0.0  0.1  44164 12616 ?        S    17:30   0:00 /usr/bin/python3 /usr/bin/mintupdate-launcher
+199:mma       3024  0.0  0.3 235992 30272 ?        Sl   17:30   0:00 /usr/bin/python3 /usr/share/system-config-printer/applet.py
+220:mma       7196  0.0  0.0  97216  2336 ?        Ssl  17:45   0:00 /usr/bin/speech-dispatcher --spawn --communication-method unix_socket --socket-path /run/user/1000/speech-dispatcher/speechd.sock
+ 1997  mkdir homework1
+ 1998  cd homework1/
+ 1999  touch processes.txt
+ 2000  ps aux > processes.txt 
+ 2001  cp processes.txt copy.txt
+ 2002  mkdir backup
+ 2003  mv copy.txt backup/
+ 2004  wc -l processes.txt 
+ 2005  wc -l processes.txt > selected.txt
+ 2006  grep -rnw 'bin' processes.txt >> selected.txt
+ 2007  history
+ 2008  history | tail -n 14 > commands.txt
