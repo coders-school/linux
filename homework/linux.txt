@@ -75,6 +75,16 @@ tom@tom-VirtualBox:~/linuxzad$ cat selected.txt commands.txt
 169:tom         3780  0.0  0.3 605124  3028 ?        Ssl  17:57   0:00 /usr/bin/rygel
 180:tom         5882  0.0  1.0  41324 10992 pts/1    T    20:37   0:00 /usr/bin/python3 /usr/lib/command-not-found -- 123
 184:tom         5969  1.5  6.4 926848 64516 ?        Sl   20:47   0:02 /usr/bin/nautilus --gapplication-service
+   24  ls
+   25  clear
+   26  pwd
+   27  ls
+   28  mkdir linuxzad
+   29  cd linuxzad
+   30  touch processes.txt
+   31  ps aux
+   32  t
+   33  echo ps aux
    34  ps aux
    35  clear
    36  cd linuxzad
@@ -293,4 +303,14 @@ istory
   249  history |tail -218 > commands.txt
   250  man tail
   251  history |tail -218 > commands.txt
-tom@tom-VirtualBox:~/linuxzad$ 
+  252  cat commands.txt
+  253  cat selected.txt commands.txt
+  254  cat commands.txt
+  255  cat selected.txt commands.txt
+  256  history tail -218 > commands.txt
+  257  history tail -n218 > commands.txt
+  258  history tail -n 218 > commands.txt
+  259  history | tail -n 218 > commands.txt
+  260  cat commands.txt
+  261  history | tail -n 238 > commands.txt
+tom@tom-VirtualBox:~/linuxzad$
