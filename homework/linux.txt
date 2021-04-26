@@ -11,8 +11,8 @@ $ cat selected.txt commands.txt
 177:kacu      1457  0.0  0.4 251148 32672 ?        Sl   14:24   0:00 /usr/bin/python3 /usr/share/system-config-printer/applet.py
 220:kacu      2341  0.0  0.4 537824 35404 ?        Sl   14:26   0:00 /usr/bin/xfce4-terminal
  2002  mkdir kacu
- 2003  touch kacu/processes.txt
- 2004  cd kacu
+ 2003  cd kacu
+ 2004  touch processes.txt
  2005  ps aux
  2006  cat processes.txt << ps aux
  2007  cat processes.txt < ps aux
