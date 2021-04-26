@@ -1,0 +1,35 @@
+krzys@krzys:~/coders/zad1$ cat selected.txt commands.txt
+190 processes.txt
+80:message+     556  0.0  0.0   9888  6256 ?        Ss   10:23   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+83:root         568  0.0  0.1  50484 20236 ?        Ss   10:23   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+94:root         678  0.0  0.2 129024 22788 ?        Ssl  10:23   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+96:whoopsie     711  0.0  0.1 326852 15580 ?        Ssl  10:23   0:00 /usr/bin/whoopsie -f
+107:krzys       1332  0.0  0.1 1681688 19268 ?       S<sl 10:24   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+109:krzys       1337  0.0  0.0 251356  7284 ?        Sl   10:24   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+110:krzys       1341  0.0  0.0   8784  5616 ?        Ss   10:24   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+116:krzys       1383  0.0  0.0 175180  6692 tty2     Ssl+ 10:24   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+123:krzys       1510  0.0  0.0  33772   364 ?        S    10:24   0:00 /usr/bin/VBoxClient --clipboard
+124:krzys       1511  0.0  0.0 166040  4016 ?        Sl   10:24   0:00 /usr/bin/VBoxClient --clipboard
+125:krzys       1522  0.0  0.0  33772   360 ?        S    10:24   0:00 /usr/bin/VBoxClient --seamless
+126:krzys       1523  0.0  0.0 166008  2736 ?        Sl   10:24   0:00 /usr/bin/VBoxClient --seamless
+127:krzys       1529  0.0  0.0  33772   360 ?        S    10:24   0:00 /usr/bin/VBoxClient --draganddrop
+128:krzys       1531  0.2  0.0 166524  2724 ?        Sl   10:24   0:11 /usr/bin/VBoxClient --draganddrop
+129:krzys       1537  0.0  0.0  33772   364 ?        S    10:24   0:00 /usr/bin/VBoxClient --vmsvga
+130:krzys       1538  0.0  0.0 168288  3508 ?        Sl   10:24   0:00 /usr/bin/VBoxClient --vmsvga
+131:krzys       1545  0.0  0.0   6040   456 ?        Ss   10:24   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+133:krzys       1575  0.0  0.0   7248  4256 ?        S    10:24   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+136:krzys       1620  1.9  3.1 4240132 352864 ?      Rsl  10:24   1:23 /usr/bin/gnome-shell
+149:krzys       1721  0.0  0.2 2609700 26728 ?       Sl   10:24   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+173:krzys       1992  0.0  0.4 1085628 44808 ?       SLl  10:25   0:00 /usr/bin/seahorse --gapplication-service
+174:krzys       1994  0.0  0.5 798060 58152 ?        Sl   10:25   0:00 /usr/bin/gnome-calendar --gapplication-service
+178:krzys       2257  0.2  0.6 1075932 75144 ?       Sl   10:29   0:09 /usr/bin/nautilus --gapplication-service
+    1  mkdir zad1
+    2  cd zad1
+    3  touch processes.txt
+    4  ps aux > processes.txt
+    5  cp processes.txt copy.txt
+    6  mkdir backup
+    7  mv copy.txt backup
+    8  wc -l processes.txt > selected.txt
+    9  grep -n /bin processes.txt >> selected.txt
+   10  history | tail > commands.txt
