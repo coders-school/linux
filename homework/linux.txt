@@ -1,0 +1,88 @@
+miczel@ubuntu:~/dev/test$ cat selected.txt commands.txt 
+210 processes.txt
+83:message+     559  0.0  0.1  10028  6336 ?        Ss   04:59   0:05 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+86:root         575  0.0  0.4  47960 19172 ?        Ss   04:59   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+95:root         671  0.0  0.5 126480 20356 ?        Ssl  04:59   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+96:whoopsie     706  0.0  0.2 326868 11816 ?        Ssl  04:59   0:00 /usr/bin/whoopsie -f
+105:miczel      2643  0.0  0.1   9092  5904 ?        Ss   05:07   0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+107:miczel      3012  0.0  0.1 248816  6680 ?        Sl   05:07   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+108:miczel      3016  0.0  0.1 172652  6172 tty2     Ssl+ 05:07   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+111:miczel      3107  0.0  0.0  31216   360 ?        S    05:07   0:00 /usr/bin/VBoxClient --clipboard
+112:miczel      3108  0.0  0.8 163620 35680 ?        Sl   05:07   0:00 /usr/bin/VBoxClient --clipboard
+113:miczel      3119  0.0  0.0  31216   360 ?        S    05:07   0:00 /usr/bin/VBoxClient --seamless
+114:miczel      3121  0.0  0.0 163452  2048 ?        Sl   05:07   0:00 /usr/bin/VBoxClient --seamless
+115:miczel      3126  0.0  0.0  31216   360 ?        S    05:07   0:00 /usr/bin/VBoxClient --draganddrop
+116:miczel      3128  0.1  0.0 229504  1908 ?        Sl   05:07   0:33 /usr/bin/VBoxClient --draganddrop
+117:miczel      3133  0.0  0.0  31216   360 ?        S    05:07   0:00 /usr/bin/VBoxClient --vmsvga-x11
+118:miczel      3135  0.0  0.0 165732  2988 ?        Sl   05:07   0:00 /usr/bin/VBoxClient --vmsvga-x11
+120:miczel      3174  0.0  0.0   7380  3716 ?        S    05:07   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+122:miczel      3206  0.0  0.3 1679032 14596 ?       S<sl 05:07   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+124:miczel      3228  0.7 10.7 5190540 434356 ?      Ssl  05:07   3:14 /usr/bin/gnome-shell
+147:miczel      3399  0.0  0.6 2742336 25172 ?       Sl   05:07   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+171:miczel     12562  0.0  1.3 870116 55464 ?        Sl   05:16   0:00 /usr/bin/gnome-calendar --gapplication-service
+172:miczel     12566  0.0  1.0 477556 40972 ?        SLl  05:16   0:00 /usr/bin/seahorse --gapplication-service
+181:miczel     29889  0.0  3.8 936428 154760 ?       SNl  06:29   0:13 /usr/bin/python3 /usr/bin/update-manager --no-update --no-focus-on-map
+   60  ls
+   61  cd dev/
+   62  ls
+   63  mkdir test
+   64  ls
+   65  cd test/
+   66  touch precesses.txt
+   67  ls
+   68  ps aux
+   69  ps aux | processes.txt
+   70  ps aux | ./processes.txt
+   71  ls
+   72  rm precesses.txt 
+   73  touch processes.txt
+   74  ps aux | ./processes.txt
+   75  ps aux | processes.txt
+   76  ps aux >> ./processes.txt
+   77  ls
+   78  cat processes.txt 
+   79  cp processes.txt copy.txt
+   80  ls
+   81  less copy.txt 
+   82  more copy.txt 
+   83  man ps
+   84  wc processes.txt 
+   85  man wc
+   86  wc -l processes.txt 
+   87  man wc
+   88  wc -l processes.txt | ./selected.txt
+   89  wc -l processes.txt | selected.txt
+   90  wc -l processes.txt > selected.txt
+   91  cat selected.txt 
+   92  grep processes.txt /bin
+   93  grep processes.txt "/bin"
+   94  grep processes.txt *
+   95  grep ./processes.txt *
+   96  ls
+   97  grep ./processes.txt "/bin"
+   98  grep -h
+   99  grep --help
+  100  grep ./processes.txt *
+  101  grep processes.txt *
+  102  grep processes.txt
+  103  grep * processes.txt
+  104  cat processes.txt 
+  105  grep processes.txt miczel
+  106  grep processes.txt "miczel"
+  107  grep processes.txt 'miczel'
+  108  grep processes.txt "miczel"
+  109  grep "miczel" processes.txt 
+  110  grep "/bin" processes.txt 
+  111  grep "/bin" processes.txt >> selected.txt 
+  112  cat selected.txt 
+  113  grep -n "/bin" processes.txt >> selected.txt 
+  114  cat selected.txt 
+  115  grep --help
+  116  history
+  117  wc -l processes.txt > selected.txt
+  118  grep -n "/bin" processes.txt >> selected.txt 
+  119  cat selected.txt 
+  120  tail
+  121  tail --help
+  122  history | tail -n +60
+  123  history | tail -n +60 > commands.txt
