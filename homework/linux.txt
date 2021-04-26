@@ -1,0 +1,44 @@
+osboxes@osboxes:~/Desktop/folder$ cat selected.txt comands.txt 
+164 processes.txt
+
+
+message+     576  0.0  0.0   8748  5560 ?        Ss   06:29   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         588  0.0  0.2  39268 20288 ?        Ss   06:29   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+osboxes     1118  0.0  0.2 1146124 19724 ?       Ssl  06:29   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+osboxes     1121  0.0  0.0 240144  7860 ?        Sl   06:29   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+osboxes     1132  0.0  0.0   8112  5088 ?        Ss   06:29   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+osboxes     1211  0.0  0.0  22604   360 ?        S    06:29   0:00 /usr/bin/VBoxClient --clipboard
+osboxes     1213  0.0  0.0 154872  4060 ?        Sl   06:29   0:00 /usr/bin/VBoxClient --clipboard
+osboxes     1225  0.0  0.0  22604   360 ?        S    06:29   0:00 /usr/bin/VBoxClient --seamless
+osboxes     1226  0.0  0.0 154840  2688 ?        Sl   06:29   0:00 /usr/bin/VBoxClient --seamless
+osboxes     1231  0.0  0.0  22604   364 ?        S    06:29   0:00 /usr/bin/VBoxClient --draganddrop
+osboxes     1233  0.2  0.0 155356  2720 ?        Sl   06:29   0:07 /usr/bin/VBoxClient --draganddrop
+osboxes     1238  0.0  0.0  22604   356 ?        S    06:29   0:00 /usr/bin/VBoxClient --vmsvga
+osboxes     1240  0.0  0.0 157112  3428 ?        Sl   06:29   0:00 /usr/bin/VBoxClient --vmsvga
+osboxes     1246  0.0  0.0   6032   452 ?        Ss   06:29   0:00 /usr/bin/ssh-agent /usr/bin/im-launch cinnamon-session-cinnamon
+osboxes     1264  0.0  0.0   7480  4636 ?        S    06:29   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+osboxes     1680  0.0  0.4  59204 34460 ?        S    06:30   0:00 /usr/bin/python3 /usr/share/system-config-printer/applet.py
+   86  mkdir folder
+   87  touch folder/processes.txt
+   88  ps aux
+   89  ps aux > folder/processes.txt 
+   90  cd folder/
+   91  cd ..
+   92  cd folder/
+   93  cp processes.txt copy.txt
+   94  ls
+   95  mkdir backup
+   96  mv copy.txt backup/copy.txt
+   97  man wc
+   98  wc -l backup/copy.txt 
+   99  wc -l processes.txt 
+  100  wc -l processes.txt > selected.txt
+  101  echo -e "\n" >> selected.txt 
+  102  man grep
+  103  grep /bin processes.txt 
+  104  grep /bin processes.txt >> selected.txt 
+  105  history > comands.txt
+  106  history | tail -n19 > comands.txt
+  107  history | tail -n20 > comands.txt
+  108  history | tail -n23 > comands.txt
+  109  cat selected.txt commands.txt
