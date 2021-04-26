@@ -31,7 +31,7 @@ adam        4452  0.0  0.2 479644 45660 ?        SLl  21:00   0:00 /usr/bin/seah
   243  ls
   244  less selected.txt
   245* 
-  246  grep "/bin" processes.txt >> selected.txt
+  246  grep /bin processes.txt >> selected.txt
   247  less selected.txt 
   248  history
   249  history | tail -n29 > commands.txt
