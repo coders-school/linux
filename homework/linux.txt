@@ -1,20 +1,20 @@
 adam@adam-Legion-Y540-15IRH:~/Documents/CodersSchool/Intro/CodSch_Linux_Homework$ cat selected.txt commands.txt 
 309 processes.txt
-message+     808  0.0  0.0   9900  6408 ?        Ss   20:49   0:03 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-root         819  0.0  0.1  50484 20176 ?        Ss   20:49   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-root         939  0.0  0.1 129012 22976 ?        Ssl  20:49   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-whoopsie    1126  0.0  0.0 253520 16068 ?        Ssl  20:49   0:00 /usr/bin/whoopsie -f
-adam        1511  0.4  0.1 2542384 20620 ?       S<sl 20:50   0:46 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-adam        1517  0.0  0.0   8500  5720 ?        Ss   20:50   0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-adam        1559  0.0  0.0 251348  7216 ?        Sl   20:50   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
-adam        1590  0.0  0.0 175180  6668 tty2     Ssl+ 20:50   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-adam        1684  0.0  0.0   6040   456 ?        Ss   20:50   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-adam        1721  0.0  0.0   7380  4380 ?        S    20:50   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-adam        1752  3.6  1.6 4828300 271404 ?      Ssl  20:50   6:37 /usr/bin/gnome-shell
-adam        1826  0.0  0.1 2941668 27004 ?       Sl   20:50   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-adam        2656  0.1  2.1 1439248 352328 ?      Sl   20:52   0:16 /snap/snap-store/518/usr/bin/snap-store
-adam        4448  0.0  0.3 872132 58736 ?        Sl   21:00   0:00 /usr/bin/gnome-calendar --gapplication-service
-adam        4452  0.0  0.2 479644 45660 ?        SLl  21:00   0:00 /usr/bin/seahorse --gapplication-service
+162:message+     808  0.0  0.0   9900  6408 ?        Ss   20:49   0:03 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+165:root         819  0.0  0.1  50484 20176 ?        Ss   20:49   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+177:root         939  0.0  0.1 129012 22976 ?        Ssl  20:49   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+180:whoopsie    1126  0.0  0.0 253520 16068 ?        Ssl  20:49   0:00 /usr/bin/whoopsie -f
+188:adam        1511  0.4  0.1 2542384 20620 ?       S<sl 20:50   0:46 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+190:adam        1517  0.0  0.0   8500  5720 ?        Ss   20:50   0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+196:adam        1559  0.0  0.0 251348  7216 ?        Sl   20:50   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+201:adam        1590  0.0  0.0 175180  6668 tty2     Ssl+ 20:50   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+205:adam        1684  0.0  0.0   6040   456 ?        Ss   20:50   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+207:adam        1721  0.0  0.0   7380  4380 ?        S    20:50   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+210:adam        1752  3.6  1.6 4828300 271404 ?      Ssl  20:50   6:37 /usr/bin/gnome-shell
+220:adam        1826  0.0  0.1 2941668 27004 ?       Sl   20:50   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+254:adam        2656  0.1  2.1 1439248 352328 ?      Sl   20:52   0:16 /snap/snap-store/518/usr/bin/snap-store
+259:adam        4448  0.0  0.3 872132 58736 ?        Sl   21:00   0:00 /usr/bin/gnome-calendar --gapplication-service
+260:adam        4452  0.0  0.2 479644 45660 ?        SLl  21:00   0:00 /usr/bin/seahorse --gapplication-service
   230  cd CodSch_Linux_Homework/
   231  touch processes.txt
   232  ps aux > processes.txt
@@ -31,7 +31,7 @@ adam        4452  0.0  0.2 479644 45660 ?        SLl  21:00   0:00 /usr/bin/seah
   243  ls
   244  less selected.txt
   245* 
-  246  grep /bin processes.txt >> selected.txt
+  246  grep -n /bin processes.txt >> selected.txt
   247  less selected.txt 
   248  history
   249  history | tail -n29 > commands.txt
