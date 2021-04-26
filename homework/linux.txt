@@ -86,3 +86,22 @@ miczel@ubuntu:~/dev/test$ cat selected.txt commands.txt
   121  tail --help
   122  history | tail -n +60
   123  history | tail -n +60 > commands.txt
+  124  ls
+  125  ca commands.txt 
+  126  cat commands.txt 
+  127  cat selected.txt commands.txt 
+  128  mkdir backup
+  129  ls
+  130  mv copy.txt ./backup
+  131  ls
+  132  backup
+  133  cd backup/
+  134  ls
+  135  cd ..
+  136  ps aux > processes.txt
+  137  cat processes.txt 
+  138* history | tail -n +60
+  139  tail --help
+  140  history | tail -n 60 > commands.txt
+  141  cat commands.txt 
+  142  history | tail -n +60 > commands.txt
