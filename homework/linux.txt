@@ -19,7 +19,7 @@ cat selected.txt commands.txt
   284  cat processes.txt 
   285  cp processes.txt copy.txt
   286  mkdir backup
-  287  mv /home/kamildlc/Documents/Coders/copy.txt /home/kamildlc/Documents/Coders/backup/
+  287  mv copy.txt backup/
   288  wc -l processes.txt > selected.txt
   289  grep -n "/bin" processes.txt >> selected.txt
   290  history
