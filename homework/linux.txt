@@ -1,0 +1,30 @@
+299  cd zadanie1/
+300  clear
+301  ls -l
+302  touch processes.txt
+303  ps aux >> processes.txt
+304  cp processes.txt copy.txt
+305  less processes.txt
+306  clear
+307  mkdir backup
+308  mv copy.txt backup/
+309  wc -l
+310  wc -l processes.txt
+311  wc -l > selected.txt
+312  wc -l processes.txt > selected.txt
+313  clear
+314  man grep
+315  grep -ni /bin processes.txt >> selected.txt
+316  cat selected.txt
+317  grep -ni /bin processes.txt
+318  grep -ni "/bin" processes.txt
+319  cat processes.txt
+320  grep -ni "/init" processes.txt
+321  grep -ni /init processes.txt >> selected.txt
+322  clear
+323  hisotry
+324  history
+325  history | tail 28
+326  history | tail -28
+327  history | tail -28 > commands.txt
+328  history | tail -30
