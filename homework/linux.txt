@@ -1,0 +1,29 @@
+pawelnita@inspiron7559:~$ cat selected.txt commands.txt 
+270 ./homework/processes.txt
+121:message+     740  0.1  0.0   9932  6416 ?        Ss   15:34   0:13 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+124:root         753  0.0  0.2  50484 20248 ?        Ss   15:34   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+136:root         841  0.0  0.2 129024 22680 ?        Ssl  15:34   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+141:pawelni+     908  1.5  0.2 3517468 20348 ?       S<sl 15:34   2:09 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+143:pawelni+     913  0.0  0.0 251340  6880 ?        SLl  15:34   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+145:pawelni+     920  0.0  0.0 175180  6700 tty2     Ssl+ 15:34   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+146:pawelni+     923  0.0  0.0   8456  5620 ?        Ss   15:34   0:02 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+160:pawelni+    1152  0.0  0.0   6040   460 ?        Ss   15:34   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+162:pawelni+    1225  0.0  0.0   7380  4312 ?        S    15:34   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+165:pawelni+    1261  2.3  3.1 5003968 253876 ?      Ssl  15:34   3:16 /usr/bin/gnome-shell
+166:whoopsie    1296  0.0  0.2 253600 16136 ?        Ssl  15:34   0:00 /usr/bin/whoopsie -f
+181:pawelni+    1375  0.0  0.3 2941672 27440 ?       Sl   15:34   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+203:pawelni+    1528  0.1  5.8 1360704 468248 ?      Sl   15:34   0:12 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
+219:pawelni+    3996  0.5  1.1 1091796 89524 ?       Sl   15:44   0:44 /usr/bin/nautilus --gapplication-service
+242:pawelni+    7860  0.0  0.0 170896  2228 ?        Ssl  17:31   0:00 /usr/bin/speech-dispatcher --spawn --communication-method unix_socket --socket-path /run/user/1000/speech-dispatcher/speechd.sock
+246:pawelni+    8747  1.4  0.8 844372 68552 ?        Sl   17:36   0:13 /usr/bin/gedit --gapplication-service
+  524  mkdir homework
+  525  cd homework
+  526  touch processes.txt
+  527  ps aux > processes.txt 
+  528  cp processes.txt ../copy.txt
+  529  cd ..
+  530  mkdir backup
+  531  mv copy.txt backup
+  532  wc -l ./homework/processes.txt >> selected.txt
+  533  grep -n "/bin" ./homework/processes.txt >> selected.txt 
+  534  history | tail -11 > commands.txt
