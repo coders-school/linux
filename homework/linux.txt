@@ -1,8 +1,3 @@
-Tomasz Węgliński <tom.weglinski@gmail.com>
-	
-21:17 (0 minut temu)
-	
-do mnie
 tom@tom-VirtualBox:~/linuxzad$ cat selected.txt commands.txt
 187 processes.txt
 74:message+     562  0.0  0.2   8912  2604 ?        Ss   17:39   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
@@ -35,28 +30,36 @@ tom@tom-VirtualBox:~/linuxzad$ cat selected.txt commands.txt
 169:tom         3780  0.0  0.3 605124  3028 ?        Ssl  17:57   0:00 /usr/bin/rygel
 180:tom         5882  0.0  1.0  41324 10992 pts/1    T    20:37   0:00 /usr/bin/python3 /usr/lib/command-not-found -- 123
 184:tom         5969  1.5  6.4 926848 64516 ?        Sl   20:47   0:02 /usr/bin/nautilus --gapplication-service
-    6  cd ..
-    7  cd Music
-    8  ls
-    9  cd ..
-   10  cd Desktop
-   11  ls
-   12  cd ..
-   13  pwd
-   14  cd`
-   15  cd -
-   16  pwd
-   17  ls
-   18  cd ..
-   19  pwd
-   20  cd..
-   21  cd ..
-   22  pwd
-   23  pwd
-   24  ls
-   25  clear
-   26  pwd
-   27  ls
+74:message+     562  0.0  0.2   8912  2604 ?        Ss   17:39   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+76:root         572  0.0  0.1  50484  1852 ?        Ss   17:39   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+90:root         669  0.0  0.1 129012  1672 ?        Ssl  17:39   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+94:whoopsie     700  0.0  0.4 326868  4340 ?        Ssl  17:39   0:00 /usr/bin/whoopsie -f
+97:tom          756  0.0  0.4 2206128 4952 ?        S<sl 17:39   0:01 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+99:tom          762  0.0  0.2 251316  2396 ?        Sl   17:39   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+100:tom          766  0.0  0.2   8588  2524 ?        Ss   17:39   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+101:tom          769  0.0  0.1 175180  1524 tty2     Ssl+ 17:39   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+115:tom          985  0.0  0.0   6040    32 ?        Ss   17:39   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+117:tom         1012  0.0  0.1   7248  1360 ?        S    17:39   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+121:tom         1052  0.8  9.4 3707884 95356 ?       Ssl  17:39   1:40 /usr/bin/gnome-shell
+132:tom         1150  0.0  0.2 2609692 2912 ?        Sl   17:39   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+169:tom         3780  0.0  0.3 605124  3028 ?        Ssl  17:57   0:00 /usr/bin/rygel
+180:tom         5882  0.0  1.0  41324 10992 pts/1    T    20:37   0:00 /usr/bin/python3 /usr/lib/command-not-found -- 123
+184:tom         5969  1.5  6.4 926848 64516 ?        Sl   20:47   0:02 /usr/bin/nautilus --gapplication-service
+74:message+     562  0.0  0.2   8912  2604 ?        Ss   17:39   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+76:root         572  0.0  0.1  50484  1852 ?        Ss   17:39   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+90:root         669  0.0  0.1 129012  1672 ?        Ssl  17:39   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+94:whoopsie     700  0.0  0.4 326868  4340 ?        Ssl  17:39   0:00 /usr/bin/whoopsie -f
+97:tom          756  0.0  0.4 2206128 4952 ?        S<sl 17:39   0:01 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+99:tom          762  0.0  0.2 251316  2396 ?        Sl   17:39   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+100:tom          766  0.0  0.2   8588  2524 ?        Ss   17:39   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+101:tom          769  0.0  0.1 175180  1524 tty2     Ssl+ 17:39   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+115:tom          985  0.0  0.0   6040    32 ?        Ss   17:39   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+117:tom         1012  0.0  0.1   7248  1360 ?        S    17:39   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+121:tom         1052  0.8  9.4 3707884 95356 ?       Ssl  17:39   1:40 /usr/bin/gnome-shell
+132:tom         1150  0.0  0.2 2609692 2912 ?        Sl   17:39   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+169:tom         3780  0.0  0.3 605124  3028 ?        Ssl  17:57   0:00 /usr/bin/rygel
+180:tom         5882  0.0  1.0  41324 10992 pts/1    T    20:37   0:00 /usr/bin/python3 /usr/lib/command-not-found -- 123
+184:tom         5969  1.5  6.4 926848 64516 ?        Sl   20:47   0:02 /usr/bin/nautilus --gapplication-service
    28  mkdir linuxzad
    29  cd linuxzad
    30  touch processes.txt
@@ -239,6 +242,40 @@ tom@tom-VirtualBox:~/linuxzad$ cat selected.txt commands.txt
   207  history
   208  history |tail -20 > commands.txt
   209  cat selected.txt commands.txt
-  210  history |tail -205 > commands.txt
+  210* history |tail - > commands.txt
+  211  cat commands.txt
+  212  grep -n "/bin" processes.txt >>selected.txt
+  213  cat selected.txt commands.txt
+  214  cat selected.txt
+  215  grep -n "/bin" processes.txt>>selected.txt
+  216  cat selected.txt
+  217  man grep
+  218  grep -n '/bin' processes.txt>>selected.txt
+  219  cat selected.txt
+  220  history
+  221  history |tail -192 > commands.txt
+  222* cat commands.txt
+istory
+  224  history |tail -200 > commands.txt
+  225  cat commands.txt
+  226  history |tail -200 > commands.txt
+  227  cat commands.txt
+  228  history |tail -199 > commands.txt
+  229  cat commands.txt
+  230  history |tail -200 > commands.txt
+  231  cat commands.txt
+  232  history |tail -197 > commands.txt
+  233  cat commands.txt
+  234  history |tail -220 > commands.txt
+  235  cat commands.txt
+  236  history |tail -206 > commands.txt
+  237  cat commands.txt
+  238  history |tail -200 > commands.txt
+  239  cat commands.txt
+  240  history |tail -220 > commands.txt
+  241  cat commands.txt
+  242  history |tail -2280 > commands.txt
+  243  history |tail -228 > commands.txt
+  244  cat commands.txt
+  245  history |tail -218 > commands.txt
 tom@tom-VirtualBox:~/linuxzad$
-
