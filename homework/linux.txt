@@ -1,0 +1,19 @@
+opiotrowsky@DESKTOP-P3OK3L6:/mnt/c/Users/Ozgar/Programowanie/learnux$ cat selected.txt commands.txt
+6 processes.txt
+5:opiotro+   465  0.1  0.0  10172  5428 pts/1    Ss   20:34   0:00 /bin/bash --login
+  416  touch processes.txt
+  417  ps aux > processes.txt
+  418  cat processes.txt
+  419  cp processes.txt copy.txt
+  420  mkdir backup
+  421  mv copy.txt backup/
+  422  ls
+  423  ls backup/
+  424  wc -l processes.txt
+  425  wc -l processes.txt > selected.txt
+  426  cat selected.txt
+  427  grep -n /bin processes.txt
+  428  grep -n /bin processes.txt >> selected.txt
+  429  cat selected.txt
+  430  history
+  431  history | tail -n 16 > commands.txt
