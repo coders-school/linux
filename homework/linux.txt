@@ -26,6 +26,6 @@ mma@wro1-ldl-P01812 ~/Desktop/kursCPP/homework1 $ cat selected.txt commands.txt
  2003  mv copy.txt backup/
  2004  wc -l processes.txt 
  2005  wc -l processes.txt > selected.txt
- 2006  grep -rnw 'bin' processes.txt >> selected.txt
+ 2006  grep -rni '/bin' processes.txt >> selected.txt
  2007  history
  2008  history | tail -n 14 > commands.txt
