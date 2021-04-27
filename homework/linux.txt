@@ -1,38 +1,48 @@
-cat selected.txt commands.txt 
-176 processes.txt
-message+     519  0.0  0.0   8860  5732 ?        Ss   10:14   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-root         537  0.0  0.2  50480 20032 ?        Ss   10:14   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-root         630  0.0  0.2 129024 22652 ?        Ssl  10:14   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-whoopsie     655  0.0  0.1 326824 15460 ?        Ssl  10:14   0:00 /usr/bin/whoopsie -f
-mike         868  0.0  0.1 1080640 15292 ?       S<sl 10:14   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-mike         873  0.0  0.0 251348  6948 ?        SLl  10:14   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
-mike         877  0.0  0.0 175180  6620 tty2     Ssl+ 10:14   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-mike         881  0.0  0.1  12076  9060 ?        Ss   10:14   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-mike        1050  0.0  0.0  33772   360 ?        S    10:14   0:00 /usr/bin/VBoxClient --clipboard
-mike        1051  0.0  0.0 166172  4032 ?        Sl   10:14   0:00 /usr/bin/VBoxClient --clipboard
-mike        1061  0.0  0.0  33772   360 ?        S    10:14   0:00 /usr/bin/VBoxClient --seamless
-mike        1062  0.0  0.0 166008  2708 ?        Sl   10:14   0:00 /usr/bin/VBoxClient --seamless
-mike        1069  0.0  0.0  33772   360 ?        S    10:14   0:00 /usr/bin/VBoxClient --draganddrop
-mike        1070  0.1  0.0 166524  2824 ?        Sl   10:14   0:13 /usr/bin/VBoxClient --draganddrop
-mike        1077  0.0  0.0  33772   364 ?        S    10:14   0:00 /usr/bin/VBoxClient --vmsvga
-mike        1078  0.0  0.0 168148  3432 ?        Sl   10:14   0:00 /usr/bin/VBoxClient --vmsvga
-mike        1084  0.0  0.0   6040   460 ?        Ss   10:14   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-mike        1106  0.0  0.0   7248  4280 ?        S    10:14   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-mike        1133  0.0  2.9 3346752 239140 ?      Ssl  10:14   0:09 /usr/bin/gnome-shell
-mike        1249  0.0  0.3 2609692 25948 ?       Sl   10:14   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-  100  touch processes.txt
-  101  ps aux > processes.txt 
-  102  cat processes.txt 
-  103  cp processes.txt copy.txt
-  104  ll
-  105  mkdir backup
-  106  mv copy.txt backup/copy.txt
-  107  cd backup/
-  108  ll
-  109  cd ..
-  110  wc -l processes.txt > selected.txt
-  111  cat selected.txt 
-  112  grep /bin processes.txt 
-  113  grep /bin processes.txt >> selected.txt 
-  114  cat selected.txt 
-  115  history
+mike@mike-VirtualBox:~/CoderSchool/Zadania_domowe/1_Linux_pop$ cat selected.txt commands.txt 
+180
+message+     522  0.1  0.0   8864  5764 ?        Ss   16:20   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         540  0.0  0.2  50480 20148 ?        Ss   16:20   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         638  0.0  0.2 129024 22740 ?        Ssl  16:20   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+whoopsie     674  0.0  0.1 326824 15528 ?        Ssl  16:20   0:00 /usr/bin/whoopsie -f
+mike         893  0.0  0.1 1343016 15652 ?       S<sl 16:20   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+mike         898  0.0  0.0 251312  6908 ?        Sl   16:20   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+mike         902  0.0  0.0 175180  6608 tty2     Ssl+ 16:20   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+mike         907  0.1  0.0   8364  5456 ?        Ss   16:20   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+mike        1077  0.0  0.0  33772   360 ?        S    16:20   0:00 /usr/bin/VBoxClient --clipboard
+mike        1078  0.0  0.0 166172  4016 ?        Sl   16:20   0:00 /usr/bin/VBoxClient --clipboard
+mike        1089  0.0  0.0  33772   356 ?        S    16:20   0:00 /usr/bin/VBoxClient --seamless
+mike        1090  0.0  0.0 166008  2720 ?        Sl   16:20   0:00 /usr/bin/VBoxClient --seamless
+mike        1096  0.0  0.0  33772   360 ?        S    16:20   0:00 /usr/bin/VBoxClient --draganddrop
+mike        1097  0.1  0.0 166524  2696 ?        Sl   16:20   0:00 /usr/bin/VBoxClient --draganddrop
+mike        1101  0.0  0.0  33772   364 ?        S    16:20   0:00 /usr/bin/VBoxClient --vmsvga
+mike        1102  0.0  0.0 168148  3428 ?        Sl   16:20   0:00 /usr/bin/VBoxClient --vmsvga
+mike        1111  0.0  0.0   6040   456 ?        Ss   16:20   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+mike        1133  0.0  0.0   7248  4380 ?        S    16:20   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+mike        1160  1.9  2.8 3606752 231044 ?      Ssl  16:20   0:03 /usr/bin/gnome-shell
+mike        1276  0.0  0.3 2609696 26172 ?       Sl   16:20   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+  166  cd 1_Linux_pop/
+  167  touch processes.txt
+  168  ps aux > processes.txt 
+  169  cp processes.txt copy.txt
+  170  mkdir backup
+  171  mv copy.txt copy.txt 
+  172  mv copy.txt backup/copy.txt 
+  173  wc -l processes.txt 
+  174  180 > selected.txt
+  175  touch selected.txt
+  176  180 > selected.txt
+  177  "180" > selected.txt
+  178  180 >> selected.txt
+  179  wc -l > selected.txt 
+  180  ll
+  181  cat selected.txt 
+  182  wc -l | selected.txt 
+  183  wc -l >> selected.txt 
+  184  wc -l > selected.txt 
+  185  echo "180" > selected.txt 
+  186  cat selected.txt 
+  187  grep "/bin" processes.txt 
+  188  grep "/bin" processes.txt >> selected.txt 
+  189  cat selected.txt 
+  190  history
+  191  history | tail -n26 > commands.txt
