@@ -41,5 +41,5 @@ pawelnita@inspiron7559:~/homework$ cat selected.txt commands.txt
   557  wc -l processes.txt > selected.txt
   558  grep -n '/bin' processes.txt >> selected.txt 
   559  history
-  560  history | tail -11 > commands.txt
+  560  history | tail -n11 > commands.txt
 
