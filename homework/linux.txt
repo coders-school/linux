@@ -1,0 +1,113 @@
+dadus@DESKTOP-RJQTRAV ~
+$ mkdir test
+
+dadus@DESKTOP-RJQTRAV ~
+$ cd test
+
+dadus@DESKTOP-RJQTRAV ~/test
+$ touch processes.txt
+
+dadus@DESKTOP-RJQTRAV ~/test
+$ ls
+processes.txt
+
+dadus@DESKTOP-RJQTRAV ~/test
+$ ls
+processes.txt
+
+dadus@DESKTOP-RJQTRAV ~/test
+$ ps aux >> processes.txt
+
+dadus@DESKTOP-RJQTRAV ~/test
+$ less processes.txt
+
+dadus@DESKTOP-RJQTRAV ~/test
+$ cp processes.txt copy.txt
+
+dadus@DESKTOP-RJQTRAV ~/test
+$ ls
+copy.txt  processes.txt
+
+dadus@DESKTOP-RJQTRAV ~/test
+$ mkdir backup
+
+dadus@DESKTOP-RJQTRAV ~/test
+$ wc -l processes.txt >> selected.txt
+
+dadus@DESKTOP-RJQTRAV ~/test
+$ grep -rni /bin processes.txt >> selected.txt
+
+dadus@DESKTOP-RJQTRAV ~/test
+$ history
+    1  pwd
+    2  ls
+    3  cd windows
+    4  pwd
+    5  mkdir test
+    6  cd test
+    7  touch processes.txt
+    8  ls
+    9  ps aux>>processes.txt
+   10  less processes.txt
+   11  cp processes.txt copy.txt
+   12  ls
+   13  mkdir backup
+   14  mv copy.txt backup
+   15  wc-l processe.txt>>selected.txt
+   16  grep-rni/bin processes.txt>>selected.txt
+   17  history
+   18  history | tail-n16>> commands.txt
+   19  cat selected.txt commands.txt
+   20  mkdir test
+   21  cd test
+   22  touch processes.txt
+   23  ls
+   24  ls
+   25  ps aux >> processes.txt
+   26  less processes.txt
+   27  cp processes.txt copy.txt
+   28  ls
+   29  mkdir backup
+   30  wc -l processes.txt >> selected.txt
+   31  grep -rni /bin processes.txt >> selected.txt
+   32  history
+
+dadus@DESKTOP-RJQTRAV ~/test
+$ history | tail -n16 >> commmands.txt
+
+dadus@DESKTOP-RJQTRAV ~/test
+$ cat selected.txt commands.txt
+4 processes.txt
+2:     1393       1    1393      12852  ?         197609 19:26:35 /usr/bin/mintty
+3:     1405    1394    1405        380  pty0      197609 19:28:53 /usr/bin/ps
+4:     1394    1393    1394       2600  pty0      197609 19:26:35 /usr/bin/bash
+cat: commands.txt: No such file or directory
+
+dadus@DESKTOP-RJQTRAV ~/test
+$ history | tail -n16 >> commands.txt
+
+dadus@DESKTOP-RJQTRAV ~/test
+$ cat selected.txt commands.txt
+4 processes.txt
+2:     1393       1    1393      12852  ?         197609 19:26:35 /usr/bin/mintty
+3:     1405    1394    1405        380  pty0      197609 19:28:53 /usr/bin/ps
+4:     1394    1393    1394       2600  pty0      197609 19:26:35 /usr/bin/bash
+   20  mkdir test
+   21  cd test
+   22  touch processes.txt
+   23  ls
+   24  ls
+   25  ps aux >> processes.txt
+   26  less processes.txt
+   27  cp processes.txt copy.txt
+   28  ls
+   29  mkdir backup
+   30  wc -l processes.txt >> selected.txt
+   31  grep -rni /bin processes.txt >> selected.txt
+   32  history
+   33  history | tail -n16 >> commmands.txt
+   34  cat selected.txt commands.txt
+   35  history | tail -n16 >> commands.txt
+
+dadus@DESKTOP-RJQTRAV ~/test
+$
