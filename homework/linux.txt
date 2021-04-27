@@ -1,29 +1,45 @@
-pawelnita@inspiron7559:~$ cat selected.txt commands.txt 
-270 ./homework/processes.txt
-121:message+     740  0.1  0.0   9932  6416 ?        Ss   15:34   0:13 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-124:root         753  0.0  0.2  50484 20248 ?        Ss   15:34   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-136:root         841  0.0  0.2 129024 22680 ?        Ssl  15:34   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-141:pawelni+     908  1.5  0.2 3517468 20348 ?       S<sl 15:34   2:09 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-143:pawelni+     913  0.0  0.0 251340  6880 ?        SLl  15:34   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
-145:pawelni+     920  0.0  0.0 175180  6700 tty2     Ssl+ 15:34   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-146:pawelni+     923  0.0  0.0   8456  5620 ?        Ss   15:34   0:02 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-160:pawelni+    1152  0.0  0.0   6040   460 ?        Ss   15:34   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-162:pawelni+    1225  0.0  0.0   7380  4312 ?        S    15:34   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-165:pawelni+    1261  2.3  3.1 5003968 253876 ?      Ssl  15:34   3:16 /usr/bin/gnome-shell
-166:whoopsie    1296  0.0  0.2 253600 16136 ?        Ssl  15:34   0:00 /usr/bin/whoopsie -f
-181:pawelni+    1375  0.0  0.3 2941672 27440 ?       Sl   15:34   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-203:pawelni+    1528  0.1  5.8 1360704 468248 ?      Sl   15:34   0:12 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
-219:pawelni+    3996  0.5  1.1 1091796 89524 ?       Sl   15:44   0:44 /usr/bin/nautilus --gapplication-service
-242:pawelni+    7860  0.0  0.0 170896  2228 ?        Ssl  17:31   0:00 /usr/bin/speech-dispatcher --spawn --communication-method unix_socket --socket-path /run/user/1000/speech-dispatcher/speechd.sock
-246:pawelni+    8747  1.4  0.8 844372 68552 ?        Sl   17:36   0:13 /usr/bin/gedit --gapplication-service
-  524  mkdir homework
-  525  cd homework
-  526  touch processes.txt
-  527  ps aux > processes.txt 
-  528  cp processes.txt ../copy.txt
-  529  cd ..
-  530  mkdir backup
-  531  mv copy.txt backup
-  532  wc -l ./homework/processes.txt >> selected.txt
-  533  grep -n "/bin" ./homework/processes.txt >> selected.txt 
-  534  history | tail -11 > commands.txt
+pawelnita@inspiron7559:~/homework$ cat selected.txt commands.txt 
+252 processes.txt
+2:root           1  0.1  0.1 167596 11336 ?        Ss   14:24   0:01 /sbin/init splash
+124:root         737  0.0  0.0   2548   780 ?        Ss   14:24   0:00 /usr/sbin/acpid
+127:root         741  0.0  0.0  20580  2932 ?        Ss   14:24   0:00 /usr/sbin/cron -f
+128:root         742  0.0  0.1  39732  9008 ?        Ss   14:24   0:00 /usr/sbin/cupsd -l
+129:message+     743  0.1  0.0   9052  6260 ?        Ss   14:24   0:02 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+130:root         744  0.3  0.2 759544 22528 ?        Ssl  14:24   0:04 /usr/sbin/NetworkManager --no-daemon
+131:root         751  0.0  0.0  81908  3636 ?        Ssl  14:24   0:00 /usr/sbin/irqbalance --foreground
+132:root         753  0.0  0.2  50484 20120 ?        Ss   14:24   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+134:syslog       758  0.0  0.0 224536  5192 ?        Ssl  14:24   0:00 /usr/sbin/rsyslogd -n -iNONE
+138:root         775  0.0  0.1 137036 10104 ?        Ssl  14:24   0:00 /usr/sbin/thermald --no-daemon --dbus-enable
+140:root         777  0.0  0.1  14172  9460 ?        Ss   14:24   0:00 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+142:root         839  0.0  0.1 180444 12608 ?        Ssl  14:24   0:00 /usr/sbin/cups-browsed
+143:root         845  0.0  0.2 129024 22792 ?        Ssl  14:24   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+144:root         855  0.0  0.1 240024 10568 ?        Ssl  14:24   0:00 /usr/sbin/ModemManager --filter-policy=strict
+145:root         885  0.0  0.1 250644  8780 ?        Ssl  14:24   0:00 /usr/sbin/gdm3
+149:pawelni+     939  0.0  0.2 2468312 19520 ?       S<sl 14:24   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+151:pawelni+     945  0.0  0.0 251348  7068 ?        SLl  14:24   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+152:pawelni+     949  0.0  0.0 175180  6516 tty2     Ssl+ 14:24   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+154:pawelni+     955  0.0  0.0   8268  5372 ?        Ss   14:24   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+167:pawelni+    1098  0.0  0.1 201940 15364 tty2     Sl+  14:24   0:00 /usr/libexec/gnome-session-binary --systemd --systemd --session=ubuntu
+168:pawelni+    1165  0.0  0.0   6040   456 ?        Ss   14:24   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+170:pawelni+    1194  0.0  0.0   7248  4280 ?        S    14:24   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+172:pawelni+    1210  0.0  0.2 497700 17356 ?        Ssl  14:24   0:00 /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu
+173:pawelni+    1225  3.8  3.1 4981924 252348 ?      Ssl  14:24   0:45 /usr/bin/gnome-shell
+183:whoopsie    1351  0.0  0.1 327308 15916 ?        Ssl  14:24   0:00 /usr/bin/whoopsie -f
+184:kernoops    1353  0.0  0.0  11264   448 ?        Ss   14:24   0:00 /usr/sbin/kerneloops --test
+185:kernoops    1355  0.0  0.0  11264   448 ?        Ss   14:24   0:00 /usr/sbin/kerneloops
+190:pawelni+    1395  0.0  0.3 2941668 26904 ?       Sl   14:24   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+212:pawelni+    1544  0.6  2.6 1355092 214804 ?      Sl   14:24   0:07 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
+221:pawelni+    2383  0.7  0.8 1075204 71184 ?       Sl   14:25   0:09 /usr/bin/nautilus --gapplication-service
+235:pawelni+    3587  1.3  0.7 851924 59172 ?        Sl   14:36   0:05 /usr/bin/gedit --gapplication-service
+  550  mkdir homework
+  551  cd homework/
+  552  touch processes.txt
+  553  ps aux > processes.txt 
+  554  cp processes.txt copy.txt
+  555  mkdir backup
+  556  mv copy.txt backup/
+  557  wc -l processes.txt > selected.txt
+  558  grep -n "bin" processes.txt >> selected.txt 
+  559  history
+  560  history | tail -11 > commands.txt
+
