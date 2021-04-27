@@ -1,16 +1,15 @@
 5 processes.txt
-335  clear
-336  ls -al
-337  mkdir zadanie1
-338  cd zadanie1/
-339  touch processes.txt
-340  ps aux > processes.txt
-341  cp processes.txt copy.txt
-342  mkdir backup
-343  mv copy.txt backup/
-344  wc -l processes.txt > selected.txt
-345  grep -ni /bin processes.txt >> selected.txt
-346  grep -ni "/bin" processes.txt
-347  history
-348  history -30
-349  history | tail -n 30
+  337  mkdir zadanie1
+  338  cd zadanie1/
+  339  touch processes.txt
+  340  ps aux > processes.txt
+  341  cp processes.txt copy.txt
+  342  mkdir backup
+  343  mv copy.txt backup/
+  344  wc -l processes.txt > selected.txt
+  345  grep -ni /bin processes.txt >> selected.txt
+  346  grep -ni "/bin" processes.txt
+  347  history
+  348  history -30
+  349  history | tail -n 30 > commands.txt
+  350  cat selected.txt commands.txt
