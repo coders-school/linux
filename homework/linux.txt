@@ -1,0 +1,26 @@
+Air-Amelia:procesy ameliaplatek$ cat selected.txt commands.txt 
+316 processes.txt
+  213  ls
+  214  mkdir procesy
+  215  ls
+  216  touch processes.txt 
+  217  ls
+  218  mv processes.txt ./procesy
+  219  ls
+  220  cd procesy/
+  221  ls
+  222  ps aux > processes.txt
+  223  cat processes.txt 
+  224  cp processes.txt copy.txt
+  225  ls
+  226  mkdir backup
+  227  ls
+  228  mv copy.txt backup
+  229  ls
+  230  wc -l processes.txt 
+  231  wc -l processes.txt > selected.txt
+  232  ls
+  233  grep /bin *
+  234  history
+  235  history | tail -n23
+  236  history | tail -n24 > commands.txt
