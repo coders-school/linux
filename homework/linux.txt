@@ -1,0 +1,900 @@
+asus@asus-VivoBook-ASUSLaptop-X521JQ-S533JQ:~/Pulpit$ mkdir Nazwa
+asus@asus-VivoBook-ASUSLaptop-X521JQ-S533JQ:~/Pulpit$ cd Nazwa
+asus@asus-VivoBook-ASUSLaptop-X521JQ-S533JQ:~/Pulpit/Nazwa$ touch processes.txt
+asus@asus-VivoBook-ASUSLaptop-X521JQ-S533JQ:~/Pulpit/Nazwa$ ps aux > processes.txt
+asus@asus-VivoBook-ASUSLaptop-X521JQ-S533JQ:~/Pulpit/Nazwa$ ls
+processes.txt
+asus@asus-VivoBook-ASUSLaptop-X521JQ-S533JQ:~/Pulpit/Nazwa$ cat processes.txt
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.1 167632 11552 ?        Ss   15:45   0:01 /sbin/init splash
+root           2  0.0  0.0      0     0 ?        S    15:45   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        I<   15:45   0:00 [rcu_gp]
+root           4  0.0  0.0      0     0 ?        I<   15:45   0:00 [rcu_par_gp]
+root           6  0.0  0.0      0     0 ?        I<   15:45   0:00 [kworker/0:0H-kblockd]
+root           9  0.0  0.0      0     0 ?        I<   15:45   0:00 [mm_percpu_wq]
+root          10  0.0  0.0      0     0 ?        S    15:45   0:00 [ksoftirqd/0]
+root          11  0.0  0.0      0     0 ?        I    15:45   0:15 [rcu_sched]
+root          12  0.0  0.0      0     0 ?        S    15:45   0:00 [migration/0]
+root          13  0.0  0.0      0     0 ?        S    15:45   0:00 [idle_inject/0]
+root          14  0.0  0.0      0     0 ?        S    15:45   0:00 [cpuhp/0]
+root          15  0.0  0.0      0     0 ?        S    15:45   0:00 [cpuhp/1]
+root          16  0.0  0.0      0     0 ?        S    15:45   0:00 [idle_inject/1]
+root          17  0.0  0.0      0     0 ?        S    15:45   0:00 [migration/1]
+root          18  0.0  0.0      0     0 ?        S    15:45   0:00 [ksoftirqd/1]
+root          20  0.0  0.0      0     0 ?        I<   15:45   0:00 [kworker/1:0H-events_highpri]
+root          21  0.0  0.0      0     0 ?        S    15:45   0:00 [cpuhp/2]
+root          22  0.0  0.0      0     0 ?        S    15:45   0:00 [idle_inject/2]
+root          23  0.0  0.0      0     0 ?        S    15:45   0:00 [migration/2]
+root          24  0.0  0.0      0     0 ?        S    15:45   0:00 [ksoftirqd/2]
+root          26  0.0  0.0      0     0 ?        I<   15:45   0:00 [kworker/2:0H-events_highpri]
+root          27  0.0  0.0      0     0 ?        S    15:45   0:00 [cpuhp/3]
+root          28  0.0  0.0      0     0 ?        S    15:45   0:00 [idle_inject/3]
+root          29  0.0  0.0      0     0 ?        S    15:45   0:00 [migration/3]
+root          30  0.0  0.0      0     0 ?        S    15:45   0:00 [ksoftirqd/3]
+root          32  0.0  0.0      0     0 ?        I<   15:45   0:00 [kworker/3:0H-kblockd]
+root          33  0.0  0.0      0     0 ?        S    15:45   0:00 [cpuhp/4]
+root          34  0.0  0.0      0     0 ?        S    15:45   0:00 [idle_inject/4]
+root          35  0.0  0.0      0     0 ?        S    15:45   0:00 [migration/4]
+root          36  0.0  0.0      0     0 ?        S    15:45   0:00 [ksoftirqd/4]
+root          38  0.0  0.0      0     0 ?        I<   15:45   0:00 [kworker/4:0H-kblockd]
+root          39  0.0  0.0      0     0 ?        S    15:45   0:00 [cpuhp/5]
+root          40  0.0  0.0      0     0 ?        S    15:45   0:00 [idle_inject/5]
+root          41  0.0  0.0      0     0 ?        S    15:45   0:00 [migration/5]
+root          42  0.0  0.0      0     0 ?        S    15:45   0:00 [ksoftirqd/5]
+root          44  0.0  0.0      0     0 ?        I<   15:45   0:00 [kworker/5:0H-kblockd]
+root          45  0.0  0.0      0     0 ?        S    15:45   0:00 [cpuhp/6]
+root          46  0.0  0.0      0     0 ?        S    15:45   0:00 [idle_inject/6]
+root          47  0.0  0.0      0     0 ?        S    15:45   0:00 [migration/6]
+root          48  0.0  0.0      0     0 ?        S    15:45   0:00 [ksoftirqd/6]
+root          50  0.0  0.0      0     0 ?        I<   15:45   0:00 [kworker/6:0H-events_highpri]
+root          51  0.0  0.0      0     0 ?        S    15:45   0:00 [cpuhp/7]
+root          52  0.0  0.0      0     0 ?        S    15:45   0:00 [idle_inject/7]
+root          53  0.0  0.0      0     0 ?        S    15:45   0:00 [migration/7]
+root          54  0.0  0.0      0     0 ?        S    15:45   0:00 [ksoftirqd/7]
+root          56  0.0  0.0      0     0 ?        I<   15:45   0:00 [kworker/7:0H-events_highpri]
+root          57  0.0  0.0      0     0 ?        S    15:45   0:00 [kdevtmpfs]
+root          58  0.0  0.0      0     0 ?        I<   15:45   0:00 [netns]
+root          59  0.0  0.0      0     0 ?        S    15:45   0:00 [rcu_tasks_kthre]
+root          60  0.0  0.0      0     0 ?        S    15:45   0:00 [kauditd]
+root          63  0.0  0.0      0     0 ?        S    15:45   0:00 [khungtaskd]
+root          64  0.0  0.0      0     0 ?        S    15:45   0:00 [oom_reaper]
+root          65  0.0  0.0      0     0 ?        I<   15:45   0:00 [writeback]
+root          66  0.0  0.0      0     0 ?        S    15:45   0:00 [kcompactd0]
+root          67  0.0  0.0      0     0 ?        SN   15:45   0:00 [ksmd]
+root          68  0.0  0.0      0     0 ?        SN   15:45   0:00 [khugepaged]
+root         115  0.0  0.0      0     0 ?        I<   15:45   0:00 [kintegrityd]
+root         116  0.0  0.0      0     0 ?        I<   15:45   0:00 [kblockd]
+root         117  0.0  0.0      0     0 ?        I<   15:45   0:00 [blkcg_punt_bio]
+root         119  0.0  0.0      0     0 ?        I<   15:45   0:00 [tpm_dev_wq]
+root         120  0.0  0.0      0     0 ?        I<   15:45   0:00 [ata_sff]
+root         121  0.0  0.0      0     0 ?        I<   15:45   0:00 [md]
+root         122  0.0  0.0      0     0 ?        I<   15:45   0:00 [edac-poller]
+root         123  0.0  0.0      0     0 ?        I<   15:45   0:00 [devfreq_wq]
+root         125  0.0  0.0      0     0 ?        S    15:45   0:00 [watchdogd]
+root         128  0.0  0.0      0     0 ?        S    15:45   0:00 [kswapd0]
+root         129  0.0  0.0      0     0 ?        S    15:45   0:00 [ecryptfs-kthrea]
+root         131  0.0  0.0      0     0 ?        I<   15:45   0:00 [kthrotld]
+root         132  0.0  0.0      0     0 ?        S    15:45   0:00 [irq/123-aerdrv]
+root         133  0.0  0.0      0     0 ?        S    15:45   0:00 [irq/123-pcie-dp]
+root         134  0.0  0.0      0     0 ?        S    15:45   0:00 [irq/124-pciehp]
+root         135  0.0  0.0      0     0 ?        S    15:45   0:00 [irq/125-aerdrv]
+root         136  0.0  0.0      0     0 ?        S    15:45   0:00 [irq/125-pcie-dp]
+root         139  0.0  0.0      0     0 ?        I<   15:45   0:00 [acpi_thermal_pm]
+root         140  0.0  0.0      0     0 ?        I<   15:45   0:00 [vfio-irqfd-clea]
+root         144  0.0  0.0      0     0 ?        I<   15:45   0:00 [ipv6_addrconf]
+root         153  0.0  0.0      0     0 ?        I<   15:45   0:00 [kstrp]
+root         156  0.0  0.0      0     0 ?        I<   15:45   0:00 [kworker/u17:0-rb_allocator]
+root         172  0.0  0.0      0     0 ?        I<   15:45   0:00 [charger_manager]
+root         220  0.0  0.0      0     0 ?        I<   15:45   0:00 [nvme-wq]
+root         221  0.0  0.0      0     0 ?        I<   15:45   0:00 [nvme-reset-wq]
+root         223  0.0  0.0      0     0 ?        I<   15:45   0:00 [nvme-delete-wq]
+root         224  0.0  0.0      0     0 ?        I<   15:45   0:00 [cryptd]
+root         253  0.0  0.0      0     0 ?        I<   15:45   0:00 [nvkm-disp]
+root         254  0.0  0.0      0     0 ?        I<   15:45   0:00 [ttm_swap]
+root         256  0.0  0.0      0     0 ?        I<   15:45   0:00 [kworker/4:1H]
+root         262  0.0  0.0      0     0 ?        I<   15:45   0:00 [kworker/2:1H-events_highpri]
+root         263  0.1  0.0      0     0 ?        S    15:45   0:26 [irq/53-ELAN1200]
+root         265  0.0  0.0      0     0 ?        I<   15:45   0:00 [kworker/1:1H-kblockd]
+root         266  0.0  0.0      0     0 ?        S    15:45   0:00 [spi0]
+root         273  0.0  0.0      0     0 ?        I<   15:45   0:01 [kworker/6:1H-events_highpri]
+root         287  0.0  0.0      0     0 ?        I<   15:45   0:01 [kworker/7:1H-kblockd]
+root         323  0.0  0.0      0     0 ?        I<   15:45   0:00 [kworker/3:1H-events_highpri]
+root         325  0.0  0.0      0     0 ?        S    15:45   0:01 [jbd2/nvme0n1p5-]
+root         326  0.0  0.0      0     0 ?        I<   15:45   0:00 [ext4-rsv-conver]
+root         370  0.0  0.2  68176 16060 ?        S<s  15:45   0:00 /lib/systemd/systemd-journald
+root         388  0.0  0.0      0     0 ?        I<   15:45   0:00 [kworker/0:1H-kblockd]
+root         399  0.0  0.0      0     0 ?        I<   15:45   0:00 [kworker/5:1H-events_highpri]
+root         405  0.0  0.0  23420  6928 ?        Ss   15:45   0:00 /lib/systemd/systemd-udevd
+root         461  0.0  0.0      0     0 ?        I<   15:45   0:00 [cfg80211]
+root         463  0.0  0.0      0     0 ?        I<   15:45   0:00 [kmemstick]
+root         467  0.0  0.0      0     0 ?        S    15:45   0:02 [irq/140-iwlwifi]
+root         469  0.0  0.0      0     0 ?        S    15:45   0:00 [irq/141-iwlwifi]
+root         470  0.0  0.0      0     0 ?        S    15:45   0:01 [irq/142-iwlwifi]
+root         471  0.0  0.0      0     0 ?        S    15:45   0:00 [irq/143-iwlwifi]
+root         472  0.0  0.0      0     0 ?        S    15:45   0:00 [irq/144-iwlwifi]
+root         474  0.0  0.0      0     0 ?        S    15:45   0:01 [irq/145-iwlwifi]
+root         476  0.0  0.0      0     0 ?        S    15:45   0:00 [irq/146-iwlwifi]
+root         477  0.0  0.0      0     0 ?        S    15:45   0:00 [irq/147-iwlwifi]
+root         479  0.0  0.0      0     0 ?        S    15:45   0:00 [irq/148-iwlwifi]
+root         481  0.0  0.0      0     0 ?        S    15:45   0:00 [irq/149-iwlwifi]
+root         496  0.0  0.0      0     0 ?        I<   15:45   0:00 [kworker/u17:2-rb_allocator]
+root         513  0.0  0.0      0     0 ?        I<   15:45   0:00 [led_workqueue]
+systemd+     569  0.0  0.1  24316 13352 ?        Ss   15:45   0:00 /lib/systemd/systemd-resolved
+systemd+     572  0.0  0.0  90524  6532 ?        Ssl  15:45   0:00 /lib/systemd/systemd-timesyncd
+root         642  0.0  0.1 241332  7968 ?        Ssl  15:45   0:00 /usr/lib/accountsservice/accounts-daemon
+root         643  0.0  0.0   2540   784 ?        Ss   15:45   0:00 /usr/sbin/acpid
+avahi        647  0.0  0.0   8512  3532 ?        Ss   15:45   0:00 avahi-daemon: running [asus-VivoBook-ASUSLaptop-X521JQ-S533JQ.local]
+root         650  0.0  0.0   8356  4804 ?        Ss   15:45   0:00 /usr/lib/bluetooth/bluetoothd
+root         651  0.0  0.0  11944  2936 ?        Ss   15:45   0:00 /usr/sbin/cron -f
+root         652  0.0  0.1  30560  8452 ?        Ss   15:45   0:00 /usr/sbin/cupsd -l
+message+     653  0.0  0.0   8836  5912 ?        Ss   15:45   0:02 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         654  0.0  0.2 412476 20328 ?        Ssl  15:45   0:05 /usr/sbin/NetworkManager --no-daemon
+root         667  0.0  0.0  81924  3776 ?        Ssl  15:45   0:00 /usr/sbin/irqbalance --foreground
+root         674  0.0  0.2  41840 20328 ?        Ss   15:45   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         680  0.0  0.1 244132 11256 ?        Ssl  15:45   0:00 /usr/lib/policykit-1/polkitd --no-debug
+syslog       683  0.0  0.0 224332  5036 ?        Ssl  15:45   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         689  0.0  0.1  16928  8516 ?        Ss   15:45   0:00 /lib/systemd/systemd-logind
+root         697  0.0  0.1 128396  9800 ?        Ssl  15:45   0:00 /usr/sbin/thermald --no-daemon --dbus-enable
+root         703  0.0  0.1 392684 12052 ?        Ssl  15:45   0:00 /usr/lib/udisks2/udisksd
+root         705  0.0  0.1  14160  9448 ?        Ss   15:45   0:00 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+avahi        711  0.0  0.0   8328   332 ?        S    15:45   0:00 avahi-daemon: chroot helper
+kernoops     732  0.0  0.0  11248   448 ?        Ss   15:45   0:00 /usr/sbin/kerneloops --test
+kernoops     737  0.0  0.0  11248   448 ?        Ss   15:45   0:00 /usr/sbin/kerneloops
+root         745  0.0  0.1 180432 12608 ?        Ssl  15:45   0:00 /usr/sbin/cups-browsed
+root         751  0.0  0.1 313728 10520 ?        Ssl  15:45   0:00 /usr/sbin/ModemManager --filter-policy=strict
+root         771  0.0  0.0 305904  7492 ?        SLsl 15:45   0:00 /usr/sbin/lightdm
+root         813  2.3  1.4 1292736 110344 tty7   Ssl+ 15:45   7:07 /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+root         815  0.0  0.0  10960  1836 tty1     Ss+  15:45   0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+rtkit        894  0.0  0.0 152924  2964 ?        SNsl 15:45   0:00 /usr/libexec/rtkit-daemon
+root         934  0.0  0.1 255056 10132 ?        Ssl  15:45   0:00 /usr/lib/upower/upowerd
+root         958  0.0  0.0      0     0 ?        S<   15:45   0:00 [krfcommd]
+root         959  0.0  0.1 162388  9172 ?        Sl   15:45   0:00 lightdm --session-child 12 19
+asus        1074  0.0  0.1  18752  9980 ?        Ss   15:46   0:00 /lib/systemd/systemd --user
+asus        1085  0.0  0.0 171076  3752 ?        S    15:46   0:00 (sd-pam)
+asus        1098  1.4  0.2 1935308 19644 ?       S<sl 15:46   4:16 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+asus        1102  0.0  0.1 242688  7836 ?        Sl   15:46   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+asus        1110  0.0  0.3 379116 26120 ?        Ssl  15:46   0:00 cinnamon-session --session cinnamon
+asus        1124  0.0  0.0   8144  5236 ?        Ss   15:46   0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+asus        1178  0.0  0.0   6032   452 ?        Ss   15:46   0:00 /usr/bin/ssh-agent /usr/bin/im-launch cinnamon-session-cinnamon
+asus        1190  0.0  0.0 305640  6596 ?        Ssl  15:46   0:00 /usr/libexec/at-spi-bus-launcher
+asus        1195  0.0  0.0   7488  4652 ?        S    15:46   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+asus        1198  0.0  0.0 162820  7704 ?        Sl   15:46   0:00 /usr/libexec/at-spi2-registryd --use-gnome-session
+asus        1209  0.0  0.2 267932 20916 ?        Sl   15:46   0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-housekeeping
+asus        1210  0.0  0.3 313196 25772 ?        Sl   15:46   0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-wacom
+asus        1211  0.0  0.2 193832 21132 ?        Sl   15:46   0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-cursor
+asus        1212  0.0  0.2 269652 23328 ?        Sl   15:46   0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-xsettings
+asus        1213  0.0  0.2 417328 22932 ?        Sl   15:46   0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-color
+asus        1214  0.0  0.2 193828 20948 ?        Sl   15:46   0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-clipboard
+asus        1215  0.0  0.3 301704 24704 ?        Sl   15:46   0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-keyboard
+asus        1216  0.0  0.2 415456 21212 ?        Sl   15:46   0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-orientation
+asus        1217  0.0  0.2 267988 21316 ?        Sl   15:46   0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-a11y-keyboard
+asus        1218  0.0  0.2 342040 21856 ?        Sl   15:46   0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-automount
+asus        1226  0.0  0.2 267992 21544 ?        Sl   15:46   0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-a11y-settings
+asus        1228  0.0  0.0 242244  7708 ?        Ssl  15:46   0:00 /usr/libexec/gvfsd
+asus        1246  0.0  0.0 378336  6396 ?        Sl   15:46   0:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes
+asus        1247  0.0  0.3 683316 24440 ?        Sl   15:46   0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-media-keys
+asus        1252  0.0  0.3 682716 23884 ?        Sl   15:46   0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-sound
+asus        1255  0.0  0.2 342620 22960 ?        Sl   15:46   0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-xrandr
+asus        1267  0.0  0.3 275920 25296 ?        Sl   15:46   0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-print-notifications
+asus        1270  0.0  0.2 268000 21316 ?        Sl   15:46   0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-mouse
+asus        1275  0.0  0.3 421320 30688 ?        Sl   15:46   0:01 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-power
+asus        1280  0.0  0.2 267584 21368 ?        Sl   15:46   0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-screensaver-proxy
+asus        1281  0.0  0.4 335464 31680 ?        Sl   15:46   0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-background
+asus        1284  0.0  0.0 156424  5840 ?        Sl   15:46   0:00 /usr/libexec/dconf-service
+colord      1310  0.0  0.1 248768 14616 ?        Ssl  15:46   0:00 /usr/libexec/colord
+asus        1318  0.0  0.1 316572  9080 ?        Ssl  15:46   0:00 /usr/libexec/gvfs-udisks2-volume-monitor
+asus        1331  0.0  0.0 238220  6020 ?        Ssl  15:46   0:00 /usr/libexec/gvfs-mtp-volume-monitor
+asus        1341  0.0  0.0 238400  6080 ?        Ssl  15:46   0:00 /usr/libexec/gvfs-goa-volume-monitor
+asus        1345  0.0  0.4 544748 35500 ?        Sl   15:46   0:00 /usr/libexec/goa-daemon
+asus        1346  0.0  0.3  58100 31280 ?        S    15:46   0:00 cinnamon-launcher
+asus        1355  0.0  0.1 317324  8812 ?        Sl   15:46   0:00 /usr/libexec/goa-identity-service
+asus        1360  2.6  2.1 3757760 170888 ?      Sl   15:46   7:51 cinnamon --replace
+asus        1361  0.0  0.0 319252  7528 ?        Ssl  15:46   0:00 /usr/libexec/gvfs-afc-volume-monitor
+asus        1367  0.0  0.0 240628  7092 ?        Ssl  15:46   0:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+asus        1396  0.0  0.1 344760 14976 ?        Sl   15:46   0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-printer
+asus        1432  0.0  0.6 631164 53976 ?        Sl   15:46   0:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
+asus        1438  0.0  0.8 1032248 64048 ?       Sl   15:46   0:01 nemo-desktop
+asus        1440  0.0  0.4 281476 33876 ?        Sl   15:46   0:00 blueberry-obex-agent
+asus        1441  0.2  2.5 3522996 199228 ?      Sl   15:46   0:40 /usr/share/teams/teams
+asus        1448  0.0  0.5 399200 44464 ?        Sl   15:46   0:02 nm-applet
+asus        1450  0.0  0.0 239420  4896 ?        Sl   15:46   0:00 /usr/libexec/geoclue-2.0/demos/agent
+asus        1453  0.0  0.2 193484 20516 ?        Sl   15:46   0:00 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+asus        1458  0.0  0.3 279028 31280 ?        Sl   15:46   0:00 cinnamon-killer-daemon
+asus        1484  0.0  0.5 192504 39716 ?        S    15:46   0:00 /usr/share/teams/teams --type=zygote --no-sandbox
+asus        1493  0.0  0.0  43976  6564 ?        Ss   15:46   0:00 /usr/lib/bluetooth/obexd
+asus        1502  0.0  0.3 1072836 25524 ?       Ssl  15:46   0:00 /usr/libexec/evolution-source-registry
+asus        1516  0.0  0.3 1316460 30872 ?       Ssl  15:46   0:00 /usr/libexec/evolution-calendar-factory
+asus        1530  0.0  0.3 823296 29612 ?        Ssl  15:46   0:00 /usr/libexec/evolution-addressbook-factory
+asus        1544  0.0  0.0 316348  7820 ?        Sl   15:46   0:00 /usr/libexec/gvfsd-trash --spawner :1.18 /org/gtk/gvfs/exec_spaw/0
+asus        1551  0.0  0.0 165040  6696 ?        Ssl  15:46   0:00 /usr/libexec/gvfsd-metadata
+asus        1586  0.0  1.3 1147084 109064 ?      Sl   15:46   0:02 /usr/share/teams/teams --type=gpu-process --enable-features=SharedArrayBuffer --disable-features=SpareRendererForSitePerProcess --gpu-preferences=KAAAAAAAAACAAABAAQAAAAAAAAAAAGAAAAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --service-request-channel-token=15724154822013470345
+asus        1616  0.0  1.0 1481004 82420 ?       Sl   15:46   0:00 /usr/share/teams/teams --type=renderer --autoplay-policy=no-user-gesture-required --disable-background-timer-throttling --enable-features=SharedArrayBuffer --disable-features=SpareRendererForSitePerProcess --service-pipe-token=17625377517621761852 --lang=pl --app-path=/usr/share/teams/resources/app.asar --user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) MicrosoftTeams-Preview/1.3.00.25560 Chrome/69.0.3497.128 Electron/4.2.12 Safari/537.36 --node-integration=false --webview-tag=false --no-sandbox --preload=/usr/share/teams/resources/app.asar/lib/renderer/notifications/preload_notifications.js --disable-remote-module --background-color=#fff --electron-shared-settings=eyJjci5jb21wYW55IjoiTWljcm9zb2Z0IiwiY3IuZHVtcHMiOiIvdG1wL2NvbS5taWNyb3NvZnQudGVhbXMubGludXggQ3Jhc2hlcyIsImNyLmVuYWJsZWQiOnRydWUsImNyLnByb2R1Y3QiOiJjb20ubWljcm9zb2Z0LnRlYW1zLmxpbnV4IiwiY3Iuc2Vzc2lvbiI6ImRlc2t0b3AtZjY2NzE5NmItODhkOC00NWQ4LWE1NzktNWU5Y2NhYWYxMGYxIiwiY3IudXJsIjoiYXBwY2VudGVyOi8vZ2VuZXJpYz9haWQ9NTA0OTNjODk4YzFmNGZlNTlhMTgzZjRiNDliZmU2YmEmaWlkPThmZTI5ODM0YzQzMzY3OWRmNzQ2MmE1YWI2ODkwMWEzYzY0ZWY1OWZkZDU0YWJmMTFhNTYxZmRlM2NlZjFiZGImdWlkPWI2MjlmZmQ1LTE3NTEtNDkzYy04ZTA5LTA3ZjhkMTA4M2QyNSIsImNyLnZlcnNpb24iOiIxLjMuMDAuMjU1NjAifQ== --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=17625377517621761852 --renderer-client-id=7 --shared-files=v8_context_snapshot_data:100,v8_n
+asus        1677  0.3  7.4 2973372 582952 ?      Sl   15:46   1:02 /usr/share/teams/teams --type=renderer --autoplay-policy=no-user-gesture-required --disable-background-timer-throttling --enable-features=SharedArrayBuffer --disable-features=SpareRendererForSitePerProcess --service-pipe-token=743282883347318061 --lang=pl --app-path=/usr/share/teams/resources/app.asar --user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) MicrosoftTeams-Preview/1.3.00.25560 Chrome/69.0.3497.128 Electron/4.2.12 Safari/537.36 --node-integration=false --webview-tag=true --no-sandbox --preload=/usr/share/teams/resources/app.asar/lib/renderer/preload.js --disable-remote-module --background-color=#fff --electron-shared-settings=eyJjci5jb21wYW55IjoiTWljcm9zb2Z0IiwiY3IuZHVtcHMiOiIvdG1wL2NvbS5taWNyb3NvZnQudGVhbXMubGludXggQ3Jhc2hlcyIsImNyLmVuYWJsZWQiOnRydWUsImNyLnByb2R1Y3QiOiJjb20ubWljcm9zb2Z0LnRlYW1zLmxpbnV4IiwiY3Iuc2Vzc2lvbiI6ImRlc2t0b3AtZjY2NzE5NmItODhkOC00NWQ4LWE1NzktNWU5Y2NhYWYxMGYxIiwiY3IudXJsIjoiYXBwY2VudGVyOi8vZ2VuZXJpYz9haWQ9NTA0OTNjODk4YzFmNGZlNTlhMTgzZjRiNDliZmU2YmEmaWlkPThmZTI5ODM0YzQzMzY3OWRmNzQ2MmE1YWI2ODkwMWEzYzY0ZWY1OWZkZDU0YWJmMTFhNTYxZmRlM2NlZjFiZGImdWlkPWI2MjlmZmQ1LTE3NTEtNDkzYy04ZTA5LTA3ZjhkMTA4M2QyNSIsImNyLnZlcnNpb24iOiIxLjMuMDAuMjU1NjAifQ== --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=743282883347318061 --renderer-client-id=10 --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 --msteams-proces
+asus        1701  1.4  3.3 921336 262452 ?       SLl  15:46   4:15 /opt/google/chrome/chrome
+asus        1707  0.0  0.0  10760   576 ?        S    15:46   0:00 cat
+asus        1708  0.0  0.0  10760   588 ?        S    15:46   0:00 cat
+asus        1711  0.0  0.6 270976 53968 ?        S    15:46   0:00 /opt/google/chrome/chrome --type=zygote --no-zygote-sandbox --enable-crash-reporter=19bacdee-c002-422a-bc43-88cbca7a4a86,
+asus        1712  0.0  0.6 270976 53952 ?        S    15:46   0:00 /opt/google/chrome/chrome --type=zygote --enable-crash-reporter=19bacdee-c002-422a-bc43-88cbca7a4a86,
+asus        1713  0.0  0.0  10764  4204 ?        S    15:46   0:00 /opt/google/chrome/nacl_helper
+asus        1716  0.0  0.1 270976 15236 ?        S    15:46   0:00 /opt/google/chrome/chrome --type=zygote --enable-crash-reporter=19bacdee-c002-422a-bc43-88cbca7a4a86,
+asus        1737  8.4  1.8 637064 146072 ?       Sl   15:46  25:31 /opt/google/chrome/chrome --type=gpu-process --field-trial-handle=16510406266178725914,13323146059926815703,131072 --enable-crash-reporter=19bacdee-c002-422a-bc43-88cbca7a4a86, --gpu-preferences=UAAAAAAAAAAgAAAQAAAAAAAAAAAAAAAAAABgAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAACAAAAAAAAAA= --shared-files
+asus        1741  0.4  1.2 367968 100520 ?       SLl  15:46   1:25 /opt/google/chrome/chrome --type=utility --utility-sub-type=network.mojom.NetworkService --field-trial-handle=16510406266178725914,13323146059926815703,131072 --lang=pl --service-sandbox-type=network --enable-crash-reporter=19bacdee-c002-422a-bc43-88cbca7a4a86, --shared-files=v8_context_snapshot_data:100
+asus        1758  0.0  0.4 348948 36968 ?        Sl   15:46   0:01 /opt/google/chrome/chrome --type=utility --utility-sub-type=storage.mojom.StorageService --field-trial-handle=16510406266178725914,13323146059926815703,131072 --lang=pl --service-sandbox-type=utility --enable-crash-reporter=19bacdee-c002-422a-bc43-88cbca7a4a86, --shared-files=v8_context_snapshot_data:100
+asus        1804  0.1  2.3 38330312 180852 ?     Sl   15:46   0:25 /opt/google/chrome/chrome --type=renderer --field-trial-handle=16510406266178725914,13323146059926815703,131072 --lang=pl --enable-crash-reporter=19bacdee-c002-422a-bc43-88cbca7a4a86, --extension-process --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=5 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+asus        1842  0.0  1.0 38142664 78876 ?      Sl   15:46   0:00 /opt/google/chrome/chrome --type=renderer --field-trial-handle=16510406266178725914,13323146059926815703,131072 --lang=pl --enable-crash-reporter=19bacdee-c002-422a-bc43-88cbca7a4a86, --extension-process --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=6 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+asus        1922  0.0  0.9 557344 72960 ?        Sl   15:46   0:02 cinnamon-screensaver
+asus        1925  0.0  0.6 551908 52672 ?        Sl   15:46   0:00 blueberry-tray
+asus        1975  0.0  0.1  21048  9792 ?        S    15:46   0:00 python3 /usr/lib/blueberry/safechild /usr/sbin/rfkill event
+asus        1998  0.0  0.0  10876   764 ?        S    15:46   0:00 /usr/sbin/rfkill event
+asus        2075  0.0  1.8 1587584 146088 ?      Sl   15:46   0:03 /usr/share/teams/teams --type=renderer --autoplay-policy=no-user-gesture-required --disable-background-timer-throttling --enable-features=SharedArrayBuffer --disable-features=SpareRendererForSitePerProcess --service-pipe-token=2947152100551552591 --lang=pl --app-path=/usr/share/teams/resources/app.asar --user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) MicrosoftTeams-Preview/1.3.00.25560 Chrome/69.0.3497.128 Electron/4.2.12 Safari/537.36 --node-integration=false --webview-tag=true --enable-sandbox --native-window-open --preload=/usr/share/teams/resources/app.asar/lib/renderer/experienceRenderer/preload_webview_sandbox.js --disable-remote-module --background-color=#fff --guest-instance-id=4 --enable-blink-features --disable-blink-features --electron-shared-settings=eyJjci5jb21wYW55IjoiTWljcm9zb2Z0IiwiY3IuZHVtcHMiOiIvdG1wL2NvbS5taWNyb3NvZnQudGVhbXMubGludXggQ3Jhc2hlcyIsImNyLmVuYWJsZWQiOnRydWUsImNyLnByb2R1Y3QiOiJjb20ubWljcm9zb2Z0LnRlYW1zLmxpbnV4IiwiY3Iuc2Vzc2lvbiI6ImRlc2t0b3AtZjY2NzE5NmItODhkOC00NWQ4LWE1NzktNWU5Y2NhYWYxMGYxIiwiY3IudXJsIjoiYXBwY2VudGVyOi8vZ2VuZXJpYz9haWQ9NTA0OTNjODk4YzFmNGZlNTlhMTgzZjRiNDliZmU2YmEmaWlkPThmZTI5ODM0YzQzMzY3OWRmNzQ2MmE1YWI2ODkwMWEzYzY0ZWY1OWZkZDU0YWJmMTFhNTYxZmRlM2NlZjFiZGImdWlkPWI2MjlmZmQ1LTE3NTEtNDkzYy04ZTA5LTA3ZjhkMTA4M2QyNSIsImNyLnZlcnNpb24iOiIxLjMuMDAuMjU1NjAifQ== --num-raster-threads=4 --enable-main-frame-before-activation --service-request-chann
+asus        2123  0.1  1.4 4281956 115688 ?      Sl   15:46   0:26 /usr/share/teams/teams --type=renderer --autoplay-policy=no-user-gesture-required --disable-background-timer-throttling --enable-features=SharedArrayBuffer --disable-features=SpareRendererForSitePerProcess --service-pipe-token=809357965714065081 --lang=pl --app-path=/usr/share/teams/resources/app.asar --user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) MicrosoftTeams-Preview/1.3.00.25560 Chrome/69.0.3497.128 Electron/4.2.12 Safari/537.36 --node-integration=false --webview-tag=false --no-sandbox --preload=/usr/share/teams/resources/app.asar/lib/pluginhost/preload.js --disable-remote-module --background-color=#fff --electron-shared-settings=eyJjci5jb21wYW55IjoiTWljcm9zb2Z0IiwiY3IuZHVtcHMiOiIvdG1wL2NvbS5taWNyb3NvZnQudGVhbXMubGludXggQ3Jhc2hlcyIsImNyLmVuYWJsZWQiOnRydWUsImNyLnByb2R1Y3QiOiJjb20ubWljcm9zb2Z0LnRlYW1zLmxpbnV4IiwiY3Iuc2Vzc2lvbiI6ImRlc2t0b3AtZjY2NzE5NmItODhkOC00NWQ4LWE1NzktNWU5Y2NhYWYxMGYxIiwiY3IudXJsIjoiYXBwY2VudGVyOi8vZ2VuZXJpYz9haWQ9NTA0OTNjODk4YzFmNGZlNTlhMTgzZjRiNDliZmU2YmEmaWlkPThmZTI5ODM0YzQzMzY3OWRmNzQ2MmE1YWI2ODkwMWEzYzY0ZWY1OWZkZDU0YWJmMTFhNTYxZmRlM2NlZjFiZGImdWlkPWI2MjlmZmQ1LTE3NTEtNDkzYy04ZTA5LTA3ZjhkMTA4M2QyNSIsImNyLnZlcnNpb24iOiIxLjMuMDAuMjU1NjAifQ== --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=809357965714065081 --renderer-client-id=17 --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 --msteams-pro
+asus        2245  0.0  0.9 652804 72632 ?        Sl   15:46   0:00 mintUpdate
+asus        2424  0.0  0.4  61860 34544 ?        S    15:46   0:00 /usr/bin/python3 /usr/share/system-config-printer/applet.py
+asus        2521  0.0  0.7 417216 60264 ?        Sl   15:46   0:00 mintreport-tray
+asus        2559  0.3  0.7 573240 62180 ?        Sl   15:47   1:09 /opt/google/chrome/chrome --type=utility --utility-sub-type=audio.mojom.AudioService --field-trial-handle=16510406266178725914,13323146059926815703,131072 --lang=pl --service-sandbox-type=none --enable-crash-reporter=19bacdee-c002-422a-bc43-88cbca7a4a86, --shared-files=v8_context_snapshot_data:100
+asus        2706  0.0  0.5 464524 39176 ?        Ssl  15:51   0:12 /usr/libexec/gnome-terminal-server
+asus        2713  0.0  0.0  13516  5328 pts/0    Ss   15:51   0:00 bash
+asus        3677  0.0  0.0  10752   524 pts/0    T    15:59   0:00 cat
+root        8176  0.0  0.0      0     0 ?        I    18:29   0:00 [kworker/4:2-events]
+root        8770  0.0  0.0      0     0 ?        I    18:45   0:03 [kworker/6:0-events]
+root        9414  0.0  0.0      0     0 ?        I    18:53   0:00 [kworker/2:1-events]
+root        9428  0.0  0.0      0     0 ?        I    18:54   0:00 [kworker/3:0-events]
+root        9575  0.0  0.0      0     0 ?        I    18:58   0:00 [kworker/0:0-events]
+root        9888  0.0  0.0      0     0 ?        I    19:10   0:00 [kworker/5:2-events]
+root        9925  0.0  0.0      0     0 ?        I    19:11   0:00 [kworker/1:2-cgroup_destroy]
+root        9928  0.0  0.0      0     0 ?        I    19:11   0:00 [kworker/1:3-events]
+root        9979  0.0  0.0      0     0 ?        I    19:12   0:00 [kworker/0:2-events]
+root        9982  0.0  0.0      0     0 ?        D    20:32   0:00 [kworker/u16:13+events_unbound]
+root       10003  0.0  0.0      0     0 ?        I    20:32   0:00 [kworker/u16:34-events_unbound]
+root       10018  0.0  0.0      0     0 ?        S    20:32   0:00 [irq/139-mei_me]
+root       10022  0.0  0.0      0     0 ?        I    20:32   0:00 [kworker/5:3-cgroup_destroy]
+root       10084  0.1  0.0      0     0 ?        I    20:32   0:01 [kworker/3:2-events]
+root       10145  0.0  0.0      0     0 ?        I    20:32   0:00 [kworker/4:1-events]
+root       10160  0.0  0.0      0     0 ?        I    20:33   0:00 [kworker/7:0-rcu_gp]
+asus       10394  2.6  2.1 38235780 169440 ?     Sl   20:36   0:17 /opt/google/chrome/chrome --type=renderer --field-trial-handle=16510406266178725914,13323146059926815703,131072 --lang=pl --enable-crash-reporter=19bacdee-c002-422a-bc43-88cbca7a4a86, --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=155 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+asus       10483  1.5  2.0 42442108 157092 ?     Sl   20:37   0:09 /opt/google/chrome/chrome --type=renderer --field-trial-handle=16510406266178725914,13323146059926815703,131072 --lang=pl --enable-crash-reporter=19bacdee-c002-422a-bc43-88cbca7a4a86, --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=162 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+root       10554  0.0  0.0      0     0 ?        I    20:37   0:00 [kworker/2:2-events]
+root       10608  0.0  0.0      0     0 ?        I    20:38   0:00 [kworker/6:2-mm_percpu_wq]
+root       10609  0.0  0.0      0     0 ?        I    20:38   0:00 [kworker/u16:0-events_power_efficient]
+root       10614  0.0  0.0      0     0 ?        I    20:38   0:00 [kworker/7:1-events]
+root       10802  0.0  0.0      0     0 ?        I    20:42   0:00 [kworker/2:0-events]
+root       10803  0.0  0.0      0     0 ?        I    20:42   0:00 [kworker/2:3]
+root       10804  0.0  0.0      0     0 ?        I    20:42   0:00 [kworker/0:1-events]
+asus       10854  0.0  0.6 38127040 51816 ?      Sl   20:42   0:00 /opt/google/chrome/chrome --type=renderer --field-trial-handle=16510406266178725914,13323146059926815703,131072 --lang=pl --enable-crash-reporter=19bacdee-c002-422a-bc43-88cbca7a4a86, --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=177 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+root       10868  0.0  0.0      0     0 ?        I    20:42   0:00 [kworker/3:1-events]
+root       10874  0.0  0.0      0     0 ?        I    20:43   0:00 [kworker/5:0-events_freezable]
+root       10883  0.0  0.0      0     0 ?        I    20:43   0:00 [kworker/7:2-events]
+root       10930  0.0  0.0      0     0 ?        I    20:46   0:00 [kworker/u16:1-i915]
+root       10968  0.0  0.0      0     0 ?        I    20:47   0:00 [kworker/4:0]
+asus       10969  0.0  0.0  14016  3244 pts/0    R+   20:47   0:00 ps aux
+asus@asus-VivoBook-ASUSLaptop-X521JQ-S533JQ:~/Pulpit/Nazwa$ cp processes.txt copy.txt
+asus@asus-VivoBook-ASUSLaptop-X521JQ-S533JQ:~/Pulpit/Nazwa$ ls
+copy.txt  processes.txt
+asus@asus-VivoBook-ASUSLaptop-X521JQ-S533JQ:~/Pulpit/Nazwa$ mkdir backup
+asus@asus-VivoBook-ASUSLaptop-X521JQ-S533JQ:~/Pulpit/Nazwa$ mv copy.txt /backup
+mv: cannot create regular file '/backup': Permission denied
+asus@asus-VivoBook-ASUSLaptop-X521JQ-S533JQ:~/Pulpit/Nazwa$ mv copy.txt backup/
+asus@asus-VivoBook-ASUSLaptop-X521JQ-S533JQ:~/Pulpit/Nazwa$ wc processes.txt
+  262  3188 33936 processes.txt
+asus@asus-VivoBook-ASUSLaptop-X521JQ-S533JQ:~/Pulpit/Nazwa$ echo 262 > selected.txt
+asus@asus-VivoBook-ASUSLaptop-X521JQ-S533JQ:~/Pulpit/Nazwa$ history
+    1  g++ raz.cpp
+    2  ./a.out
+    3  g++ raz.cpp
+    4  ./a.out
+    5  g++ raz.cpp
+    6  g++ raz.cpp
+    7  ./a.out
+    8  g++ raz.cpp
+    9  ./a.out
+   10  g++ raz.cpp
+   11  ./a.out
+   12  g++ raz.cpp
+   13  ./a.out
+   14  g++ raz.cpp
+   15  ./a.out
+   16  g++ raz.cpp
+   17  ./a.out
+   18  g++ raz.cpp
+   19  ./a.out
+   20  g++ raz.cpp
+   21  ./a.out
+   22  g++ raz.cpp
+   23  ./a.out
+   24  make
+   25  ls
+   26  cd ..
+   27  ls
+   28  make
+   29  make
+   30  make clean
+   31  make clear
+   32  make 
+   33  ls
+   34  make
+   35  make clean
+   36  make clear
+   37  make
+   38  make
+   39  make clear
+   40  make
+   41  make clear
+   42  make
+   43  make clear
+   44  make
+   45  make clear
+   46  make
+   47  make clear
+   48  make
+   49  make clear
+   50  make
+   51  make
+   52  make clear
+   53  make 
+   54  make
+   55  cd Pulpit
+   56  ls
+   57  cd API2D
+   58  ls
+   59  cd source
+   60  ls
+   61  make
+   62  make clear
+   63  make
+   64  g++ raz.cpp
+   65  g++ raz.cpp
+   66  ./a.out
+   67  g++ raz.cpp
+   68  ./a.out
+   69  g++ raz.cpp
+   70  ./a.out
+   71  g++ raz.cpp
+   72  ./a.out
+   73  g++ raz.cpp
+   74  ./a.out
+   75  g++ raz.cpp
+   76  ./a.out
+   77  g++ raz.cpp
+   78  ./a.out
+   79  g++ raz.cpp
+   80  ./a.out
+   81  g++ raz.cpp
+   82  ./a.out
+   83  g++ raz.cpp
+   84  ./a.out
+   85  g++ raz.cpp
+   86  ./a.out
+   87  g++ raz.cpp
+   88  ./a.out
+   89  ./a.out
+   90  g++ raz.cpp
+   91  ./a.out
+   92  g++ raz.cpp
+   93  ./a.out
+   94  g++ raz.cpp
+   95  g++ bitowe.cpp
+   96  g++ raz.cpp
+   97  ./a.out
+   98  g++ cwanabiblioteka_sstream
+   99  g++ cwanabiblioteka_sstream
+  100  g++ cwanabiblioteka_sstream
+  101  g++ cwanabiblioteka_sstream.cpp
+  102  ./a.out
+  103  g++ cwanabiblioteka_sstream.cpp
+  104  ./a.out
+  105  g++ cwanabiblioteka_sstream.cpp
+  106  ./a.out
+  107  g++ cwanabiblioteka_sstream.cpp
+  108  ./a.out
+  109  g++ cwanabiblioteka_sstream.cpp
+  110  ./a.out
+  111  g++ cwanabiblioteka_sstream.cpp
+  112  ./a.out
+  113  g++ cwanabiblioteka_sstream.cpp
+  114  ./a.out
+  115  g++ cwanabiblioteka_sstream.cpp
+  116  ./a.out
+  117  g++ cwanabiblioteka_sstream.cpp
+  118  ./a.out
+  119  g++ cwanabiblioteka_sstream.cpp
+  120  ./a.out
+  121  g++ cwanabiblioteka_sstream.cpp
+  122  ./a.out
+  123  g++ cwanabiblioteka_sstream.cpp
+  124  ./a.out
+  125  g++ cwanabiblioteka_sstream.cpp
+  126  ./a.out
+  127  g++ cwanabiblioteka_sstream.cpp
+  128  ./a.out
+  129  g++ cwanabiblioteka_sstream.cpp
+  130  g++ ok.cpp
+  131  ./a.out
+  132  g++ ok.cpp
+  133  ./a.out
+  134  g++ ok.cpp
+  135  ./a.out
+  136  g++ ok.cpp
+  137  ./a.out
+  138  g++ ok.cpp
+  139  ./a.out
+  140  g++ ok.cpp
+  141  ./a.out
+  142  2
+  143  ./a.out
+  144  g++ ok.cpp
+  145  ./a.out
+  146  g++ ok.cpp
+  147  ./a.out
+  148  ./a.out
+  149  g++ ok.cpp
+  150  ./a.out
+  151  g++ ok.cpp
+  152  ./a.out
+  153  g++ ok.cpp
+  154  ./a.out
+  155  g++ ok.cpp
+  156  ./a.out
+  157  g++ ok.cpp
+  158  ./a.out
+  159  g++ ok.cpp
+  160  ./a.out
+  161  g++ ok.cpp
+  162  ./a.out
+  163  g++ ok.cpp
+  164  ./a.out
+  165  g++ ok.cpp
+  166  ./a.out
+  167  g++ ok.cpp
+  168  ./a.out
+  169  g++ ok.cpp
+  170  ./a.out
+  171  g++ ok.cpp
+  172  ./a.out
+  173  g++ ok.cpp
+  174  g++ ok.cpp
+  175  ./a.out
+  176  g++ ok.cpp
+  177  ./a.out
+  178  g++ ok.cpp
+  179  ./a.out
+  180  g++ ok.cpp
+  181  ./a.out
+  182  g++ ok.cpp
+  183  g++ ok.cpp
+  184  ./a.out
+  185  g++ ok.cpp
+  186  ./a.out
+  187  ./a.out
+  188  make clear
+  189  make
+  190  cd Pulpit
+  191  ls
+  192  cd API2D
+  193  cs source
+  194  ls
+  195  cd source
+  196  make
+  197  cd Pulpit
+  198  cd API2D
+  199  cd Pulpit
+  200  cd API2D
+  201  cd source
+  202  make
+  203  sudo apt install g++ clang
+  204  kpk
+  205  pwd
+  206  ls
+  207  pwd
+  208  cd Pulpit
+  209  ls
+  210  cd Pobrane
+  211  ls -l
+  212  touch h
+  213  ls -l
+  214  touch h
+  215  ls -l
+  216  rm h
+  217  ls -l
+  218  mkdir h
+  219  ls -l
+  220  mkdir h
+  221  rmdir h
+  222  cd Pulpit
+  223  ls
+  224  cd API2D
+  225  cd source
+  226  make
+  227  make
+  228  cd Pulpit
+  229  cd Projekt
+  230  ls
+  231  git clone https://gitlab.com/259318/po_2021.git
+  232  git add .
+  233  ls
+  234  cd po_2021
+  235  ls
+  236  git add .
+  237  git commit -m "2Dfinal'
+  238  git commit -m "2Dfinal"
+  239  clear
+  240  cd Pulpit
+  241  cd Projekt
+  242  ls
+  243  git clone https://gitlab.com/259318/po_2021.git
+  244  cd po_2021
+  245  ls
+  246  git add .
+  247  git commit -m "2D"
+  248  git push
+  249  cd Pulpit
+  250  ls
+  251  cd API2D
+  252  cd source
+  253  make
+  254  make clearA
+  255  make
+  256  make clear
+  257  make
+  258  make clear
+  259  make
+  260  make clear
+  261  make
+  262  make clear
+  263  make
+  264  make
+  265  make
+  266  make
+  267  make
+  268  make
+  269  g++ ok.cpp
+  270  g++ ok.cpp
+  271  g++ ok.cpp
+  272  ./a.out
+  273  g++ ok.cpp
+  274  ./a.out
+  275  g++ ok.cpp
+  276  ./a.out
+  277  ./a.out
+  278  g++ ok.cpp
+  279  ./a.out
+  280  g++ ok.cpp
+  281  ./a.out
+  282  ls
+  283  cd Pulpit/
+  284  man wc
+  285  g++ listadwu.cpp
+  286  g++ listadwu.cpp
+  287  g++ listadwu.cpp
+  288  ./a.out
+  289  g++ listadwu.cpp
+  290  ./a.out
+  291  g++ listadwu.cpp
+  292  ./a.out
+  293  g++ listadwu.cpp
+  294  ./a.out
+  295  g++ listadwu.cpp
+  296  ./a.out
+  297  g++ listadwu.cpp
+  298  ./a.out
+  299  g++ listadwu.cpp
+  300  ./a.out
+  301  g++ listadwu.cpp
+  302  ./a.out
+  303  g++ listadwu.cpp
+  304  ./a.out
+  305  g++ listadwu.cpp
+  306  ./a.out
+  307  g++ listadwu.cpp
+  308  ./a.out
+  309  g++ listadwu.cpp
+  310  ./a.out
+  311  g++ listadwu.cpp
+  312  ./a.out
+  313  g++ listadwu.cpp
+  314  ./a.out
+  315  g++ listadwu.cpp
+  316  ./a.out
+  317  g++ listadwu.cpp
+  318  ./a.out
+  319  g++ listadwu.cpp
+  320  ./a.out
+  321  g++ listadwu.cpp
+  322  ./a.out
+  323  g++ listadwu.cpp
+  324  ./a.out
+  325  g++ listadwu.cpp
+  326  ./a.out
+  327  g++ listadwu.cpp
+  328  ./a.out
+  329  g++ listadwu.cpp
+  330  ./a.out
+  331  g++ listadwu.cpp
+  332  ./a.out
+  333  g++ listadwu.cpp
+  334  ./a.out
+  335  g++ listadwu.cpp
+  336  ./a.out
+  337  g++ listadwu.cpp
+  338  ./a.out
+  339  g++ listadwu.cpp
+  340  ./a.out
+  341  g++ listadwu.cpp
+  342  ./a.out
+  343  g++ listadwu.cpp
+  344  ./a.out
+  345  g++ listadwu.cpp
+  346  ./a.out
+  347  g++ listadwu.cpp
+  348  ./a.out
+  349  g++ listadwu.cpp
+  350  ./a.out
+  351  g++ listadwu.cpp
+  352  ./a.out
+  353  g++ listadwu.cpp
+  354  ./a.out
+  355  g++ listadwu.cpp
+  356  ./a.out
+  357  g++ listadwu.cpp
+  358  ./a.out
+  359  g++ listadwu.cpp
+  360  ./a.out
+  361  g++ listadwu.cpp
+  362  ./a.out
+  363  g++ listadwu.cpp
+  364  ./a.out
+  365  g++ listadwu.cpp
+  366  ./a.out
+  367  g++ listadwu.cpp
+  368  ./a.out
+  369  g++ listadwu.cpp
+  370  ./a.out
+  371  g++ listadwu.cpp
+  372  ./a.out
+  373  g++ listadwu.cpp
+  374  ./a.out
+  375  g++ listadwu.cpp
+  376  ./a.out
+  377  g++ listadwu.cpp
+  378  ./a.out
+  379  g++ listadwu.cpp
+  380  ./a.out
+  381  g++ listadwu.cpp
+  382  ./a.out
+  383  ./a.out
+  384  g++ listadwu.cpp
+  385  ./a.out
+  386  g++ listadwu.cpp
+  387  g++ listadwu.cpp
+  388  g++ listadwu.cpp
+  389  ./a.out
+  390  g++ listadwu.cpp
+  391  ./a.out
+  392  g++ listadwu.cpp
+  393  ./a.out
+  394  g++ listadwu.cpp
+  395  ./a.out
+  396  g++ listadwu.cpp
+  397  ./a.out
+  398  g++ listadwu.cpp
+  399  ./a.out
+  400  g++ listadwu.cpp
+  401  ./a.out
+  402  g++ listadwu.cpp
+  403  ./a.out
+  404  g++ listadwu.cpp
+  405  ./a.out
+  406  g++ listadwu.cpp
+  407  ./a.out
+  408  g++ listadwu.cpp
+  409  ./a.out
+  410  g++ listadwu.cpp
+  411  ./a.out
+  412  g++ listadwu.cpp
+  413  ./a.out
+  414  g++ listadwu.cpp
+  415  ./a.out
+  416  g++ listadwu.cpp
+  417  ./a.out
+  418  g++ listadwu.cpp
+  419  ./a.out
+  420  g++ listadwu.cpp
+  421  ./a.out
+  422  g++ listadwu.cpp
+  423  ./a.out
+  424  g++ listadwu.cpp
+  425  ./a.out
+  426  g++ listadwu.cpp
+  427  ./a.out
+  428  g++ listadwu.cpp
+  429  ./a.out
+  430  g++ listadwu.cpp
+  431  ./a.out
+  432  g++ listadwu.cpp
+  433  ./a.out
+  434  g++ listadwu.cpp
+  435  ./a.out
+  436  g++ listadwu.cpp
+  437  ./a.out
+  438  g++ listadwu.cpp
+  439  ./a.out
+  440  g++ listadwu.cpp
+  441  g++ listadwu.cpp
+  442  g++ listadwu.cpp
+  443  ./a.out
+  444  ./a.out
+  445  g++ listadwu.cpp
+  446  ./a.out
+  447  g++ listadwu.cpp
+  448  ./a.out
+  449  g++ listadwu.cpp
+  450  ./a.out
+  451  g++ listadwu.cpp
+  452  ./a.out
+  453  g++ listadwu.cpp
+  454  ./a.out
+  455  g++ listadwu.cpp
+  456  ./a.out
+  457  g++ listadwu.cpp
+  458  ./a.out
+  459  g++ listadwu.cpp
+  460  ./a.out
+  461  g++ --version
+  462  apt update g++
+  463  apt update build-essential g++
+  464  apt update && install build-essential g++
+  465  sudo apt update g++
+  466  sudo apt-get update g++
+  467  sudo apt-get install build-essential
+  468  sudo apt-get update
+  469  g++ --ver
+  470  gcc --ver
+  471  gcc --version
+  472  g++ auto.cpp
+  473  ./a.out
+  474  g++ auto.cpp
+  475  ./a.out
+  476  g++ auto.cpp
+  477  ./a.out
+  478  g++ auto.cpp
+  479  g++ auto.cpp
+  480  ./a.out
+  481  g++ auto.cpp
+  482  ./a.out
+  483  g++ auto.cpp
+  484  ./a.out
+  485  g++ auto.cpp
+  486  g++ auto.cpp
+  487  g++ auto.cpp
+  488  g++ auto.cpp
+  489  g++ auto.cpp
+  490  g++ - 7 auto.cpp -std = c ++ 17
+  491  g++ -7 auto.cpp -std=c++17
+  492  g++  auto.cpp -std=c++17
+  493  ./a.out
+  494  g++  auto.cpp -std=c++17
+  495  ./a.out
+  496  c++
+  497  g++ --vers
+  498  c++ --vers
+  499  man ls
+  500  ls- lrS
+  501  ls]
+  502  ls
+  503  cd Pupit
+  504  cd Pulpit
+  505  ls -lrS
+  506  g++ --vers
+  507  man cp
+  508  g++ --help
+  509  cd --help
+  510  cd man
+  511  man cd
+  512  cd --help
+  513  man 2 socket
+  514  man --help
+  515  man man
+  516  ls
+  517  cat
+  518  cat /proba auto.cpp
+  519  clera
+  520  clear
+  521  mkdir nazwa
+  522  ls
+  523  cd nazwa
+  524  touch processes.txt
+  525* ls
+  526  cd processes.txt
+  527  ps aux
+  528  ps aux > processes.txt
+  529  ls
+  530  cat processes.txt
+  531  cp processes.txt copy.txt
+  532  cat copy.txt
+  533  ls
+  534  mkdir backup
+  535  ls
+  536  mv copy.txt backup/
+  537  ls
+  538  cd backup
+  539  ls
+  540  cd ..
+  541  cd backup
+  542  /nazwa
+  543  nazwa/
+  544  cd ..
+  545  wc processes.txt
+  546  touch selected.txt
+  547  ls
+  548  259 > selected.txt
+  549  echo 259 > selected.txt
+  550  ls
+  551  cat selected.txt
+  552  grep /bin* 
+  553  grep -rni /bin* processes.txt
+  554  grep -rni /bin* processes.txt >> selected.txt
+  555  ls
+  556  cat selected.txt
+  557  rm selected txt
+  558  rm selected.txt
+  559  grep -rni /bin* processes.txt >> /backup/selected.txt
+  560  grep -rni /bin* processes.txt >> backup/selected.txt
+  561  ls
+  562  cd backup
+  563  ls
+  564  cat selected.txt
+  565  rm selected.txt
+  566  cd ..
+  567  ls
+  568  echo 259 > selected.txt
+  569  grep -rni /bin* processes.txt >> selected.txt
+  570  ls
+  571  cd selected.txt
+  572  cat selected.txt
+  573  history
+  574  history | tail > commands.txt
+  575  cat commands.txt
+  576  history
+  577  history | tail -n 53 > commands.txt
+  578  cat commands.txt
+  579  clear
+  580  ls
+  581  cat selected.txt commands.txt
+  582  clear
+  583  cd .
+  584  cd ~
+  585  ls
+  586  cd Pulpit
+  587  mkdir Nazwa
+  588  cd Nazwa
+  589  touch processes.txt
+  590  ps aux > processes.txt
+  591  ls
+  592  cat processes.txt
+  593  cp processes.txt copy.txt
+  594  ls
+  595  mkdir backup
+  596  mv copy.txt /backup
+  597  mv copy.txt backup/
+  598  wc processes.txt
+  599  echo 262 > selected.txt
+  600  history
+asus@asus-VivoBook-ASUSLaptop-X521JQ-S533JQ:~/Pulpit/Nazwa$ history | tail -n 14 > commands.txt
+asus@asus-VivoBook-ASUSLaptop-X521JQ-S533JQ:~/Pulpit/Nazwa$ cat selected.txt commands.txt
+262
+  588  cd Nazwa
+  589  touch processes.txt
+  590  ps aux > processes.txt
+  591  ls
+  592  cat processes.txt
+  593  cp processes.txt copy.txt
+  594  ls
+  595  mkdir backup
+  596  mv copy.txt /backup
+  597  mv copy.txt backup/
+  598  wc processes.txt
+  599  echo 262 > selected.txt
+  600  history
+  601  history | tail -n 14 > commands.txt
+asus@asus-VivoBook-ASUSLaptop-X521JQ-S533JQ:~/Pulpit/Nazwa$ 
+
+
