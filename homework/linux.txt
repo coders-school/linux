@@ -20,7 +20,7 @@ Air-Amelia:procesy ameliaplatek$ cat selected.txt commands.txt
   230  wc -l processes.txt 
   231  wc -l processes.txt > selected.txt
   232  ls
-  233  grep /bin * >> selected.txt
+  233  grep /bin processes.txt >> selected.txt
   234  history
   235  history | tail -n23
   236  history | tail -n24 > commands.txt
