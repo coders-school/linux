@@ -1,0 +1,35 @@
+gsystem@debian:~/homework_linux$ cat selected.txt commands.txt 
+170 processes.txt
+80:message+   456  0.6  0.1  10560  5644 ?        Ss   12:09   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+94:root       530  0.0  0.5 125800 22324 ?        Ssl  12:09   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+105:gsystem   1015  0.0  0.2 240908  9812 ?        Sl   12:10   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+106:gsystem   1019  0.0  0.1 162324  5640 tty2     Ssl+ 12:10   0:00 /usr/lib/gdm3/gdm-wayland-session /usr/bin/gnome-session
+107:gsystem   1021  0.2  0.1   9892  5312 ?        Ss   12:10   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+109:gsystem   1054  7.1  6.5 3224024 266384 tty2   Sl+  12:10   0:16 /usr/bin/gnome-shell
+112:gsystem   1077  0.1  1.2 443668 49788 tty2     Sl+  12:10   0:00 /usr/bin/Xwayland :0 -rootless -terminate -accessx -core -listen 4 -listen 5 -displayfd 6
+114:gsystem   1090  0.0  0.1   9096  4384 ?        S    12:10   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+116:gsystem   1096  0.0  0.6 1174388 25348 ?       S<sl 12:10   0:00 /usr/bin/pulseaudio --daemonize=no
+148:gsystem   1284  2.1  3.4 1000852 139664 tty2   Sl+  12:10   0:04 /usr/bin/gnome-software --gapplication-service
+153:gsystem   1309  0.0  0.0  25912   356 ?        S    12:10   0:00 /usr/bin/VBoxClient --clipboard
+154:gsystem   1311  0.0  0.0 160088  2288 ?        Sl   12:10   0:00 /usr/bin/VBoxClient --clipboard
+155:gsystem   1344  0.0  0.0  25912   356 ?        S    12:10   0:00 /usr/bin/VBoxClient --seamless
+156:gsystem   1348  0.0  0.0  25912   360 ?        S    12:10   0:00 /usr/bin/VBoxClient --draganddrop
+157:gsystem   1349  0.0  0.0 158684  2676 ?        Sl   12:10   0:00 /usr/bin/VBoxClient --draganddrop
+158:gsystem   1350  0.0  0.0 158164  2672 ?        Sl   12:10   0:00 /usr/bin/VBoxClient --seamless
+159:gsystem   1359  0.0  0.0  25912   360 ?        S    12:10   0:00 /usr/bin/VBoxClient --vmsvga
+162:gsystem   2064  0.2  0.9 478004 39332 ?        SLl  12:10   0:00 /usr/bin/seahorse --gapplication-service
+163:gsystem   2070  0.1  1.4 1143872 60328 ?       Sl   12:10   0:00 /usr/bin/gnome-calendar --gapplication-service
+   221  mkdir homework_linux
+   222  cd homework_linux/
+   223  touch processes.txt
+   224  ps aux > processes.txt
+   225  cat processes.txt
+   226  cp processes.txt copy.txt
+   227  mkdir backup
+   228  mv copy.txt backup/
+   229  wc -l processes.txt 
+   230  wc -l processes.txt > selected.txt
+   231  man grep
+   232  grep -n /bin processes.txt >> selected.txt
+   233  history
+   234  history | tail -n 14 > commands.txt
