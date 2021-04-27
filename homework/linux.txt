@@ -277,6 +277,7 @@ asus@asus-VivoBook-ASUSLaptop-X521JQ-S533JQ:~/Pulpit/Nazwa$ mv copy.txt backup/
 asus@asus-VivoBook-ASUSLaptop-X521JQ-S533JQ:~/Pulpit/Nazwa$ wc processes.txt
   262  3188 33936 processes.txt
 asus@asus-VivoBook-ASUSLaptop-X521JQ-S533JQ:~/Pulpit/Nazwa$ echo 262 > selected.txt
+asus@asus-VivoBook-ASUSLaptop-X521JQ-S533JQ:~/Pulpit/Nazwa$ grep -r /bin* >> selected.txt
 asus@asus-VivoBook-ASUSLaptop-X521JQ-S533JQ:~/Pulpit/Nazwa$ history
     1  g++ raz.cpp
     2  ./a.out
