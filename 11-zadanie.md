@@ -44,7 +44,10 @@ Wykonaj poniższe kroki w terminalu.
     ![Create Pull Request on GitHub](img/create-pr.png)
 
 7. Nadaj jeszcze nazwę i opis swoim zmianom w języku angielskim. Gdy będziecie pracować w kilka osób w opisie koniecznie musi znaleźć się lista autorów.
-8. Gotowe! Za chwilę dowiesz się, czy zadanie przeszło testy 😊
+8. Gotowe! No prawie... GitHub ostatnio zmienił zasady i trzeba jeszcze potwierdzić, że na pewno chcemy odpalić automaty (workflow) klikając przycisk "Approve and run". Jeśli nie masz takiej opcji to znaczy, że jeszcze nie potwierdziłeś zaproszenia do grupy coders-school/online-2021 na GitHubie. Napisz o tym na Discordzie. Każdy kto jest w grupie może Ci to zatwierdzić. Chwilę po zatwierdzeniu dowiesz się, czy zadanie przeszło testy 😊
+
+    ![Approve PR on GitHub](img/approve.png)
+
 9. Jeśli widzisz coś takiego, to znaczy, że musisz poprawić swoje rozwiązanie. Gdy klikniesz na Details dowiesz się co poszło nie tak. Napraw to co trzeba i wyedytuj ponownie plik homework/linux.txt w swojej kopii repozytorium. Nie musisz po raz drugi zgłaszać Pull Requesta, zaktualizuje się sam po edycji pliku.
 
     ![CI on GitHub](img/ci.png)
