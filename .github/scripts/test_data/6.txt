@@ -1,0 +1,40 @@
+[arek@OfficeJet zadanie0x0d]$ cat selected.txt commands.txt
+154 processes.txt
+dbus         307  0.0  0.0  12252  5824 ?        Ss   15:29   0:01 /usr/bin/dbus-da
+systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         308  0.0  0.1 478860 19928 ?        Ssl  15:29   0:07 /usr/bin/Network
+root         326  0.0  0.0   8964  5664 ?        Ss   15:29   0:00 sshd: /usr/bin/s
+0-100 startups
+root         399  0.0  0.0  15044  9120 ?        Ss   15:29   0:00 /usr/bin/wpa_sup
+a_supplicant
+arek         426  0.0  0.0   7396  3960 tty1     S+   15:29   0:00 /bin/sh /usr/bin
+arek         456  0.0  0.0  11844  4888 ?        Ss   15:29   0:00 /usr/bin/dbus-da
+=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+arek         466  0.0  0.0   7608  4344 pts/0    Ss+  15:29   0:00 /bin/bash
+arek         543  0.0  0.0   7264  2908 ?        S    15:32   0:00 /bin/bash
+arek         548  0.0  0.0   7264  3528 ?        S    15:32   0:00 bash /usr/bin/br
+arek         978  0.0  0.0   7712  4460 pts/1    Ss+  15:32   0:00 /bin/bash
+arek        5061  0.0  0.0   7608  4192 pts/2    Ss   21:58   0:00 /bin/bash
+  520  mkdir zadanie0x0d
+  521  cd zadanie0x0d/
+  522  touch processes.txt
+  523  ls
+  524  ps aux > processes.txt
+  525  less processes.txt
+  526  cp processes.txt copy.txt
+  527  ls
+  528  mkdir backup
+  529  mv -iv copy.txt backup/
+  530  ls
+  531  man wc
+  532  wc -l processes.txt
+  533  wc -l processes.txt > selected.txt
+  534  cat selected.txt
+  535  grep -help
+  536  grep --help
+  537  grep /bin processes.txt
+  538  grep -n /bin processes.txt >> selected.txt
+  539  cat selected.txt
+  540  history
+  541  man tail
+  542  history | tail -n 23 > commands.txt
