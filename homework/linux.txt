@@ -1,0 +1,99 @@
+leszol@leszolPC:~/CS/ZadanieLinux/backup$ cat ../commands.txt selected.txt
+  192  cd CS
+  193  mkdir ZadanieLinux
+  194  touch /processes.txt
+  195  touch ./ZadanieLinux/processes.txt
+  196* ps aux > ./ZadanieLinux/processes.txt 
+  197  cd ZadanieLinux
+  198  less processes.txt 
+  199  cp processes.txt copy.txt
+  200  mkdir backup
+  201  mv copy.txt ./backup
+  202  cd backup
+  203  ls
+  204  less copy.txt
+  205  wc processes.txt
+  206  wc copy.txt 
+  207  man wc
+  208  wc --lines copy.txt 
+  209  man wc
+  210  selected.txt < ws -l copy.txt 
+  211  selected.txt < echo ws -l copy.txt 
+  212  echo ws -l copy.txt 
+  213  echo < ws -l copy.txt 
+  214  man touch
+  215  wc -l copy.txt | selected.txt
+  216  wc -l copy.txt | touch selected.txt
+  217  less selected.txt 
+  218  man <
+  219  < --help
+  220  < -h
+  221  wc -l copy.txt > selected.txt
+  222  less selected
+  223  less selected.txt 
+  224  mkfile
+  225  mk
+  226  man mk
+  227  man cat
+  228  cat -b copy.txt 
+  229  man cat
+  230  touch -h
+  231  touch --help
+  232  grep -n "\bin" processes.txt 
+  233  cd ..
+  234  grep -n "\bin" processes.txt 
+  235  grep -n \bin processes.txt 
+  236  grep -n \bin processes.txt >> ./backup/selected.txt
+  237  cd backup
+  238  ls
+  239  less selected
+  240  less selected.txt 
+  241  history
+  242  ls
+  243  cd ..
+  244  man tail
+  245  tail -n +192 history
+  246  tail -n +192 <history
+  247  history | tail -n +192 > commands.txt
+  248  less commands.txt 
+  249  cat commands.txt ./backup/selected.txt 
+  250  grep -n "\bin" processes.txt
+  251  grep -n '\bin' processes.txt
+  252  grep -n \bin processes.txt
+  253  grep -n "/bin" processes.txt
+  254  wc -l copy.txt > selected.txt
+  255  wc -l copy.txt > ./backup/selected.txt
+  256  cd backup
+  257  wc -l copy.txt > selected.txt
+  258  grep -n /bin ../processes.txt >> selected.txt
+  259  cat ../commands.txt selected.txt
+  260  history | tail -n +192 > commands.txt
+  261  cat ../commands.txt selected.txt
+  262  history | tail -n +192 > ../commands.txt
+  263  rm commands.txt 
+  264  cat ../commands.txt selected.txt [B
+  265  ls
+  266  cat ../commands.txt selected.txt
+  267  history | tail -n +192 > ../commands.txt
+214 copy.txt
+93:message+     561  0.0  0.0   8956  6148 ?        Ss   19:25   0:04 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+96:root         574  0.0  0.2  50484 20080 ?        Ss   19:25   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+106:root         683  0.0  0.2 129028 23068 ?        Ssl  19:25   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+107:whoopsie     748  0.0  0.1 253124 15608 ?        Ssl  19:25   0:00 /usr/bin/whoopsie -f
+115:leszol      1437  0.0  0.2 1419440 18864 ?       S<sl 19:25   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+117:leszol      1442  0.0  0.0 251348  7032 ?        SLl  19:25   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+118:leszol      1447  0.0  0.0   8344  5588 ?        Ss   19:25   0:02 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+119:leszol      1449  0.0  0.0 175180  6620 tty2     Ssl+ 19:25   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+133:leszol      1642  0.0  0.0  33744   364 ?        S    19:25   0:00 /usr/bin/VBoxClient --clipboard
+134:leszol      1643  0.0  0.0 166148  4208 ?        Sl   19:25   0:00 /usr/bin/VBoxClient --clipboard
+135:leszol      1654  0.0  0.0  33744   360 ?        S    19:25   0:00 /usr/bin/VBoxClient --seamless
+136:leszol      1655  0.0  0.0 165980  2720 ?        Sl   19:25   0:00 /usr/bin/VBoxClient --seamless
+137:leszol      1661  0.0  0.0  33744   360 ?        S    19:25   0:00 /usr/bin/VBoxClient --draganddrop
+138:leszol      1662  0.1  0.0 232032  2740 ?        Sl   19:25   0:11 /usr/bin/VBoxClient --draganddrop
+139:leszol      1669  0.0  0.0  33744   364 ?        S    19:25   0:00 /usr/bin/VBoxClient --vmsvga-x11
+140:leszol      1670  0.0  0.0 102724  3952 ?        Sl   19:25   0:00 /usr/bin/VBoxClient --vmsvga-x11
+141:leszol      1677  0.0  0.0   6040   452 ?        Ss   19:25   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+143:leszol      1721  0.0  0.0   7248  4408 ?        S    19:25   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+146:leszol      1773  3.9  4.7 5153340 388900 ?      Ssl  19:25   4:01 /usr/bin/gnome-shell
+159:leszol      1889  0.0  0.3 2744860 26652 ?       Sl   19:25   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+183:leszol      2087  0.6  4.0 1415892 332140 ?      Sl   19:25   0:40 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
