@@ -1,31 +1,30 @@
 mati@mati-VirtualBox:~/Zadanie$ cat selected.txt commands.txt 
-192 processes.txt
-message+     599  0.0  0.1   9868  6396 ?        Ss   19:06   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-root         610  0.0  0.5  50484 20280 ?        Ss   19:06   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-root         690  0.0  0.5 129280 22544 ?        Ssl  19:06   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-whoopsie     737  0.0  0.3 253128 15460 ?        Ssl  19:06   0:00 /usr/bin/whoopsie -f
-mati        1223  0.0  0.4 1493736 19464 ?       S<sl 19:06   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-mati        1228  0.0  0.1   8932  6136 ?        Ss   19:06   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-mati        1231  0.0  0.1 251708  7468 ?        Sl   19:06   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
-mati        1279  0.0  0.1 175348  6404 tty2     Ssl+ 19:06   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-mati        1395  0.0  0.0   6040   452 ?        Ss   19:06   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-mati        1425  0.0  0.1   7380  4372 ?        S    19:06   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-mati        1492  1.0  9.2 4239380 371784 ?      Rsl  19:06   1:08 /usr/bin/gnome-shell
-mati        1594  0.0  0.6 2610012 26668 ?       Sl   19:06   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-mati        1774  0.1  5.1 1270952 206296 ?      Sl   19:06   0:06 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
-mati        2699  0.0  1.4 872652 59312 ?        Sl   19:14   0:00 /usr/bin/gnome-calendar --gapplication-service
-  111  mkdir Zadanie 
-  112  cd Zadanie
-  113  touch processes.txt
-  114  ps aux > processes.txt 
-  115  cp processes.txt copy.txt
-  116  mkdir backup
-  117  mv copy.txt backup
-  118  wc -l processes.txt 
-  119  wc -l processes.txt > selected.txt
-  120  grep /bin processes.txt >> selected.txt 
-  121  history 
-  122  history | tail -n 12 > commands.txt
-
-
+187 processes.txt
+83:message+     599  0.0  0.1   9868  6396 ?        Ss   19:06   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+86:root         610  0.0  0.5  50484 20280 ?        Ss   19:06   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+98:root         690  0.0  0.5 129280 22544 ?        Ssl  19:06   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+101:whoopsie     737  0.0  0.3 253128 15460 ?        Ssl  19:06   0:00 /usr/bin/whoopsie -f
+110:mati        1223  0.0  0.4 1493708 19388 ?       S<sl 19:06   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+112:mati        1228  0.0  0.1   8932  6136 ?        Ss   19:06   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+113:mati        1231  0.0  0.1 251708  7468 ?        Sl   19:06   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+119:mati        1279  0.0  0.1 175348  6404 tty2     Ssl+ 19:06   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+126:mati        1395  0.0  0.0   6040   452 ?        Ss   19:06   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+128:mati        1425  0.0  0.1   7380  4372 ?        S    19:06   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+131:mati        1492  1.2 10.2 4278728 411224 ?      Ssl  19:06   1:35 /usr/bin/gnome-shell
+144:mati        1594  0.0  0.6 2610012 26668 ?       Sl   19:06   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+167:mati        1774  0.0  5.1 1270952 206296 ?      Sl   19:06   0:06 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
+174:mati        2699  0.0  1.4 872652 59312 ?        Sl   19:14   0:00 /usr/bin/gnome-calendar --gapplication-service
+182:mati        4273  0.0  1.1 1086464 45568 ?       SLl  21:01   0:00 /usr/bin/seahorse --gapplication-service
+  135  mkdir Zadanie
+  136  cd Zadanie/
+  137  touch processes.txt
+  138  ps aux > processes.txt 
+  139  cp processes.txt copy.txt
+  140  mkdir backup
+  141  mv copy.txt backup/
+  142  wc -l processes.txt 
+  143  wc -l processes.txt > selected.txt
+  144  grep -n /bin processes.txt >>selected.txt 
+  145  history 
+  146  history | tail -n 12 > commands.txt
 
