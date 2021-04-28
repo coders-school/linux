@@ -1,0 +1,34 @@
+tomonike@Jinto-Komp:/mnt/d/C++/programowanie/coders-school/linux/homework/linux$ cat selected.txt commands.txt
+19 processes.txt
+7:tomonike    23  0.0  0.0   2612   532 pts/0    S+   19:17   0:00 sh /home/tomonike/.vscode-server/bin/3c4e3df9e89829dce27b7b5c24508306b151f30d/server.sh  --port=0 --use-host-proxy --without-browser-env-var --print-ip-address --enable-remote-auto-shutdown
+8:tomonike    25  0.2  0.5 982944 76364 pts/0    Sl+  19:17   0:13 /home/tomonike/.vscode-server/bin/3c4e3df9e89829dce27b7b5c24508306b151f30d/node /home/tomonike/.vscode-server/bin/3c4e3df9e89829dce27b7b5c24508306b151f30d/out/vs/server/main.js  --port=0 --use-host-proxy --without-browser-env-var --print-ip-address --enable-remote-auto-shutdown
+9:tomonike    36  0.0  0.3 870472 39376 pts/0    Sl+  19:17   0:03 /home/tomonike/.vscode-server/bin/3c4e3df9e89829dce27b7b5c24508306b151f30d/node /home/tomonike/.vscode-server/bin/3c4e3df9e89829dce27b7b5c24508306b151f30d/out/bootstrap-fork --type=ptyHost
+10:tomonike    48  0.0  0.3 856940 40388 pts/0    Sl+  19:17   0:00 /home/tomonike/.vscode-server/bin/3c4e3df9e89829dce27b7b5c24508306b151f30d/node /home/tomonike/.vscode-server/bin/3c4e3df9e89829dce27b7b5c24508306b151f30d/out/bootstrap-fork --type=watcherService
+11:tomonike    78  0.4  1.9 1673480 245812 pts/0  Sl+  19:17   0:26 /home/tomonike/.vscode-server/bin/3c4e3df9e89829dce27b7b5c24508306b151f30d/node /home/tomonike/.vscode-server/bin/3c4e3df9e89829dce27b7b5c24508306b151f30d/out/bootstrap-fork --type=extensionHost --uriTransformerPath=/home/tomonike/.vscode-server/bin/3c4e3df9e89829dce27b7b5c24508306b151f30d/out/vs/server/uriTransformer.js --useHostProxy=
+12:tomonike    90  0.0  0.0  10140  5220 pts/1    Ss+  19:17   0:00 /bin/bash
+13:tomonike   114  0.1  0.3 1456548 49936 pts/0   Sl+  19:17   0:09 /home/tomonike/.vscode-server/extensions/ms-vscode.cpptools-1.3.1/bin/cpptools
+14:tomonike   153  0.0  0.3 559128 39532 pts/0    Sl+  19:17   0:00 /home/tomonike/.vscode-server/bin/3c4e3df9e89829dce27b7b5c24508306b151f30d/node /home/tomonike/.vscode-server/bin/3c4e3df9e89829dce27b7b5c24508306b151f30d/extensions/json-language-features/server/dist/node/jsonServerMain --node-ipc --clientProcessId=78
+15:tomonike   261  0.0  0.6 5103732 84260 pts/0   Sl+  19:17   0:02 /home/tomonike/.vscode-server/extensions/ms-vscode.cpptools-1.3.1/bin/cpptools-srv 114 {84A0B09E-74DC-42D0-9C5A-ED77054CBDEF}
+16:tomonike   983  0.0  0.3 856624 41984 pts/0    Sl+  20:38   0:00 /home/tomonike/.vscode-server/bin/3c4e3df9e89829dce27b7b5c24508306b151f30d/node /home/tomonike/.vscode-server/bin/3c4e3df9e89829dce27b7b5c24508306b151f30d/out/bootstrap-fork --type=watcherService
+17:tomonike   990  0.5  1.4 1406664 189128 pts/0  Sl+  20:38   0:04 /home/tomonike/.vscode-server/bin/3c4e3df9e89829dce27b7b5c24508306b151f30d/node /home/tomonike/.vscode-server/bin/3c4e3df9e89829dce27b7b5c24508306b151f30d/out/bootstrap-fork --type=extensionHost --uriTransformerPath=/home/tomonike/.vscode-server/bin/3c4e3df9e89829dce27b7b5c24508306b151f30d/out/vs/server/uriTransformer.js --useHostProxy=
+18:tomonike  1063  0.0  0.0  10140  5264 pts/2    Ss   20:38   0:00 /bin/bash
+ 1117  mkdir linux
+ 1118  cd linux/
+ 1119  touch processes.txt
+ 1120  ps aux >> processes.txt
+ 1121  cp processes.txt copy.txt
+ 1122  mkdir backup
+ 1123  mv copy.txt backup/
+ 1124  ls
+ 1125  wc --help
+ 1126  wc -l processes.txt
+ 1127  wc -l processes.txt  >> selected.txt
+ 1128  grep -rni /bin processes.txt
+ 1129  grep -rni /bin processes.txt >> selected.txt
+ 1130  history
+ 1131  history --help
+ 1132  history
+ 1133  tail --help
+ 1134  history | tail -n20
+ 1136  history | tail -n 20 >> commands.txt
+tomonike@Jinto-Komp:/mnt/d/C++/programowanie/coders-school/linux/homework/linux$
