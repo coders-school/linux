@@ -1,80 +1,4 @@
-leszol@leszolPC:~/CS/ZadanieLinux/backup$ cat ../commands.txt selected.txt
-  192  
-  193  mkdir ZadanieLinux
-  194  
-  195  touch ./ZadanieLinux/processes.txt
-  196* ps aux > ./ZadanieLinux/processes.txt 
-  197  cd ZadanieLinux
-  198  less processes.txt 
-  199  cp processes.txt copy.txt
-  200  mkdir backup
-  201  mv copy.txt ./backup
-  202  cd backup
-  203  ls
-  204  less copy.txt
-  205  
-  206  
-  207  
-  208   
-  209  
-  210  
-  211   
-  212  
-  213  
-  214  
-  215  
-  216  
-  217  
-  218  
-  219  
-  220  
-  221  
-  222  
-  223  
-  224  
-  225  
-  226  
-  227  
-  228  
-  229  
-  230  
-  231  
-  232  
-  233  
-  234  
-  235   
-  236  
-  237  
-  238  
-  239  
-  240  
-  241  
-  242  
-  243  
-  244  
-  245  
-  246  
-  247  
-  248  
-  249   
-  250  
-  251  
-  252  
-  253  
-  254  
-  255  
-  256  
-  257  wc -l copy.txt > selected.txt
-  258  grep -n /bin ../processes.txt >> selected.txt
-  259  
-  260  
-  261  
-  262  
-  263  
-  264  
-  265  
-  266  history | tail -n +192 > ../commands.txt
-  267  cat ../commands.txt selected.txt
+leszol@leszolPC:~/CS/ZadanieLinux$ cat selected.txt commands.txt
 214 copy.txt
 93:message+     561  0.0  0.0   8956  6148 ?        Ss   19:25   0:04 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
 96:root         574  0.0  0.2  50484 20080 ?        Ss   19:25   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
@@ -97,3 +21,15 @@ leszol@leszolPC:~/CS/ZadanieLinux/backup$ cat ../commands.txt selected.txt
 146:leszol      1773  3.9  4.7 5153340 388900 ?      Ssl  19:25   4:01 /usr/bin/gnome-shell
 159:leszol      1889  0.0  0.3 2744860 26652 ?       Sl   19:25   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
 183:leszol      2087  0.6  4.0 1415892 332140 ?      Sl   19:25   0:40 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
+  192  mkdir ZadanieLinux
+  193  touch ./ZadanieLinux/processes.txt
+  194* ps aux > ./ZadanieLinux/processes.txt   
+  195  cd ZadanieLinux
+  196  less processes.txt 
+  197  cp processes.txt copy.txt  
+  198  mkdir backup  
+  199  mv copy.txt ./backup
+  200  wc -l ./backup/copy.txt > selected.txt
+  201  grep -n /bin processes.txt >> selected.txt
+  202  history | tail -n +192 > commands.txt  
+  203  cat selected.txt commands.txt
