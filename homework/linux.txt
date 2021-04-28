@@ -34,4 +34,4 @@ cat selected.txt commands.txt
   197  wc -l processes.txt > selected.txt
   198  grep -n "/bin" processes.txt >> selected.txt
   199  history
-  200  history | tail -n +189 > commands.txt
+  200  history | tail -n 12 > commands.txt
