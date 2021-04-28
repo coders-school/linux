@@ -15,7 +15,7 @@ tomonike@Jinto-Komp:/mnt/d/C++/programowanie/coders-school/linux/homework/linux$
  1117  mkdir linux
  1118  cd linux/
  1119  touch processes.txt
- 1120  ps aux >> processes.txt 
+ 1120  ps aux > processes.txt 
  1121  cp processes.txt copy.txt
  1122  mkdir backup
  1123  mv copy.txt backup/
