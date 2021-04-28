@@ -20,6 +20,7 @@ cat selected.txt commands.txt
 238:mich        1804  2.7  2.4 3979576 397844 ?      Ssl  17:52   0:43 /usr/bin/gnome-shell
 248:mich        1877  0.0  0.1 2745384 27292 ?       Sl   17:52   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
 271:mich        2028  0.3  1.3 1225600 218072 ?      Sl   17:52   0:05 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
+    1  mkdir homework
     2  cd homework/
     3  touch processes.txt
     4  ps aux > processes.txt 
