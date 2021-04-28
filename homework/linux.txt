@@ -1,35 +1,37 @@
 cat selected.txt commands.txt
-177 processes.txt
-message+     521  0.0  0.4   8868  5480 ?        Ss   19:49   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-root         529  0.0  1.3  53360 18040 ?        Ss   19:49   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-root         673  0.0  1.4 132164 19124 ?        Ssl  19:49   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-whoopsie     704  0.0  1.0 400592 13224 ?        Ssl  19:49   0:00 /usr/bin/whoopsie -f
-kasiek       900  0.0  1.0 1684960 14220 ?       S<sl 19:49   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-kasiek       905  0.0  0.5 254576  7136 ?        SLl  19:49   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
-kasiek       909  0.0  0.4 178228  6436 tty2     Ssl+ 19:49   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-kasiek       916  0.0  0.3   8324  5120 ?        Ss   19:49   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-kasiek      1087  0.0  0.0  36652   360 ?        S    19:49   0:00 /usr/bin/VBoxClient --clipboard
-kasiek      1088  0.0  0.3 168920  4060 ?        Sl   19:49   0:00 /usr/bin/VBoxClient --clipboard
-kasiek      1097  0.0  0.0  36652   360 ?        S    19:49   0:00 /usr/bin/VBoxClient --seamless
-kasiek      1098  0.0  0.1 168888  2596 ?        Sl   19:49   0:00 /usr/bin/VBoxClient --seamless
-kasiek      1102  0.0  0.0  36652   360 ?        S    19:49   0:00 /usr/bin/VBoxClient --draganddrop
-kasiek      1103  0.2  0.1 169404  2504 ?        Sl   19:49   0:10 /usr/bin/VBoxClient --draganddrop
-kasiek      1107  0.0  0.0  36652   364 ?        S    19:49   0:00 /usr/bin/VBoxClient --vmsvga
-kasiek      1108  0.0  0.2 171168  3252 ?        Sl   19:49   0:00 /usr/bin/VBoxClient --vmsvga
-kasiek      1122  0.0  0.0   6040   460 ?        Ss   19:49   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-kasiek      1149  0.0  0.2   7380  3796 ?        S    19:49   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-kasiek      1185  1.6 23.9 3711712 310892 ?      Ssl  19:49   1:03 /usr/bin/gnome-shell
-kasiek      1299  0.0  1.8 2612896 24012 ?       Sl   19:49   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-kasiek      1539  0.0  3.4 696136 44948 ?        SLl  19:50   0:00 /usr/bin/seahorse --gapplication-service
-kasiek      1541  0.0  4.3 728068 56644 ?        Sl   19:50   0:00 /usr/bin/gnome-calendar --gapplication-service
-kasiek      1923  0.1  5.7 1014064 75292 ?       Sl   19:56   0:06 /usr/bin/nautilus --gapplication-service
-  206  mkdir zadanko
-  207  cd zadanko
-  208  touch processes.txt
-  209  ps aux >> processes.txt
-  210  cp processes.txt copy.txt
-  211  wc -l processes.txt
-  212  wc -l processes.txt >> selected.txt
-  213  grep "/bin" processes.txt >> selected.txt
-  214  history
-  215  history | tail -n +206 >> commands.txt
+183 processes.txt
+message+     521  0.1  0.4   8892  5604 ?        Ss   21:21   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         530  0.0  1.4  53360 19004 ?        Ss   21:21   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         634  0.0  1.6 132164 20840 ?        Ssl  21:22   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+whoopsie     686  0.0  1.1 326860 14452 ?        Ssl  21:22   0:00 /usr/bin/whoopsie -f
+kasiek       876  0.2  1.2 1684680 16048 ?       S<sl 21:22   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+kasiek       881  0.0  0.5 254576  6732 ?        SLl  21:22   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+kasiek       885  0.0  0.4 178228  6404 tty2     Ssl+ 21:22   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+kasiek       892  0.1  0.3   8248  4920 ?        Ss   21:22   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+kasiek      1062  0.0  0.0  36652   360 ?        S    21:22   0:00 /usr/bin/VBoxClient --clipboard
+kasiek      1063  0.0  0.3 168788  4092 ?        Sl   21:22   0:00 /usr/bin/VBoxClient --clipboard
+kasiek      1072  0.0  0.0  36652   360 ?        S    21:22   0:00 /usr/bin/VBoxClient --seamless
+kasiek      1073  0.0  0.2 168888  2784 ?        Sl   21:22   0:00 /usr/bin/VBoxClient --seamless
+kasiek      1078  0.0  0.0  36652   360 ?        S    21:22   0:00 /usr/bin/VBoxClient --draganddrop
+kasiek      1079  0.2  0.2 169404  2764 ?        Sl   21:22   0:00 /usr/bin/VBoxClient --draganddrop
+kasiek      1084  0.0  0.0  36652   360 ?        S    21:22   0:00 /usr/bin/VBoxClient --vmsvga
+kasiek      1085  0.0  0.2 171168  3452 ?        Sl   21:22   0:00 /usr/bin/VBoxClient --vmsvga
+kasiek      1097  0.0  0.0   6040   456 ?        Ss   21:22   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+kasiek      1123  0.0  0.3   7248  3984 ?        S    21:22   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+kasiek      1159  5.9 25.3 3708884 329940 ?      Ssl  21:22   0:17 /usr/bin/gnome-shell
+kasiek      1280  0.0  1.9 2612888 24832 ?       Sl   21:22   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+kasiek      1513  1.3  5.8 1012740 76536 ?       Sl   21:23   0:03 /usr/bin/nautilus --gapplication-service
+kasiek      1514  0.1  3.5 483140 45520 ?        SLl  21:23   0:00 /usr/bin/seahorse --gapplication-service
+kasiek      1515  0.1  4.5 728052 58888 ?        Sl   21:23   0:00 /usr/bin/gnome-calendar --gapplication-service
+  174  mkdir zadanko
+  175  cd zadanko
+  176  touch processes.txt
+  177  ps aux >> processes.txt
+  178  cp processes.txt copy.txt
+  179  mkdir backup
+  180  mv copy.txt backup/
+  181  wc -l processes.txt
+  182  wc -l processes.txt > selected.txt
+  183  grep "/bin" processes.txt >> selected.txt
+  184  history
+  185  history | tail -n +174 > commands.txt
