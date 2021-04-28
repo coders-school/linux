@@ -30,4 +30,4 @@ cat selected.txt commands.txt
 8  wc -l processes.txt 
 9  wc -l processes.txt > selected.txt
 10  grep "/bin" processes.txt -n >> selected.txt 
-11  history | tail n10 > commands.txt
+11  history | tail -n10 > commands.txt
