@@ -1,0 +1,33 @@
+bartes@VB:~$ cat selected.txt commands.txt
+203 new/processes.txt
+96:message+     555  0.0  0.1   9892  6008 ?        Ss   15:46   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+99:root         571  0.0  0.4  50804 20128 ?        Ss   15:46   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+110:root         668  0.0  0.5 129368 22552 ?        Ssl  15:46   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+111:whoopsie     715  0.0  0.3 253124 15584 ?        Ssl  15:46   0:00 /usr/bin/whoopsie -f
+122:bartes      1301  0.0  0.4 1755948 19336 ?       S<sl 15:46   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+124:bartes      1306  0.0  0.1   8936  6052 ?        Ss   15:46   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+127:bartes      1330  0.0  0.1 251652  7756 ?        Sl   15:46   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+135:bartes      1389  0.0  0.1 175516  6908 tty2     Ssl+ 15:46   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+138:bartes      1485  0.0  0.0  34108   360 ?        S    15:46   0:00 /usr/bin/VBoxClient --clipboard
+139:bartes      1487  0.0  0.1 166244  4208 ?        Sl   15:46   0:00 /usr/bin/VBoxClient --clipboard
+140:bartes      1497  0.0  0.0  34108   360 ?        S    15:46   0:00 /usr/bin/VBoxClient --seamless
+141:bartes      1499  0.0  0.0 166344  2700 ?        Sl   15:46   0:00 /usr/bin/VBoxClient --seamless
+142:bartes      1502  0.0  0.0  34108   364 ?        S    15:46   0:00 /usr/bin/VBoxClient --draganddrop
+143:bartes      1503  0.1  0.0 166860  2708 ?        Sl   15:46   0:02 /usr/bin/VBoxClient --draganddrop
+144:bartes      1509  0.0  0.0  34108   360 ?        S    15:46   0:00 /usr/bin/VBoxClient --vmsvga
+145:bartes      1510  0.0  0.0 168624  3568 ?        Sl   15:46   0:00 /usr/bin/VBoxClient --vmsvga
+146:bartes      1519  0.0  0.0   6040   460 ?        Ss   15:46   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+148:bartes      1554  0.0  0.1   7248  4320 ?        S    15:46   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+151:bartes      1606  2.0  9.5 5070180 384348 ?      Ssl  15:46   0:31 /usr/bin/gnome-shell
+164:bartes      1714  0.0  0.6 2745188 27028 ?       Sl   15:46   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+   67  mkdir new
+   68  touch new/processes.txt
+   69  ps aux >> new/processes.txt
+   70  cp new/processes.txt copy.txt
+   71  mkdir backup
+   72  mv copy.txt backup/
+   73  wc -l new/processes.txt
+   74  wc -l new/processes.txt >> selected.txt
+   75  grep -rni /bin new/processes.txt >> selected.txt
+   76  history
+   77  history | tail -n11 >> commands.txt
