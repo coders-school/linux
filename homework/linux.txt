@@ -31,5 +31,5 @@ tomonike@Jinto-Komp:/mnt/d/C++/programowanie/coders-school/linux/homework/linux$
  1133  tail --help
  1134  history | tail -n
  1135  history | tail --lines=20
- 1136  history | tail --lines=20 > commands.txt
+ 1136  history | tail -n20 > commands.txt
 tomonike@Jinto-Komp:/mnt/d/C++/programowanie/coders-school/linux/homework/linux$ 
