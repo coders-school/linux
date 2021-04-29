@@ -22,7 +22,7 @@ cat selected.txt commands.txt
 282:mich        2066  1.1  1.8 1354808 304840 ?      Sl   07:22   0:07 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
  1834  mkdir homework
  1835  touch processes.txt
- 1836  ps aux &> processes.txt 
+ 1836  ps aux > processes.txt 
  1837  cat processes.txt 
  1838  cp processes.txt copy.txt
  1839  mkdir backup
