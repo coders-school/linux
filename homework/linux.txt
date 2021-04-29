@@ -49,3 +49,15 @@ pawel@pawel-VirtualBox:~/zadanie1$ cat selected.txt commands.txt
    34  ls
    35  cat selected.txt commands.txt 
    36  history | tail -n +1 >> commands.txt
+   37  ls
+   38  cat selected.txt commands.txt 
+   39  history | tail -n 1 >> commands.txt
+   40  ls
+   41  history | tail -n 1 > commands.txt
+   42  ls
+   43  history
+   44  history | tail -n 1 > commands.txt
+   45  history
+   46  history | tail -n 45 > commands.txt
+   47  history
+   48  history | tail -n 48 > commands.txt
