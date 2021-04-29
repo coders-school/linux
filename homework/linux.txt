@@ -1,33 +1,34 @@
-cat selected.txt commands.txt
-317 processes.txt
-136:message+     859  0.0  0.0  10036  6660 ?        Ss   17:51   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-139:root         870  0.0  0.1  50484 19944 ?        Ss   17:51   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-140:nvidia-+     875  0.0  0.0   5208  1844 ?        Ss   17:51   0:00 /usr/bin/nvidia-persistenced --user nvidia-persistenced --no-persistence-mode --verbose
-153:root         970  0.0  0.1 129280 22824 ?        Ssl  17:51   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-159:gdm         1093  0.0  0.1 893212 18120 ?        S<sl 17:51   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-164:gdm         1104  0.0  0.0   7380  4580 ?        Ss   17:51   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-178:whoopsie    1286  0.0  0.0 253576 15948 ?        Ssl  17:51   0:00 /usr/bin/whoopsie -f
-185:gdm         1313  0.0  0.0   7248  3916 tty1     S+   17:51   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-186:gdm         1334  0.2  1.0 3725588 176044 tty1   Sl+  17:51   0:03 /usr/bin/gnome-shell
-193:gdm         1378  0.0  0.1 2745140 26584 tty1    Sl+  17:51   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-214:mich        1563  0.2  0.1 1944624 19544 ?       S<sl 17:52   0:04 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-216:mich        1568  0.0  0.0   9280  6496 ?        Ss   17:52   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-220:mich        1601  0.0  0.0 251704  8196 ?        Sl   17:52   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
-228:mich        1651  0.0  0.0 175348  6680 tty2     Ssl+ 17:52   0:00 /lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-230:mich        1656  0.0  0.0 251224  7768 ?        Sl   17:52   0:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
-232:mich        1745  0.0  0.0   6040   456 ?        Ss   17:52   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-234:mich        1771  0.0  0.0   7248  4452 ?        S    17:52   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-238:mich        1804  2.7  2.4 3979576 397844 ?      Ssl  17:52   0:43 /usr/bin/gnome-shell
-248:mich        1877  0.0  0.1 2745384 27292 ?       Sl   17:52   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-271:mich        2028  0.3  1.3 1225600 218072 ?      Sl   17:52   0:05 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
-1  mkdir homework
-2  cd homework/
-3  touch processes.txt
-4  ps aux > processes.txt 
-5  cp processes.txt copy.txt
-6  mkdir backup
-7  mv copy.txt backup/
-8  wc -l processes.txt 
-9  wc -l processes.txt > selected.txt
-10  grep '/bin' processes.txt -n >> selected.txt 
-11  history | tail -n10 > commands.txt
+cat selected.txt commands.txt 
+312 processes.txt
+143:message+     853  0.0  0.0   9932  6572 ?        Ss   07:21   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+146:root         863  0.0  0.1  50484 20268 ?        Ss   07:21   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+149:nvidia-+     879  0.0  0.0   5208  1856 ?        Ss   07:21   0:00 /usr/bin/nvidia-persistenced --user nvidia-persistenced --no-persistence-mode --verbose
+163:root        1046  0.0  0.1 129280 23080 ?        Ssl  07:21   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+167:gdm         1059  0.0  0.1 893212 18032 ?        S<sl 07:21   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+171:gdm         1066  0.0  0.0   7404  4396 ?        Ss   07:21   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+190:gdm         1272  0.0  0.0   7248  3932 tty1     S+   07:21   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+191:gdm         1293  0.3  1.1 3726884 180208 tty1   Sl+  07:21   0:02 /usr/bin/gnome-shell
+198:gdm         1353  0.0  0.1 2671408 26852 tty1    Sl+  07:21   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+216:whoopsie    1504  0.0  0.1 253588 16140 ?        Ssl  07:21   0:00 /usr/bin/whoopsie -f
+222:mich        1570  0.0  0.1 1158192 19312 ?       S<sl 07:21   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+224:mich        1574  0.0  0.0   9356  6540 ?        Ss   07:21   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+225:mich        1580  0.0  0.0 251668  7924 ?        Sl   07:21   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+236:mich        1663  0.0  0.0 175348  6560 tty2     Ssl+ 07:21   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+240:mich        1714  0.0  0.0 251224  7608 ?        Sl   07:21   0:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+241:mich        1756  0.0  0.0   6040   456 ?        Ss   07:21   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+243:mich        1780  0.0  0.0   7248  4352 ?        S    07:21   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+246:mich        1808  1.7  2.3 3903112 372196 ?      Ssl  07:21   0:11 /usr/bin/gnome-shell
+259:mich        1906  0.0  0.1 2745388 27296 ?       Sl   07:22   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+282:mich        2066  1.1  1.8 1354808 304840 ?      Sl   07:22   0:07 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
+ 1834  mkdir homework
+ 1835  touch processes.txt
+ 1836  ps aux &> processes.txt 
+ 1837  cat processes.txt 
+ 1838  cp processes.txt copy.txt
+ 1839  mkdir backup
+ 1840  mv copy.txt backup/
+ 1841  wc -l processes.txt 
+ 1842  wc -l processes.txt > selected.txt
+ 1843  grep "/bin" processes.txt -n >> selected.txt 
+ 1844  history
+ 1845  history | tail -n12 > commands.txt
