@@ -1,35 +1,50 @@
-leszol@leszolPC:~/CS/ZadanieLinux$ cat selected.txt commands.txt
-214 copy.txt
-93:message+     561  0.0  0.0   8956  6148 ?        Ss   19:25   0:04 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-96:root         574  0.0  0.2  50484 20080 ?        Ss   19:25   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-106:root         683  0.0  0.2 129028 23068 ?        Ssl  19:25   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-107:whoopsie     748  0.0  0.1 253124 15608 ?        Ssl  19:25   0:00 /usr/bin/whoopsie -f
-115:leszol      1437  0.0  0.2 1419440 18864 ?       S<sl 19:25   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-117:leszol      1442  0.0  0.0 251348  7032 ?        SLl  19:25   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
-118:leszol      1447  0.0  0.0   8344  5588 ?        Ss   19:25   0:02 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-119:leszol      1449  0.0  0.0 175180  6620 tty2     Ssl+ 19:25   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-133:leszol      1642  0.0  0.0  33744   364 ?        S    19:25   0:00 /usr/bin/VBoxClient --clipboard
-134:leszol      1643  0.0  0.0 166148  4208 ?        Sl   19:25   0:00 /usr/bin/VBoxClient --clipboard
-135:leszol      1654  0.0  0.0  33744   360 ?        S    19:25   0:00 /usr/bin/VBoxClient --seamless
-136:leszol      1655  0.0  0.0 165980  2720 ?        Sl   19:25   0:00 /usr/bin/VBoxClient --seamless
-137:leszol      1661  0.0  0.0  33744   360 ?        S    19:25   0:00 /usr/bin/VBoxClient --draganddrop
-138:leszol      1662  0.1  0.0 232032  2740 ?        Sl   19:25   0:11 /usr/bin/VBoxClient --draganddrop
-139:leszol      1669  0.0  0.0  33744   364 ?        S    19:25   0:00 /usr/bin/VBoxClient --vmsvga-x11
-140:leszol      1670  0.0  0.0 102724  3952 ?        Sl   19:25   0:00 /usr/bin/VBoxClient --vmsvga-x11
-141:leszol      1677  0.0  0.0   6040   452 ?        Ss   19:25   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-143:leszol      1721  0.0  0.0   7248  4408 ?        S    19:25   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-146:leszol      1773  3.9  4.7 5153340 388900 ?      Ssl  19:25   4:01 /usr/bin/gnome-shell
-159:leszol      1889  0.0  0.3 2744860 26652 ?       Sl   19:25   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-183:leszol      2087  0.6  4.0 1415892 332140 ?      Sl   19:25   0:40 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
-  192  mkdir ZadanieLinux
-  193  touch ./ZadanieLinux/processes.txt
-  194* ps aux > ./ZadanieLinux/processes.txt   
-  195  cd ZadanieLinux
-  196  less processes.txt 
-  197  cp processes.txt copy.txt  
-  198  mkdir backup  
-  199  mv copy.txt ./backup
-  200  wc -l ./backup/copy.txt > selected.txt
-  201  grep -n /bin processes.txt >> selected.txt
-  202  history | tail -n +192 > commands.txt  
-  203  cat selected.txt commands.txt
+leszol@leszolPC:~/ZadanieLinux$ cat selected.txt commands.txt 
+209 processes.txt
+97:message+     561  0.0  0.0   8932  6148 ?        Ss   17:15   0:04 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+100:root         574  0.0  0.2  50484 20324 ?        Ss   17:15   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+111:root         670  0.0  0.2 129028 22552 ?        Ssl  17:15   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+112:whoopsie     724  0.0  0.1 253124 15616 ?        Ssl  17:15   0:00 /usr/bin/whoopsie -f
+120:leszol      1414  0.0  0.2 1681612 19708 ?       S<sl 17:15   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+122:leszol      1419  0.0  0.0 251348  7020 ?        SLl  17:15   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+123:leszol      1423  0.0  0.0 175180  6720 tty2     Ssl+ 17:15   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+124:leszol      1426  0.0  0.0   8308  5660 ?        Ss   17:15   0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+138:leszol      1621  0.0  0.0  33744   360 ?        S    17:15   0:00 /usr/bin/VBoxClient --clipboard
+139:leszol      1622  0.0  0.0 166148  4164 ?        Sl   17:15   0:00 /usr/bin/VBoxClient --clipboard
+140:leszol      1631  0.0  0.0  33744   360 ?        S    17:15   0:00 /usr/bin/VBoxClient --seamless
+141:leszol      1633  0.0  0.0 165980  2716 ?        Sl   17:15   0:00 /usr/bin/VBoxClient --seamless
+142:leszol      1640  0.0  0.0  33744   360 ?        S    17:15   0:00 /usr/bin/VBoxClient --draganddrop
+143:leszol      1642  0.2  0.0 166496  2748 ?        Sl   17:15   0:28 /usr/bin/VBoxClient --draganddrop
+144:leszol      1647  0.0  0.0  33744   360 ?        S    17:15   0:00 /usr/bin/VBoxClient --vmsvga-x11
+145:leszol      1648  0.0  0.0 168260  3976 ?        Sl   17:15   0:00 /usr/bin/VBoxClient --vmsvga-x11
+146:leszol      1655  0.0  0.0   6040   456 ?        Ss   17:15   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+148:leszol      1704  0.0  0.0   7248  4388 ?        S    17:15   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+151:leszol      1758  0.8  4.4 5063112 365856 ?      Ssl  17:15   1:55 /usr/bin/gnome-shell
+164:leszol      1873  0.0  0.3 2744860 27176 ?       Sl   17:16   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+185:leszol      2001  0.2  2.6 1270228 213896 ?      Sl   17:16   0:31 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
+192:leszol      3011  0.3  2.0 949636 166608 ?       SNl  17:17   0:40 /usr/bin/python3 /usr/bin/update-manager --no-update --no-focus-on-map
+  284  mkdir ZadanieLinux
+  285  touch processes.txt
+  286  ps aux > processes.txt
+  287  rm -rf ZadanieLinux
+  288  history
+  289  mkdir ZadanieLinux
+  290  cd ZadanieLinux/
+  291  touch processes.txt
+  292  ps aux > processes.txt
+  293  less processes.txt 
+  294  sp processes.txt copy.txt
+  295  cp processes.txt copy.txt
+  296  mkdir backup
+  297  mv copy.txt ./backup
+  298  wc -1 processes.txt > selected.txt
+  299  wc -l processes.txt > selected.txt
+  300  gep -n /bin processes.txt >> selected.txt 
+  301  grep -n /bin processes.txt >> selected.txt 
+  302  less selected.txt 
+  303  history
+  304  history | tail -n 20 commands.txt
+  305  history | tail -n 20 > commands.txt
+  306  cat selected.txt commands.txt 
+  307  history | tail -n 23 > commands.txt
+  308  cat selected.txt commands.txt 
+  309  history | tail -n 26 > commands.txt
