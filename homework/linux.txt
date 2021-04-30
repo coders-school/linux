@@ -26,8 +26,8 @@ lsobczyk  1647  0.0  0.8 251392 32472 ?        Sl   18:02   0:00 /usr/bin/python
    14  mv copy.txt backup/copy.txt
    15  wc -l processes.txt
    16  wc -l processes.txt > selected.txt
-   17  grep /bin/* processes.txt
-   18  grep "/bin" processes.txt
-   19  grep "/bin" processes.txt >> selected.txt
-   20  history
-   21  history | tail -n15 > commands.txt
+   17  grep "/bin" processes.txt
+   18  grep -rni "/bin" processes.txt >> selected.txt
+   19  history
+   20  history | tail -n15 > commands.txt
+   21  cat selected.txt commands.txt
