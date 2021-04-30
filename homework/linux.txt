@@ -1,0 +1,33 @@
+lsobczyk@Logan:~/Projects/homework_linux$ cat selected.txt commands.txt
+176 processes.txt
+message+   550  0.0  0.1  51436  5648 ?        Ss   18:01   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root       581  0.0  0.4 171704 17104 ?        Ssl  18:01   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+lsobczyk  1033  0.0  0.1  50796  5172 ?        Ss   18:01   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+lsobczyk  1086  0.0  0.0  53176   328 ?        S    18:01   0:00 /usr/bin/VBoxClient --clipboard
+lsobczyk  1087  0.0  0.1 121564  4460 ?        Sl   18:01   0:00 /usr/bin/VBoxClient --clipboard
+lsobczyk  1096  0.0  0.0  53176   324 ?        S    18:01   0:00 /usr/bin/VBoxClient --display
+lsobczyk  1097  0.0  0.0  53312  3528 ?        S    18:01   0:00 /usr/bin/VBoxClient --display
+lsobczyk  1101  0.0  0.0  53176   320 ?        S    18:01   0:00 /usr/bin/VBoxClient --seamless
+lsobczyk  1103  0.0  0.0 119360  2096 ?        Sl   18:01   0:00 /usr/bin/VBoxClient --seamless
+lsobczyk  1109  0.0  0.0  53176   324 ?        S    18:01   0:00 /usr/bin/VBoxClient --draganddrop
+lsobczyk  1110  0.1  0.0 185412  2180 ?        Sl   18:01   0:01 /usr/bin/VBoxClient --draganddrop
+lsobczyk  1121  0.0  0.0  11304   320 ?        Ss   18:01   0:00 /usr/bin/ssh-agent /usr/bin/im-launch cinnamon-session-cinnamon
+lsobczyk  1140  0.0  0.1  50184  4460 ?        S    18:01   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+lsobczyk  1172  0.0  0.1 282820  7592 ?        Sl   18:01   0:00 /usr/bin/gnome-keyring-daemon --start --components=pkcs11
+lsobczyk  1301  0.0  0.4 1333628 17776 ?       S<l  18:01   0:00 /usr/bin/pulseaudio --start --log-target=syslog
+lsobczyk  1647  0.0  0.8 251392 32472 ?        Sl   18:02   0:00 /usr/bin/python3 /usr/share/system-config-printer/applet.py
+    7  git clone https://github.com/lksobczyk/linux.git
+    8  mkdir homework_linux
+    9  cd homework_linux/
+   10  touch processes.txt
+   11  ps aux > processes.txt
+   12  cp processes.txt copy.txt
+   13  mkdir backup
+   14  mv copy.txt backup/copy.txt
+   15  wc -l processes.txt
+   16  wc -l processes.txt > selected.txt
+   17  grep /bin/* processes.txt
+   18  grep "/bin" processes.txt
+   19  grep "/bin" processes.txt >> selected.txt
+   20  history
+   21  history | tail -n15 > commands.txt
