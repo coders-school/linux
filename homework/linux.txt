@@ -1,0 +1,26 @@
+nomed@nomed-VirtualBox:~/Desktop$ cat selected.txt commands.txt 
+175 processes.txt
+message+     555  0.0  0.2   8812  2548 ?        Ss   15:38   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         566  0.0  0.0  50488     0 ?        Ss   15:38   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         717  0.0  0.0 129016     0 ?        Ssl  15:39   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+whoopsie     733  0.0  0.0 326856     0 ?        Ssl  15:39   0:00 /usr/bin/whoopsie -f
+nomed        802  0.0  0.6 1943708 6364 ?        S<sl 15:39   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+nomed        806  0.0  0.2 251320  2584 ?        Sl   15:39   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+nomed        810  0.0  0.1 175180  1388 tty2     Ssl+ 15:39   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+nomed        814  0.0  0.2   8696  2624 ?        Ss   15:39   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+nomed        981  0.0  0.0   6040     0 ?        Ss   15:39   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+nomed       1008  0.0  0.0   7248   724 ?        S    15:39   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+nomed       2312  2.3 14.5 3984004 146520 ?      Ssl  16:19   0:25 /usr/bin/gnome-shell
+nomed       2425  0.0  0.2 2609704 2628 ?        Sl   16:19   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+  100  rm homework -r
+  101  mkdir homework
+  102  touch processes.txt
+  103  ps aux > processes.txt 
+  104  cp processes.txt copy.txt
+  105  mkdir backup
+  106  mv copy.txt backup/
+  107  wc -l processes.txt 
+  108  wc -l processes.txt > selected.txt
+  109  grep "/bin" processes.txt >> selected.txt 
+  110  history
+  111  history | tail -n12 > commands.txt
