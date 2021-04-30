@@ -1,10 +1,9 @@
-<pre><font color="#4E9A06"><b>nomed@nomed-VirtualBox</b></font>:<font color="#3465A4"><b>~/Desktop/homework</b></font>$ cat selected.txt commands.txt 
 167
 message+     555  0.0  0.5   8812  5096 ?        Ss   15:38   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
 root         566  0.0  1.5  50488 15884 ?        Ss   15:38   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
 root         717  0.0  1.6 129016 16796 ?        Ssl  15:39   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
 whoopsie     733  0.0  1.1 326856 11916 ?        Ssl  15:39   0:00 /usr/bin/whoopsie -f
-nomed        802  0.0  1.2 1419420 12612 ?       S&lt;sl 15:39   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+nomed        802  0.0  1.2 1419420 12612 ?       S<sl 15:39   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
 nomed        806  0.0  0.5 251320  5052 ?        Sl   15:39   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
 nomed        810  0.0  0.5 175180  5080 tty2     Ssl+ 15:39   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
 nomed        814  0.0  0.5   8696  5100 ?        Ss   15:39   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
@@ -12,6 +11,16 @@ nomed        981  0.0  0.0   6040   460 ?        Ss   15:39   0:00 /usr/bin/ssh-
 nomed       1008  0.0  0.3   7248  3532 ?        S    15:39   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
 nomed       1044  0.7 28.8 3714804 289628 ?      Ssl  15:39   0:04 /usr/bin/gnome-shell
 nomed       1168  0.0  1.8 2609696 18604 ?       Sl   15:39   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+   50  mkdir homework
+   51  cd homework/
+   52  mk processes.txt
+   53  make processes.txt
+   54  touch processes.txt
+   55  ls
+   56  ps aux > processes.txt 
+   57  cp processes.txt copy.txt
+   58  ls
+   59  mkdir backup
    60  mv copy.txt backup/
    61  ls
    62  less processes.txt 
@@ -19,14 +28,12 @@ nomed       1168  0.0  1.8 2609696 18604 ?       Sl   15:39   0:00 /usr/bin/gjs 
    64  wc man
    65  man wc
    66  touch selected.txt
-   67  167 &gt; selected.txt 
-   68  &quot;167&quot; &gt; selected.txt 
+   67  167 > selected.txt 
+   68  "167" > selected.txt 
    69  vim selected.txt 
    70  grep
-   71  grep /bin processes.txt &gt;&gt; selected.txt 
+   71  grep /bin processes.txt >> selected.txt 
    72  grep /bin processes.txt 
    73  history
    74  history | tail -n16
-   75  history | tail -n16 &gt; commands.txt
-<font color="#4E9A06"><b>nomed@nomed-VirtualBox</b></font>:<font color="#3465A4"><b>~/Desktop/homework</b></font>$ 
-</pre>
+   75  history | tail -n16 > commands.txt
