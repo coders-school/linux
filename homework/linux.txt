@@ -1,30 +1,30 @@
 pawel@pawel-VirtualBox:~/KursC++/linux/homework$ cat selected.txt commands.txt 
 228 processes.txt
-message+     599  0.0  0.0   9916  6472 ?        Ss   kwi29   0:18 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-root         616  0.0  0.2  41848 20152 ?        Ss   kwi29   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-root         715  0.0  0.2 120388 22760 ?        Ssl  kwi29   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-whoopsie     777  0.0  0.1 253116 15648 ?        Ssl  kwi29   0:00 /usr/bin/whoopsie -f
-pawel       1553  0.0  0.2 3057716 19588 ?       Ssl  kwi29   0:01 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-pawel       1557  0.0  0.0  10744  8080 ?        Ss   kwi29   0:03 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-pawel       1575  0.0  0.0 242816  7924 ?        Sl   kwi29   0:01 /usr/bin/gnome-keyring-daemon --daemonize --login
-pawel       1632  0.0  0.0 166544  6736 tty2     Ssl+ kwi29   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-pawel       1734  0.0  0.0  25144   360 ?        S    kwi29   0:00 /usr/bin/VBoxClient --clipboard
-pawel       1735  0.0  0.0 157412  4052 ?        Sl   kwi29   0:00 /usr/bin/VBoxClient --clipboard
-pawel       1746  0.0  0.0  25144   356 ?        S    kwi29   0:00 /usr/bin/VBoxClient --seamless
-pawel       1748  0.0  0.0 157380  2716 ?        Sl   kwi29   0:00 /usr/bin/VBoxClient --seamless
-pawel       1753  0.0  0.0  25144   360 ?        S    kwi29   0:00 /usr/bin/VBoxClient --draganddrop
-pawel       1755  0.2  0.0 157896  2736 ?        Sl   kwi29   3:37 /usr/bin/VBoxClient --draganddrop
-pawel       1758  0.0  0.0  25144   360 ?        S    kwi29   0:00 /usr/bin/VBoxClient --vmsvga
-pawel       1760  0.0  0.0 159660  3560 ?        Sl   kwi29   0:00 /usr/bin/VBoxClient --vmsvga
-pawel       1766  0.0  0.0   6040   456 ?        Ss   kwi29   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-pawel       1803  0.0  0.0   7364  4260 ?        S    kwi29   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-pawel       1856  0.5  5.9 5289272 499340 ?      Ssl  kwi29   8:42 /usr/bin/gnome-shell
-pawel       1989  0.0  0.3 2736228 26776 ?       Sl   kwi29   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-pawel       2297  0.0  0.7 1060004 59100 ?       Sl   kwi29   0:01 /usr/bin/gnome-calendar --gapplication-service
-pawel       2303  0.0  0.5 470804 44900 ?        SLl  kwi29   0:00 /usr/bin/seahorse --gapplication-service
-pawel       2514  0.0  1.8 921136 152772 ?       SNl  kwi29   0:22 /usr/bin/python3 /usr/bin/update-manager --no-update --no-focus-on-map
-pawel       2793  0.0  0.9 1204712 76980 ?       Sl   kwi29   0:12 /usr/bin/nautilus --gapplication-service
-pawel      13939  2.9  0.7 822804 59352 ?        Sl   11:03   0:01 /usr/bin/gedit --gapplication-service
+93:message+     599  0.0  0.0   9916  6472 ?        Ss   kwi29   0:18 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+96:root         616  0.0  0.2  41848 20152 ?        Ss   kwi29   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+106:root         715  0.0  0.2 120388 22760 ?        Ssl  kwi29   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+107:whoopsie     777  0.0  0.1 253116 15648 ?        Ssl  kwi29   0:00 /usr/bin/whoopsie -f
+120:pawel       1553  0.0  0.2 3057716 19588 ?       Ssl  kwi29   0:01 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+122:pawel       1557  0.0  0.0  10744  8080 ?        Ss   kwi29   0:03 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+124:pawel       1575  0.0  0.0 242816  7924 ?        Sl   kwi29   0:01 /usr/bin/gnome-keyring-daemon --daemonize --login
+133:pawel       1632  0.0  0.0 166544  6736 tty2     Ssl+ kwi29   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+136:pawel       1734  0.0  0.0  25144   360 ?        S    kwi29   0:00 /usr/bin/VBoxClient --clipboard
+137:pawel       1735  0.0  0.0 157412  4052 ?        Sl   kwi29   0:00 /usr/bin/VBoxClient --clipboard
+138:pawel       1746  0.0  0.0  25144   356 ?        S    kwi29   0:00 /usr/bin/VBoxClient --seamless
+139:pawel       1748  0.0  0.0 157380  2716 ?        Sl   kwi29   0:00 /usr/bin/VBoxClient --seamless
+140:pawel       1753  0.0  0.0  25144   360 ?        S    kwi29   0:00 /usr/bin/VBoxClient --draganddrop
+141:pawel       1755  0.2  0.0 157896  2736 ?        Sl   kwi29   3:37 /usr/bin/VBoxClient --draganddrop
+142:pawel       1758  0.0  0.0  25144   360 ?        S    kwi29   0:00 /usr/bin/VBoxClient --vmsvga
+143:pawel       1760  0.0  0.0 159660  3560 ?        Sl   kwi29   0:00 /usr/bin/VBoxClient --vmsvga
+144:pawel       1766  0.0  0.0   6040   456 ?        Ss   kwi29   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+146:pawel       1803  0.0  0.0   7364  4260 ?        S    kwi29   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+149:pawel       1856  0.5  5.9 5289272 499340 ?      Ssl  kwi29   8:42 /usr/bin/gnome-shell
+163:pawel       1989  0.0  0.3 2736228 26776 ?       Sl   kwi29   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+186:pawel       2297  0.0  0.7 1060004 59100 ?       Sl   kwi29   0:01 /usr/bin/gnome-calendar --gapplication-service
+188:pawel       2303  0.0  0.5 470804 44900 ?        SLl  kwi29   0:00 /usr/bin/seahorse --gapplication-service
+191:pawel       2514  0.0  1.8 921136 152772 ?       SNl  kwi29   0:22 /usr/bin/python3 /usr/bin/update-manager --no-update --no-focus-on-map
+192:pawel       2793  0.0  0.9 1204712 76980 ?       Sl   kwi29   0:12 /usr/bin/nautilus --gapplication-service
+223:pawel      13939  2.9  0.7 822804 59352 ?        Sl   11:03   0:01 /usr/bin/gedit --gapplication-service
   279  mkdir homework
   280  cd homework/
   281  touch processes.txt
@@ -34,6 +34,6 @@ pawel      13939  2.9  0.7 822804 59352 ?        Sl   11:03   0:01 /usr/bin/gedi
   285  mv copy.txt ./backup/copy.txt
   286  wc -l processes.txt
   287  wc -l processes.txt > selected.txt
-  288  grep '/bin' processes.txt >> selected.txt
+  288  grep -n /bin processes.txt >> selected.txt
   289  history
   290  history | tail -n12 > commands.txt
