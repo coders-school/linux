@@ -1,5 +1,5 @@
-mike@mike-VirtualBox:~/CoderSchool/Zadania_domowe/1_Linux_pop$ cat selected.txt commands.txt 
-180
+cat selected.txt commands.txt 
+180 processes.txt
 message+     522  0.1  0.0   8864  5764 ?        Ss   16:20   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
 root         540  0.0  0.2  50480 20148 ?        Ss   16:20   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
 root         638  0.0  0.2 129024 22740 ?        Ssl  16:20   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
@@ -20,29 +20,15 @@ mike        1111  0.0  0.0   6040   456 ?        Ss   16:20   0:00 /usr/bin/ssh-
 mike        1133  0.0  0.0   7248  4380 ?        S    16:20   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
 mike        1160  1.9  2.8 3606752 231044 ?      Ssl  16:20   0:03 /usr/bin/gnome-shell
 mike        1276  0.0  0.3 2609696 26172 ?       Sl   16:20   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-  166  cd 1_Linux_pop/
-  167  touch processes.txt
-  168  ps aux > processes.txt 
-  169  cp processes.txt copy.txt
-  170  mkdir backup
-  171  mv copy.txt copy.txt 
-  172  mv copy.txt backup/copy.txt 
-  173  wc -l processes.txt 
-  174  180 > selected.txt
-  175  touch selected.txt
-  176  180 > selected.txt
-  177  "180" > selected.txt
-  178  180 >> selected.txt
-  179  wc -l > selected.txt 
-  180  ll
-  181  cat selected.txt 
-  182  wc -l | selected.txt 
-  183  wc -l >> selected.txt 
-  184  wc -l > selected.txt 
-  185  echo "180" > selected.txt 
-  186  cat selected.txt 
-  187  grep "/bin" processes.txt 
-  188  grep "/bin" processes.txt >> selected.txt 
-  189  cat selected.txt 
-  190  history
-  191  history | tail -n26 > commands.txt
+ 834  mkdir linux_homework
+ 835  touch processes.txt
+ 836  ps aux > processes.txt 
+ 837  cat processes.txt 
+ 838  cp processes.txt copy.txt
+ 839  mkdir backup
+ 840  mv copy.txt backup/
+ 841  wc -l processes.txt 
+ 842  wc -l processes.txt > selected.txt
+ 843  grep -n "/bin" processes.txt >> selected.txt 
+ 844  history
+ 845  history | tail -n12 > commands.txt
