@@ -1,0 +1,36 @@
+krzysiek@krzysiek:~/Pulpit$ cat data/selected.txt data/commands.txt 
+192 data/processes.txt
+86:message+     637  0.0  0.1   8928  6088 ?        Ss   19:10   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+89:root         653  0.0  0.5  50488 20228 ?        Ss   19:10   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+101:root         753  0.0  0.5 129272 22480 ?        Ssl  19:10   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+102:whoopsie     773  0.0  0.3 326872 15468 ?        Ssl  19:10   0:00 /usr/bin/whoopsie -f
+110:krzysiek     996  0.0  0.4 1681804 18976 ?       S<sl 19:10   0:01 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+112:krzysiek    1001  0.0  0.1 251692  7344 ?        SLl  19:10   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+113:krzysiek    1005  0.0  0.1 175348  6660 tty2     Ssl+ 19:10   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+115:krzysiek    1010  0.0  0.1   9904  7056 ?        Ss   19:10   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+128:krzysiek    1184  0.0  0.0  33772   360 ?        S    19:10   0:00 /usr/bin/VBoxClient --clipboard
+129:krzysiek    1185  0.0  0.1 165908  4384 ?        Sl   19:10   0:00 /usr/bin/VBoxClient --clipboard
+130:krzysiek    1195  0.0  0.0  33772   360 ?        S    19:10   0:00 /usr/bin/VBoxClient --seamless
+131:krzysiek    1196  0.0  0.0 166008  2708 ?        Sl   19:10   0:00 /usr/bin/VBoxClient --seamless
+132:krzysiek    1203  0.0  0.0  33772   360 ?        S    19:10   0:00 /usr/bin/VBoxClient --draganddrop
+133:krzysiek    1204  0.2  0.0 232060  2732 ?        Sl   19:10   0:19 /usr/bin/VBoxClient --draganddrop
+134:krzysiek    1208  0.0  0.0  33772   360 ?        S    19:10   0:00 /usr/bin/VBoxClient --vmsvga
+135:krzysiek    1209  0.0  0.0 168288  3624 ?        Sl   19:10   0:00 /usr/bin/VBoxClient --vmsvga
+136:krzysiek    1219  0.0  0.0   6040   456 ?        Ss   19:10   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+138:krzysiek    1249  0.0  0.1   7248  4424 ?        S    19:10   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+141:krzysiek    1295  1.5  8.9 4227324 360392 ?      Ssl  19:10   2:03 /usr/bin/gnome-shell
+154:krzysiek    1462  0.0  0.6 2610004 26612 ?       Sl   19:10   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+178:krzysiek    1664  0.1  8.4 1417948 341072 ?      Sl   19:10   0:11 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
+186:krzysiek    3423  0.6  1.8 1473144 76416 ?       Sl   21:04   0:06 /usr/bin/nautilus --gapplication-service
+  767  mkdir data
+  768  cd data
+  769  touch processes.txt
+  770  ps aux >> processes.txt 
+  771  cp processes.txt copy.txt
+  772  cd ..
+  773  mkdir backup
+  774  mv data/copy.txt backup/
+  775  wc -l data/processes.txt >> data/selected.txt
+  776  grep -n '/bin' data/processes.txt >> data/selected.txt 
+  777  history | tail -n15
+  778  history | tail -n12 >> data/commands.txt
