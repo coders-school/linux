@@ -1,0 +1,14 @@
+paw@DESKTOP-MSJ5U38:/mnt/c/zadlinux$ cat selected.txt commands.txt
+6 processes.txt
+    1  mkdir zadlinux
+    2  cd /mnt/c/zadlinux/
+    3  touch processes.txt
+    4  ps aux > processes.txt
+    5  cp processes.txt copy.txt
+    6  mkdir backup
+    7  mv copy.txt backup
+    8  wc -l processes.txt
+    9  wc -l processes.txt > selected.txt
+   10  grep -n "/bin" processes.txt >> selected.txt
+   11  history
+   12  history | tail -12 > commands.txt
