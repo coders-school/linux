@@ -13,3 +13,4 @@
   348  history -30
   349  history | tail -n 30 > commands.txt
   350  cat selected.txt commands.txt
+  
