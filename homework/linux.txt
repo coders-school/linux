@@ -1,0 +1,26 @@
+ seba@seba-VirtualBox:~/directory$ cat selected.txt commands.txt
+message+     603  0.0  0.1   8944  6104 ?        Ss   11:54   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         613  0.0  0.4  50480 20300 ?        Ss   11:54   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         726  0.0  0.4 129012 22896 ?        Ssl  11:54   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+whoopsie     793  0.0  0.3 326852 15560 ?        Ssl  11:54   0:00 /usr/bin/whoopsie -f
+seba         893  0.0  0.3 1419448 19032 ?       S<sl 11:54   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+seba         900  0.0  0.1 251348  7008 ?        SLl  11:54   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+seba         904  0.0  0.1 175180  6632 tty2     Ssl+ 11:54   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+seba         912  0.0  0.1   8292  5600 ?        Ss   11:54   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+seba        1089  0.0  0.0   6040   456 ?        Ss   11:54   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+seba        1125  0.0  0.0   7380  4364 ?        S    11:54   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+seba        1204  2.6  7.1 5151620 345292 ?      Ssl  11:55   0:30 /usr/bin/gnome-shell
+seba        1401  0.0  0.5 2671128 26840 ?       Sl   11:55   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+seba        1551  0.9  4.3 1287764 209056 ?      Sl   11:55   0:10 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
+seba        6693  0.0  0.9 553148 44840 ?        SLl  11:58   0:00 /usr/bin/seahorse --gapplication-service
+seba        6694  0.0  1.2 871984 58496 ?        Sl   11:58   0:00 /usr/bin/gnome-calendar --gapplication-service
+  154  wc -l selected.txt
+  155  grep -ir "/bin"
+  156  grep -ir "/bin" >> selected.txt
+  157  grep -ir "/bin" > selected.txt
+  158  grep -ir "/bin" processes.txt > selected.txt
+  159  cat selected.txt
+  160  history
+  161  tail -10 history
+  162  history | tail -10
+  163  history | tail -10 > commands.txt
