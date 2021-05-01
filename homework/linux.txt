@@ -1,0 +1,33 @@
+134  mkdir directory
+  135  ls
+  136  cd directory
+  137  touch processes.txt
+  138  ls
+  139  ps aux |> copy.txt
+  140  ls
+  141  cat copy.txt
+  142  ps aux > copy.txt
+  143  cat copy.txt
+  144  cp copy.txt processes.txt
+  145  cat processes.txt
+  146  mkdir backup 
+  147  mv copy.txt backup
+  148  ls backup
+  149  wc -l > selected.txt
+  150  wc -l
+  151  wc
+  152  wc -l processes.txt
+  153  wc -l processes.txt > selected.txt
+  154  wc -l selected.txt
+  155  grep -ir "/bin"
+  156  grep -ir "/bin" >> selected.txt
+  157  grep -ir "/bin" > selected.txt
+  158  grep -ir "/bin" processes.txt > selected.txt
+  159  cat selected.txt
+  160  history
+  161  tail -10 history
+  162  history | tail -10
+  163  history | tail -10 > commands.txt
+  164  cat commands.txt
+  165  ls
+  166  cat selected.txt commands.txt
