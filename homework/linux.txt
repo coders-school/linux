@@ -1,0 +1,65 @@
+seba@seba-VirtualBox:~$ cat selected.txt commands.txt
+message+     606  0.1  0.1   8944  6124 ?        Ss   19:11   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         614  0.0  0.4  50480 20192 ?        Ss   19:11   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         721  0.0  0.4 129012 22896 ?        Ssl  19:11   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+whoopsie     775  0.0  0.3 253116 15736 ?        Ssl  19:11   0:00 /usr/bin/whoopsie -f
+seba        1442  0.0  0.3 1419420 18924 ?       S<sl 19:11   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+seba        1447  0.0  0.1 251348  6936 ?        SLl  19:11   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+seba        1451  0.0  0.1 175180  6468 tty2     Ssl+ 19:11   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+seba        1459  0.1  0.1   8512  5696 ?        Ss   19:11   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+seba        1632  0.0  0.0  35252   332 ?        S    19:11   0:00 /usr/bin/VBoxClient --clipboard
+seba        1634  0.0  0.0 101604  4068 ?        Sl   19:11   0:00 /usr/bin/VBoxClient --clipboard
+seba        1642  0.0  0.0  35252   332 ?        S    19:11   0:00 /usr/bin/VBoxClient --display
+seba        1644  0.0  0.0  35396  3244 ?        S    19:11   0:00 /usr/bin/VBoxClient --display
+seba        1649  0.0  0.0  35252   332 ?        S    19:11   0:00 /usr/bin/VBoxClient --seamless
+seba        1650  0.0  0.0 101436  2128 ?        Sl   19:11   0:00 /usr/bin/VBoxClient --seamless
+seba        1655  0.0  0.0  35252   332 ?        S    19:11   0:00 /usr/bin/VBoxClient --draganddrop
+seba        1656  0.2  0.0 101952  2152 ?        Sl   19:11   0:01 /usr/bin/VBoxClient --draganddrop
+seba        1670  0.0  0.0   6040   456 ?        Ss   19:11   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+seba        1704  0.0  0.0   7380  4360 ?        S    19:11   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+seba        1757  3.8  6.9 5144328 337648 ?      Ssl  19:11   0:19 /usr/bin/gnome-shell
+seba        1860  0.0  0.5 2744860 26428 ?       Sl   19:11   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+seba        2043  2.1  4.3 1285236 209016 ?      Sl   19:11   0:10 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
+seba        2989  0.1  1.2 872000 58372 ?        Sl   19:12   0:00 /usr/bin/gnome-calendar --gapplication-service
+seba        2993  0.1  0.9 479428 44660 ?        SLl  19:12   0:00 /usr/bin/seahorse --gapplication-service
+  136  cd directory
+  137  touch processes.txt
+  138  ls
+  139  ps aux |> copy.txt
+  140  ls
+  141  cat copy.txt
+  142  ps aux > copy.txt
+  143  cat copy.txt
+  144  cp copy.txt processes.txt
+  145  cat processes.txt
+  146  mkdir backup 
+  147  mv copy.txt backup
+  148  ls backup
+  149  wc -l > selected.txt
+  150  wc -l
+  151  wc
+  152  wc -l processes.txt
+  153  wc -l processes.txt > selected.txt
+  154  wc -l selected.txt
+  155  grep -ir "/bin"
+  156  grep -ir "/bin" >> selected.txt
+  157  grep -ir "/bin" > selected.txt
+  158  grep -ir "/bin" processes.txt > selected.txt
+  159  cat selected.txt
+  160  history
+  161  tail -10 history
+  162  history | tail -10
+  163  history | tail -10 > commands.txt
+  164  cat commands.txt
+  165  ls
+  166  cat selected.txt commands.txt
+  167  clear
+  168  uname -r
+  169  sudo apt install build-essential dkms linux-headers-5.8.0-50-generic
+  170  history
+  171  ps aux > processes.txt
+  172  history
+  173  cp processes.txt copy.txt
+  174  grep -i "/bin" processes.txt >> selected.txt
+  175  history
+  176  history | tail -41 > commands.txt
