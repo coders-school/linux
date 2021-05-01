@@ -32,4 +32,4 @@ krzysiek@krzysiek:~/Pulpit$ cat data/selected.txt data/commands.txt
   774  mv data/copy.txt backup/
   775  wc -l data/processes.txt >> data/selected.txt
   776  grep -n '/bin' data/processes.txt >> data/selected.txt 
-  777  history | tail -n12 >> data/commands.txt
+  777  history | tail -n11 >> data/commands.txt
