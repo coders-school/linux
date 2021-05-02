@@ -1,3 +1,4 @@
+maciej@vhcalnplci:~/KURS/catalog> cat selected.txt commands.txt
 204 processes.txt
 80:message+   851  0.0  0.1  42964  5736 ?        Ss   19:43   0:02 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
 93:root      1335  0.0  0.0  58180  3584 ?        Ss   19:43   0:00 /usr/lib/postfix/bin//master -w
