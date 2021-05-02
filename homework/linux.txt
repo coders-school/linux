@@ -1,1 +1,30 @@
 cezary@cezary-VirtualBox:~/Documents/cpp_workspace$ mkdir dummy_dir
+cezary@cezary-VirtualBox:~/Documents/cpp_workspace$ touch dummy_dir/process.txt
+cezary@cezary-VirtualBox:~/Documents/cpp_workspace$ ps aux >> dummy_dir/process.txt 
+cezary@cezary-VirtualBox:~/Documents/cpp_workspace$ cp dummy_dir/process.txt dummy_dir/copy.txt
+cezary@cezary-VirtualBox:~/Documents/cpp_workspace$ mkdir Backup
+cezary@cezary-VirtualBox:~/Documents/cpp_workspace$ mv dummy_dir/copy.txt Backup/
+cezary@cezary-VirtualBox:~/Documents/cpp_workspace$ wc -l Backup/copy.txt 
+193 Backup/copy.txt
+cezary@cezary-VirtualBox:~/Documents/cpp_workspace$ wc -l Backup/copy.txt >> Backup/selected.txt
+cezary@cezary-VirtualBox:~/Documents/cpp_workspace$ grep /bin dummy_dir/process.txt --line-number > Backup/selected.txt 
+cezary@cezary-VirtualBox:~/Documents/cpp_workspace$ history | tail -n 3 > Backup/commands.txt
+cezary@cezary-VirtualBox:~/Documents/cpp_workspace$ cat Backup/commands.txt Backup/selected.txt 
+  196  clear
+  197  history
+  198  history | tail -n 3 > Backup/commands.txt
+85:message+     576  0.0  0.0   9760  6224 ?        Ss   18:46   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+88:root         585  0.0  0.2  51400 20128 ?        Ss   18:46   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+99:whoopsie     700  0.0  0.1 254160 15516 ?        Ssl  18:46   0:00 /usr/bin/whoopsie -f
+106:root         810  0.0  0.2 129272 22568 ?        Ssl  18:46   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+110:cezary       824  0.0  0.1 2469640 19628 ?       S<sl 18:46   0:02 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+112:cezary       829  0.0  0.0 251376  6884 ?        SLl  18:46   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+113:cezary       833  0.0  0.0 176052  6824 tty2     Ssl+ 18:46   0:00 /usr/libexec/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+115:cezary       838  0.0  0.0  10172  6840 ?        Ss   18:46   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+128:cezary      1019  0.0  0.0   6040   452 ?        Ss   18:46   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+130:cezary      1052  0.0  0.0   8148  4584 ?        S    18:46   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+133:cezary      1103  2.9  4.1 4837592 417272 ?      Ssl  18:46   1:17 /usr/bin/gnome-shell
+146:cezary      1213  0.0  0.2 2680300 27944 ?       Sl   18:46   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+170:cezary      1603  0.1  1.4 918748 139628 ?       SNl  18:47   0:03 /usr/bin/python3 /usr/bin/update-manager --no-update --no-focus-on-map
+175:cezary      3588  0.1  0.7 1211676 70376 ?       Sl   19:01   0:02 /usr/bin/nautilus --gapplication-service
+
