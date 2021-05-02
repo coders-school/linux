@@ -1,0 +1,60 @@
+maciej@vhcalnplci:~/KURS/catalog> cat selected.txt commands.txt 
+214 processes.txt
+message+   841  0.0  0.1  45020  4372 ?        Ss   Apr25   2:29 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root      1482  0.0  0.0  57848  2360 ?        Ss   Apr25   0:03 /usr/lib/postfix/bin//master -w
+maciej    1828  0.0  0.0  42968  3952 ?        Ss   Apr25   0:02 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+maciej    2062  0.0  0.0 279176  2932 tty7     SLl+ Apr25   0:00 /usr/bin/gnome-keyring-daemon --start --components=secrets
+maciej    2074  0.8 47.4 5223724 1912900 tty7  Sl+  Apr25  92:04 /usr/bin/gnome-shell
+maciej    2139  0.0  0.3 369180 14940 tty7     Sl+  Apr25   0:07 /usr/bin/Xwayland :0 -rootless -terminate -core -auth /run/user/1000/mutter/Xauthority -listen 4 -listen 5 -displayfd 6
+maciej    2148  0.0  0.0  41876  3196 ?        S    Apr25   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+maciej    2156  0.0  0.0 1426548 3716 ?        Sl   Apr25   0:00 /usr/bin/pulseaudio --start --log-target=syslog
+maciej    2379  0.0  3.0 1354732 123320 tty7   Sl+  Apr25   1:02 /usr/bin/gnome-software --gapplication-service
+maciej    2434  0.0  0.0  41452    24 ?        S    Apr25   0:00 /usr/bin/VBoxClient --clipboard
+maciej    2435  0.0  0.0 175896   632 ?        Sl   Apr25   0:00 /usr/bin/VBoxClient --clipboard
+maciej    2448  0.0  0.0  41452    20 ?        S    Apr25   0:00 /usr/bin/VBoxClient --seamless
+maciej    2450  0.0  0.0 173688   760 ?        Sl   Apr25   0:00 /usr/bin/VBoxClient --seamless
+maciej    2455  0.0  0.0  41452     8 ?        S    Apr25   0:00 /usr/bin/VBoxClient --draganddrop
+maciej    2459  0.0  0.0  41452     4 ?        S    Apr25   0:00 /usr/bin/VBoxClient --vmsvga
+maciej    2461  0.1  0.0 174204   996 ?        Sl   Apr25  18:10 /usr/bin/VBoxClient --draganddrop
+root      9322  0.0  0.0  59136  1440 pts/0    S    15:45   0:00 /usr/bin/systemd-inhibit --what=sleep:shutdown:idle --who=zypp --mode=block --why=Zypp commit running. /usr/bin/cat
+root      9323  0.0  0.0   6052   568 pts/0    S    15:45   0:00 /usr/bin/cat
+root      9324  0.0  0.2  63920  9980 pts/0    S+   15:45   0:01 /usr/bin/python3 /usr/lib/zypp/plugins/commit/snapper.py
+root      9327  0.0  0.0  14040  3160 pts/0    S+   15:45   0:00 /bin/bash /usr/lib/zypp/plugins/commit/btrfs-defrag-plugin.sh
+  521  mkdir catalog
+  522  ls
+  523  touch ./catalog/processes.txt
+  524  cd catalog/
+  525  ls
+  526  ps aux
+  527  ps aux > processes.txt 
+  528  ls
+  529  cat processes.txt 
+  530  mv processes.txt copy.txt
+  531  wc
+  532  man wc
+  533  ls
+  534  cp copy.txt processes.txt
+  535  ls
+  536  wc processes.txt 
+  537  man wc
+  538  wc -l processes.txt 
+  539  man wc
+  540  wc -l processes.txt > selected.txt
+  541  ls
+  542  cat selected.txt 
+  543  grep "/bin" processes.txt 
+  544  grep -r "/bin" processes.txt 
+  545  grep -rn "/bin" processes.txt 
+  546  grep -rni "/bin" processes.txt 
+  547  grep -rn "/bin" processes.txt 
+  548  grep -r "/bin" processes.txt 
+  549  grep "/bin" processes.txt 
+  550  grep "/bin" processes.txt >> selected.txt 
+  551  ls
+  552  clear
+  553  cat selected.txt 
+  554  man history
+  555  history
+  556  history | tail -35
+  557  history | tail -37
+  558  history | tail -38 > commands.txt
