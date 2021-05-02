@@ -1,61 +1,56 @@
-marcin@DESKTOP-78O7L98:/mnt/c/Users/marcin/Desktop$ cd /mnt/c/homework/
-marcin@DESKTOP-78O7L98:/mnt/c/homework$ history -c
-marcin@DESKTOP-78O7L98:/mnt/c/homework$ mkdir exercise1
-marcin@DESKTOP-78O7L98:/mnt/c/homework$ cd exercise1/
-marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ touch processes.txt
-marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ ps aux
+marcin@DESKTOP-78O7L98:/mnt/c/homework$ mkdir exercise
+marcin@DESKTOP-78O7L98:/mnt/c/homework$ cd exercise/
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise$ touch processes.txt
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise$ ps aux
 USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-root         1  0.0  0.0    892   580 ?        Sl   10:45   0:00 /init
-root         6  0.0  0.0    892    84 ?        Ss   10:45   0:00 /init
-root         7  0.0  0.0    892    84 ?        R    10:45   0:00 /init
-marcin       8  0.1  0.0  10172  5364 pts/0    Ss   10:45   0:00 -bash
-marcin      35  0.0  0.0  10616  3344 pts/0    R+   10:46   0:00 ps aux
-marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ ^C
-marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ cp processes.txt copy.txt
-marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ mkdir backup
-marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ mv copy.txt backup/
-marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ wc -l processes.txt
-4 processes.txt
-marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ wc -l processes.txt > selected.txt
-marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ grep -rn "/bin" processes.txt
-marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ grep -rn "bash" *
-backup/copy.txt:4:marcin       8  0.1  0.0  10172  5364 pts/0    Ss   10:45   0:00 -bash
-processes.txt:4:marcin       8  0.1  0.0  10172  5364 pts/0    Ss   10:45   0:00 -bash
-marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ grep -rn "bash" processes.txt
-4:marcin       8  0.1  0.0  10172  5364 pts/0    Ss   10:45   0:00 -bash
-marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ echo 4 >> selected.txt
-marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ history
-    1  mkdir exercise1
-    2  cd exercise1/
-    3  touch processes.txt
-    4  ps aux
-    5  cp processes.txt copy.txt
-    6  mkdir backup
-    7  mv copy.txt backup/
-    8  wc -l processes.txt
-    9  wc -l processes.txt > selected.txt
-   10  grep -rn "/bin" processes.txt
-   11  grep -rn "bash" *
-   12  grep -rn "bash" processes.txt
-   13  echo 4 >> selected.txt
-   14  history
-marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ history | tail -n5
-   11  grep -rn "bash" *
-   12  grep -rn "bash" processes.txt
-   13  echo 4 >> selected.txt
-   14  history
-marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ history | tail -n5 > commands.txt
-marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ cat selected.txt commands.txt
-4 processes.txt
-4
-   12  grep -rn "bash" processes.txt
-   13  echo 4 >> selected.txt
-   14  history
-   15*
-   16  history | tail -n5 > commands.txt
-marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ wc -l processes.txt
-4 processes.txt
-marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ echo 4 > selected.txt
-marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ grep -rn "/bin" >> selected.txt
-grep: input file ‘selected.txt’ is also the output
-marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise1$ ps aux > processes.txt
+root         1  0.0  0.0    892   584 ?        Sl   11:20   0:00 /init
+root         6  0.0  0.0    892    88 ?        Ss   11:20   0:00 /init
+root         7  0.0  0.0    892    88 ?        R    11:20   0:00 /init
+marcin       8  0.0  0.0  10168  5172 pts/0    Ss   11:20   0:00 -bash
+marcin      96  0.0  0.0  10616  3328 pts/0    R+   12:11   0:00 ps aux
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise$ ps aux > processes.txt
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise$ cp processes.txt copy.txt
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise$ mkdir backup
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise$ mv copy.txt backup/
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise$ ls
+backup  processes.txt
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise$ cd backup/
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise/backup$ ls
+copy.txt
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise/backup$ cd ..
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise$ man wc
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise$ wc -l processes.txt
+6 processes.txt
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise$ wc -l processes.txt > selected.txt
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise$ grep -rn "/bin" processes.txt
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise$ grep -rn "/bin" processes.txt >> selected.txt
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise$ history
+    1  clear
+    2  mkdir exercise
+    3  cd exercise/
+    4  touch processes.txt
+    5  ps aux
+    6  ps aux > processes.txt
+    7  cp processes.txt copy.txt
+    8  mkdir backup
+    9  mv copy.txt backup/
+   10  ls
+   11  cd backup/
+   12  ls
+   13  cd ..
+   14  man wc
+   15  wc -l processes.txt
+   16  wc -l processes.txt > selected.txt
+   17  grep -rn "/bin" processes.txt
+   18  grep -rn "/bin" processes.txt >> selected.txt
+   19  history
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise$ history | tail -n5 > commands.txt
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise$ less commands.txt
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise$ cat selected.txt commands.txt
+6 processes.txt
+   16  wc -l processes.txt > selected.txt
+   17  grep -rn "/bin" processes.txt
+   18  grep -rn "/bin" processes.txt >> selected.txt
+   19  history
+   20  history | tail -n5 > commands.txt
+marcin@DESKTOP-78O7L98:/mnt/c/homework/exercise$
