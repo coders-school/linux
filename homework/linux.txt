@@ -1,0 +1,10 @@
+touch processes.txt
+ps aux > processes.txt
+cp processes.txt copy.txt
+mkdir backup
+mv copy.txt backup
+wc -l processes.txt
+wc -l processes.txt > selected.txt 
+grep -n "/bin" processes.txt >> selected.txt
+history | tail -n10 > commands.txt
+cat selected.txt commands.txt
