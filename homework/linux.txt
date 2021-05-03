@@ -1,0 +1,54 @@
+$ cat selected.txt commands.txt 
+264 processes.txt
+118:message+     975  0.0  0.0  10140  6576 ?        Ss   15:14   0:07 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+121:root        1003  0.0  0.2  42260 19968 ?        Ss   15:14   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+134:root        1110  0.0  0.2 120988 22768 ?        Ssl  15:14   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+137:whoopsie    1255  0.0  0.1 326956 15424 ?        Ssl  15:14   0:00 /usr/bin/whoopsie -f
+147:bartlom+    1972  0.8  0.2 2009976 19856 ?       S<sl 15:16   4:24 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+149:bartlom+    1978  0.0  0.0   8952  5812 ?        Ss   15:16   0:03 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+159:bartlom+    2040  0.0  0.1 243520  8096 ?        SLl  15:16   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+161:bartlom+    2127  0.0  0.0 242904  7716 ?        Sl   15:16   0:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+162:bartlom+    2310  0.0  0.0 167028  6828 tty2     Ssl+ 15:16   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+165:bartlom+    2549  0.0  0.0   6040   456 ?        Ss   15:16   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+167:bartlom+    2575  0.0  0.0   7380  4064 ?        S    15:16   0:01 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+170:bartlom+    2605  4.6  3.6 4834812 291536 ?      Ssl  15:16  24:17 /usr/bin/gnome-shell
+184:bartlom+    2704  0.0  0.3 2736840 26968 ?       Sl   15:17   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+207:bartlom+    2918  0.0  2.7 1360488 220648 ?      Sl   15:17   0:10 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
+210:bartlom+    5952  0.1  1.0 858972 87560 ?        Sl   15:26   0:45 /usr/bin/python3 /usr/bin/x-terminal-emulator
+211:bartlom+    9826  0.0  0.0  14156  4324 pts/1    Ss+  18:44   0:00 /bin/bash
+213:bartlom+   12402  0.0  0.6 1253920 55296 ?       Sl   19:53   0:00 /usr/bin/gnome-calendar --gapplication-service
+214:bartlom+   12403  0.0  0.5 468184 41468 ?        SLl  19:53   0:00 /usr/bin/seahorse --gapplication-service
+237:bartlom+   15643  0.0  0.4 203284 34320 ?        Sl   21:18   0:00 /usr/bin/python3 /usr/bin/chrome-gnome-shell chrome-extension://gphhapmejobijbbhgpjhcjognlahblep/
+262:bartlom+   19621  0.0  0.0  13848  5408 pts/0    Ss   23:54   0:00 /bin/bash
+ 1724  touch processes.txt
+ 1725  ps aux > processes.txt 
+ 1726  cat processes.txt 
+ 1727  gedit processes.txt 
+ 1728  cp processes.txt copy.txt
+ 1729  l
+ 1730  mkdir backup | mv copy.txt /backup/copy.txt
+ 1731  l
+ 1732  mv copy.txt backup
+ 1733  l
+ 1734  cd backup/
+ 1735  l
+ 1736  cd ..
+ 1737  l
+ 1738  wc -l processes.txt 
+ 1739  wc -l processes.txt > selected.txt
+ 1740  ;
+ 1741  l
+ 1742  cat selected.txt 
+ 1743  l 
+ 1744  grep -rni /bin
+ 1745  grep -rni /bin | grep processes
+ 1746  grep -rni /bin | grep processes >> selected.txt 
+ 1747  cat selected.txt 
+ 1748  history
+ 1749  tail history
+ 1750  history | tail
+ 1751  history | tail -n10
+ 1752  history | tail -n15
+ 1753  history | tail -n30
+ 1754  history | tail -n45
+ 1755  history | tail -n32 > commands.txt
