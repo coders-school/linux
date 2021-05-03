@@ -1,0 +1,23 @@
+michal@DESKTOP-PJK7OVU:~/zadanie$ cat selected.txt commands.txt 
+74 processes.txt
+10:michal     105  0.0  0.0   2608  1748 pts/0    S    11:55   0:00 /bin/sh /etc/xrdp/startwm.sh
+14:michal     177  0.0  0.0   7164  1932 pts/0    S    11:55   0:00 /bin/dbus-launch --sh-syntax --exit-with-session xfce4-session
+15:michal     178  0.0  0.0   7744  3520 ?        Ss   11:55   0:00 /usr/bin/dbus-daemon --syslog --fork --print-pid 5 --print-address 7 --session
+17:michal     221  0.0  0.0   7368  4188 ?        S    11:55   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+20:michal     237  0.0  0.0   6032   456 ?        Ss   11:55   0:00 /bin/ssh-agent -s
+21:michal     240  0.0  0.0   9216   288 ?        Ss   11:55   0:00 /bin/gpg-agent --sh --daemon --write-env-file /home/michal/.cache/gpg-agent-info
+61:michal     823  0.0  0.0 239332  9116 ?        SLl  11:55   0:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+63:michal     881  0.1  0.2 1998412 55792 pts/0   Sl   11:56   0:04 /home/michal/.vscode/extensions/ms-vscode.cpptools-1.3.1/bin/cpptools
+64:michal     920  0.0  0.2 1646480 77856 pts/0   Sl   11:56   0:01 /home/michal/.vscode/extensions/ms-vscode.cpptools-1.3.1/bin/cpptools-srv 881 {D1C70192-5495-4053-BBB7-EAA7F255415D}
+  328  mkdir zadanie
+  329  cd zadanie/
+  330  touch processes.txt
+  331  ps aux > processes.txt 
+  332  cp processes.txt copy.txt
+  333  mkdir backup
+  334  mv copy.txt backup/
+  335  wc -l processes.txt 
+  336  wc -l processes.txt > selected.txt
+  337  grep -n "/bin" processes.txt >> selected.txt 
+  338  history 
+  339  history | tail -n12 > commands.txt
