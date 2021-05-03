@@ -1,10 +1,10 @@
-karo@karo-VirtualBox:~/CourseTests/Homeworks/Linux/linux/NewFolder2$ cat selected.txt  commands.txt 
-221 processes.txt
-98:message+     592  0.0  0.0   9872  6268 ?        Ss   05:50   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+karo@karo-VirtualBox:~/CourseTests/Homeworks/Linux/linux/NewFolder$ cat selected.txt  commands.txt 
+217 processes.txt
+98:message+     592  0.0  0.0   9872  6268 ?        Ss   05:50   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
 101:root         608  0.0  0.0  50488 20200 ?        Ss   05:50   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
 111:root         703  0.0  0.0 129012 22908 ?        Ssl  05:50   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
 112:whoopsie     765  0.0  0.0 253120 15620 ?        Ssl  05:50   0:00 /usr/bin/whoopsie -f
-123:karo        1387  0.0  0.0 2280036 19948 ?       S<sl 05:50   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+123:karo        1387  0.0  0.0 2280036 19988 ?       S<sl 05:50   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
 125:karo        1392  0.0  0.0  10644  7816 ?        Ss   05:50   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
 126:karo        1399  0.0  0.0 251356  7436 ?        Sl   05:50   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
 136:karo        1474  0.0  0.0 175180  6600 tty2     Ssl+ 05:50   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
@@ -18,24 +18,23 @@ karo@karo-VirtualBox:~/CourseTests/Homeworks/Linux/linux/NewFolder2$ cat selecte
 146:karo        1598  0.0  0.0 168288  3412 ?        Sl   05:50   0:00 /usr/bin/VBoxClient --vmsvga
 147:karo        1605  0.0  0.0   6040   460 ?        Ss   05:50   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
 149:karo        1641  0.0  0.0   7380  4360 ?        S    05:50   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-152:karo        1697  0.8  1.9 5347316 460656 ?      Ssl  05:50   2:23 /usr/bin/gnome-shell
+152:karo        1697  1.1  2.0 5370076 482700 ?      Ssl  05:50   3:26 /usr/bin/gnome-shell
 165:karo        1809  0.0  0.1 2812436 26744 ?       Sl   05:50   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
 188:karo        2067  0.0  0.2 871992 58568 ?        Sl   05:51   0:00 /usr/bin/gnome-calendar --gapplication-service
-195:karo        3973  0.0  0.3 1144296 75692 ?       Sl   08:38   0:03 /usr/bin/nautilus --gapplication-service
-  271  mkdir NewFolder2
-  272  ls
-  273  cd NewFolder2
-  274  touch processes.txt
-  275  ps aux > processes.txt 
-  276  cp processes.txt copy.txt
-  277  mkdir backup
-  278  mv copy.txt backup/
-  279  touch selected.txt
-  280  wc -l processes.txt 
-  281  wc -l processes.txt > selected.txt 
-  282  grep -n "/bin" processes.txt >> selected.txt 
-  283  cat selected.txt 
-  284  touch commands.txt
-  285  history
-  286  history | tail -n15
-  287  history | tail -n17
+195:karo        3973  0.0  0.3 1145488 77040 ?       Sl   08:38   0:04 /usr/bin/nautilus --gapplication-service
+  339  mkdir NewFolder
+  340  ls
+  341  cd NewFolder/
+  342  touch processes.txt
+  343  ps aux > processes.txt 
+  344  cp processes.txt copy.txt
+  345  mkdir backup
+  346  mv copy.txt backup/
+  347  touch selected.txt
+  348  wc -l processes.txt 
+  349  wc -l processes.txt > selected.txt 
+  350  grep -n "/bin" processes.txt >> selected.txt 
+  351  cat selected.txt 
+  352  touch commands.txt
+  353  history | tail -n15
+  354  history | tail -n16 > commands.txt 
