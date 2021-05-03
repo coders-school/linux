@@ -1,0 +1,35 @@
+$ cat selected.txt commands.txt 
+264 processes.txt
+262:bartlom+   19621  0.0  0.0  13848  5408 pts/0    Ss   23:54   0:00 /bin/bash
+ 1724  touch processes.txt
+ 1725  ps aux > processes.txt 
+ 1726  cat processes.txt 
+ 1727  gedit processes.txt 
+ 1728  cp processes.txt copy.txt
+ 1729  l
+ 1730  mkdir backup | mv copy.txt /backup/copy.txt
+ 1731  l
+ 1732  mv copy.txt backup
+ 1733  l
+ 1734  cd backup/
+ 1735  l
+ 1736  cd ..
+ 1737  l
+ 1738  wc -l processes.txt 
+ 1739  wc -l processes.txt > selected.txt
+ 1740  ;
+ 1741  l
+ 1742  cat selected.txt 
+ 1743  l 
+ 1744  grep -rni /bin
+ 1745  grep -rni /bin | grep processes
+ 1746  grep -rni /bin | grep processes >> selected.txt 
+ 1747  cat selected.txt 
+ 1748  history
+ 1749  tail history
+ 1750  history | tail
+ 1751  history | tail -n10
+ 1752  history | tail -n15
+ 1753  history | tail -n30
+ 1754  history | tail -n45
+ 1755  history | tail -n32 > commands.txt
