@@ -1,0 +1,55 @@
+karo@karo-VirtualBox:~/CourseTests/Homeworks/Linux/linux/NewFolder$ cat selected.txt  commands.txt 
+218 processes.txt
+message+     592  0.0  0.0   9872  6268 ?        Ss   05:50   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         608  0.0  0.0  50488 20200 ?        Ss   05:50   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         703  0.0  0.0 129012 22908 ?        Ssl  05:50   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+whoopsie     765  0.0  0.0 253120 15620 ?        Ssl  05:50   0:00 /usr/bin/whoopsie -f
+karo        1387  0.0  0.0 2017892 19932 ?       S<sl 05:50   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+karo        1392  0.0  0.0  10644  7816 ?        Ss   05:50   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+karo        1399  0.0  0.0 251356  7436 ?        Sl   05:50   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+karo        1474  0.0  0.0 175180  6600 tty2     Ssl+ 05:50   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+karo        1570  0.0  0.0  33772   364 ?        S    05:50   0:00 /usr/bin/VBoxClient --clipboard
+karo        1572  0.0  0.0 166040  4216 ?        Sl   05:50   0:00 /usr/bin/VBoxClient --clipboard
+karo        1582  0.0  0.0  33772   360 ?        S    05:50   0:00 /usr/bin/VBoxClient --seamless
+karo        1583  0.0  0.0 166008  2720 ?        Sl   05:50   0:00 /usr/bin/VBoxClient --seamless
+karo        1589  0.0  0.0  33772   360 ?        S    05:50   0:00 /usr/bin/VBoxClient --draganddrop
+karo        1591  0.0  0.0 166524  2784 ?        Sl   05:50   0:07 /usr/bin/VBoxClient --draganddrop
+karo        1597  0.0  0.0  33772   364 ?        S    05:50   0:00 /usr/bin/VBoxClient --vmsvga
+karo        1598  0.0  0.0 168288  3412 ?        Sl   05:50   0:00 /usr/bin/VBoxClient --vmsvga
+karo        1605  0.0  0.0   6040   460 ?        Ss   05:50   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+karo        1641  0.0  0.0   7380  4360 ?        S    05:50   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+karo        1697  0.5  1.8 5329716 437704 ?      Ssl  05:50   1:09 /usr/bin/gnome-shell
+karo        1809  0.0  0.1 2812436 26744 ?       Sl   05:50   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+karo        2067  0.0  0.2 871992 58568 ?        Sl   05:51   0:00 /usr/bin/gnome-calendar --gapplication-service
+karo        3973  0.1  0.3 1143388 74788 ?       Sl   08:38   0:03 /usr/bin/nautilus --gapplication-service
+  223  mkdir NewFolder
+  224  ls
+  225  cd NewFolder/
+  226  touch processes.txt
+  227  ls
+  228  cat processes.txt 
+  229  ps aux > processes.txt 
+  230  cat processes.txt 
+  231  ls
+  232  cp processes.txt copy.txt
+  233  ls
+  234  mkdir backup
+  235  mv copy.txt backup/
+  236  ls
+  237  touch selected.txt
+  238  ls
+  239  wc -l processes.txt 
+  240  wc -l processes.txt > selected.txt 
+  241  cat selected.txt 
+  242  grep "/bin"
+  243  grep "/bin" processes.txt 
+  244  grep "/bin" processes.txt >> selected.txt 
+  245  cat selected.txt 
+  246  touch commands.txt
+  247  ls
+  248  history
+  249  history | tail -n6
+  250  history | tail -n26
+  251  history | tail -n27
+  252  history | tail -n30
+  253  history | tail -n31 > commands.txt 
