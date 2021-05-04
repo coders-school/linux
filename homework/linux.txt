@@ -1,35 +1,58 @@
-robert@robert-work-new:~/Learning/CPP/homework$ cat selected.txt ; cat commands.txt 
-356
-2
-174
-211
-221
-249
-251
-253
-255
-257
-258
- 1934  mkdir homework
- 1935  cd homework/
- 1936  touch processes.txt
- 1937  ps aux
- 1938  ps aux > processes.txt 
- 1939  cat processes.txt 
- 1940  cp processes.txt copy.txt
- 1941  mkdir backup
- 1942  mv copy.txt backup/
- 1943  cat processes.txt | wc -l
- 1944  cat processes.txt | wc -l > selected.txt
- 1945  cat selected.txt
- 1946  grep --help
- 1947  grep -n '\bin' processes.txt 
- 1948  grep -n '\bin' processes.txt | cut -f1 -d:
- 1949  grep -n '\bin' processes.txt | cut -f1 -d: > selected.txt 
- 1950  cat selected.txt 
- 1951  history 
- 1952  cat processes.txt | wc -l > selected.txt
- 1953  grep -n '\bin' processes.txt | cut -f1 -d: >> selected.txt
- 1954  cat selected.txt 
- 1955  history 
- 1956  history | tail -n 25 > commands.txt
+robert@robert-work-new:~/Learning/CPP/homework$ cat selected.txt commands.txt 
+333 processes.txt
+96:message+     864  0.1  0.0   8924  5968 ?        Ss   07:16   1:20 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+99:root         892  0.0  0.0  41844 20420 ?        Ss   07:16   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+107:root         976  0.0  0.0  14560  3292 ?        Ss   07:16   0:15 /usr/bin/vmware-usbarbitrator
+113:mongodb     1026  0.4  0.2 980864 74684 ?        Ssl  07:16   3:31 /usr/bin/mongod --unixSocketPrefix=/run/mongodb --config /etc/mongodb.conf
+115:root        1041  0.1  0.1 1564220 47796 ?       Ssl  07:16   0:50 /usr/bin/containerd
+124:unifi       1498  0.4  1.8 6799476 606412 ?      Sl   07:16   3:15 /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java -Dfile.encoding=UTF-8 -Djava.awt.headless=true -Dapple.awt.UIElement=true -Dunifi.core.enabled=false -Xmx1024M -XX:+ExitOnOutOfMemoryError -XX:+CrashOnOutOfMemoryError -XX:ErrorFile=/usr/lib/unifi/logs/hs_err_pid%p.log -jar /usr/lib/unifi/lib/ace.jar start
+125:root        1552  0.0  0.2 1685660 91132 ?       Ssl  07:16   0:19 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+132:root        1684  0.0  0.0   3128   192 ?        Ss   07:16   0:00 /usr/bin/vmnet-bridge -s 6 -d /var/run/vmnet-bridge-0.pid -n 0
+136:root        1729  0.0  0.0   3100   184 ?        Ss   07:16   0:00 /usr/bin/vmnet-netifup -s 6 -d /var/run/vmnet-netifup-vmnet1.pid /dev/vmnet1 vmnet1
+137:root        1743  0.0  0.0   9188   332 ?        Ss   07:16   0:00 /usr/bin/vmnet-dhcpd -s 6 -cf /etc/vmware/vmnet1/dhcpd/dhcpd.conf -lf /etc/vmware/vmnet1/dhcpd/dhcpd.leases -pf /var/run/vmnet-dhcpd-vmnet1.pid vmnet1
+138:root        1747  0.0  0.0   4008  2764 ?        S    07:16   0:00 /usr/bin/vmnet-natd -s 6 -m /etc/vmware/vmnet8/nat.mac -c /etc/vmware/vmnet8/nat/nat.conf
+139:root        1749  0.0  0.0   3100   188 ?        Ss   07:16   0:00 /usr/bin/vmnet-netifup -s 6 -d /var/run/vmnet-netifup-vmnet8.pid /dev/vmnet8 vmnet8
+140:root        1762  0.0  0.0   9188   364 ?        Ss   07:16   0:00 /usr/bin/vmnet-dhcpd -s 6 -cf /etc/vmware/vmnet8/dhcpd/dhcpd.conf -lf /etc/vmware/vmnet8/dhcpd/dhcpd.leases -pf /var/run/vmnet-dhcpd-vmnet8.pid vmnet8
+146:root        2341  0.0  0.0 622776  4444 ?        Sl   07:16   0:00 /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 6379 -container-ip 172.17.0.2 -container-port 6379
+147:root        2356  0.0  0.0 622776  3892 ?        Sl   07:16   0:00 /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 33306 -container-ip 172.17.0.3 -container-port 3306
+148:root        2373  0.0  0.0 475312  3832 ?        Sl   07:16   0:00 /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 33307 -container-ip 172.17.0.4 -container-port 3306
+149:root        2400  0.0  0.0 112028  7820 ?        Sl   07:16   0:03 /usr/bin/containerd-shim-runc-v2 -namespace moby -id 37b3b8188ceaab364ad44a10ed9783ce1a66fdc51ddddf04e29fa795a3116818 -address /run/containerd/containerd.sock
+150:root        2401  0.0  0.0 111964  8248 ?        Sl   07:16   0:04 /usr/bin/containerd-shim-runc-v2 -namespace moby -id 9c42e7bfafd51e0b69f56cdde1564bcab8ceec7ac66c33aadd0d11e709a0c0ec -address /run/containerd/containerd.sock
+151:root        2402  0.0  0.0 111708  7080 ?        Sl   07:16   0:03 /usr/bin/containerd-shim-runc-v2 -namespace moby -id 766f837e1819100524de1508b9eb1ad66c153515411b122d35097f08aaae7ebe -address /run/containerd/containerd.sock
+158:robert      2898  3.1  0.0 2459816 20580 ?       S<sl 07:16  22:28 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+159:robert      2901  0.0  0.0 316584  8480 ?        SLl  07:16   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+161:robert      2911  0.0  0.0   8132  5476 ?        Ss   07:16   0:15 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+162:robert      2977  0.0  0.0   6032   456 ?        Ss   07:16   0:00 /usr/bin/ssh-agent /usr/bin/im-launch startxfce4
+164:robert      3007  0.0  0.0   7516  4472 ?        S    07:16   0:01 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+167:robert      3024  0.0  0.0  86328  3760 ?        SLs  07:16   0:00 /usr/bin/gpg-agent --supervised
+184:robert      3117  0.0  0.0  12316  2496 ?        Ssl  07:16   0:03 /home/robert/.local/share/JetBrains/Toolbox/bin/jetbrains-toolbox --minimize
+185:robert      3131  0.0  0.1  62168 35328 ?        S    07:16   0:01 /usr/bin/python3 /usr/share/system-config-printer/applet.py
+214:robert      3767  0.0  0.0 242428  7792 ?        Sl   07:16   0:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+220:robert      4567  0.0  0.0   2608  1748 ?        S    07:18   0:00 /bin/sh /home/robert/.local/share/JetBrains/Toolbox/apps/IDEA-U/ch-0/203.7148.57/bin/idea.sh
+221:robert      4614  0.4  2.2 8329108 735940 ?      Sl   07:18   3:21 /home/robert/.local/share/JetBrains/Toolbox/apps/IDEA-U/ch-0/203.7148.57/jbr/bin/java -classpath /home/robert/.local/share/JetBrains/Toolbox/apps/IDEA-U/ch-0/203.7148.57/lib/bootstrap.jar:/home/robert/.local/share/JetBrains/Toolbox/apps/IDEA-U/ch-0/203.7148.57/lib/extensions.jar:/home/robert/.local/share/JetBrains/Toolbox/apps/IDEA-U/ch-0/203.7148.57/lib/util.jar:/home/robert/.local/share/JetBrains/Toolbox/apps/IDEA-U/ch-0/203.7148.57/lib/jdom.jar:/home/robert/.local/share/JetBrains/Toolbox/apps/IDEA-U/ch-0/203.7148.57/lib/log4j.jar:/home/robert/.local/share/JetBrains/Toolbox/apps/IDEA-U/ch-0/203.7148.57/lib/jna.jar:/home/robert/.local/share/JetBrains/Toolbox/apps/IDEA-U/ch-0/203.7148.57/jbr/lib/tools.jar -Xms128m -Xmx2048m -XX:ReservedCodeCacheSize=512m -XX:+UseConcMarkSweepGC -XX:SoftRefLRUPolicyMSPerMB=50 -XX:CICompilerCount=2 -XX:+HeapDumpOnOutOfMemoryError -XX:-OmitStackTraceInFastThrow -ea -Dsun.io.useCanonCaches=false -Djdk.http.auth.tunneling.disabledSchemes="" -Djdk.attach.allowAttachSelf=true -Djdk.module.illegalAccess.silent=true -Dkotlinx.coroutines.debug=off -Dsun.tools.attach.tmp.only=true -Dide.no.platform.update=true -XX:ErrorFile=/home/robert/java_error_in_idea_%p.log -XX:HeapDumpPath=/home/robert/java_error_in_idea_.hprof -Didea.vendor.name=JetBrains -Didea.paths.selector=IntelliJIdea2020.3 -Djb.vmOptionsFile=/home/robert/.local/share/JetBrains/Toolbox/apps/IDEA-U/ch-0/203.7148.57.vmoptions -Didea.jre.check=true com.intellij.idea.Main
+228:robert      5699  0.0  0.0   6704  1760 ?        S    07:20   0:04 /home/robert/.local/share/JetBrains/Toolbox/apps/IDEA-U/ch-0/203.7148.57/bin/fsnotifier64
+235:robert     15237  0.0  0.0 162256  2344 ?        Ssl  07:41   0:00 /usr/bin/speech-dispatcher --spawn --communication-method unix_socket --socket-path /run/user/1000/speech-dispatcher/speechd.sock
+245:robert     39894  0.0  0.1 384148 61508 ?        Sl   09:00   0:00 /usr/bin/python3 /usr/share/system-config-printer/scp-dbus-service.py
+248:robert     60967  0.0  0.0   2608  1744 ?        S    10:08   0:00 /bin/sh /home/robert/.local/share/JetBrains/Toolbox/apps/PhpStorm/ch-0/211.7142.44/bin/phpstorm.sh
+249:robert     60984  7.4  9.7 10011096 3200412 ?    Sl   10:08  41:06 /home/robert/.local/share/JetBrains/Toolbox/apps/PhpStorm/ch-0/211.7142.44/jbr/bin/java -classpath /home/robert/.local/share/JetBrains/Toolbox/apps/PhpStorm/ch-0/211.7142.44/lib/bootstrap.jar:/home/robert/.local/share/JetBrains/Toolbox/apps/PhpStorm/ch-0/211.7142.44/lib/util.jar:/home/robert/.local/share/JetBrains/Toolbox/apps/PhpStorm/ch-0/211.7142.44/lib/jdom.jar:/home/robert/.local/share/JetBrains/Toolbox/apps/PhpStorm/ch-0/211.7142.44/lib/log4j.jar:/home/robert/.local/share/JetBrains/Toolbox/apps/PhpStorm/ch-0/211.7142.44/lib/jna.jar -Xms128m -Xmx2048m -XX:SoftRefLRUPolicyMSPerMB=50 -ea -XX:CICompilerCount=2 -Djdk.http.auth.tunneling.disabledSchemes="" -XX:+HeapDumpOnOutOfMemoryError -XX:-OmitStackTraceInFastThrow -Djdk.attach.allowAttachSelf=true -Dkotlinx.coroutines.debug=off -Djdk.module.illegalAccess.silent=true -Dsun.tools.attach.tmp.only=true -Dide.no.platform.update=true -Dsun.io.useCanonCaches=false -XX:ReservedCodeCacheSize=512m -XX:+UseG1GC -Didea.plugins.path=/home/robert/.local/share/JetBrains/Toolbox/apps/PhpStorm/ch-0/211.7142.44.plugins -XX:ErrorFile=/home/robert/java_error_in_phpstorm_%p.log -XX:HeapDumpPath=/home/robert/java_error_in_phpstorm_.hprof -Didea.vendor.name=JetBrains -Didea.paths.selector=PhpStorm2021.1 -Djb.vmOptionsFile=/home/robert/.local/share/JetBrains/Toolbox/apps/PhpStorm/ch-0/211.7142.44.vmoptions -Didea.platform.prefix=PhpStorm com.intellij.idea.Main
+250:robert     61186  0.0  0.0   8020  3108 ?        S    10:09   0:03 /home/robert/.local/share/JetBrains/Toolbox/apps/PhpStorm/ch-0/211.7142.44/bin/fsnotifier64
+251:robert     61449  0.0  0.0  17068  9056 pts/3    Ss+  10:09   0:00 /bin/bash --rcfile /home/robert/.local/share/JetBrains/Toolbox/apps/PhpStorm/ch-0/211.7142.44/plugins/terminal/jediterm-bash.in -i
+252:robert     73442  0.0  0.0   2608  1788 ?        S    10:49   0:00 /bin/sh /home/robert/.local/share/JetBrains/Toolbox/apps/datagrip/ch-0/211.7142.37/bin/datagrip.sh
+253:robert     73460  2.0  4.9 9114016 1639900 ?     SLl  10:49  10:24 /home/robert/.local/share/JetBrains/Toolbox/apps/datagrip/ch-0/211.7142.37/jbr/bin/java -classpath /home/robert/.local/share/JetBrains/Toolbox/apps/datagrip/ch-0/211.7142.37/lib/bootstrap.jar:/home/robert/.local/share/JetBrains/Toolbox/apps/datagrip/ch-0/211.7142.37/lib/util.jar:/home/robert/.local/share/JetBrains/Toolbox/apps/datagrip/ch-0/211.7142.37/lib/jdom.jar:/home/robert/.local/share/JetBrains/Toolbox/apps/datagrip/ch-0/211.7142.37/lib/log4j.jar:/home/robert/.local/share/JetBrains/Toolbox/apps/datagrip/ch-0/211.7142.37/lib/jna.jar -Xms128m -Xmx2048m -XX:SoftRefLRUPolicyMSPerMB=50 -ea -XX:CICompilerCount=2 -Djdk.http.auth.tunneling.disabledSchemes="" -XX:+HeapDumpOnOutOfMemoryError -XX:-OmitStackTraceInFastThrow -Djdk.attach.allowAttachSelf=true -Dkotlinx.coroutines.debug=off -Djdk.module.illegalAccess.silent=true -Dsun.tools.attach.tmp.only=true -Dide.no.platform.update=true -Dsun.io.useCanonCaches=false -XX:ReservedCodeCacheSize=512m -XX:+UseG1GC -Didea.plugins.path=/home/robert/.local/share/JetBrains/Toolbox/apps/datagrip/ch-0/211.7142.37.plugins -XX:ErrorFile=/home/robert/java_error_in_datagrip_%p.log -XX:HeapDumpPath=/home/robert/java_error_in_datagrip_.hprof -Didea.vendor.name=JetBrains -Didea.paths.selector=DataGrip2021.1 -Djb.vmOptionsFile=/home/robert/.local/share/JetBrains/Toolbox/apps/datagrip/ch-0/211.7142.37.vmoptions -Didea.platform.prefix=DataGrip com.intellij.idea.Main
+254:robert     73555  0.0  0.0   6668   580 ?        S    10:49   0:03 /home/robert/.local/share/JetBrains/Toolbox/apps/datagrip/ch-0/211.7142.37/bin/fsnotifier64
+255:robert     74086  0.1  0.4 6055644 159748 ?      Sl   10:50   0:59 /home/robert/.local/share/JetBrains/Toolbox/apps/datagrip/ch-0/211.7142.37/jbr/bin/java -Djava.rmi.server.hostname=127.0.0.1 -Duser.timezone=UTC -Xmx2048m -Xms128m -Dfile.encoding=UTF-8 -classpath /home/robert/.local/share/JetBrains/Toolbox/apps/datagrip/ch-0/211.7142.37/lib/util.jar:/home/robert/.local/share/JetBrains/Toolbox/apps/datagrip/ch-0/211.7142.37/lib/trove4j.jar:/home/robert/.local/share/JetBrains/Toolbox/apps/datagrip/ch-0/211.7142.37/lib/groovy-2.5.11.jar:/home/robert/.local/share/JetBrains/Toolbox/apps/datagrip/ch-0/211.7142.37/plugins/DatabaseTools/lib/jdbc-console.jar:/home/robert/.config/JetBrains/DataGrip2021.1/jdbc-drivers/PostgreSQL/42.2.5/postgresql-42.2.5.jar:/home/robert/.config/JetBrains/DataGrip2021.1/jdbc-drivers/PostgreSQL/42.2.5/jna-platform-win-4.4.0.jar:/home/robert/.config/JetBrains/DataGrip2021.1/jdbc-drivers/PostgreSQL/42.2.5/jna-win-4.4.0.jar:/home/robert/.config/JetBrains/DataGrip2021.1/jdbc-drivers/PostgreSQL/42.2.5/waffle-jna-win-1.8.1.jar com.intellij.database.remote.RemoteJdbcServer org.postgresql.Driver
+257:robert     79068  0.0  0.0  17068  9128 pts/4    Ss+  11:07   0:00 /bin/bash --rcfile /home/robert/.local/share/JetBrains/Toolbox/apps/PhpStorm/ch-0/211.7142.44/plugins/terminal/jediterm-bash.in -i
+258:robert     93483  0.0  0.0  17068  9012 pts/5    Ss+  11:51   0:00 /bin/bash --rcfile /home/robert/.local/share/JetBrains/Toolbox/apps/PhpStorm/ch-0/211.7142.44/plugins/terminal/jediterm-bash.in -i
+ 1963  mkdir homework
+ 1964  cd homework/
+ 1965  touch processes.txt
+ 1966  ps aux > processes.txt
+ 1967  cp processes.txt copy.txt
+ 1968  mkdir backup
+ 1969  mv copy.txt backup/
+ 1970  wc -l processes.txt
+ 1971  wc -l processes.txt > selected.txt
+ 1974  grep -n '/bin' processes.txt >> selected.txt
+ 1976  history
+ 1977  history | tail -n 20 > commands.txt
+ 
