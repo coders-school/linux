@@ -30,7 +30,7 @@ jd         30193 15.4  6.8 921228 139796 ?       SNl  17:31   0:03 /usr/bin/pyth
    26  $> processes.txt
    27  clear
    28  -clear
-   29  cd anyname/
+   29  cd anyname/ 
    30  >processes.txt
    31  -ls
    32  ls
