@@ -1,0 +1,26 @@
+ 2023  mkdir Zadanie1
+ 2024  cd Zadanie1
+ 2025  touch processes.txt
+ 2026  ls
+ 2027  ps aux > processes.txt
+ 2028  less processes.txt 
+ 2029  cp processes.txt copy.txt
+ 2030  ls
+ 2031  more copy.txt 
+ 2032  man wc
+ 2033  wc -l processes.txt 
+ 2034  less processes.txt 
+ 2035  wc -l processes.txt 
+ 2036  man wc
+ 2037  wc -l processes.txt > selected.txt
+ 2038  ls
+ 2039  less selected.txt 
+ 2040  grep "/bin" processes.txt 
+ 2041  grep "/bin" processes.txt >> selected.txt 
+ 2042  more selected.txt 
+ 2043  history
+ 2044  man history
+ 2045  history
+ 2046  man tail
+ 2047  history | tail -n23
+ 2048  history
