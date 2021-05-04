@@ -37,7 +37,7 @@ kurs@alx:~/Pulpit/CODERS_CPP/ZAD1$ cat selected.txt commands.txt
  1326  wc -l processes.txt > selected.txt
  1327  ls
  1328  cat selected.txt
- 1329  grep -n "/bin" processes.txt >> selected.txt
+ 1329  grep "/bin" -rni processes.txt >> selected.txt
  1330  cat selected.txt
  1331  history
  1332  tail -19 history
