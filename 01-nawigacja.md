@@ -25,3 +25,5 @@
 *  względne - względem aktualnego katalogu (`pwd`)
 
 HELLO
+HeLLooo World
+sth more
