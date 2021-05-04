@@ -1,0 +1,65 @@
+jd@jd-VirtualBox:~/Desktop/anyname$ cat selected.txt commands.txt 
+184 processes.txt
+message+     533  0.0  0.2   9276  5896 ?        Ss   16:44   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         541  0.0  0.7  50480 14644 ?        Ss   16:44   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         660  0.0  0.7 129012 16024 ?        Ssl  16:44   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+jd           798  0.0  0.6 1943836 12780 ?       S<sl 16:44   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+jd           803  0.0  0.2 251348  5280 ?        SLl  16:44   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+jd           807  0.0  0.2 175180  6024 tty2     Ssl+ 16:44   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+jd           815  0.0  0.2   8844  5772 ?        Ss   16:44   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+jd           903  0.0  0.3 251056  6228 ?        Sl   16:45   0:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+jd           986  0.0  0.0   6040    36 ?        Ss   16:45   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+jd          1015  0.0  0.1   7248  3760 ?        S    16:45   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+jd          1048  1.8 14.3 3744596 292868 ?      Ssl  16:45   0:52 /usr/bin/gnome-shell
+jd          1135  0.0  0.7 2609924 14388 ?       Sl   16:45   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+jd          1187  0.1  1.2 992356 25664 ?        Sl   16:45   0:03 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
+jd         10476  0.6  3.3 1015200 67676 ?       Sl   17:22   0:03 /usr/bin/nautilus --gapplication-service
+whoopsie   10791  0.0  0.7 327252 15108 ?        Ssl  17:22   0:00 /usr/bin/whoopsie -f
+jd         30193 15.4  6.8 921228 139796 ?       SNl  17:31   0:03 /usr/bin/python3 /usr/bin/update-manager --no-update --no-focus-on-map
+   15  mkdir anyname
+   16  cd anyname
+   17  mkdir processes.txt
+   18  ls
+   19  cat processes.txt
+   20  ps aux
+   21  echo ps aux >> processes.txt
+   22  $> processes.txt
+   23  echo ps aux >> processes.txt
+   24  echo "`ps aux --sort --rss`
+   25  > processes.txt
+   26  $> processes.txt
+   27  clear
+   28  -clear
+   29  cd anyname/
+   30  >processes.txt
+   31  -ls
+   32  ls
+   33  echo "`ps aux --sort --rss`"
+   34  echo "ps aux" >> processes.txt 
+   35  ps aux --sort --rss >> processes.txt 
+   36  ps aux >>processes.txt 
+   37  cp processes.txt >> copy.txt
+   38  cp processes.txt copy.txt
+   39  cat backup
+   40  mkdir backup
+   41  mv copy.txt backup
+   42  wc -l backup/copy.txt
+   43  >selected.txt
+   44  wc -l >>selected.txt 
+   45  wc -l processes.txt >>selected.txt 
+   46  grep /bin processes.txt 
+   47  grep /bin processes.txt >> selected.txt 
+   48  history
+   49  tail 10 history
+   50  tail -n 10 history
+   51  tail -n 10 --history
+   52  history
+   53  history 2
+   54  history -15
+   55  history 38
+   56  history +15
+   57  history 16 | tail -n 16
+   58  history 10 20
+   59  history | tail -n 3
+   60  history | tail -n 45 >> commands.txt
+   61  history | tail -n 47 >> commands.txt
