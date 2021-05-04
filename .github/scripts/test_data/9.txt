@@ -1,0 +1,73 @@
+kurs@alx:~/Pulpit/CODERS_CPP/ZAD1$ cat selected.txt commands.txt
+201 processes.txt
+93:message+     569  0.0  0.1   9940  6620 ?        Ss   09:31   0:03 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+96:root         577  0.0  0.5  41860 20152 ?        Ss   09:31   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+110:root         728  0.0  0.5 120648 22632 ?        Ssl  09:31   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+111:whoopsie     761  0.0  0.3 253124 15584 ?        Ssl  09:31   0:00 /usr/bin/whoopsie -f
+122:kurs        1361  0.0  0.4 1485080 19208 ?       S<sl 09:33   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+124:kurs        1365  0.0  0.1   9628  6868 ?        Ss   09:33   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+128:kurs        1400  0.0  0.1 243044  7968 ?        Sl   09:33   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+134:kurs        1431  0.0  0.1 166720  6648 tty2     Ssl+ 09:33   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+138:kurs        1550  0.0  0.0  25140   360 ?        S    09:33   0:00 /usr/bin/VBoxClient --clipboard
+139:kurs        1551  0.0  0.1 157544  4044 ?        Sl   09:33   0:00 /usr/bin/VBoxClient --clipboard
+140:kurs        1560  0.0  0.0  25140   360 ?        S    09:33   0:00 /usr/bin/VBoxClient --seamless
+141:kurs        1561  0.0  0.0 157376  2792 ?        Sl   09:33   0:00 /usr/bin/VBoxClient --seamless
+142:kurs        1565  0.0  0.0  25140   360 ?        S    09:33   0:00 /usr/bin/VBoxClient --draganddrop
+143:kurs        1566  0.2  0.0 223428  2700 ?        Sl   09:33   0:30 /usr/bin/VBoxClient --draganddrop
+144:kurs        1570  0.0  0.0  25140   360 ?        S    09:33   0:00 /usr/bin/VBoxClient --vmsvga
+145:kurs        1571  0.0  0.0 159656  3376 ?        Sl   09:33   0:00 /usr/bin/VBoxClient --vmsvga
+146:kurs        1582  0.0  0.0   6040   456 ?        Ss   09:33   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+148:kurs        1612  0.0  0.1   7248  4272 ?        S    09:33   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+151:kurs        1659  0.5  9.3 4242488 375456 ?      Ssl  09:33   1:14 /usr/bin/gnome-shell
+163:kurs        1748  0.0  0.6 2527648 26852 ?       Sl   09:33   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+187:kurs        1959  0.0  5.4 1227572 219040 ?      Sl   09:33   0:12 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
+ 1313  mkdir ZAD1
+ 1314  touch ./ZAD1/processes.txt
+ 1315  cd ZAD1/
+ 1316  ls
+ 1317  ps aux > processes.txt
+ 1318  cat processes.txt
+ 1319  cp processes.txt  copy.txt
+ 1320  mkdir backup
+ 1321  ls
+ 1322  mv copy.txt  ./backup/
+ 1323  ls
+ 1324  wc --help
+ 1325  wc -l processes.txt
+ 1326  wc -l processes.txt > selected.txt
+ 1327  ls
+ 1328  cat selected.txt
+ 1329  grep -n "/bin" processes.txt >> selected.txt
+ 1330  cat selected.txt
+ 1331  history
+ 1332  tail -19 history
+ 1333  echo history | tail 25 > commands.txt
+ 1334  echo history 30 | tail  > commands.txt
+ 1335  cat commands.txt
+ 1336  echo history  > commands.txt
+ 1337  cat commands.txt
+ 1338  echo history  | tail  commands.txt
+ 1339  history 25 | tail  commands.txt
+ 1340  cat commands.txt
+ 1341  history
+ 1342  history > commands.txt
+ 1343  cat commands.txt
+ 1344  tail --
+ 1345  tail --help
+ 1346  tail ilines = 25
+ 1347  tail ilines = 25 commands.txt
+ 1348  tail -lines = 25 commands.txt
+ 1349  tail -25 commands.txt
+ 1350  history
+ 1351  history | tail -37 > commands.txt
+ 1352  cat commands.txt
+ 1353  history | tail -397 > commands.txt
+ 1354  history | tail -39 > commands.txt
+ 1355  cat commands.txt
+ 1356  history | tail -42 > commands.txt
+ 1357  cat commands.txt
+ 1358  history | tail -452 > commands.txt
+ 1359  history | tail -46 > commands.txt
+ 1360  cat commands.txt
+ 1361  history
+ 1362  history | tail -50 > commands.txt
