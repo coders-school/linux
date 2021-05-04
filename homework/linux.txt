@@ -1,0 +1,35 @@
+robert@robert-work-new:~/Learning/CPP/homework$ cat selected.txt ; cat commands.txt 
+356
+2
+174
+211
+221
+249
+251
+253
+255
+257
+258
+ 1934  mkdir homework
+ 1935  cd homework/
+ 1936  touch processes.txt
+ 1937  ps aux
+ 1938  ps aux > processes.txt 
+ 1939  cat processes.txt 
+ 1940  cp processes.txt copy.txt
+ 1941  mkdir backup
+ 1942  mv copy.txt backup/
+ 1943  cat processes.txt | wc -l
+ 1944  cat processes.txt | wc -l > selected.txt
+ 1945  cat selected.txt
+ 1946  grep --help
+ 1947  grep -n '\bin' processes.txt 
+ 1948  grep -n '\bin' processes.txt | cut -f1 -d:
+ 1949  grep -n '\bin' processes.txt | cut -f1 -d: > selected.txt 
+ 1950  cat selected.txt 
+ 1951  history 
+ 1952  cat processes.txt | wc -l > selected.txt
+ 1953  grep -n '\bin' processes.txt | cut -f1 -d: >> selected.txt
+ 1954  cat selected.txt 
+ 1955  history 
+ 1956  history | tail -n 25 > commands.txt
