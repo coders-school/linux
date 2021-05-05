@@ -1,0 +1,28 @@
+187 processes.txt
+message+     533  0.0  0.2   9276  5896 ?        Ss   13:34   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         541  0.0  0.5  50480 10252 ?        Ss   13:34   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         660  0.0  0.5 129012 11144 ?        Ssl  13:34   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+jd           798  0.0  0.6 1944032 12624 ?       S<sl 13:35   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+jd           803  0.0  0.2 251348  4804 ?        SLl  13:35   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+jd           807  0.0  0.2 175180  5596 tty2     Ssl+ 13:35   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+jd           815  0.0  0.2   8776  5636 ?        Ss   13:35   0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+jd           903  0.0  0.2 251056  5760 ?        Sl   13:35   0:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+jd           986  0.0  0.0   6040    36 ?        Ss   13:35   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+jd          1015  0.0  0.1   7248  3736 ?        S    13:35   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+jd          1048  2.0 11.9 3794280 242444 ?      Ssl  13:35   3:13 /usr/bin/gnome-shell
+jd          1135  0.0  0.6 2609924 12440 ?       Sl   13:35   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+jd          1187  0.0  1.2 1014028 25424 ?       Sl   13:35   0:04 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
+whoopsie   10791  0.0  0.5 327252 12176 ?        Ssl  14:12   0:00 /usr/bin/whoopsie -f
+   80  mkdir location
+   81  cd location
+   82  >processes.txt
+   83  ps aux >> processes.txt
+   84  cp processes.txt copy.txt
+   85  mkdir backup
+   86  mv copy.txt backup
+   87  selected.txt
+   88  >selected.txt
+   89  -l processes.txt >>selectd.txt
+   90  wc -l processes.txt >> selected.txt
+   91  grep /bin processes.txt >> selected.txt
+   92  history | tail -n 13 >> commands.txt
