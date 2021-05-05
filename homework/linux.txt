@@ -1,0 +1,29 @@
+jd@jd-VirtualBox:~/Desktop/location$ cat selected.txt commands.txt
+186 processes.txt
+message+     533  0.0  0.2   9276  5880 ?        Ss   14:28   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         541  0.0  0.4  50480  9692 ?        Ss   14:28   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         660  0.0  0.5 129012 10580 ?        Ssl  14:28   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+jd           798  0.0  0.6 1944032 12480 ?       S<sl 14:28   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+jd           803  0.0  0.2 251348  4608 ?        SLl  14:28   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+jd           807  0.0  0.2 175180  5436 tty2     Ssl+ 14:28   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+jd           815  0.0  0.2   8776  5572 ?        Ss   14:28   0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+jd           903  0.0  0.2 251056  5592 ?        Sl   14:28   0:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+jd           986  0.0  0.0   6040    36 ?        Ss   14:28   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+jd          1015  0.0  0.1   7248  3736 ?        S    14:28   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+jd          1048  1.8 11.7 3794280 239288 ?      Rsl  14:28   4:22 /usr/bin/gnome-shell
+jd          1135  0.0  0.6 2609924 12260 ?       Sl   14:29   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+jd          1187  0.0  2.1 1014028 42876 ?       Sl   14:29   0:05 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
+whoopsie   10791  0.0  0.6 327252 12552 ?        Ssl  15:06   0:00 /usr/bin/whoopsie -f
+   97  mkdir location
+   98  cd location
+   99  touch processes.txt
+  100  ps aus >> processes.txt
+  101  history
+  102  ps aux >> processes.txt
+  103  cp processes.txt copy.txt
+  104  mkdir backup
+  105  mv copy.txt backup
+  106  wc -l processes.txt >> selected.txt
+  107  grep /bin processes.txt commands.txt
+  108  grep /bin processes.txt >> commands.txt
+  109  history | tail -n 13 >> commands.txt
