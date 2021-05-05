@@ -1,0 +1,47 @@
+  289  mkdir dir
+  290  ls
+  291  cd dir
+  292  ls
+  293  touch processes.txt
+  294  ls
+  295  ps aux >> processes.txt
+  296  ls
+  297  cat processes.txt 
+  298  ps aux > processes.txt
+  299  ps aux
+  300  ls
+  301  cp processes.txt copy.txt
+  302  ls
+  303  cat copy.txt
+  304  mkdir backup
+  305  ls
+  306  mv copy.txt backup/
+  307  ls
+  308  tree
+  309  wc -l processes.txt
+  310  wc -l processes.txt >> selected.txt
+  311  ls
+  312  cat selected.txt 
+  313  grep -in /bin processes.txt 
+  314  grep -in /bin processes.txt  >> selected.txt
+  315  ls
+  316  cat selected.txt 
+  317  history
+  318  history | tail -n29 > commands.txt
+  319  ls
+  320  cat commands.txt 
+  321  history | tail -n30 > commands.txt
+  322  ls
+  323  cat commands.txt
+  324  history | tail -n33 > commands.txt
+  325  cat commands.txt 
+  326  history | tail -n35 > commands.txt
+  327  cat commands.txt 
+  328  history
+  329  ls
+  330  cat commands.txt 
+  331  vim commands.txt
+  332  cat commands.txt 
+  333  cat selected.txt commands.txt
+  334  ls
+  335  history
