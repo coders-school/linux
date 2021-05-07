@@ -1,26 +1,61 @@
- 2023  mkdir Zadanie1
- 2024  cd Zadanie1
- 2025  touch processes.txt
- 2026  ls
- 2027  ps aux > processes.txt
- 2028  less processes.txt 
- 2029  cp processes.txt copy.txt
+ maciej@maciej-Inspiron-5548:~/Maciej/Zadanie1_1$ more selected.txt commands.txt 
+::::::::::::::
+selected.txt
+::::::::::::::
+267 processes.txt
+93:root       835  0.0  0.2 196100 17164 ?        Ssl  maj06   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-sta
+rtup-triggers
+94:root       836  0.0  0.1 310616  9200 ?        Ssl  maj06   0:00 /usr/bin/pantheon-parental-controls-daemon
+95:message+   838  0.0  0.0  51688  6232 ?        Ss   maj06   0:16 /usr/bin/dbus-daemon --system --address=systemd: --nofo
+rk --nopidfile --systemd-activation --syslog-only
+124:maciej    1313  0.0  0.0 307248  7868 ?        Sl   maj06   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+126:maciej    1325  0.0  0.0  51104  5276 ?        Ss   maj06   0:01 /usr/bin/dbus-daemon --session --address=systemd: --no
+fork --nopidfile --systemd-activation --syslog-only
+129:maciej    1437  0.0  0.0  11300   324 ?        Ss   maj06   0:00 /usr/bin/ssh-agent /usr/bin/im-launch gnome-session --
+session=pantheon
+132:maciej    1457  0.0  0.0  50052  4268 ?        S    maj06   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults
+/at-spi2/accessibility.conf --nofork --print-address 3
+147:maciej    1528  0.0  0.2 2669024 18796 ?       S<l  maj06   0:36 /usr/bin/pulseaudio --start --log-target=syslog
+159:maciej    1659  0.0  0.0  48720  5808 pts/1    Ss   maj06   0:00 /bin/bash
+161:maciej    1676  0.0  0.0  48444  5168 pts/2    Ss+  maj06   0:00 /bin/bash
+208:maciej    2373  0.0  0.0  48432  5196 pts/0    Ss+  maj06   0:00 /bin/bash
+210:maciej    2394  0.0  0.0   4628   816 ?        S    maj06   0:00 /bin/sh -c "/home/maciej/.vscode/extensions/ms-vslives
+hare.vsliveshare-1.0.4131/dotnet_modules/vsls-agent" --autoexit --enableRpcInitialize --pipe vscode.d6066cd301c618ac8441f4a
+9982df933 --service https://prod.liveshare.vsengsaas.visualstudio.com/ --signalRServiceUri https://signlr-prod.core.vsengsa
+as.visualstudio.com/api/signalr/signalrhub --agentExtensionPath "/home/maciej/.vscode/extensions/ms-vsliveshare.vsliveshare
+-1.0.4131/dotnet_modules/Microsoft.VisualStudio.LiveShare.Agent.PresenceService.dll"
+::::::::::::::
+commands.txt
+::::::::::::::
+ 2005  mkdir Zadanie1_1
+ 2006  cd Zadanie1_1/
+ 2007  ls
+ 2008  touch processes.txt
+ 2009  ps aux > processes.txt
+ 2010  cp processes.txt copy.txt
+ 2011  ls
+ 2012  mkdir backup
+ 2013  mv copy.txt ./backup
+ 2014  ls
+ 2015  cd backup
+ 2016  ls
+ 2017  man wc
+ 2018  cd ..
+ 2019  ls
+ 2020  wc-l processes.txt 
+ 2021  wc -l processes.txt 
+ 2022  wc -l processes.txt > selected.txt
+ 2023  ls
+ 2024  man grep
+ 2025  grep -ni "/bin" processes.txt >> selected.txt
+ 2026  less selected.txt
+ 2027  history
+ 2028  history |tail=24
+ 2029  history |tail=24 > commands.txt
  2030  ls
- 2031  more copy.txt 
- 2032  man wc
- 2033  wc -l processes.txt 
- 2034  less processes.txt 
- 2035  wc -l processes.txt 
- 2036  man wc
- 2037  wc -l processes.txt > selected.txt
- 2038  ls
- 2039  less selected.txt 
- 2040  grep "/bin" processes.txt 
- 2041  grep "/bin" processes.txt >> selected.txt 
- 2042  more selected.txt 
- 2043  history
- 2044  man history
- 2045  history
- 2046  man tail
- 2047  history | tail -n23
- 2048  history
+ 2031  less commands.txt 
+ 2032  tail -help
+ 2033  tail --help
+ 2034  history
+ 2035  tail --help
+ 2036  history |tail -n32 > commands.txt
