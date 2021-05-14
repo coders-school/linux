@@ -1,0 +1,29 @@
+piotr@piotr-komputer:~/Kurs_C++$ cat selected.txt commands.txt
+  291  3436 27827 processes.txt
+142:message+     884  0.0  0.0   9968  4136 ?        Ss   19:41   0:02 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+145:root         893  0.0  0.0  41856     0 ?        Ss   19:41   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+162:root        1037  0.0  0.0 120656     0 ?        Ssl  19:41   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+168:nvidia-+    1230  0.0  0.0   5208     0 ?        Ss   19:41   0:00 /usr/bin/nvidia-persistenced --user nvidia-persistenced --no-persistence-mode --verbose
+172:whoopsie    1572  0.0  0.0 253128  4884 ?        Ssl  19:41   0:00 /usr/bin/whoopsie -f
+177:piotr       1603  1.2  0.1 2271708 10112 ?       S<sl 19:41   2:53 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+179:piotr       1609  0.0  0.0   8428  3396 ?        Ss   19:41   0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+180:piotr       1611  0.0  0.0 243076  4632 ?        Sl   19:41   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+191:piotr       1692  0.0  0.0 166720  2484 tty2     Ssl+ 19:41   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+194:piotr       1819  0.0  0.0   6040     4 ?        Ss   19:41   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+196:piotr       1841  0.0  0.0   7380  2152 ?        S    19:41   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+199:piotr       1868  2.2  3.6 4474012 291516 ?      Ssl  19:41   5:14 /usr/bin/gnome-shell
+212:piotr       1969  0.0  0.0 2933128 2140 ?        Sl   19:41   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+235:piotr       2127  0.0  0.1 1223040 13820 ?       Sl   19:41   0:07 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
+239:piotr       3470  0.0  0.1 863988  9120 ?        Sl   19:43   0:00 /usr/bin/gnome-calendar --gapplication-service
+287:piotr      32685  2.0  0.9 1069240 74316 ?       Sl   23:28   0:01 /usr/bin/nautilus --gapplication-service
+ 1238  mkdir zadanieDomoweLinux
+ 1239  touch processes.txt
+ 1240  ps aux > processes.txt
+ 1241  cp processes.txt copy.txt
+ 1242  mkdir backup
+ 1243  mv copy.txt backup
+ 1244  wc processes.txt 
+ 1245  wc processes.txt > selected.txt
+ 1246  grep -rni /bin processes.txt >> selected.txt
+ 1247  history
+ 1248  history | tail -n 11 > commands.txt
