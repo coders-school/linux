@@ -1,0 +1,31 @@
+mkdir linux
+ls
+cd linux/
+touch processes.txt
+ls
+ps aux > processes.txt 
+less processes.txt 
+cp processes.txt copy.txt
+ls
+less copy.txt 
+mkdir backup
+ls
+mv copy.txt backup/
+ls
+cd backup/
+ls
+less copy.txt 
+cd ..
+wc -l processes.txt 
+wc -l processes.txt > selected.txt
+ls
+less selected.txt 
+grep -rni "/bin" processes.txt 
+grep -rni "/bin" processes.txt >> selected.txt 
+ls
+less selected.txt 
+history 
+history | tail -n28 > commands.txt
+ls
+less commands.txt 
+cat selected.txt commands.txt 
