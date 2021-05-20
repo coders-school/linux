@@ -11,6 +11,6 @@ cat selected.txt commands.txt
     9  wc -l >> processes.txt 
    10  wc -l processes.txt 
    11  wc -l processes.txt >> selected.txt
-   12  grep /bin processes.txt >> selected.txt 
+   12  grep -n /bin processes.txt >> selected.txt 
    13  history 
    14  history | tail -15 > commands.txt
