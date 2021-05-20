@@ -1,0 +1,16 @@
+cat selected.txt commands.txt 
+5 processes.txt
+    1  cat h/f.txt 
+    2  mkdir Terminal
+    3  cd Terminal/
+    4  touch processes.txt
+    5  ps aux > processes.txt 
+    6  cp processes.txt copy.txt
+    7  mkdir backup
+    8  mv copy.txt backup/
+    9  wc -l >> processes.txt 
+   10  wc -l processes.txt 
+   11  wc -l processes.txt >> selected.txt
+   12  grep /bin processes.txt >> selected.txt 
+   13  history 
+   14  history | tail -15 > commands.txt
