@@ -1,0 +1,60 @@
+lubanskp@lubanskp-VirtualBox:~/Desktop/Kurs C++ /Linux_homework$ cat selected.txt commands.txt
+177 processes.txt
+80:message+     531  0.3  0.2   8884  5992 ?        Ss   17:16   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+82:root         543  0.0  0.9  50464 20184 ?        Ss   17:16   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+94:root         677  0.0  1.1 128992 22852 ?        Ssl  17:16   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+97:whoopsie     725  0.0  0.7 326844 15376 ?        Ssl  17:17   0:00 /usr/bin/whoopsie -f
+102:lubanskp     807  0.1  0.9 1419392 18784 ?       S<sl 17:17   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+104:lubanskp     812  0.0  0.3 251348  6936 ?        SLl  17:17   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+105:lubanskp     817  0.0  0.3 175164  6700 tty2     Ssl+ 17:17   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+108:lubanskp     844  0.1  0.4  11496  8684 ?        Ss   17:17   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+120:lubanskp     962  0.0  0.3 251056  7628 ?        Sl   17:17   0:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+121:lubanskp    1019  0.0  0.0   6040   456 ?        Ss   17:17   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+122:lubanskp    1036  0.1  0.3 322108  7120 ?        Ssl  17:17   0:00 /usr/bin/ibus-daemon --daemonize --xim
+129:lubanskp    1059  0.0  0.2   7356  4200 ?        S    17:17   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+138:lubanskp    1125  5.7 17.5 3687980 357792 ?      Ssl  17:17   0:15 /usr/bin/gnome-shell
+143:lubanskp    1193  0.0  1.2 2609696 26244 ?       Sl   17:17   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+173:lubanskp    2245  0.2  2.2 479376 44876 ?        SLl  17:19   0:00 /usr/bin/seahorse --gapplication-service
+174:lubanskp    2247  0.2  2.8 724508 58792 ?        Sl   17:19   0:00 /usr/bin/gnome-calendar --gapplication-service
+  285  ls
+  286  cd Desktop/
+  287  cd Kurs\ C++\ /
+  288  mkdir Linux_homework
+  289  ls
+  290  cd Linux_homework/
+  291  touch processes.txt
+  292  ls
+  293  ps aux > processes.txt
+  294  man ps
+  295  cp processes.txt copy.txt
+  296  ls
+  297  mkdir backup
+  298  move copy.txt backup
+  299  mv copy.txt backup
+  300  ls
+  301  cd backup/
+  302  ls
+  303  wc
+  304  man wc
+  305  wc -l copy.txt
+  306  cd ..
+  307  ls
+  308  wc -l processes.txt
+  309  wc -l processes.txt > selected.txt
+  310  ls
+  311  cat selected.txt 
+  312  ls
+  313  grep -rni /bin processes.txt 
+  314  grep -rni /bin processes.txt > selected.txt
+  315  ls
+  316  cat selected.txt 
+  317  wc -l processes.txt > selected.txt
+  318  ls
+  319  cat selected.txt 
+  320  grep -rni /bin processes.txt >> selected.txt
+  321  cat selected.txt 
+  322  clear
+  323  history
+  324  man tail
+  325  history | tail -n +285
+  326  history | tail -n +285 >> commands.txt
