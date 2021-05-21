@@ -57,4 +57,4 @@ lubanskp@lubanskp-VirtualBox:~/Desktop/Kurs C++ /Linux_homework$ cat selected.tx
   323  history
   324  man tail
   325  history | tail -n +285
-  326  history | tail -n +285 >> commands.txt
+  326  history | tail -n +285 > commands.txt
