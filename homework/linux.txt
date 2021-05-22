@@ -16,45 +16,63 @@ lubanskp@lubanskp-VirtualBox:~/Desktop/Kurs C++ /Linux_homework$ cat selected.tx
 143:lubanskp    1193  0.0  1.2 2609696 26244 ?       Sl   17:17   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
 173:lubanskp    2245  0.2  2.2 479376 44876 ?        SLl  17:19   0:00 /usr/bin/seahorse --gapplication-service
 174:lubanskp    2247  0.2  2.8 724508 58792 ?        Sl   17:19   0:00 /usr/bin/gnome-calendar --gapplication-service
-  285  ls
-  286  cd Desktop/
-  287  cd Kurs\ C++\ /
-  288  mkdir Linux_homework
-  289  ls
-  290  cd Linux_homework/
-  291  touch processes.txt
-  292  ls
-  293  ps aux > processes.txt
-  294  man ps
-  295  cp processes.txt copy.txt
-  296  ls
-  297  mkdir backup
-  298  move copy.txt backup
-  299  mv copy.txt backup
-  300  ls
-  301  cd backup/
-  302  ls
-  303  wc
-  304  man wc
-  305  wc -l copy.txt
-  306  cd ..
-  307  ls
-  308  wc -l processes.txt
-  309  wc -l processes.txt > selected.txt
-  310  ls
-  311  cat selected.txt 
-  312  ls
-  313  grep -rni /bin processes.txt 
-  314  grep -rni /bin processes.txt > selected.txt
-  315  ls
-  316  cat selected.txt 
-  317  wc -l processes.txt > selected.txt
-  318  ls
-  319  cat selected.txt 
-  320  grep -rni /bin processes.txt >> selected.txt
-  321  cat selected.txt 
-  322  clear
-  323  history
-  324  man tail
-  325  history | tail -n +285
-  326  history | tail -n +285 > commands.txt
+  285  cd Desktop/
+  286  cd Kurs\ C++\ /
+  287  mkdir Linux_homework
+  288  ls
+  289  cd Linux_homework/
+  290  touch processes.txt
+  291  ls
+  292  ps aux > processes.txt
+  293  man ps
+  294  cp processes.txt copy.txt
+  295  ls
+  296  mkdir backup
+  297  move copy.txt backup
+  298  mv copy.txt backup
+  299  ls
+  300  cd backup/
+  301  ls
+  302  wc
+  303  man wc
+  304  wc -l copy.txt
+  305  cd ..
+  306  ls
+  307  wc -l processes.txt
+  308  wc -l processes.txt > selected.txt
+  309  ls
+  310  cat selected.txt 
+  311  ls
+  312  grep -rni /bin processes.txt 
+  313  grep -rni /bin processes.txt > selected.txt
+  314  ls
+  315  cat selected.txt 
+  316  wc -l processes.txt > selected.txt
+  317  ls
+  318  cat selected.txt 
+  319  grep -rni /bin processes.txt >> selected.txt
+  320  cat selected.txt 
+  321  clear
+  322  history
+  323  man tail
+  324  history | tail -n +285
+  325  history | tail -n +285 >> commands.txt
+  326  ls
+  327  cat commands.txt 
+  328  less selected.txt
+  329  less selected.txt commands.txt
+  330  cat selected.txt commands.txt
+  331  history | tail -n +285 > commands.txt
+  332  cat selected.txt commands.txt
+  333  man tail
+  334  history | tail -n 15
+  335  history | tail -n 20
+  336  history | tail -n 30
+  337  history | tail -n 60
+  338  history | tail -n 55
+  339  cd Desktop/
+  340  cd Kurs\ C++\ /
+  341  ls
+  342  cd Linux_homework/
+  343  ls
+  344  history | tail -n 60 > commands.txt
