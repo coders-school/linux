@@ -20,6 +20,6 @@ wiktor      2606  1.7  4.7 1345912 384292 ?      Sl   18:55   0:11 /snap/snap-st
   211  mkdir backup
   212  mv copy.txt backup/
   213  wc -l processes.txt >> selected.txt
-  214  grep "/bin" processes.txt >> selected.txt 
+  214  grep -n /bin processes.txt >> selected.txt 
   215  history
   216  history | tail -n 10 >> commands.txt
