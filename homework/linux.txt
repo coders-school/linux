@@ -4,21 +4,21 @@ command.txt
 ::::::::::::::
  2017  mkdir linux 
  2018  cd linux/
- 2019  touch processec.txt
- 2020  ps aux > processec.txt 
+ 2019  touch processes.txt
+ 2020  ps aux > processes.txt 
  2021  cp processec.txt copy.txt
  2022  ls
  2023  mkdir backup
  2024  mv copy.txt backup/
  2025  ls
  2026  ls backup/
- 2027  wc processec.txt 
- 2028  wc -l processec.txt 
- 2029  wc -l processec.txt > selected.txt
+ 2027  wc processes.txt 
+ 2028  wc -l processes.txt 
+ 2029  wc -l processes.txt > selected.txt
  2030  ls
  2031  less selected.txt 
- 2032  grep -rni /bin ./processec.txt
- 2033  grep -rni /bin ./processec.txt * >> selected.txt 
+ 2032  grep -rni /bin ./processes.txt
+ 2033  grep -rni /bin ./processes.txt * >> selected.txt 
  2034  less selected.txt 
  2035  history
  2036  history | tail 20 > command.txt
@@ -29,7 +29,7 @@ command.txt
  2041  history | tail -n23
  2042  history | tail -n26 >> command.txt 
 ::::::::::::::
-processec.txt
+processes.txt
 ::::::::::::::
 USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
 root           1  0.0  0.1 315232 11572 ?        Ss   11:33   0:01 /sbin/init splash
