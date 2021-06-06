@@ -5,7 +5,7 @@ command.txt
  2017  mkdir linux 
  2018  cd linux/
  2019  touch processec.txt
- 2020  ps aux >> processec.txt 
+ 2020  ps aux > processec.txt 
  2021  cp processec.txt copy.txt
  2022  ls
  2023  mkdir backup
@@ -14,14 +14,14 @@ command.txt
  2026  ls backup/
  2027  wc processec.txt 
  2028  wc -l processec.txt 
- 2029  wc -l processec.txt >> selected.txt
+ 2029  wc -l processec.txt > selected.txt
  2030  ls
  2031  less selected.txt 
- 2032  grep -rni /bin *
- 2033  grep -rni /bin * >> selected.txt 
+ 2032  grep -rni /bin ./processec.txt
+ 2033  grep -rni /bin ./processec.txt * >> selected.txt 
  2034  less selected.txt 
  2035  history
- 2036  history | tail 20 >> command.txt
+ 2036  history | tail 20 > command.txt
  2037  ls
  2038  less command.txt 
  2039  tail man
