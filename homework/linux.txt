@@ -1,0 +1,91 @@
+206 copy.txt
+101:message+     592  0.9  0.0   9876  6500 ?        Ss   12:45   0:04 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+104:root         603  0.0  0.1  50488 20216 ?        Ss   12:45   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+114:root         755  0.0  0.2 129260 22772 ?        Ssl  12:45   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+116:whoopsie     798  0.0  0.1 326856 15596 ?        Ssl  12:46   0:00 /usr/bin/whoopsie -f
+129:onarix      1549  0.0  0.1 1231564 19308 ?       S<sl 12:47   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+131:onarix      1555  0.2  0.0  12464  9652 ?        Ss   12:47   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+134:onarix      1578  0.0  0.0 251708  7256 ?        Sl   12:47   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+142:onarix      1629  0.0  0.0 175348  6720 tty2     Ssl+ 12:47   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+145:onarix      1720  0.0  0.0  33772   364 ?        S    12:47   0:00 /usr/bin/VBoxClient --clipboard
+146:onarix      1722  0.0  0.0 165908  4176 ?        Sl   12:47   0:00 /usr/bin/VBoxClient --clipboard
+147:onarix      1732  0.0  0.0  33772   364 ?        S    12:47   0:00 /usr/bin/VBoxClient --seamless
+148:onarix      1733  0.0  0.0 166008  2788 ?        Sl   12:47   0:00 /usr/bin/VBoxClient --seamless
+149:onarix      1739  0.0  0.0  33772   364 ?        S    12:47   0:00 /usr/bin/VBoxClient --draganddrop
+150:onarix      1740  0.2  0.0 166524  2780 ?        Sl   12:47   0:00 /usr/bin/VBoxClient --draganddrop
+151:onarix      1744  0.0  0.0  33772   364 ?        S    12:47   0:00 /usr/bin/VBoxClient --vmsvga
+152:onarix      1746  0.0  0.0 168148  3516 ?        Sl   12:47   0:00 /usr/bin/VBoxClient --vmsvga
+153:onarix      1756  0.0  0.0   6040   452 ?        Ss   12:47   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+155:onarix      1848  0.0  0.0   7248  4280 ?        S    12:47   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+159:onarix      1933  5.3  2.0 3936272 231732 ?      Ssl  12:47   0:19 /usr/bin/gnome-shell
+172:onarix      2067  0.0  0.2 2745168 26656 ?       Sl   12:47   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+197:onarix      2369  5.3  1.8 1477032 206780 ?      Sl   12:47   0:18 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
+  432  ls
+  433  mkdir homework
+  434  ls
+  435  cd homework
+  436  touch processes.txt
+  437  ls
+  438  ps aux
+  439  ps aux > processes.txt 
+  440  cat processes.txt
+  441  man cp
+  442  clear
+  443  cp processes.txt copy.txt
+  444  ls
+  445  cat copy.txt 
+  446  man wc
+  447  ls
+  448  man wc
+  449  wc copy.txt -l
+  450  cd ..
+  451  ls
+  452  ./hello.cpp
+  453  less hello.cpp
+  454  wc hello.cpp -l
+  455  less hello.cpp
+  456  cd homework/
+  457  wc copy.txt -l > selected.txt
+  458  ls
+  459  less selected.txt 
+  460  grep
+  461  grep processes.txt 
+  462  grep main processes.txt 
+  463  grep /bin processes.txt 
+  464  grep /bin processes.txt -n
+  465  grep /bin processes.txt -n > selected.txt 
+  466  less selected.txt 
+  467  more selected.txt 
+  468  rm selected.txt 
+  469  ls
+  470  wc copy.txt -l > selected.txt
+  471  grep /bin processes.txt -n > selected.txt
+  472  rm selected.txt 
+  473  wc copy.txt -l > selected.txt
+  474  grep /bin processes.txt -n >> selected.txt
+  475  less selected.txt 
+  476  history
+  477  man history 
+  478  man tail 
+  479  tail -n +432
+  480  tail -n 432
+  481  tail -n +432 > commands.txt
+  482  man tail
+  483  tail -n +432 history
+  484  man tail
+  485  tail -n +432 << EOF
+history
+EOF
+
+  486  tail << EOF
+history
+EOF
+
+  487  man tail
+  488  tail 0
+  489  tail 'history'
+  490  man tail
+  491  history | tail -n 432
+  492  history | tail -n +432
+  493  ls
+  494  history | tail -n +432 > commands.txt 
