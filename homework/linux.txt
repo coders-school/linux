@@ -24,7 +24,7 @@ mati@mati-VirtualBox:~/Zadanie$ cat selected.txt commands.txt
   141  mv copy.txt backup/
   142  wc -l processes.txt 
   143  wc -l processes.txt > selected.txt
-  144  grep -n "/bin" processes.txt >>selected.txt 
+  144  grep -rni /bin processes.txt >>selected.txt 
   145  history 
   146  history | tail -n 12 > commands.txt
 
