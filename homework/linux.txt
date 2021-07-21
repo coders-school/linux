@@ -1,0 +1,33 @@
+cat selected.txt commands.txt
+7 processes.txt
+    4  mkdir dowolny_katalog
+    5  cd dowolny_katalog/
+    6  touch processes.txt
+    7  ps aux > processes.txt
+    8  cat processes.txt
+    9  cp processes.txt copy.txt
+   10  ls
+   11  mkdir backup
+   12  mv copy.txt backup/copy.txt
+   13  ls
+   14  ls backup/
+   15  wc processes.txt
+   16  wc -l processes.txt
+   17  wc -l processes.txt > selected.txt
+   18  ls
+   19  cat selected.txt
+   20  grep '/bin' >> selected.txt
+   21  cat selected.txt
+   22  grep '/bin' processes.txt >> selected.txt
+   23  cat selected.txt
+   24  history
+   25  history tail -22
+   26  tail 22 history
+   27  tail -22 history
+   28  history | tail 22
+   29  history | tail -22
+   30  history | tail -25
+   31  history | tail -26
+   32  history | tail -28
+   33  history | tail -30
+   34  history | tail -31 > commands.txt
