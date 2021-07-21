@@ -31,3 +31,4 @@ cat selected.txt commands.txt
    32  history | tail -28
    33  history | tail -30
    34  history | tail -31 > commands.txt
+
