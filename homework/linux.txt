@@ -1,0 +1,42 @@
+231 processes.txt
+message+     509  0.0  0.0   8780  5868 ?        Ss   11:35   0:03 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         529  0.0  0.1  41864 20044 ?        Ss   11:35   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+krzyszt+    1268  0.0  0.1 1411604 20096 ?       S<sl 12:04   0:01 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+krzyszt+    1271  0.0  0.0 243064  8272 ?        Sl   12:04   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+krzyszt+    1281  0.0  0.0   8252  5336 ?        Ss   12:04   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+krzyszt+    1344  0.0  0.0   6032   456 ?        Ss   12:04   0:00 /usr/bin/ssh-agent /usr/bin/im-launch cinnamon-session-cinnamon
+krzyszt+    1373  0.0  0.0   7504  4512 ?        S    12:04   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+krzyszt+    1570  0.0  0.3 332880 55220 ?        Sl   12:04   0:00 /usr/bin/python3 /usr/bin/redshift-gtk
+krzyszt+    1588  0.0  0.0 306824  6128 ?        Sl   12:04   0:02 /usr/bin/redshift -v
+krzyszt+    1812  0.0  0.0  21056  9844 ?        S    12:04   0:00 /usr/bin/python3 /usr/lib/blueberry/safechild /usr/sbin/rfkill event
+krzyszt+    1920  0.0  0.2  62460 35068 ?        S    12:05   0:00 /usr/bin/python3 /usr/share/system-config-printer/applet.py
+  355  cd linuxCodersSchool/
+  356  touch processes.txt
+  357  ls
+  358  ps aux > processes.txt 
+  359  less processes.txt 
+  360  cp processes.txt copy.txt
+  361  l
+  362  man wc
+  363  wc -l copy.txt 
+  364  l
+  365  mkdir backup
+  366  mv copy.txt backup/
+  367  l
+  368  wc -l processes.txt 
+  369  less processes.txt 
+  370  xed processes.txt 
+  371  wc -l processes.txt > selected.txt
+  372  l
+  373  cat selected.txt 
+  374  grep processes.txt /bin
+  375  grep processes.txt "/bin"
+  376  grep "/bin" processes.txt 
+  377  grep /bin processes.txt 
+  378  grep /bin processes.txt >> selected.txt 
+  379  cat selected.txt 
+  380  history 
+  381  history | tail 30
+  382  history | tail
+  383  history | tail -n30
+  384  history | tail -n30 > commands.txt
