@@ -33,7 +33,7 @@ krzyszt+    1920  0.0  0.2  62460 35068 ?        S    12:05   0:00 /usr/bin/pyth
   375  grep processes.txt "/bin"
   376  grep "/bin" processes.txt 
   377  grep /bin processes.txt 
-  378  grep /bin processes.txt >> selected.txt 
+  378  grep "/bin" processes.txt >> selected.txt 
   379  cat selected.txt 
   380  history 
   381  history | tail 30
