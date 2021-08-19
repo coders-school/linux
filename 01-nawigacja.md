@@ -28,3 +28,5 @@ H3llo CoderS
 H3LLO
 H3LL0 W0rLD
 SomeThing M0r3
+HELLO
+sth more
