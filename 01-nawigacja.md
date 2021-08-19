@@ -25,3 +25,4 @@
 *  względne - względem aktualnego katalogu (`pwd`)
 
 H3llo CoderS
+H3LLO
