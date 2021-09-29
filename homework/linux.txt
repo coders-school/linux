@@ -1,0 +1,53 @@
+cat selected.txt commands.txt 
+203 processes.txt
+92:message+     551  0.3  0.0   9104  6408 ?        Ss   07:00   0:04 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+95:root         563  0.0  0.1  50492 20128 ?        Ss   07:00   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+106:root         666  0.0  0.2 129188 22812 ?        Ssl  07:00   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+107:whoopsie     736  0.0  0.1 326872 15712 ?        Ssl  07:01   0:00 /usr/bin/whoopsie -f
+115:rajzel       938  0.2  0.1 1682108 19336 ?       S<sl 07:01   0:03 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+117:rajzel       943  0.0  0.0 251320  7160 ?        Sl   07:01   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+118:rajzel       947  0.0  0.0 175180  6780 tty2     Ssl+ 07:01   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+121:rajzel       952  0.0  0.0  11992  9188 ?        Ss   07:01   0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+133:rajzel      1122  0.0  0.0  33772   360 ?        S    07:01   0:00 /usr/bin/VBoxClient --clipboard
+134:rajzel      1123  0.0  0.0 165908  4324 ?        Sl   07:01   0:00 /usr/bin/VBoxClient --clipboard
+135:rajzel      1134  0.0  0.0  33772   360 ?        S    07:01   0:00 /usr/bin/VBoxClient --seamless
+136:rajzel      1135  0.0  0.0 166008  2776 ?        Sl   07:01   0:00 /usr/bin/VBoxClient --seamless
+137:rajzel      1141  0.0  0.0  33772   364 ?        S    07:01   0:00 /usr/bin/VBoxClient --draganddrop
+138:rajzel      1142  0.7  0.0 166524  2784 ?        Sl   07:01   0:10 /usr/bin/VBoxClient --draganddrop
+139:rajzel      1147  0.0  0.0  33772   364 ?        S    07:01   0:00 /usr/bin/VBoxClient --vmsvga
+140:rajzel      1148  0.0  0.0 168288  3664 ?        Sl   07:01   0:00 /usr/bin/VBoxClient --vmsvga
+141:rajzel      1158  0.0  0.0   6040   456 ?        Ss   07:01   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+143:rajzel      1189  0.0  0.0   7248  4356 ?        S    07:01   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+146:rajzel      1234  3.6  2.9 4205972 330616 ?      Ssl  07:01   0:49 /usr/bin/gnome-shell
+159:rajzel      1347  0.0  0.2 2535976 26980 ?       Sl   07:01   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+190:rajzel      1809  1.0  1.5 964792 179444 ?       SNl  07:03   0:12 /usr/bin/python3 /usr/bin/update-manager --no-update --no-focus-on-map
+  403  mkdir linux-homework
+  404  cd linux-homework/
+  405  touch processes.txt
+  406  ps aux > processes.txt 
+  407  cat processes.txt 
+  408  clear
+  409  cp processes.txt copy.txt
+  410  mkdir backup
+  411  mv copy.txt backup/
+  412  cd backup/
+  413  ls
+  414  cd..
+  415  cd ..
+  416  wc -l processes.txt 
+  417  wc processes.txt 
+  418  wc -l processes.txt > selected.txt
+  419  cat selected.txt 
+  420  man grep
+  421  grep -n "/bin" processes.txt
+  422  grep -n "/bin" processes.txt >> selected.txt
+  423  cat selected.txt 
+  424  history
+  425  history tail -n20
+  426  history tail -n 20
+  427  history tail 20
+  428  history tail -20
+  429  history tail -n 20
+  430  history | tail -n 20
+  431  history | tail -n 30
+  432  history | tail -n 30 > commands.txt
