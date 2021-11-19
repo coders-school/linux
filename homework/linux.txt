@@ -16,7 +16,7 @@ cat ./backup/selected.txt commands.txt
    25  selected.txt < count.txt
    26  nano selected.txt < count.txt
    27  nano selected.txt
-   28  cat < count.txt | > selected.txt
+   28  wc -l processes.txt > selected.txt
    29  cat selected.txt
    30  cat count.txt
    31  cat selected.txt
