@@ -23,8 +23,8 @@ cat ./backup/selected.txt commands.txt
    32  cat < count.txt > selected.txt
    33  cat selected.txt
    34  cd ..
-   35  cat processes.txt | grep "/bin" >> ./backup/selected.txt
+   35  cat processes.txt | grep -n "/bin" >> ./backup/selected.txt
    36  history
    37  history | tail
    38  history | tail -n +25
-   39  history | tail -n +13 > commands.txt
+   39  history | tail -n 11 > commands.txt
