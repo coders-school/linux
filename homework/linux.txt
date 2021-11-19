@@ -1,0 +1,29 @@
+cat ./backup/selected.txt commands.txt
+6
+   13  mkdir homework
+   14  cd homework/
+   15  ps aux > processes.txt
+   16  ps aux
+   17  cp processes.txt copy.txt
+   18  wc -l processes.txt
+   19  mkdir backup
+   20  mv copy.txt ./backup/
+   21  cd backup/
+   22  echo 6 > count.txt
+   23  selected.txt < count.txt
+   24  touch selected.txt
+   25  selected.txt < count.txt
+   26  nano selected.txt < count.txt
+   27  nano selected.txt
+   28  cat < count.txt | > selected.txt
+   29  cat selected.txt
+   30  cat count.txt
+   31  cat selected.txt
+   32  cat < count.txt > selected.txt
+   33  cat selected.txt
+   34  cd ..
+   35  cat processes.txt | grep "/bin" >> ./backup/selected.txt
+   36  history
+   37  history | tail
+   38  history | tail -n +25
+   39  history | tail -n +13 > commands.txt
