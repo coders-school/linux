@@ -1,7 +1,8 @@
 cat ./backup/selected.txt commands.txt
 6
-   13  mkdir homework
-   14  cd homework/
+   12  mkdir homework
+   13  cd homework/
+   14  touch processes.txt
    15  ps aux > processes.txt
    16  ps aux
    17  cp processes.txt copy.txt
