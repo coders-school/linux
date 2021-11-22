@@ -1,0 +1,32 @@
+aleksander@Aleksander:~/Katalog1$ cat selected.txt commands.txt 
+349 processes.txt
+message+     806  0.0  0.0   9908  6548 ?        Ss   20:14   0:03 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         818  0.0  0.1  50492 20200 ?        Ss   20:14   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         943  0.0  0.1 129284 23052 ?        Ssl  20:14   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+whoopsie    1566  0.0  0.1 253524 15968 ?        Ssl  20:15   0:00 /usr/bin/whoopsie -f
+aleksan+    1713  5.7  0.1 3067776 22360 ?       S<sl 20:19   5:30 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+aleksan+    1719  0.0  0.0   8376  5552 ?        Ss   20:19   0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+aleksan+    1724  0.0  0.0 251396  7372 ?        Sl   20:19   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+aleksan+    2199  0.0  0.0 175220  6700 tty2     Ssl+ 20:19   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+aleksan+    2350  0.0  0.0   6040   456 ?        Ss   20:19   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+aleksan+    2396  0.0  0.0   7248  4276 ?        S    20:19   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+aleksan+    2444  4.0  1.9 6081724 309268 ?      Ssl  20:19   3:49 /usr/bin/gnome-shell
+aleksan+    2566  0.0  0.1 2941680 27076 ?       Sl   20:19   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+aleksan+    2708  0.1  2.2 1798560 352908 ?      Sl   20:19   0:09 /snap/snap-store/547/usr/bin/snap-store --gapplication-service
+aleksan+    5578  0.0  0.0 170896  2224 ?        Ssl  20:26   0:00 /usr/bin/speech-dispatcher --spawn --communication-method unix_socket --socket-path /run/user/1000/speech-dispatcher/speechd.sock
+aleksan+   11150  3.3  0.4 1072372 69232 ?       Sl   21:53   0:02 /usr/bin/nautilus --gapplication-service
+  431  mkdir Katalog1
+  432  cd Katalog1
+  433  touch processes.txt
+  434  ps aux > processes.txt
+  435  cp processes.txt copy.txt
+  436  mkdir backup
+  437  mv copy.txt ./backup/
+  438  wc -l processes.txt
+  439  wc -l processes.txt > selected.txt
+  440  grep "/bin" processes.txt >> selected.txt 
+  441  history
+  442  history | tail -n21 > commands.txt
+  443  history
+  444  history | tail -n13 > commands.txt
+  445  history | tail -n15 > commands.txt
