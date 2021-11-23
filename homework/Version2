@@ -15,7 +15,6 @@ aleksan+    2566  0.0  0.1 2941680 27076 ?       Sl   20:19   0:00 /usr/bin/gjs 
 aleksan+    2708  0.1  2.2 1798560 352908 ?      Sl   20:19   0:09 /snap/snap-store/547/usr/bin/snap-store --gapplication-service
 aleksan+    5578  0.0  0.0 170896  2224 ?        Ssl  20:26   0:00 /usr/bin/speech-dispatcher --spawn --communication-method unix_socket --socket-path /run/user/1000/speech-dispatcher/speechd.sock
 aleksan+   11150  0.8  0.4 1076852 73876 ?       Sl   21:53   0:13 /usr/bin/nautilus --gapplication-service
-  460  cd ~
   461  mkdir Katalog1
   462  cd Katalog1
   463  touch processes.txt
