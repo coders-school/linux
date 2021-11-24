@@ -29,3 +29,4 @@ cat selected.txt commands.txt
   591  history | tail -n14
   592  history | tail -n15 > commands.txt
 
+
