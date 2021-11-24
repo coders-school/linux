@@ -1,0 +1,24 @@
+cat selected.txt commands.txt
+trzy linie
+backup/copy.txt:1: 1144    1143    1144      19100  pty0      197609 20:20:45 /usr/bin/bash
+backup/copy.txt:2: 1143       1    1143      18172  ?         197609 20:20:45 /usr/bin/mintty
+backup/copy.txt:3: 1182    1144    1182      18084  pty0      197609 20:21:34 /usr/bin/ps
+processes.txt:1: 1144    1143    1144      19100  pty0      197609 20:20:45 /usr/bin/bash
+processes.txt:2: 1143       1    1143      18172  ?         197609 20:20:45 /usr/bin/mintty
+processes.txt:3: 1182    1144    1182      18084  pty0      197609 20:21:34 /usr/bin/ps
+  1  mkdir zad_linux
+    2  cd zad_linux
+    3  touch processes.txt
+    4  ls -l
+    5  ps aux
+    6  cp processes.txt copy. txt
+    7  mkdir backup
+    8  mv copy.txt backup
+    9  ls -l
+   10  touch copy.txt
+   11  cp processes.txt copy.txt
+   12  mv copy.txt backup
+   13  echo trzy linie> selected.txt
+   14  grep -rni '/bin' >> selected.txt
+   15  touch commands.txt
+   16  history
