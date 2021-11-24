@@ -1,30 +1,31 @@
-aleksander@Aleksander:~/Katalog1$ cat selected.txt commands.txt
-362 processes.txt
-message+     806  0.0  0.0   9908  6548 ?        Ss   20:14   0:03 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-root         818  0.0  0.1  50492 20200 ?        Ss   20:14   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-root         943  0.0  0.1 129284 23052 ?        Ssl  20:14   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-whoopsie    1566  0.0  0.1 253524 15968 ?        Ssl  20:15   0:00 /usr/bin/whoopsie -f
-aleksan+    1713  5.4  0.1 3592064 22432 ?       S<sl 20:19   6:25 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-aleksan+    1719  0.0  0.0   8376  5552 ?        Ss   20:19   0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-aleksan+    1724  0.0  0.0 251396  7372 ?        Sl   20:19   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
-aleksan+    2199  0.0  0.0 175220  6700 tty2     Ssl+ 20:19   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-aleksan+    2350  0.0  0.0   6040   456 ?        Ss   20:19   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-aleksan+    2396  0.0  0.0   7248  4276 ?        S    20:19   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-aleksan+    2444  3.9  2.0 6086796 315912 ?      Ssl  20:19   4:44 /usr/bin/gnome-shell
-aleksan+    2566  0.0  0.1 2941680 27076 ?       Sl   20:19   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-aleksan+    2708  0.1  2.2 1798560 352908 ?      Sl   20:19   0:09 /snap/snap-store/547/usr/bin/snap-store --gapplication-service
-aleksan+    5578  0.0  0.0 170896  2224 ?        Ssl  20:26   0:00 /usr/bin/speech-dispatcher --spawn --communication-method unix_socket --socket-path /run/user/1000/speech-dispatcher/speechd.sock
-aleksan+   11150  0.8  0.4 1076852 73876 ?       Sl   21:53   0:13 /usr/bin/nautilus --gapplication-service
-  460  cd ~
-  461  mkdir Katalog1
-  462  cd Katalog1
-  463  touch processes.txt
-  464  ps aux > processes.txt
-  465  cp processes.txt copy.txt
-  466  mkdir backup
-  467  mv copy.txt ./backup/
-  468  wc -l processes.txt 
-  469  wc -l processes.txt > selected.txt
-  470  grep "/bin" processes.txt >> selected.txt
-  471  history
-  472  history | tail -n13 > commands.txt
+cat selected.txt commands.txt 
+368 processes.txt
+258:message+     792  0.4  0.0   9904  6408 ?        Ss   20:46   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+261:root         803  0.0  0.1  50492 20060 ?        Ss   20:46   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+277:root         959  0.0  0.1 129284 22748 ?        Ssl  20:46   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+283:whoopsie    1546  0.0  0.1 253524 16124 ?        Ssl  20:46   0:00 /usr/bin/whoopsie -f
+289:aleksan+    1574  0.0  0.1 1756700 20260 ?       S<sl 20:46   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+291:aleksan+    1579  0.1  0.0   8920  5984 ?        Ss   20:46   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+293:aleksan+    1585  0.0  0.0 251396  7120 ?        Sl   20:46   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+304:aleksan+    2075  0.0  0.0 175220  6740 tty2     Ssl+ 20:46   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+307:aleksan+    2228  0.0  0.0   6040   460 ?        Ss   20:46   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+309:aleksan+    2274  0.0  0.0   7248  4268 ?        S    20:46   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+312:aleksan+    2322  7.1  1.8 5786940 291640 ?      Ssl  20:46   0:16 /usr/bin/gnome-shell
+325:aleksan+    2443  0.0  0.1 2941684 27008 ?       Sl   20:46   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+347:aleksan+    2577  1.4  0.5 1336748 84360 ?       Sl   20:46   0:03 /snap/snap-store/547/usr/bin/snap-store --gapplication-service
+  578  mkdir homework1
+  579  cd homework1
+  580  touch processes.txt
+  581  ps aux >> processes.txt
+  582  cp processes.txt copy.txt
+  583  mkdir backup
+  584  mv copy.txt backup/
+  585  wc -l processes.txt 
+  586  wc -l processes.txt > selected.txt
+  587  grep -rni /bin processes.txt >> selected.txt 
+  588  history
+  589  history | tail -n11
+  590  history | tail -n12
+  591  history | tail -n14
+  592  history | tail -n15 > commands.txt
+
