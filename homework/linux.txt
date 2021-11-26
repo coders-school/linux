@@ -1,0 +1,11 @@
+➜  linux git:(homework-linux) ✗ cat selected.txt commands.txt
+6 alek/processes.txt
+10016  mkdir alek
+10017  touch alek/processes.txt
+10018  ps aux > alek/processes.txt
+10019  cp alek/processes.txt alek/copy.txt
+10020  mkdir backup
+10021  mv alek/copy.txt backup
+10022  wc -l alek/processes.txt > selected.txt
+10023  grep '/bin' alek/processes.txt >> selected.txt
+10024  history
