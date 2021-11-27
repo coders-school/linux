@@ -1,0 +1,30 @@
+tomy@DirtyHarold:~/tests$ cat selected.txt commands.txt
+248 processes.txt
+message+     466  0.0  0.0   9920  6436 ?        Ss   19:53   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         531  0.0  0.2  50492 19916 ?        Ss   19:53   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         699  0.0  0.2 129284 22824 ?        Ssl  19:53   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+whoopsie    1085  0.0  0.1 253548 15940 ?        Ssl  19:53   0:00 /usr/bin/whoopsie -f
+tomy        1447  2.9  0.2 2281268 20304 ?       S<sl 19:53   0:32 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+tomy        1452  0.0  0.0   9500  6632 ?        Ss   19:53   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+tomy        1512  0.0  0.1 251812  8288 ?        Sl   19:53   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+tomy        1527  0.0  0.0 175348  6624 tty2     Ssl+ 19:53   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+tomy        1546  0.0  0.0 251224  7536 ?        Sl   19:53   0:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+tomy        1633  0.0  0.0   6040   452 ?        Ss   19:53   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+tomy        1661  0.0  0.0   7248  4372 ?        S    19:53   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+tomy        1689  2.1  3.1 4396744 256468 ?      Ssl  19:53   0:23 /usr/bin/gnome-shell
+tomy        1759  0.0  0.3 2671664 27652 ?       Sl   19:53   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+tomy        1927  0.5  2.6 1042188 215028 ?      Sl   19:53   0:05 /snap/snap-store/558/usr/bin/snap-store --gapplication-service
+tomy        4646  0.2  1.8 930920 149348 ?       SNl  19:54   0:02 /usr/bin/python3 /usr/bin/update-manager --no-update --no-focus-on-map
+  710  mkdir tests
+  711  cd tests
+  712  touch processes.txt
+  713  ps aux > processes.txt
+  714  cp processes.txt copy.txt
+  715  mkdir backup
+  716  mv copy.txt backup/
+  717  wc -l processes.txt
+  718  wc -l processes.txt > selected.txt
+  719  grep "/bin" processes.txt
+  720  grep "/bin" processes.txt >> selected.txt
+  721  history
+  722  history | tail -n13 > commands.txt
