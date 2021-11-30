@@ -1,0 +1,32 @@
+bartek@bartek-VirtualBox:~/homework$ cat selected.txt commands.txt
+193 processes.txt
+85:message+     594  0.0  0.1   9052  5964 ?        Ss   21:33   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+87:root         601  0.0  0.5  50496 20164 ?        Ss   21:33   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+101:root         717  0.0  0.5 129188 22652 ?        Ssl  21:33   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+104:whoopsie     767  0.0  0.3 327276 16060 ?        Ssl  21:33   0:00 /usr/bin/whoopsie -f
+109:bartek       865  0.0  0.4 1682236 20020 ?       S<sl 21:33   0:01 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+111:bartek       871  0.0  0.1 251348  7076 ?        SLl  21:33   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+112:bartek       875  0.0  0.1 175180  6732 tty2     Ssl+ 21:33   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+115:bartek       882  0.0  0.1   8504  5808 ?        Ss   21:33   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+127:bartek      1050  0.0  0.0   6040   456 ?        Ss   21:33   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+130:bartek      1082  0.0  0.1   7296  4428 ?        S    21:33   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+133:bartek      1118  0.7  8.5 3717444 343844 ?      Ssl  21:33   1:02 /usr/bin/gnome-shell
+146:bartek      1218  0.0  0.6 2609924 26392 ?       Sl   21:34   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+177:bartek      4816  1.3  1.8 926728 73076 ?        Sl   23:44   0:01 /usr/bin/nautilus --gapplication-service
+    1  mkdir homework
+    2  cd homework
+    3  touch processes.txt
+    4  ps aux
+    5  ps aux >> processes.txt
+    6  less processes.txt
+    7  processes.txt > copy.txt
+    8  ls
+    9  cp processes.txt copy.txt
+   10  less copy.txt
+   11  mkdir backup
+   12  mv copy.txt backup
+   13  wc -L processes.txt > selected.txt
+   14  grep -n "/bin" processes.txt >> selected.txt
+   15  history
+   16  history | -n 16 > commands.txt
+   17  history | tail -n 17 > commands.txt
