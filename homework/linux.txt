@@ -1,33 +1,26 @@
 bartek@bartek-VirtualBox:~/homework$ cat selected.txt commands.txt
-256 processes.txt
-90:message+     598  0.1  0.1   8924  6012 ?        Ss   22:28   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-92:root         605  0.0  0.4  50496 20080 ?        Ss   22:28   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-106:root         692  0.0  0.5 128932 22676 ?        Ssl  22:28   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-110:whoopsie     739  0.0  0.4 327300 16136 ?        Ssl  22:28   0:00 /usr/bin/whoopsie -f
-115:bartek       838  0.0  0.4 1682108 19144 ?       S<sl 22:28   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-117:bartek       843  0.0  0.1 251324  6972 ?        Sl   22:28   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
-118:bartek       847  0.0  0.1 175180  6652 tty2     Ssl+ 22:28   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-121:bartek       854  0.1  0.1   9700  6816 ?        Ss   22:28   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-133:bartek      1020  0.0  0.0   6040   456 ?        Ss   22:28   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-136:bartek      1053  0.0  0.1   7296  4296 ?        S    22:28   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-139:bartek      1089  3.7  8.0 3434480 325696 ?      Ssl  22:28   0:12 /usr/bin/gnome-shell
-152:bartek      1195  0.0  0.6 2609924 26668 ?       Sl   22:29   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-176:bartek      1413  0.4  1.8 1008252 72548 ?       Sl   22:29   0:01 /usr/bin/nautilus --gapplication-service
-   53  mkdir homework
-   54  cd homework
-   55  touch processes.txt
-   56  ps aux
-   57  ps aux >> processes.txt
-   58  less processes.txt
-   59  processes.txt > copy.txt
-   60  ls
-   61  cp processes.txt copy.txt
-   62  less copy.txt
-   63  mkdir backup
-   64  mv copy.txt backup
-   65  wc -L processes.txt > selected.txt
-   66  grep "/bin" -rni processes.txt >> selected.txt
-   67  history
-   68  history | -n 16 commands.txt
-   69  history | -n 17 > commands.txt
-   70  history | tail -n 18 > commands.txt
+188 processes.txt
+89:message+     598  0.0  0.1   8924  6012 ?        Ss   22:28   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+91:root         605  0.0  0.4  50496 20080 ?        Ss   22:28   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+105:root         692  0.0  0.5 128932 22676 ?        Ssl  22:28   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+109:whoopsie     739  0.0  0.4 327280 16144 ?        Ssl  22:28   0:00 /usr/bin/whoopsie -f
+114:bartek       838  0.0  0.4 2206396 19392 ?       S<sl 22:28   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+116:bartek       843  0.0  0.1 251324  6972 ?        Sl   22:28   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+117:bartek       847  0.0  0.1 175180  6652 tty2     Ssl+ 22:28   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+120:bartek       854  0.0  0.1   9700  6816 ?        Ss   22:28   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+132:bartek      1020  0.0  0.0   6040   456 ?        Ss   22:28   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+135:bartek      1053  0.0  0.1   7296  4296 ?        S    22:28   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+138:bartek      1089  3.4  8.1 3696664 325908 ?      Ssl  22:28   0:40 /usr/bin/gnome-shell
+151:bartek      1195  0.0  0.6 2609924 26668 ?       Sl   22:29   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+175:bartek      1413  0.2  1.8 1008908 72548 ?       Sl   22:29   0:02 /usr/bin/nautilus --gapplication-service
+    1  mkdir homework
+    2  cd homework
+    3  touch processes.txt
+    4  ps aux >> processes.txt
+    5  cp processes.txt copy.txt
+    6  mkdir backup
+    7  mv copy.txt backup/
+    8  wc -l processes.txt > selected.txt
+    9  grep -rni /bin processes.txt >> selected.txt
+   10  history
+   11  history | tail -n11 > commands.txt
