@@ -26,7 +26,7 @@ bartek@bartek-VirtualBox:~/homework$ cat selected.txt commands.txt
    11  mkdir backup
    12  mv copy.txt backup
    13  wc -L processes.txt > selected.txt
-   14  grep -n "/bin" processes.txt >> selected.txt
+   14  grep "/bin" -rni processes.txt >> selected.txt
    15  history
    16  history | -n 16 > commands.txt
    17  history | tail -n 17 > commands.txt
