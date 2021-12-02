@@ -1,38 +1,38 @@
-cat selected.txt commands.txt 
+cat selected.txt commands.txt     
 382
 message+    1328  0.0  0.0  10252  6700 ?        Ss   lis19   0:58 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
 root        1350  0.0  0.0   3356  2232 ?        Ss   lis19   0:00 /usr/lib/vmware/view/bin/ftsprhvd
 root        1352  0.0  0.1  41860 19792 ?        Ss   lis19   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
 root        1380  0.0  0.0  38328  2948 ?        Ss   lis19   0:04 /usr/lib/vmware/view/bin/ftscanhvd
-root        1393  0.0  0.1 383684 26844 ?        Ssl  lis19   0:19 /opt/cisco/anyconnect/bin/vpnagentd -execv_instance
+root        1393  0.0  0.1 383684 26836 ?        Ssl  lis19   0:19 /opt/cisco/anyconnect/bin/vpnagentd -execv_instance
 root        1439  0.0  0.0   5208  2484 ?        Ss   lis19   0:04 /usr/bin/vmware-usbarbitrator
-root        1460  0.0  0.0 800952 10752 ?        Ssl  lis19   0:33 /usr/local/desktopcentralagent/bin/dcservice -t &
+root        1460  0.0  0.0 800952 10948 ?        Ssl  lis19   0:34 /usr/local/desktopcentralagent/bin/dcservice -t &
 root        1624  0.0  0.1 120560 22500 ?        Ssl  lis19   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
 whoopsie    2221  0.0  0.0 326868 12588 ?        Ssl  lis19   0:00 /usr/bin/whoopsie -f
-kulashc+    2247  0.4  0.1 5746072 20872 ?       S<sl lis19  79:48 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+kulashc+    2247  0.4  0.1 5746072 20872 ?       S<sl lis19  80:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
 kulashc+    2251  0.0  0.0  10704  7548 ?        Ss   lis19   0:18 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
 kulashc+    2258  0.0  0.0 390268  7084 ?        Sl   lis19   0:01 /usr/bin/gnome-keyring-daemon --daemonize --login
 kulashc+    2328  0.0  0.0 166552  6476 tty2     Ssl+ lis19   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
 kulashc+    2423  0.0  0.0   6040   100 ?        Ss   lis19   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
 kulashc+    2449  0.0  0.0   7520  4100 ?        S    lis19   0:06 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-kulashc+    2481  0.8  1.8 4947900 294472 ?      Ssl  lis19 169:49 /usr/bin/gnome-shell
+kulashc+    2481  0.8  1.8 4948060 294456 ?      Rsl  lis19 171:04 /usr/bin/gnome-shell
 kulashc+    2584  0.0  0.1 2662716 22584 ?       Sl   lis19   0:06 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
 kulashc+    2714  0.0  3.4 2011968 558912 ?      Sl   lis19   0:46 /snap/snap-store/547/usr/bin/snap-store --gapplication-service
 root        2830  0.0  0.0 801688  9180 ?        Sl   lis19   0:05 /usr/local/desktopcentralagent/bin/dcondemand &
-kulashc+    6395  0.0  0.0 839952  4868 ?        Sl   lis19   0:04 /usr/bin/snap userd
+kulashc+    6395  0.0  0.0 839952  4848 ?        Sl   lis19   0:04 /usr/bin/snap userd
 kulashc+    7872  0.0  0.0  12164  2640 ?        S    lis19   0:00 /bin/bash /usr/bin/vmware-view
-kulashc+    7884  0.2  0.3 1279404 52252 ?       Sl   lis19  43:17 /usr/lib/vmware/view/bin/vmware-view
-kulashc+    9264  0.0  0.7 1670872 117952 ?      Sl   lis19   0:45 /usr/bin/nautilus --gapplication-service
+kulashc+    7884  0.2  0.3 1279404 52252 ?       Sl   lis19  43:45 /usr/lib/vmware/view/bin/vmware-view
+kulashc+    9264  0.0  0.7 1671416 118292 ?      Sl   lis19   0:47 /usr/bin/nautilus --gapplication-service
 kulashc+    9916  0.0  0.1 865128 24908 ?        Sl   lis19   0:03 /usr/bin/gnome-calendar --gapplication-service
 kulashc+    9922  0.0  0.1 471544 22672 ?        SLl  lis19   0:02 /usr/bin/seahorse --gapplication-service
-kulashc+   10713  0.0  2.0 1585972 336032 ?      Sl   lis19   2:19 /home/kulashchyk/.vscode/extensions/ms-vscode.cpptools-1.7.1/bin/cpptools
-kulashc+   11732  0.0  1.4 4956748 243652 ?      Sl   lis19   0:22 /home/kulashchyk/.vscode/extensions/ms-vscode.cpptools-1.7.1/bin/cpptools-srv 10713 {DD013AD7-88EF-497A-8FAB-0F6BF9900124}
+kulashc+   10713  0.0  2.0 1585972 335980 ?      Sl   lis19   2:19 /home/kulashchyk/.vscode/extensions/ms-vscode.cpptools-1.7.1/bin/cpptools
+kulashc+   11732  0.0  1.4 4956748 243580 ?      Sl   lis19   0:23 /home/kulashchyk/.vscode/extensions/ms-vscode.cpptools-1.7.1/bin/cpptools-srv 10713 {DD013AD7-88EF-497A-8FAB-0F6BF9900124}
 kulashc+   27287  0.0  0.0   6040  3568 ?        S    lis19   0:00 /usr/bin/ssh-agent -D -a /run/user/1000/keyring/.ssh
 kulashc+   69787  0.0  0.0  10976  2132 pts/0    T    lis22   0:00 /usr/bin/less
 kulashc+  140515  0.0  0.0 162268  2084 ?        Ssl  lis29   0:00 /usr/bin/speech-dispatcher --spawn --communication-method unix_socket --socket-path /run/user/1000/speech-dispatcher/speechd.sock
-kulashc+  150864 40.7  6.9 3579376 1139104 ?     Rl   lis30 1239:32 /home/kulashchyk/icas-1-sdk/toolchains/qemu-arm64/sysroots/x86_64-pokysdk-linux/usr/bin/qemu-system-aarch64 -daemonize -display none -pidfile /home/kulashchyk/icas-1-sdk/qemu-arm64/qemu1.pid -machine virt -cpu cortex-a57 -smp 2 -m 2048 -kernel /home/kulashchyk/icas-1-sdk/qemu-arm64/EB_linux_kernel__linux-eb-corbos-Image-qemu-arm64.bin --append console=ttyAMA0 root=/dev/vda2 rw ipx=fd00:e000::5054:1bff:fe69:dd39/64 net.ifnames=0 biosdevname=0 global_ab_flag=a -drive file=/home/kulashchyk/icas-1-sdk/qemu-arm64/qemu1.img,if=none,id=blk -device virtio-blk-device,drive=blk -device virtio-net,netdev=network0 -netdev tap,id=network0,ifname=icas_sdk_tap0,script=no,downscript=no -serial file:/home/kulashchyk/icas-1-sdk/qemu-arm64/qemu1.log
-kulashc+  254602  8.7  0.3 824312 59096 ?        Sl   12:06   0:00 /usr/bin/gedit --gapplication-service
-kulashc+  254615  0.0  0.0  11576  2712 pts/2    R+   12:06   0:00 grep --color=auto --exclude-dir=.bzr --exclude-dir=CVS --exclude-dir=.git --exclude-dir=.hg --exclude-dir=.svn --exclude-dir=.idea --exclude-dir=.tox -i /bin
+kulashc+  150864 41.5  6.9 3579376 1139104 ?     Sl   lis30 1282:58 /home/kulashchyk/icas-1-sdk/toolchains/qemu-arm64/sysroots/x86_64-pokysdk-linux/usr/bin/qemu-system-aarch64 -daemonize -display none -pidfile /home/kulashchyk/icas-1-sdk/qemu-arm64/qemu1.pid -machine virt -cpu cortex-a57 -smp 2 -m 2048 -kernel /home/kulashchyk/icas-1-sdk/qemu-arm64/EB_linux_kernel__linux-eb-corbos-Image-qemu-arm64.bin --append console=ttyAMA0 root=/dev/vda2 rw ipx=fd00:e000::5054:1bff:fe69:dd39/64 net.ifnames=0 biosdevname=0 global_ab_flag=a -drive file=/home/kulashchyk/icas-1-sdk/qemu-arm64/qemu1.img,if=none,id=blk -device virtio-blk-device,drive=blk -device virtio-net,netdev=network0 -netdev tap,id=network0,ifname=icas_sdk_tap0,script=no,downscript=no -serial file:/home/kulashchyk/icas-1-sdk/qemu-arm64/qemu1.log
+kulashc+  258338 11.4  0.3 824252 58836 ?        Sl   12:46   0:02 /usr/bin/gedit --gapplication-service
+kulashc+  258383  0.0  0.0  11576  2568 pts/2    S+   12:47   0:00 grep --color=auto --exclude-dir=.bzr --exclude-dir=CVS --exclude-dir=.git --exclude-dir=.hg --exclude-dir=.svn --exclude-dir=.idea --exclude-dir=.tox /bin
  2691  mkdir Lesson_Linux
  2692  cd Lesson_Linux
  2693  touch processes.txt
@@ -62,8 +62,8 @@ kulashc+  254615  0.0  0.0  11576  2712 pts/2    R+   12:06   0:00 grep --color=
  2717  wc -l < processes.txt
  2718  wc -l < processes.txt > selected.txt
  2719  cat selected.txt
- 2720  ps aux | grep -i /bin
- 2721  ps aux | grep -i /bin >> selected.txt
+ 2720  ps aux | grep /bin
+ 2721  ps aux | grep /bin >> selected.txt
  2722  history
  2723  history | tail -30
  2724  history | tail -34
