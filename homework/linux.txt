@@ -62,8 +62,8 @@ kulashc+  258383  0.0  0.0  11576  2568 pts/2    S+   12:47   0:00 grep --color=
  2717  wc -l < processes.txt
  2718  wc -l < processes.txt > selected.txt
  2719  cat selected.txt
- 2720  ps aux | grep /bin
- 2721  ps aux | grep /bin >> selected.txt
+ 2720  ps aux | grep '/bin' processes.txt
+ 2721  ps aux | grep '/bin' processes.txt >> selected.txt
  2722  history
  2723  history | tail -30
  2724  history | tail -34
