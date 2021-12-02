@@ -65,5 +65,5 @@ kulashc+  258383  0.0  0.0  11576  2568 pts/2    S+   12:47   0:00 grep --color=
  2720  grep -n '/bin' processes.txt
  2721  grep -n '/bin' processes.txt >> selected.txt
  2722  history
- 2723  history | tail -30
- 2724  history | tail -34
+ 2723  history | tail -n 30
+ 2724  history | tail -n 34
