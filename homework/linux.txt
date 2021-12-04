@@ -1,0 +1,86 @@
+marcin@DESKTOP-SVODHPV:~/dowolnaNazwa$ cat selected.txt commands.txt
+6
+
+  364  mkdir dowolnaNazwa
+  365  cd dowolnaNazwa/
+  366  touch processes.txt
+  367  ls
+  368  ps aux
+  369  vim processes.txt
+  370  less processes.txt
+  371  cp processes.txt copy.txt
+  372  ls
+  373  less c
+  374  less copy.txt
+  375  mkdir backup
+  376  mv copy.txt -t backup/
+  377  ls
+  378  cd backup/
+  379  ls
+  380  cd ..
+  381  less processes.txt
+  382  echo ps
+  383  ps | echo l.txt
+  384  ls
+  385  ps
+  386  ps > l.txt
+  387  ls
+  388  cat l
+  389  cat l.txt
+  390  rm -r backup/
+  391  ls
+  392  rm processes.txt
+  393  rm l
+  394  rm l.txt
+  395  ls
+  396  ps > processes.txt
+  397  ls
+  398  cat processes.txt
+  399  ps -aux > processes.txt
+  400  ls
+  401  cat processes.txt
+  402  mkdir backup
+  403  ls
+  404  cp processes.txt copy.txt
+  405  ls
+  406  mv copy.txt -t backup/
+  407  ls
+  408  cd backup/
+  409  ls
+  410  cat copy.txt
+  411  cd ..
+  412  ls
+  413  6 > selected.txt
+  414  echo 6 > selected.txt
+  415  ls
+  416  cat selected.txt
+  417  grep -rni /bin *
+  418  history
+  419  clear
+  420  ls
+  421  cat processes.txt | wc -l
+  422  cat processes.txt | wc -l > l.txt
+  423  ls
+  424  echo l.txt
+  425  cat l.txt
+  426  rm selected.txt
+  427  ls
+  428  rm l.txt
+  429  cat processes.txt | wc -l > selected.txt
+  430  ls
+  431  cat selected.txt
+  432  grep -rni /bin * >> selected.txt
+  433  grep -rni /bin * | echo >> selected.txt
+  434  ls
+  435  cat s
+  436  cat selected.txt
+  437  history
+  438  history | tail -n 73 > commands.txt
+  439  ls
+  440  cat commands.txt
+  441  history
+  442  history | tail -n 78 > commands.txt
+  443  cat commands.txt
+  444  history | tail -n 80 > commands.txt
+  445  cat commands.txt
+  446  history | tail -n 83 > commands.txt
