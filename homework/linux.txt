@@ -22,9 +22,9 @@ marcin@DESKTOP-SVODHPV:~/dowolnaNazwa$ cat selected.txt commands.txt
   359  ls
   360  grep /bin processes.txt
   361  grep /bin *
-  362  grep /bin processes.txt >> selected.txt
-  363  grep /bin processes.txt | cat
-  364  grep /bin processes.txt | cat >> selected.txt
+  362  grep -n /bin processes.txt >> selected.txt
+  363  grep -n /bin processes.txt | cat
+  364  grep -n /bin processes.txt | cat >> selected.txt
   365  cat selected.txt
   366  history
   367  history | tail -n 28 > commands.txt
