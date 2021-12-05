@@ -20,11 +20,11 @@ marcin@DESKTOP-SVODHPV:~/dowolnaNazwa$ cat selected.txt commands.txt
   357  ls
   358  cat selected.txt
   359  ls
-  360  grep /bin selected.txt
+  360  grep /bin processes.txt
   361  grep /bin *
-  362  grep /bin selected.txt >> selected.txt
-  363  grep /bin selected.txt | cat
-  364  grep /bin selected.txt | cat >> selected.txt
+  362  grep /bin processes.txt >> selected.txt
+  363  grep /bin processes.txt | cat
+  364  grep /bin processes.txt | cat >> selected.txt
   365  cat selected.txt
   366  history
   367  history | tail -n 28 > commands.txt
