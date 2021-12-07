@@ -1,0 +1,40 @@
+cat selected.txt commands.txt 338
+150:root         719  0.0  0.0  41064   512 ?        Ss   lis25   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+162:root         797  0.0  0.0 119184   564 ?        Ssl  lis25   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+170:whoopsie    1363  0.0  0.0 323540  3596 ?        Ssl  lis25   0:03 /usr/bin/whoopsie -f
+176:jdworza+    1625  0.0  0.0  41984   100 ?        Ssl  lis25   0:00 /usr/bin/pipewire
+177:jdworza+    1626  0.0  0.0  25700  1008 ?        Ssl  lis25   0:00 /usr/bin/pipewire-media-session
+178:jdworza+    1627  0.2  0.0 3843320 12820 ?       Ssl  lis25  50:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+179:jdworza+    1631  0.0  0.0  13116  7020 ?        Ss   lis25   0:19 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+181:jdworza+    1635  0.0  0.0 243348  5400 ?        Sl   lis25   0:06 /usr/bin/gnome-keyring-daemon --daemonize --login
+191:jdworza+    1693  0.0  0.0 164784  1788 tty2     Ssl+ lis25   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+197:jdworza+    1770  1.1  2.2 6110948 350212 ?      Ssl  lis25 191:39 /usr/bin/gnome-shell
+198:jdworza+    1775  0.0  0.0   8548  1784 ?        S    lis25   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+206:jdworza+    1892  0.0  0.0 2739300 15700 ?       Sl   lis25   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+224:jdworza+    2027  0.0  4.3 1843884 690864 ?      Sl   lis25   1:40 /snap/snap-store/558/usr/bin/snap-store --gapplication-service
+228:jdworza+    2151  0.0  0.0 2804844 14064 ?       Sl   lis25   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
+233:jdworza+    2834  0.0  0.0 871420  6964 ?        Sl   lis25   0:02 /usr/bin/gnome-calendar --gapplication-service
+234:jdworza+    2979  0.2  0.2 960256 33104 ?        Sl   lis25  34:49 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.63D6C1 -listen 4 -listen 5 -displayfd 6 -initfd 7
+243:jdworza+    6662  0.0  0.0 393540  6528 ?        SLl  lis26   0:00 /usr/bin/seahorse --gapplication-service
+244:jdworza+    7046  0.0  0.0 940920  3904 ?        Sl   lis26   0:14 /usr/bin/snap userd
+258:jdworza+  112748  0.1  0.7 1608976 121724 ?      Sl   lis30  13:01 /usr/lib/rstudio/bin/rsession --config-file none --program-mode desktop --www-port 26045 --launcher-token 85B55C18 --show-help-home 1
+260:jdworza+  135354  0.0  0.1 839084 22948 ?        Sl   gru01   0:02 /usr/bin/gnome-todo --gapplication-service
+269:jdworza+  556547  0.0  0.3 780360 56940 ?        Ssl  gru03   0:03 /usr/bin/python3 -m ipykernel_launcher -f /home/jdworzans/.local/share/jupyter/runtime/kernel-5a7ac716-46ea-418f-a1d4-c35939aad775.json
+270:jdworza+  557895  0.0  0.3 780368 57520 ?        Ssl  gru03   0:03 /usr/bin/python3 -m ipykernel_launcher -f /home/jdworzans/.local/share/jupyter/runtime/kernel-f452a99b-ec34-48bb-9533-43a6eea0b935.json
+271:jdworza+  558723  0.0  0.3 780364 57000 ?        Ssl  gru03   0:03 /usr/bin/python3 -m ipykernel_launcher -f /home/jdworzans/.local/share/jupyter/runtime/kernel-b33e7a8f-2de6-44c3-8716-66eaa307fa87.json
+284:jdworza+  573830  0.0  0.4 870476 75952 ?        Sl   gru06   0:01 /usr/bin/nautilus --gapplication-service
+290:jdworza+  593446  0.0  0.1  37040 19772 ?        S    10:50   0:00 /usr/bin/python3 /usr/bin/gnome-terminal --wait
+291:jdworza+  593449  0.0  0.1 383584 26892 ?        Sl   10:50   0:00 /usr/bin/gnome-terminal.real --wait
+321:jdworza+  603289  0.0  0.1  37040 19780 ?        S    18:17   0:00 /usr/bin/python3 /usr/bin/gnome-terminal --wait
+322:jdworza+  603292  0.0  0.1 383496 27296 ?        Sl   18:17   0:00 /usr/bin/gnome-terminal.real --wait
+  669  mkdir linux_homework
+  670  cd linux_homework
+  671  touch processes.txt
+  672  ps aux > processes.txt
+  673  cp processes.txt copy.txt
+  674  mkdir backup
+  675  mv copy.txt backup/
+  676  cat processes.txt | wc -l > selected.txt
+  677  grep -n "/bin" processes.txt >> selected.txt
+  678  history
+  679  history | tail -n 11 > commands.txt
