@@ -1,0 +1,44 @@
+tomek@Tomek:~/test_folder$ cat selected.txt commands.txt
+5 processes.txt
+   77  mkdir test_folder
+   78  cat processes.txt
+   79  touch processes.txt
+   80  ls
+   81  cd test_folder/
+   82  ll
+   83  mv ../processes.txt ./processes.txt
+   84  ls
+   85  ps aux > processes.txt
+   86  ll
+   87  cat processes.txt
+   88  cp processes.txt copy.txt
+   89  cd ..
+   90  mkdir backup
+   91  mv ./test_folder/copy.txt ./backup/copy.txt
+   92  ll
+   93  cd test_folder/
+   94  ll
+   95  lc processes.txt
+   96  wc -l processes.txt
+   97  wc -l processes.txt > selected.txt
+   98  cat processes.txt
+   99  grep --help
+  100  man grep
+  101  grep processes.txt | '/bin'
+  102  grep '/bin' processes.txt
+  103  grep /bin processes.txt
+  104  grep -rin /bin processes.txt
+  105  grep -n bash processes.txt
+  106  cat processes.txt
+  107  ls
+  108  grep -n /bin processes.txt >> selected.txt
+  109  cat selected.txt
+  110  history
+  111  tail -n 33
+  112  tail --help
+  113  tail -n +33
+  114  history | tail -n 33
+  115  history
+  116  history | tail -n 38
+  117  history | tail -n 41
+  118  history | tail -n 42 >> commands.txt
