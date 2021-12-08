@@ -1,4 +1,4 @@
-tomek@Tomek:~/test_folder$ cat selected.txt commands.txt
+tomek@Tomek:~/test_folder$ cat selected.txt commands.txt 
 5 processes.txt
    77  mkdir test_folder
    78  cat processes.txt
