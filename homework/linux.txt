@@ -1,5 +1,5 @@
 cat selected.txt commands.txt 
-163
+163 processes.txt
 15
   311  cd cpp_course/
   312  touch processes.txt
@@ -40,7 +40,7 @@ cat selected.txt commands.txt
   347  cd ..
   348  man less
   349  less -G processes.txt 
-  350  less -g processes.txt 
+  350  wc -l processes.txt
   351  man less
   352  less processes.txt 
   353  echo 163 >> selected.txt
@@ -51,4 +51,4 @@ cat selected.txt commands.txt
   358  grep -c /bin processes.txt 
   359  grep -c /bin processes.txt >> selected.txt 
   360  cat selected.txt 
-  361  history
+  361  history | tail -n 55 >> commands.txt
