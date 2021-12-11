@@ -1,0 +1,54 @@
+cat selected.txt commands.txt 
+163
+15
+  311  cd cpp_course/
+  312  touch processes.txt
+  313  ls
+  314  ps aux
+  315  mkdir homework1
+  316  ls
+  317  cd homework1/
+  318  touch processes.txt
+  319  ls
+  320  ps aux
+  321  echo ps aux >> processes.txt 
+  322  cat processes.txt 
+  323  xdl-open processes.txt 
+  324  xdg-open processes.txt 
+  325  less processes.txt 
+  326  cat processes.txt 
+  327  vim processes.txt 
+  328  less processes.txt 
+  329  cat processes.txt 
+  330  ps man
+  331  ps --help
+  332  man ps
+  333  ps aux >> processes.txt 
+  334  cat processes.txt 
+  335  cp processes.txt copy.txt
+  336  cat copy.txt 
+  337  man less
+  338  less ^G processes.txt 
+  339  man less
+  340  mkdir backup
+  341  ls
+  342  mv copy.txt ./backup/
+  343  ls
+  344  cd backup/
+  345  ls
+  346  ..
+  347  cd ..
+  348  man less
+  349  less -G processes.txt 
+  350  less -g processes.txt 
+  351  man less
+  352  less processes.txt 
+  353  echo 163 >> selected.txt
+  354  ls
+  355  cat selected.txt 
+  356  grep /bin processes.txt 
+  357  man grep
+  358  grep -c /bin processes.txt 
+  359  grep -c /bin processes.txt >> selected.txt 
+  360  cat selected.txt 
+  361  history
