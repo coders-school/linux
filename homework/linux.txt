@@ -1,54 +1,27 @@
-cat selected.txt commands.txt 
-163 processes.txt
-15
-  311  cd cpp_course/
-  312  touch processes.txt
-  313  ls
-  314  ps aux
-  315  mkdir homework1
-  316  ls
-  317  cd homework1/
-  318  touch processes.txt
-  319  ls
-  320  ps aux
-  321  echo ps aux >> processes.txt 
-  322  cat processes.txt 
-  323  xdl-open processes.txt 
-  324  xdg-open processes.txt 
-  325  less processes.txt 
-  326  cat processes.txt 
-  327  vim processes.txt 
-  328  less processes.txt 
-  329  cat processes.txt 
-  330  ps man
-  331  ps --help
-  332  man ps
-  333  ps aux >> processes.txt 
-  334  cat processes.txt 
-  335  cp processes.txt copy.txt
-  336  cat copy.txt 
-  337  man less
-  338  less ^G processes.txt 
-  339  man less
-  340  mkdir backup
-  341  ls
-  342  mv copy.txt ./backup/
-  343  ls
-  344  cd backup/
-  345  ls
-  346  ..
-  347  cd ..
-  348  man less
-  349  less -G processes.txt 
-  350  wc -l processes.txt
-  351  man less
-  352  less processes.txt 
-  353  echo 163 >> selected.txt
-  354  ls
-  355  cat selected.txt 
-  356  grep /bin processes.txt 
-  357  man grep
-  358  grep -c /bin processes.txt 
-  359  grep -c /bin processes.txt >> selected.txt 
-  360  cat selected.txt 
-  361  history | tail -n 55 >> commands.txt
+pi@raspberrypi:~/cpp_course/hw1 $ cat selected.txt commands.txt 
+160 processes.txt
+93:message+   396  0.0  0.0   6832  3752 ?        Ss   13:17   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+98:root       498  0.0  0.0   8628  2184 ?        Ss   13:17   0:00 /usr/bin/vncserver-x11-serviced -fg
+99:root       500  0.0  0.4  44276 17436 ?        Ssl  13:17   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+101:root       508  0.3  0.5  38768 21652 ?        S    13:17   0:07 /usr/bin/vncserver-x11-core -service
+105:root       540  0.0  0.0   5620  2776 tty1     Ss   13:17   0:00 /bin/login -f
+107:root       553  0.2  0.1  14552  7492 ?        S    13:17   0:04 /usr/bin/vncagent service 15
+111:pi         582  0.0  0.3  56312 12496 ?        Ssl  13:17   0:00 /usr/bin/lxsession -s LXDE-pi -e LXDE
+112:pi         590  0.0  0.0   6544  3492 ?        Ss   13:17   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+113:pi         616  0.0  0.0   4520   288 ?        Ss   13:17   0:00 /usr/bin/ssh-agent x-session-manager
+120:pi         657  0.0  0.0   4520   288 ?        Ss   13:17   0:00 /usr/bin/ssh-agent -s
+122:pi         676  0.0  0.7  51880 29252 ?        S    13:17   0:00 /usr/bin/python3 /usr/share/system-config-printer/applet.py
+123:pi         679  0.0  0.2 367740  8772 ?        S<sl 13:17   0:00 /usr/bin/pulseaudio --daemonize=no
+126:pi         703  0.0  0.4  42388 15940 ?        S    13:17   0:00 /usr/bin/vncserverui service 16
+132:pi         748  0.0  0.3  31748 14956 ?        S    13:17   0:00 /usr/bin/vncserverui -statusicon 5
+136:root       774  0.0  0.0   2140   128 ?        S    13:17   0:00 /usr/bin/hciattach /dev/serial1 bcm43xx 3000000 flow -
+  407  cd hw1/
+  408  touch processes.txt
+  409  ps aux > processes.txt 
+  410  cp processes.txt copy.txt
+  411  mkdir backup
+  412  mv copy.txt ./backup/
+  413  wc -l processes.txt > selected.txt
+  414  grep -n /bin ./processes.txt >> selected.txt 
+  415  history
+  416  history | tail -n10 > commands.txt
