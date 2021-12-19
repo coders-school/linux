@@ -1,0 +1,52 @@
+piworzuop@MPB:~/TEMP/linux_homework$ cat selected.txt  commands.txt 
+306 processes.txt
+121:message+     684  0.0  0.0   8968  6116 ?        Ss   13:54   0:03 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+124:root         707  0.0  0.1  41860 20308 ?        Ss   13:54   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+144:nvidia-+     935  0.0  0.0   5200  1912 ?        Ss   13:54   0:00 /usr/bin/nvidia-persistenced --user nvidia-persistenced --no-persistence-mode --verbose
+151:clamav      1162  0.0  0.1 135248 16912 ?        Ss   13:54   0:00 /usr/bin/freshclam -d --foreground=true
+156:piworzu+    1246  0.3  0.1 1747764 21848 ?       S<sl 13:54   1:33 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+157:piworzu+    1249  0.0  0.0 463916  7844 ?        Sl   13:54   0:03 /usr/bin/gnome-keyring-daemon --daemonize --login
+159:piworzu+    1259  0.0  0.0   8360  5600 ?        Ss   13:54   0:10 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+160:piworzu+    1321  0.0  0.0   6032   460 ?        Ss   13:54   0:00 /usr/bin/ssh-agent /usr/bin/im-launch cinnamon-session-cinnamon
+164:piworzu+    1350  0.0  0.0   7636  4644 ?        S    13:54   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+199:piworzu+    1553  0.0  0.3 329244 51392 ?        Sl   13:54   0:00 /usr/bin/python3 /usr/lib/nvidia-prime-applet/nvidia-prime
+214:piworzu+    2129  0.0  0.0  21084  9944 ?        S    13:54   0:00 /usr/bin/python3 /usr/lib/blueberry/safechild /usr/sbin/rfkill event
+217:piworzu+    2253  0.0  0.2  62156 35196 ?        S    13:54   0:02 /usr/bin/python3 /usr/share/system-config-printer/applet.py
+228:piworzu+    8331  0.0  0.0   6032  3804 ?        S    14:21   0:00 /usr/bin/ssh-agent -D -a /run/user/1000/keyring/.ssh
+241:piworzu+   40604  0.0  0.0   7564  3616 ?        S    19:32   0:00 /bin/bash /app/bin/discord
+266:piworzu+   44270  0.0  0.0   2608   600 ?        S    19:54   0:00 /bin/sh -c "/home/piworzuop/.vscode/extensions/ms-vsliveshare.vsliveshare-1.0.5200/dotnet_modules/vsls-agent" --autoexit --enableRpcInitialize --pipe vscode.7ee779034e7d63a04bff658f5c8bbbfb --service https://prod.liveshare.vsengsaas.visualstudio.com/ --signalRServiceUri https://signlr-prod.core.vsengsaas.visualstudio.com/api/signalr/signalrhub --agentExtensionPath "/home/piworzuop/.vscode/extensions/ms-vsliveshare.vsliveshare-1.0.5200/dotnet_modules/Microsoft.VisualStudio.LiveShare.Agent.PresenceService.dll"
+  460  mkdir linux_homework
+  461  cd linux_homework/
+  462  ps aux > processes.txt
+  463  less processes.txt 
+  464  cp processes.txt  copy.txt
+  465  ls
+  466  cat copy.txt 
+  467  clear
+  468  mkdir backup
+  469  ls
+  470  mv copy.txt  backup/
+  471  cd backup/
+  472  ls
+  473  cat copy.txt 
+  474  clear
+  475  cd .
+  476  cd ..
+  477  wc -h
+  478  wc --h
+  479  wc -l processes.txt  > selected.txt
+  480  less selected.txt 
+  481  clear
+  482  grep -h
+  483  grep --help
+  484  clear
+  485  grep --help
+  486  grep -in "/bin" >> selected.txt 
+  487  cat selected.txt 
+  488  grep -in "/bin" processes.txt  >> selected.txt 
+  489  cat selected.txt 
+  490  history --help
+  491  history
+  492  tail --help
+  493  history | tail -n +460
+  494  history | tail -n +460 > commands.txt
