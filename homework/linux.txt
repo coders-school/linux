@@ -1,0 +1,52 @@
+artur@MacBook-Pro-Apple dupa % cat selected.txt commands.txt 
+     565 processes.txt
+17527:root              4737   0,0  0,0  4425228   3112   ??  Ss   11:29     0:00.03 /usr/bin/sysdiagnose
+78345:artur              502   0,0  0,0  4284268    308   ??  S    10:47     0:00.03 bash /usr/local/bin/stkLaunchAgent.sh
+105867:_mysql             130   0,0  0,0  4921040   2124   ??  Ss   10:47     0:33.19 /usr/local/mysql/bin/mysqld --user=_mysql --basedir=/usr/local/mysql --datadir=/usr/local/mysql/data --plugin-dir=/usr/local/mysql/lib/plugin --log-error=/usr/local/mysql/data/mysqld.local.err --pid-file=/usr/local/mysql/data/mysqld.local.pid --keyring-file-data=/usr/local/mysql/keyring/keyring --early-plugin-load=keyring_file=keyring_file.so --default_authentication_plugin=mysql_native_password
+109447:_mysql              83   0,0  0,0  4542500   2180   ??  Ss   10:47     0:03.33 /usr/local/mysql-iVMS320/bin/mysqld --port=34174 --user=_mysql --basedir=/usr/local/mysql-iVMS320 --datadir=/usr/local/mysql-iVMS320/data --plugin-dir=/usr/local/mysql-iVMS320/lib/plugin --log-error=/usr/local/mysql-iVMS320/data/mysqld.local.err --pid-file=/usr/local/mysql-iVMS320/data/mysqld.local.pid
+110831:nobody              71   0,0  0,0  4412644   2504   ??  Ss   10:47     0:19.96 /usr/local/bin/FAHClient
+113017:root              6573   0,0  0,1  4399480   4984 s002  Ss   12:24     0:00.04 login -pfl artur /bin/bash -c exec -la zsh /bin/zsh
+113232:root              6562   0,0  0,1  4373880   5072 s001  Ss   12:23     0:00.03 login -pfl artur /bin/bash -c exec -la zsh /bin/zsh
+ 1012  cd dupa
+ 1013  touch processes.txt
+ 1014  ps aux > processes.txt
+ 1015  cp processes.txt co
+ 1016  mc co copy.txt
+ 1017  mv co copy.txt
+ 1018  mkdir backup
+ 1019  mv copy.txt backup/copy.txt
+ 1020  wc processes.txt
+ 1021  man wc
+ 1022  wc -l processes.txt
+ 1023  wc -l processes.txt > selected.txt
+ 1024  cat selected.txt
+ 1025  cat selected.txt
+ 1026  cat processes.txt |grep "/bin"
+ 1027  cat processes.txt |grep "/bin" >> selected.txt
+ 1028  cat selected.txt
+ 1029  man grep
+ 1030  cat processes.txt |grep -b "/bin"
+ 1031  cl
+ 1032  clear
+ 1033  ls
+ 1034  cat selected.txt
+ 1035  rm -rf selected.txt
+ 1036  ls
+ 1037  wc -l processes.txt > selected.txt
+ 1038  cat processes.txt |grep -b "/bin" >> selected.txt
+ 1039  history
+ 1040  man histo
+ 1041  man history
+ 1042  history -h
+ 1043  history --help
+ 1044  history
+ 1045  cat ~/.bash_history
+ 1046  cat ~/.zsh_history
+ 1047  history -l
+ 1048  history 
+ 1049  ls
+ 1050  history 0
+ 1051  history 0 |tail 38
+ 1052  man tail
+ 1053  history 0 |tail -n 38
+artur@MacBook-Pro-Apple dupa % 
