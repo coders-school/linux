@@ -10,9 +10,10 @@ artur@MacBook-Pro-Apple dupa % cat selected.txt commands.txt
  1012  cd dupa
  1013  touch processes.txt
  1014  ps aux > processes.txt
- 1015  cp processes.txt co
- 1016  mc co copy.txt
- 1017  mv co copy.txt
+# 1015  cp processes.txt co
+# 1016  mc co copy.txt
+# 1017  mv co copy.txt
+ 1015 cp processes.txt copy.txt
  1018  mkdir backup
  1019  mv copy.txt backup/copy.txt
  1020  wc processes.txt
