@@ -1,6 +1,6 @@
 ernest@ernest:~/newDir$ cat selected.txt commands.txt 
 
-193 processes.txt
+192 processes.txt
 
 88:root         583  0.0  0.5  49716 20944 ?        Ss   15:59   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
 
@@ -12,7 +12,7 @@ ernest@ernest:~/newDir$ cat selected.txt commands.txt
 
 111:ernest       946  0.0  0.1  34192  6288 ?        S<sl 15:59   0:00 /usr/bin/pipewire-media-session
 
-112:ernest       947  0.0  0.5 1418184 20204 ?       S<sl 15:59   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+112:ernest       947  0.0  0.5 1418212 20164 ?       S<sl 15:59   0:01 /usr/bin/pulseaudio --daemonize=no --log-target=journal
 
 113:ernest       951  0.0  0.1 251868  6884 ?        Sl   15:59   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
 
@@ -20,7 +20,7 @@ ernest@ernest:~/newDir$ cat selected.txt commands.txt
 
 116:ernest       961  0.0  0.1   9628  6036 ?        Ss   15:59   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
 
-122:ernest      1047  1.4  8.7 4023852 353436 ?      Ssl  15:59   1:19 /usr/bin/gnome-shell
+122:ernest      1047  1.9  9.5 4059540 382756 ?      Rsl  15:59   2:21 /usr/bin/gnome-shell
 
 124:ernest      1056  0.0  0.1   8232  4552 ?        S    15:59   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
 
@@ -28,7 +28,7 @@ ernest@ernest:~/newDir$ cat selected.txt commands.txt
 
 160:ernest      1323  0.0  0.0  31904   384 ?        S    16:00   0:00 /usr/bin/VBoxClient --clipboard
 
-161:ernest      1324  0.0  0.1 164172  4340 ?        Sl   16:00   0:00 /usr/bin/VBoxClient --clipboard
+161:ernest      1324  0.0  0.1 164172  7076 ?        Sl   16:00   0:00 /usr/bin/VBoxClient --clipboard
 
 162:ernest      1357  0.0  0.0  31904   380 ?        S    16:00   0:00 /usr/bin/VBoxClient --seamless
 
@@ -36,111 +36,71 @@ ernest@ernest:~/newDir$ cat selected.txt commands.txt
 
 164:ernest      1367  0.0  0.0  31904   380 ?        S    16:00   0:00 /usr/bin/VBoxClient --draganddrop
 
-165:ernest      1368  0.3  0.0 164660  2532 ?        Sl   16:00   0:18 /usr/bin/VBoxClient --draganddrop
+165:ernest      1368  0.3  0.0 164660  2532 ?        Sl   16:00   0:24 /usr/bin/VBoxClient --draganddrop
 
 166:ernest      1372  0.0  0.0  31904   380 ?        S    16:00   0:00 /usr/bin/VBoxClient --vmsvga
 
-168:ernest      1382  0.0  1.2 175580 48964 ?        S    16:00   0:00 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.XWWFF1 -listen 4 -listen 5 -displayfd 6 -initfd 7
+168:ernest      1382  0.0  1.2 175596 48908 ?        S    16:00   0:00 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.XWWFF1 -listen 4 -listen 5 -displayfd 6 -initfd 7
 
 171:ernest      1430  0.0  0.6 2608712 27404 ?       Sl   16:00   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
 
-  178  touch newDir
+  235  ls
 
-  179  rm newDir 
+  236  rm -rf newDir/
 
-  180  mkdir newDir
+  237  ls
 
-  181  cd newDir/
+  238  mkdir newDir
 
-  182  ps aux > processes.txt
+  239  cd newDir/
 
-  183  cat processes.txt 
+  240  touch processes.txt
 
-  184  cat processes.txt > copy.txt
+  241  ps aux > processes.txt
 
-  185  cat copy.txt 
+  242  cat processes.txt 
 
-  186  mkdir backup
+  243  cp processes.txt copy.txt
 
-  187  mv copy.txt ./backup/
+  244  cat copy.txt 
 
-  188  ls ./backup/
+  245  mkdir backup
 
-  189  cd backup/
+  246  mv copy.txt ./backup/
 
-  190  man ls
+  247  ls ./backup/
 
-  191  man cat
+  248  ls
 
-  192  ls -l
+  249  wc processes.txt > selected.txt
 
-  193  ls
+  250  cat selected.txt 
 
-  194  cd ..
+  251  man wc
 
-  195  ls
+  252  wc -l processes.txt
 
-  196  wc processes.txt > selected.txt
+  253  wc -l processes.txt > selected.txt 
 
-  197  cat selected.txt 
+  254  cat selected.txt 
 
-  198  man wc
+  255  man grep
 
-  199  wc -l processes.txt
+  256  grep -n "/bin" processes.txt 
 
-  200  man wc
+  257  ls
 
-  201  wc -l processes.txt > selected.txt 
+  258  grep -n "/bin" processes.txt >> selected.txt 
 
-  202  cat selected.txt 
+  259  cat selected.txt 
 
-  203  man grep
+  260  history
 
-  204  grep -n processes.txt "/bin"
+  261  history | tail
 
-  205  grep -n processes.txt -name "/bin"
+  262  tail --help
 
-  206  man grep
+  263  history | tail -n 30
 
-  207  grep -C processes.txt -name "/bin"
-
-  208  grep -n processes.txt -name "/bin"
-
-  209  grep --help
-
-  210  grep -l processes.txt -name "/bin"
-
-  211  grep -n processes.txt -name "/bin"
-
-  212  grep -n -name "/bin" processes.txt 
-
-  213  grep -n 100 -name "/bin" processes.txt 
-
-  214  grep -n --name "/bin" processes.txt 
-
-  215  grep -n -name "/bin" processes.txt 
-
-  216  grep -n "/bin" processes.txt 
-
-  217  ls
-
-  218  grep -n "/bin" processes.txt >> selected.txt 
-
-  219  cat selected.txt 
-
-  220  history
-
-  221  history | tail 50
-
-  222  history | tail50
-
-  223  history | tail
-
-  224  tail -h
-
-  225  tail --help
-
-  226  history | tail -n 50
-
-  227  history | tail -n 50 > commands.txt
+  264  history | tail -n 30 > commands.txt
 
