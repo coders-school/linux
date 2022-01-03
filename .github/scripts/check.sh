@@ -19,7 +19,7 @@ pattern ${FILE} "'backup' directory created'" "mkdir(\s+)backup"
 pattern ${FILE} "'$C' moved into 'backup' directory" "mv(\s+).*$C(\s+)(\.\/)?backup|mv(\s+)\.\.\/$C(\s+)\."
 pattern ${FILE} "Lines counted and saved to '$S'" "wc(\s+)(-.*l.*)?(.*/)*$P(\s+)>{1,2}(\s+)(.*/)*$S"
 pattern ${FILE} "Grepped with line numbers for '/bin' in '$P' and appended to $S" "grep(\s+)((-.*n.*)[\"']?\/bin[\"']?(\s+)|[\"']?\/bin[\"']?(\s+)(-.*n.*))(.*/)*$P(\s+)>>(\s+)(.*/)*$S"
-pattern ${FILE} "'history' with 'tail' used and saved to $M" "history(\s+)\|(\s+)tail(\s+)-n?(\s*)[[:digit:]]+(\s+)>{1,2}(\s+)$M"
+pattern ${FILE} "'history' with 'tail' used and saved to $M" "history(\s*)\|(\s*)tail(\s+)-n?(\s*)[[:digit:]]+(\s+)>{1,2}(\s+)$M"
 pattern ${FILE} "'cat $S $M' used" "cat(\s+)(.*/)*$S(\s+)(.*/)*$M"
 echo
 
