@@ -1,0 +1,33 @@
+cat linux_homework/selected.txt linux_homework/commands.txt
+314
+message+     660  0.0  0.0   8560  4976 ?        Ss   22:08   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+nvpd         667  0.0  0.0   6680  2080 ?        Ss   22:08   0:00 /usr/bin/nvidia-persistenced --user nvpd
+root         910  0.0  0.0 118720 23196 ?        Ssl  22:08   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         933  0.0  0.0   9360  4588 tty2     SLs+ 22:08   0:01 /usr/bin/ly
+piotr       1269  0.0  0.0  90992  5892 ?        S<sl 22:08   0:00 /usr/bin/pipewire
+piotr       1270  0.7  0.0 1567004 32600 ?       S<sl 22:08   0:40 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+piotr       1274  0.0  0.0   9360  2368 tty2     S+   22:08   0:00 /usr/bin/ly
+piotr       1284  0.0  0.0   8276  4736 ?        Ss   22:08   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+piotr       1290  0.0  0.0  85300  6496 ?        S<l  22:08   0:00 /usr/bin/pipewire-media-session
+piotr       1443  0.1  0.0 309336 10444 ?        Ssl  22:08   0:06 /usr/bin/ibus-daemon --daemonize --xim
+piotr       1480  0.0  0.0   7672  3720 ?        S    22:08   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+piotr       1518  0.0  0.0   2420   584 ?        S    22:08   0:00 /bin/sh -c nm-applet
+piotr       1529  0.0  0.0   2420   520 ?        S    22:08   0:00 /bin/sh -c compton
+piotr       1552  0.0  0.0   2420   580 ?        S    22:08   0:00 /bin/sh -c i3status
+piotr       1580  0.0  0.0 237224 10820 ?        SLl  22:08   0:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+piotr       1606  0.0  0.0 330840 20192 ?        Ssl  22:08   0:00 /usr/bin/dunst
+piotr       2246  0.0  0.0   6756  3148 ?        S    22:12   0:00 /bin/bash
+piotr       5077  0.0  0.0 159692  4900 ?        Ssl  22:49   0:00 /usr/bin/speech-dispatcher --spawn --communication-method unix_socket --socket-path /run/user/1000/speech-dispatcher/speechd.sock
+piotr       5338  0.0  0.0   2420   516 ?        S    22:54   0:00 /bin/sh -c xterm
+piotr       5929  0.0  0.0   2420   516 ?        S    23:33   0:00 /bin/sh -c xterm
+  757  mkdir linux_homework
+  758  touch linux_homework/processes.txt
+  759  ps aux > linux_homework/processes.txt
+  760  cp linux_homework/processes.txt linux_homework/copy.txt
+  761  mkdir linux_homework/backup
+  762  mv linux_homework/copy.txt linux_homework/backup/
+  763  cat -n linux_homework/processes.txt
+  764  echo 314 > linux_homework/selected.txt
+  765  grep -e "/bin" linux_homework/processes.txt >> linux_homework/selected.txt
+  766  history
+  767  history | tail -n +757 > linux_homework/commands.txt
