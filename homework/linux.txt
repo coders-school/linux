@@ -1,32 +1,33 @@
-cat selected.txt commands.txt
-304
-message+     656  0.0  0.0   8544  4920 ?        Ss   18:46   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-nvpd         666  0.0  0.0   6680  2148 ?        Ss   18:46   0:00 /usr/bin/nvidia-persistenced --user nvpd
-root         923  0.0  0.0 118720 23320 ?        Ssl  18:46   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-root         946  0.0  0.0   9360  4680 tty2     SLs+ 18:46   0:00 /usr/bin/ly
-piotr       1282  0.0  0.0  90992  6004 ?        S<sl 18:46   0:00 /usr/bin/pipewire
-piotr       1283  0.3  0.1 1042720 33312 ?       S<sl 18:46   0:13 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-piotr       1288  0.0  0.0   9360  2804 tty2     S+   18:46   0:00 /usr/bin/ly
-piotr       1297  0.0  0.0   8176  4664 ?        Ss   18:46   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-piotr       1300  0.0  0.0  85304  6440 ?        S<l  18:46   0:00 /usr/bin/pipewire-media-session
-piotr       1459  0.0  0.0 383068 10444 ?        Ssl  18:46   0:03 /usr/bin/ibus-daemon --daemonize --xim
-piotr       1496  0.0  0.0   7672  3668 ?        S    18:46   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-piotr       1537  0.0  0.0   2420   520 ?        S    18:46   0:00 /bin/sh -c nm-applet
-piotr       1549  0.0  0.0   2420   588 ?        S    18:46   0:00 /bin/sh -c compton
-piotr       1554  0.0  0.0   2420   516 ?        S    18:46   0:00 /bin/sh -c firefox-esr
-piotr       1577  0.0  0.0   2420   524 ?        S    18:46   0:00 /bin/sh -c i3status
-piotr       1584  0.0  0.0 237192  8560 ?        Sl   18:46   0:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
-piotr       1618  0.0  0.0 330848 24396 ?        Ssl  18:46   0:00 /usr/bin/dunst
-piotr       1925  0.0  0.0   2420   576 ?        S    18:47   0:00 /bin/sh -c xterm
-  924  mkdir zadanie
-  925  cd zadanie/
-  926  touch processes.txt
-  927  ps aux > processes.txt 
-  928  cp processes.txt copy.txt
-  929  mkdir backup
-  930  mv copy.txt backup/
-  931  wc -l processes.txt 
-  932  echo 304 > selected.txt
-  933  grep -e "/bin" processes.txt >> selected.txt 
-  934  history
-  935  history | tail -n +924 > commands.txt
+cat selected.txt commands.txt 
+318 processes.txt
+166:message+     656  0.0  0.0   8644  5096 ?        Ss   Jan15   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+170:nvpd         666  0.0  0.0   6680  2148 ?        Ss   Jan15   0:00 /usr/bin/nvidia-persistenced --user nvpd
+181:root         923  0.0  0.0 118720 23320 ?        Ssl  Jan15   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+195:root         946  0.0  0.0   9360  4680 tty2     SLs+ Jan15   0:00 /usr/bin/ly
+204:piotr       1282  0.0  0.0  90992  6004 ?        S<sl Jan15   0:00 /usr/bin/pipewire
+205:piotr       1283  1.0  0.1 1567008 33712 ?       S<sl Jan15   3:52 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+208:piotr       1288  0.0  0.0   9360  2804 tty2     S+   Jan15   0:00 /usr/bin/ly
+210:piotr       1297  0.0  0.0  12208  8692 ?        Ss   Jan15   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+211:piotr       1300  0.0  0.0  85304  6440 ?        S<l  Jan15   0:00 /usr/bin/pipewire-media-session
+224:piotr       1459  0.0  0.0 383200 10444 ?        Ssl  Jan15   0:11 /usr/bin/ibus-daemon --daemonize --xim
+231:piotr       1496  0.0  0.0   7672  3668 ?        S    Jan15   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+238:piotr       1537  0.0  0.0   2420   520 ?        S    Jan15   0:00 /bin/sh -c nm-applet
+240:piotr       1549  0.0  0.0   2420   588 ?        S    Jan15   0:00 /bin/sh -c compton
+244:piotr       1577  0.0  0.0   2420   524 ?        S    Jan15   0:00 /bin/sh -c i3status
+246:piotr       1584  0.0  0.0 237192  8560 ?        Sl   Jan15   0:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+248:piotr       1618  0.0  0.0 330848 24396 ?        Ssl  Jan15   0:00 /usr/bin/dunst
+268:piotr       8981  0.0  0.0 159692  4968 ?        Ssl  Jan15   0:00 /usr/bin/speech-dispatcher --spawn --communication-method unix_socket --socket-path /run/user/1000/speech-dispatcher/speechd.sock
+271:piotr      10705  0.0  0.0   2420   520 ?        S    Jan15   0:00 /bin/sh -c xterm
+  980  mkdir zadanie
+  981  cd zadanie/
+  982  touch processes.txt
+  983  ps aux > processes.txt
+  984  cp processes.txt copy.txt
+  985  mkdir backup
+  986  mv copy.txt backup/
+  987  wc -l processes.txt
+  988  wc -l processes.txt > selected.txt
+  989  grep -rni /bin processes.txt >> selected.txt 
+  990  history 
+  991  history |tail -n12
+  992  history |tail -n13 > commands.txt
