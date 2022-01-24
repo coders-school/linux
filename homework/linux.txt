@@ -1,4 +1,4 @@
-mkdir homework
+grzegorz@grzegorz-ThinkBook-15-G2-ARE:~$ mkdir homework
 grzegorz@grzegorz-ThinkBook-15-G2-ARE:~$ touch homework/processes.txt
 grzegorz@grzegorz-ThinkBook-15-G2-ARE:~$ ps aux > homework/processes.txt 
 grzegorz@grzegorz-ThinkBook-15-G2-ARE:~$ cp homework/processes.txt homework/copy.txt
@@ -9,7 +9,361 @@ grzegorz@grzegorz-ThinkBook-15-G2-ARE:~$ wc -l homework/processes.txt
 grzegorz@grzegorz-ThinkBook-15-G2-ARE:~$ wc -l homework/processes.txt > homework/selected.txt
 grzegorz@grzegorz-ThinkBook-15-G2-ARE:~$ grep -n /bin homework/processes.txt >> homework/selected.txt 
 grzegorz@grzegorz-ThinkBook-15-G2-ARE:~$ history
-history | tail -11 > homework/commands.txt
+    1  sudo apt install g++ clang
+    2  pwd
+    3  ls
+    4  clear
+    5  ls
+    6  cd ~
+    7  cd -
+    8  cd ./Publiczny/
+    9  ls
+   10  cd ..
+   11  cd .
+   12  s
+   13  cd ..
+   14  ls
+   15  ls /grzegorz
+   16  ls
+   17  ls ../grzegorz/
+   18  ls ./grzegorz/
+   19  mkdir cwiczenia
+   20  su mkdir cwiczenia
+   21  sudo mkdir cwiczenia
+   22  ls
+   23  sudo
+   24  sudo grzegorz
+   25  ls
+   26  cd ..
+   27  ls
+   28  mkdir cwiczenia
+   29  touch ja
+   30  sudo touch ja
+   31  ls
+   32  sudo touch ja
+   33  ls
+   34  cd ja
+   35  ls
+   36  cat ja
+   37  ls
+   38  mkdir
+   39  logout
+   40  sudo root
+   41  su
+   42  sudo
+   43  sudo mkdir ty
+   44  ls
+   45  rm ty
+   46  rm -r ty
+   47  su rm -r ty
+   48  sudo rm -r ty
+   49  ls
+   50  ls -l
+   51  touch ja
+   52  ls
+   53  touch ja
+   54  ls -l
+   55  cat ja
+   56  cat > ja
+   57  ls -l
+   58  touch ja
+   59  ls -l
+   60  rm ja
+   61  ls
+   62  man cp
+   63  clear
+   64  man more
+   65  man wc
+   66  g++ --help
+   67  g++
+   68  clang --help
+   69  find g++
+   70  man find
+   71  find / -iname sth
+   72  clang --help
+   73  whereis clang
+   74  whereis g++
+   75  sudo find / -iname sth
+   76  sudo find / -iname "sth"
+   77  man find
+   78  sudo find / -iname fo
+   79  man find
+   80  clear
+   81  grep -rni dupa *
+   82  ls
+   83  mkdir homework_linux
+   84  ls
+   85  cd homework_linux/
+   86  cd ..
+   87  rm -r homework_linux/
+   88  mkdir homework
+   89  ls
+   90  rm -r homework/
+   91  ls
+   92  clear
+   93  mkdir homework
+   94  ls
+   95  touch ./homework/processes.txt
+   96  ps aux > homework/processes.txt
+   97  cp homework/processes.txt homework/copy.txt
+   98  mv homework/copy.txt backup
+   99  wc -l homework/processes.txt 
+  100  wc -l homework/processes.txt > homework/selected.txt
+  101  man mkdir
+  102  man mv
+  103  man grep
+  104  grep /bin .
+  105  grep \bin .
+  106  grep bin .
+  107  man grep
+  108  grep bin .
+  109  ls
+  110  grep obrazy .
+  111  grep -r bin
+  112  ls
+  113  cd homework/
+  114  ls
+  115  grep -rn bin processes.txt 
+  116  grep -rn "bin" processes.txt 
+  117  clear
+  118  grep -rn "bin" processes.txt 
+  119  clear
+  120  grep -rn [bin] processes.txt 
+  121  grep -rn ["bin"] processes.txt 
+  122  grep -rn -name bin processes.txt 
+  123  grep -rn name bin processes.txt 
+  124  grep -rn / bin processes.txt 
+  125  clear
+  126  grep -rn  /bin processes.txt 
+  127  grep -rn  /bin processes.txt >> my.txt
+  128  ls
+  129  cat my.txt 
+  130  ls
+  131  grep -n /bin processes.txt 
+  132  history
+  133  cd ..
+  134  ls
+  135  rm -r backup homework/
+  136  ls
+  137  clear
+  138  ls
+  139  man tail
+  140  history | tail -10
+  141  history
+  142  cat homework/commands.txt 
+  143  cat homework/command.txt 
+  144  cat pierwszy
+  145  toch ja
+  146  touch ja
+  147  touch ty
+  148  cat ja
+  149  cat > ja
+  150  cat ja
+  151  cat > ty
+  152  cat ty
+  153  cat ja ty 
+  154  cat homework/command.txt 
+  155  ls
+  156  mkdir homework
+  157  touch ./homework/processes.txt
+  158  ps aux > homework/processes.txt 
+  159  copy homework/processes.txt homework/copy.txt
+  160  cp homework/processes.txt homework/copy.txt
+  161  cd ..
+  162  ls
+  163  cd /
+  164  ls
+  165  cd home
+  166  cd grzegorz/
+  167  ls
+  168  rm -r homework/
+  169  clear
+  170  ls
+  171  mkdir homework
+  172  ls
+  173  touch homework/processes.txt
+  174  ps aux > homework/processes.txt 
+  175  cp homework/processes.txt copy.txt
+  176  mkdir backup
+  177  rm rmdir
+  178  ls
+  179  rmdir backup
+  180  ls homework/
+  181  rm homework/
+  182  rm -r homework/
+  183  clear
+  184  mkdir homework
+  185  touch homework/processes.txt
+  186  ps aux > homework/processes.txt 
+  187  cp homework/processes.txt copy.txt
+  188  ls
+  189  rm copy.txt 
+  190  cp homework/processes.txt homework/copy.txt
+  191  mv homework/copy ./backup
+  192  mv homework/copy backup
+  193  mv homework/copy /backup
+  194  mv homework/copy.txt /backup
+  195  mv homework/copy.txt backup
+  196  ls
+  197  cd backup
+  198  mv homework/copy.txt ./backup
+  199  mv homework/copy.txt /backup
+  200  ls
+  201  rm -r backup homework/
+  202  clear
+  203  mkdir homework
+  204  touch homework/processes.txt
+  205  ps aux > homework/processes.txt 
+  206  cp homework/processes.txt copy.txt
+  207  mkdir backup
+  208  ls homework/
+  209  rm homework/
+  210  rm -r homework/
+  211  clear
+  212  mkdir homework
+  213  touch homework/processes.txt
+  214  ps aux > homework/processes.txt 
+  215  cp homework/processes.txt homework/copy.txt
+  216  mkdir backup
+  217  rm -r backup
+  218  mkdir backup
+  219  mv homework/copy.txt backup/
+  220  ls backup/
+  221  wc -l homework/processes.txt 
+  222  wc -l homework/processes.txt > homework/selected.txt
+  223  cat homework/selected.txt 
+  224  grep -n homework/processes.txt /bin >> homework/selected.txt 
+  225  grep -n /bin homework/processes.txt >> homework/selected.txt 
+  226  cat homework/selected.txt 
+  227  history
+  228  history | tail -15
+  229  history | tail -16
+  230  history | tail -18
+  231  history
+  232  history | tail -19 > homework/commands.txt
+  233  history
+  234  history | tail -21 > homework/commands.txt
+  235  cat homework/commands.txt 
+  236  history
+  237  history | tail -25 > homework/commands.txt 
+  238  cat homework/commands.txt 
+  239  clear
+  240  history
+  241  history | tail -29 > homework/commands.txt 
+  242  clear
+  243  cat homework/commands.txt 
+  244  clear
+  245  history
+  246  history | tail -35 > homework/commands.txt 
+  247  cat homework/commands.txt 
+  248  rm homework/
+  249  rm -r homework/
+  250  ls
+  251  rm copy.txt 
+  252  mkdir homework
+  253  touch homework/processes.txt
+  254  ps aux > homework/processes.txt 
+  255  cp homework/processes.txt homework/copy.txt
+  256  mkdir backup
+  257  rm backup
+  258  rm -r backup
+  259  mkdir backup
+  260  mv homework/copy.txt backup/
+  261  wc -l > homework/selected.txt
+  262  ls
+  263  rm -r backup/
+  264  rm -r homework/
+  265  clear
+  266  mkdir homework
+  267  touch homework/processes.txt
+  268  ps aux > homework/processes.txt 
+  269  cp homework/processes.txt homework/copy.txt
+  270  ls
+  271  mkdir backup
+  272  mv homework/copy.txt backup/
+  273  wc -l homework/processes.txt 
+  274  wc -l homework/processes.txt > homework/selected.txt
+  275  cat homework/selected.txt 
+  276  grep -n /bin homework/processes.txt > homework/selected.txt 
+  277  cat homework/selected.txt 
+  278  history
+  279  history | tail -29 > homework/command.txt
+  280  cat homework/selected.txt homework/command.txt 
+  281  ls
+  282  mv ja /ty
+  283  sudo mv ja /ty
+  284  ls
+  285  cat ty
+  286  rm ty
+  287  cat  > ja
+  288  cat ja
+  289  mv ja /kodeki
+  290  sudo mv ja /kodeki
+  291  ls
+  292  mv backup rowery
+  293  ls
+  294  ls rowery/
+  295  man mv
+  296  ls
+  297  rm homework/ rowery/
+  298  rm -r homework/ rowery/
+  299  ls
+  300  clear
+  301  ls
+  302  clear
+  303  mkdir homework
+  304  touch homework/processes.txt
+  305  ps aux homework/processes.txt 
+  306  clear
+  307  rm -r homework/
+  308  ls
+  309  clear
+  310  mkdir homework
+  311* touch auhomework/processes.txt
+  312  ps aux > homework/processes.txt 
+  313  cp homework/processes.txt  homework/copy.txt
+  314  mkdir homework/backup
+  315  mv homework/copy.txt homework/backup/
+  316  wc -l homework/processes.txt 
+  317  wc -l homework/processes.txt > homework/selected.txt
+  318  grep -n /bin homework/processes.txt >> homework/selected.txt 
+  319  history
+  320  ls
+  321  rm homework/
+  322  rm -rhomework/
+  323  rm -r homework/
+  324  ls
+  325  clear
+  326  clear history
+  327  clear
+  328  ls
+  329  clear
+  330  mkdir homework
+  331  touch homework/processes.txt
+  332  ps aux > homework/processes.txt 
+  333  cp homework/processes.txt homework/copy
+  334  mkdir homework/backup
+  335  mv homework/copy homework/backup/
+  336  wc -l homework/processes.txt 
+  337  wc -l homework/processes.txt > homework/selected.txt
+  338  grep -n /bin homework/processes.txt  >> homework/selected.txt 
+  339  history
+  340  history | tail -10 > homework/commands.txt
+  341  cat homework/selected.txt homework/commands.txt 
+  342  rm -r homework/
+  343  ls
+  344  clear
+  345  mkdir homework
+  346  touch homework/processes.txt
+  347  ps aux > homework/processes.txt 
+  348  cp homework/processes.txt homework/copy.txt
+  349  mkdir homework/backup
+  350  mv homework/copy.txt homework/backup/
+  351  wc -l homework/processes.txt 
+  352  wc -l homework/processes.txt > homework/selected.txt
+  353  grep -n /bin homework/processes.txt >> homework/selected.txt 
+  354  history
+grzegorz@grzegorz-ThinkBook-15-G2-ARE:~$ history | tail -11 > homework/commands.txt
 grzegorz@grzegorz-ThinkBook-15-G2-ARE:~$ cat homework/selected.txt homework/commands.txt 
 217 homework/processes.txt
 109:message+     527  0.0  0.0   8792  5736 ?        Ss   15:28   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
@@ -34,4 +388,4 @@ grzegorz@grzegorz-ThinkBook-15-G2-ARE:~$ cat homework/selected.txt homework/comm
   353  grep -n /bin homework/processes.txt >> homework/selected.txt 
   354  history
   355  history | tail -11 > homework/commands.txt
-
+grzegorz@grzegorz-ThinkBook-15-G2-ARE:~$ grep -n /bin homework/processes.txt >> homework/selected.txt 
