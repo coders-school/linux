@@ -1,0 +1,37 @@
+mkdir homework
+grzegorz@grzegorz-ThinkBook-15-G2-ARE:~$ touch homework/processes.txt
+grzegorz@grzegorz-ThinkBook-15-G2-ARE:~$ ps aux > homework/processes.txt 
+grzegorz@grzegorz-ThinkBook-15-G2-ARE:~$ cp homework/processes.txt homework/copy.txt
+grzegorz@grzegorz-ThinkBook-15-G2-ARE:~$ mkdir homework/backup
+grzegorz@grzegorz-ThinkBook-15-G2-ARE:~$ mv homework/copy.txt homework/backup/
+grzegorz@grzegorz-ThinkBook-15-G2-ARE:~$ wc -l homework/processes.txt 
+217 homework/processes.txt
+grzegorz@grzegorz-ThinkBook-15-G2-ARE:~$ wc -l homework/processes.txt > homework/selected.txt
+grzegorz@grzegorz-ThinkBook-15-G2-ARE:~$ grep -n /bin homework/processes.txt >> homework/selected.txt 
+grzegorz@grzegorz-ThinkBook-15-G2-ARE:~$ history
+history | tail -11 > homework/commands.txt
+grzegorz@grzegorz-ThinkBook-15-G2-ARE:~$ cat homework/selected.txt homework/commands.txt 
+217 homework/processes.txt
+109:message+     527  0.0  0.0   8792  5736 ?        Ss   15:28   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+113:root         548  0.0  0.0  41856 20140 ?        Ss   15:28   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+135:grzegorz    1031  0.0  0.0 887408 19616 ?        S<sl 15:29   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+136:grzegorz    1035  0.0  0.0 243080  7012 ?        Sl   15:29   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+138:grzegorz    1045  0.0  0.0   7928  5148 ?        Ss   15:29   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+141:grzegorz    1198  0.0  0.0   6032   460 ?        Ss   15:29   0:00 /usr/bin/ssh-agent /usr/bin/im-launch mate-session
+143:grzegorz    1281  0.0  0.0   7372  4360 ?        S    15:29   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+145:grzegorz    1329  0.0  0.1 887740 46008 ?        Sl   15:29   0:01 /usr/bin/mate-settings-daemon
+151:grzegorz    1360  0.0  0.2 718336 86644 ?        Sl   15:29   0:01 /usr/bin/caja
+163:grzegorz    1407  0.0  0.0  62436 34676 ?        S    15:29   0:00 /usr/bin/python3 /usr/share/system-config-printer/applet.py
+177:grzegorz    1516  0.0  0.0   2608   600 ?        S    15:29   0:00 /bin/sh /usr/lib/blueberry/safechild /usr/sbin/rfkill event
+  345  mkdir homework
+  346  touch homework/processes.txt
+  347  ps aux > homework/processes.txt 
+  348  cp homework/processes.txt homework/copy.txt
+  349  mkdir homework/backup
+  350  mv homework/copy.txt homework/backup/
+  351  wc -l homework/processes.txt 
+  352  wc -l homework/processes.txt > homework/selected.txt
+  353  grep -n /bin homework/processes.txt >> homework/selected.txt 
+  354  history
+  355  history | tail -11 > homework/commands.txt
+
