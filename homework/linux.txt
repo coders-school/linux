@@ -1,0 +1,16 @@
+jux1e@jux1eDESKTOP:~/coders$ cat selected.txt commands.txt
+6
+  253  mkdir coders
+  254  cd coders/
+  255  touch processes.txt
+  256  ps aux > processes.txt
+  257  cp processes.txt copy.txt
+  258  mkdir backup
+  259  mv copy.txt backup/
+  260  wc -l processes.txt
+  261  wc -l processes.txt | cut -c 1-2 > selected.txt
+  262  grep -n "/bin" processes.txt
+  263  grep -n "/bin" processes.txt >> selected.txt
+  264  history
+  265  history | tail -n 12 > commands.txt
+jux1e@jux1eDESKTOP:~/coders$
