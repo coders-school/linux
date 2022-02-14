@@ -39,13 +39,7 @@ grzegorz    3857  0.2  0.6 1464020 99600 ?       Sl   11:38   0:02 /usr/bin/gnom
 grzegorz    3926  0.0  0.0  20660  3132 ?        S    11:38   0:00 bash /usr/bin/remmina-file-wrapper
 grzegorz    4723  0.0  0.1 793648 24996 ?        Sl   11:47   0:00 /usr/bin/snap userd
 grzegorz    6090  2.2  0.3 834756 62264 ?        Sl   11:55   0:03 /usr/bin/gedit --gapplication-service
-   71  mkdir homework
-   72  touch homework/processes.txt
-   73  ps aux > homework/processes.txt 
-   74  cp homework/processes.txt homework/copy.txt
-   75  mkdir homework/backup
-   76  mv homework/copy.txt homework/backup/
-   77  wc -l homework/processes.txt 
+   71 
    78  wc -l homework/processes.txt > homework/selected.txt
    79  grep /bin homework/processes.txt  >> homework/selected.txt 
    80  history 10
