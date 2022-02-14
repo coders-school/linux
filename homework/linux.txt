@@ -11,4 +11,3 @@ grzegorz@grzegorz-ThinkPad-L580:~$ grep /bin homework/processes.txt  >> homework
 grzegorz@grzegorz-ThinkPad-L580:~$ history
 grzegorz@grzegorz-ThinkPad-L580:~$ history | tail -n11 > homework/command.txt
 grzegorz@grzegorz-ThinkPad-L580:~$ cat homework/selected.txt >> homework/command.txt 
-
