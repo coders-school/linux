@@ -1,0 +1,52 @@
+rzegorz@grzegorz-ThinkPad-L580:~$ mkdir homework
+grzegorz@grzegorz-ThinkPad-L580:~$ touch homework/processes.txt
+grzegorz@grzegorz-ThinkPad-L580:~$ ps aux > homework/processes.txt 
+grzegorz@grzegorz-ThinkPad-L580:~$ cp homework/processes.txt homework/copy.txt
+grzegorz@grzegorz-ThinkPad-L580:~$ mkdir homework/backup
+grzegorz@grzegorz-ThinkPad-L580:~$ mv homework/copy.txt homework/backup/
+grzegorz@grzegorz-ThinkPad-L580:~$ wc -l homework/processes.txt 
+264 homework/processes.txt
+grzegorz@grzegorz-ThinkPad-L580:~$ wc -l homework/processes.txt > homework/selected.txt
+grzegorz@grzegorz-ThinkPad-L580:~$ grep /bin homework/processes.txt  >> homework/selected.txt 
+grzegorz@grzegorz-ThinkPad-L580:~$ history 10
+   71  mkdir homework
+   72  touch homework/processes.txt
+   73  ps aux > homework/processes.txt 
+   74  cp homework/processes.txt homework/copy.txt
+   75  mkdir homework/backup
+   76  mv homework/copy.txt homework/backup/
+   77  wc -l homework/processes.txt 
+   78  wc -l homework/processes.txt > homework/selected.txt
+   79  grep /bin homework/processes.txt  >> homework/selected.txt 
+   80  history 10
+grzegorz@grzegorz-ThinkPad-L580:~$ history | tail -11 > homework/command.txt
+grzegorz@grzegorz-ThinkPad-L580:~$ cat homework/selected.txt homework/command.txt 
+264 homework/processes.txt
+message+     770  0.1  0.0   9964  6504 ?        Ss   11:16   0:02 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         781  0.0  0.1  50492 20092 ?        Ss   11:16   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         905  0.0  0.1 129188 22632 ?        Ssl  11:16   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+whoopsie    1281  0.0  0.0 253524 15984 ?        Ssl  11:16   0:00 /usr/bin/whoopsie -f
+grzegorz    1400  0.3  0.1 2280932 20440 ?       S<sl 11:17   0:07 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+grzegorz    1405  0.0  0.0   8356  5384 ?        Ss   11:17   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+grzegorz    1411  0.0  0.0 251692  7396 ?        Sl   11:17   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+grzegorz    1490  0.0  0.0 175348  6432 tty2     Ssl+ 11:17   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+grzegorz    1572  0.0  0.0   6040   456 ?        Ss   11:17   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+grzegorz    1597  0.0  0.0   7380  4400 ?        S    11:17   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+grzegorz    1624  6.2  1.6 4792152 270456 ?      Ssl  11:17   2:35 /usr/bin/gnome-shell
+grzegorz    1727  0.0  0.1 2941980 27456 ?       Sl   11:17   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+grzegorz    1841  0.6  1.5 1213320 249240 ?      Sl   11:17   0:15 /snap/snap-store/558/usr/bin/snap-store --gapplication-service
+grzegorz    3857  0.2  0.6 1464020 99600 ?       Sl   11:38   0:02 /usr/bin/gnome-calendar --gapplication-service
+grzegorz    3926  0.0  0.0  20660  3132 ?        S    11:38   0:00 bash /usr/bin/remmina-file-wrapper
+grzegorz    4723  0.0  0.1 793648 24996 ?        Sl   11:47   0:00 /usr/bin/snap userd
+grzegorz    6090  2.2  0.3 834756 62264 ?        Sl   11:55   0:03 /usr/bin/gedit --gapplication-service
+   71  mkdir homework
+   72  touch homework/processes.txt
+   73  ps aux > homework/processes.txt 
+   74  cp homework/processes.txt homework/copy.txt
+   75  mkdir homework/backup
+   76  mv homework/copy.txt homework/backup/
+   77  wc -l homework/processes.txt 
+   78  wc -l homework/processes.txt > homework/selected.txt
+   79  grep /bin homework/processes.txt  >> homework/selected.txt 
+   80  history 10
+   81  history | tail -11 > homework/command.txt
