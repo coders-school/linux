@@ -1,0 +1,13 @@
+rzegorz@grzegorz-ThinkPad-L580:~$ mkdir homework
+grzegorz@grzegorz-ThinkPad-L580:~$ touch homework/processes.txt
+grzegorz@grzegorz-ThinkPad-L580:~$ ps aux > homework/processes.txt 
+grzegorz@grzegorz-ThinkPad-L580:~$ cp homework/processes.txt homework/copy.txt
+grzegorz@grzegorz-ThinkPad-L580:~$ mkdir homework/backup
+grzegorz@grzegorz-ThinkPad-L580:~$ mv homework/copy.txt homework/backup/
+grzegorz@grzegorz-ThinkPad-L580:~$ wc -l homework/processes.txt 
+264 homework/processes.txt
+grzegorz@grzegorz-ThinkPad-L580:~$ wc -l homework/processes.txt > homework/selected.txt
+grzegorz@grzegorz-ThinkPad-L580:~$ grep /bin homework/processes.txt  >> homework/selected.txt 
+grzegorz@grzegorz-ThinkPad-L580:~$ history
+grzegorz@grzegorz-ThinkPad-L580:~$ history | tail -n11 > homework/command.txt
+grzegorz@grzegorz-ThinkPad-L580:~$ cat homework/selected.txt >> homework/command.txt 
