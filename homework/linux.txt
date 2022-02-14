@@ -30,4 +30,4 @@ grzegorz    1400  0.3  0.1 2280932 20440 ?       S<sl 11:17   0:07 /usr/bin/puls
 grzegorz    1405  0.0  0.0   8356  5384 ?        Ss   11:17   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
 grzegorz    1411  0.0  0.0 251692  7396 ?        Sl   11:17   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
 grzegorz    1490  0.0  0.0 175348  6432 tty2     Ssl+ 11:17   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-grzegorz    1572  0.0  0.0   6040   456 ?        Ss   11:17   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-
+gr
