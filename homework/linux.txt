@@ -1,33 +1,41 @@
-rzegorz@grzegorz-ThinkPad-L580:~$ mkdir homework
+grzegorz@grzegorz-ThinkPad-L580:~$ mkdir homework
 grzegorz@grzegorz-ThinkPad-L580:~$ touch homework/processes.txt
 grzegorz@grzegorz-ThinkPad-L580:~$ ps aux > homework/processes.txt 
 grzegorz@grzegorz-ThinkPad-L580:~$ cp homework/processes.txt homework/copy.txt
 grzegorz@grzegorz-ThinkPad-L580:~$ mkdir homework/backup
 grzegorz@grzegorz-ThinkPad-L580:~$ mv homework/copy.txt homework/backup/
 grzegorz@grzegorz-ThinkPad-L580:~$ wc -l homework/processes.txt 
-264 homework/processes.txt
-grzegorz@grzegorz-ThinkPad-L580:~$ wc -l homework/processes.txt > homework/selected.txt
-grzegorz@grzegorz-ThinkPad-L580:~$ grep /bin homework/processes.txt  >> homework/selected.txt 
-grzegorz@grzegorz-ThinkPad-L580:~$ history 10
-   71  mkdir homework
-   72  touch homework/processes.txt
-   73  ps aux > homework/processes.txt 
-   74  cp homework/processes.txt homework/copy.txt
-   75  mkdir homework/backup
-   76  mv homework/copy.txt homework/backup/
-   77  wc -l homework/processes.txt 
-   78  wc -l homework/processes.txt > homework/selected.txt
-   79  grep /bin homework/processes.txt  >> homework/selected.txt 
-   80  history 10
-grzegorz@grzegorz-ThinkPad-L580:~$ history | tail -11 > homework/command.txt
-grzegorz@grzegorz-ThinkPad-L580:~$ cat homework/selected.txt homework/command.txt 
-264 homework/processes.txt
-message+     770  0.1  0.0   9964  6504 ?        Ss   11:16   0:02 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-root         781  0.0  0.1  50492 20092 ?        Ss   11:16   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-root         905  0.0  0.1 129188 22632 ?        Ssl  11:16   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-whoopsie    1281  0.0  0.0 253524 15984 ?        Ssl  11:16   0:00 /usr/bin/whoopsie -f
-grzegorz    1400  0.3  0.1 2280932 20440 ?       S<sl 11:17   0:07 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-grzegorz    1405  0.0  0.0   8356  5384 ?        Ss   11:17   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-grzegorz    1411  0.0  0.0 251692  7396 ?        Sl   11:17   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
-grzegorz    1490  0.0  0.0 175348  6432 tty2     Ssl+ 11:17   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-gr
+260 homework/processes.txt
+grzegorz@grzegorz-ThinkPad-L580:~$ wc -l homework/processes.txt > selected.txt
+grzegorz@grzegorz-ThinkPad-L580:~$ grep -n /bin homework/processes.txt >> selected.txt 
+grzegorz@grzegorz-ThinkPad-L580:~$ history
+    1  history
+    2  ls /
+    3  wc =l
+    4  wc -l /
+    5  ls /dev/
+    6  clear
+    7  mkdir homework
+    8  touch homework/processes.txt
+    9  ps aux > homework/processes.txt 
+   10  cp homework/processes.txt homework/copy.txt
+   11  mkdir homework/backup
+   12  mv homework/copy.txt homework/backup/
+   13  wc -l homework/processes.txt 
+   14  wc -l homework/processes.txt > selected.txt
+   15  grep -n /bin homework/processes.txt >> selected.txt 
+   16  history
+grzegorz@grzegorz-ThinkPad-L580:~$ history | tail -n 11 > homework/commands.txt
+grzegorz@grzegorz-ThinkPad-L580:~$ cat selected.txt >> homework/commands.txt | cat homework/commands.txt 
+    7  mkdir homework
+    8  touch homework/processes.txt
+    9  ps aux > homework/processes.txt 
+   10  cp homework/processes.txt homework/copy.txt
+   11  mkdir homework/backup
+   12  mv homework/copy.txt homework/backup/
+   13  wc -l homework/processes.txt 
+   14  wc -l homework/processes.txt > selected.txt
+   15  grep -n /bin homework/processes.txt >> selected.txt 
+   16  history
+   17  history | tail -n 11 > homework/commands.txt
+
