@@ -1,26 +1,27 @@
 andrzej@andrzej-VirtualBox:~/Desktop$ cat homework/selected.txt homework/commands.txt 
-195 homework/processes.txt
+196 homework/processes.txt
 86:message+     543  0.0  0.1   8876  5940 ?        Ss   22:23   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
 88:root         559  0.0  0.5  41860 20132 ?        Ss   22:23   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
 99:root         646  0.0  0.5 120556 22976 ?        Ssl  22:23   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
 105:whoopsie     717  0.0  0.3 327252 15964 ?        Ssl  22:23   0:00 /usr/bin/whoopsie -f
-108:andrzej      765  0.0  0.4 1935644 19208 ?       S<sl 22:23   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+108:andrzej      765  0.0  0.4 2197788 19224 ?       S<sl 22:23   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
 109:andrzej      769  0.0  0.1 242688  7204 ?        Sl   22:23   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
 111:andrzej      774  0.0  0.1 166548  6524 tty2     Ssl+ 22:23   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
 112:andrzej      776  0.0  0.1  10532  7572 ?        Ss   22:23   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
 126:andrzej      942  0.0  0.0   6040   452 ?        Ss   22:23   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
 128:andrzej      970  0.0  0.1   7244  4204 ?        S    22:23   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-131:andrzej     1002  4.0  8.8 3723516 356304 ?      Ssl  22:23   1:23 /usr/bin/gnome-shell
+131:andrzej     1002  4.0  8.9 3726168 358700 ?      Ssl  22:23   1:49 /usr/bin/gnome-shell
 145:andrzej     1129  0.0  0.6 2601292 26368 ?       Sl   22:23   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-  362  mkdir homework
-  363  touch homework/processes.txt
-  364  ps aux > homework/processes.txt 
-  365  cp homework/processes.txt homework/copy.txt
-  366  mkdir bakcup
-  367  mv homework/copy.txt bakcup/copy.txt
-  368  wc -l homework/processes.txt 
-  369  wc -l homework/processes.txt  > homework/selected.txt
-  370  grep -n /bin homework/processes.txt >> homework/selected.txt 
-  371  history
-  372  history | tail -n11 > homework/commands.txt
+193:andrzej     2539  0.1  1.7 989496 71012 ?        Sl   23:03   0:00 /usr/bin/nautilus --gapplication-service
+  375  mkdir homework
+  376  touch homework/processes.txt
+  377  ps aux > homework/processes.txt 
+  378  cp homework/processes.txt homework/copy.txt
+  379  mkdir backup
+  380  mv homework/copy.txt backup/copy.txt
+  381  wc -l homework/processes.txt 
+  382  wc -l homework/processes.txt  > homework/selected.txt
+  383  grep -n /bin homework/processes.txt >> homework/selected.txt 
+  384  history
+  385  history | tail -n11 > homework/commands.txt
 andrzej@andrzej-VirtualBox:~/Desktop$ 
