@@ -26,4 +26,4 @@ andrzej     3400  0.0  1.0 680148 41360 ?        SLl  16:11   0:00 /usr/bin/seah
   336  grep /bin homework/processes.txt >> homework/selected.txt 
   337  history
   338  history | tail -n11 > homework/commands.txt
-andrzej@andrzej-VirtualBox:~/Desktop$ 
+andrzej@andrzej-VirtualBox:~/Desktop$
