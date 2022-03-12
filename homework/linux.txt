@@ -1,0 +1,29 @@
+andrzej@andrzej-VirtualBox:~/Desktop$ cat homework/selected.txt homework/commands.txt 
+184 homework/processes.txt
+message+     548  0.0  0.1   8964  5804 ?        Ss   15:47   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         562  0.0  0.4  41860 20072 ?        Ss   15:47   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         651  0.0  0.5 120556 22832 ?        Ssl  15:47   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+whoopsie     739  0.0  0.3 327252 15712 ?        Ssl  15:47   0:00 /usr/bin/whoopsie -f
+andrzej      788  0.0  0.4 1411356 19356 ?       S<sl 15:47   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+andrzej      793  0.0  0.1 242712  7160 ?        SLl  15:47   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+andrzej      797  0.0  0.1 166548  6580 tty2     Ssl+ 15:47   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+andrzej      800  0.0  0.2  13212  9932 ?        Ss   15:47   0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+andrzej      966  0.0  0.0   6040   452 ?        Ss   15:47   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+andrzej      993  0.0  0.0   7376  3952 ?        S    15:47   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+andrzej     1021  0.6  9.4 3725076 381016 ?      Ssl  15:47   2:25 /usr/bin/gnome-shell
+andrzej     1150  0.0  0.6 2601300 26532 ?       Sl   15:47   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+andrzej     1982  0.0 10.6 1004488 429648 ?      Sl   16:09   0:13 /snap/snap-store/558/usr/bin/snap-store --local-filename /home/andrzej/Downloads/code_1.65.2-1646927742_amd64.deb
+andrzej     3398  0.0  1.3 713596 54696 ?        Sl   16:11   0:00 /usr/bin/gnome-calendar --gapplication-service
+andrzej     3400  0.0  1.0 680148 41360 ?        SLl  16:11   0:00 /usr/bin/seahorse --gapplication-service
+  328  mkdir homework
+  329  touch homework/processes.txt
+  330  ps aux > homework/processes.txt 
+  331  cp homework/processes.txt homework/copy.txt
+  332  mkdir backup
+  333  mv homework/copy.txt backup/copy.txt
+  334  wc -l homework/processes.txt 
+  335  wc -l homework/processes.txt > homework/selected.txt
+  336  grep /bin homework/processes.txt >> homework/selected.txt 
+  337  history
+  338  history | tail -n11 > homework/commands.txt
+andrzej@andrzej-VirtualBox:~/Desktop$ 
