@@ -14,6 +14,21 @@ science     5632  0.0  0.1 2866276 27480 ?       Sl   mar15   0:00 /usr/bin/gjs 
 science     5823  0.0  0.1 2931812 27608 ?       Sl   mar15   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
 science     6205  0.0  0.1 2347508 20860 ?       Sl   mar15   0:00 /usr/bin/snap userd
 science    13704  0.0  0.4 355108 74788 ?        Sl   mar15   0:15 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1001/.mutter-Xwaylandauth.WKGGJ1 -listen 4 -listen 5 -displayfd 6 -initfd 7
+238:root        1041  0.0  0.1  41080 20840 ?        Ss   mar15   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+248:root        1128  0.0  0.1 119172 23088 ?        Ssl  mar15   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+259:whoopsie    5254  0.0  0.0 249804 14204 ?        Ssl  mar15   0:00 /usr/bin/whoopsie -f
+270:science     5345  0.0  0.0  41704  6368 ?        S<sl mar15   0:00 /usr/bin/pipewire
+271:science     5346  0.0  0.0  25552  6280 ?        S<sl mar15   0:04 /usr/bin/pipewire-media-session
+272:science     5347  0.0  0.1 2008044 23272 ?       S<sl mar15   1:37 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+273:science     5351  0.0  0.0  10116  6344 ?        Ss   mar15   0:02 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+276:science     5363  0.0  0.0 243220  7468 ?        Sl   mar15   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+286:science     5442  0.0  0.0 164784  6120 tty2     Ssl+ mar15   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+291:science     5510  0.1  2.1 5457676 344548 ?      Ssl  mar15  17:29 /usr/bin/gnome-shell
+292:science     5516  0.0  0.0   8236  4436 ?        S    mar15   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+300:science     5632  0.0  0.1 2866276 27480 ?       Sl   mar15   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+319:science     5823  0.0  0.1 2931812 27608 ?       Sl   mar15   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
+325:science     6205  0.0  0.1 2347508 20860 ?       Sl   mar15   0:00 /usr/bin/snap userd
+331:science    13704  0.0  0.4 355108 74788 ?        Sl   mar15   0:15 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1001/.mutter-Xwaylandauth.WKGGJ1 -listen 4 -listen 5 -displayfd 6 -initfd 7
   252  cd rbb
   253  touch processes.txt
   254  ls
