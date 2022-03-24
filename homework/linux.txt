@@ -39,3 +39,29 @@ science@rbb-fractal:~/Documents/CPP/Coders/rbb$ cat selected.txt commands.txt
   273  history 21
   274  history 23
   275  history 24 > commands.txt
+  276  cat selected.txt commands.txt 
+  277  history tail
+  278  history tail 23
+  279  history tail 10
+  280  history tail 5
+  281  tail
+  282  grep /bin processes.txt
+  283  cat processes.txt
+  284  grep -l /bin processes.txt
+  285  cat selected.txt 
+  286  grep -n /bin processes.txt >> selected.txt 
+  287  cat selected.txt 
+  288  cat selected.txt commands.txt 
+  289  wc -l processes.txt > selected.txt
+  290  cat selected.txt 
+  291  grep -n /bin processes.txt >> selected.txt 
+  292  cat selected.txt 
+  293  cat selected.txt commands.txt 
+  294  wc -l processes.txt > selected.txt
+  295  cat selected.txt 
+  296  grep -n /bin processes.txt | cut -d : -f 1 >> selected.txt 
+  297  cat selected.txt 
+  298  cat selected.txt commands.txt 
+  299  history
+  300  history 49
+  301  history 50 > commands.txt 
