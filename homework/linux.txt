@@ -1,0 +1,38 @@
+science@rbb-fractal:~/Documents/CPP/Coders/rbb$ cat selected.txt commands.txt 
+root        1041  0.0  0.1  41080 20840 ?        Ss   mar15   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root        1128  0.0  0.1 119172 23088 ?        Ssl  mar15   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+whoopsie    5254  0.0  0.0 249804 14204 ?        Ssl  mar15   0:00 /usr/bin/whoopsie -f
+science     5345  0.0  0.0  41704  6368 ?        S<sl mar15   0:00 /usr/bin/pipewire
+science     5346  0.0  0.0  25552  6280 ?        S<sl mar15   0:03 /usr/bin/pipewire-media-session
+science     5347  0.0  0.1 2008044 22092 ?       S<sl mar15   1:22 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+science     5351  0.0  0.0  10116  6312 ?        Ss   mar15   0:02 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+science     5363  0.0  0.0 243220  7468 ?        Sl   mar15   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+science     5442  0.0  0.0 164784  6120 tty2     Ssl+ mar15   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+science     5510  0.1  2.0 5417312 335284 ?      Ssl  mar15  15:04 /usr/bin/gnome-shell
+science     5516  0.0  0.0   8236  4436 ?        S    mar15   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+science     5632  0.0  0.1 2866276 27480 ?       Sl   mar15   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+science     5823  0.0  0.1 2931812 27608 ?       Sl   mar15   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
+science     6205  0.0  0.1 2273520 21008 ?       Sl   mar15   0:00 /usr/bin/snap userd
+science    13704  0.0  0.4 355108 74788 ?        Sl   mar15   0:15 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1001/.mutter-Xwaylandauth.WKGGJ1 -listen 4 -listen 5 -displayfd 6 -initfd 7
+  223  ls
+  224  mv
+  225  mv processes.txt ./rbb
+  226  ls
+  227  cd rbb/
+  228  ls
+  229  ps aux > processes.txt 
+  230  cat processes.txt
+  231  cp processes.txt copy.txt
+  232  ls
+  233  wc -l copy.txt 
+  234  wc -l copy.txt > selected.txt
+  235  ls
+  236  cat selected.txt 
+  237  grep /bin processes.txt > selected.txt 
+  238  ls
+  239  cat selected.txt 
+  240  history
+  241  history 19 > commands.txt
+  242  ls
+  243  cat commands.txt 
+  244  history 22 > commands.txt
