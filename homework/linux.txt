@@ -46,3 +46,4 @@
   968  history | tail -n 30
   969  history | tail -n 29]
   970  history | tail -n 28
+  971  history | tail -n 17 > commands.txt
