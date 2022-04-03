@@ -1,13 +1,11 @@
 cat selected.txt commands.txt
        4 processes.txt
   792  cd processes
-  793  touch processes.txt
-  794  ps auc > processes.txt
-  795  cp processes.txt copy.txt
-  796  mkdir backup
-  797  mv copy.txt backup
-  798  wc -l processes.txt
-  799  wc -l processes.txt > selected.txt
-  800  grep -i "/bin" processes.txt | >> selected.txt
-  801  history
-  802  history | tail -n 10
+  814  touch processes.txt
+  815  ps aux > processes.txt
+  816  cp processes.txt copy.txt
+  817  mkdir backup
+  818  mv copy.txt backup
+  819  wc -l processes.txt
+  820  wc -l processes.txt > selected.txt
+  821  grep -n "/bin" processes.txt | >> selected.txt
