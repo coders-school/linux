@@ -8,4 +8,4 @@ cat selected.txt commands.txt
   818  mv copy.txt backup
   819  wc -l processes.txt
   820  wc -l processes.txt > selected.txt
-  821  grep -n "/bin" processes.txt | >> selected.txt
+  821  grep -n /bin processes.txt | >> selected.txt
