@@ -28,7 +28,5 @@
   906  grep -n /bin processes.txt >> selected.txt
   907  history
   908  history
-  909  history | tail -n 12
-  910  history | tail -n 13
-  911  history | tail -n 15 >> commands.txt
-  912  cat commands.txt
+  909  history | tail -n 12 >> commands.txt
+ 
