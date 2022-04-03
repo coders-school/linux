@@ -1,60 +1,34 @@
-cat selected.txt commands.txt
-     473 processes.txt
-42:root              3505   0.0  0.0 33744828   4060   ??  Ss   12:00PM   0:00.03 /usr/bin/sysdiagnose
-43:coffeina          3499   0.0  0.0 34177984   1728   ??  S    12:00PM   0:00.51 /Users/coffeina/Library/Application Support/JetBrains/Toolbox/apps/AndroidStudio/ch-0/211.7628.21.2111.8193401/Android Studio.app/Contents/bin/fsnotifier
-74:coffeina          1395   0.0  0.0 33609140   1108   ??  S    11:01AM   0:00.01 /usr/bin/ssh-agent -l
-  850  cd test_folder
-  851  touch processes.txt
-  852  ps aux > processes.txt
-  853  ll
-  854  cp processes.txt processes.txt copy.txt
-  855  cp processes.txt  copy.txt
-  856  mkdir backup
-  857  mv copy.txt backup
-  858  wc -l processes.txt
-  859  wc -l processes.txt > selected.txt
-  860  grep processes.txt | '/bin'
-  861  cd ..
-  862  cd Users/coffeina
-  863  ls -la
-  864  cd Programming
-  865  ls -la
-  866  cd GitHub
-  867  ls -la
-  868  cd linux-1
-  869  ls -la
-  870  cd test_folder
-  871  ls -la
-  872  grep -rin /bin processes.txt
-  873  cat processes.txt
-  874  grep -n /bin processes.txt >> selected.txt
-  875  clear
-  876  history
-  851  touch processes.txt
-  852  ps aux > processes.txt
-  853  ll
-  854  cp processes.txt processes.txt copy.txt
-  855  cp processes.txt  copy.txt
-  856  mkdir backup
-  857  mv copy.txt backup
-  858  wc -l processes.txt
-  859  wc -l processes.txt > selected.txt
-  860  grep processes.txt | '/bin'
-  861  cd ..
-  862  cd Users/coffeina
-  863  ls -la
-  864  cd Programming
-  865  ls -la
-  866  cd GitHub
-  867  ls -la
-  868  cd linux-1
-  869  ls -la
-  870  cd test_folder
-  871  ls -la
-  872  grep -rin /bin processes.txt
-  873  cat processes.txt
-  874  grep -n /bin processes.txt >> selected.txt
-  875  clear
-  876  history | tail -n 27 >> commands.txt
-  877  history | tail -n 27 >> commands.txt
-  878  cat selected.txt commands.txt
+ cat selected.txt commands.txt
+     470 processes.txt
+43:root              3505   0.0  0.0 33744828   4060   ??  Ss   12:00PM   0:00.03 /usr/bin/sysdiagnose
+72:coffeina          1395   0.0  0.0 33609140   1108   ??  S    11:01AM   0:00.01 /usr/bin/ssh-agent -l
+  896  ls -la
+  897  mkdir test
+  898  touch processes.txt
+  899  ps aux > processes.txt
+  900  cp processes.txt copy.txt
+  901  touch backup
+  902  mv copy.txt backup
+  903  wc -l processes.txt
+  904  wc -l processes.txt > selected.txt
+  905  grep -rin /bin processes.txt
+  906  grep -n /bin processes.txt >> selected.txt
+  907  history
+  908  history
+  909  history | tail -n 12
+  910  history | tail -n 13
+  898  touch processes.txt
+  899  ps aux > processes.txt
+  900  cp processes.txt copy.txt
+  901  touch backup
+  902  mv copy.txt backup
+  903  wc -l processes.txt
+  904  wc -l processes.txt > selected.txt
+  905  grep -rin /bin processes.txt
+  906  grep -n /bin processes.txt >> selected.txt
+  907  history
+  908  history
+  909  history | tail -n 12
+  910  history | tail -n 13
+  911  history | tail -n 15 >> commands.txt
+  912  cat commands.txt
