@@ -1,40 +1,21 @@
- cat commands.txt
-  918  mkdir test_folder
-  919  ls -la
-  920  cd test_folder
-  921  touch processes.txt
-  922  ps aux > processes.txt
-  923  cat processes.txt
-  924  cp processes.txt copy.txt
-  925  mkdir backup
-  926  ls -la
-  927  mv copy.txt backup
-  928  wc -l processes.txt
-  929  wc -l processes.txt > selcted.txt
-  930  cat processes.txt
-  931  grep -rin /bin processes.txt
-  932  grep -n /bin processes.txt >> selected.txt
-  933  cat selected.txt
-  934  history
-  935  history | tail -n 18
-  936  history | tail -n 19
-  918  mkdir test_folder
-  919  ls -la
-  920  cd test_folder
-  921  touch processes.txt
-  922  ps aux > processes.txt
-  923  cat processes.txt
-  924  cp processes.txt copy.txt
-  925  mkdir backup
-  926  ls -la
-  927  mv copy.txt backup
-  928  wc -l processes.txt
-  929  wc -l processes.txt > selcted.txt
-  930  cat processes.txt
-  931  grep -rin /bin processes.txt
-  932  grep -n /bin processes.txt >> selected.txt
-  933  cat selected.txt
-  934  history
-  935  history | tail -n 18
-  936  history | tail -n 19
-  937  history | tail -n 19 >> commands.txt
+cat selected.txt commands.txt
+     466 processes.txt
+38:root              3505   0.0  0.0 33744828   4060   ??  Ss   12:00PM   0:00.03 /usr/bin/sysdiagnose
+67:coffeina          1395   0.0  0.0 33609140   1108   ??  S    11:01AM   0:00.01 /usr/bin/ssh-agent -l
+  945  mkdir test_folder
+  946  cd test_folder
+  947  touch processes.txt
+  948  ps aux > processes.txt
+  949  cp processes.txt copy.txt
+  950  mkdir backup
+  951  mv copy.txt backup
+  952  wc -l processes.txt
+  953  wc -l processes.txt > selected.txt
+  954  grep -rin /bin processes.txt
+  955  grep -n /bin processes.txt >> selected.txt
+  956  cat selected.txt
+  957  history
+  958  tail -n 13
+  959  history | tail -n 14
+  960  history | tail -n 16
+  961  history | tail -n 17
