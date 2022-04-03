@@ -1,32 +1,40 @@
- cat selected.txt commands.txt
-     470 processes.txt
-43:root              3505   0.0  0.0 33744828   4060   ??  Ss   12:00PM   0:00.03 /usr/bin/sysdiagnose
-72:coffeina          1395   0.0  0.0 33609140   1108   ??  S    11:01AM   0:00.01 /usr/bin/ssh-agent -l
-  896  ls -la
-  897  mkdir test
-  898  touch processes.txt
-  899  ps aux > processes.txt
-  900  cp processes.txt copy.txt
-  901  touch backup
-  902  mv copy.txt backup
-  903  wc -l processes.txt
-  904  wc -l processes.txt > selected.txt
-  905  grep -rin /bin processes.txt
-  906  grep -n /bin processes.txt >> selected.txt
-  907  history
-  908  history
-  909  history | tail -n 12
-  910  history | tail -n 13
-  898  touch processes.txt
-  899  ps aux > processes.txt
-  900  cp processes.txt copy.txt
-  901  touch backup
-  902  mv copy.txt backup
-  903  wc -l processes.txt
-  904  wc -l processes.txt > selected.txt
-  905  grep -rin /bin processes.txt
-  906  grep -n /bin processes.txt >> selected.txt
-  907  history
-  908  history
-  909  history | tail -n 12 >> commands.txt
- 
+ cat commands.txt
+  918  mkdir test_folder
+  919  ls -la
+  920  cd test_folder
+  921  touch processes.txt
+  922  ps aux > processes.txt
+  923  cat processes.txt
+  924  cp processes.txt copy.txt
+  925  mkdir backup
+  926  ls -la
+  927  mv copy.txt backup
+  928  wc -l processes.txt
+  929  wc -l processes.txt > selcted.txt
+  930  cat processes.txt
+  931  grep -rin /bin processes.txt
+  932  grep -n /bin processes.txt >> selected.txt
+  933  cat selected.txt
+  934  history
+  935  history | tail -n 18
+  936  history | tail -n 19
+  918  mkdir test_folder
+  919  ls -la
+  920  cd test_folder
+  921  touch processes.txt
+  922  ps aux > processes.txt
+  923  cat processes.txt
+  924  cp processes.txt copy.txt
+  925  mkdir backup
+  926  ls -la
+  927  mv copy.txt backup
+  928  wc -l processes.txt
+  929  wc -l processes.txt > selcted.txt
+  930  cat processes.txt
+  931  grep -rin /bin processes.txt
+  932  grep -n /bin processes.txt >> selected.txt
+  933  cat selected.txt
+  934  history
+  935  history | tail -n 18
+  936  history | tail -n 19
+  937  history | tail -n 19 >> commands.txt
