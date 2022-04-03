@@ -55,6 +55,6 @@ cat selected.txt commands.txt
   873  cat processes.txt
   874  grep -n /bin processes.txt >> selected.txt
   875  clear
-  876  history
+  876  history | tail -n 27 >> commands.txt
   877  history | tail -n 27 >> commands.txt
   878  cat selected.txt commands.txt
