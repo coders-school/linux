@@ -4,11 +4,10 @@ arturszczygiel@arturszczygiel-VirtualBox:~/test$ mkdir linux
 arturszczygiel@arturszczygiel-VirtualBox:~/test$ ls
 a.out  file.txt  hello  hello.cpp  linux
 arturszczygiel@arturszczygiel-VirtualBox:~/test$ cd linux
-arturszczygiel@arturszczygiel-VirtualBox:~/test/linux$ ls
 arturszczygiel@arturszczygiel-VirtualBox:~/test/linux$ touch processes.txt
 arturszczygiel@arturszczygiel-VirtualBox:~/test/linux$ ls
 processes.txt
-arturszczygiel@arturszczygiel-VirtualBox:~/test/linux$ ps aux > processes.txt 
+arturszczygiel@arturszczygiel-VirtualBox:~/test/linux$ ps aux > processes.txt
 arturszczygiel@arturszczygiel-VirtualBox:~/test/linux$ ls
 processes.txt
 arturszczygiel@arturszczygiel-VirtualBox:~/test/linux$ less processes.txt 
@@ -26,746 +25,117 @@ arturszczygiel@arturszczygiel-VirtualBox:~/test/linux/backup$ cd ..
 arturszczygiel@arturszczygiel-VirtualBox:~/test/linux$ ls
 backup  processes.txt
 arturszczygiel@arturszczygiel-VirtualBox:~/test/linux$ wc -l processes.txt 
-198 processes.txt
+199 processes.txt
 arturszczygiel@arturszczygiel-VirtualBox:~/test/linux$ wc -l processes.txt > selected.txt
 arturszczygiel@arturszczygiel-VirtualBox:~/test/linux$ ls
 backup  processes.txt  selected.txt
 arturszczygiel@arturszczygiel-VirtualBox:~/test/linux$ less selected.txt 
-arturszczygiel@arturszczygiel-VirtualBox:~/test/linux$ grep -ni /bin *
+arturszczygiel@arturszczygiel-VirtualBox:~/test/linux$ grep -n /bin *
 grep: backup: Is a directory
-processes.txt:88:message+     576  0.0  0.1   8892  5896 ?        Ss   08:09   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-processes.txt:90:root         595  0.0  0.5  41860 20196 ?        Ss   08:09   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-processes.txt:101:root         701  0.0  0.5 120556 22740 ?        Ssl  08:09   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-processes.txt:107:whoopsie     758  0.0  0.3 327256 15936 ?        Ssl  08:09   0:00 /usr/bin/whoopsie -f
-processes.txt:111:artursz+     813  0.0  0.4 2197900 19956 ?       S<sl 08:09   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-processes.txt:113:artursz+     819  0.0  0.1 242564  7064 ?        Sl   08:09   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
-processes.txt:114:artursz+     823  0.0  0.1 166548  6600 tty2     Ssl+ 08:09   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-processes.txt:116:artursz+     831  0.0  0.2  11156  8252 ?        Ss   08:09   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-processes.txt:129:artursz+    1035  0.0  0.0   6040   452 ?        Ss   08:09   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-processes.txt:131:artursz+    1067  0.0  0.1   7244  4204 ?        S    08:09   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-processes.txt:134:artursz+    1095  3.3  9.8 3748704 396580 ?      Ssl  08:09   3:07 /usr/bin/gnome-shell
-processes.txt:148:artursz+    1225  0.0  0.6 2601292 26584 ?       Sl   08:10   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-processes.txt:173:artursz+    1522  0.1  1.9 1007544 78028 ?       Sl   08:12   0:08 /usr/bin/nautilus --gapplication-service
-arturszczygiel@arturszczygiel-VirtualBox:~/test/linux$ grep -ni /bin * >> selected.txt 
+processes.txt:87:message+     576  0.0  0.1   8892  5896 ?        Ss   08:09   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+processes.txt:89:root         595  0.0  0.5  41860 20196 ?        Ss   08:09   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+processes.txt:100:root         701  0.0  0.5 120556 22740 ?        Ssl  08:09   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+processes.txt:106:whoopsie     758  0.0  0.3 327256 15940 ?        Ssl  08:09   0:00 /usr/bin/whoopsie -f
+processes.txt:110:artursz+     813  0.0  0.4 2722188 20024 ?       S<sl 08:09   0:01 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+processes.txt:112:artursz+     819  0.0  0.1 242716  7728 ?        SLl  08:09   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+processes.txt:113:artursz+     823  0.0  0.1 166548  6600 tty2     Ssl+ 08:09   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+processes.txt:115:artursz+     831  0.0  0.2  11156  8252 ?        Ss   08:09   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+processes.txt:128:artursz+    1035  0.0  0.0   6040   452 ?        Ss   08:09   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+processes.txt:130:artursz+    1067  0.0  0.1   7244  4204 ?        S    08:09   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+processes.txt:133:artursz+    1095  3.0 10.2 3781036 413472 ?      Ssl  08:09   5:22 /usr/bin/gnome-shell
+processes.txt:147:artursz+    1225  0.0  0.6 2601292 26584 ?       Sl   08:10   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+processes.txt:172:artursz+    1522  0.0  1.9 1008600 79316 ?       Sl   08:12   0:10 /usr/bin/nautilus --gapplication-service
+processes.txt:195:artursz+   14952  0.1  1.4 820808 56664 ?        Sl   11:02   0:00 /usr/bin/gedit --gapplication-service
+arturszczygiel@arturszczygiel-VirtualBox:~/test/linux$ grep -n /bin * >> selected.txt 
 grep: backup: Is a directory
 grep: input file ‘selected.txt’ is also the output
 arturszczygiel@arturszczygiel-VirtualBox:~/test/linux$ cat selected.txt 
-198 processes.txt
-processes.txt:88:message+     576  0.0  0.1   8892  5896 ?        Ss   08:09   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-processes.txt:90:root         595  0.0  0.5  41860 20196 ?        Ss   08:09   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-processes.txt:101:root         701  0.0  0.5 120556 22740 ?        Ssl  08:09   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-processes.txt:107:whoopsie     758  0.0  0.3 327256 15936 ?        Ssl  08:09   0:00 /usr/bin/whoopsie -f
-processes.txt:111:artursz+     813  0.0  0.4 2197900 19956 ?       S<sl 08:09   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-processes.txt:113:artursz+     819  0.0  0.1 242564  7064 ?        Sl   08:09   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
-processes.txt:114:artursz+     823  0.0  0.1 166548  6600 tty2     Ssl+ 08:09   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-processes.txt:116:artursz+     831  0.0  0.2  11156  8252 ?        Ss   08:09   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-processes.txt:129:artursz+    1035  0.0  0.0   6040   452 ?        Ss   08:09   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-processes.txt:131:artursz+    1067  0.0  0.1   7244  4204 ?        S    08:09   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-processes.txt:134:artursz+    1095  3.3  9.8 3748704 396580 ?      Ssl  08:09   3:07 /usr/bin/gnome-shell
-processes.txt:148:artursz+    1225  0.0  0.6 2601292 26584 ?       Sl   08:10   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-processes.txt:173:artursz+    1522  0.1  1.9 1007544 78028 ?       Sl   08:12   0:08 /usr/bin/nautilus --gapplication-service
+199 processes.txt
+processes.txt:87:message+     576  0.0  0.1   8892  5896 ?        Ss   08:09   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+processes.txt:89:root         595  0.0  0.5  41860 20196 ?        Ss   08:09   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+processes.txt:100:root         701  0.0  0.5 120556 22740 ?        Ssl  08:09   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+processes.txt:106:whoopsie     758  0.0  0.3 327256 15940 ?        Ssl  08:09   0:00 /usr/bin/whoopsie -f
+processes.txt:110:artursz+     813  0.0  0.4 2722188 20024 ?       S<sl 08:09   0:01 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+processes.txt:112:artursz+     819  0.0  0.1 242716  7728 ?        SLl  08:09   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+processes.txt:113:artursz+     823  0.0  0.1 166548  6600 tty2     Ssl+ 08:09   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+processes.txt:115:artursz+     831  0.0  0.2  11156  8252 ?        Ss   08:09   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+processes.txt:128:artursz+    1035  0.0  0.0   6040   452 ?        Ss   08:09   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+processes.txt:130:artursz+    1067  0.0  0.1   7244  4204 ?        S    08:09   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+processes.txt:133:artursz+    1095  3.0 10.2 3781036 413472 ?      Ssl  08:09   5:22 /usr/bin/gnome-shell
+processes.txt:147:artursz+    1225  0.0  0.6 2601292 26584 ?       Sl   08:10   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+processes.txt:172:artursz+    1522  0.0  1.9 1008600 79316 ?       Sl   08:12   0:10 /usr/bin/nautilus --gapplication-service
+processes.txt:195:artursz+   14952  0.1  1.4 820808 56664 ?        Sl   11:02   0:00 /usr/bin/gedit --gapplication-service
 arturszczygiel@arturszczygiel-VirtualBox:~/test/linux$ history
-    1  pwd
-    2  is
-    3  ls
-    4  dir
-    5  pwd
-    6  dir
+    1  clear
+    2  pwd
+    3  mkdir linux
+    4  ls
+    5  cd linux
+    6  touch processes.txt
     7  ls
-    8  pwd
-    9  dir
-   10  pwd dir
-   11  dir
-   12  pwd
-   13  dir
-   14  ls Pictures
-   15  dir
-   16  ls
-   17  ls -al
-   18  ls
-   19  Pictures
-   20  history
-   21  sudo apt install g++ clang
-   22  sudo apt update
-   23  sudo apt install git
-   24  sudo apt install build-essential
-   25  sudo apt-get install manpages-dev
-   26  sudo apt install build-essential
-   27  git --version
-   28  g++ --version
-   29  make --version
-   30  sudo apt update
-   31  sudo apt install software-properties-common apt-transport-https wget
-   32  wget -q https://packages.microsoft.com/keys/microsoft.asc -0- | sudo apt-key add -
-   33  sudo add-apt-repository "deb [arch=amd36] https://packages.microsoft.com/repos/vscode stable main"
-   34  sudo apt update
-   35  sudo apt install code
-   36  sudo apt-get install cmake
-   37  cmake --version
-   38  g++ -std=c++17 zadanie1.cpp -o zadanie1
-   39  ./zadanie1
-   40  g++ -std=c++17 zadanie1.cpp -o zadanie1
-   41  ./zadanie1
-   42  g++ -std=c++17 zadanie1.cpp -o zadanie1
-   43  pwd
-   44  cd programy
-   45  pwd
-   46  cd Programy
-   47  pwd
-   48  g++ -std=c++17 zadanie1.cpp -o zadanie1
-   49  ./zadanie1
-   50  pwd
-   51  touch CMakeLists.txt
-   52  mkdir build
-   53  cd build
-   54  cmake ..
-   55  make
-   56  ./Tutorial
-   57  ls
-   58  cd..
-   59  cd/
-   60  cd ..
-   61  ls
-   62  sudo apt install g++ clang
-   63  sudo apt update
-   64  sudo apt install tftpd-hpa
-   65  sudo systemctl status tftpd-hpa
-   66  sudo nano /etc/default/tftpd-hpa
-   67  sudo mkdir /tftp
-   68  sudo chown tftp:tftp /tftp
-   69  sudo systemctl restart tftpd-hpa
-   70  sudo systemctl status tftpd-hpa
-   71  sudo apt update
-   72  sudo apt install tftp-hpa
-   73  ip a
-   74  tftp 127.0.0.1
-   75  tftp open
-   76  tftp status
-   77  ip a
-   78  tftp 10.0.2.15
-   79  pwd
-   80  ls srturszczygiel
-   81  fdgfg
-   82  clear
-   83  sd
-   84  sdf
-   85  sd
-   86  fsd
-   87  cleat
-   88  clear
-   89  pwd
-   90  ls
-   91  cd programy
-   92  cd programy/
-   93  cd Programy
-   94  ls
-   95  cd ..
-   96  pwd
-   97  cd Programy
-   98  cd ..
-   99  cd ~
-  100  cd -
-  101  cd Programy/
-  102  ls
-  103  cd /
-  104  ls
-  105  cd bin
-  106  ls
-  107  cd ..
-  108  ls
-  109  cd ..
-  110  ls
-  111  cd ~
-  112  ls
-  113  pwd
-  114  ls
-  115  ls -l
-  116  clear
-  117  pwd
-  118  mkdir test
-  119  pwd
-  120  ls
-  121  cd test
-  122  ls
-  123  pwd
-  124  touch file.txt
-  125  pwd
-  126  ls
-  127  touch file2.cpp
-  128  ls
-  129  cp file.txt copy.txt
-  130  ls
-  131  cp file.txt copy.txt
-  132  ls
-  133  mv file2.cpp file3.cpp
-  134  mkdir hello
-  135  ls
-  136  mv file3.cpp hello/
-  137  cp file.txt hello/plik.txt
-  138  cd hello
-  139  ls
-  140  mv plik.txt ../plik2.txt
-  141  ls
-  142  cd ..
-  143  ls
-  144  rm plik2.txt
-  145  ls
-  146  cd hello
-  147  ls
-  148  rm -f hello/
-  149  ls
-  150  cd ..
-  151  ls
-  152  rm -ff hello/
-  153  ls
-  154  rm hello/
-  155  rmdir hello/
-  156  rm -rf hello/
-  157  ls
-  158  touch file.txt
-  159  ls -l
-  160  touch file.txt
-  161  ls -l
-  162  mkdir hello
-  163  ls -l
-  164  mkdir hello
-  165  clear
-  166  man ls
-  167  man cp
-  168  ls
-  169  cp -r hello/ hello1
-  170  cd hello1
-  171  ls
-  172  cd ..
-  173  ls
-  174  rm hello1
-  175  man rm
-  176  rm -f hello1
-  177  rm -rf hello1
-  178  ls
-  179  cd hello
-  180  ls
-  181  touch plik1.txt
-  182  touch plik2.cpp
-  183  ls
-  184  cd..
-  185  cd ..
-  186  ls
-  187  cp -r hello/ hello1/
-  188  ls
-  189  cd hello1
-  190  ls
-  191  cd ..
-  192  ls
-  193  cd hello
-  194  ls
-  195  cd ../
-  196  ls
-  197  cd ./
-  198  ls
-  199  cd ..
-  200  ls
-  201  cd test
-  202  ls
-  203  rm -rf hello1
-  204  ls
-  205  clear
-  206  man cp
-  207  clear
-  208  ls
-  209  clear
-  210  ls
-  211  cd ...
-  212  cd ..
-  213  pwd
-  214  ls
-  215  cd test
-  216  ld
-  217  ls
-  218  cd hello
-  219  ls
-  220  cat plik.txt
-  221  cat plik1.txt
-  222  man cat
-  223  cat plik2.cpp 
-  224  cat plik1.txt plik2.cpp 
-  225  man wc
-  226  man more
-  227  clear
-  228  ls
-  229  cd ..
-  230  ls
-  231  rm copy.txt
-  232  ls
-  233  touch testowy1.txt
-  234  ls
-  235  echo $PS1
-  236  clear
-  237  less ~/.bashrc
-  238  ls -a
-  239  ..
-  240  cd ../
-  241  ls
-  242  cd ..
-  243  ls
-  244  cd ..
-  245  ls
-  246  ls -a
-  247  cd ..
-  248  ls
-  249  ls -a
-  250  cd ..
-  251  ls
-  252  cd ..
-  253  ls
-  254  ls -a
-  255  pwd
-  256  cd -n
-  257  cd usr
-  258  pwd
-  259  ls
-  260  cd ..
-  261  cd sys
-  262  ls
-  263  cd ..
-  264  pwd
-  265  cd ..
-  266  pwd
-  267  cd ..
-  268  pwd
-  269  ls
-  270  cd ..
-  271  ls
-  272  cd home
-  273  ls
-  274  cd arturszczygiel
-  275  ls
-  276  cd test
-  277  ls
-  278  ls -a
-  279  cd ..
-  280  ls -a
-  281  pwd
-  282  ls
-  283  cd ..
-  284  ls
-  285  cd test
-  286  ls
-  287  cp testowy1.txt .testowy2.txt
-  288  ls
-  289  ls -
-  290  ls -a
-  291  cleat
-  292  clear
-  293  find *.cpp
-  294  ls
-  295  cd hello
-  296  ls
-  297  touch plik3.cpp
-  298  ls
-  299  find *.cpp
-  300  cleat
-  301  clear
-  302  find .-name "*.cpp"
-  303  find *.cpp
-  304  find . -name "*.cpp"
-  305  find / -iname sth
-  306  man sth
-  307  sth --help
-  308  find g++
-  309  find "g++"
-  310  find . -name "g++"
-  311  ls
-  312  find / -iname sth
-  313  find / -iname g++
-  314  ps
-  315  htop
-  316  ps
-  317  top
-  318  htop
-  319  ps
-  320  ./a.out
-  321  grep main .
-  322  grep main *
-  323  pwd
-  324  cd ..
-  325  ls
-  326  cd test
-  327  ls
-  328  cd hello
-  329  pwd
-  330  ls
-  331  grep spacer *
-  332  grep -r  spacer *
-  333  grep -rn spacer *
-  334  grep -rn spacer*
-  335  less plik1.txt
-  336  cat plik1.txt 
-  337  cat plik1.txt plik2.cpp 
-  338  clear
-  339  ls
-  340  cd ..
-  341  ls
-  342  pwd
-  343  echo Czesc lamusie! > lamus.txt
-  344  cat lamus.txt
-  345  cat *
-  346  cd hello
-  347  cat *
-  348  echo Lamus pozostanie lamusem na zawsze. >> lamus.txt
-  349  cat lamus.txt
-  350  echo I co lamusie? >> lamus.txt
-  351  cat lamus.txt
-  352  rm lamus.txt
-  353  ls
-  354  pwd
-  355  cd ..
-  356  pwd
-  357  ls
-  358  cat lamus.txt
-  359  echo Lamus pozostanie lamusem na zawsze. >> lamus.txt
-  360  cat lamus.txt
-  361  echo I co lamusie? >> lamus.txt
-  362  cat lamus.txt
-  363  echo 4+5 > calc
-  364  cat calc
-  365  bc < calc
-  366  bc << EOF
-  367  4 + 5
-  368  3 - 10
-  369  EOF
-  370  echo 4+5 | bc
-  371  grep -rni hello *
-  372  grep -rni hello *|head
-  373  grep -rni hello *|head-n1
-  374  grep -rni hello *|head -n1
-  375  grep -rni spacer ../hello/ | grep Hello
-  376  grep -rni spacer ../hello/
-  377  pwd
-  378  find / -name arturszczygiel
-  379  find / -name arturszczygiel > result.txt
-  380  cat result.txt
-  381  mv result.txt rezultaty.txt
-  382  cat rezultaty.txt
-  383  find / -name hello > rezultat 2>
-  384  clear
-  385  ps
-  386  ps aux
-  387  ps au
-  388  top
-  389  htop
-  390  sudo snap install htop  # version 3.1.2
-  391  htop
-  392  sudo apt install htop  # version 2.2.0-2build1
-  393  htop
-  394  vim hello.cpp
-  395  touch hello.cpp
-  396  g++ hello.cpp
-  397  pwd
-  398  ls
-  399  g++ hello.cpp
-  400  cat hello.cpp
-  401  g++ hello.cpp
-  402  ls
-  403  ./a.out
-  404  ls
-  405  ./a.out
-  406  ps
-  407  ./a.out
-  408  ps
-  409  ./a.out
-  410  ps
-  411  man ps
-  412  ps -e
-  413  ps -ef
-  414  ps man
-  415  man ps
-  416  ps -a
-  417  man ps
-  418  ps -a
-  419  kill -9 24450
-  420  vim
-  421  sudo apt install vim
-  422  vim
-  423  job
-  424  jobs
-  425  fg 1
-  426  ps
-  427  kill 9 25104
-  428  ps
-  429  vim
-  430  ps
-  431  ps -a
-  432  ps
-  433  ps -a
-  434  jobs
-  435  ps
-  436  jobs
-  437  ls
-  438  cd ..
-  439  ls
-  440  cd test
-  441  ls
-  442  ./a.out
-  443  ps -a
-  444  ps
-  445  cleat
-  446  clear
-  447  firefox
-  448  firefox &
-  449  1
-  450  ls
-  451  ps
-  452  ps -a
-  453  firefox
-  454  ps -A
-  455  ps -a
-  456  cleat
-  457  clear
-  458  ps aux
-  459  cd ..
-  460  pwd
-  461  ls
-  462  cd test
-  463  ls
-  464  rm testowy1.txt
-  465  ls
-  466  rm rezultaty.txt
-  467  ls
-  468  rm lamus.txt
-  469  ls
-  470  cat hello.cpp
-  471  rm calc
-  472  ls
-  473  cd hello
-  474  ls
-  475  clear
-  476  pwd
-  477  ls
-  478  mkdir zadanie Linux
-  479  ls
-  480  rm -rf zadanie linux
-  481  ls
-  482  cd linux
-  483  cd Linux
-  484  pwd
-  485  ls
-  486  touch processes.txt
-  487  ps aux > processes.txt
-  488  ls
-  489  cat processes.txt
-  490  cp processes.txt copy.txt
-  491  cat copy.txt
-  492  mkdir backup
-  493  mv copy.txt backup/
-  494  cd backup
-  495  ls
-  496  cd ..
-  497  ls
-  498  wc -l processes.txt
-  499  wc -l processes.txt > selected.txt
-  500  grep -rni /bin
-  501  grep -rn /bin
-  502  pwd
-  503  grep -rni /bin
-  504  pwd
-  505  ls
-  506  grep /bin
-  507  grep -r bin
-  508  grep -rn  /bin
-  509  grep -rn /bin
-  510  grep -rni /bin
-  511  grep -rn /bin ./
-  512  clear
-  513  grep /bin .
-  514  grep /bin *
-  515  grep -rni /bin *
-  516  grep -rn /bin *
-  517  grep -ri /bin *
-  518  grep -i  /bin *
-  519  grep -n  /bin *
-  520  cleat
-  521  clear
-  522  grep -n /bin 
-  523  grep -n /bin *
-  524  grep -n /bin * > selected.txt
-  525  grep -n /bin * >> selected.txt
-  526  man grep
-  527  history
-  528  history tail
-  529  history | tail
-  530  history | tail -2
-  531  history | tail - 15
-  532  history | tail -15
-  533  clear
-  534  history | tail -15
-  535  cat processes.txt selected.txt
-  536  clear
-  537  cd ..
-  538  ls
-  539  cd test
-  540  ls
-  541  cd linux
-  542  ls
-  543  man wc
-  544  wc -l processes.txt
-  545  pwd
-  546  mkdir linux
-  547  cd linux
-  548  pwd
-  549  touch processes.txt
-  550  ls
-  551  ps aux > processes.txt
-  552  less processes.txt
-  553  cp processes.txt copy.txt
-  554  mkdir backup
-  555  mv copy.txt backup
-  556  wc -l processes.txt
-  557  wc -l processes.txt > selected.txt
-  558  less selected.txt
-  559  grep -i /bin *
-  560  cd ..
-  561  ls
-  562  cd test
-  563  cd linux
-  564  ls
-  565  grep -rn /bin *
-  566  grep /bin *
-  567  grep -i /bin *
-  568  grep -ri /bin *
-  569  grep -i /bin *
-  570  grep -ni /bin *
-  571  rm -rf linux
-  572  clear
-  573  pwd
-  574  mkdir linux
-  575  ls
-  576  cd linux
-  577  ls
-  578  touch processes.txt
-  579  ls
-  580  ps aux > processes.txt 
-  581  ls
-  582  less processes.txt 
-  583  cp processes.txt copy.txt
-  584  ls
-  585  mkdir backup
-  586  mv copy.txt backup/
-  587  ls
-  588  cd backup/
-  589  ls
-  590  cd ..
-  591  ls
-  592  wc -l processes.txt 
-  593  wc -l processes.txt > selected.txt
-  594  ls
-  595  less selected.txt 
-  596  grep -ni /bin *
-  597  grep -ni /bin * >> selected.txt 
-  598  cat selected.txt 
-  599  history
-arturszczygiel@arturszczygiel-VirtualBox:~/test/linux$ history | tail -28
-  573  pwd
-  574  mkdir linux
-  575  ls
-  576  cd linux
-  577  ls
-  578  touch processes.txt
-  579  ls
-  580  ps aux > processes.txt 
-  581  ls
-  582  less processes.txt 
-  583  cp processes.txt copy.txt
-  584  ls
-  585  mkdir backup
-  586  mv copy.txt backup/
-  587  ls
-  588  cd backup/
-  589  ls
-  590  cd ..
-  591  ls
-  592  wc -l processes.txt 
-  593  wc -l processes.txt > selected.txt
-  594  ls
-  595  less selected.txt 
-  596  grep -ni /bin *
-  597  grep -ni /bin * >> selected.txt 
-  598  cat selected.txt 
-  599  history
-  600  history | tail -28
-arturszczygiel@arturszczygiel-VirtualBox:~/test/linux$ history | tail -29 > commands.txt
-arturszczygiel@arturszczygiel-VirtualBox:~/test/linux$ cat commands.txt 
-  573  pwd
-  574  mkdir linux
-  575  ls
-  576  cd linux
-  577  ls
-  578  touch processes.txt
-  579  ls
-  580  ps aux > processes.txt 
-  581  ls
-  582  less processes.txt 
-  583  cp processes.txt copy.txt
-  584  ls
-  585  mkdir backup
-  586  mv copy.txt backup/
-  587  ls
-  588  cd backup/
-  589  ls
-  590  cd ..
-  591  ls
-  592  wc -l processes.txt 
-  593  wc -l processes.txt > selected.txt
-  594  ls
-  595  less selected.txt 
-  596  grep -ni /bin *
-  597  grep -ni /bin * >> selected.txt 
-  598  cat selected.txt 
-  599  history
-  600  history | tail -28
-  601  history | tail -29 > commands.txt
+    8  ps aux > processes.txt
+    9  ls
+   10  less processes.txt 
+   11  cp processes.txt copy.txt
+   12  ls
+   13  mkdir backup
+   14  mv copy.txt backup/
+   15  ls
+   16  cd backup/
+   17  ls
+   18  cd ..
+   19  ls
+   20  wc -l processes.txt 
+   21  wc -l processes.txt > selected.txt
+   22  ls
+   23  less selected.txt 
+   24  grep -n /bin *
+   25  grep -n /bin * >> selected.txt 
+   26  cat selected.txt 
+   27  history
+arturszczygiel@arturszczygiel-VirtualBox:~/test/linux$ history | tail -28 > commands.txt
 arturszczygiel@arturszczygiel-VirtualBox:~/test/linux$ cat selected.txt commands.txt 
-198 processes.txt
-processes.txt:88:message+     576  0.0  0.1   8892  5896 ?        Ss   08:09   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-processes.txt:90:root         595  0.0  0.5  41860 20196 ?        Ss   08:09   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-processes.txt:101:root         701  0.0  0.5 120556 22740 ?        Ssl  08:09   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-processes.txt:107:whoopsie     758  0.0  0.3 327256 15936 ?        Ssl  08:09   0:00 /usr/bin/whoopsie -f
-processes.txt:111:artursz+     813  0.0  0.4 2197900 19956 ?       S<sl 08:09   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-processes.txt:113:artursz+     819  0.0  0.1 242564  7064 ?        Sl   08:09   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
-processes.txt:114:artursz+     823  0.0  0.1 166548  6600 tty2     Ssl+ 08:09   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-processes.txt:116:artursz+     831  0.0  0.2  11156  8252 ?        Ss   08:09   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-processes.txt:129:artursz+    1035  0.0  0.0   6040   452 ?        Ss   08:09   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-processes.txt:131:artursz+    1067  0.0  0.1   7244  4204 ?        S    08:09   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-processes.txt:134:artursz+    1095  3.3  9.8 3748704 396580 ?      Ssl  08:09   3:07 /usr/bin/gnome-shell
-processes.txt:148:artursz+    1225  0.0  0.6 2601292 26584 ?       Sl   08:10   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-processes.txt:173:artursz+    1522  0.1  1.9 1007544 78028 ?       Sl   08:12   0:08 /usr/bin/nautilus --gapplication-service
-  573  pwd
-  574  mkdir linux
-  575  ls
-  576  cd linux
-  577  ls
-  578  touch processes.txt
-  579  ls
-  580  ps aux > processes.txt 
-  581  ls
-  582  less processes.txt 
-  583  cp processes.txt copy.txt
-  584  ls
-  585  mkdir backup
-  586  mv copy.txt backup/
-  587  ls
-  588  cd backup/
-  589  ls
-  590  cd ..
-  591  ls
-  592  wc -l processes.txt 
-  593  wc -l processes.txt > selected.txt
-  594  ls
-  595  less selected.txt 
-  596  grep -ni /bin *
-  597  grep -ni /bin * >> selected.txt 
-  598  cat selected.txt 
-  599  history
-  600  history | tail -28
-  601  history | tail -29 > commands.txt
+199 processes.txt
+processes.txt:87:message+     576  0.0  0.1   8892  5896 ?        Ss   08:09   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+processes.txt:89:root         595  0.0  0.5  41860 20196 ?        Ss   08:09   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+processes.txt:100:root         701  0.0  0.5 120556 22740 ?        Ssl  08:09   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+processes.txt:106:whoopsie     758  0.0  0.3 327256 15940 ?        Ssl  08:09   0:00 /usr/bin/whoopsie -f
+processes.txt:110:artursz+     813  0.0  0.4 2722188 20024 ?       S<sl 08:09   0:01 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+processes.txt:112:artursz+     819  0.0  0.1 242716  7728 ?        SLl  08:09   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+processes.txt:113:artursz+     823  0.0  0.1 166548  6600 tty2     Ssl+ 08:09   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+processes.txt:115:artursz+     831  0.0  0.2  11156  8252 ?        Ss   08:09   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+processes.txt:128:artursz+    1035  0.0  0.0   6040   452 ?        Ss   08:09   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+processes.txt:130:artursz+    1067  0.0  0.1   7244  4204 ?        S    08:09   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+processes.txt:133:artursz+    1095  3.0 10.2 3781036 413472 ?      Ssl  08:09   5:22 /usr/bin/gnome-shell
+processes.txt:147:artursz+    1225  0.0  0.6 2601292 26584 ?       Sl   08:10   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+processes.txt:172:artursz+    1522  0.0  1.9 1008600 79316 ?       Sl   08:12   0:10 /usr/bin/nautilus --gapplication-service
+processes.txt:195:artursz+   14952  0.1  1.4 820808 56664 ?        Sl   11:02   0:00 /usr/bin/gedit --gapplication-service
+    1  clear
+    2  pwd
+    3  mkdir linux
+    4  ls
+    5  cd linux
+    6  touch processes.txt
+    7  ls
+    8  ps aux > processes.txt
+    9  ls
+   10  less processes.txt 
+   11  cp processes.txt copy.txt
+   12  ls
+   13  mkdir backup
+   14  mv copy.txt backup/
+   15  ls
+   16  cd backup/
+   17  ls
+   18  cd ..
+   19  ls
+   20  wc -l processes.txt 
+   21  wc -l processes.txt > selected.txt
+   22  ls
+   23  less selected.txt 
+   24  grep -n /bin *
+   25  grep -n /bin * >> selected.txt 
+   26  cat selected.txt 
+   27  history
+   28  history | tail -28 > commands.txt
 arturszczygiel@arturszczygiel-VirtualBox:~/test/linux$ 
