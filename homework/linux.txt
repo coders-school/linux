@@ -1,18 +1,18 @@
-arturszczygiel@arturszczygiel-VirtualBox:~/test/linux$ cat selected.txt command.txt 
-188 processes.txt
-processes.txt:99:message+     576  0.1  0.1   8884  5880 ?        Ss   07:35   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-processes.txt:101:root         591  0.0  0.4  41860 20060 ?        Ss   07:35   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-processes.txt:113:root         698  0.0  0.5 120556 22844 ?        Ssl  07:35   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-processes.txt:118:whoopsie     749  0.0  0.3 327256 15748 ?        Ssl  07:35   0:00 /usr/bin/whoopsie -f
-processes.txt:122:artursz+     802  0.1  0.4 1935756 19920 ?       S<sl 07:35   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-processes.txt:124:artursz+     808  0.0  0.1 242564  6996 ?        Sl   07:35   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
-processes.txt:125:artursz+     812  0.0  0.1 166548  6608 tty2     Ssl+ 07:35   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-processes.txt:127:artursz+     820  0.1  0.1  10820  7892 ?        Ss   07:35   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-processes.txt:140:artursz+    1024  0.0  0.0   6040   452 ?        Ss   07:35   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-processes.txt:142:artursz+    1050  0.0  0.1   7244  4292 ?        S    07:35   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-processes.txt:145:artursz+    1079  6.2  9.1 3729992 369048 ?      Ssl  07:35   0:07 /usr/bin/gnome-shell
-processes.txt:160:artursz+    1207  0.0  0.6 2601292 26544 ?       Sl   07:35   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-processes.txt:183:artursz+    1405  1.0  1.8 1000904 72396 ?       Sl   07:36   0:00 /usr/bin/nautilus --gapplication-service
+arturszczygiel@arturszczygiel-VirtualBox:~/test/linux$ cat selected.txt commands.txt 
+192 processes.txt
+88:message+     576  0.0  0.1   8884  5880 ?        Ss   07:35   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+90:root         591  0.0  0.4  41860 20060 ?        Ss   07:35   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+101:root         698  0.0  0.5 120556 22844 ?        Ssl  07:35   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+106:whoopsie     749  0.0  0.3 327256 15764 ?        Ssl  07:35   0:00 /usr/bin/whoopsie -f
+110:artursz+     802  0.0  0.4 2460044 19956 ?       S<sl 07:35   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+112:artursz+     808  0.0  0.1 242564  6996 ?        Sl   07:35   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+113:artursz+     812  0.0  0.1 166548  6608 tty2     Ssl+ 07:35   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+115:artursz+     820  0.0  0.1  10820  7892 ?        Ss   07:35   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+128:artursz+    1024  0.0  0.0   6040   452 ?        Ss   07:35   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+130:artursz+    1050  0.0  0.1   7244  4292 ?        S    07:35   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+133:artursz+    1079  4.1  9.5 3739540 385184 ?      Ssl  07:35   1:39 /usr/bin/gnome-shell
+147:artursz+    1207  0.0  0.6 2601292 26544 ?       Sl   07:35   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+170:artursz+    1405  0.1  1.8 1000904 72544 ?       Sl   07:36   0:02 /usr/bin/nautilus --gapplication-service
     1  clear
     2  mkdir linux
     3  cd linux
@@ -20,18 +20,16 @@ processes.txt:183:artursz+    1405  1.0  1.8 1000904 72396 ?       Sl   07:36   
     5  touch processes.txt
     6  ls
     7  ps aux > processes.txt 
-    8  ls
-    9  less processes.txt 
-   10  cp processes.txt copy.txt
+    8  cp processes.txt copy.txt
+    9  ls
+   10  mkdir backup
    11  ls
-   12  mkdir backup
+   12  mv copy.txt backup/
    13  ls
-   14  mv copy.txt backup/
-   15  ls
-   16  wc -l processes.txt 
-   17  wc -l processes.txt > selected.txt
-   18  grep -n /bin *
-   19  grep -n /bin * >> selected.txt 
-   20  history
-   21  history | tail -21
-   22  history | tail -22 > command.txt
+   14  wc -l processes.txt 
+   15  wc -l processes.txt > selected.txt
+   16  grep -ni /bin processes.txt
+   17  grep -ni /bin processes.txt >> selected.txt 
+   18  history
+   19  history | tail -20
+   20  history | tail -20 > commands.txt
