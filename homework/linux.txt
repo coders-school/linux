@@ -1,0 +1,32 @@
+cat selected.txt commands.txt 
+341
+164:root        1182  0.0  0.1  41064 20948 ?        Ss   09:50   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+178:root        1289  0.0  0.1 119080 23104 ?        Ssl  09:51   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+183:whoopsie    1433  0.0  0.0 249804 13792 ?        Ssl  09:51   0:00 /usr/bin/whoopsie -f
+193:kocur1z     2785  0.0  0.0  41980  6420 ?        S<sl 09:53   0:00 /usr/bin/pipewire
+194:kocur1z     2786  0.0  0.0  25696  6140 ?        S<sl 09:53   0:00 /usr/bin/pipewire-media-session
+195:kocur1z     2787  0.0  0.1 3580856 20704 ?       S<sl 09:53   0:41 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+196:kocur1z     2791  0.0  0.0   9604  5908 ?        Ss   09:53   0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+199:kocur1z     2810  0.0  0.0 243428  7772 ?        Sl   09:53   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+202:kocur1z     2825  0.0  0.0 165012  6392 tty2     Ssl+ 09:53   0:00 /usr/libexec/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+206:kocur1z     2944  0.0  0.0   8420  4388 ?        S    09:53   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+216:kocur1z     3017  0.4  1.8 5025880 302968 ?      Ssl  09:53   3:20 /usr/bin/gnome-shell
+228:kocur1z     3104  0.0  0.1 2932128 27692 ?       Sl   09:53   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+247:kocur1z     3271  0.0  0.1 2932132 27708 ?       Sl   09:53   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
+253:kocur1z     3458  0.0  1.8 1223720 299688 ?      Sl   09:53   0:10 /snap/snap-store/558/usr/bin/snap-store --gapplication-service
+273:kocur1z     5199  0.0  0.1 1015004 25312 ?       Sl   09:55   0:00 /usr/bin/snap userd
+312:kocur1z    11525  0.0  0.4 1137632 72248 ?       Sl   22:01   0:01 /usr/bin/nautilus --gapplication-service
+326:kocur1z    12896  0.0  0.2 392588 40736 ?        SLl  22:40   0:00 /usr/bin/seahorse --gapplication-service
+327:kocur1z    12898  0.0  0.3 870116 60788 ?        Sl   22:40   0:00 /usr/bin/gnome-calendar --gapplication-service
+337:kocur1z    13228  2.2  0.5 923360 86320 ?        Sl   22:45   0:03 /usr/bin/gedit --gapplication-service
+ 1160  mkdir linux_homework
+ 1161  touch linux_homework/processes.txt
+ 1162  ps aux > linux_homework/processes.txt 
+ 1163  cp linux_homework/processes.txt linux_homework/copy.txt
+ 1164  mkdir backup
+ 1165  mv linux_homework/copy.txt backup/
+ 1166  wc -l linux_homework/processes.txt 
+ 1167  wc -l < linux_homework/processes.txt > selected.txt
+ 1168  grep -rni /bin linux_homework/processes.txt >> selected.txt 
+ 1169  history
+ 1170  history | tail -n11 > commands.txt
