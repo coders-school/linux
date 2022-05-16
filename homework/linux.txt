@@ -1,0 +1,172 @@
+michal@michal-VirtualBox:~$ mkdir zadanie1
+michal@michal-VirtualBox:~$ cd zadanie1
+michal@michal-VirtualBox:~/zadanie1$ touch processes.txt
+michal@michal-VirtualBox:~/zadanie1$ ps aux > processes.txt
+michal@michal-VirtualBox:~/zadanie1$ cp processes.txt copy.txt
+michal@michal-VirtualBox:~/zadanie1$ mkdir backup
+michal@michal-VirtualBox:~/zadanie1$ mv copy.txt backup
+michal@michal-VirtualBox:~/zadanie1$ wc -l processes.txt
+187 processes.txt
+michal@michal-VirtualBox:~/zadanie1$ wc -l processes.txt > selected.txt
+michal@michal-VirtualBox:~/zadanie1$ grep "/bin" processes.txt >> selected.txt 
+michal@michal-VirtualBox:~/zadanie1$ history
+    1  ls
+    2  cd Dokuments
+    3  cd Documents
+    4  ls
+    5  cat plik.txt
+    6  cd..
+    7  cd ..
+    8  cd /
+    9  cd ..
+   10  pwd
+   11  cd/
+   12  cd ~
+   13  cad plik.txt
+   14  cat plik.txt
+   15  ls
+   16  cd Documents
+   17  ls
+   18  cat plik.txt
+   19  less plik.txt
+   20  wc plik.txt
+   21  man wc
+   22  echo
+   23  echo Gabi
+   24  echo ~
+   25  echo $
+   26  echo $PS1
+   27  less ~/.bashrc
+   28  ls -a
+   29  cd ..
+   30  ls -a
+   31  man wc
+   32  wc -l
+   33  ls
+   34  cd snap
+   35  touch Gabi.txt
+   36  ls
+   37  mv Gabi.txt .Gabrysia.txt
+   38  ls
+   39  less
+   40  ls -a
+   41  mkdir zad
+   42  ls 
+   43  cd zad
+   44  touch processes.txt
+   45  ps aux
+   46  man echo
+   47  echo ./ps aux
+   48  echo >> ./ps aux
+   49  ls
+   50  cat processes.txt
+   51  ps aux > processes.txt
+   52  cat processes.txt
+   53  cp processes.txt copy.txt
+   54  cat copy.txt
+   55  mkdir backup
+   56  mv copy.txt backup
+   57  ls
+   58  cd backup
+   59  ls
+   60  cat copy.txt
+   61  cd ..
+   62  wc -l processes.txt
+   63  wc -l processes.txt > selected.txt
+   64  ls
+   65  cat selected.txt
+   66  grep "/bin" processes.txt
+   67  grep "/bin" processes.txt >> selected.txt 
+   68  cat selected.txt
+   69  grep "/bin" processes.txt >> selected.txt 
+   70  cat selected.txt
+   71  history
+   72  man tail
+   73  tail history
+   74  man tail
+   75  tail -n 15 history
+   76  history tail -n 15
+   77  tail -n 15 history
+   78  numeric
+   79  history -5
+   80  history
+   81  history | tail -n 5
+   82  history | tail -n 5 > commands.txt
+   83  tail -v selected.txt commands.txt
+   84  clear
+   85  cd ..
+   86  mkdir linux
+   87  cd linux
+   88  touch processes.txt
+   89  ps aux > processes.txt
+   90  cp processes.txt copy.txt
+   91  mkdir backup
+   92  mv copy.txt backup
+   93  wc -l processes.txt
+   94  wc -l processes.txt > selected.txt
+   95  grep "/bin" processes.txt >> selected.txt 
+   96  history
+   97  history | tail -n 11 > commands.txt
+   98  tail -v selected.txt commands.txt
+   99  wc -l processes.txt
+  100  wc -l processes.txt > selected.txt
+  101  cat selected.txt
+  102  grep "/bin" processes.txt >> selected.txt 
+  103  cat selected.txt
+  104  tail -v selected.txt commands.txt
+  105  man tail
+  106  echo selected.txt | commands.txt
+  107  man echo
+  108  cat selected.txt commands.txt
+  109  cd ..
+  110  clear
+  111  mkdir zadanie1
+  112  cd zadanie1
+  113  touch processes.txt
+  114  ps aux > processes.txt
+  115  cp processes.txt copy.txt
+  116  mkdir backup
+  117  mv copy.txt backup
+  118  wc -l processes.txt
+  119  wc -l processes.txt > selected.txt
+  120  grep "/bin" processes.txt >> selected.txt 
+  121  history
+michal@michal-VirtualBox:~/zadanie1$ history | tail -n 12 > commands.txt
+michal@michal-VirtualBox:~/zadanie1$ cat selected.txt commands.txt
+187 processes.txt
+message+     550  0.0  0.1   8956  6080 ?        Ss   09:28   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         570  0.0  0.5  42132 20720 ?        Ss   09:28   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         686  0.0  0.5 120556 23040 ?        Ssl  09:28   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+whoopsie     716  0.0  0.3 327208 15912 ?        Ssl  09:28   0:00 /usr/bin/whoopsie -f
+michal       963  0.0  0.4 1411332 19112 ?       S<sl 09:29   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+michal       968  0.0  0.1 242724  6972 ?        SLl  09:29   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+michal       972  0.0  0.1 166548  6620 tty2     Ssl+ 09:29   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+michal       976  0.0  0.2  12856 10040 ?        Ss   09:29   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+michal      1143  0.0  0.0  25148   360 ?        S    09:29   0:00 /usr/bin/VBoxClient --clipboard
+michal      1144  0.0  0.0 157284  2288 ?        Sl   09:29   0:00 /usr/bin/VBoxClient --clipboard
+michal      1155  0.0  0.0  25148   360 ?        S    09:29   0:00 /usr/bin/VBoxClient --seamless
+michal      1156  0.0  0.0 157384  2688 ?        Sl   09:29   0:00 /usr/bin/VBoxClient --seamless
+michal      1162  0.0  0.0  25148   360 ?        S    09:29   0:00 /usr/bin/VBoxClient --draganddrop
+michal      1163  0.2  0.0 157900  2664 ?        Sl   09:29   0:12 /usr/bin/VBoxClient --draganddrop
+michal      1170  0.0  0.0  25148   364 ?        S    09:29   0:00 /usr/bin/VBoxClient --vmsvga
+michal      1171  0.0  0.0 159664  3592 ?        Sl   09:29   0:00 /usr/bin/VBoxClient --vmsvga
+michal      1177  0.0  0.0   6040   452 ?        Ss   09:29   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+michal      1202  0.0  0.1   7376  4160 ?        S    09:29   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+michal      1230  0.6  9.9 3750132 401592 ?      Ssl  09:29   0:39 /usr/bin/gnome-shell
+michal      1339  0.0  0.6 2601292 26184 ?       Sl   09:29   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+michal      1527  0.0  5.4 846712 219684 ?       Sl   09:29   0:05 /snap/snap-store/558/usr/bin/snap-store --gapplication-service
+michal      2677  0.0  1.4 719204 56348 ?        Sl   09:29   0:00 /usr/bin/gnome-calendar --gapplication-service
+michal      2679  0.0  1.1 683956 45480 ?        SLl  09:29   0:00 /usr/bin/seahorse --gapplication-service
+  111  mkdir zadanie1
+  112  cd zadanie1
+  113  touch processes.txt
+  114  ps aux > processes.txt
+  115  cp processes.txt copy.txt
+  116  mkdir backup
+  117  mv copy.txt backup
+  118  wc -l processes.txt
+  119  wc -l processes.txt > selected.txt
+  120  grep "/bin" processes.txt >> selected.txt 
+  121  history
+  122  history | tail -n 12 > commands.txt
+michal@michal-VirtualBox:~/zadanie1$ 
