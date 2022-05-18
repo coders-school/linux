@@ -1,0 +1,138 @@
+michal@michal-VirtualBox:~$ mkdir linux
+michal@michal-VirtualBox:~$ cd linux
+michal@michal-VirtualBox:~/linux$ touch processes.txt
+michal@michal-VirtualBox:~/linux$ ps aux > processes.txt
+michal@michal-VirtualBox:~/linux$ cp processes.txt copy.txt
+michal@michal-VirtualBox:~/linux$ mkdir backup
+michal@michal-VirtualBox:~/linux$ mv copy.txt backup
+michal@michal-VirtualBox:~/linux$ wc -l processes.txt
+188 processes.txt
+michal@michal-VirtualBox:~/linux$ wc -l processes.txt > selected.txt
+michal@michal-VirtualBox:~/linux$ grep -n "/bin" processes.txt
+85:message+     551  0.0  0.1   8948  6060 ?        Ss   06:20   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+87:root         568  0.0  0.5  42132 20528 ?        Ss   06:20   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+98:root         678  0.0  0.5 120556 22724 ?        Ssl  06:20   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+100:whoopsie     713  0.0  0.3 327208 15876 ?        Ssl  06:20   0:00 /usr/bin/whoopsie -f
+108:michal       962  0.0  0.4 1411460 19488 ?       S<sl 06:20   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+110:michal       967  0.0  0.1 242696  7100 ?        Sl   06:20   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+111:michal       971  0.0  0.1 166548  6600 tty2     Ssl+ 06:20   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+113:michal       975  0.0  0.1  10668  7456 ?        Ss   06:20   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+126:michal      1141  0.0  0.0  25148   360 ?        S    06:20   0:00 /usr/bin/VBoxClient --clipboard
+127:michal      1142  0.0  0.0 157284  2160 ?        Sl   06:20   0:00 /usr/bin/VBoxClient --clipboard
+128:michal      1153  0.0  0.0  25148   360 ?        S    06:20   0:00 /usr/bin/VBoxClient --seamless
+129:michal      1154  0.0  0.0 157384  2664 ?        Sl   06:20   0:00 /usr/bin/VBoxClient --seamless
+130:michal      1160  0.0  0.0  25148   364 ?        S    06:20   0:00 /usr/bin/VBoxClient --draganddrop
+131:michal      1161  0.2  0.0 157900  2628 ?        Sl   06:20   0:00 /usr/bin/VBoxClient --draganddrop
+132:michal      1168  0.0  0.0  25148   364 ?        S    06:20   0:00 /usr/bin/VBoxClient --vmsvga
+133:michal      1169  0.0  0.0 159664  3544 ?        Sl   06:20   0:00 /usr/bin/VBoxClient --vmsvga
+134:michal      1175  0.0  0.0   6040   452 ?        Ss   06:20   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+136:michal      1200  0.0  0.1   7244  4312 ?        S    06:20   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+139:michal      1228  1.8  8.5 3435732 345532 ?      Ssl  06:20   0:05 /usr/bin/gnome-shell
+153:michal      1335  0.0  0.6 2601288 26452 ?       Sl   06:20   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+177:michal      1526  1.7  5.4 844820 219404 ?       Sl   06:20   0:05 /snap/snap-store/558/usr/bin/snap-store --gapplication-service
+michal@michal-VirtualBox:~/linux$ grep -n "/bin" processes.txt >> selected.txt
+michal@michal-VirtualBox:~/linux$ history
+    1  ls
+    2  cd Dokuments
+    3  cd Documents
+    4  ls
+    5  cat plik.txt
+    6  cd..
+    7  cd ..
+    8  cd /
+    9  cd ..
+   10  pwd
+   11  cd/
+   12  cd ~
+   13  cad plik.txt
+   14  cat plik.txt
+   15  ls
+   16  cd Documents
+   17  ls
+   18  cat plik.txt
+   19  less plik.txt
+   20  wc plik.txt
+   21  man wc
+   22  echo
+   23  echo Gabi
+   24  echo ~
+   25  echo $
+   26  echo $PS1
+   27  less ~/.bashrc
+   28  ls -a
+   29  cd ..
+   30  ls -a
+   31  man wc
+   32  wc -l
+   33  ls
+   34  cd snap
+   35  touch Gabi.txt
+   36  ls
+   37  mv Gabi.txt .Gabrysia.txt
+   38  ls
+   39  less
+   40  ls -a
+   41  touch processes.txt
+   42  ps aux > processes.txt
+   43  grep "/bin" procesess.txt
+   44  grep "/bin" processes.txt
+   45  man grep
+   46  ls
+   47  cd linux
+   48  ls
+   49  rm commands.txt copy.txt
+   50  rm processes.txt selected.txt
+   51  ls
+   52  cd ..
+   53  rm dir linux
+   54  rmdir linux
+   55  ls
+   56  clear
+   57  mkdir linux
+   58  cd linux
+   59  touch processes.txt
+   60  ps aux > processes.txt
+   61  cp processes.txt copy.txt
+   62  mkdir backup
+   63  mv copy.txt backup
+   64  wc -l processes.txt
+   65  wc -l processes.txt > selected.txt
+   66  grep -n "/bin" processes.txt
+   67  grep -n "/bin" processes.txt >> selected.txt
+   68  history
+michal@michal-VirtualBox:~/linux$ history | tail -n 12 > commands.txt
+michal@michal-VirtualBox:~/linux$ cat selected.txt commands.txt
+188 processes.txt
+85:message+     551  0.0  0.1   8948  6060 ?        Ss   06:20   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+87:root         568  0.0  0.5  42132 20528 ?        Ss   06:20   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+98:root         678  0.0  0.5 120556 22724 ?        Ssl  06:20   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+100:whoopsie     713  0.0  0.3 327208 15876 ?        Ssl  06:20   0:00 /usr/bin/whoopsie -f
+108:michal       962  0.0  0.4 1411460 19488 ?       S<sl 06:20   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+110:michal       967  0.0  0.1 242696  7100 ?        Sl   06:20   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+111:michal       971  0.0  0.1 166548  6600 tty2     Ssl+ 06:20   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+113:michal       975  0.0  0.1  10668  7456 ?        Ss   06:20   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+126:michal      1141  0.0  0.0  25148   360 ?        S    06:20   0:00 /usr/bin/VBoxClient --clipboard
+127:michal      1142  0.0  0.0 157284  2160 ?        Sl   06:20   0:00 /usr/bin/VBoxClient --clipboard
+128:michal      1153  0.0  0.0  25148   360 ?        S    06:20   0:00 /usr/bin/VBoxClient --seamless
+129:michal      1154  0.0  0.0 157384  2664 ?        Sl   06:20   0:00 /usr/bin/VBoxClient --seamless
+130:michal      1160  0.0  0.0  25148   364 ?        S    06:20   0:00 /usr/bin/VBoxClient --draganddrop
+131:michal      1161  0.2  0.0 157900  2628 ?        Sl   06:20   0:00 /usr/bin/VBoxClient --draganddrop
+132:michal      1168  0.0  0.0  25148   364 ?        S    06:20   0:00 /usr/bin/VBoxClient --vmsvga
+133:michal      1169  0.0  0.0 159664  3544 ?        Sl   06:20   0:00 /usr/bin/VBoxClient --vmsvga
+134:michal      1175  0.0  0.0   6040   452 ?        Ss   06:20   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+136:michal      1200  0.0  0.1   7244  4312 ?        S    06:20   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+139:michal      1228  1.8  8.5 3435732 345532 ?      Ssl  06:20   0:05 /usr/bin/gnome-shell
+153:michal      1335  0.0  0.6 2601288 26452 ?       Sl   06:20   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+177:michal      1526  1.7  5.4 844820 219404 ?       Sl   06:20   0:05 /snap/snap-store/558/usr/bin/snap-store --gapplication-service
+   58  cd linux
+   59  touch processes.txt
+   60  ps aux > processes.txt
+   61  cp processes.txt copy.txt
+   62  mkdir backup
+   63  mv copy.txt backup
+   64  wc -l processes.txt
+   65  wc -l processes.txt > selected.txt
+   66  grep -n "/bin" processes.txt
+   67  grep -n "/bin" processes.txt >> selected.txt
+   68  history
+   69  history | tail -n 12 > commands.txt
