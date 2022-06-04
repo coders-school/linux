@@ -13,3 +13,4 @@
  1059  history
  1060  history | tail -n10
  1061  history | tail -n12 > commands.txt
+ 1062  cat assigment/selected.txt assigment/commands.txt
