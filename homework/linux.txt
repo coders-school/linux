@@ -11,5 +11,5 @@
  1057  grep -n /bin assigment/processes.txt
  1058  grep -n /bin assigment/processes.txt >> assigment/selected.txt
  1059  history
- 1060  history | tail n-10
- 1061  history | tail n-12 > commands.txt
+ 1060  history | tail -n10
+ 1061  history | tail -n12 > commands.txt
