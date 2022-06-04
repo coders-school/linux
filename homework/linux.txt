@@ -67,3 +67,5 @@
  1110  22:36  history | grep mkdir myhomework
  1111  22:36  history | grep  myhomework
  1112  22:36  history -d 1046
+ 
+ 
