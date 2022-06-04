@@ -1,5 +1,5 @@
-     522 assigment/processes.txt
-67:root              2768   0.0  0.0 408230080   5824   ??  Ss   Fri09PM   0:00.03 /usr/bin/sysdiagnose
+ 522 assigment/processes.txt
+ 67:root              2768   0.0  0.0 408230080   5824   ??  Ss   Fri09PM   0:00.03 /usr/bin/sysdiagnose
  1049  mkdir assigment
  1050  touch assigment/processes.txt
  1051  ps aux >> assigment/processes.txt
