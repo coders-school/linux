@@ -1,12 +1,15 @@
-     536 processes.txt
-79:root              2768   0.0  0.0 408230080   5824   ??  Ss   Fri09PM   0:00.03 /usr/bin/sysdiagnose
- 1016  ls backup
- 1017  wc -l >> selected.txt
- 1018  ls
- 1019  wc
- 1020  wc
- 1021  wc -l processes.txt >> selected.txt
- 1022  cat selected.txt
- 1023  wc -l processes.txt > selected.txt
- 1024  grep -n /bin processes.txt
- 1025  grep -n /bin processes.txt >> selected.txt
+     522 assigment/processes.txt
+67:root              2768   0.0  0.0 408230080   5824   ??  Ss   Fri09PM   0:00.03 /usr/bin/sysdiagnose
+ 1049  mkdir assigment
+ 1050  touch assigment/processes.txt
+ 1051  ps aux >> assigment/processes.txt
+ 1052  cp assigment/processes.txt copy.txt
+ 1053  mkdir assigment/backup
+ 1054  mv copy.txt assigment/backup
+ 1055  wc -l assigment/processes.txt
+ 1056  wc -l assigment/processes.txt > assigment/selected.txt
+ 1057  grep -n /bin assigment/processes.txt
+ 1058  grep -n /bin assigment/processes.txt >> assigment/selected.txt
+ 1059  history
+ 1060  history | tail -10
+ 1061  history | tail -12
