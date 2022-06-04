@@ -1,0 +1,69 @@
+     517 processes.txt
+60:root              2768   0.0  0.0 408230080   5904   ??  Ss   Fri09PM   0:00.03 /usr/bin/sysdiagnose
+ 1046  22:14  mkdir myhomework
+ 1047  22:14  cd myhomework
+ 1048  22:14  ls
+ 1049  22:15  touch processes.txt
+ 1050  22:15  ls
+ 1051  22:15  echo ps aux
+ 1052  22:15  ps aux
+ 1053  22:15  ps aux | processes.txt
+ 1054  22:15  ls
+ 1055  22:16  ps aux > processes.txt
+ 1056  22:16  cat processes.txt
+ 1057  22:16  clear
+ 1058  22:16  ls
+ 1059  22:16  touch copy.txt
+ 1060  22:17  mkdir backup
+ 1061  22:17  ls
+ 1062  22:17  mv copy.txt backup
+ 1063  22:17  ls
+ 1064  22:18  wc processes.txt
+ 1065  22:18  wc -l processes.txt
+ 1066  22:18  ls
+ 1067  22:18  wc -l processes.txt >> selected.txt
+ 1068  22:18  ls
+ 1069  22:18  caat selected.txt
+ 1070  22:18  cat selected.txt
+ 1071  22:19  ls
+ 1072  22:19  clear
+ 1073  22:19  man grep
+ 1074  22:20  grep /bin
+ 1075  22:20  ls
+ 1076  22:21  cat processes.txt
+ 1077  22:21  clear 
+ 1078  22:21  ls
+ 1079  22:21  grep -v processes.txt/bin
+ 1080  22:22  cat processes.txt
+ 1081  22:22  clear
+ 1082  22:22  cat processes.txt/System
+ 1083  22:22  grep -v processes.txt/System
+ 1084  22:23  grep -v /bin processes.txt
+ 1085  22:23  grep -v bin processes.txt
+ 1086  22:23  clear 
+ 1087  22:23  grep -v /bin processes.txt
+ 1088  22:23  clear 
+ 1089  22:24  grep -n /bin processes.txt
+ 1090  22:25  grep -n /bin processes.txt >> selected.txt
+ 1091  22:25  cat selected.txt
+ 1092  22:25  history
+ 1093  22:27  history tail
+ 1094  22:28  history | tail
+ 1095  22:28  history | tail -1
+ 1096  22:28  history | tail -30
+ 1097  22:28  history 30
+ 1098  22:30  man history
+ 1099  22:30  history | tail 1046
+ 1100  22:30  history | tail -1046
+ 1101  22:31  history | tail -n 1046
+ 1102  22:32  history | head -v 1046
+ 1103  22:32  history | head 1046
+ 1104  22:33  history | tail -n 1046
+ 1105  22:34  history | tail -n 1103-1046
+ 1106  22:35  history | range 10466
+ 1107  22:35  history --help
+ 1108  22:35  man history
+ 1109  22:36  history -d 1046
+ 1110  22:36  history | grep mkdir myhomework
+ 1111  22:36  history | grep  myhomework
+ 1112  22:36  history -d 1046
