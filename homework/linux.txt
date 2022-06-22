@@ -1,0 +1,38 @@
+adrian@adrian:~/homework1$ cat selected.txt commands.txt 
+468 processes.txt
+230:message+    1235  0.0  0.0   9884  6556 ?        Ss   00:55   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+233:root        1248  0.0  0.0  41952 20400 ?        Ss   00:55   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+247:root        1344  0.1  0.1 2230156 48684 ?       Ssl  00:55   1:14 /usr/bin/containerd
+251:root        1572  0.0  0.0 120692 22984 ?        Ssl  00:56   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+255:gdm         1594  0.0  0.0 1032912 19236 ?       S<sl 00:56   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+259:gdm         1602  0.0  0.0   7376  4544 ?        Ss   00:56   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+275:gdm         1700  0.0  0.0   7240  3920 tty1     S+   00:56   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+276:gdm         1721  0.0  0.7 4056136 244596 tty1   Sl+  00:56   0:08 /usr/bin/gnome-shell
+281:root        1757  0.0  0.2 1980160 86880 ?       Ssl  00:56   0:05 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+282:whoopsie    1766  0.0  0.0 253232 15564 ?        Ssl  00:56   0:00 /usr/bin/whoopsie -f
+290:gdm         2201  0.0  0.0 2933024 26980 tty1    Sl+  00:56   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+310:adrian      2395  0.7  0.0 1297992 20852 ?       S<sl 00:56   4:58 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+312:adrian      2401  0.0  0.0   8288  5580 ?        Ss   00:56   0:10 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+313:adrian      2405  0.0  0.0 243208  8416 ?        SLl  00:56   0:03 /usr/bin/gnome-keyring-daemon --daemonize --login
+323:adrian      2475  0.0  0.0 242588  7572 ?        Sl   00:56   0:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+327:adrian      2560  0.0  0.0   6032   456 ?        Ss   00:56   0:00 /usr/bin/ssh-agent /usr/bin/im-launch cinnamon-session-cinnamon
+329:adrian      2577  0.0  0.0   7504  4728 ?        S    00:56   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+356:adrian      2801  0.0  0.1 436448 43932 tty2     Sl+  00:56   0:00 /usr/bin/python3 /usr/bin/blueman-applet
+369:adrian      2939  0.0  0.1 367100 49612 tty2     Sl+  00:56   0:00 /usr/bin/python3 /usr/bin/blueman-tray
+384:adrian      3226  0.0  0.0 2389736 19728 ?       Sl   00:57   0:00 /usr/bin/snap userd
+423:adrian      4383  0.0  0.1  62496 35136 tty2     S+   00:57   0:02 /usr/bin/python3 /usr/share/system-config-printer/applet.py
+ 1506  mkdir homework1
+ 1507  cd homework1/
+ 1508  touch processes.txt
+ 1509  ps aux >> processes.txt 
+ 1510  cp processes.txt copy.txt
+ 1511  mkdir backup
+ 1512  mv copy.txt backup/
+ 1513  wc -l processes.txt 
+ 1514  wc -l processes.txt > selected.txt
+ 1515  grep -rni /bin processes.txt >> selected.txt 
+ 1516  history
+ 1517  history | tail -n11
+ 1518  history | tail -n12
+ 1519  history | tail -n14
+ 1520  history | tail -n15 > commands.txt
