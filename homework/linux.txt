@@ -1,0 +1,48 @@
+paulus@lilavrt-ubudgie:~/Nauka/C_plus_plus/coders/narzedzia/linux$ mkdir ala
+paulus@lilavrt-ubudgie:~/Nauka/C_plus_plus/coders/narzedzia/linux$ touch ala/processes.txt
+paulus@lilavrt-ubudgie:~/Nauka/C_plus_plus/coders/narzedzia/linux$ ps aux >> ala/processes.txt 
+paulus@lilavrt-ubudgie:~/Nauka/C_plus_plus/coders/narzedzia/linux$ cp ala/processes.txt copy.txt
+paulus@lilavrt-ubudgie:~/Nauka/C_plus_plus/coders/narzedzia/linux$ mkdir backup
+paulus@lilavrt-ubudgie:~/Nauka/C_plus_plus/coders/narzedzia/linux$ mv copy.txt backup/
+paulus@lilavrt-ubudgie:~/Nauka/C_plus_plus/coders/narzedzia/linux$ wc -l ala/processes.txt 
+178 ala/processes.txt
+paulus@lilavrt-ubudgie:~/Nauka/C_plus_plus/coders/narzedzia/linux$ wc -l ala/processes.txt > selected.txt
+paulus@lilavrt-ubudgie:~/Nauka/C_plus_plus/coders/narzedzia/linux$ grep -ni /bin ala/processes.txt >> selected.txt 
+paulus@lilavrt-ubudgie:~/Nauka/C_plus_plus/coders/narzedzia/linux$ history
+    1  mkdir ala
+    2  touch ala/processes.txt
+    3  ps aux >> ala/processes.txt 
+    4  cp ala/processes.txt copy.txt
+    5  mkdir backup
+    6  mv copy.txt backup/
+    7  wc -l ala/processes.txt 
+    8  wc -l ala/processes.txt > selected.txt
+    9  grep -ni /bin ala/processes.txt >> selected.txt 
+   10  history
+paulus@lilavrt-ubudgie:~/Nauka/C_plus_plus/coders/narzedzia/linux$ history | tail -11 > commands.txt
+paulus@lilavrt-ubudgie:~/Nauka/C_plus_plus/coders/narzedzia/linux$ cat selected.txt commands.txt 
+178 ala/processes.txt
+68:root         485  0.0  0.5  43604 20128 ?        Ss   lip03   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+77:root         590  0.0  0.5 120668 21928 ?        Ssl  lip03   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+91:root       11236  0.0  0.5  43508 20328 ?        S    lip03   0:00 /usr/bin/python3 /usr/libexec/language-selector/ls-dbus-backend
+96:paulus     11592  0.0  0.1  42096  5036 ?        S<sl lip03   0:00 /usr/bin/pipewire
+97:paulus     11593  0.0  0.1  25984  4472 ?        Ssl  lip03   0:00 /usr/bin/pipewire-media-session
+98:paulus     11594  0.0  0.4 1427204 20000 ?       S<sl lip03   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+99:paulus     11597  0.0  0.1 243720  7664 ?        Sl   lip03   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+100:paulus     11600  0.0  0.1   9668  5916 ?        Ss   lip03   0:02 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+105:paulus     11704  0.0  0.1   8560  4496 ?        S    lip03   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus_0
+143:paulus     11996  0.0  0.9 398840 39216 ?        Sl   lip03   0:01 /usr/bin/python3 /usr/lib/budgie-desktop/plugins/budgie-dropby/dropover a8e43203-f4e3-11ec-9dd8-69cc8c44aed0
+162:paulus     12541  0.0  0.5 303164 23012 ?        Ssl  lip03   0:00 /snap/snapd-desktop-integration/14/bin/snapd-desktop-integration
+171:paulus     17469  0.6  1.7 592020 71532 ?        Sl   00:10   0:25 /usr/bin/tilix --gapplication-service
+172:paulus     17480  0.0  0.1  13936  5680 pts/0    Ss   00:10   0:00 /bin/bash
+    1  mkdir ala
+    2  touch ala/processes.txt
+    3  ps aux >> ala/processes.txt 
+    4  cp ala/processes.txt copy.txt
+    5  mkdir backup
+    6  mv copy.txt backup/
+    7  wc -l ala/processes.txt 
+    8  wc -l ala/processes.txt > selected.txt
+    9  grep -ni /bin ala/processes.txt >> selected.txt 
+   10  history
+   11  history | tail -11 > commands.txt
