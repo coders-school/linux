@@ -1,17 +1,12 @@
-7
-  160  touch processes.txt
-  161  ps aux | tee processes.txt
-  162  cat processes.txt
-  163  cp processes.txt copy.txt
-  164  wc -l copy.txt
-  165  echo "7" > selected.txt && cat selected.txt
-  166  cat selected.txt
-  167  grep processes.txt "/bin"
-  168  cat processes.txt | grep "/bin"
-  169  cat processes.txt | grep "/bin" >> selected.txt
-  170  cat selected.txt
-  171  history
-  172  tail history
-  173  history | tail
-  174  history | tail -n +160
-  175  history | tail -n +160 > commands.txt
+6
+  179  mkdir pd_linux
+  180  touch pd_linux/processes.txt
+  181  ps aux > pd_linux/processes.txt
+  182  cp pd_linux/processes.txt pd_linux/copy.txt
+  183  wc -l pd_linux/processes.txt
+  184  "6" > pd_linux/selected.txt
+  185  echo "6" > pd_linux/selected.txt
+  186  cat pd_linux/processes.txt | grep "/bin" >> selected.txt
+  187  history
+  188  history | tail -n +179
+  189  history | tail -n +179 > pd_linux/commands.txt
