@@ -1,17 +1,12 @@
 6
-  199  mkdir praca_domowa
-  200  mkdir praca_domowa/processes.txt
-  201  ps aux > praca_domowa/processes.txt
-  202  ls
-  203  rm -Rf praca_domowa/
-  204  ls
-  205  mkdir praca_domowa
-  206  touch praca_domowa/processes.txt
-  207  ps aux > praca_domowa/processes.txt
-  208  cp praca_domowa/processes.txt praca_domowa/copy.txt
-  209  wc -l praca_domowa/processes.txt
-  210  echo "6" > praca_domowa/selected.txt
-  211  cat praca_domowa/processes.txt | grep "/bin" >> selected.txt
-  212  history
-  213  history | tail -n +199
-  214  history | tail -n +199 > praca_domowa/commands.txt
+  225  mkdir praca_domowa
+  226  touch praca_domowa/processes.txt
+  227  ps aux > praca_domowa/processes.txt
+  228  cp praca_domowa/processes.txt praca_domowa/copy.txt
+  229  mkdir backup && mv praca_domowa/copy.txt backup
+  230  wc -l praca_domowa/processes.txt
+  231  echo "6" > praca_domowa/selected.txt
+  232  cat praca_domowa/processes.txt | grep "/bin" >> praca_domowa/selected.txt
+  233  history
+  234  history | tail -n +225
+  235  history | tail -n +225 > praca_domowa/commands.txt
