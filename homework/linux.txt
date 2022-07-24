@@ -11,3 +11,4 @@
   263  history | tail -n +254 >
   264  history | tail -n +254 > praca_domowa/commands.txt
   265  cat selected.txt commands.txt
+  
