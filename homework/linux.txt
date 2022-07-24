@@ -1,0 +1,14 @@
+6
+  254  mkdir praca_domowa
+  255  touch praca_domowa/processes.txt
+  256  ps aux > praca_domowa/processes.txt
+  257  cp praca_domowa/processes.txt praca_domowa/copy.txt
+  258  mkdir backup && mv praca_domowa/copy.txt backup
+  259  wc -l praca_domowa/processes.txt
+  260  wc -l < praca_domowa/processes.txt > praca_domowa/selected.txt
+  261  grep -n "/bin" praca_domowa/processes.txt >> praca_domowa/selected.txt
+  262  history
+  263  history | tail -n +254 >
+  264  history | tail -n +254 > praca_domowa/commands.txt
+  265  cat selected.txt commands.txt
+  
