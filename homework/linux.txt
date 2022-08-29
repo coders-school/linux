@@ -1,34 +1,24 @@
-cat selected.txt commands.txt 
-312 processes.txt
-143:message+     853  0.0  0.0   9932  6572 ?        Ss   07:21   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-146:root         863  0.0  0.1  50484 20268 ?        Ss   07:21   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-149:nvidia-+     879  0.0  0.0   5208  1856 ?        Ss   07:21   0:00 /usr/bin/nvidia-persistenced --user nvidia-persistenced --no-persistence-mode --verbose
-163:root        1046  0.0  0.1 129280 23080 ?        Ssl  07:21   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-167:gdm         1059  0.0  0.1 893212 18032 ?        S<sl 07:21   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-171:gdm         1066  0.0  0.0   7404  4396 ?        Ss   07:21   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-190:gdm         1272  0.0  0.0   7248  3932 tty1     S+   07:21   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-191:gdm         1293  0.3  1.1 3726884 180208 tty1   Sl+  07:21   0:02 /usr/bin/gnome-shell
-198:gdm         1353  0.0  0.1 2671408 26852 tty1    Sl+  07:21   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-216:whoopsie    1504  0.0  0.1 253588 16140 ?        Ssl  07:21   0:00 /usr/bin/whoopsie -f
-222:mich        1570  0.0  0.1 1158192 19312 ?       S<sl 07:21   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-224:mich        1574  0.0  0.0   9356  6540 ?        Ss   07:21   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-225:mich        1580  0.0  0.0 251668  7924 ?        Sl   07:21   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
-236:mich        1663  0.0  0.0 175348  6560 tty2     Ssl+ 07:21   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-240:mich        1714  0.0  0.0 251224  7608 ?        Sl   07:21   0:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
-241:mich        1756  0.0  0.0   6040   456 ?        Ss   07:21   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-243:mich        1780  0.0  0.0   7248  4352 ?        S    07:21   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-246:mich        1808  1.7  2.3 3903112 372196 ?      Ssl  07:21   0:11 /usr/bin/gnome-shell
-259:mich        1906  0.0  0.1 2745388 27296 ?       Sl   07:22   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-282:mich        2066  1.1  1.8 1354808 304840 ?      Sl   07:22   0:07 /snap/snap-store/518/usr/bin/snap-store --gapplication-service
- 1834  mkdir homework
- 1835  touch processes.txt
- 1836  ps aux > processes.txt 
- 1837  cat processes.txt 
- 1838  cp processes.txt copy.txt
- 1839  mkdir backup
- 1840  mv copy.txt backup/
- 1841  wc -l processes.txt 
- 1842  wc -l processes.txt > selected.txt
- 1843  grep -n "/bin" processes.txt >> selected.txt 
- 1844  history
- 1845  history | tail -n12 > commands.txt
+23 processes.txt
+7:mchz        18  0.0  0.0   2612   588 pts/0    S+   21:00   0:00 sh /home/mchz/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662/bin/code-server --host=127.0.0.1 --port=0 --connection-token=41843836-3720999078-2296135699-204072421 --use-host-proxy --without-browser-env-var --disable-websocket-compression --accept-server-license-terms --telemetry-level=all
+8:mchz        22  0.0  0.8 931220 70980 pts/0    Sl+  21:00   0:03 /home/mchz/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662/node /home/mchz/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662/out/server-main.js --host=127.0.0.1 --port=0 --connection-token=41843836-3720999078-2296135699-204072421 --use-host-proxy --without-browser-env-var --disable-websocket-compression --accept-server-license-terms --telemetry-level=all
+9:mchz        33  0.0  0.7 640480 57272 pts/0    Sl+  21:00   0:02 /home/mchz/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662/node /home/mchz/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662/out/bootstrap-fork --type=ptyHost --logsPath /home/mchz/.vscode-server/data/logs/20220829T210022
+12:mchz        70  0.0  0.5 585744 41860 pts/1    Ssl+ 21:00   0:00 /home/mchz/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662/node -e  const net = require('net'); process.stdin.pause(); const client = net.createConnection({ host: '127.0.0.1', port: 42315 }, () => { client.pipe(process.stdout); process.stdin.pipe(client); }); client.on('close', function (hadError) { console.error(hadError ? 'Remote close with error' : 'Remote close'); process.exit(hadError ? 1 : 0); }); client.on('error', function (err) { process.stderr.write(err && (err.stack || err.message) || String(err)); });
+15:mchz        79  0.0  0.4 582288 35356 pts/2    Ssl+ 21:00   0:00 /home/mchz/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662/node -e  const net = require('net'); process.stdin.pause(); const client = net.createConnection({ host: '127.0.0.1', port: 42315 }, () => { client.pipe(process.stdout); process.stdin.pipe(client); }); client.on('close', function (hadError) { console.error(hadError ? 'Remote close with error' : 'Remote close'); process.exit(hadError ? 1 : 0); }); client.on('error', function (err) { process.stderr.write(err && (err.stack || err.message) || String(err)); });
+16:mchz        86  0.0  0.5 834508 42844 pts/0    Sl+  21:00   0:00 /home/mchz/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662/node /home/mchz/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662/out/bootstrap-fork --type=fileWatcher
+17:mchz       146  0.1  1.0 759804 86736 pts/0    Sl+  21:00   0:05 /home/mchz/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662/node /home/mchz/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=true
+18:mchz       169  0.0  0.5 588864 42352 pts/0    Sl+  21:00   0:00 /home/mchz/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662/node /home/mchz/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662/extensions/json-language-features/server/dist/node/jsonServerMain --node-ipc --clientProcessId=146
+19:mchz       176  0.0  0.0  10156  5288 pts/3    Ss   21:00   0:00 /usr/bin/bash --init-file /home/mchz/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662/out/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.sh
+20:mchz      1437  0.0  0.0   2612   528 pts/0    S+   21:54   0:00 /bin/sh -c "/home/mchz/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662/out/vs/base/node/cpuUsage.sh" 176
+21:mchz      1438  0.0  0.0   8620  3300 pts/0    S+   21:54   0:00 /bin/bash /home/mchz/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662/out/vs/base/node/cpuUsage.sh 176
+  422  mkdir linux
+  423  cd linux
+  424  touch processes.txt
+  425  ps -aux > processes.txt
+  426  cp processes.txt copy.txt
+  427  mkdir backup
+  428  mv copy.txt backup/
+  429  wc -l processes.txt
+  430  wc -l processes.txt > selected.txt
+  431  grep "/bin" processes.txt -n >> selected.txt
+  432  history
+  437  history | tail -n16 > commands.txt
