@@ -20,6 +20,6 @@ cat selected.txt commands.txt
   428  mv copy.txt backup/
   429  wc -l processes.txt
   430  wc -l processes.txt > selected.txt
-  431  grep "/bin" processes.txt -n >> selected.txt
+  431  grep -n "/bin" processes.txt >> selected.txt
   432  history
   437  history | tail -n16 > commands.txt
