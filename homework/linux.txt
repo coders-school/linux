@@ -1,3 +1,4 @@
+cat selected.txt commands.txt
 23 processes.txt
 7:mchz        18  0.0  0.0   2612   588 pts/0    S+   21:00   0:00 sh /home/mchz/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662/bin/code-server --host=127.0.0.1 --port=0 --connection-token=41843836-3720999078-2296135699-204072421 --use-host-proxy --without-browser-env-var --disable-websocket-compression --accept-server-license-terms --telemetry-level=all
 8:mchz        22  0.0  0.8 931220 70980 pts/0    Sl+  21:00   0:03 /home/mchz/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662/node /home/mchz/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662/out/server-main.js --host=127.0.0.1 --port=0 --connection-token=41843836-3720999078-2296135699-204072421 --use-host-proxy --without-browser-env-var --disable-websocket-compression --accept-server-license-terms --telemetry-level=all
