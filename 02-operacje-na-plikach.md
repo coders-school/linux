@@ -30,3 +30,4 @@ C0d3rs Sc4ool
 Hello Coders School
 Coders _Ch00l
 uważaj z komendą :) rm -rf 01-nawigacja.md 02-operacje-na-plikach.md 03-bash.md 05-wyswietlanie.md 06-pliki-ukryte.md 07-wyszukiwanie-find.md 08-wyszukiwanie-grep.md 09-przekierowania.md 10-procesy.md 11-zadanie.md README.md b01-skrypty.md b02-ps1.md
+Na pewno uważasz ?
