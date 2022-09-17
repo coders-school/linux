@@ -91,7 +91,7 @@ srazik@DESKTOP-CLHEVKS:~/Coders_Training/Katalog$ grep -i /bin processes.txt
 srazik@DESKTOP-CLHEVKS:~/Coders_Training/Katalog$ less processes.txt
 srazik@DESKTOP-CLHEVKS:~/Coders_Training/Katalog$ grep -i ps processes.txt
 srazik     495  0.0  0.0  18500  1936 tty1     R    06:26   0:00 ps aux
-srazik@DESKTOP-CLHEVKS:~/Coders_Training/Katalog$ grep -i /bin processes.txt >> selected.txt
+srazik@DESKTOP-CLHEVKS:~/Coders_Training/Katalog$ grep -ni /bin processes.txt >> selected.txt
 srazik@DESKTOP-CLHEVKS:~/Coders_Training/Katalog$ history
     1  ps -u
     2  sudo apt-get install g++
