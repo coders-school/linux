@@ -1,0 +1,356 @@
+srazik@DESKTOP-CLHEVKS:~/Coders_Training$ cd Katalog/
+srazik@DESKTOP-CLHEVKS:~/Coders_Training/Katalog$ touch processes.txt
+srazik@DESKTOP-CLHEVKS:~/Coders_Training/Katalog$ ps aux > processes.txt
+srazik@DESKTOP-CLHEVKS:~/Coders_Training/Katalog$ less processes.txt
+srazik@DESKTOP-CLHEVKS:~/Coders_Training/Katalog$ cp processes.txt copy.txt
+srazik@DESKTOP-CLHEVKS:~/Coders_Training/Katalog$ man wc
+srazik@DESKTOP-CLHEVKS:~/Coders_Training/Katalog$ mkdir backup
+srazik@DESKTOP-CLHEVKS:~/Coders_Training/Katalog$ mv copy.txt backup/
+srazik@DESKTOP-CLHEVKS:~/Coders_Training/Katalog$ man wc
+srazik@DESKTOP-CLHEVKS:~/Coders_Training/Katalog$ wc -l processes.txt
+5 processes.txt
+srazik@DESKTOP-CLHEVKS:~/Coders_Training/Katalog$ wc -l processes.txt > selected.txt
+srazik@DESKTOP-CLHEVKS:~/Coders_Training/Katalog$ less selected.txt
+srazik@DESKTOP-CLHEVKS:~/Coders_Training/Katalog$ man grep
+srazik@DESKTOP-CLHEVKS:~/Coders_Training/Katalog$ grep --help
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Search for PATTERNS in each FILE.
+Example: grep -i 'hello world' menu.h main.c
+PATTERNS can contain multiple patterns separated by newlines.
+
+Pattern selection and interpretation:
+  -E, --extended-regexp     PATTERNS are extended regular expressions
+  -F, --fixed-strings       PATTERNS are strings
+  -G, --basic-regexp        PATTERNS are basic regular expressions
+  -P, --perl-regexp         PATTERNS are Perl regular expressions
+  -e, --regexp=PATTERNS     use PATTERNS for matching
+  -f, --file=FILE           take PATTERNS from FILE
+  -i, --ignore-case         ignore case distinctions in patterns and data
+      --no-ignore-case      do not ignore case distinctions (default)
+  -w, --word-regexp         match only whole words
+  -x, --line-regexp         match only whole lines
+  -z, --null-data           a data line ends in 0 byte, not newline
+
+Miscellaneous:
+  -s, --no-messages         suppress error messages
+  -v, --invert-match        select non-matching lines
+  -V, --version             display version information and exit
+      --help                display this help text and exit
+
+Output control:
+  -m, --max-count=NUM       stop after NUM selected lines
+  -b, --byte-offset         print the byte offset with output lines
+  -n, --line-number         print line number with output lines
+      --line-buffered       flush output on every line
+  -H, --with-filename       print file name with output lines
+  -h, --no-filename         suppress the file name prefix on output
+      --label=LABEL         use LABEL as the standard input file name prefix
+  -o, --only-matching       show only nonempty parts of lines that match
+  -q, --quiet, --silent     suppress all normal output
+      --binary-files=TYPE   assume that binary files are TYPE;
+                            TYPE is 'binary', 'text', or 'without-match'
+  -a, --text                equivalent to --binary-files=text
+  -I                        equivalent to --binary-files=without-match
+  -d, --directories=ACTION  how to handle directories;
+                            ACTION is 'read', 'recurse', or 'skip'
+  -D, --devices=ACTION      how to handle devices, FIFOs and sockets;
+                            ACTION is 'read' or 'skip'
+  -r, --recursive           like --directories=recurse
+  -R, --dereference-recursive  likewise, but follow all symlinks
+      --include=GLOB        search only files that match GLOB (a file pattern)
+      --exclude=GLOB        skip files that match GLOB
+      --exclude-from=FILE   skip files that match any file pattern from FILE
+      --exclude-dir=GLOB    skip directories that match GLOB
+  -L, --files-without-match  print only names of FILEs with no selected lines
+  -l, --files-with-matches  print only names of FILEs with selected lines
+  -c, --count               print only a count of selected lines per FILE
+  -T, --initial-tab         make tabs line up (if needed)
+  -Z, --null                print 0 byte after FILE name
+
+Context control:
+  -B, --before-context=NUM  print NUM lines of leading context
+  -A, --after-context=NUM   print NUM lines of trailing context
+  -C, --context=NUM         print NUM lines of output context
+  -NUM                      same as --context=NUM
+      --group-separator=SEP  print SEP on line between matches with context
+      --no-group-separator  do not print separator for matches with context
+      --color[=WHEN],
+      --colour[=WHEN]       use markers to highlight the matching strings;
+                            WHEN is 'always', 'never', or 'auto'
+  -U, --binary              do not strip CR characters at EOL (MSDOS/Windows)
+
+When FILE is '-', read standard input.  With no FILE, read '.' if
+recursive, '-' otherwise.  With fewer than two FILEs, assume -h.
+Exit status is 0 if any line is selected, 1 otherwise;
+if any error occurs and -q is not given, the exit status is 2.
+
+Report bugs to: bug-grep@gnu.org
+GNU grep home page: <https://www.gnu.org/software/grep/>
+General help using GNU software: <https://www.gnu.org/gethelp/>
+srazik@DESKTOP-CLHEVKS:~/Coders_Training/Katalog$ grep -i /bin processes.txt
+srazik@DESKTOP-CLHEVKS:~/Coders_Training/Katalog$ less processes.txt
+srazik@DESKTOP-CLHEVKS:~/Coders_Training/Katalog$ grep -i ps processes.txt
+srazik     495  0.0  0.0  18500  1936 tty1     R    06:26   0:00 ps aux
+srazik@DESKTOP-CLHEVKS:~/Coders_Training/Katalog$ grep -i /bin processes.txt >> selected.txt
+srazik@DESKTOP-CLHEVKS:~/Coders_Training/Katalog$ history
+    1  ps -u
+    2  sudo apt-get install g++
+    3  sudo apt-get install g++ vim emacs
+    4  sudo apt-get install g++ vim
+    5  sudo apt-get install vim
+    6  sudo apt-get autoremove
+    7  sudo apt-get install vim
+    8  sudo apt-get install gcc
+    9  sudo apt-get help
+   10  sudo apt-get update
+   11  sudo apt-get upgrate
+   12  sudo apt-get help
+   13  sudo apt-get upgrade
+   14  sudo apt-get install gcc
+   15  sudo apt-get install emacs
+   16  man wc
+   17  ls
+   18  cd ..
+   19  ls
+   20  cd ..
+   21  ls
+   22  wc /mnt/c/License_de-DE.txt
+   23  man wc
+   24  man more
+   25  xterm
+   26  emacs new.cpp
+   27  exit
+   28  ls
+   29  mkdir Coders_Training
+   30  touch file.cpp
+   31  less file.cpp
+   32  echo "Dupa" \n "Jasiu" > file.cpp
+   33  cat file.cpp
+   34  echo "Dupa" \\n "Jasiu" > file.cpp
+   35  cat file.cpp
+   36  echo "Dupa" EOL "Jasiu" > file.cpp && cat file.cpp
+   37  ping wp.pl
+   38  whoami
+   39  ps -u srazik
+   40  ps -all
+   41  ps aux
+   42  top
+   43  sudo apt get install htop
+   44  sudo apt-get install htop
+   45  htop
+   46  ls
+   47  rm file.cpp
+   48  cd Coders_Training/
+   49  vim Hello.cpp
+   50  g++ Hello.cpp -o Hello
+   51  sudo apt-get install g++
+   52  g++ Hello.cpp -o Hello
+   53  ls
+   54  g++ Hello.cpp
+   55  vim Hello.cpp
+   56  g++ Hello.cpp
+   57  vim Hello.cpp
+   58  g++ Hello.cpp -o Hello
+   59  ./Hello
+   60  vim Hello.cpp
+   61  g++ Hello.cpp -o Hello
+   62  ./Hello
+   63  cd
+   64  ls
+   65  vim .viminfo
+   66  vim .vimrc
+   67  ls
+   68  cd Coders_Training/
+   69  vim Hello
+   70  vim Hello.cpp
+   71  mkdir Katalog
+   72  cd Katalog/
+   73  touch processes.txt
+   74  ps aux > processes.txt
+   75  less processes.txt
+   76  cp processes.txt copy.txt
+   77  man wc
+   78  mkdir backup
+   79  mv copy.txt backup/
+   80  man wc
+   81  wc -l processes.txt
+   82  wc -l processes.txt > selected.txt
+   83  less selected.txt
+   84  man grep
+   85  grep --help
+   86  grep -i /bin processes.txt
+   87  less processes.txt
+   88  grep -i ps processes.txt
+   89  grep -i /bin processes.txt >> selected.txt
+   90  history
+srazik@DESKTOP-CLHEVKS:~/Coders_Training/Katalog$ tail --help
+Usage: tail [OPTION]... [FILE]...
+Print the last 10 lines of each FILE to standard output.
+With more than one FILE, precede each with a header giving the file name.
+
+With no FILE, or when FILE is -, read standard input.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -c, --bytes=[+]NUM       output the last NUM bytes; or use -c +NUM to
+                             output starting with byte NUM of each file
+  -f, --follow[={name|descriptor}]
+                           output appended data as the file grows;
+                             an absent option argument means 'descriptor'
+  -F                       same as --follow=name --retry
+  -n, --lines=[+]NUM       output the last NUM lines, instead of the last 10;
+                             or use -n +NUM to output starting with line NUM
+      --max-unchanged-stats=N
+                           with --follow=name, reopen a FILE which has not
+                             changed size after N (default 5) iterations
+                             to see if it has been unlinked or renamed
+                             (this is the usual case of rotated log files);
+                             with inotify, this option is rarely useful
+      --pid=PID            with -f, terminate after process ID, PID dies
+  -q, --quiet, --silent    never output headers giving file names
+      --retry              keep trying to open a file if it is inaccessible
+  -s, --sleep-interval=N   with -f, sleep for approximately N seconds
+                             (default 1.0) between iterations;
+                             with inotify and --pid=P, check process P at
+                             least once every N seconds
+  -v, --verbose            always output headers giving file names
+  -z, --zero-terminated    line delimiter is NUL, not newline
+      --help     display this help and exit
+      --version  output version information and exit
+
+NUM may have a multiplier suffix:
+b 512, kB 1000, K 1024, MB 1000*1000, M 1024*1024,
+GB 1000*1000*1000, G 1024*1024*1024, and so on for T, P, E, Z, Y.
+Binary prefixes can be used, too: KiB=K, MiB=M, and so on.
+
+With --follow (-f), tail defaults to following the file descriptor, which
+means that even if a tail'ed file is renamed, tail will continue to track
+its end.  This default behavior is not desirable when you really want to
+track the actual name of the file, not the file descriptor (e.g., log
+rotation).  Use --follow=name in that case.  That causes tail to track the
+named file in a way that accommodates renaming, removal and creation.
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Report any translation bugs to <https://translationproject.org/team/>
+Full documentation <https://www.gnu.org/software/coreutils/tail>
+or available locally via: info '(coreutils) tail invocation'
+srazik@DESKTOP-CLHEVKS:~/Coders_Training/Katalog$ history
+    1  ps -u
+    2  sudo apt-get install g++
+    3  sudo apt-get install g++ vim emacs
+    4  sudo apt-get install g++ vim
+    5  sudo apt-get install vim
+    6  sudo apt-get autoremove
+    7  sudo apt-get install vim
+    8  sudo apt-get install gcc
+    9  sudo apt-get help
+   10  sudo apt-get update
+   11  sudo apt-get upgrate
+   12  sudo apt-get help
+   13  sudo apt-get upgrade
+   14  sudo apt-get install gcc
+   15  sudo apt-get install emacs
+   16  man wc
+   17  ls
+   18  cd ..
+   19  ls
+   20  cd ..
+   21  ls
+   22  wc /mnt/c/License_de-DE.txt
+   23  man wc
+   24  man more
+   25  xterm
+   26  emacs new.cpp
+   27  exit
+   28  ls
+   29  mkdir Coders_Training
+   30  touch file.cpp
+   31  less file.cpp
+   32  echo "Dupa" \n "Jasiu" > file.cpp
+   33  cat file.cpp
+   34  echo "Dupa" \\n "Jasiu" > file.cpp
+   35  cat file.cpp
+   36  echo "Dupa" EOL "Jasiu" > file.cpp && cat file.cpp
+   37  ping wp.pl
+   38  whoami
+   39  ps -u srazik
+   40  ps -all
+   41  ps aux
+   42  top
+   43  sudo apt get install htop
+   44  sudo apt-get install htop
+   45  htop
+   46  ls
+   47  rm file.cpp
+   48  cd Coders_Training/
+   49  vim Hello.cpp
+   50  g++ Hello.cpp -o Hello
+   51  sudo apt-get install g++
+   52  g++ Hello.cpp -o Hello
+   53  ls
+   54  g++ Hello.cpp
+   55  vim Hello.cpp
+   56  g++ Hello.cpp
+   57  vim Hello.cpp
+   58  g++ Hello.cpp -o Hello
+   59  ./Hello
+   60  vim Hello.cpp
+   61  g++ Hello.cpp -o Hello
+   62  ./Hello
+   63  cd
+   64  ls
+   65  vim .viminfo
+   66  vim .vimrc
+   67  ls
+   68  cd Coders_Training/
+   69  vim Hello
+   70  vim Hello.cpp
+   71  mkdir Katalog
+   72  cd Katalog/
+   73  touch processes.txt
+   74  ps aux > processes.txt
+   75  less processes.txt
+   76  cp processes.txt copy.txt
+   77  man wc
+   78  mkdir backup
+   79  mv copy.txt backup/
+   80  man wc
+   81  wc -l processes.txt
+   82  wc -l processes.txt > selected.txt
+   83  less selected.txt
+   84  man grep
+   85  grep --help
+   86  grep -i /bin processes.txt
+   87  less processes.txt
+   88  grep -i ps processes.txt
+   89  grep -i /bin processes.txt >> selected.txt
+   90  history
+   91  tail --help
+   92  history
+srazik@DESKTOP-CLHEVKS:~/Coders_Training/Katalog$ history | tail -n22 > commands.txt
+srazik@DESKTOP-CLHEVKS:~/Coders_Training/Katalog$ less commands.txt
+srazik@DESKTOP-CLHEVKS:~/Coders_Training/Katalog$ less selected.txt commands.txt
+srazik@DESKTOP-CLHEVKS:~/Coders_Training/Katalog$ cat selected.txt commands.txt
+5 processes.txt
+   72  cd Katalog/
+   73  touch processes.txt
+   74  ps aux > processes.txt
+   75  less processes.txt
+   76  cp processes.txt copy.txt
+   77  man wc
+   78  mkdir backup
+   79  mv copy.txt backup/
+   80  man wc
+   81  wc -l processes.txt
+   82  wc -l processes.txt > selected.txt
+   83  less selected.txt
+   84  man grep
+   85  grep --help
+   86  grep -i /bin processes.txt
+   87  less processes.txt
+   88  grep -i ps processes.txt
+   89  grep -i /bin processes.txt >> selected.txt
+   90  history
+   91  tail --help
+   92  history
+   93  history | tail -n22 > commands.txt
+srazik@DESKTOP-CLHEVKS:~/Coders_Training/Katalog$
