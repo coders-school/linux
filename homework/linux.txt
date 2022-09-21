@@ -18,7 +18,7 @@ haha                1288   0.0  0.0 123456789    123   ??  S    Thu05PM   0:00.0
  3665  wc -l processes.txt
  3666  wc -l processes.txt > selected.txt
  3667  cat processes.txt| grep /bin
- 3668  grep "/bin" processes.txt >> selected.txt
+ 3668  grep -n "/bin" processes.txt >> selected.txt
  3669  cat selected.txt commands.txt
- 3670  history | tail > commands.txt
+ 3670  history | tail -n 20 > commands.txt
  3671  history | tail -n 20
