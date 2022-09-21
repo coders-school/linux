@@ -1,0 +1,24 @@
+     430 processes.txt
+haha               36294   3.9  0.0 123456789   1234 s002  Ss   Mon04PM   0:02.71 /bin/zsh
+haha               64449   0.0  0.1 123456789  12345   ??  Ss    2:58PM   0:00.22 /usr/bin/some_super_program
+haha               53631   0.0  0.0 123456789   1234   ??  S    Mon05PM   0:00.01 /usr/bin/some_super_program
+root               35794   0.0  0.0 123456789   1234 s003  Ss   Mon04PM   0:00.01 /usr/bin/some_super_program
+root                2346   0.0  0.0 123456789   1234 s000  Ss   Thu06PM   0:00.01 /usr/bin/some_super_program
+haha                1288   0.0  0.0 123456789    123   ??  S    Thu05PM   0:00.00 /usr/bin/some_super_program
+ 3655  mkdir linux_homework
+ 3656  touch linux_homework/processes.txt
+ 3657  cd linux_homework
+ 3658  ll
+ 3659  ps aux
+ 3660  ps aux > processes.txt
+ 3661  vim processes.txt
+ 3662  cp processes.txt copy.txt
+ 3663  mkdir backup
+ 3664  mv copy.txt backup
+ 3665  wc -l processes.txt
+ 3666  wc -l processes.txt > selected.txt
+ 3667  cat processes.txt| grep /bin
+ 3668  cat processes.txt| grep /bin >> selected.txt
+ 3669  cat selected.txt
+ 3670  history | tail
+ 3671  history | tail -n 20
