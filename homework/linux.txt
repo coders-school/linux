@@ -1,0 +1,216 @@
+mateusz@DESKTOP-17UCTNQ:~/projekt/hello$ cat selected.txt commands.txt
+5
+  277  touch processes.txt
+  278  ls
+  279  echo > processes.txt | ps aux
+  280  ls
+  281  cat processes.txt
+  282  echo /init >> processes.txt
+  283  cat processes.txt
+  284  echo /init > processes.txt
+  285  cat processes.txt
+  286  echo /init >> processes.txt
+  287  echo -bash >> processes.txt
+  288  echo ps aux >> processes.txt
+  289  cat processes.txt
+  290  cp processes.txt copy.txt
+  291  ls
+  292  cd ..
+  293  ls -R
+  294  ls ./projekt/
+  295  clear
+  296  history
+  297  r
+  298  sudo r
+  299  sudo
+  300  sudo -r
+  301  clear
+  302  env
+  303  free
+  304  u
+  305  gedit &
+  306  vim script.sh
+  307  ./script.sh
+  308  ls -l
+  309  chmod +x script.sh
+  310  ld -l
+  311  ls -l
+  312  ./script.sh
+  313  ls
+  314  cd hello/
+  315  ls
+  316  vim ~/script.sh
+  317  ./script.sh
+  318  cd ..cd ..
+  319  cd .
+  320  cd ..
+  321  ls
+  322  ./script.sh
+  323  cat script.sh
+  324  ls
+  325  rm script.sh
+  326  ls
+  327  rm -rf hello/
+  328  ls
+  329  cd projekt/
+  330  ls
+  331  rm -af
+  332  rm --helprm --help
+  333  rm --help
+  334  ls
+  335  rm processes.txt
+  336  rm copy.txt
+  337  la
+  338  ls
+  339  cd ..
+  340  ls
+  341  clear
+  342  ls
+  343  cd projekt/
+  344  touch a.txt
+  345  ps all > a.txt
+  346  ls
+  347  cat a.txt
+  348  rm a.txt
+  349  grep bash *
+  350  grep * bash
+  351  grep -rni bash *
+  352  grep -rni *.cpp
+  353  touch main.cpp
+  354  touch aha.cpp
+  355  grep -rni *.cpp
+  356  grep -rni "*.cpp"
+  357  cd ..
+  358  grep -rni "*.cpp"
+  359  grep bash *
+  360  grep -rni bash *
+  361  grep -rni a *
+  362  grep -rni *.cpp
+  363  ls
+  364  cd projekt/
+  365  ls
+  366  ps aux > a.txt
+  367  ls
+  368  grep -rni a *
+  369  grep -rni bash *
+  370  ls
+  371  rm aha.cpp
+  372  rm main.cpp
+  373  ls
+  374  rm a.txt
+  375  ls
+  376  ls -al
+  377  cd ..
+  378  ls
+  379  touch projekt/aha.cpp
+  380  cd projekt/
+  381  touch main.cpp
+  382  ls
+  383  ps aux > a.txt
+  384  cd ..
+  385  find . -name "*.cpp'
+  386  find . -name "*.cpp`
+  387  find . -name "*.cpp'
+  388  find . -name "*.cpp"
+  389  find . -name "*.cpp'
+  390  find . -name "*.cpp"
+  391  find . -name "*.cpp"
+  392  find . -name "*.txt"
+  393  find . -name *.txt
+  394  find . -name *.cpp
+  395  ls
+  396  cls
+  397  clear
+  398  ls
+  399  cd projekt/
+  400  ls
+  401  rm main.cpp
+  402  rm aha.cpp
+  403  rm a.txt
+  404  ls
+  405  ls -al
+  406  ls
+  407  cd ..
+  408  clear
+  409  cd projekt/
+  410  ls
+  411  touch file
+  412  ls
+  413  mb file .file
+  414  ls
+  415  mv file .file
+  416  ls
+  417  ls -a
+  418  ls -al
+  419  rm .file
+  420  ls -al
+  421  ls
+  422  clear
+  423  wc --help
+  424  touch file.txt
+  425  wc file.txt
+  426  ls
+  427  rm file.txt
+  428  ls
+  429  mkdir hello
+  430  ls
+  431  cd hello
+  432  touch processes.txt
+  433  ps aux > processes.txt
+  434  cp processes.txt copy.txt
+  435  wc processes.txt
+  436  echo 5 > selected.txt
+  437  grep . -name *
+  438  grep . -name "*/bin"
+  439  history
+  440  grep -rni /bin *
+  441  grep -rni bin *
+  442  grep -rni bash *
+  443  wc -h processes.txt
+  444  wc processes.txt
+  445  cat processes.txt
+  446  cd ~/init
+  447  cd ..
+  448  ls
+  449  ls -al
+  450  cd mateusz/
+  451  ls -al
+  452  cd ..
+  453  ls
+  454  cd init
+  455  cd bin
+  456  ;s
+  457  ls
+  458  cd passwd
+  459  cat passwd
+  460  clear
+  461  cd ~
+  462  ls
+  463  cd projekt/hello/
+  464  ls
+  465  clear
+  466  ls
+  467  grep -rni processes.txt bash
+  468  grep -rni bash processes.txt
+  469  grep -rni bash processes.txt DDDD
+  470  grep -rni bash processes.txt copy.txt
+  471  vmi
+  472  vim
+  473  ps
+  474  ps aux
+  475  grep -rni "bash" *
+  476  grep -rni "/bin" *
+  477  grep -rni "/bin" * >> selected.txt
+  478  cat selected.txt
+  479  grep -rni "/bin" * > selected.txt
+  480  cat selected.txt
+  481  echo 5 > selected.txt
+  482  grep -rni "/bin" * >> selected.txt
+  483  cat selected.txt
+  484  history
+  485  history | tail -n277
+  486  history
+  487  history | tail -n209
+  488  history | tail -n211
+  489  history | tail -n213
+  490  history | tail -n214 > commands.txt
