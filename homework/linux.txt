@@ -14,3 +14,7 @@ mateusz@DESKTOP-17UCTNQ:~/projekt/hello$ cat selected.txt commands.txt
    12  grep -rni /bin >> selected.txt
    13  history
    14  history | tail -n14 > commands.txt
+   15  cat selected.txt commands.txt
+   16  grep -rni /bin processes.txt >> selected.txt
+   17  history
+   18  history | tail -n18 > commands.txt
