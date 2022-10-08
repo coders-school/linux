@@ -1,5 +1,6 @@
-mateusz@DESKTOP-17UCTNQ:~/hello$ cat selected.txt commands.txt
-  5  56 358 processes.txt
+mateusz@DESKTOP-17UCTNQ:~/projekt/hello$ cat selected.txt commands.txt
+5 processes.txt
+    1  cd projekt/
     2  mkdir hello
     3  cd hello/
     4  touch processes.txt
@@ -7,28 +8,9 @@ mateusz@DESKTOP-17UCTNQ:~/hello$ cat selected.txt commands.txt
     6  cp processes.txt copy.txt
     7  mkdir backup
     8  mv copy.txt backup/
-    9  wc processes.txt
-   10  wc processes.txt > selected.txt
-   11  ls
-   12  cd backup/
-   13  ls
-   14  cat copy.txt
-   15  cd ..
-   16  cat processes.txt
-   17  cat selected.txt
-   18  ls
-   19  htop
-   20  grep -rni /bin processes.txt
-   21  grep -rni /bin processes.txt >> selected.txt
-   22  cat selected.txt
-   23  history
-   24  history | tail -n1 > commands.txt
-   25  cat selected.txt commands.txt
-   26  cat commands.txt
-   27  history | tail -n22 > commands.txt
-   28  cat commands.txt
-   29  history | tail -n27 > commands.txt
-   30  cat commands.txt
-   31  history | tail -n30 > commands.txt
-   32  cat commands.txt
-   33  history | tail -n32 > commands.txt
+    9  ls
+   10  wc -l processes.txt > selected.txt
+   11  cat selected.txt
+   12  grep -rni /bin >> selected.txt
+   13  history
+   14  history | tail -n14 > commands.txt
