@@ -1,0 +1,70 @@
+192 processes.txt
+77:root         636  0.0  0.5  52228 20912 ?        Ss   19:31   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+90:root         745  0.0  0.5 129340 23248 ?        Ssl  19:31   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+97:krzuch       826  0.0  0.1  50752  6380 ?        S<sl 19:31   0:00 /usr/bin/pipewire
+98:krzuch       827  0.0  0.1  34640  6440 ?        Ssl  19:31   0:00 /usr/bin/pipewire-media-session
+99:krzuch       829  0.0  0.6 1958364 27140 ?       S<sl 19:31   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+100:krzuch       830  0.0  0.6 309316 27612 ?        Ssl  19:31   0:00 /snap/snapd-desktop-integration/14/bin/snapd-desktop-integration
+101:krzuch       833  0.0  0.1 252316  7040 ?        SLl  19:31   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+103:krzuch       845  0.0  0.1 173752  6076 tty2     Ssl+ 19:31   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+104:krzuch       847  0.0  0.1   9972  6176 ?        Ss   19:31   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+110:krzuch       940  5.1 10.0 4102252 404828 ?      Rsl  19:31   3:42 /usr/bin/gnome-shell
+112:krzuch       950  0.0  0.1   8560  4452 ?        S    19:31   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus
+133:krzuch      1193  0.0  0.6 2610908 27440 ?       Sl   19:31   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+135:krzuch      1206  0.0  0.0   2888  1008 ?        Ss   19:31   0:00 sh -c /usr/bin/ibus-daemon --panel disable $([ "$XDG_SESSION_TYPE" = "x11" ] && echo "--xim")
+141:krzuch      1215  0.0  0.2 400048 11720 ?        Sl   19:31   0:01 /usr/bin/ibus-daemon --panel disable
+156:krzuch      1372  0.0  3.3 1044360 135592 ?      Sl   19:31   0:02 /snap/snap-store/599/usr/bin/snap-store --gapplication-service
+162:krzuch      1510  0.0  0.6 2611012 27452 ?       Sl   19:31   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
+168:krzuch      2195  0.0  1.4 740180 59484 ?        Sl   19:39   0:00 /usr/bin/gnome-calendar --gapplication-service
+171:krzuch      2662  0.5  2.0 210964 80596 ?        S    19:53   0:16 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.C1Z9T1 -listen 4 -listen 5 -displayfd 6 -initfd 7
+177:krzuch      3004  0.0  0.6 496964 25020 ?        Sl   19:54   0:00 /usr/bin/snap userd
+ 1333  cd
+ 1334  ls
+ 1335  rm -rf test
+ 1336  ls
+ 1337  mkdir test
+ 1338  touch processes.txt
+ 1339  ps aux >processes.txt
+ 1340  cat processes.txt
+ 1341  cleat
+ 1342  clear
+ 1343  cp processes.txt copy.txt
+ 1344  cat copy.txt
+ 1345  cleat
+ 1346  clear
+ 1347  history
+ 1348  mkdir backup
+ 1349  mv copy.txt backup/
+ 1350  cd test
+ 1351  ls
+ 1352  clear
+ 1353  mkdir test
+ 1354  cd
+ 1355  cd test
+ 1356  test
+ 1357  cd test
+ 1358  clear
+ 1359  mkdir test
+ 1360  cd test
+ 1361  touch processes.txt
+ 1362  ls
+ 1363  ps aux > processes.txt
+ 1364  cat processes.txt
+ 1365  clear
+ 1366  mkdir backup
+ 1367  mv copy.txt backup/
+ 1368  ls
+ 1369  cp processes.txt copy.txt
+ 1370  mv copy.txt backup/
+ 1371  ls
+ 1372  wc -n processes.txt
+ 1373  wc -l processes.txt
+ 1374* 
+ 1375  grep -n '/bin' processes.txt
+ 1376  grep -n '/bin' processes.txt >> selected.txt
+ 1377  cat selected
+ 1378  cat selected.txt
+ 1379  history
+ 1380  history | tail -n42
+ 1381  history | tail -n45
+ 1382  history | tail -n50 > commands.txt
