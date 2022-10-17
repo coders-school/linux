@@ -1,0 +1,108 @@
+ 1273  touch processes.txt
+ 1274  >processes.txt ps aux
+ 1275  cp processes.txt copy.txt
+ 1276  find test/
+ 1277  wc copy.txt
+ 1278  wc -n copy.txt
+ 1279  wc -l copy.txt
+ 1280  <selected.txt wc -l copy.txt
+ 1281  touch selected
+ 1282  <selected.txt wc -l copy.txt
+ 1283  rm selected
+ 1284  touch selected.txt
+ 1285  <selected.txt wc -l copy.txt
+ 1286  cat copy.txt
+ 1287  cat selected.txt
+ 1288  <selected.txt wc -l copy.txt
+ 1289  cat selected.txt
+ 1290  cat selected.txt wc copy.txt
+ 1291  cat selected.txt
+ 1292  history
+ 1293  >selected.txt wc -l copy.txt
+ 1294  cat selected.txt
+ 1295  grep -n '/bin' copy.txt
+ 1296  history
+ 1297  histor 1273  touch processes.txt
+ 1274  >processes.txt ps aux
+ 1275  cp processes.txt copy.txt
+ 1276  find test/
+ 1277  wc copy.txt
+ 1278  wc -n copy.txt
+ 1279  wc -l copy.txt
+ 1280  <selected.txt wc -l copy.txt
+ 1281  touch selected
+ 1282  <selected.txt wc -l copy.txt
+ 1283  rm selected
+ 1284  touch selected.txt
+ 1285  <selected.txt wc -l copy.txt
+ 1286  cat copy.txt
+ 1287  cat selected.txt
+ 1288  <selected.txt wc -l copy.txt
+ 1289  cat selected.txt
+ 1290  cat selected.txt wc copy.txt
+ 1291  cat selected.txt
+ 1292  history
+ 1293  >selected.txt wc -l copy.txt
+ 1294  cat selected.txt
+ 1295  grep -n '/bin' copy.txt
+ 1296  history
+ 1297  history | tail -n2
+ 1298  >commands.txt history | tail -n2
+ 1299  cat commands.txt
+ 1300  >commands.txt history  tail -n2
+ 1301  history | tail -n2
+ 1302  history  tail -n2
+ 1303  history  tail | -n2
+ 1304  rm commands.txt
+ 1305  touch commands.txt history tail | -n7
+ 1306  touch commands.txt history | tail  -n7
+ 1307  cat commands.txt
+ 1308  touch commands.txt history
+ 1309  cat commands.txt
+ 1310  man tail
+ 1311  >commands.txt history
+ 1312  cat commands.txt
+ 1313  history |tail -n10 |>commands.txt
+ 1314  cat commands.txt
+ 1315  history
+ 1316  history | -n10
+ 1317  history | -n2
+ 1318  history | tail -n2
+ 1319  history |tail -n10 >commands.txt
+ 1320  cat commands.txt
+ 1321  history |tail -n19 >commands.txt
+ 1322  cat commands.txt
+ 1323  cat selected.txt commands.txt
+ 1324  history |tail -n100 >commands.txt
+ 1325  cat commands.txt
+ 1326  history |tail -n54 >commands.txt
+y | tail -n2
+ 1298  >commands.txt history | tail -n2
+ 1299  cat commands.txt
+ 1300  >commands.txt history  tail -n2
+ 1301  history | tail -n2
+ 1302  history  tail -n2
+ 1303  history  tail | -n2
+ 1304  rm commands.txt
+ 1305  touch commands.txt history tail | -n7
+ 1306  touch commands.txt history | tail  -n7
+ 1307  cat commands.txt
+ 1308  touch commands.txt history
+ 1309  cat commands.txt
+ 1310  man tail
+ 1311  >commands.txt history
+ 1312  cat commands.txt
+ 1313  history |tail -n10 |>commands.txt
+ 1314  cat commands.txt
+ 1315  history
+ 1316  history | -n10
+ 1317  history | -n2
+ 1318  history | tail -n2
+ 1319  history |tail -n10 >commands.txt
+ 1320  cat commands.txt
+ 1321  history |tail -n19 >commands.txt
+ 1322  cat commands.txt
+ 1323  cat selected.txt commands.txt
+ 1324  history |tail -n100 >commands.txt
+ 1325  cat commands.txt
+ 1326  history |tail -n54 >commands.txt
