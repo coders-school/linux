@@ -68,5 +68,5 @@
  1380  history | tail -n42
  1381  history | tail -n45
  1382  history | tail -n50 > commands.txt
-
+ 1383 cat selected.txt commands.txt
 
