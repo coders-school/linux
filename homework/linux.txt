@@ -1,0 +1,22 @@
+176 copy.txt
+ 1303  history  tail | -n2
+ 1304  rm commands.txt
+ 1305  touch commands.txt history tail | -n7
+ 1306  touch commands.txt history | tail  -n7
+ 1307  cat commands.txt
+ 1308  touch commands.txt history
+ 1309  cat commands.txt
+ 1310  man tail
+ 1311  >commands.txt history
+ 1312  cat commands.txt
+ 1313  history |tail -n10 |>commands.txt
+ 1314  cat commands.txt
+ 1315  history
+ 1316  history | -n10
+ 1317  history | -n2
+ 1318  history | tail -n2
+ 1319  history |tail -n10 >commands.txt
+ 1320  cat commands.txt
+ 1321  history |tail -n19 >commands.txt
+krzuch@krzuch-VirtualBox:~/test$ 
+
