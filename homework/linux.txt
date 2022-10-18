@@ -1,0 +1,840 @@
+karol@karol-VirtualBox:~$ mkdir homework-linux
+karol@karol-VirtualBox:~$ ls
+-     0x08     Documents     first-contribution  Music     plikach     Templates
+0x04  0x09     Downloads     hello.cpp           na        Public      test
+0x06  a.out    example2.cpp  homework-linux      Operacje  result.txt  Videos
+0x07  Desktop  example.cpp   kopia               Pictures  snap        zadania
+karol@karol-VirtualBox:~$ cd homework-linux/
+karol@karol-VirtualBox:~/homework-linux$ touch processes.txt
+karol@karol-VirtualBox:~/homework-linux$ ls
+processes.txt
+karol@karol-VirtualBox:~/homework-linux$ ps aux > processes.txt
+karol@karol-VirtualBox:~/homework-linux$ cat processes.txt
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.1 168224 11496 ?        Ss   paź17   0:03 /sbin/init splash
+root           2  0.0  0.0      0     0 ?        S    paź17   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        I<   paź17   0:00 [rcu_gp]
+root           4  0.0  0.0      0     0 ?        I<   paź17   0:00 [rcu_par_gp]
+root           5  0.0  0.0      0     0 ?        I<   paź17   0:00 [netns]
+root           7  0.0  0.0      0     0 ?        I<   paź17   0:00 [kworker/0:0H-events_highpri]
+root           9  0.0  0.0      0     0 ?        I<   paź17   0:01 [kworker/0:1H-kblockd]
+root          10  0.0  0.0      0     0 ?        I<   paź17   0:00 [mm_percpu_wq]
+root          11  0.0  0.0      0     0 ?        S    paź17   0:00 [rcu_tasks_rude_]
+root          12  0.0  0.0      0     0 ?        S    paź17   0:00 [rcu_tasks_trace]
+root          13  0.0  0.0      0     0 ?        S    paź17   0:00 [ksoftirqd/0]
+root          14  0.0  0.0      0     0 ?        I    paź17   0:23 [rcu_sched]
+root          15  0.0  0.0      0     0 ?        S    paź17   0:00 [migration/0]
+root          16  0.0  0.0      0     0 ?        S    paź17   0:00 [idle_inject/0]
+root          18  0.0  0.0      0     0 ?        S    paź17   0:00 [cpuhp/0]
+root          19  0.0  0.0      0     0 ?        S    paź17   0:00 [cpuhp/1]
+root          20  0.0  0.0      0     0 ?        S    paź17   0:00 [idle_inject/1]
+root          21  0.0  0.0      0     0 ?        S    paź17   0:00 [migration/1]
+root          22  0.0  0.0      0     0 ?        S    paź17   0:00 [ksoftirqd/1]
+root          24  0.0  0.0      0     0 ?        I<   paź17   0:00 [kworker/1:0H-events_highpri]
+root          25  0.0  0.0      0     0 ?        S    paź17   0:00 [cpuhp/2]
+root          26  0.0  0.0      0     0 ?        S    paź17   0:00 [idle_inject/2]
+root          27  0.0  0.0      0     0 ?        S    paź17   0:00 [migration/2]
+root          28  0.0  0.0      0     0 ?        S    paź17   0:00 [ksoftirqd/2]
+root          30  0.0  0.0      0     0 ?        I<   paź17   0:00 [kworker/2:0H-events_highpri]
+root          31  0.0  0.0      0     0 ?        S    paź17   0:00 [cpuhp/3]
+root          32  0.0  0.0      0     0 ?        S    paź17   0:00 [idle_inject/3]
+root          33  0.0  0.0      0     0 ?        S    paź17   0:00 [migration/3]
+root          34  0.0  0.0      0     0 ?        S    paź17   0:01 [ksoftirqd/3]
+root          36  0.0  0.0      0     0 ?        I<   paź17   0:00 [kworker/3:0H-events_highpri]
+root          37  0.0  0.0      0     0 ?        S    paź17   0:00 [kdevtmpfs]
+root          38  0.0  0.0      0     0 ?        I<   paź17   0:00 [inet_frag_wq]
+root          39  0.0  0.0      0     0 ?        S    paź17   0:00 [kauditd]
+root          40  0.0  0.0      0     0 ?        S    paź17   0:00 [khungtaskd]
+root          41  0.0  0.0      0     0 ?        S    paź17   0:00 [oom_reaper]
+root          42  0.0  0.0      0     0 ?        I<   paź17   0:00 [writeback]
+root          43  0.0  0.0      0     0 ?        S    paź17   0:06 [kcompactd0]
+root          44  0.0  0.0      0     0 ?        SN   paź17   0:00 [ksmd]
+root          45  0.0  0.0      0     0 ?        SN   paź17   0:00 [khugepaged]
+root          91  0.0  0.0      0     0 ?        I<   paź17   0:00 [kintegrityd]
+root          92  0.0  0.0      0     0 ?        I<   paź17   0:00 [kblockd]
+root          93  0.0  0.0      0     0 ?        I<   paź17   0:00 [blkcg_punt_bio]
+root          94  0.0  0.0      0     0 ?        I<   paź17   0:00 [tpm_dev_wq]
+root          95  0.0  0.0      0     0 ?        I<   paź17   0:00 [ata_sff]
+root          96  0.0  0.0      0     0 ?        I<   paź17   0:00 [md]
+root          97  0.0  0.0      0     0 ?        I<   paź17   0:00 [edac-poller]
+root          98  0.0  0.0      0     0 ?        I<   paź17   0:00 [devfreq_wq]
+root          99  0.0  0.0      0     0 ?        S    paź17   0:00 [watchdogd]
+root         102  0.0  0.0      0     0 ?        S    paź17   0:03 [kswapd0]
+root         104  0.0  0.0      0     0 ?        S    paź17   0:00 [ecryptfs-kthrea]
+root         107  0.0  0.0      0     0 ?        I<   paź17   0:00 [kthrotld]
+root         108  0.0  0.0      0     0 ?        I<   paź17   0:00 [acpi_thermal_pm]
+root         111  0.0  0.0      0     0 ?        S    paź17   0:00 [scsi_eh_0]
+root         112  0.0  0.0      0     0 ?        I<   paź17   0:00 [scsi_tmf_0]
+root         113  0.0  0.0      0     0 ?        S    paź17   0:00 [scsi_eh_1]
+root         114  0.0  0.0      0     0 ?        I<   paź17   0:00 [scsi_tmf_1]
+root         116  0.0  0.0      0     0 ?        I<   paź17   0:00 [vfio-irqfd-clea]
+root         117  0.0  0.0      0     0 ?        I<   paź17   0:01 [kworker/1:1H-events_highpri]
+root         118  0.0  0.0      0     0 ?        I<   paź17   0:03 [kworker/2:1H-kblockd]
+root         119  0.0  0.0      0     0 ?        I<   paź17   0:00 [mld]
+root         120  0.0  0.0      0     0 ?        I<   paź17   0:00 [ipv6_addrconf]
+root         124  0.0  0.0      0     0 ?        I<   paź17   0:03 [kworker/3:1H-kblockd]
+root         133  0.0  0.0      0     0 ?        I<   paź17   0:00 [kstrp]
+root         136  0.0  0.0      0     0 ?        I<   paź17   0:00 [zswap-shrink]
+root         137  0.0  0.0      0     0 ?        I<   paź17   0:00 [kworker/u9:0]
+root         142  0.0  0.0      0     0 ?        I<   paź17   0:00 [charger_manager]
+root         193  0.0  0.0      0     0 ?        S    paź17   0:00 [scsi_eh_2]
+root         194  0.0  0.0      0     0 ?        I<   paź17   0:00 [scsi_tmf_2]
+root         215  0.0  0.0      0     0 ?        S    paź17   0:04 [jbd2/sda5-8]
+root         216  0.0  0.0      0     0 ?        I<   paź17   0:00 [ext4-rsv-conver]
+root         256  0.0  0.2  60620 27072 ?        S<s  paź17   0:01 /lib/systemd/systemd-journald
+root         281  0.0  0.0      0     0 ?        I<   paź17   0:00 [ipmi-msghandler]
+root         293  0.0  0.0      0     0 ?        I<   paź17   0:00 [ttm_swap]
+root         294  0.0  0.0      0     0 ?        S    paź17   0:05 [irq/18-vmwgfx]
+root         295  0.0  0.0      0     0 ?        S    paź17   0:00 [card0-crtc0]
+root         296  0.0  0.0      0     0 ?        S    paź17   0:00 [card0-crtc1]
+root         297  0.0  0.0      0     0 ?        S    paź17   0:00 [card0-crtc2]
+root         298  0.0  0.0      0     0 ?        S    paź17   0:00 [card0-crtc3]
+root         299  0.0  0.0  24748  7352 ?        Ss   paź17   0:00 /lib/systemd/systemd-udevd
+root         300  0.0  0.0      0     0 ?        S    paź17   0:00 [card0-crtc4]
+root         301  0.0  0.0      0     0 ?        S    paź17   0:00 [card0-crtc5]
+root         302  0.0  0.0      0     0 ?        S    paź17   0:00 [card0-crtc6]
+root         303  0.0  0.0      0     0 ?        S    paź17   0:00 [card0-crtc7]
+root         348  0.0  0.0      0     0 ?        I<   paź17   0:00 [cryptd]
+systemd+     578  0.0  0.1  25208 13896 ?        Ss   paź17   0:15 /lib/systemd/systemd-resolved
+systemd+     579  0.0  0.0  90908  5900 ?        Ssl  paź17   0:00 /lib/systemd/systemd-timesyncd
+root         616  0.0  0.1 253072  9264 ?        Ssl  paź17   0:01 /usr/lib/accountsservice/accounts-daemon
+root         617  0.0  0.0   2548   768 ?        Ss   paź17   0:03 /usr/sbin/acpid
+avahi        620  0.0  0.0   8532  3212 ?        Ss   paź17   0:00 avahi-daemon: running [karol-VirtualBox.local]
+root         621  0.0  0.0  20584  3072 ?        Ss   paź17   0:00 /usr/sbin/cron -f
+message+     623  0.0  0.0   8992  5848 ?        Ss   paź17   0:03 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         627  0.0  0.2 349788 20980 ?        Ssl  paź17   0:18 /usr/sbin/NetworkManager --no-daemon
+root         635  0.0  0.0  81832  3596 ?        Ssl  paź17   0:02 /usr/sbin/irqbalance --foreground
+root         639  0.0  0.2  50896 20420 ?        Ss   paź17   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         642  0.0  0.1 256252 12568 ?        Ssl  paź17   0:01 /usr/lib/policykit-1/polkitd --no-debug
+syslog       646  0.0  0.0 224352  4408 ?        Ssl  paź17   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         650  0.0  0.5 1244056 47248 ?       Ssl  paź17   0:07 /usr/lib/snapd/snapd
+root         656  0.0  0.0 246772  5748 ?        Ssl  paź17   0:00 /usr/libexec/switcheroo-control
+root         657  0.0  0.0  17432  8156 ?        Ss   paź17   0:00 /lib/systemd/systemd-logind
+root         658  0.0  0.1 396192 14212 ?        Ssl  paź17   0:00 /usr/lib/udisks2/udisksd
+root         659  0.0  0.0  13684  4868 ?        Ss   paź17   0:00 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+avahi        661  0.0  0.0   8348   328 ?        S    paź17   0:00 avahi-daemon: chroot helper
+root         707  0.0  0.1 319216 13576 ?        Ssl  paź17   0:00 /usr/sbin/ModemManager
+root         715  0.0  0.2 129208 22552 ?        Ssl  paź17   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         735  0.0  0.0  12184  5740 ?        Ss   paź17   0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+root         744  0.0  0.0 250640  8632 ?        Ssl  paź17   0:00 /usr/sbin/gdm3
+root         759  0.0  0.1 325716  9596 ?        Sl   paź17   0:00 gdm-session-worker [pam/gdm-autologin]
+whoopsie     778  0.0  0.1 327252 15268 ?        Ssl  paź17   0:00 /usr/bin/whoopsie -f
+kernoops     781  0.0  0.0  11264   440 ?        Ss   paź17   0:00 /usr/sbin/kerneloops --test
+kernoops     783  0.0  0.0  11264   444 ?        Ss   paź17   0:00 /usr/sbin/kerneloops
+karol        822  0.0  0.1  19784 10380 ?        Ss   paź17   0:02 /lib/systemd/systemd --user
+karol        827  0.0  0.0 169504  2760 ?        S    paź17   0:00 (sd-pam)
+karol        832  0.5  0.2 2993016 20744 ?       Ssl  paź17   4:47 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+karol        834  0.0  0.2 801132 24144 ?        SNsl paź17   0:00 /usr/libexec/tracker-miner-fs
+karol        838  0.0  0.0 398816  7824 ?        SLl  paź17   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+karol        842  0.0  0.0 175180  6632 tty2     Ssl+ paź17   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+rtkit        843  0.0  0.0 152936  2828 ?        SNsl paź17   0:01 /usr/libexec/rtkit-daemon
+karol        847  2.2  1.6 352312 153732 tty2    Sl+  paź17  21:17 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -background none -noreset -keeptty -verbose 3
+karol        850  0.0  0.0  10676  7348 ?        Ss   paź17   0:05 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+karol        853  0.0  0.0 250864  7800 ?        Ssl  paź17   0:00 /usr/libexec/gvfsd
+karol        863  0.0  0.0 382068  8160 ?        Sl   paź17   0:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes
+karol        872  0.0  0.1 328608 11152 ?        Ssl  paź17   0:00 /usr/libexec/gvfs-udisks2-volume-monitor
+karol        889  0.0  0.0 249144  6820 ?        Ssl  paź17   0:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+karol        894  0.0  0.0 246868  6228 ?        Ssl  paź17   0:00 /usr/libexec/gvfs-mtp-volume-monitor
+karol        898  0.0  0.0 251428  9200 ?        Ssl  paź17   0:00 /usr/libexec/gvfs-goa-volume-monitor
+karol        902  0.0  0.6 638024 61988 ?        SLl  paź17   0:07 /usr/libexec/goa-daemon
+karol        926  0.0  0.1 403504 10792 ?        Sl   paź17   0:00 /usr/libexec/goa-identity-service
+karol        934  0.0  0.0 327888  8640 ?        Ssl  paź17   0:03 /usr/libexec/gvfs-afc-volume-monitor
+root         940  0.0  0.1 263276  9512 ?        Ssl  paź17   0:00 /usr/lib/upower/upowerd
+karol        959  0.0  0.1 201760 15032 tty2     Sl+  paź17   0:00 /usr/libexec/gnome-session-binary --systemd --systemd --session=ubuntu
+karol       1059  0.0  0.0   6040   452 ?        Ss   paź17   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+karol       1087  0.0  0.1 309768  9368 ?        Ssl  paź17   0:00 /usr/libexec/at-spi-bus-launcher
+karol       1092  0.0  0.0   7248  3816 ?        S    paź17   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+karol       1116  0.0  0.0 251060  7712 ?        Sl   paź17   0:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+karol       1123  0.0  0.0 101224  4168 ?        Ssl  paź17   0:00 /usr/libexec/gnome-session-ctl --monitor
+karol       1129  0.0  0.1 571428 16960 ?        Ssl  paź17   0:00 /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu
+karol       1141  0.0  0.0 162912  6300 ?        Sl   paź17   0:02 /usr/libexec/at-spi2-registryd --use-gnome-session
+karol       1157  5.5  4.7 4929068 438148 ?      Ssl  paź17  52:34 /usr/bin/gnome-shell
+karol       1198  0.0  0.1 325876 10416 ?        Sl   paź17   0:01 ibus-daemon --panel disable --xim
+karol       1202  0.0  0.0 177716  9220 ?        Sl   paź17   0:00 /usr/libexec/ibus-memconf
+karol       1203  0.0  0.3 289204 33244 ?        Sl   paź17   0:14 /usr/libexec/ibus-extension-gtk3
+karol       1205  0.0  0.3 211548 29836 ?        Sl   paź17   0:11 /usr/libexec/ibus-x11 --kill-daemon
+karol       1208  0.0  0.0 251388  8672 ?        Sl   paź17   0:00 /usr/libexec/ibus-portal
+karol       1219  0.0  0.0 246764  4508 ?        Ssl  paź17   0:00 /usr/libexec/xdg-permission-store
+karol       1223  0.0  0.2 730264 21652 ?        Sl   paź17   0:00 /usr/libexec/gnome-shell-calendar-server
+karol       1230  0.0  0.3 1085192 34348 ?       Ssl  paź17   0:00 /usr/libexec/evolution-source-registry
+karol       1238  0.0  0.0 156344  5816 ?        Sl   paź17   0:00 /usr/libexec/dconf-service
+karol       1241  0.0  0.0 173448  6512 ?        Ssl  paź17   0:00 /usr/libexec/gvfsd-metadata
+geoclue     1244  0.0  0.2 373028 19668 ?        Ssl  paź17   0:00 /usr/libexec/geoclue
+karol       1250  0.0  0.4 1213948 45808 ?       Ssl  paź17   0:02 /usr/libexec/evolution-calendar-factory
+karol       1266  0.0  0.3 684508 29316 ?        Ssl  paź17   0:00 /usr/libexec/evolution-addressbook-factory
+karol       1291  0.0  0.2 2745092 27068 ?       Sl   paź17   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+karol       1299  0.0  0.1 328708 10760 ?        Sl   paź17   0:00 /usr/libexec/gvfsd-trash --spawner :1.4 /org/gtk/gvfs/exec_spaw/0
+karol       1312  0.0  0.0 325088  8944 ?        Ssl  paź17   0:00 /usr/libexec/gsd-a11y-settings
+karol       1314  0.0  0.3 434036 31032 ?        Ssl  paź17   0:13 /usr/libexec/gsd-color
+karol       1316  0.0  0.1 385528 16788 ?        Ssl  paź17   0:00 /usr/libexec/gsd-datetime
+karol       1317  0.0  0.1 325252  9692 ?        Ssl  paź17   0:01 /usr/libexec/gsd-housekeeping
+karol       1321  0.0  0.3 359492 30052 ?        Ssl  paź17   0:11 /usr/libexec/gsd-keyboard
+karol       1322  0.0  0.3 914696 32336 ?        Ssl  paź17   0:13 /usr/libexec/gsd-media-keys
+karol       1323  0.0  0.3 359908 30680 ?        Ssl  paź17   0:13 /usr/libexec/gsd-power
+karol       1324  0.0  0.1 259388 10248 ?        Ssl  paź17   0:00 /usr/libexec/gsd-print-notifications
+karol       1325  0.0  0.0 468264  6088 ?        Ssl  paź17   0:00 /usr/libexec/gsd-rfkill
+karol       1328  0.0  0.0 246800  5972 ?        Ssl  paź17   0:00 /usr/libexec/gsd-screensaver-proxy
+karol       1331  0.0  0.1 480072 12312 ?        Ssl  paź17   0:00 /usr/libexec/gsd-sharing
+karol       1336  0.0  0.1 329248 10568 ?        Ssl  paź17   0:00 /usr/libexec/gsd-smartcard
+karol       1340  0.0  0.1 332948 11128 ?        Ssl  paź17   0:00 /usr/libexec/gsd-sound
+karol       1343  0.0  0.1 399048  9700 ?        Ssl  paź17   0:00 /usr/libexec/gsd-usb-protection
+karol       1344  0.0  0.0 231804  5588 ?        Sl   paź17   0:00 /usr/libexec/gsd-disk-utility-notify
+karol       1348  0.0  0.3 359060 29688 ?        Ssl  paź17   0:12 /usr/libexec/gsd-wacom
+karol       1354  0.0  0.6 653056 58436 ?        Sl   paź17   0:14 /usr/libexec/evolution-data-server/evolution-alarm-notify
+karol       1356  0.0  0.1 329516 10576 ?        Ssl  paź17   0:00 /usr/libexec/gsd-wwan
+karol       1360  0.0  0.3 360132 31204 ?        Ssl  paź17   0:18 /usr/libexec/gsd-xsettings
+colord      1408  0.0  0.1 260140 16360 ?        Ssl  paź17   0:00 /usr/libexec/colord
+karol       1440  0.0  0.1 353348 14384 ?        Sl   paź17   0:00 /usr/libexec/gsd-printer
+karol       1452  0.0  0.0 177712  8716 ?        Sl   paź17   0:00 /usr/libexec/ibus-engine-simple
+karol       1455  0.0  3.7 1235780 351380 ?      Sl   paź17   0:39 /snap/snap-store/558/usr/bin/snap-store --gapplication-service
+karol       1491  0.0  0.0 616288  6652 ?        Ssl  paź17   0:00 /usr/libexec/xdg-document-portal
+karol       1593  0.0  0.1 473956 10568 ?        Ssl  paź17   0:01 /usr/libexec/xdg-desktop-portal
+karol       1597  0.0  0.3 507308 29952 ?        Ssl  paź17   0:18 /usr/libexec/xdg-desktop-portal-gtk
+karol       1634  0.1  0.8 904312 75600 ?        Ssl  paź17   1:51 /usr/libexec/gnome-terminal-server
+karol       1646  0.0  0.0  22820  5884 pts/0    Ss   paź17   0:02 bash
+karol       1974  0.0  0.3 434860 35684 ?        Sl   paź17   0:20 update-notifier
+root        2035  0.0  0.0  13984  7228 ?        Ss   paź17   0:00 sshd: karol [priv]
+karol       2114  0.0  0.0  14116  4000 ?        S    paź17   0:00 sshd: karol@pts/1
+karol       2115  0.0  0.0  23028  5216 pts/1    Ss+  paź17   0:00 -bash
+karol       4584 10.6  8.8 4798084 814968 ?      Sl   paź17  79:58 /usr/lib/firefox/firefox -new-window
+karol       4633  0.0  0.4 203912 45980 ?        Sl   paź17   0:01 /usr/lib/firefox/firefox -contentproc -parentBuildID 20220915150737 -prefsLen 25219 -prefMapSize 227050 -appDir /usr/lib/firefox/browser {f70f9218-d290-49f9-9b91-0da9de7a9dfd} 4584 true socket
+karol       4706  0.0  1.1 2433824 105992 ?      Sl   paź17   0:12 /usr/lib/firefox/firefox -contentproc -childID 1 -isForBrowser -prefsLen 25784 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {25bdf940-c77d-4527-a3b0-02cf058062ea} 4584 true tab
+karol       4726  0.0  1.3 2459560 120412 ?      Sl   paź17   0:20 /usr/lib/firefox/firefox -contentproc -childID 2 -isForBrowser -prefsLen 26640 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {972710e0-2a0d-4bb1-9d9b-71c26ac5f99c} 4584 true tab
+karol       4822  0.0  1.2 2451080 118376 ?      Sl   paź17   0:04 /usr/lib/firefox/firefox -contentproc -childID 5 -isForBrowser -prefsLen 31298 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {19b21d11-5e22-464f-96ec-f43c50a22b98} 4584 true tab
+karol       4891  0.6  3.5 2788424 328896 ?      Sl   paź17   5:12 /usr/lib/firefox/firefox -contentproc -childID 7 -isForBrowser -prefsLen 31480 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {eea7e49a-9c4e-4b00-a21f-53b7d19f6d0b} 4584 true tab
+karol       4919  0.0  0.4 206672 40352 ?        Sl   paź17   0:00 /usr/lib/firefox/firefox -contentproc -parentBuildID 20220915150737 -prefsLen 31480 -prefMapSize 227050 -appDir /usr/lib/firefox/browser {96c334bd-b605-4485-b3e1-3fee14750e62} 4584 true rdd
+karol       4936  0.2  1.3 2450596 122324 ?      Sl   paź17   1:44 /usr/lib/firefox/firefox -contentproc -childID 8 -isForBrowser -prefsLen 31480 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {96a46a46-a83c-4e6a-afad-7842a53479e3} 4584 true tab
+karol       4980  0.5  3.2 2680644 301808 ?      Sl   paź17   4:16 /usr/lib/firefox/firefox -contentproc -childID 9 -isForBrowser -prefsLen 31618 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {c218c715-feb1-4eac-9778-cd81d033264f} 4584 true tab
+karol       5067  0.0  0.4 202980 41500 ?        Sl   paź17   0:02 /usr/lib/firefox/firefox -contentproc -parentBuildID 20220915150737 -sandboxingKind 1 -prefsLen 31618 -prefMapSize 227050 -appDir /usr/lib/firefox/browser {23edb629-fe3d-4a53-ae32-e0e8061f0f94} 4584 true utility
+karol       6095  0.0  0.0 461524  7920 ?        Sl   paź17   0:06 /usr/lib/speech-dispatcher-modules/sd_espeak-ng /etc/speech-dispatcher/modules/espeak-ng.conf
+karol       6111  0.0  0.0 360064  5636 ?        Sl   paź17   0:06 /usr/lib/speech-dispatcher-modules/sd_dummy /etc/speech-dispatcher/modules/dummy.conf
+karol       6114  0.0  0.0 170896  2252 ?        Ssl  paź17   0:00 /usr/bin/speech-dispatcher --spawn --communication-method unix_socket --socket-path /run/user/1000/speech-dispatcher/speechd.sock
+karol       6593  0.7  2.3 2669808 218668 ?      Sl   paź17   5:31 /usr/lib/firefox/firefox -contentproc -childID 59 -isForBrowser -prefsLen 31706 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {4cf51668-41b0-4ecd-ad9d-4d1048b4bc29} 4584 true tab
+karol       6792  0.0  0.9 2410528 91156 ?       Sl   paź17   0:03 /usr/lib/firefox/firefox -contentproc -childID 65 -isForBrowser -prefsLen 31706 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {c972b08e-1524-4df2-aa47-01be446763fc} 4584 true tab
+karol       6822  0.0  1.2 2471888 116404 ?      Sl   paź17   0:03 /usr/lib/firefox/firefox -contentproc -childID 66 -isForBrowser -prefsLen 31706 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {6b740d27-3395-4714-9fa4-a01c196e4d42} 4584 true tab
+karol       6884  3.0  4.3 3187876 403468 ?      Sl   paź17  22:27 /usr/lib/firefox/firefox -contentproc -childID 68 -isForBrowser -prefsLen 31706 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {125ee061-98f9-4271-81a1-2064aa7306d7} 4584 true tab
+karol       6916  0.0  1.9 2502916 184312 ?      Sl   paź17   0:13 /usr/lib/firefox/firefox -contentproc -childID 69 -isForBrowser -prefsLen 31706 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {7561e7f3-8add-431f-834b-7dd2a4889d41} 4584 true tab
+karol       8127  0.0  0.1 328836 10648 ?        Sl   paź17   0:00 /usr/libexec/gvfsd-recent --spawner :1.4 /org/gtk/gvfs/exec_spaw/1
+karol       8454  0.1  1.6 2510860 152944 ?      Sl   paź17   0:50 /usr/lib/firefox/firefox -contentproc -childID 71 -isForBrowser -prefsLen 31706 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {396c558a-372c-4c09-8ca8-71a7634f7339} 4584 true tab
+karol       8490  0.1  1.0 2414360 100200 ?      Sl   paź17   0:50 /usr/lib/firefox/firefox -contentproc -childID 72 -isForBrowser -prefsLen 31706 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {8593ca49-f48e-4560-a7fd-6fcd155f020d} 4584 true tab
+karol       8999  0.2  2.1 2581992 194712 ?      Sl   paź17   1:32 /usr/lib/firefox/firefox -contentproc -childID 73 -isForBrowser -prefsLen 31706 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {0620a5bd-117d-458e-929b-916c63d09d54} 4584 true tab
+karol       9236  0.0  1.0 2427704 99380 ?       Sl   paź17   0:11 /usr/lib/firefox/firefox -contentproc -childID 76 -isForBrowser -prefsLen 31706 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {a7fe1d19-6c53-4d6c-8428-3cc94c592f11} 4584 true tab
+karol       9713  0.0  0.8 1008432 75172 ?       Sl   paź17   0:24 /usr/bin/nautilus --gapplication-service
+karol      10020  0.0  1.0 2422864 98784 ?       Sl   paź17   0:06 /usr/lib/firefox/firefox -contentproc -childID 79 -isForBrowser -prefsLen 31706 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {3a8a7308-1334-4c8c-b227-87edbdec692c} 4584 true tab
+karol      10087  0.7  2.3 2625020 213200 ?      Sl   paź17   3:59 /usr/lib/firefox/firefox -contentproc -childID 82 -isForBrowser -prefsLen 31706 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {1baec3dd-802e-4877-b0a3-cd486b320d2b} 4584 true tab
+karol      10191  0.0  1.3 2446428 120424 ?      Sl   paź17   0:12 /usr/lib/firefox/firefox -contentproc -childID 86 -isForBrowser -prefsLen 31706 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {d733f842-9978-47e5-96a6-55b7484c9dd3} 4584 true tab
+karol      10248  1.8  1.4 2505044 133716 ?      Sl   paź17  10:26 /usr/lib/firefox/firefox -contentproc -childID 88 -isForBrowser -prefsLen 31706 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {f1713560-8efe-41fc-980c-7db13acb1eaf} 4584 true tab
+karol      10405  0.0  1.2 2437052 118096 ?      Sl   paź17   0:29 /usr/lib/firefox/firefox -contentproc -childID 92 -isForBrowser -prefsLen 31706 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {8f200b21-2089-4f1c-85d0-2fd01828d2f6} 4584 true tab
+karol      10419  0.0  0.9 2410824 92484 ?       Sl   paź17   0:04 /usr/lib/firefox/firefox -contentproc -childID 93 -isForBrowser -prefsLen 31706 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {8c0fdf1a-a9ff-4c64-b1c2-13014bb3d22b} 4584 true tab
+karol      10779  0.4  2.5 2648764 236160 ?      Sl   paź17   2:14 /usr/lib/firefox/firefox -contentproc -childID 100 -isForBrowser -prefsLen 31706 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {19cb1df1-3f6e-4f3d-a690-82f56ed08491} 4584 true tab
+karol      11293  0.0  0.9 2410552 91168 ?       Sl   paź17   0:03 /usr/lib/firefox/firefox -contentproc -childID 101 -isForBrowser -prefsLen 31706 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {65e36571-5ffc-4436-bc0c-f563ea5e6630} 4584 true tab
+karol      11320  0.0  1.0 2415180 94488 ?       Sl   paź17   0:04 /usr/lib/firefox/firefox -contentproc -childID 102 -isForBrowser -prefsLen 31706 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {4de81751-1569-444c-a3df-281ee74a4a05} 4584 true tab
+karol      11457  0.0  1.0 2410780 93308 ?       Sl   paź17   0:03 /usr/lib/firefox/firefox -contentproc -childID 107 -isForBrowser -prefsLen 31706 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {207dd25e-e035-4c4d-8a16-9c247a86d927} 4584 true tab
+karol      11981  0.8  2.3 2611584 214144 ?      Sl   paź17   4:14 /usr/lib/firefox/firefox -contentproc -childID 116 -isForBrowser -prefsLen 31706 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {316d8956-d943-415c-a464-20c631fd962d} 4584 true tab
+karol      12047  0.1  1.5 2537304 146844 ?      Sl   paź17   0:58 /usr/lib/firefox/firefox -contentproc -childID 118 -isForBrowser -prefsLen 31706 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {0962902e-284f-4357-8a3a-fd4ef7da0833} 4584 true tab
+karol      12850  1.0  2.8 2669284 259268 ?      Sl   paź17   5:01 /usr/lib/firefox/firefox -contentproc -childID 135 -isForBrowser -prefsLen 31706 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {7db7130d-669e-49cb-b5ef-c6ac25d5858c} 4584 true tab
+karol      13059  0.0  1.0 2412604 94612 ?       Sl   paź17   0:03 /usr/lib/firefox/firefox -contentproc -childID 136 -isForBrowser -prefsLen 31706 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {3972d184-8311-43a8-92d5-2a36e653607f} 4584 true tab
+karol      13102  0.0  1.0 2413628 93096 ?       Sl   paź17   0:03 /usr/lib/firefox/firefox -contentproc -childID 137 -isForBrowser -prefsLen 31706 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {4293418b-d9d4-47e3-a5b0-2ec2bd30b75c} 4584 true tab
+karol      13123  0.0  1.0 2415668 95644 ?       Sl   paź17   0:03 /usr/lib/firefox/firefox -contentproc -childID 138 -isForBrowser -prefsLen 31706 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {31164098-f759-4b99-993c-68cc5babe145} 4584 true tab
+karol      13157  0.0  0.9 2411548 92212 ?       Sl   paź17   0:02 /usr/lib/firefox/firefox -contentproc -childID 139 -isForBrowser -prefsLen 31706 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {30763cda-7fa9-4fbf-8ee9-cb57d3dd3229} 4584 true tab
+karol      13162  0.0  1.0 2414624 94584 ?       Sl   paź17   0:03 /usr/lib/firefox/firefox -contentproc -childID 140 -isForBrowser -prefsLen 31706 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {2adbf10a-f303-4c97-ba17-17c6997dc27e} 4584 true tab
+karol      13207  0.0  0.9 2410552 91684 ?       Sl   paź17   0:02 /usr/lib/firefox/firefox -contentproc -childID 141 -isForBrowser -prefsLen 31706 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {ce89665a-0355-42cc-8b43-5b94dc55f131} 4584 true tab
+karol      13242  0.0  1.0 2413628 93640 ?       Sl   paź17   0:03 /usr/lib/firefox/firefox -contentproc -childID 142 -isForBrowser -prefsLen 31706 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {5deacbc5-066a-4f52-a11d-036b517c1439} 4584 true tab
+root       13360  0.0  0.0      0     0 ?        I    paź17   0:03 [kworker/1:2-events]
+root       14400  0.0  0.0      0     0 ?        I    paź17   0:03 [kworker/0:2-cgroup_destroy]
+karol      15073  0.1  2.2 2553048 204176 ?      Sl   00:58   0:28 /usr/lib/firefox/firefox -contentproc -childID 150 -isForBrowser -prefsLen 31768 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {b99479dc-8026-4c6a-8093-cbd03910c9a9} 4584 true tab
+karol      15113  0.0  0.9 2410552 91148 ?       Sl   00:59   0:01 /usr/lib/firefox/firefox -contentproc -childID 151 -isForBrowser -prefsLen 31768 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {b7817e37-0741-487c-bfe2-1db65e53c27b} 4584 true tab
+karol      15156  0.0  1.1 2429260 104648 ?      Sl   00:59   0:02 /usr/lib/firefox/firefox -contentproc -childID 152 -isForBrowser -prefsLen 31768 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {2e013f4b-0529-4369-9efe-83cd6e7c917b} 4584 true tab
+karol      15184  0.0  0.9 2410556 90684 ?       Sl   00:59   0:01 /usr/lib/firefox/firefox -contentproc -childID 153 -isForBrowser -prefsLen 31768 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {4ef159fa-f847-4ce6-9ae5-f2debc0c1355} 4584 true tab
+karol      15221  0.0  1.6 2497916 151216 ?      Sl   01:00   0:11 /usr/lib/firefox/firefox -contentproc -childID 155 -isForBrowser -prefsLen 31768 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {07e2f982-8086-4d1d-bfd0-0dc81c2c3158} 4584 true tab
+karol      15309  0.6  2.4 2633612 230288 ?      Sl   01:00   1:55 /usr/lib/firefox/firefox -contentproc -childID 157 -isForBrowser -prefsLen 31768 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {b789e4f7-a5b1-4f07-9a64-a8633a6412f6} 4584 true tab
+karol      15391  0.0  1.0 2412620 93252 ?       Sl   01:02   0:01 /usr/lib/firefox/firefox -contentproc -childID 159 -isForBrowser -prefsLen 31768 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {ccec019c-6728-430c-9e3a-3dbb9726ae02} 4584 true tab
+karol      15427  0.2  1.6 2468396 154668 ?      Sl   01:02   0:40 /usr/lib/firefox/firefox -contentproc -childID 160 -isForBrowser -prefsLen 31768 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {2878fff4-d34a-4cb7-8f21-fa5628dba39b} 4584 true tab
+karol      15499  3.0  2.2 2559568 207988 ?      Sl   01:02   8:49 /usr/lib/firefox/firefox -contentproc -childID 162 -isForBrowser -prefsLen 31768 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {61544e75-1421-40bf-b095-f8f907a2a4e7} 4584 true tab
+karol      16059  0.0  0.8 2393352 77312 ?       Sl   01:26   0:00 /usr/lib/firefox/firefox -contentproc -childID 166 -isForBrowser -prefsLen 31815 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {38876981-0022-4d99-90aa-07d91278002b} 4584 true tab
+karol      16088  0.0  0.8 2393352 76712 ?       Sl   01:26   0:00 /usr/lib/firefox/firefox -contentproc -childID 167 -isForBrowser -prefsLen 31815 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {0e06bd9b-8a9f-4d67-9216-77979b8852d9} 4584 true tab
+root       17249  0.0  0.0      0     0 ?        I    02:57   0:00 [kworker/3:0-events]
+karol      17330  0.0  0.8 2393356 77024 ?       Sl   03:06   0:00 /usr/lib/firefox/firefox -contentproc -childID 168 -isForBrowser -prefsLen 31815 -prefMapSize 227050 -jsInitLen 246848 -parentBuildID 20220915150737 -appDir /usr/lib/firefox/browser {5ae1d996-a7dc-4545-b025-28e7d2ba8f84} 4584 true tab
+root       18066  0.0  0.0      0     0 ?        I    04:51   0:01 [kworker/3:2-events]
+root       18074  0.0  0.0      0     0 ?        I    04:51   0:00 [kworker/2:2-events]
+root       18140  0.0  0.0      0     0 ?        I    04:52   0:00 [kworker/0:0-inet_frag_wq]
+root       19387  0.0  0.0      0     0 ?        I    05:22   0:00 [kworker/1:0-cgroup_destroy]
+root       19396  0.0  0.0      0     0 ?        I    05:22   0:00 [kworker/2:1-events]
+root       19399  0.0  0.0  39708  8972 ?        Ss   05:22   0:00 /usr/sbin/cupsd -l
+root       19401  0.0  0.1 178396 12564 ?        Ssl  05:22   0:00 /usr/sbin/cups-browsed
+root       19722  0.0  0.0      0     0 ?        I    05:35   0:00 [kworker/u8:0-events_unbound]
+root       19750  0.0  0.0      0     0 ?        I    05:40   0:00 [kworker/u8:2-events_unbound]
+root       19818  0.0  0.0      0     0 ?        I    05:45   0:00 [kworker/u8:1-ext4-rsv-conversion]
+root       19819  0.0  0.0      0     0 ?        I    05:45   0:00 [kworker/0:1-events]
+root       19820  0.0  0.0      0     0 ?        I    05:45   0:00 [kworker/0:3-cgroup_destroy]
+karol      19906  0.0  0.0  22656  3520 pts/0    R+   05:49   0:00 ps aux
+karol@karol-VirtualBox:~/homework-linux$ cp processes.txt copy.txt
+karol@karol-VirtualBox:~/homework-linux$ wc -l processes.txt
+258 processes.txt
+karol@karol-VirtualBox:~/homework-linux$ wc -l processes.txt > selected.txt
+karol@karol-VirtualBox:~/homework-linux$ cat selected.txt
+258 processes.txt
+karol@karol-VirtualBox:~/homework-linux$ grep -rni "/bin/" processes.txt >> selected.txt
+karol@karol-VirtualBox:~/homework-linux$ cat selected.txt 
+258 processes.txt
+92:message+     623  0.0  0.0   8992  5848 ?        Ss   paź17   0:03 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+95:root         639  0.0  0.2  50896 20420 ?        Ss   paź17   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+105:root         715  0.0  0.2 129208 22552 ?        Ssl  paź17   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+109:whoopsie     778  0.0  0.1 327252 15268 ?        Ssl  paź17   0:00 /usr/bin/whoopsie -f
+114:karol        832  0.5  0.2 2993016 20744 ?       Ssl  paź17   4:47 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+116:karol        838  0.0  0.0 398816  7824 ?        SLl  paź17   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+117:karol        842  0.0  0.0 175180  6632 tty2     Ssl+ paź17   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+120:karol        850  0.0  0.0  10676  7348 ?        Ss   paź17   0:05 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+132:karol       1059  0.0  0.0   6040   452 ?        Ss   paź17   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+134:karol       1092  0.0  0.0   7248  3816 ?        S    paź17   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+135:karol       1116  0.0  0.0 251060  7712 ?        Sl   paź17   0:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+139:karol       1157  5.5  4.7 4929068 438148 ?      Ssl  paź17  52:34 /usr/bin/gnome-shell
+153:karol       1291  0.0  0.2 2745092 27068 ?       Sl   paź17   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+177:karol       1455  0.0  3.7 1235780 351380 ?      Sl   paź17   0:39 /snap/snap-store/558/usr/bin/snap-store --gapplication-service
+199:karol       6114  0.0  0.0 170896  2252 ?        Ssl  paź17   0:00 /usr/bin/speech-dispatcher --spawn --communication-method unix_socket --socket-path /run/user/1000/speech-dispatcher/speechd.sock
+210:karol       9713  0.0  0.8 1008432 75172 ?       Sl   paź17   0:24 /usr/bin/nautilus --gapplication-service
+karol@karol-VirtualBox:~/homework-linux$ history
+    1  exit
+    2  ls -la
+    3  g++ --version
+    4  sudo apt install g++
+    5  g++ --version
+    6  clang++ --version
+    7  sudo apt install clang
+    8  clang++ -v
+    9  git
+   10  sudo apt install git 
+   11  git -v
+   12  git --version
+   13  messanger -v
+   14  ls -la
+   15  firefox facebook.com
+   16  ls -la 
+   17  ls -la
+   18  .vscode/ -v
+   19  sudo apt install g++ clang
+   20  ls -la
+   21  pwd
+   22  git clone https://github.com/to-ty/first-contribution.git
+   23  git status
+   24  git clone https://github.com/karolchluba/first-contribution.git
+   25  cd first-contribution/
+   26  git status
+   27  git checkout -b add-chluba
+   28  git status
+   29  git add Contributors.md
+   30  git status
+   31  git commit -m "Add ChKarol to Contributors list"
+   32  git config --global user.email "chlubakarol@gmail.com"
+   33  git confi --global user.name "chluba"
+   34  git config --global user.name "chluba"
+   35  git status
+   36  git commit -m "Add ChKarol to Contributors list"
+   37  git push origin add-chluba
+   38  git config --list
+   39  git push origin add-chluba
+   40  git config -e
+   41  git config --global user.name "karolchluba"
+   42  git status
+   43  git push origin add-chluba
+   44  git config --list
+   45  git push origin add-chluba 
+   46  ssh-keygen -t ed25519 -C "chlubakarol@gmail.com
+   47  ssh-keygen -t ed25519 -C "chlubakarol@gmail.com"
+   48  ssh-add ~/.ssh/id_ed25519
+   49  clip < ~/.ssh/id_ed25519.pub
+   50  sudo apt install geomview
+   51  clip < ~/.ssh/id_ed25519.pub
+   52  ls -la
+   53  cd ..
+   54  ls -la
+   55  cd .ssh/
+   56  ls -la
+   57  sudo apt install vim
+   58  vim id_ed25519.pub 
+   59  cd /
+   60  ls -la
+   61  cd ~
+   62  cd first-contribution/
+   63  git push origin add-chluba 
+   64  ls -la\
+   65  cd ..
+   66  ls -la
+   67  rm -rf first-contribution/
+   68  ls -la
+   69  git clone git@github.com:karolchluba/first-contribution.git
+   70  cd first-contribution/
+   71  git status
+   72  git add Contributors.md 
+   73  git restore Contributors.md
+   74  git status
+   75  git restore --staged
+   76  git restore --staged Contributors.md
+   77  git restore Contributors.md
+   78  git status
+   79  git checkout -b add-chluba
+   80  git status
+   81  git add Contributors.md 
+   82  git commit -m "Add ChKarol to Contributors list"
+   83  git push origin add-chluba 
+   84  cd ..
+   85  ip
+   86  ssh localhost
+   87  sudo apt-get install openssh-server ii
+   88  sudo service ssh status
+   89  ssh localhost
+   90  ip a
+   91  sudo service ssh status
+   92  ls
+   93  pwd
+   94  ls
+   95  cd Documents/
+   96  pwd
+   97  ls
+   98  cd..
+   99  cd ~
+  100  pw
+  101  pwd
+  102  cd -
+  103  cd ~
+  104  cd Documents/
+  105  cd ../Downloads/
+  106  cd ~
+  107  cd /
+  108  pwd
+  109  ls -la
+  110  ls
+  111  cd ~
+  112  pwd
+  113  ls 
+  114  cd /
+  115  cd -
+  116  ls
+  117  pwd
+  118  ls
+  119  ls -l
+  120  cd ~
+  121  ls -l
+  122  cd test/
+  123  touch file.tx
+  124  touch file2.cpp
+  125  ls -la
+  126  cp file.tx 
+  127  rm -rf file.tx
+  128  touch file.txt
+  129  ls 0la
+  130  ls -l
+  131  clear
+  132  cp file.txt copy.txt
+  133  cp file.txt copy2.txt
+  134  mv file2.cpp file3.cpp
+  135  mkdir hello
+  136  mv file3.cpp hello/
+  137  cp file.txt hello/plik.txt
+  138  cd hello/
+  139  mv plik.txt ../
+  140  ls -l ../
+  141  mv ../plik.txt ./plik2.txt
+  142  ls -l
+  143  rm plik2.txt
+  144  cd ..
+  145  ls
+  146  rm copy.txt 
+  147  rm hello/
+  148  rmdir hello/
+  149  rm -rf hello/
+  150  rm *.txt
+  151  cd ..
+  152  ls
+  153  mkdir 0x04 Operacje na plikach - zadania
+  154  cd 0x04/
+  155  ls 
+  156  touch zadanie1.txt
+  157  touch zadanie2.txt
+  158  touch zadanie1.txt
+  159  ls
+  160  ls -l
+  161  cd ..
+  162  mkdir 0x04
+  163  cd 0x04/
+  164  cp zadanie1.txt zadanie2.txt
+  165  firefox facebook.com
+  166  cd ..
+  167  ls 
+  168  mv 0x04/ test/
+  169  ls
+  170  cd test/
+  171  ls 
+  172  cd ..
+  173  ls 
+  174  cd ..
+  175  cd -
+  176  ls
+  177  cp test/0x04/ ./
+  178  cp -r test/0x04/ ./
+  179  ls
+  180  cd test/
+  181  ls
+  182  cd ,,
+  183  cd ..
+  184  ls 
+  185  cd 0x04/
+  186  ls 
+  187  cd ..
+  188  rm -rf test/
+  189  ls
+  190  cd /
+  191  ls
+  192  ls --help
+  193  ls -l
+  194  ls ~
+  195  ls -l ~
+  196  ls -l /home/karol/Desktop/
+  197  ls --help
+  198  man ls
+  199  ls -lh
+  200  man ls
+  201  ls -lrS
+  202  ls -lrSh
+  203  ls -l -r -S -h
+  204  man g++
+  205  g++ --help
+  206  cd --help
+  207  man cd
+  208  man 2 socket
+  209  man --help
+  210  man man
+  211  man cp
+  212  ls -la
+  213  cd ~
+  214  ls -la
+  215  ls
+  216  mkdir 0x05
+  217  cd 0x05/
+  218  touch file01.txt file02.txt file03.txt
+  219  ls
+  220  cd ..
+  221  mv 0x05/ 0x06
+  222  ls
+  223  ls 
+  224  mkdir kopia
+  225  cp -r 0x06/ ./kopia/
+  226  cd kopia/
+  227  ls
+  228  ls 0x06/
+  229  cd ../0x06/
+  230  touch zadanie
+  231  man mv
+  232  cd ~
+  233  toch example
+  234  touch example.cpp
+  235  vim example.cpp 
+  236  cat example.cpp 
+  237  man cat
+  238  touch example2.cpp
+  239  vim example2.cpp 
+  240  cat example.cpp example2.cpp 
+  241  more example.cpp 
+  242  man less
+  243  wc
+  244  man wc
+  245  wc example.cpp 
+  246  man more
+  247  more example
+  248  more example.cpp 
+  249  ls 
+  250  mkdir 0x07
+  251  touch pliks.cpp
+  252  cd 0x07/
+  253  ls
+  254  cd ..
+  255  rm pliks.cpp
+  256  toych ./0x07/plik.cpp
+  257  touch ./0x07/plik.cpp
+  258  vim ./0x07/plik.cpp 
+  259  cd 0x07/
+  260  more plik.cpp 
+  261  wc plik.cpp 
+  262  man wc
+  263  man more
+  264  ls
+  265  touch zadanie
+  266  rm zadanie 
+  267  touch zadanie.txt
+  268  vim zadanie.txt 
+  269  man more
+  270  echo hello 
+  271  cd _
+  272  cd -
+  273  ls
+  274  ls -l
+  275  ls -la
+  276  less .bash
+  277  less .bashrc
+  278  ls
+  279  mkdir 0x08
+  280  touch ./0x08/plik.txt
+  281  cd 0x08/
+  282  ls
+  283  mv plik.txt .plik.txt
+  284  ls
+  285  ls -a
+  286  touch zadanie
+  287  vim zadanie
+  288  man rm 
+  289  clear
+  290  men find
+  291  man fin
+  292  man find
+  293  find *.cpp
+  294  cd ~
+  295  find *.cpp
+  296  ls
+  297  man find
+  298  find -name *.cpp .
+  299  find -r *.cpp .
+  300  man find
+  301  find . *.cpp
+  302  find . -name *.cpp
+  303  man find
+  304  find . -name "*.cpp"
+  305  find . -name "*.cpp" | head
+  306  find / -iname sth
+  307  find / -iname sth | head
+  308  man find
+  309  find / -name "g++"
+  310  find / -name "g++" | tail
+  311  cd /
+  312  cd usr/bin/g++
+  313  cd usr/bin/
+  314  ls
+  315  ls -l
+  316  find "g++"
+  317  cd g++
+  318  clear
+  319  cd ~
+  320  ls
+  321  mkdir 0x09
+  322  touch 0x09/zadanie
+  323  vim 0x09/zadanie 
+  324  cd /
+  325  find clang++
+  326  find -name "clang++"
+  327  clear
+  328  grep hello .
+  329  cd ~
+  330  grep hello .
+  331  grep hello *
+  332  grep "hello" *
+  333  grep main  *
+  334  grep -r  main  *
+  335  cd/
+  336  cd /
+  337  grep -r main *
+  338  cd ~
+  339  grep -r main *
+  340  ls la
+  341  ls
+  342  cd 0x07/
+  343  ls
+  344  grep -r main *
+  345  grep -r main .
+  346  grep -rn main .
+  347  man grep
+  348  grep -rni dupa *
+  349  grep -rni dupa /
+  350  grep -rni "dupa" /
+  351  clear
+  352  cd /
+  353  grep -rn main *
+  354  grep -rn main * | head
+  355  grep -rn "main" * | head
+  356  grep -rn "main" ~
+  357  clear
+  358  cd ~
+  359  ls
+  360  mkdir test
+  361  cd test/
+  362  cat ../example.cpp 
+  363  cat ../example.cpp > file.cpp
+  364  ls
+  365  cat file.cpp 
+  366  less file.cpp 
+  367  echo Hello World
+  368  echo Witam swiecie > file.cpp 
+  369  ls
+  370  cat file.cpp 
+  371  man echo
+  372  echo Witam swiecie >>  file.cpp 
+  373  cat file.cpp 
+  374  echo Witam swiecie >> file.cpp 
+  375  cat file.cpp 
+  376  echo cos tam >> file.cpp 
+  377  cat file.cpp 
+  378  cat *
+  379  touch bc
+  380  echo 4 + 5 > file.cpp 
+  381  cat file.cpp 
+  382  bc < file.cpp 
+  383  cat bc 
+  384  cat bc
+  385  ls -la
+  386  echo 4 + 5 | bc
+  387  grep -rni hello * | head
+  388  grep -rni hello  | head
+  389  grep -rni hello ../ | head
+  390  grep -rni hello ../ | grep Pizas
+  391  grep -rni hello ../ | grep Pizzas
+  392  grep -rni hello ../ | grep 0x
+  393  grep -rni hello * | grep 0x
+  394  find / -nam karol > result.txt 
+  395  find / -name karol > result.txt 
+  396  ls
+  397  less result.txt 
+  398  find / -name karol > result.txt 2> /dev/null 
+  399  less result.txt 
+  400  find / -name main > result.txt 2> /dev/null 
+  401  less result.txt 
+  402  find / -name "main" > result.txt 2> /dev/null 
+  403  less result.txt 
+  404  find ../ -name "main" > result.txt 2> /dev/null 
+  405  less result.txt 
+  406  cd ..
+  407  find . -name "main" > result.txt 2> /dev/null 
+  408  less result.txt 
+  409  grep -rni main * > result.txt 2> dev/null
+  410  grep -rni main * > result.txt 2> /dev/null
+  411  grep -rni main . > result.txt 2> /dev/null
+  412  less result.txt 
+  413  cd test/
+  414  echo 10.5 / 11.7 > file.cpp 
+  415  bc < file.cpp 
+  416  ps
+  417  ps aux
+  418  man ps
+  419  ps au
+  420  top
+  421  htop
+  422  sudo apt install htop
+  423  htop
+  424  cd -
+  425  vim hello.cpp
+  426  g++ hello.cpp 
+  427  vim hello.cpp 
+  428  g++ hello.cpp 
+  429  ls
+  430  ls -l
+  431  ./a.out 
+  432  ps
+  433  htop
+  434  ps
+  435  htop
+  436  ps
+  437  htop
+  438  ps aux
+  439  kill 19271
+  440  man kill
+  441  fg
+  442  vim
+  443  ps
+  444  vim
+  445  ps
+  446  htop
+  447  kill 19505
+  448  ls
+  449  ps
+  450  jobs
+  451  fg 
+  452  jobs
+  453  ./a.out &
+  454  firefox &
+  455  ps
+  456  kill 19633
+  457  ps
+  458  kill -9 19633
+  459  ps
+  460  kill 19685
+  461  clear
+  462  ls
+  463  mkdir homework-linux
+  464  ls
+  465  cd homework-linux/
+  466  touch processes.txt
+  467  ls
+  468  ps
+  469  cat ps aux
+  470  ps aux
+  471  ps auc > processes.txt
+  472  cat processes.txt 
+  473  clear
+  474  l
+  475  ls
+  476  cd ..
+  477  rm -rf homework-linux/
+  478  ls 
+  479  clear
+  480  mkdir homework-linux
+  481  ls
+  482  cd homework-linux/
+  483  touch processes.txt
+  484  ls
+  485  ps aux > processes.txt
+  486  cat processes.txt
+  487  cp processes.txt copy.txt
+  488  wc -l processes.txt
+  489  wc -l processes.txt > selected.txt
+  490  cat selected.txt
+  491  grep -rni "/bin/" processes.txt >> selected.txt
+  492  cat selected.txt 
+  493  history
+karol@karol-VirtualBox:~/homework-linux$ history | tail -n15 > commands.txt
+karol@karol-VirtualBox:~/homework-linux$ cat commands.txt
+  480  mkdir homework-linux
+  481  ls
+  482  cd homework-linux/
+  483  touch processes.txt
+  484  ls
+  485  ps aux > processes.txt
+  486  cat processes.txt
+  487  cp processes.txt copy.txt
+  488  wc -l processes.txt
+  489  wc -l processes.txt > selected.txt
+  490  cat selected.txt
+  491  grep -rni "/bin/" processes.txt >> selected.txt
+  492  cat selected.txt 
+  493  history
+  494  history | tail -n15 > commands.txt
+karol@karol-VirtualBox:~/homework-linux$ cat selected.txt commands.txt
+258 processes.txt
+92:message+     623  0.0  0.0   8992  5848 ?        Ss   paź17   0:03 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+95:root         639  0.0  0.2  50896 20420 ?        Ss   paź17   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+105:root         715  0.0  0.2 129208 22552 ?        Ssl  paź17   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+109:whoopsie     778  0.0  0.1 327252 15268 ?        Ssl  paź17   0:00 /usr/bin/whoopsie -f
+114:karol        832  0.5  0.2 2993016 20744 ?       Ssl  paź17   4:47 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+116:karol        838  0.0  0.0 398816  7824 ?        SLl  paź17   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+117:karol        842  0.0  0.0 175180  6632 tty2     Ssl+ paź17   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+120:karol        850  0.0  0.0  10676  7348 ?        Ss   paź17   0:05 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+132:karol       1059  0.0  0.0   6040   452 ?        Ss   paź17   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+134:karol       1092  0.0  0.0   7248  3816 ?        S    paź17   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+135:karol       1116  0.0  0.0 251060  7712 ?        Sl   paź17   0:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+139:karol       1157  5.5  4.7 4929068 438148 ?      Ssl  paź17  52:34 /usr/bin/gnome-shell
+153:karol       1291  0.0  0.2 2745092 27068 ?       Sl   paź17   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+177:karol       1455  0.0  3.7 1235780 351380 ?      Sl   paź17   0:39 /snap/snap-store/558/usr/bin/snap-store --gapplication-service
+199:karol       6114  0.0  0.0 170896  2252 ?        Ssl  paź17   0:00 /usr/bin/speech-dispatcher --spawn --communication-method unix_socket --socket-path /run/user/1000/speech-dispatcher/speechd.sock
+210:karol       9713  0.0  0.8 1008432 75172 ?       Sl   paź17   0:24 /usr/bin/nautilus --gapplication-service
+  480  mkdir homework-linux
+  481  ls
+  482  cd homework-linux/
+  483  touch processes.txt
+  484  ls
+  485  ps aux > processes.txt
+  486  cat processes.txt
+  487  cp processes.txt copy.txt
+  488  wc -l processes.txt
+  489  wc -l processes.txt > selected.txt
+  490  cat selected.txt
+  491  grep -rni "/bin/" processes.txt >> selected.txt
+  492  cat selected.txt 
+  493  history
+  494  history | tail -n15 > commands.txt
+karol@karol-VirtualBox:~/homework-linux$ 
