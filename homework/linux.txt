@@ -837,4 +837,5 @@ karol@karol-VirtualBox:~/homework-linux$ cat selected.txt commands.txt
   492  cat selected.txt 
   493  history
   494  history | tail -n15 > commands.txt
-karol@karol-VirtualBox:~/homework-linux$ 
+karol@karol-VirtualBox:~/homework-linux$ mkdir backup
+karol@karol-VirtualBox:~/homework-linux$ mv copy.txt backup/
