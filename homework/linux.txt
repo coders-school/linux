@@ -1,0 +1,67 @@
+ubuntu@ubuntu:~/Dokumenty$ cat selected.txt commands.txt
+232 Zadanie/processes.txt
+processes.txt:2:root           1  0.0  0.2 167864 13564 ?        Ss   lis03   0:06 /sbin/init maybe-ubiquity splash ---
+processes.txt:90:root        1419  0.0  0.0   2812  1128 ?        Ss   lis03   0:02 /usr/sbin/acpid
+processes.txt:93:root        1424  0.0  0.3 491132 19156 ?        Ssl  lis03   0:06 /usr/sbin/NetworkManager --no-daemon
+processes.txt:94:root        1429  0.0  0.0  82696  1912 ?        Ssl  lis03   0:02 /usr/sbin/irqbalance --foreground
+processes.txt:95:root        1430  0.0  0.4  50040 20504 ?        Ss   lis03   0:02 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+processes.txt:98:syslog      1433  0.0  0.1 222452  5136 ?        Ssl  lis03   0:00 /usr/sbin/rsyslogd -n -iNONE
+processes.txt:101:root        1437  0.0  0.0  18540  2692 ?        Ss   lis03   0:00 /usr/sbin/cron -f -P
+processes.txt:105:root        1449  0.0  0.1  16492  5988 ?        Ss   lis03   0:01 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+processes.txt:106:root        1451  0.0  0.1 166808  5768 ?        Ssl  lis03   0:00 /usr/sbin/zed -F
+processes.txt:108:root        1482  0.0  0.2 243276 12076 ?        Ssl  lis03   0:01 /usr/sbin/ModemManager
+processes.txt:109:root        1526  0.0  0.2  81588 13488 ?        Ss   lis03   0:01 /usr/sbin/cupsd -l
+processes.txt:110:root        1529  0.0  0.4 127040 23252 ?        Ssl  lis03   0:01 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+processes.txt:111:kernoops    1555  0.0  0.0  13080   452 ?        Ss   lis03   0:00 /usr/sbin/kerneloops --test
+processes.txt:112:kernoops    1557  0.0  0.0  13080   452 ?        Ss   lis03   0:00 /usr/sbin/kerneloops
+processes.txt:113:root        1564  0.0  0.2 172612 11568 ?        Ssl  lis03   0:00 /usr/sbin/cups-browsed
+processes.txt:116:ubuntu      1646  0.0  0.1  48624  6284 ?        Ssl  lis03   0:00 /usr/bin/pipewire
+processes.txt:117:ubuntu      1647  0.0  0.1  32512  6268 ?        Ssl  lis03   0:00 /usr/bin/pipewire-media-session
+processes.txt:118:ubuntu      1651  0.0  0.1  11492  7772 ?        Ss   lis03   0:02 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+processes.txt:124:ubuntu      1772  0.0  0.0   8612  4524 ?        S    lis03   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/999/at-spi/bus_0
+processes.txt:139:root        4874  0.0  0.1 252392  8988 ?        Ssl  lis03   0:00 /usr/sbin/gdm3
+processes.txt:141:ubuntu      4898  0.0  0.1 252092  6904 ?        SLl  lis03   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+processes.txt:142:ubuntu      4903  0.0  0.1 173608  6340 tty2     Ssl+ lis03   0:00 /usr/libexec/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+processes.txt:144:ubuntu      4913  0.0  0.3 234220 15556 tty2     Sl+  lis03   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+processes.txt:146:ubuntu      5044  0.0  0.3 530368 17704 ?        Ssl  lis03   0:00 /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu
+processes.txt:147:ubuntu      5063  1.1  7.3 4798796 361772 ?      Ssl  lis03  10:27 /usr/bin/gnome-shell
+processes.txt:149:ubuntu      5100  0.0  0.4 2744116 23456 ?       Ssl  lis03   0:18 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+processes.txt:154:ubuntu      5141  0.0  0.5 2612644 27000 ?       Sl   lis03   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+processes.txt:156:ubuntu      5166  0.0  0.0   2888  1000 ?        Ss   lis03   0:00 sh -c /usr/bin/ibus-daemon --panel disable $([ "$XDG_SESSION_TYPE" = "x11" ] && echo "--xim")
+processes.txt:160:ubuntu      5173  0.0  0.2 326996 12884 ?        Sl   lis03   0:02 /usr/bin/ibus-daemon --panel disable --xim
+processes.txt:181:ubuntu      5366  0.0  0.5 2678264 26912 ?       Sl   lis03   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
+processes.txt:188:ubuntu      5669  0.0  1.1 884804 56892 ?        Sl   lis03   0:07 /usr/bin/gnome-calendar --gapplication-service
+processes.txt:189:ubuntu      5674  0.0  0.8 402936 40692 ?        SLl  lis03   0:06 /usr/bin/seahorse --gapplication-service
+processes.txt:192:root        5811  0.0  0.0   2888   948 ?        S    lis03   0:00 /bin/sh /usr/lib/udisks2/udisks2-inhibit /usr/lib/ubiquity/bin/ubiquity gtk_ui
+processes.txt:193:ubuntu      5816  0.0  2.6 695616 128012 ?       Sl   lis03   0:11 /usr/bin/python3 /usr/lib/ubiquity/bin/ubiquity gtk_ui
+processes.txt:194:ubuntu      5869  0.0  0.0   2456     4 pts/0    Ss+  lis03   0:07 /bin/busybox tail -f /var/log/installer/debug -f /var/log/syslog -q
+processes.txt:196:root        6201  0.0  0.8  67804 44244 ?        S    lis03   0:00 /usr/bin/perl -w /usr/bin/debconf-communicate -fnoninteractive ubiquity
+processes.txt:198:root        6207  0.0  0.0   3000  1800 ?        S    lis03   0:00 /bin/sh /usr/lib/ubiquity/localechooser/localechooser
+processes.txt:204:ubuntu      9942  3.8  3.7 1944492 182368 ?      Sl   08:15   2:31 /snap/snap-store/582/usr/bin/snap-store
+processes.txt:206:ubuntu     10685  0.1  1.4 1281876 70908 ?       Sl   08:18   0:05 /usr/bin/nautilus --gapplication-service
+processes.txt:207:ubuntu     11071  0.0  0.3 1311388 18200 ?       Sl   08:18   0:00 /usr/bin/snap userd
+  561  mkdir Zadanie
+  562  touch Zadanie/processes.txt
+  563  ps aux > Zadanie/processes.txt
+  564  head Zadanie/processes.txt
+  565  cp Zadanie/processes.txt copy.txt
+  566  ls
+  567  mkdir backup
+  568  mv copy.txt backup
+  569  ls
+  570  cd backup/
+  571  ls
+  572  cd ..
+  573  wc -l Zadanie/processes.txt
+  574  wc -l Zadanie/processes.txt > selected.txt
+  575  ls
+  576  head selected.txt
+  577  cd Zadanie/
+  578  grep -rni \bin
+  579  grep -rni \bin >> ../selected.txt
+  580  cd ..
+  581  head selected.txt
+  582  history
+  583  history | tail -22
+  584  history | tail -24
+  585  history | tail -25 > commands.txt
