@@ -1,0 +1,55 @@
+spror@spror-Inspiron-5482:~/Coders school/Narzedzia_Programisty/dowolna$ cat selected.txt commands.txt 
+282 processes.txt
+124:root         628  0.0  0.1  52244 15052 ?        Ss   11:55   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+140:root         809  0.0  0.2 129332 17244 ?        Ssl  11:55   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+152:spror       1654  0.0  0.0  51040  4048 ?        S<sl 11:55   0:00 /usr/bin/pipewire
+153:spror       1655  0.0  0.0  34792  3732 ?        Ssl  11:55   0:00 /usr/bin/pipewire-media-session
+154:spror       1656  0.4  0.3 2819972 24088 ?       S<sl 11:55   2:09 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+155:spror       1668  0.0  0.0 252072  5840 ?        Sl   11:55   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+156:spror       1670  0.0  0.0   9980  5368 ?        Ss   11:55   0:04 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+171:spror       1771  0.0  0.0 173568  5032 tty2     Ssl+ 11:55   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+175:spror       1856  5.0  3.5 6021352 278160 ?      Ssl  11:55  26:30 /usr/bin/gnome-shell
+177:spror       1865  0.0  0.0   8560  3844 ?        S    11:55   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus
+178:spror       1924  0.0  0.1 308872 10324 ?        Ssl  11:55   0:00 /snap/snapd-desktop-integration/14/bin/snapd-desktop-integration
+186:spror       2060  0.0  0.2 2877044 19236 ?       Sl   11:55   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+188:spror       2078  0.0  0.0   2888   948 ?        Ss   11:55   0:00 sh -c /usr/bin/ibus-daemon --panel disable $([ "$XDG_SESSION_TYPE" = "x11" ] && echo "--xim")
+190:spror       2081  0.0  0.1 402724 12372 ?        Sl   11:55   0:27 /usr/bin/ibus-daemon --panel disable
+210:spror       2234  0.0  2.4 1257440 188992 ?      Sl   11:55   0:08 /snap/snap-store/599/usr/bin/snap-store --gapplication-service
+213:spror       2385  0.0  0.2 2942588 19308 ?       Sl   11:55   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
+216:spror       3023  2.4  0.7 846300 60132 ?        Sl   11:55  12:47 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.PCKGV1 -listen 4 -listen 5 -displayfd 6 -initfd 7
+221:spror       3542  0.0  0.1 1015144 11516 ?       Sl   11:55   0:02 /usr/bin/snap userd
+234:spror      20000  0.0  0.6 747540 54320 ?        Sl   16:54   0:08 /usr/bin/nautilus --gapplication-service
+238:spror      29311  0.0  0.7 886816 57688 ?        Sl   19:15   0:00 /usr/bin/gnome-calendar --gapplication-service
+239:spror      29501  0.0  0.5 404636 39856 ?        SLl  19:15   0:00 /usr/bin/seahorse --gapplication-service
+240:spror      32618  0.1  2.0 669392 160036 ?       Sl   19:30   0:04 /usr/bin/python3 /usr/bin/software-properties-gtk --open-tab=4
+  482  ls
+  483  mkdir dowolna
+  484  cd dowolna/
+  485  touch processes.txt
+  486  ps aux > processes.txt 
+  487  cat processes.txt 
+  488  cp processes.txt copy.txt
+  489  mkdir backup
+  490  mv copy.txt ./backup 
+  491  ls
+  492  cd backup/
+  493  ls
+  494  cat copy.txt 
+  495  cd ..
+  496  ls
+  497  wc -l processes.txt 
+  498  wc -l 
+  499  wc -l processes.txt > selected.txt
+  500  cat selected.txt 
+  501  ls
+  502  grep -n "/bin" processes.txt 
+  503  grep -n "/bin" processes.txt  >> selected.txt 
+  504  cat selected.txt 
+  505  hisotry 
+  506  history 
+  507  history | tai;
+  508  history | tail
+  509  history | tail -n 20 > commands.txt
+  510  cat commands.txt 
+  511  history 
+  512  history | tail -n 31 > commands.txt
