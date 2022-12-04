@@ -1,4 +1,3 @@
-ma@LAPTOP-UIDV735J:/mnt/c/users/malbi/documents/test/dowolny$ cat selected.txt commands.txt
 6 processes.txt
   436  mkdir Dowolny
   437  cd dowolny
@@ -208,3 +207,33 @@ ma@LAPTOP-UIDV735J:/mnt/c/users/malbi/documents/test/dowolny$ cat selected.txt c
   641  history | tail -n 205
   642  history | tail -n 207
   643  history | tail -n 208 > commands.txt
+  644  ls
+  645  cat commands.txt
+  646  cat --help
+  647  cat selected.txt commands.txt
+  648  cat copy.txt
+  649  ls
+  650  cat processes.txt
+  651  cd backup
+  652  cat copy.txt
+  653  cd ..
+  654  man cp
+  655  cp processes.txt copy.txt
+  656  ls
+  657  mv copy.txt "backup"
+  658  ls
+  659  cd backup
+  660  ls
+  661  cat copy
+  662  cat copy.txt
+  663  cd ..
+  664  ls
+  665  history
+  666  history | tail -n 230 > commands.txt
+  667  ls
+  668  cat commands.txt
+  669  history | tail -n 232 > commands.txt
+  670  cat commands.txt
+  671  history | tail -235
+  672  history | tail -236
+  673  history | tail -238 > commands.txt
