@@ -1,0 +1,210 @@
+ma@LAPTOP-UIDV735J:/mnt/c/users/malbi/documents/test/dowolny$ cat selected.txt commands.txt
+6 processes.txt
+  436  mkdir Dowolny
+  437  cd dowolny
+  438  ls
+  439  touch processes.txt
+  440  ls
+  441  ps aus
+  442  ps aux
+  443  ls
+  444  man
+  445  man cmd
+  446  man cmt
+  447  ls
+  448  cat processes
+  449  cat processes.txt
+  450  ps aux > processes.txt
+  451  cat processes.txt
+  452  man mv
+  453  man copy
+  454  man mv
+  455  ls
+  456  cat processes.txt > copy.txt
+  457  ls
+  458  cat copy.txt
+  459  cat processes.txt
+  460  mkdir backup
+  461  ls
+  462  mv copy.txt /backup
+  463  mv copy.txt "/backup"
+  464  mv copy.txt "backup"
+  465  ls
+  466  cd backup
+  467  ls
+  468  cd ..
+  469  ls
+  470  cat -n processes
+  471  cat -nti processes
+  472  cat --help
+  473  cat -n processes.txt
+  474  cat processes.txt
+  475  cat -n processes.txt
+  476  cat --help
+  477  cat -b processes.txt
+  478  cat --help
+  479  cat -t processes.txt
+  480  cat -n processes.txt
+  481  wc --help
+  482  man wc
+  483  wc -l processes.txtr
+  484  wc -l processes.txt
+  485  wc -l processes.txt > selected.txt
+  486  ls
+  487  cat selected.txt
+  488  man grep
+  489  grep /bin "processes.txt"
+  490  grep "processes.txt"
+  491  grep "processes.txt" /bin
+  492  grep --help
+  493  grep "/bin" processes.txt
+  494  grep '/bin' processes.txt
+  495  ps aux
+  496  grep "-bash" processes.txt
+  497  cat processes.txt
+  498  grep --help
+  499  grep -f "bash" processes.txt
+  500  grep -f processes.txt "bash"
+  501  grep --help
+  502  cat processes.txt
+  503  grep -f processes.txt
+  504  grep -f "processes.txt"
+  505  grep -f processes.txt
+  506  grep -f 'ma' processes.txt
+  507  grep -f "ma" "processes.txt"
+  508  grep -f "processes.txt" ma
+  509  grep -f processes.txt 636
+  510  grep -r ma *
+  511  grep --help
+  512  ls
+  513  grep -fn ma
+  514  grep -fn ma processes
+  515  grep -f ma processes.txt
+  516  grep -f processes.txt ma
+  517  grep processes.txt -f ma
+  518  grep -rn ma
+  519  man grep
+  520  grep -f 'ma' processes.txt
+  521  grep ma processes.txt
+  522  grep -n "ma" processes.txt
+  523  clear
+  524  ls
+  525  grep -f 'ma' processes.txt
+  526  clear
+  527  grep -n 'ma' processes.txt
+  528  grep 'ma' processes.txt
+  529  grep --help
+  530  grep -c 'ma' processes.txt
+  531  grep -c 'ma' processes.txt -f
+  532  grep -c 'ma' processes.txt -f1
+  533  grep -c 'ma' processes.txt -d
+  534  grep -c 'ma' processes.txt
+  535  grep -n 'ma' processes.txt
+  536  grep -n 'ma' processes.txt -f1
+  537  grep -n 'ma' processes.txt -d
+  538  grep -n 'ma' processes.txt
+  539  grep -n '/bin' processes.txt
+  540  grep -n '/bin' processes.txt &> newfile.txt
+  541  ls
+  542  cat newfile.txt
+  543  rm newfile.txt
+  544  ls
+  545  grep -n "/bin" processes.txt
+  546  grep -n "na" processes.txt
+  547  grep -n "ma" processes.txt
+  548  grep "ma" processes.txt
+  549  grep -n "ma" processes.txt
+  550  grep -n "bin" processes.txt
+  551  grep -n "/bin" processes.txt
+  552  grep --help
+  553  grep -nl "/bin" processes.txt
+  554  grep -nl "ma" processes.txt
+  555  grep -l "ma" processes.txt
+  556  grep -L "ma" processes.txt
+  557  grep -n "ma" processes.txt
+  558  grep -nv "ma" processes.txt
+  559  grep -ns "ma" processes.txt
+  560  grep -nd "ma" processes.txt
+  561  grep -d "ma" processes.txt
+  562  grep -n "ma" processes.txt
+  563  grep -n "/bin" processes.txt
+  564  "testownik" > tescior.txt
+  565  ls
+  566  cat tescior
+  567  ls
+  568  cat tescior.txt
+  569  testownik > tescior.txt
+  570  echo testownik > tescior.txt
+  571  ls tescior
+  572  cat tescior.txt
+  573  echo testownik2 >> tescior.txt
+  574  ls tescior
+  575  cat tescior.txt
+  576  echo testownik3 > tescior.txt
+  577  cat tescior
+  578  cat tescior.txt
+  579  echo testownik4 >> tescior.txt
+  580  cat testownik.txt
+  581  ls
+  582  cat tescior.txt
+  583  rm tescior.txt
+  584  ls
+  585  grep -n "ma" processes.txt
+  586  grep -n "ma" processes.txt > testowo.txt
+  587  ls
+  588  cat testowo
+  589  cat testowo.txt
+  590  grep -c processes.txt >> testowo.txt
+  591  grep -c "ma" processes.txt >> testowo.txt
+  592  ls
+  593  cat testowo.txt
+  594  rm testowo.txt
+  595  grep -n "/bin" processes.txt >> selected.txt
+  596  cat selected.txt
+  597  history
+  598  history tail 436
+  599  histor --help
+  600  history --help
+  601  tail
+  602  man tail
+  603  man history
+  604  history --help
+  605  history > commands.txt
+  606  ls
+  607  cat commands.txt
+  608  tail commands.txt 436
+  609  tail 436 commands.txt
+  610  tail --help
+  611  tail -n 436 commands.txt
+  612  tail -n 15 commands.txt
+  613  tail -n 400 commands.txt
+  614  tail -n 100 commands.txt
+  615  calc
+  616  bc
+  617  tail -n 169 commands.txt
+  618  tail -n 170 commands.txt
+  619  tail -n 170 history
+  620  tail -n 170 | history
+  621  history > tail
+  622  history >> tail
+  623  echo history > tail
+  624  history | tail -n 15
+  625  history | tail -n 175
+  626  history | tail -n 20
+  627  history | tail -n 21
+  628  history | tail -n 21 > testowiar.txt
+  629  ls
+  630  cat testowiar
+  631  cat testowiar.txt
+  632  ls
+  633  rm tail
+  634  rm testowiar
+  635  rm testowiar.txt
+  636  ls
+  637  ls -n
+  638  history
+  639  histore | tail -n 203
+  640  history | tail -n 204
+  641  history | tail -n 205
+  642  history | tail -n 207
+  643  history | tail -n 208 > commands.txt
