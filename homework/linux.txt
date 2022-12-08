@@ -1,0 +1,55 @@
+krg@krg-vm:~/Dev/CodersSchool/1_Organizacja/Linux/ZadanieDomowe$ cat selected.txt commands.txt 
+323
+183:root         686  0.0  0.1  65600 11652 ?        Ss   gru07   0:00 /usr/bin/VGAuthService
+184:root         698  0.1  0.1 254920  9360 ?        Ssl  gru07   2:32 /usr/bin/vmtoolsd
+201:root        1063  0.0  0.2 122940 21116 ?        Ssl  gru07   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+212:krg         1769  0.0  0.1 141904 13412 ?        Ssl  gru07   0:50 /usr/bin/pipewire
+213:krg         1775  0.0  0.1 269500 13532 ?        Ssl  gru07   0:02 /usr/bin/wireplumber
+214:krg         1777  0.0  0.1  46760 14172 ?        Ssl  gru07   0:12 /usr/bin/pipewire-pulse
+215:krg         1779  0.0  0.0  10056  5396 ?        Ss   gru07   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+216:krg         1788  0.0  0.1 253444  9804 ?        SLsl gru07   0:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+233:krg         2045  0.0  0.0 323176  8072 ?        Ssl  gru07   0:07 /usr/bin/ibus-daemon --daemonize --xim
+239:krg         2071  0.0  0.0   2736   964 ?        S    gru07   0:00 /bin/sh -c xss-lock --transfer-sleep-lock -- i3lock --nofork
+240:krg         2073  0.0  0.0   2736   964 ?        S    gru07   0:00 /bin/sh -c nm-applet
+247:krg         2089  0.0  0.3  65020 31872 ?        S    gru07   0:00 /usr/bin/python3 /usr/share/system-config-printer/applet.py
+248:krg         2092  0.0  0.0   9180  4552 ?        S    gru07   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus_0
+250:krg         2106  0.1  0.4 299180 37804 ?        Sl   gru07   2:28 /usr/bin/vmtoolsd -n vmusr --blockFd 3
+251:krg         2142  0.0  0.0   2736   956 ?        S    gru07   0:00 /bin/sh -c i3status
+258:krg         2224  0.0  0.3 306552 24752 ?        Ssl  gru07   0:00 /snap/snapd-desktop-integration/43/usr/bin/snapd-desktop-integration
+262:krg         2401  0.0  0.0   2736   960 ?        S    gru07   0:00 /bin/sh -c i3-sensible-terminal
+263:krg         2402  0.0  0.2  40704 17304 ?        S    gru07   0:00 /usr/bin/python3 /usr/bin/gnome-terminal --wait
+264:krg         2403  0.0  0.2 312540 20108 ?        Sl   gru07   0:00 /usr/bin/gnome-terminal.real --wait
+267:krg         2852  0.0  0.2 611424 16612 ?        Ssl  gru07   0:00 /usr/bin/dunst
+269:krg         4091  0.0  0.0  21040  2588 ?        S    gru07   0:00 /bin/bash
+274:krg         4419  0.0  0.3 793816 25636 ?        Sl   gru07   0:02 /usr/bin/snap userd
+292:krg         8447  0.0  0.8 1390976 65124 ?       Sl   gru07   1:01 /home/krg/.vscode/extensions/ms-vscode.cpptools-1.12.4-linux-x64/bin/cpptools
+293:krg         8546  0.0  0.0  24040  6248 pts/1    Ss+  gru07   0:00 /usr/bin/bash --init-file /snap/code/113/usr/share/code/resources/app/out/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.sh
+299:krg        36777  0.0  0.0  22384  5900 pts/2    Ss+  07:47   0:00 /usr/bin/bash --init-file /snap/code/113/usr/share/code/resources/app/out/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.sh
+   90  mkdir ZadanieDomowe
+   91  cd ZadanieDomowe
+   92  ls -l
+   93  touch processes.txt
+   94  ps aux > processes.txt 
+   95  cp processes.txt copy.txt
+   96  mkdir backup
+   97  mv copy.txt backup/
+   98  ls
+   99  ls backup/
+  100  clear
+  101  wc processes.txt 
+  102  man wc
+  103  wc -l processes.txt 
+  104  wc -l processes.txt > selected.txt
+  105  cat selected.txt 
+  106  rm selected.txt 
+  107  wc -l < processes.txt > selected.txt
+  108  cat selected.txt 
+  109  man grp
+  110  man grep
+  111  grep -n "/bin" < processes.txt >> selected.txt 
+  112  cat selected.txt 
+  113  history
+  114  man tail
+  115  history | tail -n 24
+  116  history | tail -n 27
+  117  history | tail -n 28 > commands.txt
