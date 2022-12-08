@@ -46,7 +46,7 @@ krg@krg-vm:~/Dev/CodersSchool/1_Organizacja/Linux/ZadanieDomowe$ cat selected.tx
   108  cat selected.txt 
   109  man grp
   110  man grep
-  111  grep -n "/bin" < processes.txt >> selected.txt 
+  111  grep -n "/bin" processes.txt >> selected.txt 
   112  cat selected.txt 
   113  history
   114  man tail
