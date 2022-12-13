@@ -16,6 +16,7 @@ patryks@pat:~/homework/linux$ cat selected.txt commands.txt
 190:patryks     4100  0.0  0.0 170892  1324 ?        Ssl  10:44   0:00 /usr/bin/speech-dispatcher --spawn --communication-method unix_socket --socket-path /run/user/1000/speech-dispatcher/speechd.sock
 195:patryks    16579  0.1  1.2 1213152 47744 ?       Sl   11:43   0:25 /usr/bin/nautilus --gapplication-service
 198:patryks    17680  0.1  1.5 842004 60776 ?        Sl   12:38   0:21 /usr/bin/gedit --gapplication-service
+  
   445  cd ~/homework/
   446  mkdir linux
   447  cd linux
