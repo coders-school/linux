@@ -1,19 +1,25 @@
 $ cat selected.txt commands.txt
 4 processes.txt
-      552     508     552      10620  pty0      197609 17:15:31 /usr/bin/ps
-      507       1     507       2656  ?         197609 17:13:47 /usr/bin/mintty
-      508     507     508      14176  pty0      197609 17:13:47 /usr/bin/bash
- 329  mkdir praca
- 330  cd praca/
- 331  touch processes.txt
- 332  ps aux > processes.txt
- 333  cp processes.txt copy.txt
- 334  mkdir backup
- 335  mv copy.txt backup/
- 336  wc -l processes.txt
- 337  wc processes.txt
- 338  line_count=$(wc -l processes.txt)
- 339  echo $line_count > selected.txt
- 340  grep "/bin" processes.txt >> selected.txt
- 341  history
- 357  history | tail -n +329 | cut -c 2- > commands.txt
+2:     1176       1    1176       2576  ?         197609 17:29:32 /usr/bin/mintty
+3:     1244    1177    1244      15304  pty0      197609 17:36:02 /usr/bin/ps
+4:     1177    1176    1177      17744  pty0      197609 17:29:32 /usr/bin/bash
+  366  mkdir work
+  367  cd work
+  368  touch processes.txt
+  369  ps aux > processes.txt
+  370  cp processes.txt copy.txt
+  371  mkdir backup
+  372  mv copy.txt backup/
+  373  wc -l processes.txt
+  374  wc -l processes.txt > selected.txt
+  375  grep -n "/bin" processes.txt
+  376  grep -n "/bin" processes.txt >> selected.txt
+  377  history
+  378  history tail -n 19
+  379  history | tail -n 19
+  380  history | tail -n 15
+  381  history | tail -n 15
+  382  history | tail -n 14
+  383  history | tail -n 18
+  384  history | tail -n 19 > commands.txt
+
