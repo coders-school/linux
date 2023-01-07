@@ -1,4 +1,4 @@
-cat selected.txt commands.txt
+apietrzyk@DESKTOP-AHUM1GL:~/MyStuff/LinuxPD$ cat selected.txt commands.txt
 22 processes.txt
 apietrz+    81  0.0  0.0   2884   948 pts/1    S+   Jan06   0:00 sh /home/apietrzyk/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/bin/code-server --host=127.0.0.1 --port=0 --connection-token=279866484-3765522313-670392630-1256565340 --use-host-proxy --without-browser-env-var --disable-websocket-compression --accept-server-license-terms --telemetry-level=all
 apietrz+    85  0.0  0.6 939080 78288 pts/1    Sl+  Jan06   0:52 /home/apietrzyk/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/node /home/apietrzyk/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/out/server-main.js --host=127.0.0.1 --port=0 --connection-token=279866484-3765522313-670392630-1256565340 --use-host-proxy --without-browser-env-var --disable-websocket-compression --accept-server-license-terms --telemetry-level=all
