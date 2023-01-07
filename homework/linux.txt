@@ -1,0 +1,22 @@
+cat selected.txt commands.txt
+22 processes.txt
+apietrz+    81  0.0  0.0   2884   948 pts/1    S+   Jan06   0:00 sh /home/apietrzyk/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/bin/code-server --host=127.0.0.1 --port=0 --connection-token=279866484-3765522313-670392630-1256565340 --use-host-proxy --without-browser-env-var --disable-websocket-compression --accept-server-license-terms --telemetry-level=all
+apietrz+    85  0.0  0.6 939080 78288 pts/1    Sl+  Jan06   0:52 /home/apietrzyk/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/node /home/apietrzyk/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/out/server-main.js --host=127.0.0.1 --port=0 --connection-token=279866484-3765522313-670392630-1256565340 --use-host-proxy --without-browser-env-var --disable-websocket-compression --accept-server-license-terms --telemetry-level=all
+apietrz+   104  0.0  0.4 636040 54168 pts/1    Sl+  Jan06   0:48 /home/apietrzyk/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/node /home/apietrzyk/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/out/bootstrap-fork --type=ptyHost --logsPath /home/apietrzyk/.vscode-server/data/logs/20230106T120406
+apietrz+   142  0.6  0.7 958212 92780 pts/1    Sl+  Jan06   8:29 /home/apietrzyk/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/node /home/apietrzyk/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=true
+apietrz+   153  0.0  0.3 835612 47192 pts/1    Sl+  Jan06   0:45 /home/apietrzyk/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/node /home/apietrzyk/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/out/bootstrap-fork --type=fileWatcher
+apietrz+   184  0.0  0.0   6096  5052 pts/4    Ss+  Jan06   0:00 /usr/bin/bash --init-file /home/apietrzyk/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/out/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.sh
+apietrz+   701  0.0  0.3 584844 42964 pts/3    Ssl+ 12:48   0:06 /home/apietrzyk/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/node -e  const net = require('net'); process.stdin.pause(); const client = net.createConnection({ host: '127.0.0.1', port: 34685 }, () => { client.pipe(process.stdout); process.stdin.pipe(client); }); client.on('close', function (hadError) { console.error(hadError ? 'Remote close with error' : 'Remote close'); process.exit(hadError ? 1 : 0); }); client.on('error', function (err) { process.stderr.write(err && (err.stack || err.message) || String(err)); });
+apietrz+   710  0.0  0.3 584828 42792 pts/2    Ssl+ 12:48   0:03 /home/apietrzyk/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/node -e  const net = require('net'); process.stdin.pause(); const client = net.createConnection({ host: '127.0.0.1', port: 34685 }, () => { client.pipe(process.stdout); process.stdin.pipe(client); }); client.on('close', function (hadError) { console.error(hadError ? 'Remote close with error' : 'Remote close'); process.exit(hadError ? 1 : 0); }); client.on('error', function (err) { process.stderr.write(err && (err.stack || err.message) || String(err)); });
+   42  mkdir LinuxPD
+   43  touch LinuxPD/processes.txt
+   44  ps -aux > LinuxPD/processes.txt
+   45  cd LinuxPD/
+   46  cp processes.txt copy.txt
+   47  mkdir backup
+   48  mv copy.txt backup/
+   49  wc -l processes.txt
+   50  wc -l processes.txt > selected.txt
+   51  grep "/bin" processes.txt >> selected.txt
+   52  history
+   53  history | tail -n12 > commands.txt
