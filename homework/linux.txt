@@ -3,7 +3,7 @@ daq$ cat selected.txt commands.txt
   1  touch processes.txt
   2  ps aux > processes.txt
   3  mkdir backup
-  4  cp copy.txt backup/copy.txt
+  4  mv copy.txt backup/copy.txt
   5  cp processes.txt copy.txt
   6  wc copy.txt > selected.txt
   7  grep -n '/bin' processes.txt >> selected.txt
