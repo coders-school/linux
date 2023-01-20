@@ -1,9 +1,10 @@
 daq$ cat selected.txt commands.txt
-  687  mkdir test
-  688  cd test/
-  689  touch processes.txt
-  690  ps aux > processes.txt
-  691  cp processes.txt copy.txt
-  692  wc -l copy.txt > selected.txt
-  693  grep '/bin' processes.txt > selected.txt
-  694  history | tail -n 8 > commands.txt
+  7  87 574 processes.txt
+  1  touch processes.txt
+  2  ps aux > processes.txt
+  3  mkdir backup
+  4  cp copy.txt backup/copy.txt
+  5  cp processes.txt copy.txt
+  6  wc copy.txt > selected.txt
+  7  grep -n '/bin' processes.txt >> selected.txt
+  8  history | tail -n 8 > commands.txt
