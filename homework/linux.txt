@@ -5,6 +5,6 @@ daq$ cat selected.txt commands.txt
   3  mkdir backup
   4  mv copy.txt backup/copy.txt
   5  cp processes.txt copy.txt
-  6  wc copy.txt > selected.txt
+  6  wc -l processes.txt > selected.txt
   7  grep -n '/bin' processes.txt >> selected.txt
   8  history | tail -n 8 > commands.txt
