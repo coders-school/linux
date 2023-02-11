@@ -1,54 +1,58 @@
- [marcin|17:10:26| ~/CppProjekty/CodersSchoolProjects/Linux/AnyDirectory ]$ cat selected.txt commands.txt 
+ [marcin|18:37:15| ~/CppProjekty/CodersSchoolProjects/Linux/Folder ]$ cat selected.txt commands.txt 
 310 processes.txt
-dbus        1131  0.0  0.0   9476  4480 ?        Ss   09:05   0:00 /usr/bin/dbus-broker-launch --scope system --audit
-root        1215  0.0  0.3 545256 24340 ?        Ss   09:05   0:00 /usr/bin/abrt-dump-journal-core -D -T -f -e
-root        1216  0.0  0.2 525512 21884 ?        Ss   09:05   0:00 /usr/bin/abrt-dump-journal-oops -fxtD
-root        1220  0.0  0.3 539068 24260 ?        Ss   09:05   0:00 /usr/bin/abrt-dump-journal-xorg -fxtD
-root        1222  0.0  0.5 354832 44736 ?        Ssl  09:05   0:01 /usr/bin/python3 -sP /usr/sbin/firewalld --nofork --nopid
-marcin      2150  0.0  0.0 454916  7812 ?        Sl   09:08   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
-marcin      2155  0.0  0.0 374336  5920 tty2     Ssl+ 09:08   0:00 /usr/libexec/gdm-wayland-session /usr/bin/gnome-session
-marcin      2158  0.0  0.0   8972  3904 ?        Ss   09:08   0:00 /usr/bin/dbus-broker-launch --scope user
-marcin      2273  0.0  0.1 277528 13864 ?        S<sl 09:08   0:04 /usr/bin/pipewire
-marcin      2274  0.0  0.2 471656 18612 ?        S<sl 09:08   0:00 /usr/bin/wireplumber
-marcin      2309  3.3  3.7 4935292 299804 ?      Ssl  09:08  15:51 /usr/bin/gnome-shell
-marcin      2430  0.0  0.3 258720 25012 ?        S<sl 09:08   0:05 /usr/bin/pipewire-pulse
-marcin      2519  0.0  0.3 3091908 29128 ?       Ssl  09:08   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-marcin      2537  0.0  0.1 528200 12756 ?        Ssl  09:08   0:01 /usr/bin/ibus-daemon --panel disable
-marcin      2658  0.0  0.3 3083712 28668 ?       Ssl  09:08   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
-marcin      2756  0.1  5.8 1669408 466780 ?      Sl   09:08   0:33 /usr/bin/gnome-software --gapplication-service
-marcin      2764  0.0  0.7 627296 56536 ?        Sl   09:08   0:00 /usr/bin/python3 -Es /usr/bin/seapplet
-marcin      2769  0.0  1.1 890348 90776 ?        Sl   09:08   0:10 /usr/bin/python3 /usr/bin/dnfdragora-updater
-marcin      2770  0.0  0.2 523008 20096 ?        Ssl  09:08   0:00 /usr/bin/abrt-applet --gapplication-service
-marcin      3086  0.0  1.0 653888 84776 ?        Sl   09:08   0:01 /usr/bin/python3 /usr/share/ibus-typing-booster/engine/main.py --ibus
-marcin      3093  0.0  0.0 222940  3440 ?        S    09:09   0:00 /bin/bash /usr/bin/brave-browser-stable
-marcin      3177  0.0  0.5 843052 47340 ?        Sl   09:09   0:01 /usr/bin/akonadi_control
-marcin      3186  0.0  0.4 2608068 37908 ?       Sl   09:09   0:01 /usr/bin/akonadiserver
-marcin      3237  0.0  0.7 938308 57092 ?        Sl   09:09   0:00 /usr/bin/akonadi_akonotes_resource --identifier akonadi_akonotes_resource_0
-marcin      3238  0.0  1.7 1640980 140976 ?      Sl   09:09   0:01 /usr/bin/akonadi_archivemail_agent --identifier akonadi_archivemail_agent
-marcin      3239  0.0  0.7 940736 57236 ?        Sl   09:09   0:00 /usr/bin/akonadi_birthdays_resource --identifier akonadi_birthdays_resource
-marcin      3240  0.0  0.7 939180 56632 ?        Sl   09:09   0:00 /usr/bin/akonadi_contacts_resource --identifier akonadi_contacts_resource_0
-marcin      3241  0.0  0.7 1014744 59100 ?       Sl   09:09   0:04 /usr/bin/akonadi_followupreminder_agent --identifier akonadi_followupreminder_agent
-marcin      3242  0.0  0.7 943748 60536 ?        Sl   09:09   0:00 /usr/bin/akonadi_ical_resource --identifier akonadi_ical_resource_0
-marcin      3243  0.0  0.7 944948 60068 ?        SNl  09:09   0:00 /usr/bin/akonadi_indexing_agent --identifier akonadi_indexing_agent
-marcin      3244  0.0  0.7 938384 57108 ?        Sl   09:09   0:00 /usr/bin/akonadi_maildir_resource --identifier akonadi_maildir_resource_0
-marcin      3284  0.0  0.7 1013952 58720 ?       Sl   09:09   0:04 /usr/bin/akonadi_maildispatcher_agent --identifier akonadi_maildispatcher_agent
-marcin      3286  0.0  1.7 1641120 141040 ?      Sl   09:09   0:01 /usr/bin/akonadi_mailfilter_agent --identifier akonadi_mailfilter_agent
-marcin      3296  0.0  0.8 1033664 65968 ?       Sl   09:09   0:04 /usr/bin/akonadi_mailmerge_agent --identifier akonadi_mailmerge_agent
-marcin      3297  0.0  0.7 939600 57240 ?        Sl   09:09   0:00 /usr/bin/akonadi_migration_agent --identifier akonadi_migration_agent
-marcin      3298  0.0  0.8 961008 66184 ?        Sl   09:09   0:00 /usr/bin/akonadi_newmailnotifier_agent --identifier akonadi_newmailnotifier_agent
-marcin      3315  0.0  1.7 1634560 137528 ?      Sl   09:09   0:04 /usr/bin/akonadi_sendlater_agent --identifier akonadi_sendlater_agent
-marcin      3317  0.0  1.7 1567316 140448 ?      Sl   09:09   0:01 /usr/bin/akonadi_unifiedmailbox_agent --identifier akonadi_unifiedmailbox_agent
-marcin      6160  0.0  0.3 517968 24836 ?        Ssl  09:33   0:00 /usr/bin/kglobalaccel5
-marcin     14409  0.0  1.8 3712700 146648 ?      Ssl  10:28   0:01 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Extensions
-  330  mkdir AnyDirectory
-  331  cd AnyDirectory/
-  332  touch processes.txt
-  333  ps aux > processes.txt 
-  334  cp processes.txt copy.txt
-  335  mkdir backup
-  336  mv copy.txt backup/
-  337  wc -l processes.txt 
-  338  wc -l processes.txt > selected.txt
-  339  grep "/bin" processes.txt >> selected.txt 
-  340  history
-  341  history | tail -n 13 > commands.txt
+103:earlyoom     963  0.0  0.0   2604  1828 ?        SLs  09:05   0:03 /usr/bin/earlyoom -r 0 -m 4 -M 409600 --prefer ^(Web Content|Isolated Web Co)$ --avoid ^(dnf|packagekitd|gnome-shell|gnome-session-c|gnome-session-b|lightdm|sddm|sddm-helper|gdm|gdm-wayland-ses|gdm-session-wor|gdm-x-session|Xorg|Xwayland|systemd|systemd-logind|dbus-daemon|dbus-broker|cinnamon|cinnamon-sessio|kwin_x11|kwin_wayland|plasmashell|ksmserver|plasma_session|startplasma-way|xfce4-session|mate-session|marco|lxqt-session|openbox|cryptsetup)$
+120:dbus        1131  0.0  0.0   9476  4480 ?        Ss   09:05   0:00 /usr/bin/dbus-broker-launch --scope system --audit
+126:root        1215  0.0  0.3 545256 24340 ?        Ss   09:05   0:00 /usr/bin/abrt-dump-journal-core -D -T -f -e
+127:root        1216  0.0  0.2 525512 21884 ?        Ss   09:05   0:00 /usr/bin/abrt-dump-journal-oops -fxtD
+128:root        1220  0.0  0.3 539068 24260 ?        Ss   09:05   0:00 /usr/bin/abrt-dump-journal-xorg -fxtD
+130:root        1222  0.0  0.5 354832 44736 ?        Ssl  09:05   0:01 /usr/bin/python3 -sP /usr/sbin/firewalld --nofork --nopid
+148:marcin      2150  0.0  0.0 454916  7812 ?        Sl   09:08   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+149:marcin      2155  0.0  0.0 374336  5920 tty2     Ssl+ 09:08   0:00 /usr/libexec/gdm-wayland-session /usr/bin/gnome-session
+150:marcin      2158  0.0  0.0   8972  3904 ?        Ss   09:08   0:00 /usr/bin/dbus-broker-launch --scope user
+158:marcin      2273  0.0  0.1 277528 13888 ?        S<sl 09:08   0:08 /usr/bin/pipewire
+159:marcin      2274  0.0  0.2 471656 18612 ?        S<sl 09:08   0:00 /usr/bin/wireplumber
+160:marcin      2309  4.9  3.6 4935488 294364 ?      Ssl  09:08  27:10 /usr/bin/gnome-shell
+162:marcin      2396  0.0  0.0   8844  3584 ?        S    09:08   0:00 /usr/bin/dbus-broker-launch --config-file=/usr/share/defaults/at-spi2/accessibility.conf --scope user
+166:marcin      2430  0.0  0.3 258744 25040 ?        S<sl 09:08   0:10 /usr/bin/pipewire-pulse
+180:marcin      2519  0.0  0.3 3091908 29144 ?       Ssl  09:08   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+182:marcin      2537  0.0  0.1 528200 12756 ?        Ssl  09:08   0:01 /usr/bin/ibus-daemon --panel disable
+200:marcin      2658  0.0  0.3 3083712 28668 ?       Ssl  09:08   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
+203:marcin      2756  0.1  5.8 1669408 466780 ?      Sl   09:08   0:33 /usr/bin/gnome-software --gapplication-service
+206:marcin      2764  0.0  0.7 627296 56536 ?        Sl   09:08   0:00 /usr/bin/python3 -Es /usr/bin/seapplet
+209:marcin      2769  0.0  1.1 890348 90776 ?        Sl   09:08   0:11 /usr/bin/python3 /usr/bin/dnfdragora-updater
+210:marcin      2770  0.0  0.2 523008 20096 ?        Ssl  09:08   0:00 /usr/bin/abrt-applet --gapplication-service
+221:marcin      3086  0.0  1.0 653888 84776 ?        Sl   09:08   0:01 /usr/bin/python3 /usr/share/ibus-typing-booster/engine/main.py --ibus
+222:marcin      3093  0.0  0.0 222940  3440 ?        S    09:09   0:00 /bin/bash /usr/bin/brave-browser-stable
+226:marcin      3177  0.0  0.5 843052 47340 ?        Sl   09:09   0:01 /usr/bin/akonadi_control
+227:marcin      3186  0.0  0.4 2608068 37856 ?       Sl   09:09   0:01 /usr/bin/akonadiserver
+229:marcin      3237  0.0  0.7 938308 57092 ?        Sl   09:09   0:00 /usr/bin/akonadi_akonotes_resource --identifier akonadi_akonotes_resource_0
+230:marcin      3238  0.0  1.7 1640980 140976 ?      Sl   09:09   0:01 /usr/bin/akonadi_archivemail_agent --identifier akonadi_archivemail_agent
+231:marcin      3239  0.0  0.7 940736 57236 ?        Sl   09:09   0:00 /usr/bin/akonadi_birthdays_resource --identifier akonadi_birthdays_resource
+232:marcin      3240  0.0  0.7 939180 56632 ?        Sl   09:09   0:00 /usr/bin/akonadi_contacts_resource --identifier akonadi_contacts_resource_0
+233:marcin      3241  0.0  0.7 1014744 59100 ?       Sl   09:09   0:04 /usr/bin/akonadi_followupreminder_agent --identifier akonadi_followupreminder_agent
+234:marcin      3242  0.0  0.7 943748 60536 ?        Sl   09:09   0:00 /usr/bin/akonadi_ical_resource --identifier akonadi_ical_resource_0
+235:marcin      3243  0.0  0.7 944948 60068 ?        SNl  09:09   0:00 /usr/bin/akonadi_indexing_agent --identifier akonadi_indexing_agent
+236:marcin      3244  0.0  0.7 938384 57108 ?        Sl   09:09   0:00 /usr/bin/akonadi_maildir_resource --identifier akonadi_maildir_resource_0
+237:marcin      3284  0.0  0.7 1013952 58720 ?       Sl   09:09   0:04 /usr/bin/akonadi_maildispatcher_agent --identifier akonadi_maildispatcher_agent
+238:marcin      3286  0.0  1.7 1641120 141040 ?      Sl   09:09   0:01 /usr/bin/akonadi_mailfilter_agent --identifier akonadi_mailfilter_agent
+239:marcin      3296  0.0  0.8 1033664 65968 ?       Sl   09:09   0:05 /usr/bin/akonadi_mailmerge_agent --identifier akonadi_mailmerge_agent
+240:marcin      3297  0.0  0.7 939600 57240 ?        Sl   09:09   0:00 /usr/bin/akonadi_migration_agent --identifier akonadi_migration_agent
+241:marcin      3298  0.0  0.8 961008 66184 ?        Sl   09:09   0:00 /usr/bin/akonadi_newmailnotifier_agent --identifier akonadi_newmailnotifier_agent
+242:marcin      3315  0.0  1.7 1634560 137528 ?      Sl   09:09   0:05 /usr/bin/akonadi_sendlater_agent --identifier akonadi_sendlater_agent
+243:marcin      3317  0.0  1.7 1567316 140448 ?      Sl   09:09   0:01 /usr/bin/akonadi_unifiedmailbox_agent --identifier akonadi_unifiedmailbox_agent
+249:marcin      3470  1.4  1.1 582072 88660 ?        Sl   09:09   7:52 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.7FU0Z1 -listenfd 4 -listenfd 5 -displayfd 6 -initfd 7
+259:marcin      3837  0.0  0.7 829324 61472 ?        Sl   09:10   0:19 /usr/bin/plasma-browser-integration-host chrome-extension://cimiefiiaegbelhefglklhhakcgmhkai/
+260:marcin      3845  0.0  0.2 473132 22180 ?        Sl   09:10   0:00 /usr/bin/python3 /usr/bin/gnome-browser-connector-host chrome-extension://gphhapmejobijbbhgpjhcjognlahblep/
+272:marcin      6160  0.0  0.3 517968 24836 ?        Ssl  09:33   0:00 /usr/bin/kglobalaccel5
+274:marcin     14409  0.0  1.8 3712700 146648 ?      Ssl  10:28   0:01 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Extensions
+  357  mkdir Folder && cd Folder
+  358  touch processes.txt
+  359  ps aux > processes.txt 
+  360  cp processes.txt copy.txt
+  361  mkdir backup
+  362  mv copy.txt backup/
+  363  wc -l processes.txt 
+  364  wc -l processes.txt > selected.txt
+  365  grep -n "/bin" processes.txt >> selected.txt 
+  366  history
+  367  history | tail -n 11 > commands.txt
