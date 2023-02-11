@@ -53,7 +53,6 @@ marcin     14409  0.0  1.8 3712700 146648 ?      Ssl  10:28   0:01 /usr/bin/gjs 
   336  mv copy.txt backup/
   337  wc -l processes.txt 
   338  wc -l processes.txt > selected.txt
-  339  grep /bin processes.txt 
-  340  grep /bin processes.txt >> selected.txt 
-  341  history
-  342  history | tail -12 > commands.txt
+  339  grep /bin processes.txt >> selected.txt 
+  340  history
+  341  history | tail -12 > commands.txt
