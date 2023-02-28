@@ -36,3 +36,4 @@ bobro@abobro:~/homework1$ cat selected.txt commands.txt
  1518  history | tail -n12
  1519  history | tail -n14
  1520  history | tail -n15 > commands.txt
+ 
