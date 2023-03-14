@@ -1,0 +1,47 @@
+cat selected.txt commands.txt 
+166 processes.txt
+91:message+     555  0.0  0.1   9648  5840 ?        Ss   12:04   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+101:root         612  0.0  0.5 108716 21220 ?        Ssl  12:04   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+103:root         618  0.0  0.3 136024 15700 ?        Ssl  12:04   0:00 /usr/bin/sddm
+107:root         713  0.0  0.3  56136 14960 ?        S    12:04   0:00 /usr/lib/x86_64-linux-gnu/sddm/sddm-helper --socket /tmp/sddm-auth00275cc7-5001-4e72-8920-d49bd2d17f5a --id 1 --start /usr/bin/startplasma-x11 --user lab
+110:lab          730  0.0  0.1  91052  6008 ?        S<sl 12:04   0:00 /usr/bin/pipewire
+111:lab          731  0.0  0.7 1158476 28676 ?       S<sl 12:04   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+112:lab          734  0.0  0.1   8544  5028 ?        Ss   12:04   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+113:lab          736  0.0  0.1  85360  6644 ?        S<l  12:04   0:00 /usr/bin/pipewire-media-session
+114:lab          739  0.0  1.0 282132 42928 ?        Sl   12:04   0:00 /usr/bin/kwalletd5 --pam-login 7 3
+115:lab          740  0.0  0.4 144332 18092 ?        Sl   12:04   0:00 /usr/bin/startplasma-x11
+117:lab          786  0.0  0.0   6032   468 ?        Ss   12:04   0:00 /usr/bin/ssh-agent /usr/bin/startplasma-x11
+121:lab          827  0.0  2.2 927788 89668 ?        Sl   12:04   0:04 /usr/bin/kded5
+122:lab          831  0.7  3.8 3347096 151012 ?      Rl   12:04   0:31 /usr/bin/kwin_x11
+126:lab          886  0.0  0.0   9528  3896 ?        S    12:04   0:00 /usr/bin/xsettingsd
+127:lab          888  0.0  1.1 284968 46052 ?        Sl   12:04   0:00 /usr/bin/ksmserver
+128:lab          890  0.0  1.0 281580 42472 ?        Ssl  12:04   0:00 /usr/bin/kglobalaccel5
+129:lab          910  0.0  0.5 235340 22280 ?        Sl   12:04   0:00 /usr/bin/xembedsniproxy
+131:lab          921  1.3  6.6 2357880 260520 ?      Sl   12:04   1:01 /usr/bin/plasmashell
+132:lab          923  0.0  1.0 280888 41824 ?        Sl   12:04   0:00 /usr/bin/kaccess
+135:lab          953  0.0  0.5 234252 23516 ?        Sl   12:04   0:00 /usr/bin/gmenudbusmenuproxy
+136:lab          971  0.0  1.4 315552 58828 ?        Sl   12:04   0:00 /usr/bin/korgac -session 10ca636c61000167846964200000008980011_1678740638_527577
+141:lab         1009  0.0  0.1   8100  4444 ?        S    12:04   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+147:lab         1809  0.1  2.3 1006744 91772 ?       Sl   12:30   0:03 /usr/bin/dolphin
+157:lab         2613  0.4  2.2 932908 89040 ?        Sl   12:45   0:08 /usr/bin/konsole
+158:lab         2625  0.0  0.1   9012  5684 pts/1    Ss   12:45   0:00 /bin/bash
+  483  mkdir linux_homework
+  484  cd linux_homework/
+  485  touch processes.txt
+  486  ls
+  487  ps aux > processes.txt 
+  488  cat processes.txt 
+  489  clear
+  490  cp processes.txt copy.txt
+  491  ls
+  492  mkdir backup
+  493  mv copy.txt backup/
+  494  man wc
+  495  wc -l processes.txt 
+  496  wc -l processes.txt > selected.txt
+  497  ls
+  498  cat selected.txt 
+  499  man grep
+  500  grep -ni /bin processes.txt >> selected.txt 
+  501  history 
+  502  history | tail -n +483 > commands.txt
