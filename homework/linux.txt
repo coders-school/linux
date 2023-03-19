@@ -1,78 +1,41 @@
-lubanskp@lubanskp-VirtualBox:~/Desktop/Kurs C++ /Linux_homework$ cat selected.txt commands.txt
-177 processes.txt
-80:message+     531  0.3  0.2   8884  5992 ?        Ss   17:16   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-82:root         543  0.0  0.9  50464 20184 ?        Ss   17:16   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-94:root         677  0.0  1.1 128992 22852 ?        Ssl  17:16   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-97:whoopsie     725  0.0  0.7 326844 15376 ?        Ssl  17:17   0:00 /usr/bin/whoopsie -f
-102:lubanskp     807  0.1  0.9 1419392 18784 ?       S<sl 17:17   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-104:lubanskp     812  0.0  0.3 251348  6936 ?        SLl  17:17   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
-105:lubanskp     817  0.0  0.3 175164  6700 tty2     Ssl+ 17:17   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-108:lubanskp     844  0.1  0.4  11496  8684 ?        Ss   17:17   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-120:lubanskp     962  0.0  0.3 251056  7628 ?        Sl   17:17   0:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
-121:lubanskp    1019  0.0  0.0   6040   456 ?        Ss   17:17   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-122:lubanskp    1036  0.1  0.3 322108  7120 ?        Ssl  17:17   0:00 /usr/bin/ibus-daemon --daemonize --xim
-129:lubanskp    1059  0.0  0.2   7356  4200 ?        S    17:17   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-138:lubanskp    1125  5.7 17.5 3687980 357792 ?      Ssl  17:17   0:15 /usr/bin/gnome-shell
-143:lubanskp    1193  0.0  1.2 2609696 26244 ?       Sl   17:17   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-173:lubanskp    2245  0.2  2.2 479376 44876 ?        SLl  17:19   0:00 /usr/bin/seahorse --gapplication-service
-174:lubanskp    2247  0.2  2.8 724508 58792 ?        Sl   17:19   0:00 /usr/bin/gnome-calendar --gapplication-service
-  285  cd Desktop/
-  286  cd Kurs\ C++\ /
-  287  mkdir Linux_homework
-  288  ls
-  289  cd Linux_homework/
-  290  touch processes.txt
-  291  ls
-  292  ps aux > processes.txt
-  293  man ps
-  294  cp processes.txt copy.txt
-  295  ls
-  296  mkdir backup
-  297  move copy.txt backup
-  298  mv copy.txt backup
-  299  ls
-  300  cd backup/
-  301  ls
-  302  wc
-  303  man wc
-  304  wc -l copy.txt
-  305  cd ..
-  306  ls
-  307  wc -l processes.txt
-  308  wc -l processes.txt > selected.txt
-  309  ls
-  310  cat selected.txt 
-  311  ls
-  312  grep -rni /bin processes.txt 
-  313  grep -rni /bin processes.txt > selected.txt
-  314  ls
-  315  cat selected.txt 
-  316  wc -l processes.txt > selected.txt
-  317  ls
-  318  cat selected.txt 
-  319  grep -rni /bin processes.txt >> selected.txt
-  320  cat selected.txt 
-  321  clear
-  322  history
-  323  man tail
-  324  history | tail -n +285
-  325  history | tail -n +285 >> commands.txt
-  326  ls
-  327  cat commands.txt 
-  328  less selected.txt
-  329  less selected.txt commands.txt
-  330  cat selected.txt commands.txt
-  331  history | tail -n +285 > commands.txt
-  332  cat selected.txt commands.txt
-  333  man tail
-  334  history | tail -n 15
-  335  history | tail -n 20
-  336  history | tail -n 30
-  337  history | tail -n 60
-  338  history | tail -n 55
-  339  cd Desktop/
-  340  cd Kurs\ C++\ /
-  341  ls
-  342  cd Linux_homework/
-  343  ls
-  344  history | tail -n 60 > commands.txt
+lubanskp@DESKTOP-I46UPH6:~/C++/linux_homework$ cat selected.txt commands.txt                                            
+6 processes.txt
+141  mkdir linux_homework
+142  ls
+143  cd linux_homework/
+144  touch processes.txt
+145  ls
+146  ps aux > processes.txt
+147  cat processes.txt
+148  cp processes.txt copy.txt
+149  ls
+150  cat copy.txt  
+151  mkdir backup
+152  mv copy.txt ./backup
+153  ls  
+154  cd backup/
+155  ls  
+156  cd ..
+157  wc processes.txt > selected.txt
+158  ls
+159  cat selected.txt
+160  man wc
+161  wc -l processes.txt > selected.txt
+162  cat selected.txt
+163  grep /bin processes.txt 
+164  grep "/bin" processes.txt
+165  grep "/bin" processes.txt >> processes.txt
+166  grep "/bin" processes.txt >> selected.txt
+167  cat selected.txt
+168  grep "/init" processes.txt >> selected.txt  
+169  cat selected.txt
+170  rm selected.txt
+171  ls
+172  wc -l processes.txt > selected.txt 
+173  grep "/bin" processes.txt >> selected.txt      
+174  cat selected.txt               
+175  history                          
+176  history | tail -n20           
+177  history | tail -n35           
+178  history | tail -n38           
+179  history | tail -n39 > commands.txt   
