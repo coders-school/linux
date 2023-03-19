@@ -25,7 +25,7 @@ lubanskp@DESKTOP-I46UPH6:~/C++/linux_homework$ cat selected.txt commands.txt
 163  grep /bin processes.txt 
 164  grep "/bin" processes.txt
 165  grep "/bin" processes.txt >> processes.txt
-166  grep "/bin" processes.txt >> selected.txt
+166  grep -rni /bin processes.txt >> selected.txt
 167  cat selected.txt
 168  grep "/init" processes.txt >> selected.txt  
 169  cat selected.txt
