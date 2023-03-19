@@ -1,69 +1,38 @@
 klaudiusz@klaudiusz:~/Coders_School/linux_homework$ cat selected.txt commands.txt 
-210 processes.txt
-backup/copy.txt:112:message+     645  0.0  0.0   9952  6428 ?        Ss   19:44   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-backup/copy.txt:116:root         661  0.0  0.1  42264 20660 ?        Ss   19:44   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-backup/copy.txt:127:root         754  0.0  0.2 120572 22620 ?        Ssl  19:44   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-backup/copy.txt:130:whoopsie     878  0.0  0.1 253116 15440 ?        Ssl  19:44   0:00 /usr/bin/whoopsie -f
-backup/copy.txt:141:klaudiu+    7544  0.0  0.1 1485632 19752 ?       S<sl 19:45   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-backup/copy.txt:143:klaudiu+    7554  0.0  0.0   8728  5992 ?        Ss   19:45   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-backup/copy.txt:144:klaudiu+    7556  0.0  0.0 243040  7976 ?        Sl   19:45   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
-backup/copy.txt:154:klaudiu+    7715  0.0  0.0 166720  6620 tty2     Ssl+ 19:45   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-backup/copy.txt:157:klaudiu+    7961  0.0  0.0  25140   360 ?        S    19:45   0:00 /usr/bin/VBoxClient --clipboard
-backup/copy.txt:158:klaudiu+    7964  0.0  0.0 157408  4304 ?        Sl   19:45   0:00 /usr/bin/VBoxClient --clipboard
-backup/copy.txt:159:klaudiu+    7974  0.0  0.0  25140   360 ?        S    19:45   0:00 /usr/bin/VBoxClient --seamless
-backup/copy.txt:160:klaudiu+    7976  0.0  0.0 157376  2632 ?        Sl   19:45   0:00 /usr/bin/VBoxClient --seamless
-backup/copy.txt:161:klaudiu+    7983  0.0  0.0  25140   360 ?        S    19:45   0:00 /usr/bin/VBoxClient --draganddrop
-backup/copy.txt:162:klaudiu+    7984  0.1  0.0 157892  2632 ?        Sl   19:45   0:01 /usr/bin/VBoxClient --draganddrop
-backup/copy.txt:163:klaudiu+    7992  0.0  0.0  25140   360 ?        S    19:45   0:00 /usr/bin/VBoxClient --vmsvga
-backup/copy.txt:164:klaudiu+    7993  0.0  0.0 159656  3488 ?        Sl   19:45   0:00 /usr/bin/VBoxClient --vmsvga
-backup/copy.txt:165:klaudiu+    7998  0.0  0.0   6040   452 ?        Ss   19:45   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-backup/copy.txt:167:klaudiu+    8067  0.0  0.0   7248  4208 ?        S    19:45   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-backup/copy.txt:170:klaudiu+    8226  1.5  3.4 5050812 370088 ?      Rsl  19:45   0:09 /usr/bin/gnome-shell
-backup/copy.txt:183:klaudiu+    8802  0.0  0.2 2804124 26784 ?       Sl   19:45   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-processes.txt:112:message+     645  0.0  0.0   9952  6428 ?        Ss   19:44   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-processes.txt:116:root         661  0.0  0.1  42264 20660 ?        Ss   19:44   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-processes.txt:127:root         754  0.0  0.2 120572 22620 ?        Ssl  19:44   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-processes.txt:130:whoopsie     878  0.0  0.1 253116 15440 ?        Ssl  19:44   0:00 /usr/bin/whoopsie -f
-processes.txt:141:klaudiu+    7544  0.0  0.1 1485632 19752 ?       S<sl 19:45   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-processes.txt:143:klaudiu+    7554  0.0  0.0   8728  5992 ?        Ss   19:45   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-processes.txt:144:klaudiu+    7556  0.0  0.0 243040  7976 ?        Sl   19:45   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
-processes.txt:154:klaudiu+    7715  0.0  0.0 166720  6620 tty2     Ssl+ 19:45   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-processes.txt:157:klaudiu+    7961  0.0  0.0  25140   360 ?        S    19:45   0:00 /usr/bin/VBoxClient --clipboard
-processes.txt:158:klaudiu+    7964  0.0  0.0 157408  4304 ?        Sl   19:45   0:00 /usr/bin/VBoxClient --clipboard
-processes.txt:159:klaudiu+    7974  0.0  0.0  25140   360 ?        S    19:45   0:00 /usr/bin/VBoxClient --seamless
-processes.txt:160:klaudiu+    7976  0.0  0.0 157376  2632 ?        Sl   19:45   0:00 /usr/bin/VBoxClient --seamless
-processes.txt:161:klaudiu+    7983  0.0  0.0  25140   360 ?        S    19:45   0:00 /usr/bin/VBoxClient --draganddrop
-processes.txt:162:klaudiu+    7984  0.1  0.0 157892  2632 ?        Sl   19:45   0:01 /usr/bin/VBoxClient --draganddrop
-processes.txt:163:klaudiu+    7992  0.0  0.0  25140   360 ?        S    19:45   0:00 /usr/bin/VBoxClient --vmsvga
-processes.txt:164:klaudiu+    7993  0.0  0.0 159656  3488 ?        Sl   19:45   0:00 /usr/bin/VBoxClient --vmsvga
-processes.txt:165:klaudiu+    7998  0.0  0.0   6040   452 ?        Ss   19:45   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-processes.txt:167:klaudiu+    8067  0.0  0.0   7248  4208 ?        S    19:45   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-processes.txt:170:klaudiu+    8226  1.5  3.4 5050812 370088 ?      Rsl  19:45   0:09 /usr/bin/gnome-shell
-processes.txt:183:klaudiu+    8802  0.0  0.2 2804124 26784 ?       Sl   19:45   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
- 1937  mkdir linux_homework 
- 1938  ls 
- 1939  cd linux_homework/
- 1940  touch processes.txt
- 1941  ps aux >> processes.txt 
- 1942  cat processes.txt 
- 1943  cp processes.txt copy.txt
- 1944  ls 
- 1945  mkdir backup
- 1946  mv copy.txt backup/
- 1947  ls 
- 1948  cd ..
- 1949  cd linux_homework/
- 1950  cd backup/
- 1951  ls 
- 1952  cd ..
- 1953  ls 
- 1954  grep -rni processes.txt 
- 1955  wc processes.txt 
- 1956  wc -l processes.txt 
- 1957  wc -l processes.txt > selected.txt
- 1958  ls 
- 1959  cat selected.txt 
- 1960  grep -rni /bin >> selected.txt 
- 1961  cat selected.txt 
- 1962  history 
- 1963  history | tail -n27 > commands.txt
+220 processes.txt
+100:message+     645  0.0  0.0   9956  6452 ?        Ss   19:44   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+104:root         661  0.0  0.1  42264 20660 ?        Ss   19:44   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+115:root         754  0.0  0.2 120572 22620 ?        Ssl  19:44   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+118:whoopsie     878  0.0  0.1 253116 15440 ?        Ssl  19:44   0:00 /usr/bin/whoopsie -f
+128:klaudiu+    7544  0.0  0.1 1485632 19756 ?       S<sl 19:45   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+130:klaudiu+    7554  0.0  0.0   8728  6020 ?        Ss   19:45   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+131:klaudiu+    7556  0.0  0.0 243040  7976 ?        Sl   19:45   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+141:klaudiu+    7715  0.0  0.0 166720  6620 tty2     Ssl+ 19:45   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+144:klaudiu+    7961  0.0  0.0  25140   360 ?        S    19:45   0:00 /usr/bin/VBoxClient --clipboard
+145:klaudiu+    7964  0.0  0.0 157408  4304 ?        Sl   19:45   0:00 /usr/bin/VBoxClient --clipboard
+146:klaudiu+    7974  0.0  0.0  25140   360 ?        S    19:45   0:00 /usr/bin/VBoxClient --seamless
+147:klaudiu+    7976  0.0  0.0 157376  2632 ?        Sl   19:45   0:00 /usr/bin/VBoxClient --seamless
+148:klaudiu+    7983  0.0  0.0  25140   360 ?        S    19:45   0:00 /usr/bin/VBoxClient --draganddrop
+149:klaudiu+    7984  0.1  0.0 157892  2632 ?        Sl   19:45   0:06 /usr/bin/VBoxClient --draganddrop
+150:klaudiu+    7992  0.0  0.0  25140   360 ?        S    19:45   0:00 /usr/bin/VBoxClient --vmsvga
+151:klaudiu+    7993  0.0  0.0 159656  3488 ?        Sl   19:45   0:00 /usr/bin/VBoxClient --vmsvga
+152:klaudiu+    7998  0.0  0.0   6040   452 ?        Ss   19:45   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+154:klaudiu+    8067  0.0  0.0   7248  4208 ?        S    19:45   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+157:klaudiu+    8226  0.6  3.4 5050836 370296 ?      Ssl  19:45   0:24 /usr/bin/gnome-shell
+170:klaudiu+    8802  0.0  0.2 2804124 26784 ?       Sl   19:45   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+ 1976  mkdir linux_homework 
+ 1977  ls 
+ 1978  cd linux_homework/
+ 1979  touch processes.txt
+ 1980  ps aux >> processes.txt 
+ 1981  cat processes.txt 
+ 1982  cp processes.txt copy.txt
+ 1983  ls 
+ 1984  mkdir backup
+ 1985  mv copy.txt backup/
+ 1986  wc -l processes.txt 
+ 1987  wc -l processes.txt > selected.txt
+ 1988  grep -rni /bin processes.txt >> selected.txt 
+ 1989  cat selected.txt 
+ 1990  history 
+ 1991  history | tail -n16 > commands.txt
