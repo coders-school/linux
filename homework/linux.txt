@@ -19,4 +19,4 @@ hhscanw+   509  0.0  0.8 1388032 65360 pts/1   Sl+  15:08   0:00 /home/hhscanway
   276  wc -l processes.txt > selected.txt
   277  grep "/bin" processes.txt >> selected.txt
   278  history
-  279  history | tail -n +268 > commands.txt
+  279  history | tail -n12 > commands.txt
