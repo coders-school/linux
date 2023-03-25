@@ -1,0 +1,22 @@
+cat selected.txt commands.txt
+22 processes.txt
+hhscanw+   405  0.0  0.0   2612   596 pts/1    S+   15:06   0:00 sh /home/hhscanway/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/bin/code-server --host=127.0.0.1 --port=0 --connection-token=1068473732-2526136219-2550431971-2623250005 --use-host-proxy --without-browser-env-var --disable-websocket-compression --accept-server-license-terms --telemetry-level=all
+hhscanw+   409  0.1  0.9 936392 73936 pts/1    Sl+  15:06   0:04 /home/hhscanway/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/node /home/hhscanway/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/server-main.js --host=127.0.0.1 --port=0 --connection-token=1068473732-2526136219-2550431971-2623250005 --use-host-proxy --without-browser-env-var --disable-websocket-compression --accept-server-license-terms --telemetry-level=all
+hhscanw+   420  0.0  0.5 624736 47616 pts/1    Sl+  15:06   0:00 /home/hhscanway/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/node /home/hhscanway/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/bootstrap-fork --type=ptyHost --logsPath /home/hhscanway/.vscode-server/data/logs/20230325T150624
+hhscanw+   434  0.0  0.5 589772 46796 pts/2    Ssl+ 15:06   0:00 /home/hhscanway/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/node -e  const net = require('net'); process.stdin.pause(); const client = net.createConnection({ host: '127.0.0.1', port: 44239 }, () => { client.pipe(process.stdout); process.stdin.pipe(client); }); client.on('close', function (hadError) { console.error(hadError ? 'Remote close with error' : 'Remote close'); process.exit(hadError ? 1 : 0); }); client.on('error', function (err) { process.stderr.write(err && (err.stack || err.message) || String(err)); });
+hhscanw+   461  0.0  0.5 583772 40644 pts/3    Ssl+ 15:06   0:01 /home/hhscanway/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/node -e  const net = require('net'); process.stdin.pause(); const client = net.createConnection({ host: '127.0.0.1', port: 44239 }, () => { client.pipe(process.stdout); process.stdin.pipe(client); }); client.on('close', function (hadError) { console.error(hadError ? 'Remote close with error' : 'Remote close'); process.exit(hadError ? 1 : 0); }); client.on('error', function (err) { process.stderr.write(err && (err.stack || err.message) || String(err)); });
+hhscanw+   468  0.1  1.4 989344 119556 pts/1   Sl+  15:06   0:06 /home/hhscanway/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/node /home/hhscanway/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=true
+hhscanw+   481  0.4  0.6 1309744 53136 pts/1   Sl+  15:06   0:17 /home/hhscanway/.vscode-server/extensions/ms-vscode.cpptools-1.14.5-linux-x64/bin/cpptools
+hhscanw+   509  0.0  0.8 1388032 65360 pts/1   Sl+  15:08   0:00 /home/hhscanway/.vscode-server/extensions/ms-vscode.cpptools-1.14.5-linux-x64/bin/cpptools-srv 481 {2D9BC5E6-73EB-4F7C-B2E2-DF359F772657}
+  268  mkdir homework
+  269  cd homework/
+  270  touch processes.txt
+  271  ps aux > processes.txt
+  272  cp processes.txt copy.txt
+  273  mkdir backup
+  274  mv copy.txt backup/copy.txt
+  275  wc -l processes.txt
+  276  wc -l processes.txt > selected.txt
+  277  grep "/bin" processes.txt >> selected.txt
+  278  history
+  279  history | tail -n +268 > commands.txt
