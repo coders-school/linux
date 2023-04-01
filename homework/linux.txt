@@ -1,0 +1,72 @@
+cat selected.txt commands.txt 
+184
+103:message+   402  0.0  0.1   8084  3900 ?        Ss   07:26   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+113:root       534  0.0  0.0   8012  2028 ?        Ss   07:26   0:00 /usr/bin/vncserver-x11-serviced -fg
+115:root       538  0.1  0.6  41244 23972 ?        S    07:26   0:37 /usr/bin/vncserver-x11-core -service
+119:root       579  0.0  0.0   8260  3684 tty1     Ss   07:26   0:00 /bin/login -f
+121:root       613  0.0  0.2  15040  8208 ?        S    07:26   0:20 /usr/bin/vncagent service 0
+125:pi_mb      641  0.0  0.1  26604  4908 ?        S<sl 07:26   0:00 /usr/bin/pipewire
+126:pi_mb      642  0.0  0.2 633860 10324 ?        S<sl 07:26   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+127:pi_mb      643  0.0  0.3  56268 12196 ?        Ssl  07:26   0:01 /usr/bin/lxsession -s LXDE-pi -e LXDE -w openbox-lxde-pi
+128:pi_mb      653  0.0  0.0   7684  3528 ?        Ss   07:26   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+130:pi_mb      663  0.0  0.1  19564  5004 ?        S<l  07:26   0:00 /usr/bin/pipewire-media-session
+131:pi_mb      701  0.0  0.0   4616   284 ?        Ss   07:26   0:00 /usr/bin/ssh-agent x-session-manager
+139:pi_mb      783  0.0  0.0   4616   284 ?        Ss   07:26   0:00 /usr/bin/ssh-agent -s
+140:pi_mb      788  0.0  0.7  52356 27208 ?        S    07:26   0:00 /usr/bin/python3 /usr/share/system-config-printer/applet.py
+142:pi_mb      821  0.0  0.4  45192 16388 ?        S    07:26   0:00 /usr/bin/vncserverui service 0
+143:pi_mb      866  0.0  0.4  33300 15836 ?        S    07:26   0:00 /usr/bin/vncserverui -statusicon 0
+144:root       886  0.0  0.0   2052   120 ?        S    07:26   0:00 /usr/bin/hciattach /dev/serial1 bcm43xx 3000000 flow -
+   27  jobs
+   28  lclear
+   29  clear
+   30  mkdir NarzProg_Linux
+   31  cd NarzProg_Linux/
+   32  touch processes.txt
+   33  ls
+   34  ps aux > processes.txt 
+   35  less processes.txt 
+   36  mkdir backup
+   37  ls
+   38  mv processes.txt /backup
+   39  cp processes.txt copy.txt
+   40  ls
+   41  less copy.txt 
+   42  mv -r processes.txt /backup
+   43  man mv
+   44  mv -f processes.txt /backup
+   45  mv -f processes.txt . /backup
+   46  mv -f processes.txt . backup
+   47  mv copy.txt  backup
+   48  ls
+   49  cd backup/
+   50  ls
+   51  mv processes.txt ../
+   52  cd ../
+   53  ls
+   54  less processes.txt 
+   55  vim processes.txt 
+   56  wc -l processes.txt 
+   57  cat processes.txt 
+   58  wc -l < processes.txt 
+   59  cat processes.txt | wc -l
+   60  cat processes.txt | wc -l | selected.txt
+   61  cat processes.txt | wc -l > selected.txt
+   62  ls
+   63  cat selected.txt 
+   64  grep "/bin"
+   65  grep . "/bin"
+   66  grep -r /bin *
+   67  grep /bin *
+   68  grep -r /bin *
+   69  grep processes.txt /bin *
+   70  grep -r /bin processes.txt 
+   71  grep -rn /bin processes.txt 
+   72  grep -rn /bin processes.txt >> selected.txt 
+   73  cat selected.txt 
+   74  history
+   75  history | tail
+   76  man tail
+   77  history | tail -n42
+   78  history | tail -n45
+   79  history | tail -n54
+   80  history | tail -n54 > commands.txt
