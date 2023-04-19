@@ -29,10 +29,10 @@ juliusz     9156  0.1  0.4 1576064 111304 ?      Sl   11:06   0:03 /usr/bin/gnom
     7  mkdir backup
     8  mv copy.txt backup/copy.txt
     9  wc -l processes.txt 
-   10  wc -l processes.txt >> selected.txt
+   10  wc -l processes.txt > selected.txt
    11  man grep
    12  grep "/bin" processes.txt
-   13  grep "/bin" processes.txt >> selected.txt
+   13  grep -rni /bin processes.txt >> selected.txt
    14  cat selected.txt 
    15  history
    16  history | tail 17 > commands.txt
