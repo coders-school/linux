@@ -1,89 +1,43 @@
-juliusz@juliusz-GT62VR-7RD:~/test$ cat selected.txt commands.txt
-284 processes.txt
-root           1  0.0  0.0 241912 13568 ?        Ss   09:23   0:04 /sbin/init splash
-root         841  0.0  0.0   2812  1136 ?        Ss   09:23   0:00 /usr/sbin/acpid
-root         846  0.0  0.0  20680  2948 ?        Ss   09:23   0:00 /usr/sbin/cron -f -P
-root         848  0.0  0.0 346648 19596 ?        Ssl  09:23   0:06 /usr/sbin/NetworkManager --no-daemon
-root         854  0.0  0.0  82768  3832 ?        Ssl  09:23   0:01 /usr/sbin/irqbalance --foreground
-root         855  0.0  0.0  52236 20936 ?        Ss   09:23   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-syslog       858  0.0  0.0 222400  6116 ?        Ssl  09:23   0:00 /usr/sbin/rsyslogd -n -iNONE
-root         884  0.0  0.0 139744  9328 ?        Ssl  09:23   0:01 /usr/sbin/thermald --systemd --dbus-enable --adaptive
-root         886  0.0  0.0  17848 11692 ?        Ss   09:23   0:00 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
-root         957  0.0  0.0 244212 12276 ?        Ssl  09:23   0:00 /usr/sbin/ModemManager
-root         963  0.0  0.0  83664 12784 ?        Ss   09:23   0:00 /usr/sbin/cupsd -l
-root         967  0.0  0.0 129336 23260 ?        Ssl  09:23   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-root        1102  0.0  0.0 252540  9296 ?        Ssl  09:24   0:00 /usr/sbin/gdm3
-root        1230  0.0  0.0 172612 11260 ?        Ssl  09:24   0:00 /usr/sbin/cups-browsed
-kernoops    1235  0.0  0.0  13080   456 ?        Ss   09:24   0:00 /usr/sbin/kerneloops --test
-kernoops    1237  0.0  0.0  13080   456 ?        Ss   09:24   0:00 /usr/sbin/kerneloops
-juliusz     1640  0.0  0.0  50748  6480 ?        S<sl 09:25   0:00 /usr/bin/pipewire
-juliusz     1641  0.0  0.0  34640  6496 ?        Ssl  09:25   0:00 /usr/bin/pipewire-media-session
-juliusz     1642  1.6  0.1 2894148 30392 ?       S<sl 09:25   3:48 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-juliusz     1653  0.0  0.0  10420  6756 ?        Ss   09:25   0:02 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-juliusz     1705  0.0  0.0 252384  7952 ?        Sl   09:25   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
-juliusz     1723  0.0  0.0 173752  6388 tty2     Ssl+ 09:25   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
-juliusz     1813 18.9  1.3 5174924 320180 ?      Ssl  09:25  43:27 /usr/bin/gnome-shell
-juliusz     1820  0.0  0.0   8560  4508 ?        S    09:25   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus
-juliusz     1929  0.0  0.1 2877236 27896 ?       Sl   09:25   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-juliusz     1946  0.0  0.0   2888   968 ?        Ss   09:25   0:00 sh -c /usr/bin/ibus-daemon --panel disable $([ "$XDG_SESSION_TYPE" = "x11" ] && echo "--xim")
-juliusz     1949  0.0  0.0 400252 12120 ?        Sl   09:25   0:09 /usr/bin/ibus-daemon --panel disable
-juliusz     2090  0.3  1.3 1365028 333296 ?      Sl   09:25   0:54 /snap/snap-store/638/usr/bin/snap-store --gapplication-service
-juliusz     2200  0.0  0.1 2942760 28324 ?       Sl   09:25   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
-juliusz     2270  0.0  0.0  76300 12560 ?        Ss   09:25   0:00 /snap/snapd-desktop-integration/57/usr/bin/snapd-desktop-integration
-juliusz     2389  0.0  0.0 309232 22988 ?        Sl   09:25   0:00 /snap/snapd-desktop-integration/57/usr/bin/snapd-desktop-integration
-juliusz     3879  2.6  0.4 333416 105444 ?       Sl   09:28   5:55 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.SWCJ31 -listen 4 -listen 5 -displayfd 6 -initfd 7
-juliusz     4117  0.0  0.1 1089008 26116 ?       Sl   09:28   0:00 /usr/bin/snap userd
-juliusz     9226  0.0  0.1 405328 40376 ?        SLl  09:45   0:00 /usr/bin/seahorse --gapplication-service
-juliusz     9228  0.0  0.2 1021488 59740 ?       Sl   09:45   0:00 /usr/bin/gnome-calendar --gapplication-service
-juliusz    12107  0.0  0.0   8480  5244 pts/0    Ss+  10:09   0:00 /usr/bin/bash --init-file /snap/code/126/usr/share/code/resources/app/out/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.sh
-juliusz    23159  0.1  0.3 814932 76896 ?        Sl   12:54   0:02 /usr/bin/nautilus --gapplication-service
-  181  ls
-  182  rm hello.cpp
-  183  ls
-  184  rm a.out
-  185  ls
-  186  touch processes.txt
-  187  ls
-  188  ps aux
-  189  echo ps aux > processes.txt
-  190  ls
-  191  cat processes.txt 
-  192  ps aux > processes.txt
-  193  ls
-  194  cat processes.txt 
-  195  clera
-  196  clear
-  197  cp processes.txt copy.txt
-  198  mkdir backup
-  199  mv copy.txt backup
-  200  ls
-  201  man cat
-  202  man more
-  203  man cat
-  204  man wc
-  205  wc -l  processes.txt
-  206  wc -l  processes.txt < selected.txt
-  207  wc -l  processes.txt > selected.txt
-  208  ls
-  209  test
-  210  cd test
-  211  man grep
-  212  grap "bin/" processes.txt 
-  213  grep "bin/" processes.txt 
-  214  grep "bin/" processes.txt << selected.txt
-  215  grep "bin/" processes.txt >> selected.txt
-  216  cat selected.txt
-  217  history
-  218  man history
-  219  history grep "bin/" processes.txt >> selected.txt
-  220  clear
-  221  history
-  222  man tail
-  223  history | tail 10
-  224  history | tail -n10
-  225  history | tail -n39 >> commands.txt
-  226  ls
-  227  cat commands.txt
-  228  history | tail -n41 > commands.txt
-  229  cat commands.txt
-  230  history | tail -n50 > commands.txt
+juliusz@juliusz-GT62VR-7RD:~/majo$ cat selected.txt commands.txt
+272 processes.txt
+root         854  0.0  0.0  52236 20920 ?        Ss   08:59   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         981  0.0  0.0 129336 23424 ?        Ssl  08:59   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+juliusz     1820  0.0  0.0  50764  6552 ?        S<sl 09:35   0:00 /usr/bin/pipewire
+juliusz     1821  0.0  0.0  34788  6672 ?        Ssl  09:35   0:00 /usr/bin/pipewire-media-session
+juliusz     1822  0.6  0.1 2370080 30228 ?       S<sl 09:35   0:44 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+juliusz     1823  0.0  0.0  76420 14224 ?        Ss   09:35   0:00 /snap/snapd-desktop-integration/57/usr/bin/snapd-desktop-integration
+juliusz     1835  0.0  0.0  10000  6312 ?        Ss   09:35   0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+juliusz     1867  0.0  0.0 252296  7828 ?        Sl   09:35   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+juliusz     1903  0.0  0.0 173752  6160 tty2     Ssl+ 09:35   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+juliusz     1990  2.9  1.2 5062524 303956 ?      Ssl  09:35   3:35 /usr/bin/gnome-shell
+juliusz     1996  0.0  0.0   8560  4480 ?        S    09:35   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus
+juliusz     2114  0.0  0.1 2942768 27972 ?       Sl   09:35   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+juliusz     2131  0.0  0.0   2888   968 ?        Ss   09:35   0:00 sh -c /usr/bin/ibus-daemon --panel disable $([ "$XDG_SESSION_TYPE" = "x11" ] && echo "--xim")
+juliusz     2134  0.1  0.0 400124 11940 ?        Sl   09:35   0:07 /usr/bin/ibus-daemon --panel disable
+juliusz     2308  0.0  0.6 1256928 166292 ?      Sl   09:35   0:05 /snap/snap-store/638/usr/bin/snap-store --gapplication-service
+juliusz     2373  0.0  0.1 2950964 28216 ?       Sl   09:35   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
+juliusz     2441  0.0  0.1 310752 24736 ?        Sl   09:35   0:00 /snap/snapd-desktop-integration/57/usr/bin/snapd-desktop-integration
+juliusz     3881  1.1  0.3 315864 91260 ?        Sl   09:37   1:21 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.9UYH31 -listen 4 -listen 5 -displayfd 6 -initfd 7
+juliusz     4076  0.0  0.1 1013868 25736 ?       Sl   09:38   0:00 /usr/bin/snap userd
+juliusz     9156  0.1  0.4 1576064 111304 ?      Sl   11:06   0:03 /usr/bin/gnome-calendar --gapplication-service
+    1  mkdir majo
+    2  cd majo
+    3  touch processes.txt
+    4  ps aux >> processes.txt
+    5  cp processes.txt copy.txt
+    6  mv copy.txt backup/copy.txt
+    7  mkdir backup
+    8  mv copy.txt backup/copy.txt
+    9  wc -l processes.txt 
+   10  wc -l processes.txt >> selected.txt
+   11  man grep
+   12  grep "/bin" processes.txt
+   13  grep "/bin" processes.txt >> selected.txt
+   14  cat selected.txt 
+   15  history
+   16  history | tail 17 > commands.txt
+   17  man tail
+   18  tail -n20 history
+   19  history |tail -n20
+   20  history |tail -n30
+   21  history |tail -n30 > commands.txt
