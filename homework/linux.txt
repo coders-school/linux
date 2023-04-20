@@ -1,0 +1,42 @@
+adamwiercioch@DESKTOP-TE5M1P9:~/desktop/Z1_Coders_School$ cat selected.txt commands.txt
+6 processes.txt
+ 2146  ls
+ 2147  cd Z1_Coders_School/
+ 2148  touch processes.txt
+ 2149  ps aux
+ 2150  ps aux > processes.txt
+ 2151  cat processes.txt
+ 2152  cp processes.txt copy.txt
+ 2153  ls
+ 2154  wc -l processes.txt
+ 2155  wc -l processes.txt > selected.txt
+ 2156  ls
+ 2157  cat selected.txt
+ 2158  grep -ni -f processes.txt -name */bin
+ 2159  grep -ni processes.txt -name */bin
+ 2160  grep /bin processes.txt
+ 2161  cat processes.txt
+ 2162  grep ? processes.txt
+ 2163  grep /bin processes.txt
+ 2164  grep /bin processes.txt >> selected.txt
+ 2165  cat selected.txt
+ 2166  history
+ 2167  less history
+ 2168  tail -n21 history
+ 2169  history | tail -n21
+ 2170  history | tail -n25
+ 2171  history | tail -n24
+ 2172  history | tail -n25
+ 2173  history | tail -n26
+ 2174  history | tail -n28
+ 2175  ls
+ 2176  history | tail -n28
+ 2177  history | tail -n29
+ 2178  history | tail -n31
+ 2179  history | tail -n33
+ 2180  history | tail -n33 > commands.txt
+ 2181  ls
+ 2182  cat commands.txt
+ 2183  history | tail -n35 > commands.txt
+ 2184  cat commands.txt
+ 2185  history | tail -n40 > commands.txt
