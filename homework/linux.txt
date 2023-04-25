@@ -34,3 +34,4 @@ karol@karol-Latitude-E6440:~/Backup/Karol/Moje dokumenty/Dokumenty/repozytoria/c
   596  grep -rn /bin processes.txt >> selected.txt
   597  history
   598  history | tail -n10 > commands.txt
+
