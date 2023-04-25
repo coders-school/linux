@@ -1,0 +1,36 @@
+karol@karol-Latitude-E6440:~/Backup/Karol/Moje dokumenty/Dokumenty/repozytoria/coders-school/zadania_domowe/linux/rozwiazanie/dowolny$ cat selected.txt commands.txt
+260 processes.txt
+102:root         924  0.0  0.2  52240 20724 ?        Ss   16:29   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+113:root        1053  0.0  0.2 129332 23060 ?        Ssl  16:29   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+119:karol       1125  0.0  0.0  51040  6932 ?        S<sl 16:29   0:00 /usr/bin/pipewire
+120:karol       1126  0.0  0.0  34808  6424 ?        Ssl  16:29   0:00 /usr/bin/pipewire-media-session
+121:karol       1127  0.2  0.3 2482784 26376 ?       S<sl 16:29   0:38 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+122:karol       1128  0.0  0.1  76292 11344 ?        Ss   16:29   0:01 /snap/snapd-desktop-integration/57/usr/bin/snapd-desktop-integration
+123:karol       1132  0.0  0.0 399564  7736 ?        SLl  16:29   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+125:karol       1143  0.0  0.0 173564  6228 tty2     Ssl+ 16:29   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+126:karol       1145  0.0  0.0  10724  6520 ?        Ss   16:29   0:02 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+133:karol       1236  3.9  3.9 5113728 320300 ?      Ssl  16:29  10:09 /usr/bin/gnome-shell
+134:karol       1244  0.0  0.0   8560  4264 ?        S    16:29   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus
+154:karol       1528  0.0  0.3 2614696 27184 ?       Sl   16:29   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+156:karol       1541  0.0  0.0   2888   964 ?        Ss   16:29   0:00 sh -c /usr/bin/ibus-daemon --panel disable $([ "$XDG_SESSION_TYPE" = "x11" ] && echo "--xim")
+160:karol       1547  0.1  0.1 326060 11924 ?        Sl   16:29   0:21 /usr/bin/ibus-daemon --panel disable
+166:karol       1558  0.0  0.2 309016 22344 ?        Sl   16:29   0:00 /snap/snapd-desktop-integration/57/usr/bin/snapd-desktop-integration
+181:karol       1703  0.2  3.0 1588072 247364 ?      Sl   16:29   0:39 /snap/snap-store/638/usr/bin/snap-store --gapplication-service
+187:karol       2055  0.0  0.3 2680300 27304 ?       Sl   16:29   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
+193:karol       2205  0.6  1.3 447336 105876 ?       Sl   16:29   1:32 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.2BDQ31 -listen 4 -listen 5 -displayfd 6 -initfd 7
+223:karol       5733  0.6  3.0 1235752 243944 ?      Sl   16:41   1:40 /usr/bin/nautilus --gapplication-service
+225:karol       6612  0.0  0.7 955500 59036 ?        Sl   17:10   0:00 /usr/bin/gnome-calendar --gapplication-service
+226:karol       6615  0.0  0.4 404448 39624 ?        SLl  17:10   0:00 /usr/bin/seahorse --gapplication-service
+229:karol       9159  0.0  2.4 1461532 194048 ?      SLl  17:29   0:07 /usr/bin/python3 /usr/bin/git-cola --prompt
+231:karol      11406  0.0  0.0   7136  3564 ?        S    18:21   0:00 /bin/bash /snap/notepad-plus-plus/386/bin/sommelier run-exe /home/karol/Backup/Karol/Moje dokumenty/Dokumenty/repozytoria/coders-school/zadania_domowe/linux/polecenia.txt
+232:karol      11499  0.3  0.1  14424 13092 ?        Ss   18:21   0:33 /snap/notepad-plus-plus/386/wine-platform/wine-devel/bin/wineserver
+  589  cd dowolny
+  590  touch processes.txt
+  591  ps aux > processes.txt
+  592  cp processes.txt copy.txt
+  593  mkdir backup
+  594  mv copy.txt backup/
+  595  wc -l processes.txt > selected.txt
+  596  grep -rn /bin processes.txt >> selected.txt
+  597  history
+  598  history | tail -n10 > commands.txt
