@@ -23,7 +23,7 @@ yasioo      2375  0.0  0.2 243736  9480 ?        Sl   11:08   0:00 /usr/bin/gnom
   181  wc -l processes.txt 
   182  wc -l processes.txt > selected.txt
   183  cat processes.txt | grep "/bin"
-  184  grep "/bin" processes.txt > selected.txt
+  184  grep /bin processes.txt > selected.txt
   184  cat processes.txt | grep "/bin" > selected.txt 
   185  less selected.txt 
   186  history
