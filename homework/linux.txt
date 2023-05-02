@@ -8,6 +8,6 @@ adamwiercioch@DESKTOP-TE5M1P9:/mnt/c/Users/adamw/Desktop/Coders_School/Z1_linux$
  2085  mkdir backup | mv copy.txt backup
  2086  wc -l processes.txt
  2087  wc -l processes.txt > selected.txt
- 2088  grep "/bin" processes.txt >> selected.txt
+ 2088  grep -n '/bin' processes.txt >> selected.txt
  2089  history
  2090  history | tail -n11 > commands.txt
