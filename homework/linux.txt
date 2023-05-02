@@ -1,0 +1,27 @@
+yasioo@yasioo-VirtualBox:~/cpp/hmwrk_linux$ cat selected.txt commands.txt 
+180 processes.txt
+87:root         601  0.0  0.5  43560 20856 ?        Ss   maj01   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+104:yasioo       925  0.0  0.1  41816  5904 ?        S<sl maj01   0:00 /usr/bin/pipewire
+105:yasioo       926  0.0  0.7 903992 29540 ?        S<sl maj01   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+108:yasioo       937  0.0  0.1   9188  5304 ?        Ss   maj01   0:41 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+112:yasioo      1169  0.0  0.1   8568  4512 ?        S    maj01   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus_0
+115:yasioo      1183  0.0  0.0   7972  1076 ?        Ss   maj01   0:00 /usr/bin/ssh-agent -s
+116:yasioo      1190  0.0  0.0  86580  3396 ?        SLs  maj01   0:00 /usr/bin/gpg-agent --supervised
+133:yasioo      1288  0.0  0.8  62776 33272 ?        S    maj01   0:00 /usr/bin/python3 /usr/share/system-config-printer/applet.py
+142:yasioo      1331  0.0  1.3 413092 53824 ?        Sl   maj01   0:01 /usr/bin/python3 /usr/bin/blueman-applet
+159:yasioo      1547  0.0  0.2 243736  9420 ?        Sl   maj01   0:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+  367  mkdir hmwrk_linux
+  368  cd hmwrk_linux/
+  369  touch processes.txt
+  370  ps aux > processes.txt 
+  371  cp processes.txt copy.txt
+  372  mkdir backup
+  373  mv copy.txt backup/
+  374  wc -l processes.txt 
+  375  touch selected.txt
+  376  wc -l processes.txt > selected.txt 
+  377  grep -n /bin processes.txt 
+  378  grep -n /bin processes.txt >> selected.txt 
+  379  history
+  380  history | tail -n 12
+  381  history | tail -n 13 > commands.txt
