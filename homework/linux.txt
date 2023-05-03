@@ -1,0 +1,23 @@
+  672  mkdir exercise
+  673  cd exercise/
+  674  touch processes.txt
+  675  ps aux
+  676  ps aux > processes.txt 
+  677  less processes.txt 
+  678  cp processes.txt copy.txt
+  679  ls
+  680  less copy.txt 
+  681  mkdir backup
+  682  mv copy.txt backup/
+  683  ls
+  684  ls backup/
+  685  wc -l processes.txt 
+  686  wc -l processes.txt  > selected.txt
+  687  les selected.txt 
+  688  less selected.txt 
+  689  man grep
+  690  grep /bin processes.txt 
+  691  grep /bin processes.txt >> selected.txt 
+  692  less selected.txt 
+  693  history
+  694  history | tail -n 23 > commands.txt
