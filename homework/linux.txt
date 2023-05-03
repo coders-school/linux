@@ -47,7 +47,7 @@ mmaj        4060  0.1  0.1 394324 27632 ?        Sl   20:16   0:00 /usr/bin/gnom
   688  less selected.txt 
   689  man grep
   690  ls 
-  691  grep /bin processes.txt >> selected.txt 
+  691  grep "/bin" processes.txt >> selected.txt 
   692  less selected.txt 
   693  history
   694  history | tail -n 23 > commands.txt
