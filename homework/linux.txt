@@ -1,19 +1,18 @@
-dominik@DESKTOP-DP7UCQS:/mnt/c/Users/PC/eclipse-workspace/nowy$ cat selected.txt commands.txt 
+dominik@DESKTOP-DP7UCQS:/mnt/c/Users/PC/eclipse-workspace$ cat selected.txt commands.txt 
 44
 root         153  0.0  0.1  30124 19024 ?        Ss   18:24   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
 root         216  0.0  0.0   4780  3376 ?        Ss   18:24   0:00 /bin/bash /snap/ubuntu-desktop-installer/1099/bin/subiquity-server
 root         218  0.0  0.1 107220 21084 ?        Ssl  18:24   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-root         349  0.0  0.5 753552 83100 ?        Sl   18:24   0:02 /snap/ubuntu-desktop-installer/1099/usr/bin/python3.10 -m subiquity.cmd.server --use-os-prober --storage-version=2 --postinst-hooks-dir=/snap/ubuntu-desktop-installer/1099/etc/subiquity/postinst.d
+root         349  0.0  0.5 753552 83100 ?        Sl   18:24   0:03 /snap/ubuntu-desktop-installer/1099/usr/bin/python3.10 -m subiquity.cmd.server --use-os-prober --storage-version=2 --postinst-hooks-dir=/snap/ubuntu-desktop-installer/1099/etc/subiquity/postinst.d
 root         359  0.0  0.0   7524  4728 pts/1    Ss   18:24   0:00 /bin/login -f
-root         453  0.0  0.2  43784 37600 ?        S    18:24   0:02 python3 /snap/ubuntu-desktop-installer/1099/usr/bin/cloud-init status --wait
-    4  cd nowy
-    5  ls
-    6  cp processes.txt copy.txt
-    7  ls
-    8  mkdir backup
-    9  mv copy.txt backup/
-   10  ls
-   11  wc -l processes.txt
-   12  wc -l < processes.txt > selected.txt
-   13  grep "/bin" processes.txt  >> selected.txt
-   14  history | tail -n 11 > commands.txt
+root         453  0.0  0.2  43784 37600 ?        S    18:24   0:03 python3 /snap/ubuntu-desktop-installer/1099/usr/bin/cloud-init status --wait
+    1  mkdir nowy
+    2  ps aux > nowy/processes.txt
+    3  cp nowy/processes.txt nowy/copy.txt
+    4  mkdir backup
+    5  mv nowy/copy.txt backup
+    6  wc -l nowy/processes.txt
+    7  wc -l < nowy/processes.txt > selected.txt
+    8  grep "
+    9  grep "/bin" nowy/processes.txt >> selected.txt
+   10  history | tail -n 12 > commands.txt
