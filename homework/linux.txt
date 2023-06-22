@@ -1,19 +1,28 @@
-dominik@DESKTOP-DP7UCQS:/mnt/c/Users/PC/eclipse-workspace/nowy$ cat selected.txt commands.txt 
-44
-18:root         153  0.0  0.1  30124 19024 ?        Ss   18:24   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-22:root         216  0.0  0.0   4780  3376 ?        Ss   18:24   0:00 /bin/bash /snap/ubuntu-desktop-installer/1099/bin/subiquity-server
-23:root         218  0.0  0.1 107220 21084 ?        Ssl  18:24   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-26:root         349  0.0  0.5 753552 83100 ?        Sl   18:24   0:03 /snap/ubuntu-desktop-installer/1099/usr/bin/python3.10 -m subiquity.cmd.server --use-os-prober --storage-version=2 --postinst-hooks-dir=/snap/ubuntu-desktop-installer/1099/etc/subiquity/postinst.d
-27:root         359  0.0  0.0   7524  4728 pts/1    Ss   18:24   0:00 /bin/login -f
-31:root         453  0.0  0.2  43784 37600 ?        S    18:24   0:04 python3 /snap/ubuntu-desktop-installer/1099/usr/bin/cloud-init status --wait
-    1  mkdir nowy
-    2  cd nowy/
-    3  ps aux > processes.txt
-    4  cp processes.txt copy.txt
-    5  mkdir backup
-    6  mv copy.txt backup/
-    7  wc -l processes.txt
-    8  wc -l < processes.txt > selected.txt
-    9  grep -rn /bin processes.txt >> selected.txt
-   10  history
-   11  history | tail -n 11 > commands.txt
+dominik@DESKTOP-DP7UCQS:/mnt/c/Users/PC/eclipse-workspace/nowy$ cat selected.txt commands.txt
+35 processes.txt
+18:root         140  0.0  0.1  30124 18612 ?        Ss   17:06   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+22:root         210  0.0  0.0   4780  3380 ?        Ss   17:06   0:00 /bin/bash /snap/ubuntu-desktop-installer/1099/bin/subiquity-server
+23:root         212  0.0  0.1 107220 21108 ?        Ssl  17:06   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+26:root         351  1.5  0.4 153116 68116 ?        Sl   17:06   0:01 /snap/ubuntu-desktop-installer/1099/usr/bin/python3.10 -m subiquity.cmd.server --use-os-prober --storage-version=2 --postinst-hooks-dir=/snap/ubuntu-desktop-installer/1099/etc/subiquity/postinst.d
+30:root         362  0.0  0.0   7516  4868 pts/1    Ss   17:06   0:00 /bin/login -f
+34:root         437  0.7  0.2  43784 37496 ?        S    17:07   0:00 python3 /snap/ubuntu-desktop-installer/1099/usr/bin/cloud-init status --wait
+    2  cd nowy
+    3  touch processes.txt
+    4  ps aux > processes.txt
+    5  cp processes.txt copy.txt
+    6  mkdir backup
+    7  mv copy.txt backup/
+    8  ls
+    9  wc -l processes.txt
+   10  wc -l processes.txt >> selected.txt
+   11  ls
+   12  grep -rn /bin
+   13  grep -rn /bin processes.txt >> selected.txt
+   14  history
+   15  history | tail -n +15 > commands.txt
+   16  cat selected.txt commands.txt
+   17  history | tail -n 16 > commands.txt
+   18  cat selected.txt commands.txt
+   19  history | tail -n 18 > commands.txt
+   20  cat selected.txt commands.txt
+   21  history | tail -n 20 > commands.txt
