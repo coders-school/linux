@@ -14,7 +14,7 @@ dominik@DESKTOP-DP7UCQS:/mnt/c/Users/PC/eclipse-workspace/nowy$ cat selected.txt
     7  mv copy.txt backup/
     8  ls
     9  wc -l processes.txt
-   10  wc -l processes.txt >> selected.txt
+   10  wc -l processes.txt > selected.txt
    11  ls
    12  grep -rn /bin
    13  grep -rn /bin processes.txt >> selected.txt
