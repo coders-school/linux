@@ -37,4 +37,5 @@ cat selected.txt commands.txt
     8  mv copy.txt backup/
     9  wc processes.txt 
    10  echo 295 > selected.txt
-   11  grep -rni "/bin" processes.txt >> selected.txt 
+   11  grep -rni "/bin" processes.txt >> selected.txt
+   12  history | tail -n12
