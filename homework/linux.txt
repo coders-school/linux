@@ -27,14 +27,13 @@ cat selected.txt commands.txt
 247:jakub       1887  0.0  0.0  31244   348 ?        S    17:10   0:00 /usr/bin/VBoxClient --vmsvga-session
 248:jakub       1888  0.0  0.0 167052  1748 ?        Sl   17:10   0:00 /usr/bin/VBoxClient --vmsvga-session
 253:jakub       2418  0.0  0.3 1310708 26084 ?       Sl   17:13   0:00 /usr/bin/snap userd
-    1  clear
-    2  mkdir ZadanieLinux
-    3  cd ZadanieLinux/
-    4  touch processes.txt
-    5  ps aux > processes.txt 
-    6  cp processes.txt copy.txt
-    7  mkdir backup
-    8  mv copy.txt backup/
-    9  wc -l processes.txt > selected.txt
-   10  grep -rni "/bin" processes.txt >> selected.txt
-   11  history | tail -n11
+    1  mkdir ZadanieLinux
+    2  cd ZadanieLinux/
+    3  touch processes.txt
+    4  ps aux > processes.txt 
+    5  cp processes.txt copy.txt
+    6  mkdir backup
+    7  mv copy.txt backup/
+    8  wc -l processes.txt > selected.txt
+    9  grep -rni "/bin" processes.txt >> selected.txt
+   10  history | tail
