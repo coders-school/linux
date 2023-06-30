@@ -1,5 +1,5 @@
 cat selected.txt commands.txt 
-295
+295 processes.txt
 149:root         758  0.0  0.2  52224 20996 ?        Ss   17:10   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
 159:root         848  0.0  0.2 129340 23500 ?        Ssl  17:10   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
 162:root        1032  0.0  0.0 300856  1260 ?        Sl   17:10   0:01 /usr/bin/VBoxDRMClient
@@ -35,7 +35,7 @@ cat selected.txt commands.txt
     6  cp processes.txt copy.txt
     7  mkdir backup
     8  mv copy.txt backup/
-    9  wc processes.txt 
+    9  wc -l processes.txt
    10  echo 295 > selected.txt
    11  grep -rni "/bin" processes.txt >> selected.txt
    12  history | tail -n12
