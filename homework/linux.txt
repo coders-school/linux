@@ -37,4 +37,4 @@ cat selected.txt commands.txt
     8  mv copy.txt backup/
     9  wc -l processes.txt > selected.txt
    10  grep -rni "/bin" processes.txt >> selected.txt
-   11  history | tail -n11
+   11  history | tail -n11 > commands.txt
