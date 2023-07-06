@@ -1,0 +1,85 @@
+krystian@krystian-Inspiron-5405:~$ cat Dokumenty/Katalog/selected.txt commands.txt
+239
+processes.txt:126:message+     573  0.0  0.0   9828  6260 ?        Ss   10:04   0:02 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+processes.txt:129:root         588  0.0  0.1  42268 20496 ?        Ss   10:04   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+processes.txt:135:root         629  0.0  0.0 334688 15136 ?        Ssl  10:04   0:03 /usr/bin/touchegg --daemon
+processes.txt:144:root         775  0.0  0.1 120684 23008 ?        Ssl  10:04   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+processes.txt:154:krystian    1303  0.0  0.0  90296  6072 ?        S<sl 10:04   0:00 /usr/bin/pipewire
+processes.txt:155:krystian    1304  0.0  0.0  84900  6752 ?        S<sl 10:04   0:00 /usr/bin/pipewire-media-session
+processes.txt:156:krystian    1305  0.2  0.1 1558308 19392 ?       S<sl 10:04   0:31 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+processes.txt:158:krystian    1310  0.0  0.0 242724  7384 ?        Sl   10:04   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+processes.txt:159:krystian    1316  0.0  0.0   9120  6280 ?        Ss   10:04   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+processes.txt:170:krystian    1396  0.0  0.0 166596  6548 tty2     Ssl+ 10:04   0:00 /usr/libexec/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=zorin /usr/bin/gnome-session --session=zorin
+processes.txt:173:krystian    1500  0.0  0.0   6040   452 ?        Ss   10:04   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=zorin /usr/bin/gnome-session --session=zorin
+processes.txt:175:krystian    1531  0.0  0.0   7380  4256 ?        S    10:04   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+processes.txt:178:krystian    1572  0.6  1.8 4943192 289220 ?      Ssl  10:04   1:21 /usr/bin/gnome-shell
+processes.txt:191:krystian    1688  0.0  0.1 2873740 27708 ?       Sl   10:04   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+processes.txt:215:krystian    1945  0.0  2.1 1059040 337764 ?      Sl   10:04   0:06 /usr/bin/gnome-software --gapplication-service
+  345  ls
+  346  cd Dokumenty
+  347  ls
+  348  mkdir Katalog
+  349  ls
+  350  cd Katalog
+  351  ls
+  352  touch processes.txt
+  353  ls
+  354  ps aux | processes.txt
+  355  ps aux
+  356  ps aux > processes.txt
+  357  cat processes.txt
+  358  clear
+  359  cat processes.txt
+  360  cp processes.txt copy.txt
+  361  cat copy.txt
+  362  cd
+  363  cd Dokumenty
+  364  ls
+  365  mkdir backup
+  366  ls
+  367  mv Katalog/copy.txt backup
+  368  cd backup
+  369  ls
+  370  cat copy.txt
+  371  cd ..
+  372  ls
+  373  cd Katalog
+  374  ls
+  375  grep -rni processes.*
+  376  grep -rni processes.txt
+  377  ls
+  378  239 > selected.txt
+  379  239 >> selected.txt
+  380  echo 239 >> selected.txt
+  381  echo
+  382  cat celected.txt
+  383  cat selected.txt
+  384  grep
+  385  ls
+  386  cd Dokumenty
+  387  ls
+  388  cd Katalog
+  389  ls
+  390  cd process.txt
+  391  grep -rni "/bin"
+  392  grep -rni "/bin" >> selected.txt
+  393  cat selected.txt
+  394  history
+  395  tail 345 history
+  396  tail -n 50 history
+  397  tail -n 50
+  398  ls
+  399  cd Dokumenty
+  400  ls
+  401  cd Katalog
+  402  clear
+  403  history
+  404  tail
+  405  man tail
+  406  history
+  407  history | tail
+  408  history | tail -n 60
+  409  history | tail -n 62
+  410  history | tail -n 66
+  411  history | tail -n 68
+  412  history | tail -n 68 > commands.txt
