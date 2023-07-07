@@ -61,8 +61,8 @@ processes.txt:215:krystian    1945  0.0  2.1 1059040 337764 ?      Sl   10:04   
   388  cd Katalog
   389  ls
   390  cd process.txt
-  391  grep -rni "/bin"
-  392  grep -rni "/bin" >> selected.txt
+  391  grep -rni "/bin" Dokumenty/Katalog/processes.txt
+  392  grep -rni "/bin" Dokumenty/Katalog/processes.txt >> selected.txt
   393  cat selected.txt
   394  history
   395  tail 345 history
