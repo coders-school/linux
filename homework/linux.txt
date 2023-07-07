@@ -1,0 +1,69 @@
+jackobe@komp:~/zd10xp$ cat selected.txt commands.txt 
+224
+root         688  0.0  0.0  52252 20796 ?        Ss   19:14   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         780  0.0  0.1 129340 23480 ?        Ssl  19:14   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root        1086  0.1  0.0 300856  1264 ?        Sl   19:14   0:14 /usr/bin/VBoxDRMClient
+jackobe     1175  0.0  0.0  50752  6520 ?        S<sl 19:14   0:00 /usr/bin/pipewire
+jackobe     1176  0.0  0.0  34640  6424 ?        Ssl  19:14   0:00 /usr/bin/pipewire-media-session
+jackobe     1177  0.0  0.1 1171952 26700 ?       S<sl 19:14   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+jackobe     1192  0.0  0.0 252300  7964 ?        SLl  19:14   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+jackobe     1196  0.0  0.0  15124 11464 ?        Ss   19:14   0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+jackobe     1200  0.0  0.0 173756  6240 tty2     Ssl+ 19:14   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+jackobe     1322  2.1  1.7 5133824 381852 ?      Ssl  19:14   4:11 /usr/bin/gnome-shell
+jackobe     1334  0.0  0.0   8560  4528 ?        S    19:14   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus
+jackobe     1559  0.0  0.1 2682676 28196 ?       Sl   19:14   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+jackobe     1567  0.0  0.0   2888   968 ?        Ss   19:14   0:00 sh -c /usr/bin/ibus-daemon --panel disable $([ "$XDG_SESSION_TYPE" = "x11" ] && echo "--xim")
+jackobe     1571  0.1  0.0 400700 12528 ?        Sl   19:14   0:11 /usr/bin/ibus-daemon --panel disable
+jackobe     1722  0.0  0.0  31240   348 ?        S    19:14   0:00 /usr/bin/VBoxClient --clipboard
+jackobe     1723  0.0  0.0 229428  4052 ?        Sl   19:14   0:00 /usr/bin/VBoxClient --clipboard
+jackobe     1748  0.0  0.3 199552 64800 ?        S    19:14   0:07 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.J6OM71 -listen 4 -listen 5 -displayfd 6 -initfd 7
+jackobe     1749  0.0  1.1 1036836 243288 ?      Sl   19:14   0:06 /snap/snap-store/959/usr/bin/snap-store --gapplication-service
+jackobe     1882  0.0  0.0  76144 12988 ?        Ss   19:14   0:00 /snap/snapd-desktop-integration/83/usr/bin/snapd-desktop-integration
+jackobe     1986  0.0  0.1 306144 22684 ?        Sl   19:14   0:00 /snap/snapd-desktop-integration/83/usr/bin/snapd-desktop-integration
+jackobe     2034  0.0  0.1 2682676 28444 ?       Sl   19:14   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
+jackobe     2101  0.0  0.0  31240   348 ?        S    19:14   0:00 /usr/bin/VBoxClient --seamless
+jackobe     2102  0.1  0.0 229528  2528 ?        Sl   19:14   0:17 /usr/bin/VBoxClient --seamless
+jackobe     2110  0.0  0.0  31240   348 ?        S    19:14   0:00 /usr/bin/VBoxClient --draganddrop
+jackobe     2111  0.8  0.0 230044  2484 ?        Sl   19:14   1:42 /usr/bin/VBoxClient --draganddrop
+jackobe     2115  0.0  0.0  31240   344 ?        S    19:14   0:00 /usr/bin/VBoxClient --vmsvga-session
+jackobe     2116  0.0  0.0 163344  2312 ?        Sl   19:14   0:05 /usr/bin/VBoxClient --vmsvga-session
+jackobe     2247  0.1  0.3 608464 82048 ?        Sl   19:14   0:21 /usr/bin/python3 /usr/bin/x-terminal-emulator
+jackobe    17214  0.0  0.0  22504  5764 pts/1    Ss   21:50   0:00 /bin/bash
+  345  ls
+  346  cd zd10xp
+  347  ls
+  348  touch processes.txt
+  349  ps aux > processes.txt 
+  350  less processes.txt 
+  351  cp processes.txt copy.txt
+  352  ls
+  353  less copy.txt 
+  354  clear
+  355  ls
+  356  mkdir backup
+  357  mv copy.txt ./backup
+  358  ls
+  359  cd backup
+  360  ls
+  361  wc copy.txt
+  362  cd ..
+  363  echo 224 > selected.txt
+  364  ls
+  365  less selected.txt 
+  366  grep man
+  367  man grep
+  368  grep processes.txt  /bin *
+  369  less processes.txt 
+  370  grep processes.txt "/bin"
+  371  grep "/bin" processes.txt 
+  372  ls
+  373  grep "/bin" processes.txt >> selected.txt 
+  374  less selected.txt 
+  375  history
+  376  tail n-10
+  377  history | tail 10
+  378  history | tail
+  379  hostory
+  380  history
+  381  tail -n 36 | commands.txt
+  382  history | tail -n 38 > commands.txt
