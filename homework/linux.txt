@@ -49,8 +49,8 @@ processes.txt:215:krystian    1945  0.0  2.1 1059040 337764 ?      Sl   10:04   
   376  grep -rni processes.txt
   377  ls
   378  wc -l Dokumenty/Katalog/processes.txt
-  379  echo 239 >> selected.txt
-  380  wc -l Dokumenty/Katalog/processes.txt >> selected.txt
+  379  echo 239 > selected.txt
+  380  wc -l Dokumenty/Katalog/processes.txt
   381  echo
   382  cat celected.txt
   383  cat selected.txt
