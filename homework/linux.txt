@@ -50,7 +50,7 @@ processes.txt:215:krystian    1945  0.0  2.1 1059040 337764 ?      Sl   10:04   
   377  ls
   378  239 > selected.txt
   379  239 >> selected.txt
-  380  echo 239 >> selected.txt
+  380  echo 239 >> Dokumenty/Katalog/selected.txt
   381  echo
   382  cat celected.txt
   383  cat selected.txt
