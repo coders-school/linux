@@ -1,11 +1,11 @@
 michal@DESKTOP-49DKRIJ:~/homework$ cat selected.txt commands.txt
 38 processes.txt
-root         161  0.0  0.4  30128 19112 ?        Ss   15:47   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-root         202  0.0  0.0   4780  3348 ?        Ss   15:47   0:00 /bin/bash /snap/ubuntu-desktop-installer/1129/bin/subiquity-server
-root         204  0.0  0.5 107220 20916 ?        Ssl  15:47   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-root         430  0.2  2.0 868188 81620 ?        Sl   15:48   0:04 /snap/ubuntu-desktop-installer/1129/usr/bin/python3.10 -m subiquity.cmd.server --use-os-prober --storage-version=2 --postinst-hooks-dir=/snap/ubuntu-desktop-installer/1129/etc/subiquity/postinst.d
-root         438  0.0  0.1   7516  4872 pts/1    Ss   15:48   0:00 /bin/login -f
-root         529  0.1  0.9  43784 37632 ?        S    15:48   0:03 python3 /snap/ubuntu-desktop-installer/1129/usr/bin/cloud-init status --wait
+18:root         161  0.0  0.4  30128 19112 ?        Ss   15:47   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+22:root         202  0.0  0.0   4780  3348 ?        Ss   15:47   0:00 /bin/bash /snap/ubuntu-desktop-installer/1129/bin/subiquity-server
+23:root         204  0.0  0.5 107220 20916 ?        Ssl  15:47   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+29:root         430  0.2  2.0 868188 81620 ?        Sl   15:48   0:04 /snap/ubuntu-desktop-installer/1129/usr/bin/python3.10 -m subiquity.cmd.server --use-os-prober --storage-version=2 --postinst-hooks-dir=/snap/ubuntu-desktop-installer/1129/etc/subiquity/postinst.d
+33:root         438  0.0  0.1   7516  4872 pts/1    Ss   15:48   0:00 /bin/login -f
+37:root         529  0.1  0.9  43784 37632 ?        S    15:48   0:03 python3 /snap/ubuntu-desktop-installer/1129/usr/bin/cloud-init status --wait
  1339  mkdir homework
  1340  md homework/
  1341  cd homework/
@@ -90,3 +90,18 @@ root         529  0.1  0.9  43784 37632 ?        S    15:48   0:03 python3 /snap
  1420  history | tail -n 80 > commands.txt
  1421  less commands.txt
  1422  history | tail -n 84 > commands.txt
+ 1423  less commands.txt
+ 1424  cat selected.txt commands.txt
+ 1425  grep --help
+ 1426  history
+ 1427  less selected.txt
+ 1428  wc -l processes.txt > selected.txt
+ 1429  grep -n '/bin' processes.txt >> selected.txt
+ 1430  history
+ 1431  history | tail -n 91 > commands.txt
+ 1432  cat selected.txt commands.txt
+ 1433  history | tail -n 94 > commands.txt
+ 1434  less commands.txt
+ 1435  history | tail -n 96 > commands.txt
+ 1436  less commands.txt
+ 1437  history | tail -n 99 > commands.txt
