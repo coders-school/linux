@@ -1,0 +1,92 @@
+michal@DESKTOP-49DKRIJ:~/homework$ cat selected.txt commands.txt
+38 processes.txt
+root         161  0.0  0.4  30128 19112 ?        Ss   15:47   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         202  0.0  0.0   4780  3348 ?        Ss   15:47   0:00 /bin/bash /snap/ubuntu-desktop-installer/1129/bin/subiquity-server
+root         204  0.0  0.5 107220 20916 ?        Ssl  15:47   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         430  0.2  2.0 868188 81620 ?        Sl   15:48   0:04 /snap/ubuntu-desktop-installer/1129/usr/bin/python3.10 -m subiquity.cmd.server --use-os-prober --storage-version=2 --postinst-hooks-dir=/snap/ubuntu-desktop-installer/1129/etc/subiquity/postinst.d
+root         438  0.0  0.1   7516  4872 pts/1    Ss   15:48   0:00 /bin/login -f
+root         529  0.1  0.9  43784 37632 ?        S    15:48   0:03 python3 /snap/ubuntu-desktop-installer/1129/usr/bin/cloud-init status --wait
+ 1339  mkdir homework
+ 1340  md homework/
+ 1341  cd homework/
+ 1342  touch processes.txt
+ 1343  ps aux >> processes.txt
+ 1344  less processes.txt
+ 1345  cp processes.txt copy.txt
+ 1346  ls
+ 1347  mkdir backup
+ 1348  ls
+ 1349  mv copy.txt ./back
+ 1350  ls
+ 1351  less back
+ 1352  mv back copy.txt
+ 1353  less back
+ 1354  ls
+ 1355  mv copy.txt ./backup
+ 1356  ls
+ 1357  ls backup
+ 1358  less backup/copy.txt
+ 1359  cay processes.txt
+ 1360  cat processes.txt
+ 1361  clear
+ 1362  ls
+ 1363  more processes.txt
+ 1364  less processes.txt
+ 1365  help
+ 1366  wc --man
+ 1367  man wc
+ 1368  wc -l processes.txt
+ 1369  wc -l processes.txt >> selected.txt
+ 1370  ls
+ 1371  cat selected.txt
+ 1372  help wc
+ 1373  man wc
+ 1374  wc processes.txt
+ 1375  man grep
+ 1376  grep '/bin' processes.txt
+ 1377  grep '/bin' processes.txt >> processes.txt
+ 1378  ls
+ 1379  grep '/bin' processes.txt >> selected.txt
+ 1380  cat selected.txt
+ 1381  history
+ 1382  man history
+ 1383  history --help
+ 1384  history 10
+ 1385  1384-1338
+ 1386  history
+ 1387  man tail
+ 1388  gistory >> tail 50
+ 1389  history >> tail 51
+ 1390  ls
+ 1391  cat tail
+ 1392  rm tail
+ 1393  ls
+ 1394  history | tail 52
+ 1395  history --help
+ 1396  man hist
+ 1397  man history
+ 1398  history mkdir homework
+ 1399  lw
+ 1400  ls
+ 1401  man history
+ 1402  history
+ 1403  man tail
+ 1404  history >> tail
+ 1405  ls
+ 1406  rm tail
+ 1407  history | tail
+ 1408  history
+ 1409  history | tail 5
+ 1410  man tail
+ 1411  history | tail -n 5
+ 1412  history | tail -n 51
+ 1413  history | tail -n 74 >> commands.txt
+ 1414  less commands.txt
+ 1415  history --help
+ 1416  history -d 1404
+ 1417  history
+ 1418  history | tail -n 78 >> commands.txt
+ 1419  less commands.txt
+ 1420  history | tail -n 80 > commands.txt
+ 1421  less commands.txt
+ 1422  history | tail -n 84 > commands.txt
