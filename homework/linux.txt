@@ -1,53 +1,39 @@
 bartoszl@bartoszl-G3-3579:~/Programming/linuxTutorial/homework_linux$ cat selected.txt commands.txt 
-269
-140:root         760  0.0  0.1  52252 20912 ?        Ss   08:45   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-152:root         871  0.0  0.1 129332 23464 ?        Ssl  08:45   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-172:bartoszl    1885  0.0  0.0  51036  6764 ?        S<sl 08:57   0:00 /usr/bin/pipewire
-173:bartoszl    1886  0.0  0.0  34788  6548 ?        Ssl  08:57   0:00 /usr/bin/pipewire-media-session
-174:bartoszl    1887  0.0  0.1 2033724 28748 ?       S<sl 08:57   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-175:bartoszl    1900  0.0  0.0   9596  5876 ?        Ss   08:57   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-176:bartoszl    1902  0.0  0.0 252316  7568 ?        Sl   08:57   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
-191:bartoszl    2002  0.0  0.0 173756  6492 tty2     Ssl+ 08:57   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
-197:bartoszl    2094  6.2  1.7 5565860 283872 ?      Rsl  08:57   0:41 /usr/bin/gnome-shell
-198:bartoszl    2100  0.0  0.0   8428  4524 ?        S    08:57   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus
-205:bartoszl    2228  0.0  0.1 2885440 27984 ?       Sl   08:57   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-207:bartoszl    2247  0.0  0.0   2888   964 ?        Ss   08:57   0:00 sh -c /usr/bin/ibus-daemon --panel disable $([ "$XDG_SESSION_TYPE" = "x11" ] && echo "--xim")
-209:bartoszl    2250  0.0  0.0 326804 12536 ?        Sl   08:57   0:00 /usr/bin/ibus-daemon --panel disable
-232:bartoszl    2463  0.0  0.1 2942780 27988 ?       Sl   08:57   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
-234:bartoszl    2488  0.0  0.0  76144 13020 ?        Ss   08:57   0:00 /snap/snapd-desktop-integration/83/usr/bin/snapd-desktop-integration
-237:bartoszl    2588  0.0  0.1 306196 22396 ?        Sl   08:57   0:00 /snap/snapd-desktop-integration/83/usr/bin/snapd-desktop-integration
-240:bartoszl    2734  2.7  0.5 818404 88588 ?        Sl   08:57   0:17 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.32CK71 -listen 4 -listen 5 -displayfd 6 -initfd 7
-245:bartoszl    2941  0.0  0.1 1015780 26440 ?       Sl   08:57   0:00 /usr/bin/snap userd
-  247  mkdir homework_linux
-  248  cd homework_linux/
-  249  ls
-  250  touch processes.txt
-  251  ps -aux
-  252  clear
-  253  ps -aux > processes.txt 
-  254  cat processes.txt 
-  255  gedit processes.txt 
-  256  cp processes.txt copy.txt
-  257  ls
-  258  mkdir backup
-  259  ls
-  260  mv copy.txt ./backup/
-  261  ls
-  262  ls backup/
-  263  wc processes.txt 
-  264  gedit processes.txt &
-  265  wc processes.txt 
-  266  echo 269 > selected.txt
-  267  cat selected.txt 
-  268  grep /bin
-  269  grep bin
-  270  gedit processes.txt  &
-  271  man grep
-  272  grep /bin processes.txt 
-  273  grep -rni /bin processes.txt 
-  274  echo \n >> selected.txt 
-  275  cat selected.txt 
-  276  gedit selected.txt  &
-  277  grep -rni /bin processes.txt >> selected.txt 
-  278  less selected.txt 
-  279  history
+268 processes.txt
+134:root         760  0.0  0.1  52252 20912 ?        Ss   08:45   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+146:root         871  0.0  0.1 129332 23464 ?        Ssl  08:45   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+161:bartoszl    1885  0.0  0.0  51036  6764 ?        S<sl 08:57   0:00 /usr/bin/pipewire
+162:bartoszl    1886  0.0  0.0  34788  6548 ?        Ssl  08:57   0:00 /usr/bin/pipewire-media-session
+163:bartoszl    1887  0.0  0.1 2295868 29316 ?       S<sl 08:57   0:03 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+164:bartoszl    1900  0.0  0.0   9880  6168 ?        Ss   08:57   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+165:bartoszl    1902  0.0  0.0 252316  7568 ?        Sl   08:57   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+179:bartoszl    2002  0.0  0.0 173756  6492 tty2     Ssl+ 08:57   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+185:bartoszl    2094  3.6  1.8 5586164 294092 ?      Ssl  08:57   2:31 /usr/bin/gnome-shell
+186:bartoszl    2100  0.0  0.0   8428  4524 ?        S    08:57   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus
+193:bartoszl    2228  0.0  0.1 2885440 27984 ?       Sl   08:57   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+195:bartoszl    2247  0.0  0.0   2888   964 ?        Ss   08:57   0:00 sh -c /usr/bin/ibus-daemon --panel disable $([ "$XDG_SESSION_TYPE" = "x11" ] && echo "--xim")
+197:bartoszl    2250  0.2  0.0 326804 12536 ?        Rl   08:57   0:11 /usr/bin/ibus-daemon --panel disable
+220:bartoszl    2463  0.0  0.1 2942780 28256 ?       Sl   08:57   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
+222:bartoszl    2488  0.0  0.0  76144 13020 ?        Ss   08:57   0:00 /snap/snapd-desktop-integration/83/usr/bin/snapd-desktop-integration
+224:bartoszl    2588  0.0  0.1 306196 22536 ?        Sl   08:57   0:00 /snap/snapd-desktop-integration/83/usr/bin/snapd-desktop-integration
+227:bartoszl    2734  1.0  0.6 836172 99292 ?        Sl   08:57   0:41 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.32CK71 -listen 4 -listen 5 -displayfd 6 -initfd 7
+232:bartoszl    2941  0.0  0.1 1089512 26440 ?       Sl   08:57   0:00 /usr/bin/snap userd
+  370  mkdir homework_linux
+  371  cd homework_linux/
+  372  touch processes.txt
+  373  ps -aux > processes.txt 
+  374  cp processes.txt copy.txt
+  375  mkdir backup
+  376  ls
+  377  mv copy.txt ./backup/
+  378  wc processes.txt 
+  379  wc -l processes.txt > selected.txt
+  380  cat selected.txt 
+  381  grep -rni /bin processes.txt
+  382  grep -rni /bin processes.txt >> selected.txt 
+  383  history
+  384  history |tail -n14
+  385  history |tail -n6
+  386  history |tail -n16
+  387  history |tail -n18
+  388  history |tail -n19 > commands.txt
