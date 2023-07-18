@@ -11,6 +11,6 @@ daquas@XXX:/linux_test/zadanie$ cat selected.txt commands.txt
   286  mv copy.txt backup/
   287  ls backup/
   288  wc -l processes.txt > selected.txt
-  289  grep /bin processes.txt >> selected.txt
+  289  grep -rni /bin processes.txt >> selected.txt
   290  history
   291  history | tail -n13 > commands.txt
