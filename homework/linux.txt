@@ -1,5 +1,5 @@
 daquas@XXX:/linux_test/zadanie$ cat selected.txt commands.txt
-  7  87 574 processes.txt
+  7 processes.txt
   278  mkdir zadanie
   279  cd zadanie/
   280  touch processes.txt
@@ -10,7 +10,7 @@ daquas@XXX:/linux_test/zadanie$ cat selected.txt commands.txt
   285  mkdir backup
   286  mv copy.txt backup/
   287  ls backup/
-  288  wc processes.txt > selected.txt
-  289  grep /bin processes.txt > selected.txt
+  288  wc -l processes.txt > selected.txt
+  289  grep /bin processes.txt >> selected.txt
   290  history
   291  history | tail -n13 > commands.txt
