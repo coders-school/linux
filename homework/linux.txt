@@ -1,47 +1,48 @@
 jackobe@komp:~/zaddom$ cat selected.txt commands.txt 
 248 processes.txt
-root         704  0.0  0.0  52252 21036 ?        Ss   16:56   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-root         797  0.0  0.1 129340 23416 ?        Ssl  16:56   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-root         808  0.4  0.1 1495956 42080 ?       Ssl  16:56   0:08 /usr/bin/containerd
-root        1071  0.0  0.3 1447288 66080 ?       Ssl  16:56   0:01 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
-root        1250  0.1  0.0 300856  1264 ?        Sl   16:56   0:02 /usr/bin/VBoxDRMClient
-jackobe     1375  0.0  0.0  50752  6572 ?        S<sl 16:56   0:00 /usr/bin/pipewire
-jackobe     1376  0.0  0.0  34640  6468 ?        Ssl  16:56   0:00 /usr/bin/pipewire-media-session
-jackobe     1377  0.0  0.1 1434104 27028 ?       S<sl 16:56   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-jackobe     1378  0.0  0.0  76144 12248 ?        Ss   16:56   0:00 /snap/snapd-desktop-integration/83/usr/bin/snapd-desktop-integration
-jackobe     1404  0.0  0.0 399784  8516 ?        SLl  16:56   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
-jackobe     1409  0.0  0.0  10344  6584 ?        Ss   16:56   0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-jackobe     1415  0.0  0.0 173756  6180 tty2     Ssl+ 16:56   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
-jackobe     1740 14.9  1.9 5440212 414292 ?      Rsl  16:56   4:47 /usr/bin/gnome-shell
-jackobe     1748  0.0  0.0   8560  4564 ?        S    16:56   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus
-jackobe     1916  0.0  0.1 307552 24352 ?        Sl   16:56   0:00 /snap/snapd-desktop-integration/83/usr/bin/snapd-desktop-integration
-jackobe     1976  0.0  0.1 2674492 28272 ?       Sl   16:56   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-jackobe     1985  0.0  0.0   2888   968 ?        Ss   16:56   0:00 sh -c /usr/bin/ibus-daemon --panel disable $([ "$XDG_SESSION_TYPE" = "x11" ] && echo "--xim")
-jackobe     1997  0.4  0.0 326852 12476 ?        Sl   16:56   0:09 /usr/bin/ibus-daemon --panel disable
-jackobe     2124  0.0  0.0  31240   344 ?        S    16:56   0:00 /usr/bin/VBoxClient --clipboard
-jackobe     2125  0.0  0.0 229428  2288 ?        Sl   16:56   0:00 /usr/bin/VBoxClient --clipboard
-jackobe     2151  1.5  0.4 234136 91484 ?        S    16:56   0:29 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.ODP571 -listen 4 -listen 5 -displayfd 6 -initfd 7
-jackobe     2161  0.1  0.7 848524 170044 ?       Sl   16:56   0:03 /snap/snap-store/959/usr/bin/snap-store --gapplication-service
-jackobe     2298  0.0  0.1 2682688 28360 ?       Sl   16:56   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
-jackobe     2399  0.0  0.0  31240   348 ?        S    16:56   0:00 /usr/bin/VBoxClient --seamless
-jackobe     2400  0.1  0.0 229528  2632 ?        Sl   16:56   0:03 /usr/bin/VBoxClient --seamless
-jackobe     2407  0.0  0.0  31240   344 ?        S    16:56   0:00 /usr/bin/VBoxClient --draganddrop
-jackobe     2408  0.8  0.0 230044  2564 ?        Sl   16:56   0:16 /usr/bin/VBoxClient --draganddrop
-jackobe     2417  0.0  0.0  31240   348 ?        S    16:56   0:00 /usr/bin/VBoxClient --vmsvga-session
-jackobe     2418  0.0  0.0 163344  2372 ?        Sl   16:56   0:00 /usr/bin/VBoxClient --vmsvga-session
-jackobe     3057  0.5  0.3 668512 77960 ?        Sl   16:56   0:09 /usr/bin/python3 /usr/bin/x-terminal-emulator
-jackobe     3867  0.0  0.1 405200 40804 ?        SLl  16:58   0:00 /usr/bin/seahorse --gapplication-service
-jackobe     3868  0.0  0.2 890336 59436 ?        Sl   16:58   0:00 /usr/bin/gnome-calendar --gapplication-service
-jackobe     4425  0.0  0.0  22768  5820 pts/1    Ss   17:01   0:00 /bin/bash
+104:root         704  0.0  0.0  52252 21036 ?        Ss   17:28   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+115:root         797  0.0  0.1 129340 23416 ?        Ssl  17:28   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+116:root         808  0.3  0.2 1495956 42676 ?       Ssl  17:28   0:21 /usr/bin/containerd
+122:root        1071  0.0  0.3 1447288 65888 ?       Ssl  17:28   0:02 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+123:root        1250  0.1  0.0 300856  1264 ?        Sl   17:28   0:06 /usr/bin/VBoxDRMClient
+129:jackobe     1375  0.0  0.0  50752  6572 ?        S<sl 17:28   0:00 /usr/bin/pipewire
+130:jackobe     1376  0.0  0.0  34640  6468 ?        Ssl  17:28   0:00 /usr/bin/pipewire-media-session
+131:jackobe     1377  0.0  0.1 1434104 27028 ?       S<sl 17:28   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+132:jackobe     1378  0.0  0.0  76144 12248 ?        Ss   17:28   0:00 /snap/snapd-desktop-integration/83/usr/bin/snapd-desktop-integration
+134:jackobe     1404  0.0  0.0 399784  8516 ?        SLl  17:28   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+135:jackobe     1409  0.0  0.0  10344  6588 ?        Ss   17:28   0:02 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+136:jackobe     1415  0.0  0.0 173756  6180 tty2     Ssl+ 17:28   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+147:jackobe     1740 11.1  2.1 5503208 451084 ?      Rsl  17:28  10:39 /usr/bin/gnome-shell
+148:jackobe     1748  0.0  0.0   8560  4564 ?        S    17:28   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus
+161:jackobe     1916  0.0  0.1 307552 24352 ?        Sl   17:28   0:00 /snap/snapd-desktop-integration/83/usr/bin/snapd-desktop-integration
+168:jackobe     1976  0.0  0.1 2674492 28272 ?       Sl   17:28   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+170:jackobe     1985  0.0  0.0   2888   968 ?        Ss   17:28   0:00 sh -c /usr/bin/ibus-daemon --panel disable $([ "$XDG_SESSION_TYPE" = "x11" ] && echo "--xim")
+178:jackobe     1997  0.2  0.0 326852 12476 ?        Sl   17:28   0:12 /usr/bin/ibus-daemon --panel disable
+190:jackobe     2124  0.0  0.0  31240   344 ?        S    17:28   0:00 /usr/bin/VBoxClient --clipboard
+191:jackobe     2125  0.0  0.0 229428  2288 ?        Sl   17:28   0:00 /usr/bin/VBoxClient --clipboard
+193:jackobe     2151  1.3  0.4 234140 91552 ?        S    17:28   1:18 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.ODP571 -listen 4 -listen 5 -displayfd 6 -initfd 7
+194:jackobe     2161  0.0  0.8 848524 170240 ?       Sl   17:28   0:03 /snap/snap-store/959/usr/bin/snap-store --gapplication-service
+200:jackobe     2298  0.0  0.1 2682688 28384 ?       Sl   17:28   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
+203:jackobe     2399  0.0  0.0  31240   348 ?        S    17:28   0:00 /usr/bin/VBoxClient --seamless
+204:jackobe     2400  0.1  0.0 229528  2632 ?        Sl   17:28   0:08 /usr/bin/VBoxClient --seamless
+205:jackobe     2407  0.0  0.0  31240   344 ?        S    17:28   0:00 /usr/bin/VBoxClient --draganddrop
+206:jackobe     2408  0.7  0.0 230044  2564 ?        Sl   17:28   0:43 /usr/bin/VBoxClient --draganddrop
+207:jackobe     2417  0.0  0.0  31240   348 ?        S    17:28   0:00 /usr/bin/VBoxClient --vmsvga-session
+208:jackobe     2418  0.0  0.0 163344  2372 ?        Sl   17:28   0:02 /usr/bin/VBoxClient --vmsvga-session
+210:jackobe     3057  0.2  0.3 670540 79896 ?        Sl   17:28   0:15 /usr/bin/python3 /usr/bin/x-terminal-emulator
+212:jackobe     3867  0.0  0.1 405200 40804 ?        SLl  17:30   0:00 /usr/bin/seahorse --gapplication-service
+213:jackobe     3868  0.0  0.2 890336 59436 ?        Sl   17:30   0:00 /usr/bin/gnome-calendar --gapplication-service
+227:jackobe     4425  0.0  0.0  22768  5876 pts/1    Ss   17:33   0:00 /bin/bash
+233:jackobe     5350  0.3  0.6 667772 129568 ?       Sl   18:06   0:10 /usr/bin/gedit --gapplication-service
     1  mkdir zaddom
     2  cd zaddom/
     3  touch processes.txt
-    4  ps aux > processes.txt 
+    4  ps aux > processes.txt
     5  cp processes.txt copy.txt
     6  mkdir backup
     7  mv copy.txt ./backup/
     8  wc -l processes.txt 
     9  wc -l processes.txt > selected.txt
-   10  grep "/bin" processes.txt >> selected.txt 
+   10  grep -rni "/bin" processes.txt >> selected.txt 
    11  history
    12  history | tail -n 12 > commands.txt
