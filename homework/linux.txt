@@ -1,0 +1,11 @@
+ 1900  mkdir ctest
+ 1901  cd ctest/
+ 1902  touch processes.txt
+ 1903  ps aux > processes.txt > processes.txt 
+ 1904  cp processes.txt copy.txt
+ 1905  wc -l processes.txt 
+ 1906  wc -l processes.txt > selected.txt
+ 1907  cat processes.txt | grep /bin >>selected.txt 
+ 1908  history 
+root@wzl2-HP-EliteBook-850-G5:/home/kordys_m/ctest# history | tail -n 10 > commands.txt
+root@wzl2-HP-EliteBook-850-G5:/home/kordys_m/ctest# cat selected.txt commands.txt 
