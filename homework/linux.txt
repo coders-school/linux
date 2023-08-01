@@ -1,0 +1,36 @@
+jakub@VBox:~/testkat$ cat selected.txt commands.txt
+  184  2132 17894
+root         623  0.0  0.7  52228 21344 ?        Ss   11:58   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         750  0.0  0.7 129340 22416 ?        Ssl  11:58   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+jakub       1392  0.0  0.1  50752  4848 ?        S<sl 11:59   0:00 /usr/bin/pipewire
+jakub       1393  0.0  0.1  34640  4384 ?        Ssl  11:59   0:00 /usr/bin/pipewire-media-session
+jakub       1394  0.0  0.7 1696232 23956 ?       S<sl 11:59   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+jakub       1402  0.0  0.2 252288  7300 ?        Sl   11:59   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+jakub       1406  0.0  0.2  10744  6804 ?        Ss   11:59   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+jakub       1416  0.0  0.2 173756  6332 tty2     Ssl+ 11:59   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+jakub       1530  2.7 13.0 4133692 398020 ?      Ssl  11:59   1:20 /usr/bin/gnome-shell
+jakub       1541  0.0  0.1   8560  4260 ?        S    11:59   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus
+jakub       1693  0.0  0.8 2611004 25356 ?       Sl   11:59   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+jakub       1699  0.0  0.0   2888   968 ?        Ss   11:59   0:00 sh -c /usr/bin/ibus-daemon --panel disable $([ "$XDG_SESSION_TYPE" = "x11" ] && echo "--xim")
+jakub       1702  0.0  0.4 326620 12172 ?        Sl   11:59   0:01 /usr/bin/ibus-daemon --panel disable
+jakub       1772  0.0  0.4  76144 13104 ?        Ss   11:59   0:00 /snap/snapd-desktop-integration/83/usr/bin/snapd-desktop-integration
+jakub       1913  0.0  0.7 306144 22456 ?        Sl   11:59   0:00 /snap/snapd-desktop-integration/83/usr/bin/snapd-desktop-integration
+jakub       1984  0.0  0.8 2611008 25572 ?       Sl   11:59   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
+jakub       2091  0.0  1.8 743424 55416 ?        Sl   11:59   0:00 /usr/bin/gnome-calendar --gapplication-service
+jakub       2094  0.0  1.3 692660 39620 ?        SLl  11:59   0:00 /usr/bin/seahorse --gapplication-service
+jakub       2618  0.2  2.6 1020776 81776 ?       Sl   12:14   0:05 /usr/bin/nautilus --gapplication-service
+jakub       2967  0.6  2.1 200416 64312 ?        S    12:37   0:04 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.9L5881 -listen 4 -listen 5 -displayfd 6 -initfd 7
+jakub       3129  0.0  0.8 497352 25868 ?        Sl   12:37   0:00 /usr/bin/snap userd
+  606  mkdir testkat
+  607  cd testkat
+  608  touch processes.txt
+  609  ps aux > processes.txt
+  610  cp processes.txt copy.txt
+  611  mkdir backup
+  612  mv copy.txt backup
+  613  wc processes.txt
+  614  wc < processes.txt > selected.txt
+  615  grep "/bin" processes.txt
+  616  grep "/bin" processes.txt >> selected.txt
+  617  history
+  618  history | tail -n13 > commands.txt
