@@ -19,3 +19,4 @@ test test_data/6.txt
 test test_data/7.txt
 test test_data/8.txt
 test test_data/9.txt
+test test_data/10.txt
