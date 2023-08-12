@@ -17,7 +17,7 @@ root              1124   0.0  0.0 33759512   1836   ??  Ss   14Jul23   0:00.72 /
   133  wc -l processes.txt 
   134  wc -l processes.txt >> selected.txt
   135  grep /bin processes.txt 
-  136  grep /bin processes.txt > selected.txt 
+  136  grep "/bin" processes.txt > selected.txt 
   137  history
   138  tail -n16 history
   139  tail -n16 ~/.bash_history
