@@ -1,0 +1,29 @@
+marcins-macbook-pro:cs marcin$ cat selected.txt commands.txt 
+     544 processes.txt
+root             11164   0.0  0.0 34219800   7036   ??  Ss    4Aug23   0:16.31 /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Resources/bin/simdiskimaged
+root              1124   0.0  0.0 33759512   1836   ??  Ss   14Jul23   0:00.72 /usr/bin/sysdiagnose
+  121  mkdir cs
+  122  cd cs/
+  123  touch processes.txt
+  124  ps aux >> processes.txt 
+  125  cat processes.txt 
+  126  clear
+  127  cp processes.txt copy.txt
+  128  mkdir backup
+  129  mv copy.txt backup/
+  130  cd ..
+  131  cd cs/
+  132  wc processes.txt 
+  133  wc -l processes.txt 
+  134  wc -l processes.txt >> selected.txt
+  135  grep /bin processes.txt 
+  136  grep /bin processes.txt >> selected.txt 
+  137  history
+  138  tail -n16 history
+  139  tail -n16 ~/.bash_history
+  140  tail  ~/.bash_history
+  141  history
+  142  history | tail -n 18
+  143  history | tail -n 21 >> commands.txt
+  144  history | tail -n 23 >> commands.txt
+  145  history | tail -n 25 > commands.txt
