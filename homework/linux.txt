@@ -13,6 +13,6 @@ root              1124   0.0  0.0 33759512   1836   ??  Ss   14Jul23   0:00.72 /
   129  mv copy.txt backup/
   130  wc processes.txt 
   131  wc -l processes.txt >> selected.txt
-  132  grep "/bin" processes.txt >> selected.txt 
+  132  grep -rni /bin processes.txt >> selected.txt
   133  history
   134  history | tail -n 25 > commands.txt
