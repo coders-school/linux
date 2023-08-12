@@ -11,18 +11,8 @@ root              1124   0.0  0.0 33759512   1836   ??  Ss   14Jul23   0:00.72 /
   127  cp processes.txt copy.txt
   128  mkdir backup
   129  mv copy.txt backup/
-  130  cd ..
-  131  cd cs/
-  132  wc processes.txt 
-  133  wc -l processes.txt 
-  134  wc -l processes.txt >> selected.txt
-  136  grep "/bin" processes.txt > selected.txt 
-  137  history
-  138  tail -n16 history
-  139  tail -n16 ~/.bash_history
-  140  tail  ~/.bash_history
-  141  history
-  142  history | tail -n 18
-  143  history | tail -n 21 >> commands.txt
-  144  history | tail -n 23 >> commands.txt
-  145  history | tail -n 25 > commands.txt
+  130  wc processes.txt 
+  131  wc -l processes.txt >> selected.txt
+  132  grep "/bin" processes.txt >> selected.txt 
+  133  history
+  134  history | tail -n 25 > commands.txt
