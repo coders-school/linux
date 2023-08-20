@@ -1,49 +1,20 @@
- maciek@DESKTOP-RFC58G6:~/zadLin$ cat selected.txt commands.txt
-4 processes.txt
-2:      including those of other users
-  935  cd zadLin/
-  936  touch processes.txt/
-  937  ls
-  938  ls -l
-  939  cd ..
-  940  ls
-  941  cd zadLin/
-  942  ls
-  943  touch processes.txt
-  944  ls
-  945  echo  a    select all processes on a terminal, includ-
-  946  echo 'a \tselet all processes on terminal,\nincluding those of other users'
-  947  cat processes.txt
-  948  ls
-  949  echo 'a\tselect all processes on a terminal,\nincluding those of other users' > processes.txt
-  950  cat processes.txt
-  951  echo -e 'a\tselect all processes on a terminal,\nincluding those of other users' > processes.txt
-  952  cat processes.txt
-  953  echo -e 'a\tselect all processes on a terminal,\n\t\bincluding those of other users' > processes.txt
-  954  cat processes.txt
-  955* echo -e 'a\tselect all processes on a terminal,\n\tincluding those of other users' > processes.txt
-  956  cat processes.txt
-  957  echo -e 'a\tselect all processes on a terminal,\n\tincluding those of other users' > processes.txt
-  958  cat processes.txt
-  959  echo -e 'u\tdisplay user orient format' >> processes.txt
-  960  echo -e 'x\tselect processes without controlling ttys' >> processes.txt
-  961  cat processes.txt
-  962  cp processes.txt copy.txt
-  963  ls
-  964  cat copy.txt
-  965  mkdir backup
-  966  mv copy.txt backup/
-  967  cd backup/
-  968  ls
-  969  cd ..
-  970  wc -l processes.txt
-  971  wc -l processes.txt > selected.txt
-  972  ls
-  973  cat selected.txt
-  974  ls
-  975  cat processes.txt
-  976  grep -n "\bin" processes.txt >> selected.txt
-  977  cat selected.txt
-  978  history
-  979  history | tail -45 > commands.txt
-maciek@DESKTOP-RFC58G6:~/zadLin$
+maciek@DESKTOP-RFC58G6:~/zadLin$ cat selected.txt commands.txt
+6 processes.txt
+2:root         1  0.0  0.0    928   536 ?        Sl   13:32   0:00 /init
+3:root        14  0.0  0.0   1276   372 ?        Ss   13:33   0:00 /init
+4:root        15  0.0  0.0   1276   372 ?        S    13:33   0:00 /init
+ 1003  cd zadLin/
+ 1004  touch processes.txt
+ 1005  ps aux > processes.txt
+ 1006  cat processes.txt
+ 1007  cp processes.txt copy.txt
+ 1008  mkdir backup/
+ 1009  mv copy.txt backup/
+ 1010  ls
+ 1011  wc -l processes.txt > selected.txt
+ 1012  ls
+ 1013  cat selected.txt
+ 1014  grep -rni "\bin" processes.txt >> selected.txt
+ 1015  cat selected.txt
+ 1016  history
+ 1017  history | tail -15 > commands.txt
