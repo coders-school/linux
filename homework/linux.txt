@@ -1,16 +1,14 @@
-maciek@DESKTOP-RFC58G6:~/zadLinux$ cat selected.txt commands.txt
+maciek@DESKTOP-RFC58G6:~/zadLinux$ cat selected.txt commanda.txt
 6 processes.txt
-root         1  0.0  0.0    928   536 ?        Sl   13:32   0:00 /init
-root        14  0.0  0.0   1276   372 ?        Ss   13:33   0:00 /init
-root        15  0.0  0.0   1276   372 ?        S    13:33   0:01 /init
- 1096  mkdir zadLinux/
- 1097  cd zadLinux/
- 1098  touch processes.txt
- 1099  ps aux > processes.txt
- 1100  cp processes.txt copy.txt
- 1101  mkdir backup/
- 1102  mv copy.txt backup/
- 1103  wc -l processes.txt > selected.txt
- 1104  grep '\bin' processes.txt >> selected.txt
- 1105  history
- 1106  history | tail -11 > commands.txt
+ 1133  mkdir zadLinux/
+ 1134  cd zadLinux/
+ 1135  touch processes.txt
+ 1136  ps aux > processes.txt
+ 1137  cp processes.txt copy.txt
+ 1138  mkdir backup/
+ 1139  mv copy.txt backup/
+ 1140  wc -l processes.txt > selected.txt
+ 1141  grep -rni /bin >> selected.txt
+ 1142  grep -rni /bin processes.txt >> selected.txt
+ 1143  history
+ 1144  history | tail -12 > commanda.txt
