@@ -18,3 +18,15 @@ maciek@DESKTOP-RFC58G6:~/zadLin$ cat selected.txt commands.txt
  1015  cat selected.txt
  1016  history
  1017  history | tail -15 > commands.txt
+ 1018  cat commands.txt
+ 1019  cat selected.txt commands.txt
+ 1020  wc -l processes.txt > selected.txt
+ 1021  cat selected.txt
+ 1022  grep -n "\bin" processes.txt >> selected.txt
+ 1023  cat selected.txt
+ 1024  history
+ 1025  hidtory | tail -23 > commands.txt
+ 1026  ls
+ 1027  cat commands.txt
+ 1028  history
+ 1029  history | tail -27 > commands.txt
