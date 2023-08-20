@@ -1,4 +1,4 @@
-maciek@DESKTOP-RFC58G6:~/zadLinux$ cat selected.txt commanda.txt
+maciek@DESKTOP-RFC58G6:~/zadLinux$ cat selected.txt commands.txt
 6 processes.txt
  1133  mkdir zadLinux/
  1134  cd zadLinux/
@@ -11,4 +11,4 @@ maciek@DESKTOP-RFC58G6:~/zadLinux$ cat selected.txt commanda.txt
  1141  grep -rni /bin >> selected.txt
  1142  grep -rni /bin processes.txt >> selected.txt
  1143  history
- 1144  history | tail -12 > commanda.txt
+ 1144  history | tail -12 > commands.txt
