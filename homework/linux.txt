@@ -1,0 +1,85 @@
+thomas@debian0:~/dowolna$ cat selected.txt commands.txt 
+176 processes.txt
+message+     631  0.1  0.0  10752  6460 ?        Ss   15:10   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+nvpd         640  0.0  0.0   6560  2100 ?        Ss   15:10   0:00 /usr/bin/nvidia-persistenced --user nvpd
+root         728  0.0  0.2 139572 18324 ?        Ssl  15:10   0:00 /usr/bin/sddm
+root         876  0.0  0.1  58732 15244 ?        S    15:10   0:00 /usr/lib/x86_64-linux-gnu/sddm/sddm-helper --socket /tmp/sddm-auth24d4761d-fdc0-429f-b34c-7cee6e818006 --id 1 --start /usr/bin/startplasma-x11 --user thomas
+thomas       894  0.0  0.4 660572 36316 ?        S<sl 15:10   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+thomas       896  0.0  0.1 239960 11936 ?        SLsl 15:10   0:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+thomas       901  0.0  0.0   9724  5568 ?        Ss   15:10   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+thomas       905  0.0  1.2 759908 103816 ?       Sl   15:10   0:00 /usr/bin/kwalletd5 --pam-login 7 8
+thomas       906  0.0  0.5 198876 41636 ?        Sl   15:10   0:00 /usr/bin/startplasma-x11
+thomas       948  0.0  0.0   7664   772 ?        Ss   15:10   0:00 /usr/bin/ssh-agent /usr/bin/startplasma-x11
+thomas      1007  0.0  1.3 760052 105928 ?       Ssl  15:10   0:00 /usr/bin/ksmserver
+thomas      1009  0.1  1.7 1586420 137568 ?      Ssl  15:10   0:02 /usr/bin/kded5
+thomas      1010  6.7  2.2 2022960 178108 ?      Rsl  15:10   1:34 /usr/bin/kwin_x11 --replace
+thomas      1036  0.0  0.3 238396 30568 ?        Ssl  15:10   0:01 /usr/bin/kglobalaccel5
+thomas      1047  0.2  2.1 1265692 176064 ?      Ssl  15:10   0:02 /usr/bin/plasmashell --no-respawn
+thomas      1059  0.0  0.0   9500  3932 ?        S    15:10   0:00 /usr/bin/xsettingsd
+thomas      1080  0.0  0.2 236316 22268 ?        Ssl  15:10   0:00 /usr/bin/gmenudbusmenuproxy
+thomas      1085  0.0  0.2 234932 23456 ?        Ssl  15:10   0:00 /usr/bin/xembedsniproxy
+thomas      1198  1.6  3.2 2887288 261560 ?      Ssl  15:10   0:23 /usr/bin/latte-dock
+thomas      1204  0.0  1.2 761628 103800 ?       Ssl  15:10   0:00 /usr/bin/kaccess
+thomas      1215  0.0  1.3 775700 109172 ?       Ssl  15:10   0:00 /usr/bin/kalendarac
+thomas      1334  0.2  1.7 1133544 144436 ?      Sl   15:10   0:04 /usr/bin/konsole -session 10c5d39269000169883079200000009950010_1698944135_132097
+thomas      1383  0.8  2.2 1344672 178076 ?      Sl   15:10   0:12 /usr/bin/albert -session 10c5d39269000169883106100000009950015_1698944135_119419
+thomas      1406  0.0  0.0   9632  5796 pts/1    Ss   15:10   0:00 /bin/bash
+thomas      1445  0.0  0.0   8988  4300 ?        S    15:10   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus_0
+thomas      2294  0.0  0.0   2576   880 ?        S    15:17   0:00 /usr/bin/sh -c /usr/lib/firefox-esr/firefox-esr 
+  217  mkdir dowolna
+  218  touch ./dowolna/processes.txt
+  219  ps aux
+  220  ps aux > ./dowolna/processes.txt
+  221  cd dowolna/
+  222  ls
+  223  cat processes.txt 
+  224  cp processes.txt copy.txt
+  225  cat copy.txt 
+  226  less processes.txt 
+  227  grep processes.txt 
+  228  grep processes.txt \n
+  229  grep \n processes.txt 
+  230  man find
+  231  man grep
+  232  grep processes.txt 
+  233  grep -n \n  processes.txt 
+  234  wc man
+  235  wc --help
+  236  wc processes.txt 
+  237  wc -l processes.txt 
+  238  cd ~
+  239  mkdir backup
+  240  mv ./dowolna/copy.txt ./backup/
+  241  ls ./dowolna/
+  242  cd backup/
+  243  ls
+  244  cat copy.txt 
+  245  wc -l processes.txt 
+  246  cd ..
+  247  wc -l processes.txt 
+  248  cd /dowolona
+  249  cd ./dowolna/
+  250  ls
+  251  wc -l processes.txt 
+  252* wc --hel
+  253  wc -l processes.txt > selected.txt
+  254  ls
+  255  cat selected.txt 
+  256  grep -name "/bin"
+  257  grep -name "/bin" processes.txt 
+  258  grep man
+  259  grep --help
+  260  grep "/bin" processes.txt 
+  261  grep /bin processes.txt 
+  262  ls
+  263  grep /bin processes.txt >> selected.txt 
+  264  cat selected.txt 
+  265  history 
+  266  history | tail -n48 > commands.txt
+  267  ls
+  268  cat commands.txt 
+  269  history
+  270  history | tail -n53 > commands.txt
+  271  cat commands.txt 
+  272  history
+  273  history | tail -n57 > commands.txt
