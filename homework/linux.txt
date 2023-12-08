@@ -1,46 +1,22 @@
-sminakowski@debianso:~/dowolnaNazwa$ cat selected.txt commands.txt
-167 processes.txt
-message+     501  0.0  0.0   9984  5604 ?        Ss   12:34   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-sminako+     793  1.5  0.3 1178804 31380 ?       S<sl 12:35   0:21 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-sminako+     797  0.0  0.1 239764 13664 ?        SLsl 12:35   0:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
-sminako+     801  0.0  0.0   9660  5276 ?        Ss   12:35   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-sminako+     855  0.0  0.0   7664   772 ?        Ss   12:35   0:00 /usr/bin/ssh-agent x-session-manager
-sminako+     871  0.0  0.0   9252  4740 ?        S    12:35   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus_0
-sminako+     891  0.0  0.0  81256  5652 ?        SLs  12:35   0:00 /usr/bin/gpg-agent --supervised
-sminako+     952  0.0  0.4  61936 36172 ?        S    12:35   0:00 /usr/bin/python3 /usr/share/system-config-printer/applet.py
-sminako+    1737 19.1  6.5 3716308 535700 ?      Sl   12:46   2:29 /usr/bin/x-www-browser
-sminako+    2180  0.0  0.1 115988  8944 ?        Ssl  12:46   0:00 /usr/bin/speech-dispatcher --spawn --communication-method unix_socket --socket-path /run/user/1000/speech-dispatcher/speechd.sock
-
-  323  mkdir dowolnaNazwa
-  324  cd dowolnaNazwa
-  325  touch processes.txt
-  326  ps aux
-  327  echo ps aux >> processes.txt
-  328  echo man
-  329  man echo
-  330  ps aux >> processes.txt
-  331  cp processes.txt copy.txt
-  332  mkdir bakckup
-  333  mv copy.txt backup
-  334  mv backup copy.txt
-  335  man mv
-  336  mv copy.txt/backup
-  337  mv copy.txt backup
-  338  mv backup copy.txt
-  339  mv bakckup backup
-  340  mv copy.txt backup
-  341  greg -rni processes.txt
-  342  grep -rni processes.txt
-  343  wc processes.txt
-  344  man wc
-  345  wc -l processes.txt
-  346  wc -l processes.txt >> selected.txt
-  347  man grep
-  348  grep processes.txt "/bin"
-  349  grep "/bin" processes.txt >> selected.txt
-  350  history
-  351  man tail
-  352  history tail 25 >> commands.txt
-  353  history | tail -n 25 >> commands.txt
-  354  history | tail -n 30  >> commands.txt
-  355  history | tail -n 40  >> commands.txt
+sminakowski@debianso:~/zadanie$ cat selected.txt commands.txt
+160 processes.txt
+80:message+     500  0.0  0.0  10024  5712 ?        Ss   14:07   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+101:sminako+     795  0.0  0.3 654488 31360 ?        S<sl 14:07   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+102:sminako+     799  0.0  0.1 239764 11748 ?        SLsl 14:07   0:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+103:sminako+     801  0.0  0.0   9688  5408 ?        Ss   14:07   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+105:sminako+     857  0.0  0.0   7664   772 ?        Ss   14:07   0:00 /usr/bin/ssh-agent x-session-manager
+107:sminako+     873  0.0  0.0   9252  4800 ?        S    14:07   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus_0
+109:sminako+     893  0.0  0.0  81256  5616 ?        SLs  14:07   0:00 /usr/bin/gpg-agent --supervised
+126:sminako+     963  0.0  0.4  61936 36476 ?        S    14:07   0:00 /usr/bin/python3 /usr/share/system-config-printer/applet.py
+143:sminako+    1421 20.5  5.1 11305116 418328 ?     Sl   14:18   2:07 /usr/bin/x-www-browser
+  368  mkdir zadanie
+  369  cd zadanie
+  370  touch processes.txt
+  371  ps aux >> processes.txt
+  372  cp processes.txt copy.txt
+  373  mkdir backup
+  374  mv copy.txt backup
+  375  wc -l processes.txt > selected.txt
+  376  grep -n "/bin" processes.txt >> selected.txt
+  377  history
+  378  history | tail -n 11  > commands.txt
