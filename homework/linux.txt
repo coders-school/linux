@@ -1,0 +1,46 @@
+sminakowski@debianso:~/dowolnaNazwa$ cat selected.txt commands.txt
+167 processes.txt
+message+     501  0.0  0.0   9984  5604 ?        Ss   12:34   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+sminako+     793  1.5  0.3 1178804 31380 ?       S<sl 12:35   0:21 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+sminako+     797  0.0  0.1 239764 13664 ?        SLsl 12:35   0:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+sminako+     801  0.0  0.0   9660  5276 ?        Ss   12:35   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+sminako+     855  0.0  0.0   7664   772 ?        Ss   12:35   0:00 /usr/bin/ssh-agent x-session-manager
+sminako+     871  0.0  0.0   9252  4740 ?        S    12:35   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus_0
+sminako+     891  0.0  0.0  81256  5652 ?        SLs  12:35   0:00 /usr/bin/gpg-agent --supervised
+sminako+     952  0.0  0.4  61936 36172 ?        S    12:35   0:00 /usr/bin/python3 /usr/share/system-config-printer/applet.py
+sminako+    1737 19.1  6.5 3716308 535700 ?      Sl   12:46   2:29 /usr/bin/x-www-browser
+sminako+    2180  0.0  0.1 115988  8944 ?        Ssl  12:46   0:00 /usr/bin/speech-dispatcher --spawn --communication-method unix_socket --socket-path /run/user/1000/speech-dispatcher/speechd.sock
+
+  323  mkdir dowolnaNazwa
+  324  cd dowolnaNazwa
+  325  touch processes.txt
+  326  ps aux
+  327  echo ps aux >> processes.txt
+  328  echo man
+  329  man echo
+  330  ps aux >> processes.txt
+  331  cp processes.txt copy.txt
+  332  mkdir bakckup
+  333  mv copy.txt backup
+  334  mv backup copy.txt
+  335  man mv
+  336  mv copy.txt/backup
+  337  mv copy.txt backup
+  338  mv backup copy.txt
+  339  mv bakckup backup
+  340  mv copy.txt backup
+  341  greg -rni processes.txt
+  342  grep -rni processes.txt
+  343  wc processes.txt
+  344  man wc
+  345  wc -l processes.txt
+  346  wc -l processes.txt >> selected.txt
+  347  man grep
+  348  grep processes.txt "/bin"
+  349  grep "/bin" processes.txt >> selected.txt
+  350  history
+  351  man tail
+  352  history tail 25 >> commands.txt
+  353  history | tail -n 25 >> commands.txt
+  354  history | tail -n 30  >> commands.txt
+  355  history | tail -n 40  >> commands.txt
