@@ -30,7 +30,7 @@ marczaja    3525  0.6  0.0   6240  5256 pts/2    Ss   13:29   0:00 /bin/bash
    79  wc -l processes.txt > selected.txt
    81  cat selected.txt
    82  wc -l processes.txt > selected.txt
-   83  grep "\/bin" processes.txt -n >> selected.txt
+   83  grep -n "\/bin" processes.txt >> selected.txt
    84  cat selected.txt
    85  history
    86  history | less
