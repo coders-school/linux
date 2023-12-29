@@ -1,1 +1,48 @@
-test
+marczaja@N-5CG12473BG:~/coders_school/linux/some_catalog$ cat selected.txt commands.txt
+39 processes.txt
+root         142  0.0  0.2  30096 19124 ?        Ss   08:34   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         202  0.0  0.2 107216 21256 ?        Ssl  08:34   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         345  0.0  0.0   7524  4772 pts/1    Ss   08:34   0:00 /bin/login -f
+root        2894  0.0  0.0   4780  3432 ?        Ss   08:40   0:00 /bin/bash /snap/ubuntu-desktop-installer/1278/bin/subiquity-server
+root        2920  0.0  1.0 705468 78052 ?        Sl   08:40   0:16 /snap/ubuntu-desktop-installer/1278/usr/bin/python3.10 -m subiquity.cmd.server --use-os-prober --storage-version=2 --postinst-hooks-dir=/snap/ubuntu-desktop-installer/1278/etc/subiquity/postinst.d
+root        2933  0.1  0.4  42168 36364 ?        S    08:40   0:25 python3 /snap/ubuntu-desktop-installer/1278/usr/bin/cloud-init status --wait
+marczaja    3525  0.6  0.0   6240  5256 pts/2    Ss   13:29   0:00 /bin/bash
+   57  mkdir some_catalog
+   58  touch some_catalog/processes.txt
+   59  cd some_catalog/
+   60  ls
+   61  ps aux > processes.txt
+   62  cat processes.txt
+   63  cp processes.txt copy.txt
+   64  ls
+   65  mkdir backup
+   66  mv copy.txt ./backup/
+   67  ls
+   68  ls backup/
+   69  wc -l processes.txt
+   70  wc -l processes.txt > selected.txt
+   71  cat selected.txt
+   72  grep "\/bin" processes.txt
+   73  grep "\/bin" processes.txt > selected.txt
+   74  cat selected.txt
+   75  wc -l processes.txt > selected.txt
+   76  cat selected.txt
+   77  wc -l processes.txt >> selected.txt
+   78  cat selected.txt
+   79  wc -l processes.txt > selected.txt
+   80  grep "\/bin" processes.txt > selected.txt
+   81  cat selected.txt
+   82  wc -l processes.txt > selected.txt
+   83  grep "\/bin" processes.txt >> selected.txt
+   84  cat selected.txt
+   85  history
+   86  history | less
+   87  history tail 29
+   88  history tail
+   89  history | tail
+   90  history | tail -n 29
+   91  history | tail -n 29
+   92  history | tail -n 29 | less
+   93  history | tail -n 34 | less
+   94  history | tail -n 40 | less
+   95  history | tail -n 40 > commands.txt
