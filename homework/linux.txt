@@ -1,0 +1,63 @@
+krzysztoffeliksiak@macbook-air-krzysztof Linux % cat selected.txt && cat commands.txt 
+     511 processes.txt
+ 1010  mkdir Linux
+ 1011  ls
+ 1012  cd Linus
+ 1013  touch processes.txt
+ 1014  ls
+ 1015  rm processes.txt
+ 1016  ls
+ 1017  cd Linux
+ 1018  touch processes.txt
+ 1019  ps aux > processes.txt
+ 1020  ls
+ 1021  cat processes.txt
+ 1022  ls -a
+ 1023  ls -l
+ 1024  cp processes.txt copy.txt
+ 1025  ls
+ 1026  cat copy.txt
+ 1027  head copy.txt
+ 1028  clear
+ 1029  head copy.txt
+ 1030  ls
+ 1031  mkdir backup
+ 1032  ls
+ 1033  mv copy.txt ./backup/
+ 1034  ls
+ 1035  cd backup
+ 1036  ls
+ 1037  cd ..
+ 1038  ls
+ 1039  man wc
+ 1040  ls
+ 1041  wc -l processes.txt
+ 1042  wc -l processes.txt > selected.txt
+ 1043  ls
+ 1044  cat selected.txt
+ 1045  grep /bin processes.txt
+ 1046  ls
+ 1047  cat processes.txt
+ 1048  ls
+ 1049  clear
+ 1050  ls
+ 1051  grep /bin processes.txt >> selected.txt
+ 1052  ;s
+ 1053  cat selected.txt
+ 1054  history
+ 1055  man history
+ 1056  history --help
+ 1057  history
+ 1058  history | tail -n +1030
+ 1059  history | tail -n +1050
+ 1060  history
+ 1061  history | tail -n 1046
+ 1062  history | tail -n +1046
+ 1063  history | tail -n 1050
+ 1064  history 1055
+ 1065  history 1030
+ 1066  history 1020
+ 1067  history 1010
+ 1068  history | tail 1010
+ 1069  history | tail -n 1010
+ 1070  ls
