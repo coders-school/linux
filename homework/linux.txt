@@ -49,7 +49,7 @@ krzysztoffeliksiak@macbook-air-krzysztof Linux % cat selected.txt && cat command
  1056  history --help
  1057  history
  1058  history | tail -n +1030
- 1059  history | tail -n +1050
+ 1059  history | tail -n40 >> commands.txt
  1060  history
  1061  history | tail -n 1046
  1062  history | tail -n +1046
