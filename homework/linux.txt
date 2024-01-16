@@ -1,16 +1,16 @@
 1  mkdir zadanie
-    2  touch zadanie/processes.txt
-    3  ps -aux > zadanie/processes.txt
-    4  cp zadanie/processes.txt zadanie/copy.txt
-    5  mkdir zadanie/buckup
-    6  mv zadanie/copy.txt zadanie/buckup/
-    7  wc -l zadanie/processes.txt
-    8  touch selected.txt
-    9  wc -l zadanie/processes.txt > selected.txt
-   10  grep /bin zadanie/processes.txt
-   11  history
-   12  touch commands.txt
-   13  grep -n /bin zadanie/processes.txt >> selected.txt
-   14  history | tail -n14 > commands.txt
+2  touch zadanie/processes.txt
+3  ps -aux > zadanie/processes.txt
+4  cp zadanie/processes.txt zadanie/copy.txt
+5  mkdir zadanie/buckup
+6  mv zadanie/copy.txt zadanie/buckup/
+7  wc -l zadanie/processes.txt
+8  touch zadanie/selected.txt
+9  wc -l zadanie/processes.txt > zadanie/selected.txt
+10  grep /bin zadanie/processes.txt
+11  history
+12  touch zadanie/commands.txt
+13  grep -n /bin zadanie/processes.txt >> zadanie/selected.txt
+14  history | tail -n14 > zadanie/commands.txt
 10 zadanie/processes.txt
 9:kprzygo+   692  0.0  0.0  15284   820 tty1     S    17:10   0:00 /bin/nl
