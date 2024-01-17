@@ -12,5 +12,6 @@
 12  touch zadanie/commands.txt
 13  grep -n /bin zadanie/processes.txt >> zadanie/selected.txt
 14  history | tail -n14 > zadanie/commands.txt
+15  cat zadanie/selected.txt zadanie/commands.txt
 10 zadanie/processes.txt
 9:kprzygo+   692  0.0  0.0  15284   820 tty1     S    17:10   0:00 /bin/nl
