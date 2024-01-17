@@ -2,8 +2,8 @@
 2  touch zadanie/processes.txt
 3  ps -aux > zadanie/processes.txt
 4  cp zadanie/processes.txt zadanie/copy.txt
-5  mkdir zadanie/buckup
-6  mv zadanie/copy.txt zadanie/buckup/
+5  mkdir zadanie/backup
+6  mv zadanie/copy.txt zadanie/backup/
 7  wc -l zadanie/processes.txt
 8  touch zadanie/selected.txt
 9  wc -l zadanie/processes.txt > zadanie/selected.txt
