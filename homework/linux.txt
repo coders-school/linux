@@ -12,4 +12,4 @@ processes.txt
   710  wc -l processes.txt > selected.txt
   711  grep -n /bin processes.txt >> selected.txt 
   712  history
-  713  history | tail -n=12 > commands.txt
+  713  history | tail -n12 > commands.txt
