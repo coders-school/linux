@@ -1,6 +1,7 @@
 cat selected.txt commands.txt 
 184 processes.txt
 processes.txt
+  702  mkdir homeworkLinux
   703  cd homeworkLinux/
   704  touch processes.txt
   705  ps aux > processes.txt 
@@ -9,6 +10,6 @@ processes.txt
   708  mv copy.txt backup/
   709  wc -l processes.txt 
   710  wc -l processes.txt > selected.txt
-  711  grep -sli /bin processes.txt >> selected.txt 
+  711  grep -n /bin processes.txt >> selected.txt 
   712  history
-  713  history | tail --lines=11 > commands.txt
+  713  history | tail -n=12 > commands.txt
