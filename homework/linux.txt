@@ -13,3 +13,4 @@ processes.txt
   711  grep -n /bin processes.txt >> selected.txt 
   712  history
   713  history | tail -n12 > commands.txt
+
