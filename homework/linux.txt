@@ -7,8 +7,8 @@ processes.txt
   706  cp processes.txt copy.txt
   707  mkdir backup
   708  mv copy.txt backup/
-  709  wc --lines processes.txt 
-  710  wc --lines processes.txt > selected.txt
-  711  grep -sli /bin * >> selected.txt 
+  709  wc -l processes.txt 
+  710  wc -l processes.txt > selected.txt
+  711  grep -sli /bin processes.txt >> selected.txt 
   712  history
   713  history | tail --lines=11 > commands.txt
