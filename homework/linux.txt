@@ -1,4 +1,4 @@
-kp@ubuntu:~/pd2$ cat selected.txt comands.txt 
+kp@ubuntu:~/pd2$ cat selected.txt commands.txt 
 294 processes.txt
 172:root         750  0.0  0.2  50148 10368 ?        Ss   08:06   0:00 /usr/bin/VGAuthService
 173:root         752  0.1  0.1 239516  7612 ?        Ssl  08:06   0:06 /usr/bin/vmtoolsd
