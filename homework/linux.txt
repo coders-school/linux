@@ -1,0 +1,83 @@
+kp@ubuntu:~/pd_linux$ cat comands.txt selected.txt 
+  305  pwd
+  306  mkdir pd_linux
+  307  cd pd_linux/
+  308  touch processes.txt
+  309  ls
+  310  ps aux >> processes.txt 
+  311  cat processes.txt 
+  312  mkdir backup
+  313  man cp
+  314  cp processes.txt  copy.txt
+  315  ls
+  316  man mv
+  317  mv copy.txt backup/
+  318  ls
+  319  ls -l backup/
+  320  manls
+  321  man ls
+  322  la -h
+  323  ls -h
+  324  ls --help
+  325  man cat
+  326  cd ../knauka/
+  327  cat -n wynik.txt 
+  328  cat -n result.txt 
+  329  clear
+  330  cat -n result.txt 
+  331  more -h
+  332  more --help
+  333  cat -n result.txt 
+  334  cat -n wynik.txt 
+  335  cat --help 
+  336  cat -n wynik.txt >>wynik.txt 
+  337  cat wynik.txt 
+  338  cat -n wynik.txt >>wynik.txt 
+  339  cat -n wynik.txt >>result.txt 
+  340  cat result.txt 
+  341  man wc
+  342  wc wynik.txt 
+  343  man w
+  344  man wc
+  345  man -l wc
+  346  wc - l wynik.txt 
+  347  wc -l wynik.txt 
+  348  wc -l wynik.txt >> result.txt 
+  349  cat result.txt 
+  350  cd ../pd_linux/
+  351  pwd
+  352  ls
+  353  wc -l processes.txt  >> selected.txt
+  354  cat selected.txt 
+  355  man grep
+  356  grep -fe /bin processes.txt 
+  357  grep -f /bin processes.txt 
+  358  grep --help
+  359  grep -fe '/bin' processes.txt 
+  360  grep -fe '/bin'  
+  361  grep -f '/bin'  
+  362  grep  '/bin'  
+  363  grep  "/bin" processes.txt 
+  364  grep  "/bin" processes.txt  >>selected.txt 
+  365  cat selected.txt 
+  366  history 
+  367  history  | tail -60
+  368  history  | tail -65
+  369  history  | tail -65 >> comands.txt
+278 processes.txt
+root         750  0.0  0.2  50148 10368 ?        Ss   08:06   0:00 /usr/bin/VGAuthService
+root         752  0.1  0.1 239452  7152 ?        Ssl  08:06   0:01 /usr/bin/vmtoolsd
+message+     788  0.0  0.1   9840  6232 ?        Ss   08:06   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         798  0.0  0.5  39700 20592 ?        Ss   08:06   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         896  0.0  0.5 118140 22540 ?        Ssl  08:06   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+whoopsie     984  0.0  0.3 253136 15384 ?        Ssl  08:06   0:00 /usr/bin/whoopsie -f
+kp          1593  0.2  0.4 1482716 19464 ?       S<sl 08:09   0:01 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+kp          1598  0.0  0.1 240196  7340 ?        Sl   08:09   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+kp          1602  0.0  0.1  10324  7480 ?        Ss   08:09   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+kp          1673  0.0  0.1 164024  6528 tty2     Ssl+ 08:09   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+kp          1765  0.0  0.0   6040   448 ?        Ss   08:09   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+kp          1787  0.0  0.1   7248  4272 ?        S    08:09   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+kp          1813  0.6  6.1 4066216 245444 ?      Rsl  08:09   0:04 /usr/bin/gnome-shell
+kp          1913  0.0  0.6 2598544 26356 ?       Sl   08:09   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+kp          1981  0.1  1.0 144492 41140 ?        Sl   08:09   0:01 /usr/bin/vmtoolsd -n vmusr --blockFd 3
+kp@ubuntu:~/pd_linux$ 
