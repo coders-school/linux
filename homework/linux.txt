@@ -23,8 +23,8 @@ kp@ubuntu:~/pd2$ cat selected.txt comands.txt
   300  mkdir backup
   301  mv copy.txt  backup/
   302  wc -l  processes.txt 
-  303  wc -l  processes.txt >selected.txt
-  304  grep -n /bin processes.txt  >>selected.txt 
+  303  wc -la  processes.txt >selected.txt
+  304  grep -n /bin processes.txt  >> selected.txt 
   305  history 
   306  history | tail -n11
   307  history | tail -n12 >comands.txt
