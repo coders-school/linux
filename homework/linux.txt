@@ -26,5 +26,5 @@ kp@ubuntu:~/pd2$ cat selected.txt comands.txt
   303  wc -l  processes.txt > selected.txt
   304  grep -n /bin processes.txt  >> selected.txt 
   305  history 
-  306  history | tail -n12 > comands.txt
+  306  history | tail -n12 > commands.txt
  
