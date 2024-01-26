@@ -136,7 +136,7 @@
   373  grep  "/bin" processes.txt  >>selected.txt 
   374  grep  "/bin" processes.txt  
   375  grep -l  "/bin" processes.txt  
-  376  grep -n  "/bin" processes.txt  
+  376  grep -n  /bin processes.txt  
   377  history 
   378  history | tail -n77
-  379  history | tail -n77 >>comands.txt 
+  379  history | tail -n77 >comands.txt 
