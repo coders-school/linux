@@ -133,7 +133,7 @@
   370  cat comands.txt 
   371  cat comands.txt selected.txt 
   372  history 
-  373  grep  "/bin" processes.txt  >>selected.txt 
+  373  grep -l /bin processes.txt  >> selected.txt 
   374  grep  "/bin" processes.txt  
   375  grep -l  "/bin" processes.txt  
   376  grep -n  /bin processes.txt  
