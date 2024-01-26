@@ -49,15 +49,15 @@
   353  wc -l processes.txt  >> selected.txt
   354  cat selected.txt 
   355  man grep
-  356  grep -fe /bin processes.txt 
-  357  grep -f /bin processes.txt 
+  356  grep -n  /bin processes.txt >>selected.txt 
+  357  ggrep -n  /bin processes.txt >>selected.txt 
   358  grep --help
   359  grep -fe '/bin' processes.txt 
   360  grep -fe '/bin'  
   361  grep -f '/bin'  
   362  grep  '/bin'  
-  363  grep  "/bin" processes.txt 
-  364  grep  "/bin" processes.txt  >>selected.txt 
+  363  grep -n  /bin processes.txt >>selected.txt 
+  364  grep -n /bin processes.txt  >>selected.txt 
   365  cat selected.txt 
   366  history 
   367  history  | tail -60
