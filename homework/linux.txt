@@ -1,8 +1,8 @@
 777
-  223  touch processess.txt
-  224  ps aux > processess.txt
-  225  copy processess.txt copy.txt
-  226  cp processess.txt copy.txt
+  223  touch processes.txt
+  224  ps aux > processes.txt
+  225  copy processes.txt copy.txt
+  226  cp processes.txt copy.txt
   227  mkdir backup
   228  mv copy.txt
   229  mv copy.txt backup/copy.txt
