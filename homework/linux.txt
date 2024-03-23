@@ -1,33 +1,15 @@
-777
-  223  touch processes.txt
-  224  ps aux > processes.txt
-  225  copy processes.txt copy.txt
-  226  cp processes.txt copy.txt
-  227  mkdir backup
-  228  mv copy.txt
-  229  mv copy.txt backup/copy.txt
-  230  cd backup
-  231  ls
-  232  less copy.txt
-  233  man less
-  234  man find
-  235  man ls
-  236  wc -l
-  237  wc -l copy.txt
-  238  man wc
-  239  wc -mlw copy.txt
-  240  cat "777" > selected.txt
-  241  touch selected.txt
-  242  cat "777" > selected.txt
-  243  echo "777" > selected.txt
-  244  cat copy.txt| grep "bin"
-  245  ps aux
-  246  history
-  247  cat copy.txt| grep "/bin" >> selected.txt
-  248  cat selected.txt
-  249  man tail
-  250  history | tile -n 15
-  251  man tail
-  252  history
-  253  touch commands.txt
-  254  history | tile -n 31 > commands.txt
+747
+  280  mkdir linux-homework
+  281  cd linux-homework
+  282  touch processes.txt
+  283  ps aux > processes.txt
+  284  cp processes.txt copy.txt
+  285  mkdir backup
+  286  mv copy.txt backup/copy.txt
+  287  wc -w processes.txt
+  288  wc -l processes.txt
+  289  touch selected.txt
+  290  echo "747" > selected.txt
+  291  cat processes.txt| grep "/bin" >> selected.txt
+  292  history
+  293  touch commands.txt
