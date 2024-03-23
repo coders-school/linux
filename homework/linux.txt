@@ -11,6 +11,6 @@
   288  wc -l processes.txt
   289  touch selected.txt
   290  echo "747" > selected.txt
-  291  cat processes.txt| grep "/bin" >> selected.txt
+  291  cat processes.txt | grep "/bin" >> selected.txt
   292  history
   293  touch commands.txt
