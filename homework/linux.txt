@@ -1,0 +1,69 @@
+ 1144  mkdir linux
+ 1145  cd linux
+ 1146  touch processes.txt
+ 1147  ps aux > processes.txt 
+ 1148  cp processes.txt copy.txt
+ 1149  mkdir backup/
+ 1150  mv copy.txt backup/
+ 1151  wc -l processes.txt 
+ 1152  wc -l processes.txt > selected.txt
+ 1153  grep -rni /bin processes.txt >> selected.txt 
+ 1154  history
+jarek1992@Ubuntu:~/JAREK/linux$ history | tail -n11
+ 1145  cd linux
+ 1146  touch processes.txt
+ 1147  ps aux > processes.txt 
+ 1148  cp processes.txt copy.txt
+ 1149  mkdir backup/
+ 1150  mv copy.txt backup/
+ 1151  wc -l processes.txt 
+ 1152  wc -l processes.txt > selected.txt
+ 1153  grep -rni /bin processes.txt >> selected.txt 
+ 1154  history
+ 1155  history | tail -n11
+jarek1992@Ubuntu:~/JAREK/linux$ history | tail -n11 > commands.txt
+jarek1992@Ubuntu:~/JAREK/linux$ cat selected.txt commands.txt 
+195 processes.txt
+69:root         520  0.0  0.3  50036  6904 ?        Ss   15:38   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+81:root         635  0.0  0.4 127156  8940 ?        Ssl  15:38   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+85:root        1609  0.0  0.1 284092  2176 ?        Sl   15:38   0:06 /usr/bin/VBoxDRMClient
+96:jarek19+    2511  0.0  0.1  48528  3584 ?        S<sl 15:38   0:00 /usr/bin/pipewire
+97:jarek19+    2513  0.0  0.1  32556  3456 ?        Ssl  15:38   0:00 /usr/bin/pipewire-media-session
+98:jarek19+    2514  0.0  0.7 1431512 14628 ?       S<sl 15:38   0:01 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+99:jarek19+    2515  0.0  0.3  76256  6912 ?        Ss   15:38   0:00 /snap/snapd-desktop-integration/83/usr/bin/snapd-desktop-integration
+100:jarek19+    2517  0.0  0.3 249812  6428 ?        Sl   15:38   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+101:jarek19+    2524  0.0  0.1 1005488 3712 ?        Ssl  15:38   0:00 /usr/bin/ubuntu-report service
+102:jarek19+    2527  0.0  0.2 171408  5760 tty2     Ssl+ 15:38   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+103:jarek19+    2529  0.0  0.6  16588 12040 ?        Ss   15:38   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+118:jarek19+    2676  3.0 18.9 4157024 379392 ?      Ssl  15:39   6:44 /usr/bin/gnome-shell
+120:jarek19+    2691  0.0  0.2   8564  4224 ?        S    15:39   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus
+125:jarek19+    2767  0.0  0.7 306064 14424 ?        Sl   15:39   0:00 /snap/snapd-desktop-integration/83/usr/bin/snapd-desktop-integration
+133:jarek19+    2823  0.0  1.1 2608396 22672 ?       Sl   15:39   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+134:jarek19+    2825  0.0  0.0   2892  1664 ?        Ss   15:39   0:00 sh -c /usr/bin/ibus-daemon --panel disable $([ "$XDG_SESSION_TYPE" = "x11" ] && echo "--xim")
+149:jarek19+    2855  0.0  0.4 324100  8068 ?        Sl   15:39   0:03 /usr/bin/ibus-daemon --panel disable
+156:jarek19+    2984  0.0  0.0  29036  1308 ?        S    15:39   0:00 /usr/bin/VBoxClient --clipboard
+157:jarek19+    2985  0.0  0.1 227224  3100 ?        Sl   15:39   0:00 /usr/bin/VBoxClient --clipboard
+159:jarek19+    2992  0.0  0.7 207764 15096 ?        S    15:39   0:04 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.8F3RK2 -listen 4 -listen 5 -displayfd 6 -initfd 7
+160:jarek19+    2998  0.0  2.1 718016 43980 ?        Sl   15:39   0:02 /snap/snap-store/959/usr/bin/snap-store --gapplication-service
+161:jarek19+    3037  0.0  1.2 2542944 24952 ?       Sl   15:39   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
+165:jarek19+    3201  0.0  0.0  29036  1308 ?        S    15:39   0:00 /usr/bin/VBoxClient --seamless
+166:jarek19+    3202  0.0  0.1 227324  2844 ?        Sl   15:39   0:11 /usr/bin/VBoxClient --seamless
+167:jarek19+    3209  0.0  0.0  29036  1280 ?        S    15:39   0:00 /usr/bin/VBoxClient --draganddrop
+168:jarek19+    3210  0.5  0.1 227840  2560 ?        Sl   15:39   1:06 /usr/bin/VBoxClient --draganddrop
+169:jarek19+    3218  0.0  0.0  29036  1284 ?        S    15:39   0:00 /usr/bin/VBoxClient --vmsvga-session
+170:jarek19+    3219  0.0  0.0 161140  1924 ?        Sl   15:39   0:03 /usr/bin/VBoxClient --vmsvga-session
+173:jarek19+    4938  0.0  0.7 1163164 14720 ?       Sl   16:23   0:00 /usr/bin/snap userd
+193:jarek19+    7653  0.7  3.8 758708 77832 ?        Sl   19:15   0:00 /usr/bin/nautilus --gapplication-service
+ 1146  touch processes.txt
+ 1147  ps aux > processes.txt 
+ 1148  cp processes.txt copy.txt
+ 1149  mkdir backup/
+ 1150  mv copy.txt backup/
+ 1151  wc -l processes.txt 
+ 1152  wc -l processes.txt > selected.txt
+ 1153  grep -rni /bin processes.txt >> selected.txt 
+ 1154  history
+ 1155  history | tail -n11
+ 1156  history | tail -n11 > commands.txt
+jarek1992@Ubuntu:~/JAREK/linux$ 
+
