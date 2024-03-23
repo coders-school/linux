@@ -14,3 +14,4 @@
   291  grep "/bin" processes.txt >> selected.txt
   292  history
   293  touch commands.txt
+  294  history | tail -n 14 > commands.txt
