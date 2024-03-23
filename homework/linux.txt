@@ -1,0 +1,59 @@
+ 1017  ls
+ 1018  cd JAREK
+ 1019  mkdir linux_homework
+ 1020  cd linux_homework/
+ 1021  touch processes.txt
+ 1022  ps aux > processes.txt 
+ 1023  cp processes.txt copy.txt
+ 1024  mkdir backup
+ 1025  mv copy.txt backup/
+ 1026  cat -n processes.txt 
+ 1027  echo 183 >> selected.txt
+ 1028  grep -rni /bin * | grep processes.txt >> selected.txt
+ 1029  history
+jarek1992@Ubuntu:~/JAREK/linux_homework$ history | tail -n13 > commands.txt
+jarek1992@Ubuntu:~/JAREK/linux_homework$ cat selected.txt commands.txt
+183
+processes.txt:68:root         494  0.0  0.7  50036 15608 ?        Ss   11:58   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+processes.txt:79:root         601  0.0  0.7 127156 15104 ?        Ssl  11:58   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+processes.txt:84:root        1692  0.0  0.1 284092  2176 ?        Sl   11:58   0:03 /usr/bin/VBoxDRMClient
+processes.txt:94:jarek19+    2651  0.0  0.2  48520  6016 ?        S<sl 12:05   0:00 /usr/bin/pipewire
+processes.txt:95:jarek19+    2652  0.0  0.2  32408  5760 ?        Ssl  12:05   0:00 /usr/bin/pipewire-media-session
+processes.txt:96:jarek19+    2653  0.0  1.2 1431512 25332 ?       S<sl 12:05   0:03 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+processes.txt:97:jarek19+    2654  0.0  0.7  76256 14208 ?        Ss   12:05   0:00 /snap/snapd-desktop-integration/83/usr/bin/snapd-desktop-integration
+processes.txt:98:jarek19+    2656  0.0  0.3 1005488 7680 ?        Ssl  12:05   0:00 /usr/bin/ubuntu-report service
+processes.txt:99:jarek19+    2658  0.0  0.3 249812  7456 ?        Sl   12:05   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+processes.txt:100:jarek19+    2671  0.0  0.3  11512  7600 ?        Ss   12:05   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+processes.txt:102:jarek19+    2680  0.0  0.3 171408  6144 tty2     Ssl+ 12:05   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+processes.txt:116:jarek19+    2816  2.9 20.3 4094536 407796 ?      Ssl  12:05   2:49 /usr/bin/gnome-shell
+processes.txt:120:jarek19+    2835  0.0  0.2   8564  4480 ?        S    12:05   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus
+processes.txt:123:jarek19+    2907  0.0  1.1 306064 22744 ?        Sl   12:05   0:00 /snap/snapd-desktop-integration/83/usr/bin/snapd-desktop-integration
+processes.txt:132:jarek19+    2969  0.0  1.3 2608496 27788 ?       Sl   12:05   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+processes.txt:133:jarek19+    2971  0.0  0.0   2892  1664 ?        Ss   12:05   0:00 sh -c /usr/bin/ibus-daemon --panel disable $([ "$XDG_SESSION_TYPE" = "x11" ] && echo "--xim")
+processes.txt:148:jarek19+    3005  0.0  0.6 324088 12072 ?        Sl   12:05   0:03 /usr/bin/ibus-daemon --panel disable
+processes.txt:155:jarek19+    3136  0.0  0.0  29036  1536 ?        S    12:05   0:00 /usr/bin/VBoxClient --clipboard
+processes.txt:156:jarek19+    3137  0.0  0.2 227224  4096 ?        Sl   12:05   0:00 /usr/bin/VBoxClient --clipboard
+processes.txt:157:jarek19+    3143  0.0  3.2 207452 64688 ?        S    12:05   0:02 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.MSKVK2 -listen 4 -listen 5 -displayfd 6 -initfd 7
+processes.txt:158:jarek19+    3146  0.0  6.2 718156 124976 ?       Sl   12:05   0:01 /snap/snap-store/959/usr/bin/snap-store --gapplication-service
+processes.txt:160:jarek19+    3190  0.0  1.3 2608492 27916 ?       Sl   12:05   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
+processes.txt:164:jarek19+    3308  0.0  0.0  29036  1540 ?        S    12:05   0:00 /usr/bin/VBoxClient --seamless
+processes.txt:165:jarek19+    3309  0.0  0.1 227324  3460 ?        Sl   12:05   0:05 /usr/bin/VBoxClient --seamless
+processes.txt:166:jarek19+    3317  0.0  0.0  29036  1536 ?        S    12:05   0:00 /usr/bin/VBoxClient --draganddrop
+processes.txt:167:jarek19+    3318  0.4  0.1 227840  3328 ?        Sl   12:05   0:28 /usr/bin/VBoxClient --draganddrop
+processes.txt:168:jarek19+    3326  0.0  0.0  29036  1564 ?        S    12:05   0:00 /usr/bin/VBoxClient --vmsvga-session
+processes.txt:169:jarek19+    3327  0.0  0.1 161140  2332 ?        Sl   12:05   0:01 /usr/bin/VBoxClient --vmsvga-session
+processes.txt:173:jarek19+    5317  0.2  4.2 756772 86092 ?        Sl   12:13   0:12 /usr/bin/nautilus --gapplication-service
+ 1018  cd JAREK
+ 1019  mkdir linux_homework
+ 1020  cd linux_homework/
+ 1021  touch processes.txt
+ 1022  ps aux > processes.txt 
+ 1023  cp processes.txt copy.txt
+ 1024  mkdir backup
+ 1025  mv copy.txt backup/
+ 1026  cat -n processes.txt 
+ 1027  echo 183 >> selected.txt
+ 1028  grep -rni /bin * | grep processes.txt >> selected.txt
+ 1029  history
+ 1030  history | tail -n13 > commands.txt
+jarek1992@Ubuntu:~/JAREK/linux_homework$ 
