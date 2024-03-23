@@ -1,0 +1,14 @@
+ cat selected.txt commands.txt
+747
+  280  mkdir linux-homework
+  281  cd linux-homework
+  282  touch processes.txt
+  283  ps aux > processes.txt
+  284  cp processes.txt copy.txt
+  285  mkdir backup
+  286  mv copy.txt backup/copy.txt
+  287  cat processes.txt | wc -l | tr  -d ' ' > selected.txt
+  288  grep "/bin" processes.txt >> selected.txt
+  289  history
+  290  touch commands.txt
+  291  history | tail -n 11 > commands.txt
