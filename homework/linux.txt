@@ -7,11 +7,8 @@
   284  cp processes.txt copy.txt
   285  mkdir backup
   286  mv copy.txt backup/copy.txt
-  287  wc -w processes.txt
-  288  wc -l processes.txt
-  289  touch selected.txt
-  290  echo "747" > selected.txt
-  291  grep "/bin" processes.txt >> selected.txt
-  292  history
-  293  touch commands.txt
-  294  history | tail -n 14 > commands.txt
+  287  cat processes.txt | wc -l | tr  -d ' ' > selected.txt
+  288  grep "/bin" processes.txt >> selected.txt
+  289  history
+  290  touch commands.txt
+  291  history | tail -n 11 > commands.txt
