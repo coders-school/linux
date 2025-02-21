@@ -1,0 +1,37 @@
+patrycja@vbox:~$ cat catalog/selected.txt catalog/commands.txt
+226
+93:dbus         746  0.0  0.1   9792  4548 ?        Ss   00:58   0:00 /usr/bin/dbus-broker-launch --scope system --audit
+109:root         785  0.0  0.0 442660  2548 ?        Ssl  00:58   0:00 /usr/bin/VBoxDRMClient
+115:root         866  0.0  1.1 359792 44508 ?        Ssl  00:58   0:00 /usr/bin/python3 -sP /usr/sbin/firewalld --nofork --nopid
+117:root         876  0.0  0.5 490800 22488 ?        Ss   00:58   0:00 /usr/bin/abrt-dump-journal-core -D -T -f -e
+118:root         877  0.0  0.5 490812 22892 ?        Ss   00:58   0:00 /usr/bin/abrt-dump-journal-oops -fxtD
+119:root         878  0.0  0.5 490804 23068 ?        Ss   00:58   0:00 /usr/bin/abrt-dump-journal-xorg -fxtD
+132:patrycja    1688  0.0  0.1 534172  7744 ?        Sl   00:59   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+133:patrycja    1706  0.0  0.1 453984  6220 tty2     Ssl+ 00:59   0:00 /usr/libexec/gdm-wayland-session /usr/bin/gnome-session
+134:patrycja    1709  0.0  0.1   9296  4356 ?        Ss   00:59   0:00 /usr/bin/dbus-broker-launch --scope user
+142:patrycja    1829  0.0  0.3 325052 13180 ?        S<sl 00:59   0:00 /usr/bin/pipewire
+143:patrycja    1831  0.0  0.4 698300 18264 ?        S<sl 00:59   0:00 /usr/bin/wireplumber
+144:patrycja    1869  2.2  9.5 4162916 378180 ?      Ssl  00:59   1:17 /usr/bin/gnome-shell
+146:patrycja    1951  0.0  0.0   9172  3848 ?        S    00:59   0:00 /usr/bin/dbus-broker-launch --config-file=/usr/share/defaults/at-spi2/accessibility.conf --scope user
+153:patrycja    2002  0.0  0.7 2824120 28748 ?       Ssl  00:59   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+154:patrycja    2013  0.0  0.3 609264 14420 ?        Ssl  00:59   0:02 /usr/bin/ibus-daemon --panel disable
+171:patrycja    2086  0.4  8.3 1383220 333472 ?      Sl   00:59   0:14 /usr/bin/gnome-software --gapplication-service
+177:patrycja    2165  0.0  0.4 570188 18420 ?        Ssl  00:59   0:00 /usr/bin/abrt-applet --gapplication-service
+178:patrycja    2222  0.0  0.7 2824132 29076 ?       Ssl  00:59   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+185:patrycja    2304  0.0  1.0 189192 43092 ?        S    00:59   0:00 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.E17H22 -listenfd 4 -listenfd 5 -displayfd 6 -initfd 7 -byteswappedclients -enable-ei-portal
+192:patrycja    2399  0.0  0.2 326472 10028 ?        S<sl 00:59   0:00 /usr/bin/pipewire-pulse
+200:patrycja    2607  0.0  0.0 237920  1444 ?        S    00:59   0:00 /usr/bin/VBoxClient --clipboard
+201:patrycja    2609  0.0  0.1 436720  4128 ?        Sl   00:59   0:00 /usr/bin/VBoxClient --clipboard
+206:patrycja    2820  0.4  6.4 1853036 256980 ?      Ssl  00:59   0:13 /usr/bin/nautilus --gapplication-service
+210:patrycja    2975  0.0  2.0 843384 81408 ?        Sl   00:59   0:01 /usr/bin/python3 /usr/share/ibus-typing-booster/engine/main.py --ibus
+  453  mkdir catalog
+  454  touch catalog/processes.txt
+  455  ps aux > catalog/processes.txt
+  456  cp catalog/processes.txt catalog/copy.txt
+  457  mkdir catalog/backup
+  458  mv catalog/copy.txt catalog/backup
+  459  wc -l catalog/processes.txt
+  460  wc -l < catalog/processes.txt > catalog/selected.txt
+  461  grep -n "/bin" catalog/processes.txt >> catalog/selected.txt
+  462  history
+  463  history | tail -n +453 > catalog/commands.txt
