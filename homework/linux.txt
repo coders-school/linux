@@ -1,0 +1,69 @@
+cat ninja/selected.txt ninja/commands.txt 
+309
+message+     726  0.0  0.1  25708 20648 ?        Ss   15:06   0:02 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         846  0.0  0.3 2393460 52520 ?       Ssl  15:06   0:06 /usr/bin/containerd
+root        1425  0.0  0.5 2492508 83304 ?       Ssl  15:06   0:01 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+heimdal     1494  1.6  0.1  85252 19156 ?        S<sl 15:06   2:03 /usr/bin/pipewire
+heimdal     1496  0.0  0.2 409252 32540 ?        S<sl 15:06   0:01 /usr/bin/wireplumber
+heimdal     1498  2.2  0.2  50132 32844 ?        S<Lsl 15:06   2:46 /usr/bin/pipewire-pulse
+heimdal     1502  0.0  0.0 387380 12432 ?        SLsl 15:06   0:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+heimdal     1504  0.0  0.0  10420  6124 ?        Ss   15:06   0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+heimdal     1673  0.0  0.0 159288  7748 tty2     Ssl+ 15:06   0:00 /usr/libexec/gdm-wayland-session /usr/bin/gnome-session
+heimdal     1898  6.4  1.6 4640148 262824 ?      Ssl  15:06   7:49 /usr/bin/gnome-shell
+heimdal     1907  0.0  0.0   9128  4832 ?        S    15:06   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus
+heimdal     2165  0.0  0.2 2784536 31528 ?       Sl   15:06   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+heimdal     2188  0.0  0.0   2580   896 ?        Ss   15:06   0:00 sh -c /usr/bin/ibus-daemon --panel disable $([ "$XDG_SESSION_TYPE" = "x11" ] && echo "--xim")
+heimdal     2191  0.2  0.0 313232 14764 ?        Sl   15:06   0:20 /usr/bin/ibus-daemon --panel disable
+heimdal     2214  0.2  1.5 883620 247520 ?       Sl   15:06   0:20 /usr/bin/gnome-software --gapplication-service
+heimdal     2320  0.0  0.1 2718996 30828 ?       Sl   15:06   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
+heimdal     2648  0.5  0.8 1015180 135684 ?      Sl   15:06   0:40 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.9VB7C3 -listenfd 4 -listenfd 5 -displayfd 6 -initfd 7
+heimdal     5303  0.0  0.1 1987312 27992 ?       Sl   15:14   0:00 /home/heimdal/.local/kitty.app/bin/kitten __atexit__
+heimdal     5310  0.0  0.0  10616  7020 pts/1    Ss   15:14   0:01 /bin/bash --posix
+heimdal     8836  0.0  0.0 115996  8908 ?        Ssl  15:51   0:00 /usr/bin/speech-dispatcher --spawn --communication-method unix_socket --socket-path /run/user/1000/speech-dispatcher/speechd.sock
+heimdal    13463  0.0  0.1 1987312 24716 ?       Sl   16:43   0:00 /home/heimdal/.local/kitty.app/bin/kitten __atexit__
+heimdal    13470  0.0  0.0   8512  5596 pts/0    Ss+  16:43   0:00 /bin/bash --posix
+heimdal    14717  0.0  0.0   7824  5816 ?        S    17:07   0:00 /usr/bin/ssh-agent -D -a /run/user/1000/keyring/.ssh
+ 1169  touch ninja/procesess.txt
+ 1170  ps aux >> ninja/procesess.txt 
+ 1171  cat ninja/procesess.txt 
+ 1172  ls
+ 1173  cp ninja/procesess.txt ninja/copy.txt
+ 1174  ls ninja/
+ 1175  cat ninja/copy.txt 
+ 1176  man wc
+ 1177  wc -l ninja/procesess.txt 
+ 1178  wc -l ninja/procesess.txt >> ninja/selected.txt
+ 1179  cat ninja/selected.txt 
+ 1180  man wc
+ 1181  wc -l ninja/procesess.txt | head -n1
+ 1182  wc -l ninja/procesess.txt | tail
+ 1183  wc -l ninja/procesess.txt | tail -n1
+ 1184  man tail
+ 1185  man head
+ 1186  man tail
+ 1187  man cut 
+ 1188  wc -l ninja/procesess.txt | cut -d' '
+ 1189  wc -l ninja/procesess.txt | cut -d ' '
+ 1190  cut --help
+ 1191  echo "1 2"| cut -d ' '
+ 1192  man cut
+ 1193  echo "1 2"| cut -d=' '
+ 1194  echo "1 2"| cut -d='\n'
+ 1195  man cut
+ 1196  echo "1 2"| cut
+ 1197  wc -l ninja/procesess.txt 
+ 1198  echo 309 >> ninja/selected.txt 
+ 1199  cat ninja/selected.txt 
+ 1200  echo 309 > ninja/selected.txt 
+ 1201  cat ninja/selected.txt 
+ 1202  grep "/bin" ninja/procesess.txt 
+ 1203  man grep
+ 1204  grep -c "/bin" ninja/procesess.txt 
+ 1205  grep "/bin" ninja/procesess.txt >> ninja/selected.txt 
+ 1206  cat ninja/selected.txt 
+ 1207  history
+ 1208  man tail
+ 1209  history | tail -39
+ 1210  history | tail -42
+ 1211  history | tail -44
+ 1212  history | tail -44 >> ninja/commands.txt
