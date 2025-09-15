@@ -31,5 +31,6 @@ heimdal    14717  0.0  0.0   7824  5816 ?        S    17:07   0:00 /usr/bin/ssh-
  1240  mv copy.txt backup/
  1241  wc -l dowolny/processes.txt 
  1242  wc -l dowolny/processes.txt > selected.txt
- 1243  grep "/bin" dowolny/processes.txt >> selected.txt 
+ 1243  grep -n "/bin" dowolny/processes.txt >> selected.txt 
  1244  history
+ 1245  history | tail -n11 > commands.txt
