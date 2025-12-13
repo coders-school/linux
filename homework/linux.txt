@@ -1,0 +1,32 @@
+ @phil  cat selected.txt commands.txt
+383 processes.txt
+dbus         623  0.0  0.0   8716  4056 ?        Ss   09:09   0:00 /usr/bin/dbus-broker-launch --scope system --audit
+root         625  0.0  0.0 342352 22136 ?        Ssl  09:09   0:00 /usr/bin/NetworkManager --no-daemon
+root         691  0.0  0.0 158356 18428 ?        Ssl  09:09   0:00 /usr/bin/sddm
+root         695  0.0  0.0  17340 11344 ?        Ss   09:09   0:00 /usr/bin/wpa_supplicant -u -s -O /run/wpa_supplicant
+phil         825  0.0  0.0   8284  3784 ?        Ss   09:09   0:00 /usr/bin/dbus-broker-launch --scope user
+phil         827  0.2  0.0 105716 17000 ?        S<sl 09:09   0:02 /usr/bin/pipewire
+phil         828  0.0  0.0 482936 21564 ?        S<sl 09:09   0:00 /usr/bin/wireplumber
+phil         949  0.0  0.1 716836 60032 tty1     Sl+  09:09   0:00 /usr/bin/python /usr/bin/blueman-applet
+phil        1069  0.0  0.0   8284  3692 ?        S    09:09   0:00 /usr/bin/dbus-broker-launch --config-file=/usr/share/defaults/at-spi2/accessibility.conf --scope user
+phil        1187  0.4  0.0 178252 23824 ?        S<Lsl 09:09   0:03 /usr/bin/pipewire-pulse
+phil        1211  0.0  0.1 556136 47192 tty1     Sl+  09:09   0:00 /usr/bin/python /usr/bin/blueman-tray
+phil        1226  0.0  0.0   7704  3400 tty1     S    09:09   0:00 /bin/bash /home/phil/.config/hypr/scripts/WaybarCava.sh
+phil        3957  0.0  0.0 155496  4944 ?        SLs  09:11   0:00 /usr/bin/gpg-agent --supervised
+phil       22850  0.9  0.6 578100 205728 tty1    Sl+  09:24   0:00 /usr/bin/kitty
+phil       23033  0.0  0.0 1670484 26208 tty1    Sl+  09:24   0:00 /usr/bin/kitten __atexit__
+phil       23035  1.0  0.0  11328  9064 pts/0    Ss   09:24   0:00 /usr/bin/zsh
+  611  mkdir linux-1
+  612  cd linux-1
+  613  touch processes.txt
+  614  ps aux > processes.txt
+  615  cp processes.txt copy.txt
+  616  cat processes.txt
+  617  clear
+  618  mkdir backup
+  619  mv copy.txt ./backup
+  620  ls
+  621  wc -l processes.txt > selected.txt
+  622  grep "/bin" processes.txt >> selected.txt
+  623  cat selected.txt
+  624  history
