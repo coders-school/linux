@@ -1,0 +1,63 @@
+butchcassidy@butchcassidy-VirtualBox:~/Desktop/cpp/linuxtest/coderszadanie/homework/backup$ cat commands.txt selected.txt
+  937  mkdir homework
+  938  touch homework/processes.txt
+  939  cd homework/
+  940  ls
+  941  ps aux
+  942  ps aux >> processes.txt
+  943  cat processes.txt 
+  944  cp processes.txt copy.txt
+  945  ls
+  946  mkdir backup 
+  947  mv copy.txt backup
+  948  ls
+  949  cd back
+  950  cd backup/
+  951  ls
+  952  wc -l ../processes.txt
+  953  wc -l < ../processes.txt > selected.txt
+  954  grep'/bin' ../processes.txt 
+  955  grep '/bin' ../processes.txt 
+  956  ls
+  957  grep '/bin' ../processes.txt >> selected.txt
+  958  history
+  959  history tail -n 25 
+  960  tail -n 25 history
+  961  history | tail -n 25 >> commands.txt
+209
+root         632  0.0  0.2 258560 14744 ?        Ssl  07:00   0:02 /usr/bin/touchegg --daemon
+root        1094  0.3  0.0 358184  2904 ?        Sl   07:00   0:19 /usr/bin/VBoxDRMClient
+butchca+    1301  0.0  0.2 117656 14576 ?        S<sl 07:01   0:00 /usr/bin/pipewire
+butchca+    1302  0.0  0.0 100272  6332 ?        Ssl  07:01   0:00 /usr/bin/pipewire -c filter-chain.conf
+butchca+    1304  0.0  0.2 409340 19320 ?        S<sl 07:01   0:00 /usr/bin/wireplumber
+butchca+    1305  0.0  0.1 118432 13652 ?        S<sl 07:01   0:00 /usr/bin/pipewire-pulse
+butchca+    1309  0.0  0.1 319044 10532 ?        SLsl 07:01   0:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+butchca+    1310  0.0  0.0  10356  6264 ?        Ss   07:01   0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+butchca+    1463  0.0  0.0  22028  1512 ?        S    07:01   0:00 /usr/bin/VBoxClient --clipboard
+butchca+    1465  0.0  0.0 220836  4552 ?        Sl   07:01   0:00 /usr/bin/VBoxClient --clipboard
+butchca+    1471  0.0  0.0  22028  1600 ?        S    07:01   0:00 /usr/bin/VBoxClient --seamless
+butchca+    1473  0.2  0.0 220184  3472 ?        Sl   07:01   0:14 /usr/bin/VBoxClient --seamless
+butchca+    1479  0.0  0.0  22028  1600 ?        S    07:01   0:00 /usr/bin/VBoxClient --draganddrop
+butchca+    1481  1.0  0.0 220700  3312 ?        Sl   07:01   1:02 /usr/bin/VBoxClient --draganddrop
+butchca+    1495  0.0  0.0  22028  1596 ?        S    07:01   0:00 /usr/bin/VBoxClient --vmsvga-session
+butchca+    1497  0.0  0.0 220364  3640 ?        Sl   07:01   0:05 /usr/bin/VBoxClient --vmsvga-session
+butchca+    1586  0.0  0.3 600908 27152 ?        Sl   07:01   0:01 /usr/bin/csd-power
+butchca+    1588  0.0  0.1 318016 11148 ?        Sl   07:01   0:00 /usr/bin/csd-print-notifications
+butchca+    1589  0.0  0.3 378420 25484 ?        Sl   07:01   0:00 /usr/bin/csd-housekeeping
+butchca+    1594  0.0  0.3 380032 27160 ?        Sl   07:01   0:00 /usr/bin/csd-xsettings
+butchca+    1596  0.0  0.0 305212  6704 ?        Sl   07:01   0:00 /usr/bin/csd-a11y-settings
+butchca+    1598  0.0  0.0 303804  5992 ?        Sl   07:01   0:00 /usr/bin/csd-screensaver-proxy
+butchca+    1602  0.0  0.3 378876 25780 ?        Sl   07:01   0:00 /usr/bin/csd-wacom
+butchca+    1603  0.0  0.3 452328 25648 ?        Sl   07:01   0:00 /usr/bin/csd-automount
+butchca+    1614  0.0  0.3 304208 24776 ?        Sl   07:01   0:00 /usr/bin/csd-clipboard
+butchca+    1617  0.0  0.0   9564  5392 ?        S    07:01   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus_0
+butchca+    1620  0.0  0.4 670120 28280 ?        Sl   07:01   0:00 /usr/bin/csd-media-keys
+butchca+    1622  0.0  0.4 412240 31332 ?        Sl   07:01   0:00 /usr/bin/csd-background
+butchca+    1624  0.0  0.3 378356 25372 ?        Sl   07:01   0:01 /usr/bin/csd-keyboard
+butchca+    1625  0.0  0.0 304216  6572 ?        Sl   07:01   0:00 /usr/bin/csd-settings-remap
+butchca+    1626  0.0  0.3 601528 26676 ?        Sl   07:01   0:00 /usr/bin/csd-color
+butchca+    1839  0.0  0.8 559664 59632 ?        Sl   07:01   0:00 /usr/bin/python3 /usr/bin/blueman-applet
+butchca+    1844  0.0  0.9 914252 63796 ?        Sl   07:01   0:04 /usr/bin/nemo-desktop
+butchca+    2174  0.0  0.5  65948 37344 ?        S    07:01   0:00 /usr/bin/python3 /usr/share/system-config-printer/applet.py
+butchcassidy@butchcassidy-VirtualBox:~/Desktop/cpp/linuxtest/coderszadanie/homework/backup$ 
+
