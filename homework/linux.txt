@@ -1,0 +1,24 @@
+bartek@LAPTOP-64B3IS3E:~$ cat selected.txt commands.txt
+36
+15:root         228  0.0  0.2  38888 21664 ?        Ss   15:50   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+24:root         280  0.0  0.2 115916 23660 ?        Ssl  15:50   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+28:root         395  0.0  0.0   7524  5032 pts/1    Ss   15:50   0:00 /bin/login -f
+31:bartek       455  0.0  0.0  37156  6620 ?        Ssl  15:50   0:00 /usr/bin/pipewire
+32:bartek       457  0.0  0.0  21184  7032 ?        Ssl  15:50   0:00 /usr/bin/pipewire-media-session
+35:bartek       483  0.0  0.0   8300  4596 ?        Ss   15:50   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+ 1999  ps aux > directory/processes.txt
+ 2000  cp directory/processes.txt  directory/copy.txt
+ 2001  mkdir backup
+ 2002  mv directory/copy.txt backup
+ 2003  wc -n directory/processes.txt
+ 2004  man wc
+ 2005  wc -l directory/processes.txt
+ 2006  echo 36 > selected.txt
+ 2007  grep "/bin" directory/processes.txt
+ 2008  man grep
+ 2009  grep "/bin" directory/processes.txt -n
+ 2010  grep "/bin" directory/processes.txt -n >> selected.txt
+ 2011  history
+ 2012  hisotry | tail -n14 > commands.txt
+ 2013  history
+ 2014  history | tail -n16 > commands.txt
