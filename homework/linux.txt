@@ -17,6 +17,6 @@
  2066  man wc
  2067  wc -l processes.txt > selected.txt
  2068  grep -n "/bin" processes.txt >> selected.txt
- 2069  cat selected.txt
+ 2069  cat selected.txt commands.txt
  2070  history
  2071  history | tail -n15 > commands.txt
