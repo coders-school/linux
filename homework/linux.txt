@@ -1,0 +1,20 @@
+MrPrincipal@HopeOfTheWorld:~$ cat test/selected.txt test/commands.txt
+27
+9:root         212  0.0  0.0   2888  2012 ?        Ss   14:15   0:00 /bin/sh /usr/lib/systemd/scripts/chronyd-starter.sh -n -F 1
+12:root         218  0.0  0.3  44096 29784 ?        Ss   14:15   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+17:root         273  0.0  0.4 123464 32584 ?        Ssl  14:15   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+  865  mkdir test
+  866  touch test/processes.txt
+  867  ps aux >> test/processes.txt
+  868  cp test/processes.txt test/copy.txt
+  869  mkdir backup
+  870  mv test/copy.txt backup/
+  871  vim test/processes.txt
+  872  wc -l < test processes.txt > test/selected.txt
+  873  wc -l < test/processes.txt > test/selected.txt
+  874  grep -n "/bin" processes.txt >> selected.txt
+  875  grep -n "/bin" test/processes.txt >> test/selected.txt
+  876  historia
+  877  history
+  878  history | tail -n +865 > test commands.txt
+  879  history | tail -n +865 > test/commands.txt
