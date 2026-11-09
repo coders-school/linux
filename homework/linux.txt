@@ -10,8 +10,8 @@ MrPrincipal@HopeOfTheWorld:~$ cat test/selected.txt test/commands.txt
   869  mkdir backup
   870  mv test/copy.txt backup/
   871  vim test/processes.txt
-  872  echo 27 >> test selected.txt
-  873  echo 27 >> test/selected.txt
+  872  wc -l < test processes.txt > test/selected.txt
+  873  wc -l < test/processes.txt > test/selected.txt
   874  grep -n "/bin" processes.txt >> selected.txt
   875  grep -n "/bin" test/processes.txt >> test/selected.txt
   876  historia
